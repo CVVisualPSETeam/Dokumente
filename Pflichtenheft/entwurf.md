@@ -27,7 +27,7 @@ Produkteinsatz
 ==============
 
 Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
-werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche 
+werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
 OpenCV mit Qt Unterstützung kompiliert haben. (Kopie Lastenheft)
 
 
@@ -51,6 +51,30 @@ Systemmodel
 
 Produktleistungen
 =================
+
+Möglichst kein Overhead im Release-mode.
+
+Bedienoberfläche
+================
+
+Qualitätszielbestimmungen
+=========================
+
+* Resource-Leaks
+* kein undefiniertes Verhalten
+* Threadsafety
+
+Testfälle und Testszenarien
+===========================
+
+Entwicklungsumgebung
+====================
+
+* gcc-4.8.x oder später
+* C++11 oder später
+* GNU/Linux
+* Cmake
+* opencv
 
 Glossar
 =======
