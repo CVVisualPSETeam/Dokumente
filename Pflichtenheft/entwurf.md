@@ -49,6 +49,10 @@ Keine?
 Systemmodel
 ===========
 
+* Das Interface wird aus Funktionen bestehen, die mit einer thread-lokalen GUI kommunizieren und dort
+die Debug-Informationen anzeigen. Über conditional compilation werden die Funktionen im Release-Mode
+durch leere ersetzt, so dass kein Runtime-Overhead entsteht.
+
 Produktleistungen
 =================
 
