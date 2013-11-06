@@ -34,7 +34,8 @@ OpenCV mit Qt Unterstützung kompiliert haben. (Kopie Lastenheft)
 Produktumgebung
 ===============
 
-Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt laufen.
+Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt laufen sowie ein
+C++11-Compiler.
 
 
 Produktfunktion
@@ -61,6 +62,10 @@ Möglichst kein Overhead im Release-mode.
 Bedienoberfläche
 ================
 
+* Die Bedienoberfläche wird in Qt implementiert sein.
+* Sie wird aus einem Hauptfenster pro Thread bestehen.
+* Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
+
 Qualitätszielbestimmungen
 =========================
 
@@ -85,3 +90,6 @@ Glossar
 
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
+
+* Resource-Leak: Das auftreten der Situation, das Ressourcen irgendeiner Art (Speicher, Dateien...) zwar
+	alloziert werden, aber nach Verwendung nicht mehr an das System zurückgegeben werden.
