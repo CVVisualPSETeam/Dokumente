@@ -2,13 +2,13 @@
 
 
 echo "building release-version..."
-g++ -Wextra -pedantic -Werror -std=c++11 *.cpp
+g++ -Wextra -pedantic -Werror -Wunused-function -std=c++11 *.cpp
 
 echo "running release-version: "
 ./a.out
 
 echo "building debug-version..."
-g++ -Wextra -pedantic -Werror -std=c++11 *.cpp -DCVVISUAL_DEBUG
+g++ -Wextra -pedantic -Werror -Wunused-function -std=c++11 *.cpp -DCVVISUAL_DEBUG
 
 echo "running debug-version: "
 ./a.out

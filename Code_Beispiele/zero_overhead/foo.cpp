@@ -10,7 +10,4 @@ void bar(const std::string str, int n) {
 	}
 }
 
-
-
-
 }}
