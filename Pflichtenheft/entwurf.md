@@ -64,7 +64,7 @@ Zielbestimmungen
 API Kriterien
 -------------
 
-Musskriterien:
+###Musskriterien
 
 - imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel,
 - imgproc/Miscellaneous Image Transformations: threshold, adaptiveThreshold, floodFill
@@ -73,7 +73,7 @@ Musskriterien:
 - Globale Auswahl zwischen Debug und Release Modus
 
 
-Wunschkriterien:
+###Wunschkriterien
 
 - imgproc/Histograms: calcHist
 - imgproc/Feature Detection: Canny, HoughCircles
