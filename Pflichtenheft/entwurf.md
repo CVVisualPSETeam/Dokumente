@@ -1,7 +1,8 @@
-
+Pflichtenheft CVVisual
+======================
 
 Einleitung
-==========
+----------
 
 OpenCV ist ein im Jahre 1999 aus der Traufe gehobenes Projekt von Intel Forschern. Es wurde im
 Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.
@@ -59,12 +60,11 @@ Unverzichtbar ist hierbei, dass unsere Lösung stark modular ist und jeder spät
 entwickeln kann (in der Zeit in der er/sie "random code" geschrieben hätte).
 
 Zielbestimmungen
-================
+----------------
 
-API Kriterien
--------------
+###API Kriterien
 
-###Musskriterien
+####Musskriterien
 
 - imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel,
 - imgproc/Miscellaneous Image Transformations: threshold, adaptiveThreshold, floodFill
@@ -73,7 +73,7 @@ API Kriterien
 - Globale Auswahl zwischen Debug und Release Modus
 
 
-###Wunschkriterien
+####Wunschkriterien
 
 - imgproc/Histograms: calcHist
 - imgproc/Feature Detection: Canny, HoughCircles
@@ -85,15 +85,14 @@ API Kriterien
 
 
 
-Abgrenzungskriterien
---------------------
+###Abgrenzungskriterien
 
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ sowie durch Existenz gegenüber
 der Nichtexitenz anderer Lösungen ab.
 
 
 Produkteinsatz
-==============
+--------------
 
 Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
 werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
@@ -101,52 +100,52 @@ OpenCV mit Qt Unterstützung kompiliert haben. (Kopie Lastenheft)
 
 
 Produktumgebung
-===============
+---------------
 
 Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
 C++11-Compiler.
 
 
 Produktfunktion
-===============
+---------------
 
 
 Produktdaten
-============
+------------
 
 Keine?
 
 Systemmodel
-===========
+-----------
 
 * Das Interface wird aus Funktionen bestehen, die mit einer thread-lokalen GUI kommunizieren und dort
 die Debug-Informationen anzeigen. Über conditional compilation werden die Funktionen im Release-Mode
 durch leere ersetzt, so dass kein Runtime-Overhead entsteht.
 
 Produktleistungen
-=================
+-----------------
 
 Möglichst kein Overhead im Release-mode.
 
 Bedienoberfläche
-================
+----------------
 
 * Die Bedienoberfläche wird in Qt implementiert sein.
 * Sie wird aus einem Hauptfenster pro Thread bestehen.
 * Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
 
 Qualitätszielbestimmungen
-=========================
+-------------------------
 
 * Resource-Leaks
 * kein undefiniertes Verhalten
 * Threadsafety
 
 Testfälle und Testszenarien
-===========================
+---------------------------
 
 Entwicklungsumgebung
-====================
+--------------------
 
 * gcc-4.8.0 oder später
 * Qt 5
@@ -156,7 +155,7 @@ Entwicklungsumgebung
 * opencv
 
 Glossar
-=======
+-------
 
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
