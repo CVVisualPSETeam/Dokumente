@@ -103,7 +103,7 @@ OpenCV mit Qt Unterstützung kompiliert haben. (Kopie Lastenheft)
 Produktumgebung
 ===============
 
-Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt laufen sowie ein
+Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
 C++11-Compiler.
 
 
@@ -148,7 +148,8 @@ Testfälle und Testszenarien
 Entwicklungsumgebung
 ====================
 
-* gcc-4.8.x oder später
+* gcc-4.8.0 oder später
+* Qt 5
 * C++11 oder später
 * GNU/Linux
 * Cmake
