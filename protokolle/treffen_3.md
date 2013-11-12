@@ -28,11 +28,11 @@ Pflichtenheft
 
 Deadline für folgende Aufgaben ist Donnerstagmorgen 14.11.2013, 6 Uhr
 
-Johannes: GUI-Bilder, Produktfunktion
-Raphael: GUI Kriterien
-Clara: API Kriterien
-Nicolai: Einleitung
-Erich: Testszenarien
-Florian: Grober Entwurf
+- Johannes: GUI-Bilder, Produktfunktion
+- Raphael: GUI Kriterien
+- Clara: API Kriterien
+- Nicolai: Einleitung
+- Erich: Testszenarien
+- Florian: Grober Entwurf
 
 Nächstes Treffen: Freitag 15.11.2013, 14 Uhr, Sportgebäude
