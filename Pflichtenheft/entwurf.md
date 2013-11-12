@@ -61,13 +61,28 @@ entwickeln kann (in der Zeit in der er/sie "random code" geschrieben hätte).
 Zielbestimmungen
 ================
 
-
-Musskriterien
+API Kriterien
 -------------
 
+Musskriterien:
 
-Wunschkriterien
----------------
+- imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel,
+- imgproc/Miscellaneous Image Transformations: threshold, adaptiveThreshold, floodFill
+- features2d: KeyPoint, DMatch
+- Auswahl der Visualisierung für Operationstyp
+- Globale Auswahl zwischen Debug und Release Modus
+
+
+Wunschkriterien:
+
+- imgproc/Histograms: calcHist
+- imgproc/Feature Detection: Canny, HoughCircles
+- stitching
+- ocl
+- Optionale Parameter für Einstellungen der Visualisierungen
+- Lokale Auswahl Debug/Release
+- Optionale nicht-blockierende Aufrufe für Streaming
+
 
 
 Abgrenzungskriterien
