@@ -15,16 +15,19 @@ oder an Universitäten.
 
 Wer jedoch damit arbeitet, steht zur Zeit noch vor einem Problem:  
 Es existiert keine richtige Debug-Visualisierung für OpenCV. Das bedeutet, dass es augenblicklich  
-keine Bibliothek (und auch kein Werkzeug gibt), mit welchem man sich adäquat visualisieren lassen kann,  
+keine Bibliothek (und auch kein Werkzeug) gibt, mit welchem man sich adäquat visualisieren lassen kann,  
 was zum Beispiel eine lange Liste von Matches mit den zwei dazugehörigen Bildern zu tun hat,  
-oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an eigene  
+oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an, eigene  
 Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern  
-der Bilder oder der Verwendung primitiver Methoden von OpenCV bestehen (wie etwa 'imshow()',  
-das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen.
-Besonders für Neulinge stellt dieses weitestgehende Fehlen von  Visualisierungsmöglichkeiten zu  
-Debugzwecken eine große Hürde dar.  
+der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
+das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
+bestehen, oder aber sie greifen auf ein Windows-Plug-in für Visual Studio mit stark eingeschränktem  
+Funktionsumfang zurück.
+Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
+zu Debugzwecken eine große Hürde dar.  
 
-Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer Visualisierung für OpenCV.  
+Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
+Open Source-Visualisierung für OpenCV.  
 
 Zielbestimmungen
 ----------------
