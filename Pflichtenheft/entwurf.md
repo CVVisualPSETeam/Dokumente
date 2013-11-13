@@ -88,9 +88,14 @@ Keine?
 Systemmodel
 -----------
 
-* Das Interface wird aus Funktionen bestehen, die mit einer thread-lokalen GUI kommunizieren und dort
-die Debug-Informationen anzeigen. Über conditional compilation werden die Funktionen im Release-Mode
-durch leere ersetzt, so dass kein Runtime-Overhead entsteht.
+* Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
+	Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen
+* Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem 
+	Thread-lokalem Hauptfenster hinzu.
+
+![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die 
+Inneren aufrufen](architektur_skizze.svg Architekturskizze)
+
 
 Produktleistungen
 -----------------
