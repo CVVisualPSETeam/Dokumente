@@ -112,7 +112,7 @@ Systemmodel
 	Thread-lokalem Hauptfenster hinzu.
 
 ![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die 
-Inneren aufrufen](architektur_skizze.svg Architekturskizze)
+Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 
 Produktleistungen
