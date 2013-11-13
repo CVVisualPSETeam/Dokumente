@@ -54,6 +54,24 @@ Zielbestimmungen
 - Optionale nicht-blockierende Aufrufe für Streaming
 
 
+###GUI Kriterien
+
+####Musskriterien
+
+- Eine Visualisierung pro Operation (siehe API Kriterien)
+- Drei Visualisierungen für features2d/DMatch
+- Zoomfunktion
+
+####Wunschkriterien
+
+- Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
+- Parameter für Visualisierungen
+- Weitere Visualisierungen
+- Permanente GUI mit Historie
+- Möglichkeit Operation mit geänderten Parametern erneut anzuwenden
+- Datenfluss von GUI zu Code sofern sinnvoll
+- Optionale Ausnutzung von mehreren Bildschirmen
+- Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
 ###Abgrenzungskriterien
 
