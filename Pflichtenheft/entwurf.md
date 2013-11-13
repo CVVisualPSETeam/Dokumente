@@ -136,6 +136,57 @@ Qualitätszielbestimmungen
 
 Testfälle und Testszenarien
 ---------------------------
+#Testfälle(erste Version wird noch bearbeitet)
+
+##Testfälle für Filter 
+
+###Test 1 (Anzeige der Bilder, Auswählen eines Filters, Verändern der Werte
+###eines Filtes auch bei großen Bildern/langsameren Computern, Schließen des
+###Programms ohne Fehler)
+
+Das Fenster zeigt ihm sein Originalbild und das Bild nach Anwendung des von
+ihm ausgewählten Filter nebeneinander. Auch kann er die Werte für den Filter
+mit einem Schieberegler verändern und sieht wie sich das Bild durch die
+Änderung verändert. Da er aber ein sehr großes Bild benutzt hat, kann sein
+Computer den Filter nicht so schnell auf das Bild anwenden und deshalb
+freut er sich über  die Option die Werte einzutippen anstatt sie mit dem
+Schieberegler auszuwählen da dieser etwas ruckelt. 
+Nach dem er den Wert zu seiner Zufriedenheit eingestellt hat, trägt den
+ermittelten Wert bei sich ein, beendet das Programm und freut sich über
+das neu entdeckte Debug Modul.
+
+###Test 2 ( benutzen des Programms auch mit mehreren Bildern, Speicher-/
+Wiederherstellungs-Funktion, auch von Menschen lesbare Speicherdatei)
+
+Der Programmierer ist so zufrieden mit dem Debug Modul das er es auch für
+ein anderes Projekt benutzen will. Doch hat er diesmal will er mehrere
+Filtereinstellungen testen die er vorher mit dem Debugmodul heraus finden
+will. Da er nur keine Lust hat sich die Filtereinstellungen für jeden
+einzelnen Schritte irgendwo aufzuschreiben und bei Bedarf wieder einzustellen,
+benutzt er einfach die Speicherfunktion des Moduls und kann so bequem
+und einfach die optimalen Filtereinstellungen finden.
+
+###Test 3 (Voreinstellungen durch Api aufrufe im code)
+ Noch zuschreiben falls nötig
+
+
+##Testfälle für Matches
+
+###Test 1
+
+Der Programmierer arbeiten mit der Matchfunktion von OpenCV, damit er
+das PRogramm einfacher debugen kann benutzer der das Debugmodul
+
+Er schreibt die entsprechenden Aufrufe in seinem Code mit denen er sich
+zwei Bilder anzeigen lassen kann auf denen die Matches visuell dargestellt werden. 
+Das Fenster zeigt im die zwei Bilder und er kann zwischen den Visualisierungen
+für die Matches auf den beiden Bilder wechseln.
+Auch kann er bestimmte Matches markieren und diese dann ausblenden/einblenden
+oder sie zusammenfassen damit er eine bessere Übersicht hat. 
+
+
+
+
 
 Entwicklungsumgebung
 --------------------
