@@ -4,30 +4,30 @@
 Einleitung
 ----------
 
-OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.
-Es wurde im Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.
-Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute der quasi Standard unter den freien
+OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
+Es wurde im Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.  
+Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute der Quasi-Standard unter den freien   
 Bilderkennungs-Bibliotheken.
-Es umfasst heutzutage Algorithmen für zum Beispiel einfache Bilderkennung, Gesichtserkennung,
-Bewegungsverfolgung und viel weiteres. Die Bibliothek ist auf Performance optimiert und findet auch
-deshalb heute Einsatz in vielen Bereichen, wie etwa der Augmented Reality auf mobilen Geräten
-oder an Universitäten.
+Es umfasst heutzutage Algorithmen für zum Beispiel einfache Bilderkennung, Gesichtserkennung,  
+Bewegungsverfolgung und vieles mehr. Die Bibliothek ist auf Performance optimiert und findet auch  
+deshalb heute Einsatz in vielen Bereichen, wie etwa der Augmented Reality auf mobilen Geräten  
+oder an Universitäten.  
 
-Wer jedoch damit arbeitet, steht zur Zeit noch vor einem Problem:
-Es existiert keine richtige Debug-Visualisierung für OpenCV. Das bedeutet, dass es augenblicklich
-keine Bibliothek (und auch kein Werkzeug) gibt, mit welchem man sich adäquat visualisieren lassen kann,
-was zum Beispiel eine lange Liste von Matches mit den zwei dazugehörigen Bildern zu tun hat,
-oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an, eigene
-Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern
-der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',
-das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen
-bestehen, oder aber sie greifen auf ein Windows-Plug-in für Visual Studio mit stark eingeschränktem
-Funktionsumfang zurück.
-Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten
-zu Debugzwecken eine große Hürde dar.
+Wer jedoch damit arbeitet, steht zur Zeit noch vor einem Problem:  
+Es existiert keine richtige Debug-Visualisierung für OpenCV. Das bedeutet, dass es augenblicklich  
+keine Bibliothek (und auch kein Werkzeug) gibt, mit welchem man sich adäquat visualisieren lassen kann,  
+was zum Beispiel eine lange Liste von Matches mit den zwei dazugehörigen Bildern zu tun hat,  
+oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an, eigene  
+Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern  
+der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
+das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
+bestehen, oder aber sie greifen auf ein Microsoft-Plug-in für Visual Studio mit stark eingeschränktem  
+Funktionsumfang zurück (d.h. man kann im wesentlichen nur Bilder ansehen, die im Speicher liegen).
+Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
+zu Debugzwecken eine große Hürde dar.  
 
-Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer
-Open Source-Visualisierung für OpenCV.
+Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
+Open Source-Visualisierung für OpenCV. 
 
 Zielbestimmungen
 ----------------
@@ -36,19 +36,27 @@ Zielbestimmungen
 
 ####Musskriterien
 
-- imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel,
+//TODO: Überlegen ob nicht lieber deutsche Beschreibung der Feautures mit Verweis auf Bezeichnung
+
+#####Unterstützte OpenCV Features
+- imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel
 - imgproc/Miscellaneous Image Transformations: threshold, adaptiveThreshold, floodFill
-- features2d: KeyPoint, DMatch
+- feature2sd: KeyPoint, DMatch
+
+#####Allgemeine API Features
 - Auswahl der Visualisierung für Operationstyp
 - Globale Auswahl zwischen Debug und Release Modus
 
 
 ####Wunschkriterien
 
+#####Unterstützte OpenCV Features
 - imgproc/Histograms: calcHist
 - imgproc/Feature Detection: Canny, HoughCircles
 - stitching
 - ocl
+
+#####Allgemeine API Features
 - Optionale Parameter für Einstellungen der Visualisierungen
 - Lokale Auswahl Debug/Release
 - Optionale nicht-blockierende Aufrufe für Streaming
@@ -59,14 +67,17 @@ Zielbestimmungen
 ####Musskriterien
 
 - Eine Visualisierung pro Operation (siehe API Kriterien)
-- Drei Visualisierungen für features2d/DMatch
+- Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
 - Zoomfunktion
 
 ####Wunschkriterien
 
+#####Visualisierungen
+######Für Matches
+######FÜr Filter
+
+#####Allgemein
 - Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
-- Parameter für Visualisierungen
-- Weitere Visualisierungen
 - Permanente GUI mit Historie
 - Möglichkeit Operation mit geänderten Parametern erneut anzuwenden
 - Datenfluss von GUI zu Code sofern sinnvoll
