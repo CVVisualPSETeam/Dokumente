@@ -75,8 +75,9 @@ Zielbestimmungen
 
 ###Abgrenzungskriterien
 
-Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ sowie durch Existenz gegenüber
-der Nichtexitenz anderer Lösungen ab.
+Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
+keine andere Lösung bekannt, insbesondere keine die FLOSS ist, die mit unserer vergleichbare Ziele
+verfolgt.
 
 
 Produkteinsatz
@@ -103,8 +104,8 @@ Produktdaten
 
 Keine?
 
-Systemmodel
------------
+Systemmodell
+------------
 
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
 	Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen
@@ -130,7 +131,7 @@ Bedienoberfläche
 Qualitätszielbestimmungen
 -------------------------
 
-* Resource-Leaks
+* keine Resource-Leaks
 * kein undefiniertes Verhalten
 * Threadsafety
 
