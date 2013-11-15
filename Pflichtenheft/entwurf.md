@@ -235,8 +235,19 @@ Entwicklungsumgebung
 Glossar
 -------
 
+* Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
+	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
+
+* Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, welche vom Benutzer
+	an die API übergeben werden.
+
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
 
-* Resource-Leak: Das auftreten der Situation, das Ressourcen irgendeiner Art (Speicher, Dateien...) zwar
+* Resource-Leak: Das Auftreten der Situation, dass Ressourcen irgendeiner Art (Speicher, Dateien, usw.) zwar
 	alloziert werden, aber nach Verwendung nicht mehr an das System zurückgegeben werden.
+
+* Undefiniertes Verhalten: Verhalten welches zwar erwartbar, aber nicht formal spezifiziert ist
+ 	(vgl. C++-Compiler Features, welche nicht im Standard definiert sind).
+
+* View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
