@@ -35,4 +35,4 @@ Deadline für folgende Aufgaben ist Donnerstagmorgen 14.11.2013, 6 Uhr
 - Erich: Testszenarien
 - Florian: Grober Entwurf
 
-Nächstes Treffen: Freitag 15.11.2013, 14 Uhr, Sportgebäude
+Nächstes Treffen: Freitag 15.11.2013, 14 Uhr, ATIS (falls da voll ist in der Mensa)
