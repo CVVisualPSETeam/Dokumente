@@ -4,30 +4,30 @@
 Einleitung
 ----------
 
-OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
-Es wurde im Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.  
-Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute der quasi Standard unter den freien   
+OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.
+Es wurde im Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.
+Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute der quasi Standard unter den freien
 Bilderkennungs-Bibliotheken.
-Es umfasst heutzutage Algorithmen für zum Beispiel einfache Bilderkennung, Gesichtserkennung,  
-Bewegungsverfolgung und viel weiteres. Die Bibliothek ist auf Performance optimiert und findet auch  
-deshalb heute Einsatz in vielen Bereichen, wie etwa der Augmented Reality auf mobilen Geräten  
-oder an Universitäten.  
+Es umfasst heutzutage Algorithmen für zum Beispiel einfache Bilderkennung, Gesichtserkennung,
+Bewegungsverfolgung und viel weiteres. Die Bibliothek ist auf Performance optimiert und findet auch
+deshalb heute Einsatz in vielen Bereichen, wie etwa der Augmented Reality auf mobilen Geräten
+oder an Universitäten.
 
-Wer jedoch damit arbeitet, steht zur Zeit noch vor einem Problem:  
-Es existiert keine richtige Debug-Visualisierung für OpenCV. Das bedeutet, dass es augenblicklich  
-keine Bibliothek (und auch kein Werkzeug) gibt, mit welchem man sich adäquat visualisieren lassen kann,  
-was zum Beispiel eine lange Liste von Matches mit den zwei dazugehörigen Bildern zu tun hat,  
-oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an, eigene  
-Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern  
-der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
-das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
-bestehen, oder aber sie greifen auf ein Windows-Plug-in für Visual Studio mit stark eingeschränktem  
+Wer jedoch damit arbeitet, steht zur Zeit noch vor einem Problem:
+Es existiert keine richtige Debug-Visualisierung für OpenCV. Das bedeutet, dass es augenblicklich
+keine Bibliothek (und auch kein Werkzeug) gibt, mit welchem man sich adäquat visualisieren lassen kann,
+was zum Beispiel eine lange Liste von Matches mit den zwei dazugehörigen Bildern zu tun hat,
+oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft an, eigene
+Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern
+der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',
+das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen
+bestehen, oder aber sie greifen auf ein Windows-Plug-in für Visual Studio mit stark eingeschränktem
 Funktionsumfang zurück.
-Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
-zu Debugzwecken eine große Hürde dar.  
+Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten
+zu Debugzwecken eine große Hürde dar.
 
-Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
-Open Source-Visualisierung für OpenCV.  
+Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer
+Open Source-Visualisierung für OpenCV.
 
 Zielbestimmungen
 ----------------
@@ -98,6 +98,26 @@ C++11-Compiler.
 Produktfunktion
 ---------------
 
+Unser Produkt wird ein Debug-werkzeug für diverse opencv-Funktionalität sein. Hierzu werden wir
+die Ergebnisse von Filteroperationen verwenden um die Auswirkungen des Filters auf ein oder mehrere
+Ursprungsbilder graphisch darzustellen.
+
+Um das debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
+Funktionalität dabei so implementieren, dass pro translation-unit der Debug-modus sowohl während
+des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während
+des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu
+beeinflussen.
+
+Bei der Verwendung in Programmen mit mehreren Threads wird zwar mit eingeschränktem Komfort zu rechnen
+sein, aber die prinzipielle Funktionalität an sich wird unbeeinträchtigt bleiben.
+
+Zur Verwendung werden wir für die debugbaren opencv-Funktionalitäten Funktionen bereitstellen, welche
+eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
+Thread ein Hauptfenster).
+
+Je nach Filter werden wir beispielsweise die Differenz zwischen zwei Bildern mit Pfeilen darstellen.
+Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
+nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
 Produktdaten
 ------------
@@ -109,10 +129,10 @@ Systemmodell
 
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
 	Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen
-* Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem 
+* Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem
 	Thread-lokalem Hauptfenster hinzu.
 
-![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die 
+![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die
 Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 
@@ -139,9 +159,9 @@ Testfälle und Testszenarien
 ---------------------------
 ###Testfälle(erste Version wird noch bearbeitet)
 
-###Testfälle für Filter 
+###Testfälle für Filter
 
-####Test 1 
+####Test 1
 #####(Anzeige der Bilder, Auswählen eines Filters, Verändern der Werte
 #####eines Filtes auch bei großen Bildern/langsameren Computern, Schließen des
 #####Programms ohne Fehler)
@@ -152,12 +172,12 @@ mit einem Schieberegler verändern und sieht wie sich das Bild durch die
 Änderung verändert. Da er aber ein sehr großes Bild benutzt hat, kann sein
 Computer den Filter nicht so schnell auf das Bild anwenden und deshalb
 freut er sich über  die Option die Werte einzutippen anstatt sie mit dem
-Schieberegler auszuwählen da dieser etwas ruckelt. 
+Schieberegler auszuwählen da dieser etwas ruckelt.
 Nach dem er den Wert zu seiner Zufriedenheit eingestellt hat, trägt den
 ermittelten Wert bei sich ein, beendet das Programm und freut sich über
 das neu entdeckte Debug Modul.
 
-####Test 2 
+####Test 2
 #####( benutzen des Programms auch mit mehreren Bildern, Speicher-/
 #####Wiederherstellungs-Funktion, auch von Menschen lesbare Speicherdatei)
 
@@ -181,11 +201,11 @@ Der Programmierer arbeiten mit der Matchfunktion von OpenCV, damit er
 das PRogramm einfacher debugen kann benutzer der das Debugmodul
 
 Er schreibt die entsprechenden Aufrufe in seinem Code mit denen er sich
-zwei Bilder anzeigen lassen kann auf denen die Matches visuell dargestellt werden. 
+zwei Bilder anzeigen lassen kann auf denen die Matches visuell dargestellt werden.
 Das Fenster zeigt im die zwei Bilder und er kann zwischen den Visualisierungen
 für die Matches auf den beiden Bilder wechseln.
 Auch kann er bestimmte Matches markieren und diese dann ausblenden/einblenden
-oder sie zusammenfassen damit er eine bessere Übersicht hat. 
+oder sie zusammenfassen damit er eine bessere Übersicht hat.
 
 
 
