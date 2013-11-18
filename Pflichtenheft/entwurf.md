@@ -86,8 +86,7 @@ Zielbestimmungen
 
 #####Visualisierungen
 ######Für Matches
-Verbindungslinien
------------------
+#######Verbindungslinien
 _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
 _and_matches.html?highlight=drawmatches#drawmatches)_
 - Einzeichnen der Keypoints in die Bilder
@@ -97,16 +96,12 @@ _and_matches.html?highlight=drawmatches#drawmatches)_
 - Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
 - x% oder n besten/schlechtesten Matches
 - Manuelle Auswahl von Matches
-
-Rohdaten
---------
+#######Rohdaten
 - Abmessungen der Bilder
 - Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 - Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
 - Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-
-Projektion
-----------
+#######Projektion
 - Einzeichnen von Linien / Formen
 - Auswählen von zugehörigen Matches
 - Die Linien / Formen werden auf das zweite Bild projiziert 
