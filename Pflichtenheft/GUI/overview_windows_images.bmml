@@ -1,6 +1,6 @@
 <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1079" measuredH="625" mockupW="750" mockupH="553">
   <controls>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::TitleWindow" x="329" y="72" w="750" h="553" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::TitleWindow" x="329" y="72" w="750" h="553" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
       <controlProperties>
         <bottomheight>0</bottomheight>
         <close>true</close>
@@ -23,34 +23,19 @@
         <text>Show%20Images%3F</text>
       </controlProperties>
     </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::SearchBox" x="585" y="130" w="443" h="-1" measuredW="120" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>up</state>
-        <text>Search</text>
-      </controlProperties>
-    </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::PointyButton" x="480" y="129" w="-1" h="-1" measuredW="90" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>16777215</color>
-        <direction>center</direction>
-        <menuIcon>false</menuIcon>
-        <text>Show%20Tabs%3F</text>
-      </controlProperties>
-    </control>
-    <control controlID="28" controlTypeID="com.balsamiq.mockups::Icon" x="1043" y="131" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="28" controlTypeID="com.balsamiq.mockups::Icon" x="1043" y="131" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>square</borderStyle>
         <icon>HelpIcon%7Csmall</icon>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::MenuBar" x="329" y="96" w="750" h="29" measuredW="189" measuredH="29" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::MenuBar" x="329" y="96" w="750" h="29" measuredW="189" measuredH="29" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>square</borderStyle>
         <text>File%2C%20Edit%2C%20View%2C%20Help</text>
       </controlProperties>
     </control>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::HRule" x="329" y="155" w="750" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1"/>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::DataGrid" x="329" y="159" w="750" h="466" measuredW="538" measuredH="309" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::DataGrid" x="329" y="159" w="750" h="466" measuredW="538" measuredH="381" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <align>left</align>
         <borderStyle>square</borderStyle>
@@ -58,18 +43,18 @@
         <hLines>true</hLines>
         <markup>true</markup>
         <rowHeight>72</rowHeight>
-        <text>ID%20%5Ev%2C%20Images%2C%20Description%20%5Ev%2C%20File%20%5Ev%2C%20Line%20%5Ev%2C%20Type%20%5Ev%0A1%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Test%20matches%201%2C%20someCode.cpp%2C%20100%2C%20Matches%0A2%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Matches%20%281%29%2C%20someCode.cpp%2C%20161%2C%20Matches%0A3%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Matches%20%282%29%2C%20someOpenCV.cpp%2C%20263%2C%20Matches%0A4%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Filter%20test%20on%20an%20image%2C%20someFilterTests.cpp%2C%2010%2C%20Filter</text>
+        <text>ID%20%5Ev%2C%20Images%2C%20Description%20%5Ev%2C%20File%20%5Ev%2C%20Line%20%5Ev%2C%20Type%20%5Ev%0A1%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Test%20matches%201%2C%20someCode.cpp%2C%20100%2C%20Matches%0A2%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Matches%20%281%29%2C%20someCode.cpp%2C%20161%2C%20Matches%0A3%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Matches%20%282%29%2C%20someOpenCV.cpp%2C%20263%2C%20Matches%0A4%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20Filter%20test%20on%20an%20image%2C%20someFilterTests.cpp%2C%2010%2C%20Filter%0A5%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2C%20A%20tea%20pot...%2C%20iLikeTeaPots.cpp%2C%2021%2C%20Matches</text>
         <vLines>true</vLines>
       </controlProperties>
     </control>
-    <control controlID="49" controlTypeID="com.balsamiq.mockups::Image" x="381" y="184" w="66" h="61" measuredW="720" measuredH="960" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Image" x="383" y="184" w="66" h="61" measuredW="720" measuredH="960" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>./assets/IMG_1319.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="50" controlTypeID="com.balsamiq.mockups::Image" x="454" y="185" w="66" h="60" measuredW="720" measuredH="960" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Image" x="456" y="185" w="66" h="60" measuredW="720" measuredH="960" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <rotation>0</rotation>
@@ -77,35 +62,35 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="51" controlTypeID="com.balsamiq.mockups::Image" x="381" y="254" w="66" h="61" measuredW="720" measuredH="960" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Image" x="383" y="254" w="66" h="61" measuredW="720" measuredH="960" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>./assets/IMG_1322.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="52" controlTypeID="com.balsamiq.mockups::Image" x="454" y="254" w="66" h="60" measuredW="720" measuredH="960" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Image" x="456" y="254" w="66" h="60" measuredW="720" measuredH="960" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>./assets/IMG_1324.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::Image" x="381" y="326" w="66" h="61" measuredW="960" measuredH="720" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Image" x="383" y="326" w="66" h="61" measuredW="960" measuredH="720" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>./assets/IMG_1325.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="54" controlTypeID="com.balsamiq.mockups::Image" x="454" y="327" w="66" h="60" measuredW="960" measuredH="720" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Image" x="456" y="327" w="66" h="60" measuredW="960" measuredH="720" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <src>./assets/IMG_1329.jpg</src>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::Image" x="383" y="400" w="66" h="61" measuredW="720" measuredH="960" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Image" x="385" y="400" w="66" h="61" measuredW="720" measuredH="960" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <rotation>0</rotation>
@@ -113,11 +98,32 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::Image" x="454" y="401" w="66" h="60" measuredW="720" measuredH="960" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Image" x="456" y="401" w="66" h="60" measuredW="720" measuredH="960" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <filter>true</filter>
         <rotation>0</rotation>
         <src>./assets/IMG_1321_inv.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::SearchBox" x="511" y="130" w="505" h="-1" measuredW="120" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>up</state>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Image" x="385" y="480" w="66" h="44" measuredW="960" measuredH="720" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <filter>true</filter>
+        <src>./assets/tea_pot.jpg</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Image" x="469" y="469" w="44" h="64" measuredW="720" measuredH="960" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <filter>true</filter>
+        <src>./assets/tea_pot_on_stove.jpg</src>
         <text/>
       </controlProperties>
     </control>
