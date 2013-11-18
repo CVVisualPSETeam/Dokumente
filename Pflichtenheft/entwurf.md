@@ -179,6 +179,14 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 * geringe Verzögerungen durch Berechnungen
 
 ##Testfälle und Testszenarien
+
+Unser Projekt ist eine debug Bibliothek die sich hauptsächlich um Visualiesierung, mit möglichst geringen Aufwand
+für den Programmierer, kümmert. Deshalb enthält der Funktionsumfang hauptsächlich Anziegeoptionen. leider würden 
+dadurch alle Testfälle/szenarios in der Form sein: "der Programmierer schreibt die entsprechendenzeilencode in
+seinen Quelltext und sieht eine Visualiesierung seiner Daten". Da weder die Visualiesierung noch die entsprechenden
+Zeilen Code näher spezifieziert sind wird in diesem Abschnitt Fliestext vermieden und stattdessen werden Stichpunkte 
+benutzt an denen sich die späteren Test orientieren können.
+
 ###Algemeine Tests
 * Speicher/Ladefunktion
 * Speicherdatei von Menschen lesbar
