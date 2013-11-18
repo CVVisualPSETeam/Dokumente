@@ -235,8 +235,9 @@ benutzt an denen sich die späteren Test orientieren können.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
-* Undefiniertes Verhalten: Verhalten welches zwar erwartbar, aber nicht formal spezifiziert ist
- 	(vgl. C++-Compiler Features, welche nicht im Standard definiert sind).
+* Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
+	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. (Umgangssprachlich:
+	Der Standard untersagt die Verwendung)
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
 
