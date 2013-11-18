@@ -56,10 +56,10 @@ Open Source-Visualisierung für OpenCV.
 
 ####Wunschkriterien
 #####Unterstützte OpenCV Features
-* imgproc/Histograms: calcHist
-* imgproc/Feature Detection: 
-	* Canny, 
-	* HoughCircles
+* imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
+* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
+	* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
+	* [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
 * stitching
 * ocl (OpenCL)
 
@@ -176,27 +176,28 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 * keine Resource-Leaks
 * kein undefiniertes Verhalten
 * Threadsafety
+* geringe Verzögerungen durch Berechnungen
 
 ##Testfälle und Testszenarien
 ###Algemeine Tests
-*Speicher/Ladefunktion
-*Speicherdatei von Menschen lesbar
-*Beenden des Programms
+* Speicher/Ladefunktion
+* Speicherdatei von Menschen lesbar
+* Beenden des Programms
 
 ###Tests für Filterview 
-*Anzeige der/des Bild(es)
-*Auswählen und wechseln vom Filter
-*Ändern der Werte eines Filters
-*Bedienung bei einem Großen Bild und geringer Rechenleistung
-*Benutzung mit mehr als einem Bild
+* Anzeige der/des Bild(es)
+* Auswählen und wechseln vom Filter
+* Ändern der Werte eines Filters
+* Bedienung bei einem Großen Bild und geringer Rechenleistung
+* Benutzung mit mehr als einem Bild
 
 
 ###Tests für Matchview
-*Anzeige der/des Bild(es)
-*Auswählen und wechseln von Views
-*Sämtliche Buttons und Schieberegler testen
-*Bedingung auch mit großen Bildern und mit geringer Rechenleistung
-*Test mit Videos?
+* Anzeige der/des Bild(es)
+* Auswählen und wechseln von Views
+* Sämtliche Buttons und Schieberegler testen
+* Bedingung auch mit großen Bildern und mit geringer Rechenleistung
+* Test mit Videos?
 
 ##Entwicklungsumgebung
 * gcc-4.8.0 oder später
