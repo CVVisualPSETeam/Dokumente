@@ -40,18 +40,18 @@ Zielbestimmungen
 //->	Bei einigen die deutschen Begriffe hinzugefügt; komplexere im Glossar kurz erklärt.
 
 #####Unterstützte OpenCV Features
-- imgproc/Image Filtering: 
-	- dilate (Dilatation),
-	- erode (Erosion),
-	- morphologyEx,
-	- Sobel
-- imgproc/Miscellaneous Image Transformations: 
-	- threshold, 
-	- adaptiveThreshold,
-	- floodFill (Ausfüllen)
-- feature2sd: 
-	- KeyPoint, 
-	- DMatch
+- [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
+	- [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
+	- [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
+	- [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
+	- [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
+- [imgproc/Miscellaneous Image Transformations](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html): 
+	- [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
+	- [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
+	- [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
+- [feature2sd](http://docs.opencv.org/modules/features2d/doc/features2d.html): 
+	- [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
+	- [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
 
 #####Allgemeine API Features
 - Auswahl der Visualisierung für Operationstyp
@@ -86,7 +86,33 @@ Zielbestimmungen
 
 #####Visualisierungen
 ######Für Matches
+Verbindungslinien
+-----------------
+_(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
+_and_matches.html?highlight=drawmatches#drawmatches)_
+- Einzeichnen der Keypoints in die Bilder
+- Verbinden der Matches durch Linien
+- Einfärben der Linien mit Falschfarben
+- Ausblenden der Keypoints ohne Matches
+- Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
+- x% oder n besten/schlechtesten Matches
+- Manuelle Auswahl von Matches
+
+Rohdaten
+--------
+- Abmessungen der Bilder
+- Farbraum der Bilder (der in OpenCV genutzte Datentyp)
+- Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
+- Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
+
+Projektion
+----------
+- Einzeichnen von Linien / Formen
+- Auswählen von zugehörigen Matches
+- Die Linien / Formen werden auf das zweite Bild projiziert 
+
 ######Für Filter
+- Differenzbilder _([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))_
 
 #####Allgemein
 - Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
@@ -144,8 +170,10 @@ nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten
 
 Produktdaten
 ------------
-
-Keine?
+Handbuch
+Dokumentation
+Speicherstände von Einstellungen
+Snapshots aus der Debug-Oberfläche
 
 Systemmodell
 ------------
@@ -203,10 +231,6 @@ Testfälle und Testszenarien
 *Sämtliche Buttons und Schieberegler testen
 *Bedingung auch mit großen Bildern und mit geringer Rechenleistung
 *Test mit Videos?
-
-
-
-
 
 Entwicklungsumgebung
 --------------------
