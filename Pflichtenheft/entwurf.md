@@ -6,7 +6,7 @@ Einleitung
 
 OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
 Es wurde im Jahre 2000 der breiteren Öffentlichkeit vorgestellt, 6 Jahre später erschien Version 1.0.  
-Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute der Quasi-Standard unter den freien   
+Seitdem hat sich das Projekt stetig weiterentwickelt - es ist heute quasi der Standard unter den freien   
 Bilderkennungs-Bibliotheken.
 Es umfasst heutzutage Algorithmen für zum Beispiel einfache Bilderkennung, Gesichtserkennung,  
 Bewegungsverfolgung und vieles mehr. Die Bibliothek ist auf Performance optimiert und findet auch  
@@ -22,7 +22,7 @@ Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfa
 der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
 das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
 bestehen, oder aber sie greifen auf ein Microsoft-Plug-in für Visual Studio mit stark eingeschränktem  
-Funktionsumfang zurück (d.h. man kann im wesentlichen nur Bilder ansehen, die im Speicher liegen).
+Funktionsumfang zurück (man kann damit im wesentlichen nur Bilder ansehen, die im Speicher liegen).
 Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
 zu Debugzwecken eine große Hürde dar.  
 
@@ -37,11 +37,21 @@ Zielbestimmungen
 ####Musskriterien
 
 //TODO: Überlegen ob nicht lieber deutsche Beschreibung der Feautures mit Verweis auf Bezeichnung
+//->	Bei einigen die deutschen Begriffe hinzugefügt; komplexere im Glossar kurz erklärt.
 
 #####Unterstützte OpenCV Features
-- imgproc/Image Filtering: dilate, erode, morphologyEx, Sobel
-- imgproc/Miscellaneous Image Transformations: threshold, adaptiveThreshold, floodFill
-- feature2sd: KeyPoint, DMatch
+- imgproc/Image Filtering: 
+	- dilate (Dilatation),
+	- erode (Erosion),
+	- morphologyEx,
+	- Sobel
+- imgproc/Miscellaneous Image Transformations: 
+	- threshold, 
+	- adaptiveThreshold,
+	- floodFill (Ausfüllen)
+- feature2sd: 
+	- KeyPoint, 
+	- DMatch
 
 #####Allgemeine API Features
 - Auswahl der Visualisierung für Operationstyp
@@ -52,9 +62,11 @@ Zielbestimmungen
 
 #####Unterstützte OpenCV Features
 - imgproc/Histograms: calcHist
-- imgproc/Feature Detection: Canny, HoughCircles
+- imgproc/Feature Detection: 
+	- Canny, 
+	- HoughCircles
 - stitching
-- ocl
+- ocl (OpenCL)
 
 #####Allgemeine API Features
 - Optionale Parameter für Einstellungen der Visualisierungen
@@ -74,7 +86,7 @@ Zielbestimmungen
 
 #####Visualisierungen
 ######Für Matches
-######FÜr Filter
+######Für Filter
 
 #####Allgemein
 - Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
@@ -87,7 +99,7 @@ Zielbestimmungen
 ###Abgrenzungskriterien
 
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
-keine andere Lösung bekannt, insbesondere keine die FLOSS ist, die mit unserer vergleichbare Ziele
+keine andere Lösung bekannt, insbesondere keine die Open Source ist, die mit unserer vergleichbare Ziele
 verfolgt.
 
 
@@ -208,12 +220,17 @@ Entwicklungsumgebung
 
 Glossar
 -------
+###Allgemein:
 
 * Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
 	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
+ 
+* Filter: In der Bildverarbeitung die Veränderung eines Bildbereiches mithilfe eines bestimmten Algorithmus.
 
-* Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, welche vom Benutzer
-	an die API übergeben werden.
+* Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, 
+	welche vom Benutzer an die API übergeben werden.
+ 
+* Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
 
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
@@ -221,7 +238,50 @@ Glossar
 * Resource-Leak: Das Auftreten der Situation, dass Ressourcen irgendeiner Art (Speicher, Dateien, usw.) zwar
 	alloziert werden, aber nach Verwendung nicht mehr an das System zurückgegeben werden.
 
+* Streaming: Hier das Weiterlaufen des Datenstroms.
+
 * Undefiniertes Verhalten: Verhalten welches zwar erwartbar, aber nicht formal spezifiziert ist
  	(vgl. C++-Compiler Features, welche nicht im Standard definiert sind).
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
+
+###OpenCV:
+
+* adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
+	in (u.U. invertierte) Binärbilder umwandeln kann.
+
+* calcHist: Berechnet Histogramm.
+
+* Canny: Kantenerkennung (mithilfe des Canny86-Algorithmus).
+
+* Dilatation: Berechnung des Bereiches in einem Bild, der von einer Maske abgedeckt wird, wenn sich deren
+	Bezugspunkt durch den ganzen zu untersuchenden Bildbereich bewegt.
+
+* DMatch: Klasse für das Matching (vgl. Matches)
+
+* Erosion: Prüft, ob eine Maske, etwa eine geometrische Figur, vollständig in ein Bild 
+	bzw. einen Bildbereich passt und gibt u.U. ein Bild zurück,
+	 in dem nur die überdeckten Teile erhalten sind. 
+	Bildet zusammen mit der Dilatation zwei der grundlegenden Bilverarbeitungsmethoden.
+
+* floodFill: Bei dieser Methode wird ein zusammenhängender Bereich des Bildes 
+	mit der übergebenen Farbe ausgefüllt.
+
+* HoughCircles: Findet Kreise in einem Graustufenbild (unter Benutzung der Hough-Transformation).
+
+* KeyPoint: Klasse, die Daten eines Punktes (Koordinaten, Nachbarschaftsgröße etc.) enthält.
+
+* morphologyEx: diese Methode von OpenCV erlaubt fortgeschrittene morphologische Transformationen
+	unter Benutzung und mehrfacher Anwendung von Dilatation und Erosion.
+
+* ocl:  Das OCL-Modul stellt Implementierungen von OpenCV-Funktionalität für Geräte, 
+	welche die Open Computing Language (kurz OpenCL), ein Interface über Parallelrechner, benutzen, 
+	zur Verfügung.
+
+* Sobel-Operator: Ein Kantenerkennungs-Filter.
+
+* Stitching: Zusammenfügen mehrerer Bilder mit zusammenhängnden Bereichen an den Rändern 
+	zu einem großen Bild, etwa von Einzelfotografien zu einem Panorama.
+
+* threshold: Diese Methode eröffnet verschiedene Möglichkeiten, die Elemente eines Arrays auf ein 
+	bestimmtes Niveau zu trimmen, auf binäre Werte herunterzubrechen und ähnliches.
