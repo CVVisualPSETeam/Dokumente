@@ -86,9 +86,10 @@ Zielbestimmungen
 
 #####Visualisierungen
 ######Für Matches
+// TODO: format anpassen! es kann keine weitere unterüberschrift genutzt werden
 #######Verbindungslinien
 _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
-_and_matches.html?highlight=drawmatches#drawmatches)_
+_and_matches.html?highlight=drawmatches#drawmatches))_
 - Einzeichnen der Keypoints in die Bilder
 - Verbinden der Matches durch Linien
 - Einfärben der Linien mit Falschfarben
