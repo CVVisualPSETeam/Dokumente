@@ -127,7 +127,7 @@ Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt
 C++11-Compiler.
 
 ##Produktfunktion
-Unser Produkt wird ein Debug-werkzeug für diverse opencv-Funktionalität sein. Hierzu werden wir
+Unser Produkt wird ein Debug-Werkzeug für diverse OpenCB-Funktionalität sein. Hierzu werden wir
 die Ergebnisse von Filteroperationen verwenden um die Auswirkungen des Filters auf ein oder mehrere
 Ursprungsbilder graphisch darzustellen.
 
@@ -148,11 +148,26 @@ Je nach Filter werden wir beispielsweise die Differenz zwischen zwei Bildern mit
 Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
 nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
-##Produktdaten
-Handbuch
-Dokumentation
-Speicherstände von Einstellungen
-Snapshots aus der Debug-Oberfläche
+##Produktdaten //IMPORTANT: Bitte die Formatierung in diesem Abschnitt nicht ändern!!!
+Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen.
+Da es sich bei unserem Projekt um ein (wie schon erwähnt) Open-Source-Projekt handelt, welches auf Akzeptanz in der
+OpenCV Community hofft, ist es wichtig, diese Dokumentation möglichst umfangreich und gleichzeitig verständlich zu halten.
+- Handbuch:
+	Ein Handbuch, dass die Benutzung unserer Bibliothek, der GUI und die einzelnen Visualisierungen erklärt.
+	Es enthällt aber nicht nur das, sondern auch einen Kurzeinstiegs-Text und Anleitungen zur Erweiterung unseres Projektes.
+	Im letzteren mit Fokus auf der Entwicklung neuer Views.
+- Dokumentation:
+	Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt,
+	wie z.B. die API verwendbar ist.
+- FAQ:
+	Eine kurze Aufzählung von Fragen, die die API oder die GUI bei neuen Benutzern aufwirft, und deren Beantwortung.
+	Es hat sich bei anderen Software-Projekten gezeigt, dass eine simple FAQ oft die viele Probleme lösen kann.
++ Einstellungen:
+	Einstellungen der Übersichtsseite (z.B. ob Bilder angezeigt werden sollen, oder nicht) und der einzelnen Visualisierungen,
+	welche vom Benutzer verändert wurden, sollen gespeichert werden.
++ Rohdaten:
+	In vielen Views wird es (vielleicht) möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
++ Ursprungsbilder und Visualisierungen (als Bilder)
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
@@ -246,6 +261,10 @@ Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Hand
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
 
+* Rohdaten: ...
+
+* GUI: ...
+
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
 	in (u.U. invertierte) Binärbilder umwandeln kann.
@@ -285,3 +304,12 @@ Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Hand
 
 * threshold: Diese Methode eröffnet verschiedene Möglichkeiten, die Elemente eines Arrays auf ein 
 	bestimmtes Niveau zu trimmen, auf binäre Werte herunterzubrechen und ähnliches.
+
+
+##Literatur
+- Technisches Schreiben -- (nicht nur) für Informatiker / Peter Rechenberg:
+	Ein anschaulich und verständlich geschriebenes Buch, dass hilft den eigenen Schreibstil zu verbessern. Und damit die Verständlichkeit 
+	der geschriebenen Dokumentation (vgl. Produktdaten) zu erhöhen.
+- Designed for Use -- Create Usable Interfaces for Applications and the Web / Lukas Mathis:
+	Die vorliegenden GUI-Entwürfe (vgl. Quarktasche) sind stark von diesem Buch beeinflusst, da es wichtige Techniken, Methoden und Denkmuster
+	der UI-Entwicklung vermittelt. (Und das in einer für Informatiker verständlichen Sprache.)
