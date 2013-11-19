@@ -241,8 +241,10 @@ Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Hand
 * openCV
 
 ##Lizenz
-* Bilder: WTFPL
-* Code : BSD
+Der Quellcode unseres Projektes steht aus Kompatibiliätsgründen unter der BSD Clause 3 Lizenz - der selben Lizenz wie OpenCV.
+Sofern nicht anders angegeben stehen jegliche Dokumentation und die gesammten zum Projekt gehörigen Bilder unter der CC-BY Lizenz.
+
+//TODO: Add license texts...
 
 ##Glossar
 ###Allgemein:
