@@ -28,7 +28,6 @@ Open Source-Visualisierung für OpenCV.
 
 ##Zielbestimmungen
 
-
 ###API Kriterien
 
 ####Musskriterien
@@ -180,15 +179,21 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Testfälle und Testszenarien
 
-Unser Projekt ist eine debug Bibliothek die sich hauptsächlich um Visualiesierung, mit möglichst geringen Aufwand
-für den Programmierer, kümmert. Deshalb enthält der Funktionsumfang hauptsächlich Anziegeoptionen. leider würden 
-dadurch alle Testfälle/szenarios in der Form sein: "der Programmierer schreibt die entsprechendenzeilencode in
-seinen Quelltext und sieht eine Visualiesierung seiner Daten". Da weder die Visualiesierung noch die entsprechenden
-Zeilen Code näher spezifieziert sind wird in diesem Abschnitt Fliestext vermieden und stattdessen werden Stichpunkte 
-benutzt an denen sich die späteren Test orientieren können.
+Im folgenden mehrere Testfälle, davor aber eine kurze Erklärung. Unser Projekt ist aber eine reine Debug-Bibliothek ist, deren Ziel (siehe weiter oben) es ist, es dem Benutzer, d.h. Programmierer,
+möglichst einfach zu machen, seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur Visualisierungen. leider würden 
+Was dazu führt, dass viele Testszenarios die folgende Struktur haben: 
+ - der Programmierer schreibt den gewünschten API-Aufruf, an die gewünschte Stelle in seinen Quelltext.
+-> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
+-> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
+-> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
+-> Er arbeitet debugged entweder weiter sein Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert gewünschte.
+-> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
 
-###Algemeine Tests
-* Speicher/Ladefunktion
+Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Handlungsmuster mit unserem Projekt beschreiben.
+
+
+###Hauptseitentest
+
 * Speicherdatei von Menschen lesbar
 * Beenden des Programms
 
