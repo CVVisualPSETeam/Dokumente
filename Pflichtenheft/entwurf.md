@@ -112,6 +112,13 @@ _and_matches.html?highlight=drawmatches#drawmatches))_
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
+###Nichtfunktionale Anforderungen
+* __NF100__ keine Resource-Leaks
+* __NF200__ kein undefiniertes Verhalten
+* __NF300__ Möglichst kein Overhead im Release-mode.
+* __NF400__ geringe Verzögerungen durch Berechnungen
+* __NF500__ Threadsafety
+
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
 keine andere Lösung bekannt, insbesondere keine die Open Source ist, die mit unserer vergleichbare Ziele
@@ -148,6 +155,7 @@ Je nach Filter werden wir beispielsweise die Differenz zwischen zwei Bildern mit
 Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
 nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
+
 ##Produktdaten //IMPORTANT: Bitte die Formatierung in diesem Abschnitt nicht ändern!!!
 Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen.
 Da es sich bei unserem Projekt um ein (wie schon erwähnt) Open-Source-Projekt handelt, welches auf Akzeptanz in der
@@ -179,7 +187,7 @@ OpenCV Community hofft, ist es wichtig, diese Dokumentation möglichst umfangrei
 Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Produktleistungen
-* Möglichst kein Overhead im Release-mode.
+
 
 ##Bedienoberfläche
 * Die Bedienoberfläche wird in Qt implementiert sein.
@@ -187,10 +195,7 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 * Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
 
 ##Qualitätszielbestimmungen
-* keine Resource-Leaks
-* kein undefiniertes Verhalten
-* Threadsafety
-* geringe Verzögerungen durch Berechnungen
+
 
 ##Testfälle und Testszenarien
 
@@ -233,7 +238,11 @@ Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Hand
 * C++11 oder später
 * GNU/Linux
 * Cmake
-* opencv
+* openCV
+
+##Lizenz
+* Bilder: WTFPL
+* Code : BSD
 
 ##Glossar
 ###Allgemein:
