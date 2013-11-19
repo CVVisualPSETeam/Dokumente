@@ -113,6 +113,13 @@ _and_matches.html?highlight=drawmatches#drawmatches))_
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
+###Nichtfunktionale Anforderungen
+* __NF100__ keine Resource-Leaks
+* __NF200__ kein undefiniertes Verhalten
+* __NF300__ Möglichst kein Overhead im Release-mode.
+* __NF400__ geringe Verzögerungen durch Berechnungen
+* __NF500__ Threadsafety
+
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
 keine andere Lösung bekannt, insbesondere keine die Open Source ist, die mit unserer vergleichbare Ziele
@@ -150,10 +157,10 @@ Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filter
 nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
 ##Produktdaten
-Handbuch
-Dokumentation
-Speicherstände von Einstellungen
-Snapshots aus der Debug-Oberfläche
+* Handbuch
+* Dokumentation
+* Speicherstände von Einstellungen
+* Snapshots aus der Debug-Oberfläche
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
@@ -165,7 +172,7 @@ Snapshots aus der Debug-Oberfläche
 Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Produktleistungen
-* Möglichst kein Overhead im Release-mode.
+
 
 ##Bedienoberfläche
 * Die Bedienoberfläche wird in Qt implementiert sein.
@@ -173,10 +180,7 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 * Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
 
 ##Qualitätszielbestimmungen
-* keine Resource-Leaks
-* kein undefiniertes Verhalten
-* Threadsafety
-* geringe Verzögerungen durch Berechnungen
+
 
 ##Testfälle und Testszenarien
 
@@ -213,7 +217,12 @@ benutzt an denen sich die späteren Test orientieren können.
 * C++11 oder später
 * GNU/Linux
 * Cmake
-* opencv
+* openCV
+
+##Lizenz
+//TODO welche bsdlizenz war es? + noch andere teile?
+* Bilder: WTFPL
+* Code : BSD
 
 ##Glossar
 ###Allgemein:
