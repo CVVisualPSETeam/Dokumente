@@ -233,20 +233,73 @@ Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Hand
 * Test mit Videos?
 
 ##Entwicklungsumgebung
-* gcc-4.8.0 oder später
+
+###Quellcode
+* GCC 4.8.0 oder später
+	Der GCC ist die vom GNU Projekt entwickelte Compiler Sammlung, welche den verwendeten C++ Compiler enthällt.
+	Es wird hierbei eine Version >= 4.8.0 erwartet, da frühere Versionen manche verwendeten C++ Eigenschaften noch nicht
+	unterstützen.
 * Qt 5
+	Bla bla blub...
 * C++11 oder später
 * GNU/Linux
-* Cmake
-* openCV
+* CMake
+* OpenCV
+
+###Dokumentation
+Zur Dokumentation werden im wesentlichen die auch von OpenCV verwendeten Werkzeuge benutzt.
+Die folgende Aufzählung wird im Verlauf des Projektentwicklung unter Umständen noch erweitert.
+* SPHINX: Ein in Python geschriebenes Werkzeug mit dessen Hilfe, das Handbuch und das FAQ geschrieben wird.
+* Doxygen: Ein weitverbreitetes Werkzeug um aus den Kommentaren im Quelltext unseres Projektes eine übersichtliche Quelltextdokumentation zu erzeugen (vgl. Produktdaten). Es wird in Verbindung mit SPHINX verwendet.
 
 ##Lizenz
-Der Quellcode unseres Projektes steht aus Kompatibiliätsgründen unter der BSD Clause 3 Lizenz - der selben Lizenz wie OpenCV.
-Sofern nicht anders angegeben stehen jegliche Dokumentation und die gesammten zum Projekt gehörigen Bilder unter der CC-BY Lizenz.
+Unser Projekt ist (wie schon so oft erwähnt) OpenSource, weshalb jegliche Dokumentation und Quelllcode unter freien Lizenzen stehen.
+Im folgenden werden nun kurz die Lizenzen für Dokumentation und Quelltext erläutert.
 
-//TODO: Add license texts...
+###Quellcode
+Der Quelltext dieses Projektes steht in seiner Gesammtheit unter der BSD Clause 3 Lizenz, da auch OpenCV unter dieser Lizenz steht.
+Die BSD Clause 3 Lizenz erlaubt es anderen Entwicklern den Quelltext unseres Projektes, wie auch dessen Binärformen, weiterzuverteilen und zu verändern,
+solange der folgende Lizenzabschnitt im Programm selbst, dem Quelltext und der Dokumentation enthalten ist.
+Außerdem ist es verboten, den Namen CVVisual oder die Namen der Mitentwickler zur Produktwerbung zu verwenden, ohne dass eine vorherige Erlaubnis eingeholt wurde.
+
+	Copyright (c) 2013, CVVisual PSE Team
+	All rights reserved.
+
+	Redistribution and use in source and binary forms, with or without
+	modification, are permitted provided that the following conditions are met:
+		* Redistributions of source code must retain the above copyright
+		   notice, this list of conditions and the following disclaimer.
+		* Redistributions in binary form must reproduce the above copyright
+		   notice, this list of conditions and the following disclaimer in the
+		   documentation and/or other materials provided with the distribution.
+		* Neither the name of the <organization> nor the
+		   names of its contributors may be used to endorse or promote products
+		   derived from this software without specific prior written permission.
+
+	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+	DISCLAIMED. IN NO EVENT SHALL THE CVVISUAL DEVELOPERS BE LIABLE FOR ANY
+	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Diese Lizenz hat außerdem, gegenüber z.B. der GNU GPL, den Vorteil, dass es auch eine Verwendung unseres Projektes
+im Umfeld proprietärer Lizenzen erlaubt, und damit hoffentlich auch von Unternehmen genutzt werden kann.
+
+###Dokumentation
+Die Dokumentation, mit sammt aller Bilder und Texte, steht unter der [CC-BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/3.0/),
+sofern nicht anders angegeben. Sie ist im Internet weit verbreitet - z.B. die Wikipedia nutzt sie - und eignet sich gut für unsere Zwecke.
+Die Lizenz erlaubt es anderen die Dokumentation und Teile jener, zu kopieren und weiter zu verteilen, zu verändern und zu kommerziellen Zwecken
+zu verwenden. Hierbei muss allerdings immer der Autor genannt werden und abgeleitete Werke müssen unter der selben, oder einer gleichwertigen,
+Lizenz gestellt werden.
 
 ##Glossar
+
+//TODO alle Wörter, die für Nichtinformatiker (z.B. Mathematiker) befremdlich sind hinzu fügen...
 ###Allgemein:
 * Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
 	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
@@ -267,14 +320,24 @@ Sofern nicht anders angegeben stehen jegliche Dokumentation und die gesammten zu
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
 * Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
-	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. (Umgangssprachlich:
-	Der Standard untersagt die Verwendung)
+	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. Etwas Umgangssprachlich:
+	Der Standard untersagt die Verwendung.
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
 
-* Rohdaten: ...
+* Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
 
 * GUI: ...
+
+* freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
+
+* Datenstrom: ...
+
+* proprietärer: ...
+		
+* Binärform: ...
+
+* GNU: ...
 
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
