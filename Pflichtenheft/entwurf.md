@@ -294,21 +294,53 @@ Lizenz gestellt werden.
 
 //TODO alle Wörter, die für Nichtinformatiker (z.B. Mathematiker) befremdlich sind hinzu fügen...
 ###Allgemein:
+		
+* Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
+	Quellcode. Anders als dort ist hier kaum sichtbar, wie das Programm genau arbeitet,
+	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (daher der Name).
+
+* Datenstrom: Daten, die beispielsweise während der Ausführung eines Programms fließen, 
+	wobei das Ende dieses Flusses nicht absehbar ist.
+
 * Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
 	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
+
+* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, wenn sie anfangen unser Projekt zu nutzen.
  
 * Filter: In der Bildverarbeitung die Veränderung eines Bildbereiches mithilfe eines bestimmten Algorithmus.
+
+* freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
+
+* GNU: "GNU is Not Unix". Freies Betriebssystem und Software.
+
+* GNU GPL: General Public License. Eine freie Software-Lizenz. Alle auf einer unter dieser Lizenz stehenden
+	Software aufbauenden Software steht ebenfalls unter dieser Lizenz.
+
+* GNU/Linux: Das GNU-Betreibssystem in Kombination mit einem Linux-Kernel.
+
+* GNU-Projekt: Das Projekt zur Erstellung von GNU-Betriebssystem und Software.
+
+* GUI: Graphical User Interface, zu deutsch Graphische Benutzeroberfläche. Stellt Funktionen graphisch dar,
+	so dass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
+	textbasierten Benutzerschnittstellen.
 
 * Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, 
 	welche vom Benutzer an die API übergeben werden.
  
 * Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
 
+* proprietär: In diesem Zusammenhang Software, die nicht unter einer freien Lizenz steht.
+
+* Quellcode oder Quelltext: In einer Programmiersprache geschriebener Text, der zu einem 
+	Computerprogramm umgewandelt werden kann. Vgl. auch Binärform.
+
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
 
 * Resource-Leak: Das Auftreten der Situation, dass Ressourcen irgendeiner Art (Speicher, Dateien, usw.) zwar
 	alloziert werden, aber nach Verwendung nicht mehr an das System zurückgegeben werden.
+
+* Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
@@ -317,22 +349,6 @@ Lizenz gestellt werden.
 	Der Standard untersagt die Verwendung.
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
-
-* Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
-
-* GUI: ...
-
-* freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
-
-* Datenstrom: ...
-
-* proprietärer: ...
-		
-* Binärform: ...
-
-* GNU: ...
-
-* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, wenn sie anfangen unser Projekt zu nutzen.
 
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
