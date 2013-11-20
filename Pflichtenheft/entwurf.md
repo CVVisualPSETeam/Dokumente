@@ -283,6 +283,13 @@ Lizenz gestellt werden.
 
 ##Glossar
 ###Allgemein:
+* API: Application Programming Interface. Eine Schnittstelle, über welche andere Programme auf der 
+	Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
+
+* Augmented Reality: "Erweiterung der Realität" durch einen Computer, etwa bei der Einblendung von
+	Informationen in ein Bild der Umgebung, das etwa auf einem Smartphone angezeigt wird.
+
+* Bug: Fehlerhaftes Verhalten eines Programmes.
 		
 * Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
 	Quellcode. Anders als dort ist hier kaum sichtbar, wie das Programm genau arbeitet,
@@ -290,6 +297,10 @@ Lizenz gestellt werden.
 
 * Datenstrom: Daten, die beispielsweise während der Ausführung eines Programms fließen, 
 	wobei das Ende dieses Flusses nicht absehbar ist.
+
+* Debug-Modus: Modus, bei dem zusätzliche Informationen angezeigt werden, um dem Programmierer das
+	Auffinden und Beheben von Bugs (kurz Debugging oder Debuggen), hier insbesondere 
+	Programmierfehlern, zu erleichtern. Vgl. Release-Modus.
 
 * Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
 	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
@@ -313,10 +324,18 @@ Lizenz gestellt werden.
 	so dass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
 	textbasierten Benutzerschnittstellen.
 
+* Interface: Schnittstelle. Ein Zugriffspunkt auf Funktionalitäten von außen, der einerseits den Zugriff 
+	erleichtern und andererseits die eigentliche Funktionalität verbergen soll.
+
 * Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, 
 	welche vom Benutzer an die API übergeben werden.
+
+* OpenSource: Deutsch offene Quelle. Software, bei welcher der Quellcode frei zugänglich gemacht wird.
+	Dies erlaubt unter anderem die Weiterverwendung und -entwicklung durch andere.
  
 * Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
+
+* Plug-in: Grob gesagt Zusatzfunktionalität für ein Programm.
 
 * proprietär: In diesem Zusammenhang Software, die nicht unter einer freien Lizenz steht.
 
@@ -326,6 +345,9 @@ Lizenz gestellt werden.
 * „random code“: Individueller Wegwerfcode der nur für eine einzige Probleminstanz hilfreich ist und
 	sich meist durch nichtexistentes Design auszeichnet.
 
+* Release-Modus: Veröffentlichungs-Modus, in dem keine zusätzlichen Debug-Informationen 
+	angezeigt werden, also der Modus, in dem das fertige Programm läuft.
+
 * Resource-Leak: Das Auftreten der Situation, dass Ressourcen irgendeiner Art (Speicher, Dateien, usw.) zwar
 	alloziert werden, aber nach Verwendung nicht mehr an das System zurückgegeben werden.
 
@@ -333,11 +355,22 @@ Lizenz gestellt werden.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
+* Thread: Dt. Faden. Moderne Computer besitzen mehrere Prozessorkerne, die sich Rechenarbeit aufteilen
+	können. Ein solcher Teil wird als Thread bezeichnet.
+
+* Threadsafety: Es ist sichergestellt, das mehrere Threads sich nicht gegenseitig in die Quere kommen, etwa
+	beim Speichern von Daten.
+
 * Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
 	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. Etwas Umgangssprachlich:
 	Der Standard untersagt die Verwendung.
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
+
+* Visual Studio: Integrierte Entwicklungsumgebung, d.h. Programm zur Softwareentwicklung, das zur 
+	Vereinfachung der Arbeit verschiedene Anwendungsprogramme, die sonst einzelnen aufgerufen 
+	werden müssten, vereint, welche von Microsoft entwickelt wurde und verschiedene 
+	Programmiersprachen unterstützt.
 
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
