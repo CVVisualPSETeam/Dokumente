@@ -29,37 +29,33 @@ Open Source-Visualisierung für OpenCV.
 ##Zielbestimmungen
 
 ###API Musskriterien
-
 * Auswahl der Visualisierung für Operationstyp
 * Globale Auswahl zwischen Debug und Release Modus
-
-* [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
-	* [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
-	* [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
-	* [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
-	* [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
-* [imgproc/Miscellaneous Image Transformations](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html): 
-	* [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
-	* [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
-	* [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
-* [feature2sd](http://docs.opencv.org/modules/features2d/doc/features2d.html): 
-	* [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
-	* [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
-
-Die Unterstützung folgender Module ist hingegen optional:
+* Unterstützung folgender Operationen:
+	* [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
+		* [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
+		* [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
+		* [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
+		* [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
+	* [imgproc/Miscellaneous Image Transformations](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html): 
+		* [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
+		* [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
+		* [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
+	* [feature2sd](http://docs.opencv.org/modules/features2d/doc/features2d.html): 
+		* [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
+		* [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
 
 ###API Wunschkriterien
-
 * Optionale Parameter für Einstellungen der Visualisierungen
 * Lokale Auswahl Debug/Release
 * Optionale nicht-blockierende Aufrufe für Streaming
-
-* imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
-* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
-	* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
-	* [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
-* stitching
-* ocl (OpenCL)
+* Unterstützung folgender Operationen:
+	* imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
+	* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
+		* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
+		* [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
+	* stitching
+	* ocl (OpenCL)
 
 
 ###GUI Musskriterien
@@ -74,9 +70,7 @@ Die Unterstützung folgender Module ist hingegen optional:
 * Datenfluss von GUI zu Code sofern sinnvoll
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
-
-
-* Verbindungslinien
+* Darstellung von Verbindungslinien
 	* (ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
 _and_matches.html?highlight=drawmatches#drawmatches))
 	* Einzeichnen der Keypoints in die Bilder
@@ -86,18 +80,16 @@ _and_matches.html?highlight=drawmatches#drawmatches))
 	* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
 	* x% oder n besten/schlechtesten Matches
 	* Manuelle Auswahl von Matches
-
-* Rohdaten
+* Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
 	* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-
-* Projektion
+* Darstellung von Projektionen
 	* Einzeichnen von Linien / Formen
 	* Auswählen von zugehörigen Matches
 	* Die Linien / Formen werden auf das zweite Bild projiziert 
-* Filter
+* Darstellungen für Filter
 	* Differenzbilder ([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))
 
 
