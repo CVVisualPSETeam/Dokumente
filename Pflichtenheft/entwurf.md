@@ -32,9 +32,6 @@ Open Source-Visualisierung für OpenCV.
 
 ####Musskriterien
 
-//TODO: Überlegen ob nicht lieber deutsche Beschreibung der Feautures mit Verweis auf Bezeichnung
-//->	Bei einigen die deutschen Begriffe hinzugefügt; komplexere im Glossar kurz erklärt.
-
 #####Unterstützte OpenCV Features
 * [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
 	* [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
@@ -118,27 +115,28 @@ _and_matches.html?highlight=drawmatches#drawmatches))_
 * __NF300__ Möglichst kein Overhead im Release-mode.
 * __NF400__ geringe Verzögerungen durch Berechnungen
 * __NF500__ Threadsafety
+* __NF600__ Tolleranz gegenüber fehlerhaften API-Aufrufen
 
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
-keine andere Lösung bekannt, insbesondere keine die Open Source ist, die mit unserer vergleichbare Ziele
-verfolgt.
+keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
+Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
 
 ##Produkteinsatz
 Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
 werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
-OpenCV mit Qt Unterstützung kompiliert haben. (Kopie Lastenheft)
+OpenCV mit Qt Unterstützung kompiliert haben.
 
 ##Produktumgebung
 Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
 C++11-Compiler.
 
 ##Produktfunktion
-Unser Produkt wird ein Debug-Werkzeug für diverse OpenCB-Funktionalität sein. Hierzu werden wir
-die Ergebnisse von Filteroperationen verwenden um die Auswirkungen des Filters auf ein oder mehrere
-Ursprungsbilder graphisch darzustellen.
+Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
+die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das
+Ursprungsbild zu visualisieren.
 
-Um das debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
+Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
 Funktionalität dabei so implementieren, dass pro translation-unit der Debug-modus sowohl während
 des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während
 des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu
@@ -151,7 +149,7 @@ Zur Verwendung werden wir für die debugbaren opencv-Funktionalitäten Funktione
 eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
 Thread ein Hauptfenster).
 
-Je nach Filter werden wir beispielsweise die Differenz zwischen zwei Bildern mit Pfeilen darstellen.
+Je nach View werden wir beispielsweise die Matches zwischen zwei Bildern mit Pfeilen darstellen.
 Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
 nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
@@ -163,7 +161,7 @@ Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem
 	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek. Des Weiteren sind ein
 	Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von Erweiterungen des Projekts, insbesondere durch
 	das Hinzufügen neuer Views, enthalten.
-- Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die 	API verwendbar ist.
+- Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
 - FAQ
 - Einstellungen:
 	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
@@ -182,7 +180,7 @@ Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem
 Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Produktleistungen
-
+//TODO: weg?
 
 ##Bedienoberfläche
 * Die Bedienoberfläche wird in Qt implementiert sein.
@@ -190,25 +188,20 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 * Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
 
 ##Qualitätszielbestimmungen
-
+//TODO: weg? (ist eigendlich nf)
 
 ##Testfälle und Testszenarien
 
 Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst einfach macht,
 seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
 Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen die folgende Struktur: 
- - der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
--> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
--> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
--> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
--> Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
--> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
-
-
-###Hauptseitentest
-
-* Speicherdatei von Menschen lesbar
-* Beenden des Programms
+* -> der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
+* -> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
+* -> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
+* -> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
+* -> Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
+* -> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
+* -> Die Debugumgebung lässt sich ohne Fehler beenden.
 
 ###Tests für Filterview 
 * Anzeige der/des Bild(es)
@@ -223,7 +216,6 @@ Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen di
 * Auswählen und wechseln von Views
 * Sämtliche Buttons und Schieberegler testen
 * Bedingung auch mit großen Bildern und mit geringer Rechenleistung
-* Test mit Videos?
 
 ##Entwicklungsumgebung
 
@@ -233,11 +225,10 @@ Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen di
 	Es wird hierbei eine Version >= 4.8.0 erwartet, da frühere Versionen manche verwendeten C++ Eigenschaften noch nicht
 	unterstützen.
 * Qt 5
-	Bla bla blub...
-* C++11 oder später
-* GNU/Linux
-* CMake
+* C++11
 * OpenCV
+* GNU/Linux (besonders Ubuntu 12.04)
+* CMake
 
 ###Dokumentation
 Zur Dokumentation werden im wesentlichen die auch von OpenCV verwendeten Werkzeuge benutzt.
@@ -246,7 +237,7 @@ Die folgende Aufzählung wird im Verlauf des Projektentwicklung unter Umständen
 * Doxygen: Ein weitverbreitetes Werkzeug um aus den Kommentaren im Quelltext unseres Projektes eine übersichtliche Quelltextdokumentation zu erzeugen (vgl. Produktdaten). Es wird in Verbindung mit SPHINX verwendet.
 
 ##Lizenz
-Unser Projekt ist (wie schon so oft erwähnt) OpenSource, weshalb jegliche Dokumentation und Quelllcode unter freien Lizenzen stehen.
+Unser Projekt ist OpenSource, weshalb jegliche Dokumentation und Quelllcode unter freien Lizenzen stehen.
 Im folgenden werden nun kurz die Lizenzen für Dokumentation und Quelltext erläutert.
 
 ###Quellcode
@@ -285,14 +276,12 @@ im Umfeld proprietärer Lizenzen erlaubt, und damit hoffentlich auch von Unterne
 
 ###Dokumentation
 Die Dokumentation, mit sammt aller Bilder und Texte, steht unter der [CC-BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/3.0/),
-sofern nicht anders angegeben. Sie ist im Internet weit verbreitet - z.B. die Wikipedia nutzt sie - und eignet sich gut für unsere Zwecke.
+sofern nicht anders angegeben. 
 Die Lizenz erlaubt es anderen die Dokumentation und Teile jener, zu kopieren und weiter zu verteilen, zu verändern und zu kommerziellen Zwecken
 zu verwenden. Hierbei muss allerdings immer der Autor genannt werden und abgeleitete Werke müssen unter der selben, oder einer gleichwertigen,
 Lizenz gestellt werden.
 
 ##Glossar
-
-//TODO alle Wörter, die für Nichtinformatiker (z.B. Mathematiker) befremdlich sind hinzu fügen...
 ###Allgemein:
 		
 * Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
