@@ -157,25 +157,17 @@ nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten
 
 
 ##Produktdaten //IMPORTANT: Bitte die Formatierung in diesem Abschnitt nicht ändern!!!
-Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen.
-Da es sich bei unserem Projekt um ein (wie schon erwähnt) Open-Source-Projekt handelt, welches auf Akzeptanz in der
-OpenCV Community hofft, ist es wichtig, diese Dokumentation möglichst umfangreich und gleichzeitig verständlich zu halten.
-- Handbuch:
-	Ein Handbuch, dass die Benutzung unserer Bibliothek, der GUI und die einzelnen Visualisierungen erklärt.
-	Es enthällt aber nicht nur das, sondern auch einen Kurzeinstiegs-Text und Anleitungen zur Erweiterung unseres Projektes.
-	Im letzteren mit Fokus auf der Entwicklung neuer Views.
-- Dokumentation:
-	Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt,
-	wie z.B. die API verwendbar ist.
-- FAQ:
-	Eine kurze Aufzählung von Fragen, die die API oder die GUI bei neuen Benutzern aufwirft, und deren Beantwortung.
-	Es hat sich bei anderen Software-Projekten gezeigt, dass eine simple FAQ oft die viele Probleme lösen kann.
+- Handbuch: Umfasst Erklärungen zur GUI sowie der Benutzung der Bibliothek. Des Weiteren sind ein
+Wegweiser zum Schnelleinstieg und Anleitungen zur Erweiterung des Projekts, insbesondere durch
+das Hinzufügen neuer Views, enthalten.
+- Dokumentation: API; diese entstammt dem Quelltext des Projekts
+- FAQ //keine Erklärung notwendig: JEDER weiß, was ein FAQ ist
 + Einstellungen:
-	Einstellungen der Übersichtsseite (z.B. ob Bilder angezeigt werden sollen, oder nicht) und der einzelnen Visualisierungen,
+	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
 + Rohdaten:
-	In vielen Views wird es (vielleicht) möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-+ Ursprungsbilder und Visualisierungen (als Bilder)
+	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
++ Ursprungsbilder sowie, in Form von Snopshots, Visualisierungen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
