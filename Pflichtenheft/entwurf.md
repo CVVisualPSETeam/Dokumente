@@ -156,18 +156,21 @@ Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filter
 nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
 
 
-##Produktdaten //IMPORTANT: Bitte die Formatierung in diesem Abschnitt nicht ändern!!!
-- Handbuch: Umfasst Erklärungen zur GUI sowie der Benutzung der Bibliothek. Des Weiteren sind ein
-Wegweiser zum Schnelleinstieg und Anleitungen zur Erweiterung des Projekts, insbesondere durch
-das Hinzufügen neuer Views, enthalten.
-- Dokumentation: API; diese entstammt dem Quelltext des Projekts
-- FAQ //keine Erklärung notwendig: JEDER weiß, was ein FAQ ist
-+ Einstellungen:
+##Produktdaten
+Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
+
+- Handbuch:
+	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek. Des Weiteren sind ein
+	Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von Erweiterungen des Projekts, insbesondere durch
+	das Hinzufügen neuer Views, enthalten.
+- Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die 	API verwendbar ist.
+- FAQ
+- Einstellungen:
 	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
-+ Rohdaten:
+- Rohdaten:
 	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-+ Ursprungsbilder sowie, in Form von Snopshots, Visualisierungen
+- Ursprungsbilder sowie, Visualisierungen in Form von Schnappschüssen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
@@ -191,14 +194,14 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Testfälle und Testszenarien
 
-Unser Projekt ist eine reine Debug-Bibliothek ist, die es dem Benutzer möglichst einfach macht,
+Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst einfach macht,
 seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
-Visualisierungen und die meisten Testszenarios besitzen die folgende Struktur: 
+Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen die folgende Struktur: 
  - der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
 -> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
 -> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
 -> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
--> Er debugged entweder weiter sein Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
+-> Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
 -> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
 
 
@@ -328,6 +331,8 @@ Lizenz gestellt werden.
 * Binärform: ...
 
 * GNU: ...
+
+* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, wenn sie anfangen unser Projekt zu nutzen.
 
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
