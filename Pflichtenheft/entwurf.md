@@ -191,17 +191,15 @@ Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
 ##Testfälle und Testszenarien
 
-Im folgenden mehrere Testfälle, davor aber eine kurze Erklärung. Unser Projekt ist aber eine reine Debug-Bibliothek ist, deren Ziel (siehe weiter oben) es ist, es dem Benutzer, d.h. Programmierer,
-möglichst einfach zu machen, seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur Visualisierungen. leider würden 
-Was dazu führt, dass viele Testszenarios die folgende Struktur haben: 
- - der Programmierer schreibt den gewünschten API-Aufruf, an die gewünschte Stelle in seinen Quelltext.
+Unser Projekt ist eine reine Debug-Bibliothek ist, die es dem Benutzer möglichst einfach macht,
+seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
+Visualisierungen und die meisten Testszenarios besitzen die folgende Struktur: 
+ - der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
 -> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
 -> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
 -> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
--> Er arbeitet debugged entweder weiter sein Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert gewünschte.
+-> Er debugged entweder weiter sein Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
 -> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
-
-Trotz der einleitenden Sätze im folgenden mehrere Testfälle, die typische Handlungsmuster mit unserem Projekt beschreiben.
 
 
 ###Hauptseitentest
