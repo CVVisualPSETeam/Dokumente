@@ -77,8 +77,8 @@ Open Source-Visualisierung für OpenCV.
 // TODO: format anpassen! es kann keine weitere unterüberschrift genutzt werden
 
 #######Verbindungslinien
-_(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
-_and_matches.html?highlight=drawmatches#drawmatches))_
+*(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
+_and_matches.html?highlight=drawmatches#drawmatches))*
 * Einzeichnen der Keypoints in die Bilder
 * Verbinden der Matches durch Linien
 * Einfärben der Linien mit Falschfarben
@@ -99,7 +99,7 @@ _and_matches.html?highlight=drawmatches#drawmatches))_
 * Die Linien / Formen werden auf das zweite Bild projiziert 
 
 ######Für Filter
-* Differenzbilder _([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))_
+* Differenzbilder *([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))*
 
 #####Allgemein
 * Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
@@ -110,12 +110,12 @@ _and_matches.html?highlight=drawmatches#drawmatches))_
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
 ###Nichtfunktionale Anforderungen
-* __NF100__ keine Resource-Leaks
-* __NF200__ kein undefiniertes Verhalten
-* __NF300__ Möglichst kein Overhead im Release-mode.
-* __NF400__ geringe Verzögerungen durch Berechnungen
-* __NF500__ Threadsafety
-* __NF600__ Tolleranz gegenüber fehlerhaften API-Aufrufen
+* **NF100** keine Resource-Leaks
+* **NF200** kein undefiniertes Verhalten
+* **NF300** Möglichst kein Overhead im Release-mode.
+* **NF400** geringe Verzögerungen durch Berechnungen
+* **NF500** Threadsafety
+* **NF600** Tolleranz gegenüber fehlerhaften API-Aufrufen
 
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
