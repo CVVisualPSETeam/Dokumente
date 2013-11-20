@@ -28,11 +28,11 @@ Open Source-Visualisierung für OpenCV.
 
 ##Zielbestimmungen
 
-###API Kriterien
+###API Musskriterien
 
-####Musskriterien
+* Auswahl der Visualisierung für Operationstyp
+* Globale Auswahl zwischen Debug und Release Modus
 
-#####Unterstützte OpenCV Features
 * [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
 	* [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
 	* [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
@@ -46,12 +46,14 @@ Open Source-Visualisierung für OpenCV.
 	* [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
 	* [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
 
-#####Allgemeine API Features
-* Auswahl der Visualisierung für Operationstyp
-* Globale Auswahl zwischen Debug und Release Modus
+Die Unterstützung folgender Module ist hingegen optional:
 
-####Wunschkriterien
-#####Unterstützte OpenCV Features
+###API Wunschkriterien
+
+* Optionale Parameter für Einstellungen der Visualisierungen
+* Lokale Auswahl Debug/Release
+* Optionale nicht-blockierende Aufrufe für Streaming
+
 * imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
 * [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
 	* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
@@ -59,55 +61,45 @@ Open Source-Visualisierung für OpenCV.
 * stitching
 * ocl (OpenCL)
 
-#####Allgemeine API Features
-* Optionale Parameter für Einstellungen der Visualisierungen
-* Lokale Auswahl Debug/Release
-* Optionale nicht-blockierende Aufrufe für Streaming
 
-
-###GUI Kriterien
-####Musskriterien
+###GUI Musskriterien
 * Eine Visualisierung pro Operation (siehe API Kriterien)
 * Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
 * Zoomfunktion
 
-####Wunschkriterien
-#####Visualisierungen
-######Für Matches
-// TODO: format anpassen! es kann keine weitere unterüberschrift genutzt werden
-
-#######Verbindungslinien
-*(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
-_and_matches.html?highlight=drawmatches#drawmatches))*
-* Einzeichnen der Keypoints in die Bilder
-* Verbinden der Matches durch Linien
-* Einfärben der Linien mit Falschfarben
-* Ausblenden der Keypoints ohne Matches
-* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
-* x% oder n besten/schlechtesten Matches
-* Manuelle Auswahl von Matches
-
-#######Rohdaten
-* Abmessungen der Bilder
-* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
-* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
-* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-
-#######Projektion
-* Einzeichnen von Linien / Formen
-* Auswählen von zugehörigen Matches
-* Die Linien / Formen werden auf das zweite Bild projiziert 
-
-######Für Filter
-* Differenzbilder *([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))*
-
-#####Allgemein
+###GUI Wunschkriterien
 * Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
 * Permanente GUI mit Historie
 * Möglichkeit Operation mit geänderten Parametern erneut anzuwenden
 * Datenfluss von GUI zu Code sofern sinnvoll
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
+
+
+* Verbindungslinien
+	* (ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
+_and_matches.html?highlight=drawmatches#drawmatches))
+	* Einzeichnen der Keypoints in die Bilder
+	* Verbinden der Matches durch Linien
+	* Einfärben der Linien mit Falschfarben
+	* Ausblenden der Keypoints ohne Matches
+	* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
+	* x% oder n besten/schlechtesten Matches
+	* Manuelle Auswahl von Matches
+
+* Rohdaten
+	* Abmessungen der Bilder
+	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
+	* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
+	* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
+
+* Projektion
+	* Einzeichnen von Linien / Formen
+	* Auswählen von zugehörigen Matches
+	* Die Linien / Formen werden auf das zweite Bild projiziert 
+* Filter
+	* Differenzbilder ([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))
+
 
 ###Nichtfunktionale Anforderungen
 * **NF100** keine Resource-Leaks
