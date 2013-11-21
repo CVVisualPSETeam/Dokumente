@@ -72,7 +72,8 @@ Open Source-Visualisierung für OpenCV.
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
 ##Mögliche Visualisierungen //TODO rewrite
-* Darstellung von Verbindungslinien
+* Darstellung von Verbindungslinien _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/
+doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien
 	* Einfärben der Linien mit Falschfarben
