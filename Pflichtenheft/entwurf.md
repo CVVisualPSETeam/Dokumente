@@ -103,7 +103,7 @@ C++11-Compiler.
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
 ##Mögliche Visualisierungen //TODO rewrite
-* Darstellung von Verbindungslinien _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/
+* Darstellung von Matches: Verbindungslinien _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/
 doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien
@@ -118,7 +118,7 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
 	* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-* Darstellung von Projektionen
+* Darstellung von Matches: Projektionen
 	* Einzeichnen von Linien / Formen
 	* Auswählen von zugehörigen Matches
 	* Die Linien / Formen werden auf das zweite Bild projiziert 
