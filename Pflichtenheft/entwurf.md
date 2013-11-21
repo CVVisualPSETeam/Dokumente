@@ -54,8 +54,8 @@ Open Source-Visualisierung für OpenCV.
 	* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
 		* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
 		* [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
-	* stitching
-	* ocl (OpenCL)
+	* [stitching](http://docs.opencv.org/modules/stitching/doc/stitching.html)
+	* [ocl](http://docs.opencv.org/modules/ocl/doc/introduction.html) (OpenCL)
 
 
 ###GUI Musskriterien
@@ -267,8 +267,8 @@ Lizenz gestellt werden.
 
 ##Glossar
 ###Allgemein:
-* API: Application Programming Interface. Eine Schnittstelle, über welche andere Programme auf der 
-	Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
+* API: Application Programming Interface. Eine Schnittstelle (s. Interface), über welche andere Programme 
+	auf der Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
 
 * Augmented Reality: "Erweiterung der Realität" durch einen Computer, etwa bei der Einblendung von
 	Informationen in ein Bild der Umgebung, das etwa auf einem Smartphone angezeigt wird.
@@ -277,7 +277,7 @@ Lizenz gestellt werden.
 		
 * Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
 	Quellcode. Anders als dort ist hier kaum sichtbar, wie das Programm genau arbeitet,
-	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (daher der Name).
+	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (vgl. OpenSource).
 
 * Datenstrom: Daten, die beispielsweise während der Ausführung eines Programms fließen, 
 	wobei das Ende dieses Flusses nicht absehbar ist.
@@ -306,7 +306,7 @@ Lizenz gestellt werden.
 
 * GUI: Graphical User Interface, zu deutsch Graphische Benutzeroberfläche. Stellt Funktionen graphisch dar,
 	so dass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
-	textbasierten Benutzerschnittstellen.
+	textbasierten Benutzerschnittstellen (vgl. Interface).
 
 * Interface: Schnittstelle. Ein Zugriffspunkt auf Funktionalitäten von außen, der einerseits den Zugriff 
 	erleichtern und andererseits die eigentliche Funktionalität verbergen soll.
@@ -319,7 +319,7 @@ Lizenz gestellt werden.
  
 * Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
 
-* Plug-in: Grob gesagt Zusatzfunktionalität für ein Programm.
+* Plug-in: Erweiterungsmodul zur Bereitstellung zusätzlicher Funktionalität für Anwendungssoftware.
 
 * proprietär: In diesem Zusammenhang Software, die nicht unter einer freien Lizenz steht.
 
@@ -339,10 +339,10 @@ Lizenz gestellt werden.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
-* Thread: Dt. Faden. Moderne Computer besitzen mehrere Prozessorkerne, die sich Rechenarbeit aufteilen
-	können. Ein solcher Teil wird als Thread bezeichnet.
+* Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
+	Mehrfachkernsystemen, wo mehrere Threads gleichzeitig laufen können, oft verwendet.
 
-* Threadsafety: Es ist sichergestellt, das mehrere Threads sich nicht gegenseitig in die Quere kommen, etwa
+* Threadsafety: Es ist sichergestellt, das mehrere Threads sich nicht gegenseitig stören, etwa
 	beim Speichern von Daten.
 
 * Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
