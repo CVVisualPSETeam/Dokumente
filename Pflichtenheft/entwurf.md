@@ -26,6 +26,37 @@ zu Debugzwecken eine große Hürde dar.
 Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
 Open Source-Visualisierung für OpenCV. 
 
+##Produktfunktion
+Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
+die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das
+Ursprungsbild zu visualisieren.
+
+Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
+Funktionalität dabei so implementieren, dass pro translation-unit der Debug-modus sowohl während
+des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während
+des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu
+beeinflussen.
+
+Bei der Verwendung in Programmen mit mehreren Threads wird zwar mit eingeschränktem Komfort zu rechnen
+sein, aber die prinzipielle Funktionalität an sich wird unbeeinträchtigt bleiben.
+
+Zur Verwendung werden wir für die debugbaren opencv-Funktionalitäten Funktionen bereitstellen, welche
+eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
+Thread ein Hauptfenster).
+
+Je nach View werden wir beispielsweise die Matches zwischen zwei Bildern mit Pfeilen darstellen.
+Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
+nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
+
+##Produkteinsatz
+Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
+werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
+OpenCV mit Qt Unterstützung kompiliert haben.
+
+##Produktumgebung
+Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
+C++11-Compiler.
+
 ##Zielbestimmungen
 
 ###API Musskriterien
@@ -94,7 +125,6 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 * Darstellungen für Filter
 	* Differenzbilder ([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))
 
-
 ###Nichtfunktionale Anforderungen
 * **NF100** keine Resource-Leaks
 * **NF200** kein undefiniertes Verhalten
@@ -102,44 +132,6 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 * **NF400** geringe Verzögerungen durch Berechnungen
 * **NF500** Threadsafety
 * **NF600** Tolleranz gegenüber fehlerhaften API-Aufrufen
-
-##Abgrenzungskriterien
-Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
-keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
-
-Wichtig: Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
-
-##Produkteinsatz
-Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
-werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
-OpenCV mit Qt Unterstützung kompiliert haben.
-
-##Produktumgebung
-Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
-C++11-Compiler.
-
-##Produktfunktion
-Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
-die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das
-Ursprungsbild zu visualisieren.
-
-Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
-Funktionalität dabei so implementieren, dass pro translation-unit der Debug-modus sowohl während
-des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während
-des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu
-beeinflussen.
-
-Bei der Verwendung in Programmen mit mehreren Threads wird zwar mit eingeschränktem Komfort zu rechnen
-sein, aber die prinzipielle Funktionalität an sich wird unbeeinträchtigt bleiben.
-
-Zur Verwendung werden wir für die debugbaren opencv-Funktionalitäten Funktionen bereitstellen, welche
-eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
-Thread ein Hauptfenster).
-
-Je nach View werden wir beispielsweise die Matches zwischen zwei Bildern mit Pfeilen darstellen.
-Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
-nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
-
 
 ##Produktdaten
 Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
@@ -203,6 +195,12 @@ Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen di
 * Auswählen und wechseln von Views
 * Sämtliche Buttons und Schieberegler testen
 * Bedingung auch mit großen Bildern und mit geringer Rechenleistung
+
+##Abgrenzungskriterien
+Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
+keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
+
+Wichtig: Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
 
 ##Entwicklungsumgebung
 
