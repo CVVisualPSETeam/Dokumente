@@ -113,15 +113,15 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
 	* x% oder n besten/schlechtesten Matches
 	* Manuelle Auswahl von Matches
+* Darstellung von Matches: Projektionen
+	* Einzeichnen von Linien / Formen
+	* Auswählen von zugehörigen Matches
+	* Die Linien / Formen werden auf das zweite Bild projiziert 
 * Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
 	* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-* Darstellung von Matches: Projektionen
-	* Einzeichnen von Linien / Formen
-	* Auswählen von zugehörigen Matches
-	* Die Linien / Formen werden auf das zweite Bild projiziert 
 * Darstellungen für Filter
 	* Differenzbilder ([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))
 
