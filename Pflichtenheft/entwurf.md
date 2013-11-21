@@ -143,13 +143,32 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
 		* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
 
-###Nichtfunktionale Anforderungen
-* **NF100** keine Resource-Leaks
-* **NF200** kein undefiniertes Verhalten
-* **NF300** Möglichst kein Overhead im Release-mode.
-* **NF400** geringe Verzögerungen durch Berechnungen
-* **NF500** Threadsafety
-* **NF600** Tolleranz gegenüber fehlerhaften API-Aufrufen
+##Nichtfunktionale Anforderungen
+###Produktleistungen (pflicht)
+* Die GUI soll schnell starten und interaktiv bedienbar sein
+* Möglichst kein Overhead im Release-mode.
+
+###Produktleistungen (optional)
+* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* Integration in OpenCV Test Framework
+
+###Qualitätsanforderungen (pflicht)
+* Keine signifikanten Speicherlecks
+* Erweiterbarkeit um zusätzliche OpenCV Operationen und Visualisierungen
+* Modularer Aufbau (API und GUI)
+* Modularer Aufbau (API und GUI)
+* Einhaltung der OpenCV und Qt Konventionen
+* Ausführliche Dokumentation der API und des GUI
+
+###Qualitätsanforderungen (optional)
+* Dokumentation des internen Codes mit Werkzeug
+* OpenCV geeigneter Aufbau des Build-Systems
+* Abdeckung durch Tests
+* keine Resource-Leaks
+* Threadsafety
+* Tolleranz gegenüber fehlerhaften API-Aufrufen
+* keine Resource-Leaks
+* kein undefiniertes Verhalten
 
 ##Produktdaten
 Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
@@ -176,16 +195,10 @@ Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem
 ![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die
 Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
 
-##Produktleistungen
-//TODO: weg?
-
 ##Bedienoberfläche
 * Die Bedienoberfläche wird in Qt implementiert sein.
 * Sie wird aus einem Hauptfenster pro Thread bestehen.
 * Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
-
-##Qualitätszielbestimmungen
-//TODO: weg? (ist eigendlich nf)
 
 ##Testfälle und Testszenarien
 
