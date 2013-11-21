@@ -26,7 +26,7 @@ zu Debugzwecken eine große Hürde dar.
 Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
 Open Source-Visualisierung für OpenCV. 
 
-##Produktfunktion
+##Produktfunktionen
 Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
 die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das
 Ursprungsbild zu visualisieren.
@@ -57,7 +57,7 @@ OpenCV mit Qt Unterstützung kompiliert haben.
 Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
 C++11-Compiler.
 
-##Zielbestimmungen
+##Funktionale Anforderungen
 
 ###API Musskriterien
 * Auswahl der Visualisierung für Operationstyp
@@ -93,6 +93,7 @@ C++11-Compiler.
 * Eine Visualisierung pro Operation (siehe API Kriterien)
 * Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
 * Zoomfunktion
+* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
 
 ###GUI Wunschkriterien
 * Permanente GUI mit Historie
@@ -103,27 +104,44 @@ C++11-Compiler.
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
 
 ##Mögliche Visualisierungen //TODO rewrite
-* Darstellung von Matches: Verbindungslinien _(ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/
-doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
-	* Einzeichnen der Keypoints in die Bilder
-	* Verbinden der Matches durch Linien
-	* Einfärben der Linien mit Falschfarben
-	* Zusammenfassung der Matches zu Flächen
-	* Ausblenden der Keypoints ohne Matches
-	* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
-	* x% oder n besten/schlechtesten Matches
-	* Manuelle Auswahl von Matches
-* Darstellung von Matches: Projektionen
-	* Einzeichnen von Linien / Formen
-	* Auswählen von zugehörigen Matches
-	* Die Linien / Formen werden auf das zweite Bild projiziert 
+
+###Allgemeine Visualisierungen
 * Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
-	* Durchschnittlicher / größter / kleinster Abstand aller / der ausgewählten Matches
-	* Durchschnittliche / größte / kleinste Verschiebung aller / der ausgewählten Matches
-* Darstellungen für Filter
-	* Differenzbilder ([u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29))
+	* Tabellarische Darstellung, z.B. der Matches, mit Filtermöglichkeit
+	* Diagramme (wie Histogramme)
+* Darstellung der Bilder nebeneinander
+
+
+###Visualisierungen von Matches
+* Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
+doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
+	* Einzeichnen der Keypoints in die Bilder
+	* Verbinden der Matches durch Linien oder Pfeile
+	* Einfärben der Linien, Pfeile oder Punkte mit Falschfarben
+	* Ausblenden der Keypoints ohne Matches
+	* Auswahl von Matches anhand bestimmter Kriterien (z.B. via Histogramm)
+	* Manuelle Auswahl von Matches
+	* Automatische Zusammenfassung von Matches zu Gruppen
+* Projektionen
+	* Einzeichnen von Linien / Formen
+	* Auswählen von zugehörigen Matches
+	* Die Linien / Formen werden auf das zweite Bild projiziert
+	* Einzeichnung von vom Benutzer gezeichneten Formen (und Projektion auf das jeweils
+	* Automatische Gruppierung der Matches zu Flächen
+* Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
+	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
+* Stereokopische Darstellung als Tiefenbild
+	* Pixelfarbwerte entsprechen den jeweiligen Tiefenwerten
+## Visualisierungen für Filter
+	* Differenzbilder 
+		* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
+	* Überlagerungen
+	* Direkte Anwendung von Filtern auf beide Bilder
+		* Beispiel: Anwendung eines Kantenfilters um die Auswirkungen z.B. einer Kantenglättung zu visualisieren
+	* Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
+		* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
 
 ###Nichtfunktionale Anforderungen
 * **NF100** keine Resource-Leaks
