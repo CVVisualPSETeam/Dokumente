@@ -1,4 +1,4 @@
-﻿#Pflichtenheft CVVisual
+#Pflichtenheft CVVisual
 
 ##Einleitung
 OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
@@ -93,7 +93,6 @@ C++11-Compiler.
 * Eine Visualisierung pro Operation (siehe API Kriterien)
 * Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
 * Zoomfunktion
-* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
 
 ###GUI Wunschkriterien
 * Permanente GUI mit Historie
@@ -102,17 +101,20 @@ C++11-Compiler.
 * Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
+* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
+	* Zur einfachen Arbeit mit größeren Tabellen
+	* Ermöglicht mit einer speziellen Syntax zum Beispiel die Sortierung oder Gruppierung von Datensätzen
 
 ##Mögliche Visualisierungen //TODO rewrite
 
-###Allgemeine Visualisierungen
+###Allgemein
 * Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Tabellarische Darstellung, z.B. der Matches, mit Filtermöglichkeit
 	* Diagramme (wie Histogramme)
 * Darstellung der Bilder nebeneinander
-
 
 ###Visualisierungen von Matches
 * Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
@@ -174,15 +176,68 @@ Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem
 	Thread-lokalem Hauptfenster hinzu.
 
 ![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die
-Inneren aufrufen](architektur_skizze.svg "Architekturskizze")
+Inneren aufrufen](architektur_skizze.png "Architekturskizze")
 
 ##Produktleistungen
 //TODO: weg?
 
 ##Bedienoberfläche
+
 * Die Bedienoberfläche wird in Qt implementiert sein.
 * Sie wird aus einem Hauptfenster pro Thread bestehen.
-* Die verschiedenen Debug-Ansichten werden im Hauptfenster dargestellt.
+* Die verschiedenen Debug-Ansichten werden entweder im Hauptfenster oder in einzelnen Fenstern dargestellt.
+* Daten von vorherigen API-Aufrufen werden auf einer Übersichtsseite tabellarisch dargestellt
+
+###Skizzen //TODO write explanations
+
+![Übersichtseite mit Tabs und ohne Vorschaubilder](GUI/overview_tabs_wo_images.png)
+Übersichtseite mit Tabs und ohne Vorschaubildern.
+Dem Benutzer ist mit Hilfe der Sucheleiste möglich in den vorhandenen Datensätzen zu suchen.
+
+
+![Übersichtseite mit Tabs und Vorschaubildern](GUI/overview_tabs_images.png)
+Übersichtseite mit Tabs und Vorschaubildern.
+
+
+![Übersichtseite mit Fenstern und Vorschaubildern](GUI/overview_windows_images.png)
+Übersichtseite mit Fenstern statt Tabs und Vorschaubildern.
+
+
+![Basisvisualisierung eines Match-Datensatzes(GUI/test_match_window.png)
+Basisvisualisuerung eines Match-Datensatzes.
+
+Unten in der Fensterleiste findet sich der aktuelle Zoomfaktor und die aktuelle Position in einem der beiden Bilder.
+Wichtig: Die Position entspricht jener im gesammten Bild - nicht jener im angezeigten Ausschnitt.
+
+Mit dem Button "View Raw" kann der Benutzer die Rohdatenanzeige für den aktuellen Datensatz anzeigen.
+Der Button "Step further" wird angezeigt, sofern die zu debuggende Anwendung wegen dieser Visualisierung blockiert. Wobei damit
+die Visualisierung nicht geschlossen wird.
+
+Die View-Auswahl und die Zoom-Knöpfe am rechten Rand sind selbsterklärend. Hierzu ist nur wichtig zu sagen, dass das Eindrücken des 
+Schlossknopfes dazu führt, dass das Programm versucht die Anzeigen beider Bilder zu synchronisieren.
+
+
+![Rohdatenanzeige](GUI/test_match_raw_window.png)
+Tabellarische Anzeige der Rohdaten, nach dem der Benutzer in der vorherigen Skizze auf den "View Raw"-Knopf gedrückt hat.
+
+Dem Benutzer ist es wieder möglich mit Hilfe der Suchleiste in den Daten zu suchen und mit gedrückter STRG-Taste auch mehrere Einträge
+zu markieren. Über das Kontextmenu ist es weiterhin möglich entweder die ausgewählten Einträge in der Visualisierung hervorzuheben oder sie
+als JSON oder CSV in die Zwischenablage zu kopieren.
+
+
+![Hohe Zoomstufen mit Zusatzinformationen](GUI/test_match_deep_zoom_window.png)
+Der Benutzer sieht bei einem hohen Zoomfaktor Zusatzinformationen im Bild, in diesem Fall die Werte für Rot, Grün, Blau für jedes einzelne Pixel.
+
+
+![Projektion](GUI/test_match_area_tab.png)
+Projektion einer automatischen Gruppierung von Matches von einem auf das andere Bild.
+Hierbei wird jeweils das Histogramm des vom Benutzer ausgewählten Bereichs angezeigt. 
+
+
+![Darstellung von Punkttranslationen](GUI/match_movement_parrot_window.png)
+Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen.
+Die Länge und Richtung des jeweiligen Pfeils entsprechen der Translation oder Verschiebung des Startpunktes im anderen Bild.
+
 
 ##Qualitätszielbestimmungen
 //TODO: weg? (ist eigendlich nf)
@@ -259,7 +314,7 @@ Außerdem ist es verboten, den Namen CVVisual oder die Namen der Mitentwickler z
 		* Redistributions in binary form must reproduce the above copyright
 		   notice, this list of conditions and the following disclaimer in the
 		   documentation and/or other materials provided with the distribution.
-		* Neither the name of the <organization> nor the
+		* Neither the name of the cvvisual project nor the
 		   names of its contributors may be used to endorse or promote products
 		   derived from this software without specific prior written permission.
 
@@ -356,8 +411,6 @@ Lizenz gestellt werden.
 
 * Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
 
-* Stand-Alone-Programm: Programm, das für sich allein funktioniert.
-
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
 * Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
@@ -376,7 +429,7 @@ Lizenz gestellt werden.
 	Vereinfachung der Arbeit verschiedene Anwendungsprogramme, die sonst einzelnen aufgerufen 
 	werden müssten, vereint, welche von Microsoft entwickelt wurde und verschiedene 
 	Programmiersprachen unterstützt.
-
+* Standaloneprogramm: ...
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
 	in (u.U. invertierte) Binärbilder umwandeln kann.
