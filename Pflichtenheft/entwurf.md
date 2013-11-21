@@ -117,8 +117,8 @@ C++11-Compiler.
 * Darstellung der Bilder nebeneinander
 
 ####Visualisierungen von Matches
-* Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
-doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
+* Basisvisualisierung *(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
+doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))*
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien oder Pfeile
 	* Einfärben der Linien, Pfeile oder Punkte mit Falschfarben
