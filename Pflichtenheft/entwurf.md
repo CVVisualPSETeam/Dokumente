@@ -1,4 +1,4 @@
-﻿#Pflichtenheft CVVisual
+#Pflichtenheft CVVisual
 
 ##Einleitung
 OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
@@ -19,7 +19,7 @@ Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfa
 der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
 das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
 bestehen, oder aber sie greifen auf ein Microsoft-Plug-in für Visual Studio mit stark eingeschränktem  
-Funktionsumfang zurück (man kann damit im wesentlichen nur Bilder ansehen, die im Speicher liegen).
+Funktionsumfang zurück, mit dem man Bilder direkt im Speicher ansehen kann.
 Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
 zu Debugzwecken eine große Hürde dar.  
 
@@ -64,18 +64,19 @@ Open Source-Visualisierung für OpenCV.
 * Zoomfunktion
 
 ###GUI Wunschkriterien
-* Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
 * Permanente GUI mit Historie
-* Möglichkeit Operation mit geänderten Parametern erneut anzuwenden
-* Datenfluss von GUI zu Code sofern sinnvoll
+* Datenfluss von GUI zu Code (sofern sinnvoll)
+* Möglichkeit eine Operation mit geänderten Parametern erneut anzuwenden
+* Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
 * Optionale Ausnutzung von mehreren Bildschirmen
 * Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
+
+##Mögliche Visualisierungen //TODO rewrite
 * Darstellung von Verbindungslinien
-	* (ähnlich [drawMatches](http://docs.opencv.org/modules/features2d/doc/drawing_function_of_keypoints
-_and_matches.html?highlight=drawmatches#drawmatches))
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien
 	* Einfärben der Linien mit Falschfarben
+	* Zusammenfassung der Matches zu Flächen
 	* Ausblenden der Keypoints ohne Matches
 	* Auswahl von Matches anhand eines Schwellwertes (bzw. Intervalls)
 	* x% oder n besten/schlechtesten Matches
@@ -104,7 +105,8 @@ _and_matches.html?highlight=drawmatches#drawmatches))
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
 keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
-Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
+
+Wichtig: Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
 
 ##Produkteinsatz
 Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
@@ -355,7 +357,7 @@ Lizenz gestellt werden.
 	Vereinfachung der Arbeit verschiedene Anwendungsprogramme, die sonst einzelnen aufgerufen 
 	werden müssten, vereint, welche von Microsoft entwickelt wurde und verschiedene 
 	Programmiersprachen unterstützt.
-
+* Standaloneprogramm: ...
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
 	in (u.U. invertierte) Binärbilder umwandeln kann.
