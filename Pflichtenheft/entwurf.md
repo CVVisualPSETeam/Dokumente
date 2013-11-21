@@ -106,9 +106,9 @@ C++11-Compiler.
 	* Zur einfachen Arbeit mit größeren Tabellen
 	* Ermöglicht mit einer speziellen Syntax zum Beispiel die Sortierung oder Gruppierung von Datensätzen
 
-##Mögliche Visualisierungen //TODO rewrite
+###Mögliche Visualisierungen //TODO rewrite
 
-###Allgemein
+####Allgemein
 * Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
@@ -116,7 +116,7 @@ C++11-Compiler.
 	* Diagramme (wie Histogramme)
 * Darstellung der Bilder nebeneinander
 
-###Visualisierungen von Matches
+####Visualisierungen von Matches
 * Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
 doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
 	* Einzeichnen der Keypoints in die Bilder
@@ -136,7 +136,7 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
 * Stereokopische Darstellung als Tiefenbild
 	* Pixelfarbwerte entsprechen den jeweiligen Tiefenwerten
-## Visualisierungen für Filter
+#### Visualisierungen für Filter
 	* Differenzbilder 
 		* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
 	* Überlagerungen
@@ -212,14 +212,19 @@ Dem Benutzer ist mit Hilfe der Sucheleiste möglich in den vorhandenen Datensät
 
 
 ![Übersichtseite mit Tabs und Vorschaubildern](GUI/overview_tabs_images.png)
+
 Übersichtseite mit Tabs und Vorschaubildern.
 
 
+
 ![Übersichtseite mit Fenstern und Vorschaubildern](GUI/overview_windows_images.png)
+
 Übersichtseite mit Fenstern statt Tabs und Vorschaubildern.
 
 
-![Basisvisualisierung eines Match-Datensatzes(GUI/test_match_window.png)
+
+![Basisvisualisierung eines Match-Datensatzes](GUI/test_match_window.png)
+
 Basisvisualisuerung eines Match-Datensatzes.
 
 Unten in der Fensterleiste findet sich der aktuelle Zoomfaktor und die aktuelle Position in einem der beiden Bilder.
@@ -233,7 +238,9 @@ Die View-Auswahl und die Zoom-Knöpfe am rechten Rand sind selbsterklärend. Hie
 Schlossknopfes dazu führt, dass das Programm versucht die Anzeigen beider Bilder zu synchronisieren.
 
 
+
 ![Rohdatenanzeige](GUI/test_match_raw_window.png)
+
 Tabellarische Anzeige der Rohdaten, nach dem der Benutzer in der vorherigen Skizze auf den "View Raw"-Knopf gedrückt hat.
 
 Dem Benutzer ist es wieder möglich mit Hilfe der Suchleiste in den Daten zu suchen und mit gedrückter STRG-Taste auch mehrere Einträge
@@ -241,16 +248,22 @@ zu markieren. Über das Kontextmenu ist es weiterhin möglich entweder die ausge
 als JSON oder CSV in die Zwischenablage zu kopieren.
 
 
+
 ![Hohe Zoomstufen mit Zusatzinformationen](GUI/test_match_deep_zoom_window.png)
+
 Der Benutzer sieht bei einem hohen Zoomfaktor Zusatzinformationen im Bild, in diesem Fall die Werte für Rot, Grün, Blau für jedes einzelne Pixel.
 
 
+
 ![Projektion](GUI/test_match_area_tab.png)
+
 Projektion einer automatischen Gruppierung von Matches von einem auf das andere Bild.
 Hierbei wird jeweils das Histogramm des vom Benutzer ausgewählten Bereichs angezeigt. 
 
 
+
 ![Darstellung von Punkttranslationen](GUI/match_movement_parrot_window.png)
+
 Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen.
 Die Länge und Richtung des jeweiligen Pfeils entsprechen der Translation oder Verschiebung des Startpunktes im anderen Bild.
 
