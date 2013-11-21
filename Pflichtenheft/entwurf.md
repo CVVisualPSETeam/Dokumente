@@ -1,4 +1,4 @@
-#Pflichtenheft CVVisual
+﻿#Pflichtenheft CVVisual
 
 ##Einleitung
 OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
@@ -338,6 +338,8 @@ Lizenz gestellt werden.
 
 * Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
 
+* Stand-Alone-Programm: Programm, das für sich allein funktioniert.
+
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
 * Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
@@ -356,7 +358,7 @@ Lizenz gestellt werden.
 	Vereinfachung der Arbeit verschiedene Anwendungsprogramme, die sonst einzelnen aufgerufen 
 	werden müssten, vereint, welche von Microsoft entwickelt wurde und verschiedene 
 	Programmiersprachen unterstützt.
-* Standaloneprogramm: ...
+
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
 	in (u.U. invertierte) Binärbilder umwandeln kann.
