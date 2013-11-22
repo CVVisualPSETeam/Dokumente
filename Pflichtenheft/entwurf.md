@@ -298,19 +298,20 @@ Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die fol
 
 ###Beispiel Ablauf
 'cv::visualize::showMatches(inputImg1, inputImg2,matches);'
-Dieser Code erzeugt ein Tab, im Hauptfenster, mit dem Standartview für Matches. Der View zeigt die Bilder nebeneinander an
-und zeichnet zwischen den einzelnen Matches Pfeile. (BITTE LINK zu den enstprechenden Bild im Pflichtenhft einfügen)
-Der Benutzer hat nun die Auswahl sich zusätliche Informationen anzeigen zu lassen, wie den "Matchwert" der einzelnen MAtches
-durch einfärben der Pfeile in Falschfarben anzeigenzulassen, oder sich einen anderen View mit anderen Optionen zu wechsel,
-in dem anderem View werden dieselben Bilder benutzt.
-Auch hat er die Möglichkeit sich die "Rohdaten", wie die Werte der
-einzelnen Matches (Koordinaten, Matchwert,..), anzeigen zu lassen. Für eine angenehmere Bedingung steht im eine Suchleiste mit 
-einigen Befehlen zur verfügung, auch kann er die Liste nach den einzelnen Spalten sortieren.
-Sollte die Matchanzeige zu unübersichtlich sein hat er auf der rechten seite Knöpfe zum Zoomen und auf der Linken Seite die
-Möglichkeit Matches nach bestimmten Kriterien anzuzeigen bzw. auszublenden.
-Nachdem der Benutzer, das GEwünschte gesehen hat, kann er, wenn es ein blockierender Aufruf war, den 'Stp further' Knöpf drücken
-und sein Programm läuft weiter oder es war kein blockierender Aufruf, dann muss er auf den nächsten Aufruf warten oder
-darauf das sein Programm sich beendet und sich das Debugfenster schliest.
+Dieser Code erzeugt ein Tab im Hauptfenster mit dem Standardview für Matches. Der View zeigt die
+Bilder nebeneinander an und zeichnet zwischen den einzelnen Matches Pfeile. (BITTE LINK zu dem enstprechenden Bild im Pflichtenhft einfügen)
+Der Benutzer hat nun die Auswahl zwischen dem Anzeigen zusätzlicher Informationen oder dem Wechsel
+zu einem zweiten View mit anderen Optionen, bei dem dieselben Bilder verwendet werden. Zusätzliche
+Informationen sind beispielsweise das Einfärben der Pfeile in Falschfarben um den "Matchwert" dar-
+zustellen.
+Auch hat er die Möglichkeit sich die "Rohdaten", wie die Werte der einzelnen Matches (Koordinaten,
+Matchwert,..), anzeigen zu lassen. Für eine angenehmere Bedienung steht ihm eine Suchleiste mit
+verschiedenen Befehlen zur Verfügung. Außerdem kann er die angezeigte Liste nach den einzelnen
+Spalten sortieren.
+Des Weiteren befinden sich auf der rechten Seite Knöpfe zum Zoomen und auf der linken Seite ein
+Menü, das die Möglichkeit bietet Matches nach bestimmten Kriterien anzuzeigen bzw. auszublenden.
+Nachdem der Benutzer das Gewünschte gesehen hat, kann er bei einem blockierenden Aufruf durch
+Betätigen des 'Step further'-Knopfs sein Programm weiter laufen lassen.
 
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
@@ -370,27 +371,28 @@ Außerdem ist es verboten, den Namen CVVisual oder die Namen der Mitentwickler z
 	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Diese Lizenz hat außerdem, gegenüber z.B. der GNU GPL, den Vorteil, dass es auch eine Verwendung unseres Projektes
-im Umfeld proprietärer Lizenzen erlaubt, und damit hoffentlich auch von Unternehmen genutzt werden kann.
+Diese Lizenz hat außerdem den Vorteil, zum Beispiel gegenüber der GNU GPL, dass es auch eine
+Verwendung unseres Projektes im Umfeld proprietärer Lizenzen erlaubt und damit auch von Unternehmen genutzt werden kann.
 
 ###Dokumentation
 Die Dokumentation, mit samt aller Bilder und Texte, steht unter der [CC-BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/3.0/),
 sofern nicht anders angegeben. 
-Die Lizenz erlaubt es anderen die Dokumentation und Teile jener, zu kopieren und weiter zu verteilen, zu verändern und zu kommerziellen Zwecken
-zu verwenden. Hierbei muss allerdings immer der Autor genannt werden und abgeleitete Werke müssen unter der selben, oder einer gleichwertigen,
+Die Lizenz erlaubt es anderen die Dokumentation und Teile jener, zu kopieren und weiter zu
+verteilen, zu verändern und zu kommerziellen Zwecken zu verwenden. Hierbei muss allerdings immer
+der Autor genannt werden und abgeleitete Werke müssen unter die selbe, oder eine gleichwertige,
 Lizenz gestellt werden.
 
 ##Glossar
 ###Allgemein:
-* API: Application Programming Interface. Eine Schnittstelle (s. Interface), über welche andere Programme 
-	auf der Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
+* API: Application Programming Interface. Eine Schnittstelle (s. Interface), über welche andere
+	Programme auf der Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
 
 * Augmented Reality: "Erweiterung der Realität" durch einen Computer, etwa bei der Einblendung von
 	Informationen in ein Bild der Umgebung, das auf einem Smartphone angezeigt wird.
 
 * Bug: Fehlerhaftes Verhalten eines Programmes.
 		
-* Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
+* Binärform: Hier das Programm in für den Computer direkt verwendbarer Form, im Gegensatz zum
 	Quellcode. Anders als dort ist hier kaum sichtbar, wie das Programm genau arbeitet,
 	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (vgl. Open Source).
 
@@ -401,16 +403,16 @@ Lizenz gestellt werden.
 	Auffinden und Beheben von Bugs (kurz Debugging oder Debuggen), hier insbesondere 
 	Programmierfehlern, zu erleichtern. Vgl. Release-Modus.
 
-* Debug-Visualisierung: Hier eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
-	Daten zu den übergebenen Bildern anzeigt und diese damit leicht verständlich darstellt.
+* Debug-Visualisierung: Hier eine Visualisierung die den Benutzer beim Debuggen unterstützt, indem 		sie relevante Daten zu den übergebenen Bildern anzeigt und diese damit leicht verständlich
+	darstellt.
 
-* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, 
-	wenn sie anfangen ein Projekt zu nutzen.
+* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer 	sich stellen, wenn sie anfangen ein Projekt zu nutzen.
 
-* Falschfarben: Verwendung von Farben ein einem Bild, die sich von den natürlichen, erwarteten Farben stark
-	unterscheiden, um etwa Details hervorzuheben. 
+* Falschfarben: Verwendung von Farben in einem Bild, die sich von den natürlichen, erwarteten
+	Farben stark unterscheiden, um etwa Details hervorzuheben. 
 
-* Filter: In der Bildverarbeitung die Veränderung eines Bildbereiches mithilfe eines bestimmten Algorithmus.
+* Filter: In der Bildverarbeitung die Veränderung eines Bildbereiches mithilfe eines bestimmten
+	Algorithmus.
 
 * freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung 
 	und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
@@ -425,7 +427,7 @@ Lizenz gestellt werden.
 * GNU-Projekt: Das Projekt zur Erstellung von GNU-Betriebssystem und Software.
 
 * GUI: Graphical User Interface, zu deutsch Graphische Benutzeroberfläche. Stellt Funktionen graphisch dar,
-	so dass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
+	sodass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
 	textbasierten Benutzerschnittstellen. (Vgl. Interface).
 
 * Interface: Schnittstelle. Ein Zugriffspunkt auf Funktionalitäten von außen, der einerseits den Zugriff 
@@ -471,7 +473,7 @@ Lizenz gestellt werden.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
-* Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
+* Thread: Ausführungsstrang in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
 	Mehrfachkernsystemen, wo mehrere Threads gleichzeitig laufen können, oft verwendet.
 
 * thread-lokal: Auf einen Thread beschränkt (vgl. Thread).
@@ -483,7 +485,7 @@ Lizenz gestellt werden.
 	sich meist in mehrere solcher Einheiten auf.
 
 * Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
-	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. Etwas Umgangssprachlich:
+	Verhaltensgarantien irgendeiner Art für das gesamte Programm mehr gibt. Etwas Umgangssprachlich:
 	Der Standard untersagt die Verwendung.
 
 * View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder einer Featureart).
