@@ -18,13 +18,8 @@ oder welche Auswirkung ein bestimmter Filter hat. Deswegen fangen Entwickler oft
 Lösungen für dieses Problem zu entwickeln, die in der Hauptsache aus dem einfachen Speichern  
 der Bilder oder der Verwendung primitiver Methoden von OpenCV  (wie etwa 'imshow()',  
 das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschusterten Zeichenroutinen  
-bestehen, oder aber sie greifen auf ein Microsoft-Plug-in für Visual Studio mit stark eingeschränktem  
-Funktionsumfang zurück, mit dem man Bilder direkt im Speicher ansehen kann.
-Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
+bestehen. Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
 zu Debugzwecken eine große Hürde dar.  
-
-Das sich daran etwas ändert, ist Ziel unserer Arbeit als PSE-Team an einer  
-Open Source-Visualisierung für OpenCV. 
 
 ##Produktfunktionen
 Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
