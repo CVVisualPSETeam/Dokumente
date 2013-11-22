@@ -130,7 +130,6 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Einzeichnen von Linien / Formen
 	* Auswählen von zugehörigen Matches
 	* Die Linien / Formen werden auf das zweite Bild projiziert
-	* Einzeichnung von vom Benutzer gezeichneten Formen (und Projektion auf das jeweils
 	* Automatische Gruppierung der Matches zu Flächen
 * Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
 	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
@@ -186,7 +185,7 @@ Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
 - Rohdaten:
 	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-- Ursprungsbilder sowie, Visualisierungen in Form von Schnappschüssen
+- Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
@@ -228,14 +227,14 @@ Dem Benutzer ist mit Hilfe der Sucheleiste möglich in den vorhandenen Datensät
 Basisvisualisuerung eines Match-Datensatzes.
 
 Unten in der Fensterleiste findet sich der aktuelle Zoomfaktor und die aktuelle Position in einem der beiden Bilder.
-Wichtig: Die Position entspricht jener im gesammten Bild - nicht jener im angezeigten Ausschnitt.
+Wichtig: Die Position entspricht jener im gesamten Bild - nicht jener im angezeigten Ausschnitt.
 
 Mit dem Button "View Raw" kann der Benutzer die Rohdatenanzeige für den aktuellen Datensatz anzeigen.
 Der Button "Step further" wird angezeigt, sofern die zu debuggende Anwendung wegen dieser Visualisierung blockiert. Wobei damit
 die Visualisierung nicht geschlossen wird.
 
-Die View-Auswahl und die Zoom-Knöpfe am rechten Rand sind selbsterklärend. Hierzu ist nur wichtig zu sagen, dass das Eindrücken des 
-Schlossknopfes dazu führt, dass das Programm versucht die Anzeigen beider Bilder zu synchronisieren.
+Die View-Auswahl und die Zoom-Knöpfe am rechten Rand sind selbsterklärend. Bei Eindrücken des
+Schlossknopfes versucht das Programm die Anzeigen beider Bilder zu synchronisieren.
 
 
 
@@ -272,7 +271,7 @@ Die Länge und Richtung des jeweiligen Pfeils entsprechen der Translation oder V
 
 Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst einfach macht,
 seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
-Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen die folgende Struktur: 
+Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die folgende Struktur: 
 * -> der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
 * -> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
 * -> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
@@ -282,7 +281,7 @@ Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen di
 * -> Die Debugumgebung lässt sich ohne Fehler beenden.
 
 ###Tests für Filterview 
-* Anzeige der/des Bild(es)
+* Anzeige des Bildes/der Bilder
 * Auswählen und wechseln vom Filter
 * Ändern der Werte eines Filters
 * Bedienung bei einem Großen Bild und geringer Rechenleistung
@@ -290,7 +289,7 @@ Visualisierungen und die meisten Testszenarios besitzen auch auf Grund dessen di
 
 
 ###Tests für Matchview
-* Anzeige der/des Bild(es)
+* Anzeige des Bildes/der Bilder
 * Auswählen und wechseln von Views
 * Sämtliche Buttons und Schieberegler testen
 * Bedingung auch mit großen Bildern und mit geringer Rechenleistung
@@ -317,7 +316,7 @@ Wichtig: Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich kein
 ###Dokumentation
 Zur Dokumentation werden im wesentlichen die auch von OpenCV verwendeten Werkzeuge benutzt.
 Die folgende Aufzählung wird im Verlauf des Projektentwicklung unter Umständen noch erweitert.
-* SPHINX: Ein in Python geschriebenes Werkzeug mit dessen Hilfe, das Handbuch und das FAQ geschrieben wird.
+* SPHINX: Ein in Python geschriebenes Werkzeug mit dessen Hilfe das Handbuch und das FAQ geschrieben wird.
 * Doxygen: Ein weitverbreitetes Werkzeug um aus den Kommentaren im Quelltext unseres Projektes eine übersichtliche Quelltextdokumentation zu erzeugen (vgl. Produktdaten). Es wird in Verbindung mit SPHINX verwendet.
 
 ##Lizenz
