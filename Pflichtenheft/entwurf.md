@@ -59,65 +59,65 @@ C++11-Compiler.
 
 ##Funktionale Anforderungen
 
-###API Musskriterien
-* Auswahl der Visualisierung für Operationstyp
-* Globale Auswahl zwischen Debug und Release Modus
+###API (pflicht)
+* _FA010_ Globale Auswahl zwischen Debug und Release Modus
+* _FA020_Auswahl der Visualisierung für Operationstyp
 * Unterstützung folgender Operationen:
 	* [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
-		* [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
-		* [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
-		* [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
-		* [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
+		* _FA021_ [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
+		* _FA022_ [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
+		* _FA023_ [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
+		* _FA024_ [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
 	* [imgproc/Miscellaneous Image Transformations](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html): 
-		* [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
-		* [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
-		* [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
+		* _FA025_ [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
+		* _FA026_ [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
+		* _FA027_ [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
 	* [feature2sd](http://docs.opencv.org/modules/features2d/doc/features2d.html): 
-		* [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
-		* [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
+		* _FA028_ [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
+		* _FA029_ [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
 
-###API Wunschkriterien
-* Optionale Parameter für Einstellungen der Visualisierungen
-* Lokale Auswahl Debug/Release
-* Optionale nicht-blockierende Aufrufe für Streaming
-* Unterstützung folgender Operationen:
-	* imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
+###API (optional)
+* _FA030_ Optionale Parameter für Einstellungen der Visualisierungen
+* _FA040_ Lokale Auswahl Debug/Release
+* _FA050_ Optionale nicht-blockierende Aufrufe für Streaming
+* _FA060_ Unterstützung folgender Operationen:
+	* _FA061_ imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
 	* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
-		* [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
-		* [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
-	* [stitching](http://docs.opencv.org/modules/stitching/doc/stitching.html)
-	* [ocl](http://docs.opencv.org/modules/ocl/doc/introduction.html) (OpenCL)
+		* _FA062_ [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
+		* _FA063_ [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
+	* _FA064_ [stitching](http://docs.opencv.org/modules/stitching/doc/stitching.html)
+	* _FA065_ [ocl](http://docs.opencv.org/modules/ocl/doc/introduction.html) (OpenCL)
 
 
-###GUI Musskriterien
-* Eine Visualisierung pro Operation (siehe API Kriterien)
-* Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
-* Zoomfunktion
+###GUI (pflicht)
+* _FA070_ Eine Visualisierung pro Operation (siehe API Kriterien)
+* _FA080_ Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
+* _FA090_ Zoomfunktion
 
-###GUI Wunschkriterien
-* Permanente GUI mit Historie
-* Datenfluss von GUI zu Code (sofern sinnvoll)
-* Möglichkeit eine Operation mit geänderten Parametern erneut anzuwenden
-* Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
-* Optionale Ausnutzung von mehreren Bildschirmen
-* Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
-* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
-* Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
+###GUI (optional)
+* _FA100_ Permanente GUI mit Historie
+* _FA110_ Datenfluss von GUI zu Code (sofern sinnvoll)
+* _FA120_ Möglichkeit eine Operation mit geänderten Parametern erneut anzuwenden
+* _FA130_ Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
+* _FA140_ Optionale Ausnutzung von mehreren Bildschirmen
+* _FA150_ Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
+* _FA160_ Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* _FA170_ Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
 	* Zur einfachen Arbeit mit größeren Tabellen
-	* Ermöglicht mit einer speziellen Syntax zum Beispiel die Sortierung oder Gruppierung von Datensätzen
+	* _FA171_ Ermöglicht mit einer speziellen Syntax zum Beispiel die Sortierung oder Gruppierung von Datensätzen
 
 ###Mögliche Visualisierungen //TODO rewrite
 
 ####Allgemein
-* Darstellung von Rohdaten
+* _FA180_ Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Tabellarische Darstellung, z.B. der Matches, mit Filtermöglichkeit
 	* Diagramme (wie Histogramme)
-* Darstellung der Bilder nebeneinander
+* _FA190_ Darstellung der Bilder nebeneinander
 
 ####Visualisierungen von Matches
-* Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
+* _FA200_ Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
 doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien oder Pfeile
@@ -126,66 +126,66 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Auswahl von Matches anhand bestimmter Kriterien (z.B. via Histogramm)
 	* Manuelle Auswahl von Matches
 	* Automatische Zusammenfassung von Matches zu Gruppen
-* Projektionen
+* _FA210_ Projektionen
 	* Einzeichnen von Linien / Formen
 	* Auswählen von zugehörigen Matches
 	* Die Linien / Formen werden auf das zweite Bild projiziert
 	* Automatische Gruppierung der Matches zu Flächen
-* Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
+* _FA220_ Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
 	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
-* Stereokopische Darstellung als Tiefenbild
+* _FA230_ Stereokopische Darstellung als Tiefenbild
 	* Pixelfarbwerte entsprechen den jeweiligen Tiefenwerten
 #### Visualisierungen für Filter
-	* Differenzbilder 
+	* _FA240_ Differenzbilder 
 		* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
-	* Überlagerungen
-	* Direkte Anwendung von Filtern auf beide Bilder
+	* _FA250_ Überlagerungen
+	* _FA260_ Direkte Anwendung von Filtern auf beide Bilder
 		* Beispiel: Anwendung eines Kantenfilters um die Auswirkungen z.B. einer Kantenglättung zu visualisieren
-	* Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
+	* _FA270_ Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
 		* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
 
 ##Nichtfunktionale Anforderungen
 ###Produktleistungen (pflicht)
-* Die GUI soll schnell starten und interaktiv bedienbar sein
-* Möglichst kein Overhead im Release-mode.
+* _NF010_ Die GUI soll schnell starten und interaktiv bedienbar sein
+* _NF020_ Möglichst kein Overhead im Release-mode.
 
 ###Produktleistungen (optional)
-* Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
-* Integration in OpenCV Test Framework
+* _NF030_ Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* _NF040_ Integration in OpenCV Test Framework
 
 ###Qualitätsanforderungen (pflicht)
-* Keine signifikanten Speicherlecks
-* Erweiterbarkeit um zusätzliche OpenCV Operationen und Visualisierungen
-* Modularer Aufbau (API und GUI)
-* Modularer Aufbau (API und GUI)
-* Einhaltung der OpenCV und Qt Konventionen
-* Ausführliche Dokumentation der API und des GUI
+* _NF050_ Keine signifikanten Speicherlecks
+* _NF060_ Erweiterbarkeit um zusätzliche OpenCV Operationen und Visualisierungen
+* _NF070_ Modularer Aufbau (API und GUI)
+* _NF080_ Modularer Aufbau (API und GUI)
+* _NF090_ Einhaltung der OpenCV und Qt Konventionen
+* _NF100_ Ausführliche Dokumentation der API und des GUI
 
 ###Qualitätsanforderungen (optional)
-* Dokumentation des internen Codes mit Werkzeug
-* OpenCV geeigneter Aufbau des Build-Systems
-* Abdeckung durch Tests
-* keine Resource-Leaks
-* Threadsafety
-* Tolleranz gegenüber fehlerhaften API-Aufrufen
-* keine Resource-Leaks
-* kein undefiniertes Verhalten
+* _NF110_ Dokumentation des internen Codes mit Werkzeug
+* _NF120_ OpenCV geeigneter Aufbau des Build-Systems
+* _NF130_ Abdeckung durch Tests
+* _NF140_ keine Resource-Leaks
+* _NF150_ Threadsafety
+* _NF160_ Tolleranz gegenüber fehlerhaften API-Aufrufen
+* _NF170_ keine Resource-Leaks
+* _NF180_ kein undefiniertes Verhalten
 
 ##Produktdaten
 Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
 
-- Handbuch:
+- _PD100_ Handbuch:
 	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek. Des Weiteren sind ein
 	Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von Erweiterungen des Projekts, insbesondere durch
 	das Hinzufügen neuer Views, enthalten.
-- Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
-- FAQ
-- Einstellungen:
+- _PD200_ Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
+- _PD300_ FAQ
+- _PD400_ Einstellungen:
 	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
-- Rohdaten:
+- _PD500_ Rohdaten:
 	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-- Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
+- _PD600_ Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
