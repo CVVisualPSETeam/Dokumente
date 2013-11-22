@@ -30,7 +30,7 @@ die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters 
 Ursprungsbild zu visualisieren.
 
 Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die
-Funktionalität dabei so implementieren, dass pro translation-unit der Debug-modus sowohl während
+Funktionalität dabei so implementieren, dass pro Translation Unit der Debug-Modus sowohl während
 des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während
 des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu
 beeinflussen.
@@ -38,7 +38,7 @@ beeinflussen.
 Bei der Verwendung in Programmen mit mehreren Threads wird zwar mit eingeschränktem Komfort zu rechnen
 sein, aber die prinzipielle Funktionalität an sich wird unbeeinträchtigt bleiben.
 
-Zur Verwendung werden wir für die debugbaren opencv-Funktionalitäten Funktionen bereitstellen, welche
+Zur Verwendung werden wir für die debugbaren OpenCV-Funktionalitäten Funktionen bereitstellen, welche
 eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
 Thread ein Hauptfenster).
 
