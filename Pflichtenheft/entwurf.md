@@ -117,13 +117,8 @@ C++11-Compiler.
 * __FA190__: Darstellung der Bilder nebeneinander
 
 ####Visualisierungen von Matches
-<<<<<<< HEAD
 * _FA200_ Basisvisualisierung *(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
 doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))*
-=======
-* __FA200__: Basisvisualisierung _(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
-doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))_
->>>>>>> a9c85b3dd37e6ea0370c303881720411d506acc5
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien oder Pfeile
 	* Einfärben der Linien, Pfeile oder Punkte mit Falschfarben
