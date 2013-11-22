@@ -431,20 +431,21 @@ Lizenz gestellt werden.
 * Interface: Schnittstelle. Ein Zugriffspunkt auf Funktionalitäten von außen, der einerseits den Zugriff 
 	erleichtern und andererseits die eigentliche Funktionalität verbergen soll.
 
-* Kompilieren: Umwandlung eines Quellcodes in eine für den Computer verständliche Form, die
-	Binärform, mithilfe eines Kompiler genannten Programms.
+* Kompilieren: Umwandlung eines Quellcodes in eine für den Computer verständliche Form,
+	mithilfe eines Kompiler genannten Programms.
 
 * Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, 
 	welche vom Benutzer an die API übergeben werden.
 
 * Mouse over: Information über das Element einer GUI, auf dem der Mauszeiger ruht, wird angezeigt.
 
-* Parallelrechner: Rechner, in dem mehrere Threads gleichzeitig ausgeführt werden können (vgl. Thread).
+* Parallelrechner: Rechner, in dem mehrere Threads gleichzeitig nebeneinander ausgeführt werden können 
+	(vgl. Thread).
 
 * OpenCV Test Framework: Stellt Funktionen zum Testen zur Verfügung, etwa Überprüfungen,
 	ob zwei Matrizen gleich sind.
 
-* Open Source: Deutsch offene Quelle. Software, bei welcher der Quellcode frei zugänglich gemacht wird.
+* Open Source: Software, bei welcher der Quellcode frei zugänglich gemacht wird.
 	Dies erlaubt unter anderem die Weiterverwendung und -entwicklung durch andere.
  
 * Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
@@ -471,8 +472,11 @@ Lizenz gestellt werden.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
 
-* Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
-	Mehrfachkernsystemen, wo mehrere Threads gleichzeitig laufen können, oft verwendet.
+* Tab: Hier ein registerkartenähnlicher Teil einer GUI.
+
+* Thread: Ausführungsstrang in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
+	Mehrfachkernsystemen, wo mehrere Threads gleichzeitig nebeneinander laufen können, 
+	oft verwendet.
 
 * thread-lokal: Auf einen Thread beschränkt (vgl. Thread).
 
