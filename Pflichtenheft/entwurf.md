@@ -21,6 +21,9 @@ das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschustert
 bestehen. Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
 zu Debugzwecken eine große Hürde dar.  
 
+Daran, in Form einer Open Source-Visualisierung für OpenCV, etwas zu ändern ist Ziel unserer Arbeit als
+PSE-Team an.
+
 ##Produktfunktionen
 Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
 die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das
