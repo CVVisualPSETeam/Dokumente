@@ -1,4 +1,4 @@
-#Pflichtenheft CVVisual
+﻿#Pflichtenheft CVVisual
 
 ##Einleitung
 OpenCV ist ein im Jahre 1999 aus der Taufe gehobenes Projekt von Intel-Forschern.  
@@ -117,7 +117,7 @@ C++11-Compiler.
 * __FA190__: Darstellung der Bilder nebeneinander
 
 ####Visualisierungen von Matches
-* _FA200_ Basisvisualisierung *(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
+* __FA200__ Basisvisualisierung *(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
 doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmatches))*
 	* Einzeichnen der Keypoints in die Bilder
 	* Verbinden der Matches durch Linien oder Pfeile
@@ -174,18 +174,18 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 ##Produktdaten
 Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
 
-- __PD100__: Handbuch:
+- __PD010__: Handbuch:
 	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek. Des Weiteren sind ein
 	Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von Erweiterungen des Projekts, insbesondere durch
 	das Hinzufügen neuer Views, enthalten.
-- __PD200__: Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
-- __PD300__: FAQ
-- __PD400__: Einstellungen:
+- __PD020__: Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
+- __PD030__: FAQ
+- __PD040__: Einstellungen:
 	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
-- __PD500__: Rohdaten:
+- __PD050__: Rohdaten:
 	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-- __PD600__: Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
+- __PD060__: Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
@@ -281,18 +281,18 @@ Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die fol
 * -> Die Debugumgebung lässt sich ohne Fehler beenden.
 
 ###Tests für Filterview 
-* Anzeige des Bildes/der Bilder
-* Auswählen und wechseln vom Filter
-* Ändern der Werte eines Filters
-* Bedienung bei einem Großen Bild und geringer Rechenleistung
-* Benutzung mit mehr als einem Bild
+* __TF010__ Anzeige des Bildes/der Bilder
+* __TF020__ Auswählen und wechseln vom Filter
+* __TF030__ Ändern der Werte eines Filters
+* __TF040__ Bedienung bei einem Großen Bild und geringer Rechenleistung
+* __TF050__ Benutzung mit mehr als einem Bild
 
 
 ###Tests für Matchview
-* Anzeige des Bildes/der Bilder
-* Auswählen und wechseln von Views
-* Sämtliche Buttons und Schieberegler testen
-* Bedingung auch mit großen Bildern und mit geringer Rechenleistung
+* __TF060__ Anzeige des Bildes/der Bilder
+* __TF070__ Auswählen und wechseln von Views
+* __TF080__ Sämtliche Buttons und Schieberegler testen
+* __TF090__ Bedingung auch mit großen Bildern und mit geringer Rechenleistung
 
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
