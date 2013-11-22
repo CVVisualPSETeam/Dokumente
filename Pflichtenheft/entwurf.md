@@ -270,14 +270,15 @@ Die Länge und Richtung des jeweiligen Pfeils entsprechen der Translation oder V
 
 Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst einfach macht,
 seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
-Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die folgende Struktur: 
-* -> der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
-* -> Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
-* -> Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
-* -> Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
-* -> Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
-* -> Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
-* -> Die Debugumgebung lässt sich ohne Fehler beenden.
+Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die folgende Struktur:
+
+1. der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
+2. Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
+3. Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
+4. Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
+5. Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
+6. Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
+7. Die Debugumgebung lässt sich ohne Fehler beenden.
 
 ###Tests für Filterview 
 * __TF010__ Anzeige des Bildes/der Bilder
