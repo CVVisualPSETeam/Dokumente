@@ -135,14 +135,15 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
 * __FA230__: Stereokopische Darstellung als Tiefenbild
 	* Pixelfarbwerte entsprechen den jeweiligen Tiefenwerten
+
 #### Visualisierungen für Filter
-	* __FA240__: Differenzbilder 
-		* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
-	* __FA250__: Überlagerungen
-	* __FA260__: Direkte Anwendung von Filtern auf beide Bilder
-		* Beispiel: Anwendung eines Kantenfilters um die Auswirkungen z.B. einer Kantenglättung zu visualisieren
-	* __FA270__: Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
-		* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
+* __FA240__: Differenzbilder 
+	* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
+* __FA250__: Überlagerungen
+* __FA260__: Direkte Anwendung von Filtern auf beide Bilder
+	* Beispiel: Anwendung eines Kantenfilters um die Auswirkungen z.B. einer Kantenglättung zu visualisieren
+* __FA270__: Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
+	* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
 
 ##Nichtfunktionale Anforderungen
 ###Produktleistungen (pflicht)
