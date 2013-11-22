@@ -22,7 +22,7 @@ bestehen. Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visual
 zu Debugzwecken eine große Hürde dar.  
 
 Daran, in Form einer Open Source-Visualisierung für OpenCV, etwas zu ändern ist Ziel unserer Arbeit als
-PSE-Team an.
+PSE-Team.
 
 ##Produktfunktionen
 Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
