@@ -21,8 +21,7 @@ das einfach nur ein Bild anzeigt) in Kombination mit schnell zusammengeschustert
 bestehen. Besonders für Neulinge stellt dieses weitestgehende Fehlen von Visualisierungsmöglichkeiten  
 zu Debugzwecken eine große Hürde dar.  
 
-Daran, in Form einer Open Source-Visualisierung für OpenCV, etwas zu ändern ist Ziel unserer Arbeit als
-PSE-Team.
+Daran etwas zu ändern ist Ziel unserer Arbeit als PSE-Team an einer Open Source-Visualisierung für OpenCV.
 
 ##Produktfunktionen
 Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir
@@ -97,7 +96,7 @@ C++11-Compiler.
 * __FA1200__: Möglichkeit eine Filteroperation mit geänderten Parametern erneut anzuwenden
 * __FA1300__: Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
 * __FA1400__: Optionale Ausnutzung von mehreren Bildschirmen durch Fenstermodus
-* __FA1500__: Interaktive Überlagerung der Bilder durch Zusatzinformationen (Mouse-Over)
+* __FA1500__: Interaktive Überlagerung der Bilder durch Zusatzinformationen (Mouse over)
 * __FA1600__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
 * __FA1700__: Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
 * __FA1710__: Spezielle Syntax zum Beispiel zur Gruppierung von Datensätzen
@@ -148,7 +147,7 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 
 ###Produktleistungen (Optional)
 * __NF0300__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
-* __NF0400__: Integration in das OpenCV Test-Framework
+* __NF0400__: Integration in das OpenCV Test Framework
 
 ###Qualitätsanforderungen (Pflicht)
 * __NF0500__: Keine signifikanten Speicherlecks
@@ -371,13 +370,13 @@ Lizenz gestellt werden.
 	auf der Quelltextebene auf dahinter verborgene Funktionalität zugreifen können.
 
 * Augmented Reality: "Erweiterung der Realität" durch einen Computer, etwa bei der Einblendung von
-	Informationen in ein Bild der Umgebung, das etwa auf einem Smartphone angezeigt wird.
+	Informationen in ein Bild der Umgebung, das auf einem Smartphone angezeigt wird.
 
 * Bug: Fehlerhaftes Verhalten eines Programmes.
 		
 * Binärform: Hier das Programm in für den Computer direkt verwendbarer Form im Gegensatz zum
 	Quellcode. Anders als dort ist hier kaum sichtbar, wie das Programm genau arbeitet,
-	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (vgl. OpenSource).
+	weshalb bei Open-Source-Projekten gerade der Quelltext offen liegt (vgl. Open Source).
 
 * Datenstrom: Daten, die beispielsweise während der Ausführung eines Programms fließen, 
 	wobei das Ende dieses Flusses nicht absehbar ist.
@@ -386,40 +385,53 @@ Lizenz gestellt werden.
 	Auffinden und Beheben von Bugs (kurz Debugging oder Debuggen), hier insbesondere 
 	Programmierfehlern, zu erleichtern. Vgl. Release-Modus.
 
-* Debug-Visualisierung: Eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
-	Daten zu den übergebenen Bilder anzeigt und diese damit leicht verständlich darstellt.
+* Debug-Visualisierung: Hier eine Visualisierung die den Benutzer beim Debuggen unterstützt, in dem sie relevante
+	Daten zu den übergebenen Bildern anzeigt und diese damit leicht verständlich darstellt.
 
-* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, wenn sie anfangen unser Projekt zu nutzen.
- 
+* FAQ: Engl. für "Häufig gestellte Fragen" enthält sie viele Fragen, die besonders neue Benutzer sich stellen, 
+	wenn sie anfangen ein Projekt zu nutzen.
+
+* Falschfarben: Verwendung von Farben ein einem Bild, die sich von den natürlichen, erwarteten Farben stark
+	unterscheiden, um etwa Details hervorzuheben. 
+
 * Filter: In der Bildverarbeitung die Veränderung eines Bildbereiches mithilfe eines bestimmten Algorithmus.
 
-* freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
+* freie Lizenz: Lizenz, die im Sinne der [Open Source Initiative](opensource.org), die Veränderung 
+	und Weitergabe des unter ihr lizenzierten Inhalts ermöglicht.
 
 * GNU: "GNU is Not Unix". Freies Betriebssystem und Software.
 
 * GNU GPL: General Public License. Eine freie Software-Lizenz. Alle auf einer unter dieser Lizenz stehenden
-	Software aufbauenden Software steht ebenfalls unter dieser Lizenz.
+	Software aufbauende Software steht ebenfalls unter dieser Lizenz.
 
-* GNU/Linux: Das GNU-Betreibssystem in Kombination mit einem Linux-Kernel.
+* GNU/Linux: Das GNU-Betreibssystem in Kombination mit einem Linux-Kern.
 
 * GNU-Projekt: Das Projekt zur Erstellung von GNU-Betriebssystem und Software.
 
 * GUI: Graphical User Interface, zu deutsch Graphische Benutzeroberfläche. Stellt Funktionen graphisch dar,
 	so dass der Benutzer beispielsweise per Mausklick damit interagieren kann; im Gegensatz zu
-	textbasierten Benutzerschnittstellen (vgl. Interface).
+	textbasierten Benutzerschnittstellen. (Vgl. Interface).
 
 * Interface: Schnittstelle. Ein Zugriffspunkt auf Funktionalitäten von außen, der einerseits den Zugriff 
 	erleichtern und andererseits die eigentliche Funktionalität verbergen soll.
 
+* Kompilieren: Umwandlung eines Quellcodes in eine für den Computer verständliche Form, die
+	Binärform, mithilfe eines Kompiler genannten Programms.
+
 * Matches: Durch OpenCV erzeugte Verknüpfungen zwischen zwei Bildbereichen bzw. Bildpixeln, 
 	welche vom Benutzer an die API übergeben werden.
 
-* OpenSource: Deutsch offene Quelle. Software, bei welcher der Quellcode frei zugänglich gemacht wird.
+* Mouse over: Information über das Element einer GUI, auf dem der Mauszeiger ruht, wird angezeigt.
+
+* Parallelrechner: Rechner, in dem mehrere Threads gleichzeitig ausgeführt werden können (vgl. Thread).
+
+* OpenCV Test Framework: Stellt Funktionen zum Testen zur Verfügung, etwa Überprüfungen,
+	ob zwei Matrizen gleich sind.
+
+* Open Source: Deutsch offene Quelle. Software, bei welcher der Quellcode frei zugänglich gemacht wird.
 	Dies erlaubt unter anderem die Weiterverwendung und -entwicklung durch andere.
  
 * Overhead: Zusätzlicher Speicher- oder Zeitaufwand.
-
-* Plug-in: Erweiterungsmodul zur Bereitstellung zusätzlicher Funktionalität für Anwendungssoftware.
 
 * proprietär: In diesem Zusammenhang Software, die nicht unter einer freien Lizenz steht.
 
@@ -437,6 +449,8 @@ Lizenz gestellt werden.
 
 * Rohdaten: Daten, die direkt und ohne wirkliche Aufarbeitung, aus den vom Entwickler beim API-Aufruf übergebenen Datenstrukturen stammen.
 
+* Speicherleck: (engl. memory leak) Vgl. Resource-Leak; die Ressource ist in diesem Fall Speicher. 
+
 * Stand-Alone-Programm: Programm, das für sich alleine funktioniert.
 
 * Streaming: Hier das Weiterlaufen des Datenstroms.
@@ -444,30 +458,30 @@ Lizenz gestellt werden.
 * Thread: Ausführungsreihenfolge in einem Programm. Der Begriff wird insbesondere im Zusammenhang mit
 	Mehrfachkernsystemen, wo mehrere Threads gleichzeitig laufen können, oft verwendet.
 
+* thread-lokal: Auf einen Thread beschränkt (vgl. Thread).
+
 * Threadsafety: Es ist sichergestellt, das mehrere Threads sich nicht gegenseitig stören, etwa
 	beim Speichern von Daten.
+
+* Translation Unit: Eine Einheit, die einzeln im Ganzen kompiliert wird (s. Kompilieren); ein Projekt teilt
+	sich meist in mehrere solcher Einheiten auf.
 
 * Undefiniertes Verhalten: Instruktionen deren Verwendung dazu führt, dass der C++-Standard *keinerlei*
 	Verhaltensgarantien irgendeiner Art für das gesammte Programm mehr gibt. Etwas Umgangssprachlich:
 	Der Standard untersagt die Verwendung.
 
-* View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder Featureart).
-
-* Visual Studio: Integrierte Entwicklungsumgebung, d.h. Programm zur Softwareentwicklung, das zur 
-	Vereinfachung der Arbeit verschiedene Anwendungsprogramme, die sonst einzelnen aufgerufen 
-	werden müssten, vereint, welche von Microsoft entwickelt wurde und verschiedene 
-	Programmiersprachen unterstützt.
+* View: Zusammengehörige Visualisierungen eines bestimmten OpenCV-Features (oder einer Featureart).
 
 ###OpenCV:
 * adaptiveThreshold: OpenCV-Methode, die mittels eines adaptiven threshold (s. unten) Graustufenbilder 
 	in (u.U. invertierte) Binärbilder umwandeln kann.
 
-* calcHist: Berechnet Histogramm.
+* calcHist: Berechnet ein Histogramm.
 
 * Canny: Kantenerkennung (mithilfe des Canny86-Algorithmus).
 
 * Dilatation: Berechnung des Bereiches in einem Bild, der von einer Maske abgedeckt wird, wenn sich deren
-	Bezugspunkt durch den ganzen zu untersuchenden Bildbereich bewegt.
+	Bezugspunkt (oft der Mittelpunkt) durch den ganzen zu untersuchenden Bildbereich bewegt.
 
 * DMatch: Klasse für das Matching (vgl. Matches)
 
