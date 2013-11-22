@@ -52,67 +52,65 @@ werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgede
 OpenCV mit Qt Unterstützung kompiliert haben.
 
 ##Produktumgebung
-Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen sowie ein
+Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen, sowie ein
 C++11-Compiler.
 
 ##Funktionale Anforderungen
 
-###API (pflicht)
-* __FA010__: Globale Auswahl zwischen Debug und Release Modus
-* __FA020__: Auswahl der Visualisierung für Operationstyp
+###API (Pflicht)
+* __FA0100__: Globale Auswahl zwischen Debug und Release Modus
+* __FA0200__: Auswahl der Visualisierung für jeden Operationstyp
 * Unterstützung folgender Operationen:
 	* [imgproc/Image Filtering](http://docs.opencv.org/modules/imgproc/doc/filtering.html): 
-		* __FA021__: [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
-		* __FA022__: [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
-		* __FA023__: [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
-		* __FA024__: [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
+		* __FA0210__: [dilate (Dilatation)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#dilate)
+		* __FA0220__: [erode (Erosion)](http://docs.opencv.org/modules/imgproc/doc/filtering.html#erode)
+		* __FA0230__: [morphologyEx](http://docs.opencv.org/modules/imgproc/doc/filtering.html#morphologyex)
+		* __FA0240__: [Sobel](http://docs.opencv.org/modules/imgproc/doc/filtering.html#sobel)
 	* [imgproc/Miscellaneous Image Transformations](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html): 
-		* __FA025__: [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
-		* __FA026__: [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
-		* __FA027__: [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
+		* __FA0250__: [threshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#threshold)
+		* __FA0260__: [adaptiveThreshold](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#adaptivethreshold)
+		* __FA0270__: [floodFill (Ausfüllen)](http://docs.opencv.org/modules/imgproc/doc/miscellaneous_transformations.html#floodfill)
 	* [feature2sd](http://docs.opencv.org/modules/features2d/doc/features2d.html): 
-		* __FA028__: [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
-		* __FA029__: [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
+		* __FA0280__: [KeyPoint](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_feature_detectors.html#keypoint) 
+		* __FA0290__: [DMatch](http://docs.opencv.org/modules/features2d/doc/common_interfaces_of_descriptor_matchers.html#dmatch)
 
-###API (optional)
-* __FA030__: Optionale Parameter für Einstellungen der Visualisierungen
-* __FA040__: Lokale Auswahl Debug/Release
-* __FA050__: Optionale nicht-blockierende Aufrufe für Streaming
-* __FA060__: Unterstützung folgender Operationen:
-	* __FA061__: imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
+###API (Optional)
+* __FA0300__: Optionale Parameter für Einstellungen der Visualisierungen
+* __FA0400__: Lokale Auswahl Debug/Release-Modus
+* __FA0500__: Optionale nicht-blockierende Aufrufe für Streaming
+* __FA0600__: Unterstützung folgender Operationen:
+	* __FA0610__: imgproc/Histograms: [calcHist](http://docs.opencv.org/modules/imgproc/doc/histograms.html#calchist)
 	* [imgproc/Feature Detection](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html): 
-		* __FA062__: [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
-		* __FA063__: [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
-	* __FA064__: [stitching](http://docs.opencv.org/modules/stitching/doc/stitching.html)
-	* __FA065__: [ocl](http://docs.opencv.org/modules/ocl/doc/introduction.html) (OpenCL)
+		* __FA0620__: [Canny](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#canny)
+		* __FA0630__: [HoughCircles](http://docs.opencv.org/modules/imgproc/doc/feature_detection.html#houghcircles)
+	* __FA0640__: [stitching](http://docs.opencv.org/modules/stitching/doc/stitching.html)
+	* __FA0650__: [ocl](http://docs.opencv.org/modules/ocl/doc/introduction.html) (OpenCL)
 
 
-###GUI (pflicht)
-* __FA070__: Eine Visualisierung pro Operation (siehe API Kriterien)
-* __FA080__: Drei Visualisierungen für features2d/DMatch (drei aus den Wunsch-Visualisierungen, siehe unten)
-* __FA090__: Zoomfunktion
+###GUI (Pflicht)
+* __FA0700__: Eine Visualisierung pro oben gelisteter Operation (siehe API Kriterien)
+* __FA0800__: Drei Visualisierungen für features2d/DMatch (drei der möglichen Wunsch-Visualisierungen, siehe unten)
+* __FA0900__: Zoomfunktion
 
-###GUI (optional)
-* __FA100__: Permanente GUI mit Historie
-* __FA110__: Datenfluss von GUI zu Code (sofern sinnvoll)
-* __FA120__: Möglichkeit eine Operation mit geänderten Parametern erneut anzuwenden
-* __FA130__: Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
-* __FA140__: Optionale Ausnutzung von mehreren Bildschirmen
-* __FA150__: Interaktive Überlagerung von Zusatzinformationen (Mouse-Over)
-* __FA160__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
-* __FA170__: Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
-	* Zur einfachen Arbeit mit größeren Tabellen
-	* __FA171__: Ermöglicht mit einer speziellen Syntax zum Beispiel die Sortierung oder Gruppierung von Datensätzen
+###GUI (Optional)
+* __FA1000__: Permanente GUI mit Historie
+* __FA1200__: Möglichkeit eine Filteroperation mit geänderten Parametern erneut anzuwenden
+* __FA1300__: Hohe Zoomstufen mit Zusatzinformationen (z.B. Pixelwerte)
+* __FA1400__: Optionale Ausnutzung von mehreren Bildschirmen durch Fenstermodus
+* __FA1500__: Interaktive Überlagerung der Bilder durch Zusatzinformationen (Mouse-Over)
+* __FA1600__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* __FA1700__: Suchleiste für alle Tabellen (z.B. jener der Übersichtsseite oder der Rohdatendatenanzeige)
+* __FA1710__: Spezielle Syntax zum Beispiel zur Gruppierung von Datensätzen
 
 ###Mögliche Visualisierungen //TODO rewrite
 
 ####Allgemein
-* __FA180__: Darstellung von Rohdaten
+* __FA1800__: Darstellung von Rohdaten
 	* Abmessungen der Bilder
 	* Farbraum der Bilder (der in OpenCV genutzte Datentyp)
 	* Tabellarische Darstellung, z.B. der Matches, mit Filtermöglichkeit
 	* Diagramme (wie Histogramme)
-* __FA190__: Darstellung der Bilder nebeneinander
+* __FA1900__: Darstellung der Bilder nebeneinander
 
 ####Visualisierungen von Matches
 * __FA200__ Basisvisualisierung *(ähnlich [´drawMatches´](http://docs.opencv.org/modules/features2d/
@@ -124,73 +122,75 @@ doc/drawing_function_of_keypoints_and_matches.html?highlight=drawmatches#drawmat
 	* Auswahl von Matches anhand bestimmter Kriterien (z.B. via Histogramm)
 	* Manuelle Auswahl von Matches
 	* Automatische Zusammenfassung von Matches zu Gruppen
-* __FA210__: Projektionen
+* __FA2100__: Projektionen
 	* Einzeichnen von Linien / Formen
 	* Auswählen von zugehörigen Matches
 	* Die Linien / Formen werden auf das zweite Bild projiziert
 	* Automatische Gruppierung der Matches zu Flächen
-* __FA220__: Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
+* __FA2200__: Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen
 	* Pfeillänge und Richtung entsprechen der jeweiligen Translation
-* __FA230__: Stereokopische Darstellung als Tiefenbild
+* __FA2300__: Stereoskopische Darstellung als Tiefenbild
 	* Pixelfarbwerte entsprechen den jeweiligen Tiefenwerten
 
 #### Visualisierungen für Filter
-* __FA240__: Differenzbilder 
+* __FA2400__: Differenzbilder
 	* [u.A.](http://www.imagemagick.org/Usage/compare/#metrics%29)
-* __FA250__: Überlagerungen
-* __FA260__: Direkte Anwendung von Filtern auf beide Bilder
+* __FA2500__: Überlagerungen
+* __FA2600__: Direkte Anwendung von Filtern auf ein oder zwei Bilder
 	* Beispiel: Anwendung eines Kantenfilters um die Auswirkungen z.B. einer Kantenglättung zu visualisieren
-* __FA270__: Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
+* __FA2700__: Visualisierung über die Auswirkungen auf bestimmte Bildmetriken
 	* z.B. Überlagerung von Histogrammen beider Bilder oder Vergleich der Kontrastwerte von bestimmten Bildbereichen
 
 ##Nichtfunktionale Anforderungen
-###Produktleistungen (pflicht)
-* __NF010__: Die GUI soll schnell starten und interaktiv bedienbar sein
-* __NF020__: Möglichst kein Overhead im Release-mode.
+###Produktleistungen (Pflicht)
+* __NF0100__: Die GUI soll schnell starten und interaktiv bedienbar sein
+* __NF0200__: Möglichst kein Overhead im Release-Modus.
 
-###Produktleistungen (optional)
-* __NF030__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
-* __NF040__: Integration in OpenCV Test Framework
+###Produktleistungen (Optional)
+* __NF0300__: Flexibler Umgang mit unterschiedlichen Bildschirm- und Bildauflösungen
+* __NF0400__: Integration in das OpenCV Test-Framework
 
-###Qualitätsanforderungen (pflicht)
-* __NF050__: Keine signifikanten Speicherlecks
-* __NF060__: Erweiterbarkeit um zusätzliche OpenCV Operationen und Visualisierungen
-* __NF070__: Modularer Aufbau (API und GUI)
-* __NF080__: Modularer Aufbau (API und GUI)
-* __NF090__: Einhaltung der OpenCV und Qt Konventionen
-* __NF100__: Ausführliche Dokumentation der API und des GUI
+###Qualitätsanforderungen (Pflicht)
+* __NF0500__: Keine signifikanten Speicherlecks
+* __NF0600__: Erweiterbarkeit um zusätzliche OpenCV Operationen und Visualisierungen
+* __NF0700__: Modularer Aufbau (API und GUI)
+* __NF0900__: Einhaltung der OpenCV und Qt Konventionen
+* __NF1000__: Ausführliche Dokumentation der API und des GUI
 
-###Qualitätsanforderungen (optional)
-* __NF110__: Dokumentation des internen Codes mit Werkzeug
-* __NF120__: OpenCV geeigneter Aufbau des Build-Systems
-* __NF130__: Abdeckung durch Tests
-* __NF140__: keine Resource-Leaks
-* __NF150__: Threadsafety
-* __NF160__: Tolleranz gegenüber fehlerhaften API-Aufrufen
-* __NF170__: keine Resource-Leaks
-* __NF180__: kein undefiniertes Verhalten
+###Qualitätsanforderungen (Optional)
+* __NF1100__: Dokumentation des internen Codes mit Werkzeug
+* __NF1200__: OpenCV geeigneter Aufbau des Build-Systems
+* __NF1300__: Abdeckung durch Tests
+* __NF1400__: Keine Resource-Leaks
+* __NF1500__: Threadsafety (Im C++11-Modus)
+* __NF1600__: Toleranz gegenüber fehlerhaften API-Aufrufen
+* __NF1700__: Kein undefiniertes Verhalten
 
 ##Produktdaten
-Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation zu zurechnen. Diese ist auf Grund des OpenSource-Gedanken nicht wichtig genug einzuschätzen.
+Rein aus der Konzeption unseres Projektes her, sind die meisten Produktdaten dem Typ der Dokumentation
+zu zurechnen.
 
-- __PD010__: Handbuch:
-	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek. Des Weiteren sind ein
-	Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von Erweiterungen des Projekts, insbesondere durch
-	das Hinzufügen neuer Views, enthalten.
-- __PD020__: Dokumentation: Es ist im wesentlichen die Dokumentation, welche dem Quellcode des Projektes entstammt und klar stellt, wie z.B. die API zu verwenden ist.
-- __PD030__: FAQ
-- __PD040__: Einstellungen:
+- __PD0100__: Handbuch:
+	Es umfasst Erklärungen zur Benutzung der GUI, der einzelnen Visualisierungen und der Bibliothek.
+	Des Weiteren sind ein Wegweiser zum Schnelleinstieg und Anleitungen zur Entwicklung von
+	Erweiterungen des Projekts, insbesondere durch das Hinzufügen neuer Views, enthalten.
+- __PD0200__: API- und Codedokumentation
+- __PD0300__: FAQ
+- __PD0400__: Einstellungen:
 	Einstellungen der Übersichtsseite und der einzelnen Visualisierungen,
 	welche vom Benutzer verändert wurden, sollen gespeichert werden.
-- __PD050__: Rohdaten:
+- __PD0500__: Rohdaten:
 	In vielen Views wird es möglich sein, die Rohdaten in einem gewünschten Format (z.B. CSV oder JSON) in einer Datei abzuspeichern.
-- __PD060__: Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
+- __PD0600__: Ursprungsbilder sowie Visualisierungen in Form von Schnappschüssen
 
 ##Systemmodell
 * Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-
-	Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen
+	Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen.
 * Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem
-	Thread-lokalem Hauptfenster hinzu.
+	Thread-lokalen Hauptfenster hinzu.
+* Die Bibliothek selbst wird über die Funktionen des öffentliche Userinterfaces angesteuert die
+	lediglich prüfen ob der Debugmodus aktiv ist und gegebenenfalls die eigentlichen Funktionen im
+	nichtöffentlichen, technischen Interface aufrufen.
 
 ![Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die
 Inneren aufrufen](architektur_skizze.png "Architekturskizze")
@@ -205,8 +205,9 @@ Inneren aufrufen](architektur_skizze.png "Architekturskizze")
 ###Skizzen //TODO write explanations
 
 ![Übersichtseite mit Tabs und ohne Vorschaubilder](GUI/overview_tabs_wo_images.png)
+
 Übersichtseite mit Tabs und ohne Vorschaubildern.
-Dem Benutzer ist mit Hilfe der Sucheleiste möglich in den vorhandenen Datensätzen zu suchen.
+Dem Benutzer kann mit Hilfe der Suchleiste in den vorhandenen Datensätzen zu suchen.
 
 
 ![Übersichtseite mit Tabs und Vorschaubildern](GUI/overview_tabs_images.png)
@@ -242,7 +243,7 @@ Schlossknopfes versucht das Programm die Anzeigen beider Bilder zu synchronisier
 Tabellarische Anzeige der Rohdaten, nach dem der Benutzer in der vorherigen Skizze auf den "View Raw"-Knopf gedrückt hat.
 
 Dem Benutzer ist es wieder möglich mit Hilfe der Suchleiste in den Daten zu suchen und mit gedrückter STRG-Taste auch mehrere Einträge
-zu markieren. Über das Kontextmenu ist es weiterhin möglich entweder die ausgewählten Einträge in der Visualisierung hervorzuheben oder sie
+zu markieren. Über das Kontextmenu ist es des Weiteren möglich entweder die ausgewählten Einträge in der Visualisierung hervorzuheben oder sie
 als JSON oder CSV in die Zwischenablage zu kopieren.
 
 
@@ -272,46 +273,46 @@ Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst ei
 seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur
 Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die folgende Struktur:
 
-1. der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
+1. Der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
 2. Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
-3. Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
-4. Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
-5. Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
-6. Der Programmierer ist jetzt hoffentlich glücklich, weil er seinen Bug gefunden oder OpenCV wieder etwas besser verstanden hat.
+3. Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die
+	Visualisierung wechseln.
+4. Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen
+	lässt.
+5. Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der
+	Übersichtsseite durch und visualisiert die gewünschten.
 7. Die Debugumgebung lässt sich ohne Fehler beenden.
 
 ###Tests für Filterview 
 * __TF010__ Anzeige des Bildes/der Bilder
-* __TF020__ Auswählen und wechseln vom Filter
-* __TF030__ Ändern der Werte eines Filters
-* __TF040__ Bedienung bei einem Großen Bild und geringer Rechenleistung
+* __TF020__ Auswählen und wechseln der Filter
+* __TF030__ Ändern der Parameter eines Filters
+* __TF040__ Bedienung bei einem großen Bild und geringer Rechenleistung
 * __TF050__ Benutzung mit mehr als einem Bild
 
 
 ###Tests für Matchview
 * __TF060__ Anzeige des Bildes/der Bilder
-* __TF070__ Auswählen und wechseln von Views
+* __TF070__ Auswählen und Wechseln von Views
 * __TF080__ Sämtliche Buttons und Schieberegler testen
-* __TF090__ Bedingung auch mit großen Bildern und mit geringer Rechenleistung
+* __TF090__ Bedingung mit großen Bildern und mit geringer Rechenleistung
 
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
 keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
 
-Wichtig: Unser Projekt ist kein Standaloneprogramm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
+Wichtig: Unser Projekt ist kein Stand-Alone-Programm und wird voraussichtlich keinen rückläufigen
+Datenfluss unterstützen.
 
 ##Entwicklungsumgebung
 
 ###Quellcode
-* GCC 4.8.0 oder später
-	Der GCC ist die vom GNU Projekt entwickelte Compiler Sammlung, welche den verwendeten C++ Compiler enthällt.
-	Es wird hierbei eine Version >= 4.8.0 erwartet, da frühere Versionen manche verwendeten C++ Eigenschaften noch nicht
-	unterstützen.
+* GCC 4.8.0 oder neuer
 * Qt 5
 * C++11
-* OpenCV
+* OpenCV 2.4.6 oder neuer
 * GNU/Linux (besonders Ubuntu 12.04)
-* CMake
+* CMake 8.2.7 oder neuer
 
 ###Dokumentation
 Zur Dokumentation werden im wesentlichen die auch von OpenCV verwendeten Werkzeuge benutzt.
@@ -358,7 +359,7 @@ Diese Lizenz hat außerdem, gegenüber z.B. der GNU GPL, den Vorteil, dass es au
 im Umfeld proprietärer Lizenzen erlaubt, und damit hoffentlich auch von Unternehmen genutzt werden kann.
 
 ###Dokumentation
-Die Dokumentation, mit sammt aller Bilder und Texte, steht unter der [CC-BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/3.0/),
+Die Dokumentation, mit samt aller Bilder und Texte, steht unter der [CC-BY-SA Lizenz](https://creativecommons.org/licenses/by-sa/3.0/),
 sofern nicht anders angegeben. 
 Die Lizenz erlaubt es anderen die Dokumentation und Teile jener, zu kopieren und weiter zu verteilen, zu verändern und zu kommerziellen Zwecken
 zu verwenden. Hierbei muss allerdings immer der Autor genannt werden und abgeleitete Werke müssen unter der selben, oder einer gleichwertigen,
