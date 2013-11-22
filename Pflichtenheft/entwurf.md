@@ -296,6 +296,22 @@ Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die fol
 * __TF080__ Sämtliche Buttons und Schieberegler testen
 * __TF090__ Bedingung mit großen Bildern und mit geringer Rechenleistung
 
+###Beispiel Ablauf
+'cv::visualize::showMatches(inputImg1, inputImg2,matches);'
+Dieser Code erzeugt ein Tab, im Hauptfenster, mit dem Standartview für Matches. Der View zeigt die Bilder nebeneinander an
+und zeichnet zwischen den einzelnen Matches Pfeile. (BITTE LINK zu den enstprechenden Bild im Pflichtenhft einfügen)
+Der Benutzer hat nun die Auswahl sich zusätliche Informationen anzeigen zu lassen, wie den "Matchwert" der einzelnen MAtches
+durch einfärben der Pfeile in Falschfarben anzeigenzulassen, oder sich einen anderen View mit anderen Optionen zu wechsel,
+in dem anderem View werden dieselben Bilder benutzt.
+Auch hat er die Möglichkeit sich die "Rohdaten", wie die Werte der
+einzelnen Matches (Koordinaten, Matchwert,..), anzeigen zu lassen. Für eine angenehmere Bedingung steht im eine Suchleiste mit 
+einigen Befehlen zur verfügung, auch kann er die Liste nach den einzelnen Spalten sortieren.
+Sollte die Matchanzeige zu unübersichtlich sein hat er auf der rechten seite Knöpfe zum Zoomen und auf der Linken Seite die
+Möglichkeit Matches nach bestimmten Kriterien anzuzeigen bzw. auszublenden.
+Nachdem der Benutzer, das GEwünschte gesehen hat, kann er, wenn es ein blockierender Aufruf war, den 'Stp further' Knöpf drücken
+und sein Programm läuft weiter oder es war kein blockierender Aufruf, dann muss er auf den nächsten Aufruf warten oder
+darauf das sein Programm sich beendet und sich das Debugfenster schliest.
+
 ##Abgrenzungskriterien
 Unser Projekt grenzt sich durch existentes Design gegenüber „random code“ ab. Darüber hinaus ist uns
 keine andere Lösung bekannt die Open Source ist, die mit unserer vergleichbare Ziele verfolgt.
