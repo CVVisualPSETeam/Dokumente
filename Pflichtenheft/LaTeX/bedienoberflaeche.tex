@@ -1,0 +1,64 @@
+\begin{itemize}
+	\item Die Bedienoberfläche wird in Qt implementiert sein.
+	\item Sie wird aus einem Hauptfenster pro Thread bestehen.
+	\item Die verschiedenen Debug-Ansichten werden entweder im Hauptfenster oder in einzelnen Fenstern dargestellt.
+	\item Daten von vorherigen API-Aufrufen werden auf einer Übersichtsseite tabellarisch dargestellt
+\end{itemize}
+
+
+\subsection{Skizzen}
+\label{sketches}
+
+\begin{sketch}[Übersichtseite mit Tabs, ohne Vorschaubilder]{overview_tabs_wo_images}
+Der Benutzer kann die einzelnen Datensätze auswählen und mit Hilfe der Suchleiste in der Tabelle zu suchen.
+Wenn er auf einen Datensatz in der Tabelle drückt, öffnet er die Visualisierung für diesen Datensatz.
+Außerdem kann er mit dem Knopf \button{Show Images} Vorschaubilder in der Tabelle anzeigen lassen (nächste Skizze) und über das Menu \button{View} einstellen, ob er die Visualisierungen als Tabs im Hauptfenster oder als eigene Fenster angezeigt haben möchte.
+\end{sketch}
+
+
+\begin{sketch}[Übersichtseite mit Tabs und Vorschaubildern]{overview_tabs_images}
+Das gleiche Übersichtsfenster, nur dass in der Tabelle Vorschaubilder angezeigt werden.
+Durch Überfahren jener mit der Maus, werden größere Bilddarstellungen eingeblendet.
+\end{sketch}
+
+
+\begin{sketch}[Übersichtseite mit Fenstern und Vorschaubildern]{overview_windows_images}
+Übersichtseite mit Fenstern statt Tabs und Vorschaubildern. Dies ermöglicht dem Benutzer mehrere Visualisierungen nebeneinander anzusehen - und damit auch mehrere Bildschirme zu nutzen.
+\end{sketch}
+
+
+\begin{sketch}[Basisvisualisierung eines Match-Datensatzes]{test_match_window}
+Unten in der Fensterleiste findet sich der aktuelle Zoomfaktor und die aktuelle Position in einem der beiden Bilder.
+Wichtig: Die Position entspricht jener im gesamten Bild - nicht jener im angezeigten Ausschnitt.
+
+Mit dem Button \button{View Raw} kann der Benutzer die Rohdatenanzeige für den aktuellen Datensatz anzeigen.
+Der Button \button{Step further} wird angezeigt, sofern die zu debuggende Anwendung wegen dieser Visualisierung blockiert. Wobei damit
+die Visualisierung nicht geschlossen wird.
+
+Die View-Auswahl und die Zoom-Knöpfe am rechten Rand sind selbsterklärend. Bei Eindrücken des
+Schlossknopfes versucht das Programm die Anzeigen beider Bilder zu synchronisieren.
+\end{sketch}
+
+
+\begin{sketch}[Rohdatenanzeige]{test_match_raw_window}
+Tabellarische Anzeige der Rohdaten, nach dem der Benutzer in der vorherigen Skizze auf den Knopf \button{View Raw} gedrückt hat.
+
+Dem Benutzer ist es wieder möglich mit Hilfe der Suchleiste in den Daten zu suchen und mit gedrückter \textit{STRG}-Taste auch mehrere Einträge zu markieren. Über das Kontextmenu ist es des Weiteren möglich entweder die ausgewählten Einträge in der Visualisierung hervorzuheben oder sie als \textit{JSON} oder \textit{CSV} in die Zwischenablage zu kopieren.
+\end{sketch}
+
+
+\begin{sketch}[Hohe Zoomstufen mit Zusatzinformationen]{test_match_deep_zoom_window}
+Der Benutzer sieht bei einem hohen Zoomfaktor Zusatzinformationen im Bild, in diesem Fall die Werte für Rot, Grün, Blau für jedes einzelne Pixel.
+\end{sketch}
+
+
+\begin{sketch}[Projektion]{test_match_area_tab}
+Projektion einer automatischen Gruppierung von Matches von einem auf das andere Bild.
+Hierbei wird jeweils das Histogramm des vom Benutzer ausgewählten Bereichs angezeigt.
+\end{sketch}
+
+
+\begin{sketch}[Darstellung von Punkttranslationen]{match_movement_parrot_window}
+Darstellung von Punkttranslationen von einem Bild zum anderen mit Pfeilen.
+Die Länge und Richtung des jeweiligen Pfeils entsprechen der Translation oder Verschiebung des Startpunktes im anderen Bild.
+\end{sketch}

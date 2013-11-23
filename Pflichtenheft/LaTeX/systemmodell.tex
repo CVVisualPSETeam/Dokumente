@@ -1,0 +1,14 @@
+\begin{itemize}
+	\item Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen.
+	\item Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem
+	Thread-lokalen Hauptfenster hinzu.
+	\item Die Bibliothek selbst wird über die Funktionen des öffentliche Userinterfaces angesteuert die lediglich prüfen ob der Debugmodus aktiv ist und gegebenenfalls die eigentlichen Funktionen im nichtöffentlichen, technischen Interface aufrufen.
+\end{itemize}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{../architektur_skizze}
+\caption[Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die Inneren aufrufen]{Das Modul besteht aus drei Layern bei denen jeweils die Äußeren die Inneren aufrufen}
+\label{fig:architektur_skizze}
+\end{figure}

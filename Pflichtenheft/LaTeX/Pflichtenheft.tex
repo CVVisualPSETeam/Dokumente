@@ -1,0 +1,199 @@
+%% Basierend auf einer TeXnicCenter-Vorlage von Mark Müller
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Wählen Sie die Optionen aus, indem Sie % vor der Option entfernen  
+% Dokumentation des KOMA-Script-Packets: scrguide
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optionen zum Layout des Artikels                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[%
+%a5paper,							% alle weiteren Papierformat einstellbar
+%landscape,						% Querformat
+%10pt,								% Schriftgröße (12pt, 11pt (Standard))
+%BCOR1cm,							% Bindekorrektur, bspw. 1 cm
+%DIVcalc,							% führt die Satzspiegelberechnung neu aus
+%											  s. scrguide 2.4
+%twoside,							% Doppelseiten
+%twocolumn,						% zweispaltiger Satz
+%halfparskip*,				% Absatzformatierung s. scrguide 3.1
+%headsepline,					% Trennline zum Seitenkopf	
+%footsepline,					% Trennline zum Seitenfuß
+%titlepage,						% Titelei auf eigener Seite
+%normalheadings,			% Überschriften etwas kleiner (smallheadings)
+%idxtotoc,						% Index im Inhaltsverzeichnis
+%liststotoc,					% Abb.- und Tab.verzeichnis im Inhalt
+%bibtotoc,						% Literaturverzeichnis im Inhalt
+%abstracton,					% Überschrift über der Zusammenfassung an	
+%leqno,   						% Nummerierung von Gleichungen links
+%fleqn,								% Ausgabe von Gleichungen linksbündig
+%draft								% überlangen Zeilen in Ausgabe gekennzeichnet
+]
+{scrartcl}
+
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage[vmargin=3cm, hmargin=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{ifthen}
+\usepackage{enumitem}
+\usepackage{geometry}
+
+%macro for buttons
+\usepackage{tikz}
+\usetikzlibrary{shadows}
+\tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white]
+
+\newcommand*{\button}[1]{  \tikz{\node[buttonstyle] {#1};}  }
+
+
+%some neat macros...
+
+% \scetchImg{title}{file name}
+\newcommand{\sketchImg}[2]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{../GUI/#2}
+		\caption{#1}
+	\end{figure}
+}
+
+% \begin{scetch}{title}{img file}
+\newenvironment{sketch}[2][\skip]{
+	\subsubsection{#1}
+	\label{#2}
+	\sketchImg{#1}{#2}
+}
+
+\newcommand{\glossaryItem}[2]{
+	\item[#1] \label{#1} #2
+}
+
+
+\setdescription{leftmargin=\parindent,labelindent=\parindent}
+
+\makeindex
+
+\setlength{\parskip}{0pt}
+
+\makeatother
+
+\hypersetup{
+	colorlinks,
+	citecolor = black,
+	filecolor = black,
+	linkcolor = black,
+	urlcolor = black
+}
+
+\author{Johannes Bechberger, Erich Bretnütz,\\
+ Nikolai Gaßner, Raphael Grimm,\\
+  Clara Scherer, Florian Weber}
+\title{%\vspace{1cm}
+         \includegraphics[scale=0.4]{../../Logo/logo.pdf}\\
+         \vspace{5mm}
+         CVVisual -- Eine Visualisierung für OpenCV
+         \vspace{5mm}}
+\subtitle{Pflichtenheft}
+\date{\today}
+
+\geometry{a4paper,left=20mm,right=20mm, top=2cm, bottom=3cm}
+
+
+\setcounter{tocdepth}{2} % hide subsubsections in table of contents
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\input einleitung
+
+\pagestyle{empty}
+
+\pagebreak
+
+\pagestyle{headings}
+
+\tableofcontents			% Inhaltsverzeichnis
+
+
+\pagebreak
+
+%\section{Einleitung}
+%\input einleitung
+
+\pagebreak
+
+\section{Produktfunktionen}
+\input produktfunktion
+
+\section{Produkteinsatz}
+Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
+werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
+OpenCV mit Qt Unterstützung kompiliert haben.
+
+\section{Produktumgebung}
+Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen, sowie ein
+C++11-Compiler.
+
+\pagebreak
+
+\section{Funktionale Anforderungen}
+\input funktionale_anforderungen
+
+\section{Nichtfunktionale Anforderungen}
+\input nichtfunktionale_anforderungen
+
+\section{Produktdaten}
+\label{produktdaten}
+\input produktdaten
+
+\pagebreak
+
+\section{Systemmodell}
+\input systemmodell
+
+\pagebreak
+
+\section{Bedienoberfläche}
+\input bedienoberflaeche
+
+\pagebreak
+
+\section{Testfälle und Testszenarien}
+\input tests
+
+\section{Abgrenzungskriterien}
+Unser Projekt grenzt sich durch existentes Design gegenüber \"random code\" ab. Darüber hinaus ist uns
+keine andere Lösung bekannt die OpenSource ist, die mit unserer vergleichbare Ziele verfolgt.
+
+\textbf{Wichtig}: Unser Projekt ist kein Stand-Alone-Programm und wird voraussichtlich keinen rückläufigen Datenfluss unterstützen.
+
+\section{Entwicklungsumgebung}
+\input entwicklungsumgebung
+
+\section{Lizenz}
+\input lizenz
+
+\pagebreak
+
+\section{Glossar}
+\label{sec:glossar}
+\input glossar
+
+\section{Literatur}
+\input literatur
+
+\end{document}

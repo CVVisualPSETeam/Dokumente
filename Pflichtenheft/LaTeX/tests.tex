@@ -1,0 +1,41 @@
+Unser Projekt ist eine reine Debug-Bibliothek, die es dem Benutzer möglichst einfach macht, seine Bilddaten zu visualisieren. Deshalb enthält der Funktionsumfang im Grunde genommen nur Visualisierungen und die meisten Testszenarios besitzen auf Grund dessen die folgende Struktur:
+\begin{enumerate}
+	\item Der Programmierer schreibt den gewünschten API-Aufruf an die gewünschte Stelle in seinen Quelltext.
+	\item Ein Fenster öffnet sich und visualisiert die beim Aufruf übergebenen Daten.
+	\item Nun kann er mit der Visualisierung arbeiten, sie in den Einstellungen anpassen oder die Visualisierung wechseln.
+	\item Bei blockierenden Aufrufen klickt er nun auf einen Button, der das aufrufende Programm weiterlaufen lässt.
+	\item Er sucht entweder weiter Fehler in seinem Programm, oder sieht die angefallenen Datensätze in der Übersichtsseite durch und visualisiert die gewünschten.
+	\item Die Debugumgebung lässt sich ohne Fehler beenden.
+\end{enumerate}
+
+\subsection{Tests für Filterview}
+\begin{description}
+	\item[/TF010/] Anzeige des Bildes/der Bilder
+	\item[/TF020/] Auswählen und wechseln der Filter
+	\item[/TF030/] Ändern der Parameter eines Filters
+	\item[/TF040/] Bedienung bei einem großen Bild und geringer Rechenleistung
+	\item[/TF050/] Benutzung mit mehr als einem Bild
+\end{description} 
+
+\subsection{Tests für Matchview}
+\begin{description}
+	\item[/TF060/] Anzeige des Bildes/der Bilder
+	\item[/TF070/] Auswählen und Wechseln von Views
+	\item[/TF080/] Sämtliche Buttons und Schieberegler testen
+	\item[/TF090/] Bedingung mit großen Bildern und mit geringer Rechenleistung
+\end{description}
+
+\subsection{Beispielhafter Ablauf}
+Der Benutzer tippt irgendwo in seinem Code die folgende Zeile, wobei \texttt{inputImg1} und \texttt{inputImg2} zwei Bilder und \texttt{matches} die von OpenCV gefundenen Matches sind.
+\begin{verbatim}
+cvvisual::showMatches(inputImg1, inputImg2, matches);
+\end{verbatim}
+Dieser Code erzeugt ein Fenster, mit dem Standartview für Matches. Der View zeigt die Bilder nebeneinander an und zeichnet zwischen den einzelnen Matches Pfeile (siehe \nameref{test_match_window}). 
+Der Benutzer hat nun die Auswahl sich zusätzliche Informationen anzeigen zu lassen, wie den \textit{Matchwert} der einzelnen Matches durch Einfärben der Pfeile in Falschfarben anzeigen zulassen, oder sich einen anderen View mit anderen Optionen zu wechseln.
+In dem anderem View werden dieselben Bilder benutzt.
+Jetzt drückt er den \button{View Raw} Knopf um sich sich gesamten Rohdaten (wie die Werte der einzelnen Matches (Punkt-Koordinaten, Matchwert,..) im nun aufgehenden Fenster anzeigen zu lassen (siehe \nameref{test_match_raw_window}).
+Für eine angenehmere Bedingung steht ihm eine Suchleiste mit einigen Befehlen zur Verfügung. Mit ihrer Hilfe sortiert er die Liste nach der X-Koordinate des ersten Punktes jedes Matches.
+Er wählt die erste Zeile der Tabelle durch Rechtsklicken aus und exportiert mit dem erscheinenden Kontextmenu den Zeileninhalt - ein Match - in die Zwischenablage als JSON. Dieses JSON schreibt er für später in die Ursprungsdatei.
+Nun kehrt der Benutzer durch Klicken des \button{Return to match view} Knopfes zur Matchview zurück und zoomt dort etwas im Bild herum und untersucht für ihn wichtige Bildteile. 
+Nachdem der Benutzer, das Gewünschte gesehen hat drückt er den \button{Step further} Knopf, damit sein Programm weiter läuft und weiter läuft.
+Wenn sein Programm sich beendet, beendet sich auch CVVisual und schließt alle Fenster.
