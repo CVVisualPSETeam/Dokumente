@@ -54,7 +54,7 @@
 \usetikzlibrary{shadows}
 \tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white]
 
-\newcommand*{\button}[1]{  \tikz{\node[buttonstyle] {#1};}  }
+\newcommand{\button}[1]{  \tikz{\node[buttonstyle] {#1};}  }
 
 
 %some neat macros...
@@ -79,6 +79,15 @@
 	\item[#1] \label{#1} #2
 }
 
+%reference to a glossary entry
+\newcommand{\gl}[1]{
+	\rightarrow\textcolor{glossaryReferenceColor}{\nameref{#1}}
+}
+
+\newcommand{\glossaryItemWD}[4]{
+	\glossaryItem{#1}{#2}\\
+	\textsl{\rightarrow \href{#4}{#3}}
+}
 
 \setdescription{leftmargin=\parindent,labelindent=\parindent}
 
@@ -113,20 +122,20 @@
 \setcounter{tocdepth}{2} % hide subsubsections in table of contents
 
 \begin{document}
-
-\maketitle
+\clearpage\maketitle
+\thispagestyle{empty}
 
 \pagebreak
 
 \input einleitung
-
-\pagestyle{empty}
+\thispagestyle{empty}
 
 \pagebreak
 
 \pagestyle{headings}
 
-\tableofcontents			% Inhaltsverzeichnis
+\tableofcontents
+\thispagestyle{empty}
 
 
 \pagebreak
@@ -140,9 +149,8 @@
 \input produktfunktion
 
 \section{Produkteinsatz}
-Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt
-werden. Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche
-OpenCV mit Qt Unterstützung kompiliert haben.
+Die Software soll zunächst im universitären Forschungsumfeld des beauftragenden Institutes eingesetzt werden.
+Später kann der Nutzerkreis potentiell auf alle OpenCV Benutzer ausgedehnt werden, welche OpenCV mit Qt Unterstützung kompiliert haben.
 
 \section{Produktumgebung}
 Nach Möglichkeit alle Plattformen auf denen moderne Versionen von OpenCV und Qt5 laufen, sowie ein
