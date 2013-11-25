@@ -1,14 +1,11 @@
-Unser Produkt wird ein Debug-Werkzeug für diverse OpenCV-Funktionalität sein. Hierzu werden wir die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das Ursprungsbild zu visualisieren.
+Unser Produkt ist ein Debug-Werkzeug für diverse OpenCV-Funktionalität. Hierzu werden die Ergebnisse von Filteroperationen verwenden, um die Auswirkungen des Filters auf das Ursprungsbild zu visualisieren.
 
-Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, werden wir die Funktionalität dabei so implementieren, dass pro Translation Unit der Debug-Modus sowohl während des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während des Kompilierens werden wir hierbei versuchen die Programmlaufzeit in keiner Weise negativ zu beeinflussen.
+Um das Debuggen zu erleichtern und Codeänderungen im Anschluss überflüssig zu machen, ist die Funktionalität dabei so implement, dass pro Translation Unit der Debug-Modus sowohl während des Kompiliervorgangs als auch zur Laufzeit (de-)aktiviert werden kann. Bei der Deaktivierung während des Kompilierens wird hierbei die Programmlaufzeit in keiner Weise negativ beeinflusst.
 
-Bei der Verwendung in Programmen mit mehreren Threads wird zwar mit eingeschränktem Komfort zu rechnen
-sein, aber die prinzipielle Funktionalität an sich wird unbeeinträchtigt bleiben.
+Bei der Verwendung in Programmen mit mehreren Threads ist zwar mit eingeschränktem Komfort zu rechnen,die prinzipielle Funktionalität an sich bleibt dennoch unbeeinträchtigt.
 
-Zur Verwendung werden wir für die debugbaren OpenCV-Funktionalitäten Funktionen bereitstellen, welche
-eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen werden (pro
+Zur Verwendung stellen wir für die debugbaren OpenCV-Funktionalitäten Funktionen bereit, welche eine graphische Darstellung des Filters zu einem großen Debug-Hauptfenster hinzufügen (pro
 Thread ein Hauptfenster).
 
-Je nach View werden wir beispielsweise die Matches zwischen zwei Bildern mit Pfeilen darstellen.
-Hierbei soll es auch eine Möglichkeit geben, die Darstellungen selbst zu filtern, beispielsweise indem
-nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
+Je nach View stellen wir beispielsweise die Matches zwischen zwei Bildern mit Pfeilen dar.
+Hierbei gibt es auch eine Möglichkeit, die Darstellungen selbst zu filtern, beispielsweise indem nur Pfeile zwischen Unterschieden, die einen gewissen Schwellwert überschreiten, gezeichnet werden.
