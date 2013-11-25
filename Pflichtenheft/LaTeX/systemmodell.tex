@@ -1,8 +1,14 @@
 \begin{itemize}
-	\item Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun und im Debug-Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen.
-	\item Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen diese dem
-	Thread-lokalen Hauptfenster hinzu.
-	\item Die Bibliothek selbst wird über die Funktionen des öffentliche Userinterfaces angesteuert die lediglich prüfen ob der Debugmodus aktiv ist und gegebenenfalls die eigentlichen Funktionen im nichtöffentlichen, technischen Interface aufrufen.
+	\item Das Interface wird aus öffentlichen Funktionen bestehen, die im Release-Modus nichts tun
+		und im Debug-Modus, so gewünscht, die nicht-öffentlichen Debug-Methoden aufrufen.
+	\item Die nichtöffentlichen Debug-Funktionen erzeugen eine graphische Visalisierung und fügen
+		diese dem Thread-lokalen Hauptfenster hinzu.
+	\item Die Verwaltung des Hauptfensters wird vermutlich über einen Singleton stattfinden.
+	\item Die Visualisierungen werden sich, wie in der modernen Softwareentwicklung üblich, aus
+		modularen Komponenten zusammensetzen.
+	\item Die Bibliothek selbst wird über die Funktionen des öffentliche Userinterfaces angesteuert
+		die lediglich prüfen ob der Debugmodus aktiv ist und gegebenenfalls die eigentlichen
+		Funktionen im nichtöffentlichen, technischen Interface aufrufen.
 \end{itemize}
 
 
