@@ -48,13 +48,21 @@
 \usepackage{ifthen}
 \usepackage{enumitem}
 \usepackage{geometry}
+\usepackage{scalefnt}
 
 %macro for buttons
 \usepackage{tikz}
 \usetikzlibrary{shadows}
-\tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white]
+\tikzstyle{buttonstyle} = [rectangle, fill = black!30, draw = black!80, drop shadow, font={\sffamily\bfseries}, text=white, inner sep = 3pt
+]
 
-\newcommand{\button}[1]{  \tikz{\node[buttonstyle] {#1};}  }
+\newcommand{\button}[1]{
+{\scalefont{0.8}
+\begin{tikzpicture}
+\node[buttonstyle] {\ {#1}};
+\end{tikzpicture}
+}
+}
 
 
 %some neat macros...
@@ -63,7 +71,7 @@
 \newcommand{\sketchImg}[2]{
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{../GUI/#2}
+		\includegraphics[width=\linewidth]{../GUI/#2}
 		\caption{#1}
 	\end{figure}
 }
