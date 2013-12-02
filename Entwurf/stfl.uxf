@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>366</x>
+      <y>54</y>
+      <w>138</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>/Table/
+--
+-parent: CVVisualMain
+-qtTable: QtTableWidget
+-entries: Vector&lt;TableEntry&gt;
+-entryGroups: Vector&lt;EntryGroup&gt;
+-filterEngine: STFLEngine
+--
++query(query: QtString)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>414</x>
+      <y>0</y>
+      <w>60</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>QtWidget
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>420</x>
+      <y>0</y>
+      <w>30</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;54</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>360</x>
+      <y>168</y>
+      <w>138</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>OverviewTable
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>402</x>
+      <y>114</y>
+      <w>30</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;54</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>0</y>
+      <w>180</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>STFLEngine
+--
+_-filterStatements: Vector_
+_-groupByStatements: Vecor_
+_-sortByStatements: Vector_
+_-customStatements: Vector_
+--
++query(entries: Vector&lt;TableEntry&gt;): Vector&lt;EntryGroup&gt;
+/#filter(entries: Vector&lt;TableEntries&gt;): Vector&lt;TableEntry&gt;/
+/#group(entries: Vector&lt;TableEntries&gt;): Vector&lt;EntryGroup&gt;/
+/#sort(entries: Vector&lt;TableEntries&gt;): Vector&lt;TableEntry&gt;/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>168</y>
+      <w>192</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>FilterStatement
+--
+
+--
++filter(filterText: QtString, entry: TableEntry): bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>252</y>
+      <w>216</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>SortStatement
+--
+-sortText
+--
++updateSortText(text:QtString)
++compare(entry1: TableEntry, entry2: TableEntry): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>210</y>
+      <w>216</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>GroupStatement
+--
+
+--
++group(groupText: QtString, entry: TableEntry): QtString
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>126</y>
+      <w>192</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/STFLStatement/
+--
+#descriptor
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>258</x>
+      <y>138</y>
+      <w>30</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>276</x>
+      <y>138</y>
+      <w>30</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>294</x>
+      <y>138</y>
+      <w>30</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;114</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>162</x>
+      <y>306</y>
+      <w>216</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>CustomStatement
+--
+--
++action(inputText: QtString, entry: TableEntry)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>312</x>
+      <y>138</y>
+      <w>30</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;168</additional_attributes>
+  </element>
+</diagram>
