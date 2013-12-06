@@ -16,4 +16,10 @@ hier können alleinstehende funktionen eingetragen werden (+ was sie machen)
 - vec<T> filter( vec<T> in, bool(filterfunc*)(T&)
 	- filtert aus dem vektor in anhand der filterfunktion elemente raus 
 
+- minmax
+	- gibt es schon
+	
+- avg
+	- gibt es evt schon
 
+	
