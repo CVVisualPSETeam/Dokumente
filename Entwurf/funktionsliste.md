@@ -11,13 +11,25 @@ hier können alleinstehende funktionen eingetragen werden (+ was sie machen)
 	- auswahl welche gesucht sind durch get PointsFrom Train
 	- evt rückgabewert: vec<tuple<point,point>>
 	
-- vec<T> filter( vec<T> in, bool(filterfunc*)(T&)
-	- filtert aus dem vektor in anhand der filterfunktion elemente raus 
+- vec<point> getInclosed(vec<point>, rectangle)
+	- filtert die punkte, welche in dem rechteck liegen
+	- über die allgemeine filterfunktion
 
+###Mengenoperationen	
 - minmax
 	- gibt es schon
 	
 - avg
 	- gibt es evt schon
+	
+- vec<T> filter( vec<T> in, bool(filterfunc*)(T&)
+	- filtert aus dem vektor in anhand der filterfunktion elemente raus 
+	
+####merging
+- union(a1, a2, ...)
+- complement(a, All)
+- intersection(a1, a2, ...)
+- relativeComplement(a1, a2)
+- SymmetricDifference(a1, a2)
 
 	

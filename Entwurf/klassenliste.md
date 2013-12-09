@@ -8,3 +8,8 @@ hier können  klassen eingetragen werden (+ was sie machen)
 	
 - historgramSelecter 
 	- ein histogramm in derm ein bereich ausgewählt werden kann
+	
+- Match
+	- ein ersatz für die matches aus opencv
+	- einthält nicht nur den index auf die entsprechenden Punkte sondern auch diese/ eine referenz auf diese
+	
