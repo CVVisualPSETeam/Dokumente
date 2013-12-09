@@ -2,8 +2,6 @@ hier können alleinstehende funktionen eingetragen werden (+ was sie machen)
 
 -point absolute2relativePoint(rectangle, point)
 -point relative2absolutePoint(rectangle, point)
-	-wandelt einen absoluten/ relativen punkt eines bildes/bildausschnittes in das entsprechende gegenstück um
-	- eine version für mehrere punkte 
 	
 -rectangle surroundingRectangle(vec<point>, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)
 	- erzeugt ein rechteck, welches die angegebenen punkte einschließt (ränder werden um delta verschoben)
