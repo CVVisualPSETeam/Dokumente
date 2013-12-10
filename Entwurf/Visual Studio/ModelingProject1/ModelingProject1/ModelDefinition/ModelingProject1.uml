@@ -3,6 +3,23 @@
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="49471709-6e89-44c1-b3d5-887af6782072">
+      <body>Legende:
+- Farben
+	- Grau: externe klassen/objekte
+	- Orange: Zuständigkeit Raphael</body>
+    </comment>
+    <comment
+      Id="b2fbd4c2-e7d8-4857-9e92-304afda193c7">
+      <body>
+qgraphicsscene:
+http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
+
+=&gt; umstrukturierung</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -1140,6 +1157,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="65014686-fbe8-4323-a8f0-b7fa65f9f3f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+              LastKnownName="Qt::QWidget"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="a98c716f-3848-413e-a769-e1789de9017c"
@@ -1830,13 +1857,13 @@
                     <literalString
                       Id="da66ea32-923a-488b-bb20-297a578a23bc"
                       name="Lower"
-                      value="n" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="63b7b8d3-8cb4-4bb9-83c2-766230cca9e3"
                       name="Upper"
-                      value="n" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -3555,6 +3582,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ee90c834-ec43-431d-8d52-a0cd68cd4269"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+              LastKnownName="Qt::QWidget"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="f94ed43f-cdab-4bb5-a3e1-ec6cc09a483a"
@@ -4364,6 +4401,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0d8f9c78-0e12-4ceb-ba55-22f1c7653e81"
+            isDerived="false"
+            sourceEndRoleName="MatchSelectorWidget"
+            targetEndRoleName="SetOperatorWidget"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="900c636a-5022-4bde-ac41-fd229b418f8d"
+              LastKnownName="GroupOperatorWidget&lt;T&gt;"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3f7041b-7d20-4d13-9e26-bfa73a71e787"
+                  name="MatchSelectorWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f61a439-966e-43d4-9d7c-2d13cbb80c54"
+                  name="SetOperatorWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -4379,20 +4455,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="7a069eb9-6d53-4cbe-8177-44181b723044"
-            name="void (callbackMatchUpdate*)(matchindexer&amp;)"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="1772136e-f738-4de3-999a-ab305c919fff"
-            name="matchindexer currentSelection"
+            name="vec&lt;DMatch&gt; currentSelection"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -4404,19 +4468,7 @@
             isComposite="false" />
           <property
             Id="b831a1cf-39e5-4693-8f18-65b8da486a9b"
-            name="matchindexer selectionInUse"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="43a685fe-de71-499b-ad63-bfc976862d76"
-            name="vec&lt;tupel&lt;string,matchindexer&gt;&gt; groups"
+            name="vec&lt;DMatch&gt; selectionInUse"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -4446,131 +4498,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="f524d115-1550-445a-a35b-fc24881d30b0"
-            name="groupUnion"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a0ceba02-dfa9-4800-967f-445126f998eb"
-                  name="matchindexer..."
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="c6971804-1235-4512-92d8-d43a8edb55e7"
-            name="groupIntersection"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="98da4d73-3406-4d74-8bd1-3a3bf3de280a"
-                  name="matchindexer..."
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="3e5631e8-8585-4270-9c33-b374da0650be"
-            name="groupRelativeComplement"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="120ab6d8-7a69-4865-bfaa-8fe39ea72413"
-                  name="matchindexer a"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="821f552e-95d7-4ca0-ac29-cfed92e1923b"
-                  name="matchindexer b"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="5a87aecc-ddcf-4a7c-a5b0-96a30e6978ba"
-            name="groupSymmetricDifference"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9f9f00d1-4b6a-4aff-bbb1-5910a5158ba3"
-                  name="(matchindexer a"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f6f59eaf-5c62-42ef-bbbb-ce3660c5e852"
-                  name="matchindexer b"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="eb5001cb-459d-43b3-b670-5a53c1f3b00b"
-            name="groupComplement"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d793c9e5-42e3-4be4-935f-828f730b16b4"
-                  name="matchindexer"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="92044517-17fa-491b-b389-ed04b8844532"
-            name="getOptionWidget"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="459a4600-e93b-43a6-8dc6-e2a6f2fa258f"
-            name="getName"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -5065,6 +4992,334 @@
           </operation>
         </ownedOperations>
       </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="afab5f8d-371e-4b75-ada1-cc4ef9fb610e"
+        name="CV::Mat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="89dc7172-a2b6-4f36-afac-029130eda141"
+        name="CV::DataType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="70dbc838-8bff-407b-9e36-34833f5ec35f"
+        name="CV::Point_&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="845af89e-9851-4ef4-9420-88bf6dd08952"
+            name="x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6824017c-b02a-4750-acc4-b0d29be0135f"
+            name="y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4ead3da5-3fad-4fce-9e4e-50665f6d08c3"
+        name="CV::Size_&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f6a66408-c96e-4ae1-ac50-3c0f8c08cfe7"
+            name="width"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="373b3439-d5e8-4619-900e-3937212ada64"
+            name="height"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="70084af8-c624-476a-964b-20c5b91d04d6"
+        name="CV::Rect_&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="3f0d5626-cedd-4d7e-8bc2-d100fd92ca46"
+            name="x"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e8855622-d471-48a9-98ed-695855484570"
+            name="y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9684113e-e83e-4b85-ad10-7c19392dd03a"
+            name="height"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ed91b966-4b37-4d19-b977-9fb20a18d254"
+            name="width"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+        name="Qt::QWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7758a93d-1120-47bd-8601-f80787e87400"
+        name="Qt::QString "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="37cd0063-c5e9-4b4f-88c1-538c7aa55b80"
+        name="std::optional&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="900c636a-5022-4bde-ac41-fd229b418f8d"
+        name="GroupOperatorWidget&lt;T&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="de9e304c-dead-4fa1-9832-ff7a48bb84eb"
+            name="vec&lt;tupel&lt;string,vec&lt;T&gt;&gt;&gt; groups"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b5acec38-af9e-4d69-b56d-d96c3fa503a8"
+            name="groupComplement"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9e8895e-3e64-4c2e-b8ca-30dabdfa7257"
+                  name="matchindexer"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eca65ae9-4faf-431b-ac37-bf06d6a02028"
+            name="groupIntersection"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71d214e6-f5d1-42bd-931d-f0f2c2967aa8"
+                  name="matchindexer..."
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="625a069f-ee66-4fe1-8509-8b62e45704ca"
+            name="groupRelativeComplement"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b266d6e5-5475-4423-9121-a6882863e5a2"
+                  name="matchindexer a"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="117e3b81-7fff-4418-b6e7-3d3819eae486"
+                  name="matchindexer b"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d42e4fa1-3573-47cd-b98b-80a3b92ce700"
+            name="groupSymmetricDifference"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f346caaf-5886-4714-859b-8b85c859f23f"
+                  name="(matchindexer a"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9dc06a6-1e69-4cea-a43d-1bcacd68c66c"
+                  name="matchindexer b"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="04fc118e-0445-467f-8673-04368fc89424"
+            name="groupUnion"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="330b8680-a115-4cb3-baf4-3247d632f734"
+                  name="matchindexer..."
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1f458911-ee73-4955-87cd-bc0c2214f9ac"
+            name="/// signal groupSelected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9ae3da03-98a9-44d3-941e-b57da81a9798"
+            name="setGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="32abaee7-4744-4392-979f-a5001c714ede"
+                  name="QString name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c6053e04-3ddc-4264-bf6d-c724907a9714"
+                  name="vec&lt;T&gt; elements"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
