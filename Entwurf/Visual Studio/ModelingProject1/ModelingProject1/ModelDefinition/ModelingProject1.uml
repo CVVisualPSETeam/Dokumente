@@ -7,9 +7,18 @@
     <comment
       Id="49471709-6e89-44c1-b3d5-887af6782072">
       <body>Legende:
+
 - Farben
+	
 	- Grau: externe klassen/objekte
-	- Orange: Zuständigkeit Raphael</body>
+
+	- Rot:noch nicht fertig durchdachte Views (ggf benötigte Klassen 	hinzufügen)
+	- Orange: Zuständigkeit Raphael
+	- Gelb: Zuständigkeit: Florian
+	-Olivegrün: Johannes
+	- Blau: Nikolai
+	-Lila: Erich
+	-hellgrün: Ferienzeit</body>
     </comment>
     <comment
       Id="b2fbd4c2-e7d8-4857-9e92-304afda193c7">
@@ -18,6 +27,32 @@ qgraphicsscene:
 http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
 
 =&gt; umstrukturierung</body>
+    </comment>
+    <comment
+      Id="f12c57ac-7d58-4e9d-a115-8a4782ca60d8">
+      <body>kann auch von QWidget abgeleitet werden</body>
+    </comment>
+    <comment
+      Id="96307e42-0fb7-4ffc-9d21-567524b1d86f">
+      <body>schnittstellen ggf ersetzen durch abstrakte unterklasse von QWidget??
+</body>
+    </comment>
+    <comment
+      Id="4c50c3e3-b286-4d2c-9cff-a721a38b78d5">
+      <body>klassenstruktur der drei kassen nooch unklar
+</body>
+    </comment>
+    <comment
+      Id="93c75e53-e250-4135-bfe7-ebb022e53c2e">
+      <body>soll angeblich woanders hin</body>
+    </comment>
+    <comment
+      Id="de599330-8faf-4998-966c-240a3c48a446">
+      <body>Wahrscheinlich benötigte Klassen</body>
+    </comment>
+    <comment
+      Id="2b240c8b-bb88-4249-8d5e-323801470d30">
+      <body>können eigenständig über die weihnachtszeit implementiert</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -194,34 +229,32 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="00beb49e-275c-4f8f-b2d6-a6b5f58b0809"
+            Id="df65d0e7-bb9f-4ccd-9a62-5785510413ab"
             isDerived="false"
-            sourceEndRoleName="nImageView"
-            targetEndRoleName="ImgDisplay"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
-            <classMoniker
-              Id="9d9f82a6-234a-4bdd-aa90-38c9b2c4b024"
-              LastKnownName="ImgDisplay"
+            <interfaceMoniker
+              Id="2e4f0cb8-adf6-4ea5-b4a8-14f9b1149cb4"
+              LastKnownName="Options"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="f58d90f7-c9dd-4516-b60a-17b087ca9b2d"
-                  name="nImageView"
+                  Id="5eb73b0f-85e9-4da3-ba5b-f433991803a5"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="2777d27f-6dd6-4de7-a44a-2072a896f1f0"
-                  name="ImgDisplay"
+                  Id="f9b59d1c-e916-4e5d-ad7f-4090590c3672"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -232,7 +265,136 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="032ecc7b-c899-480e-a691-620e98f02738"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9d9f82a6-234a-4bdd-aa90-38c9b2c4b024"
+              LastKnownName="ImgDisplay"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d7b904d-be2f-41cf-bf93-c61e8a7d007e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cdf50f90-118f-4a99-b54b-ce2d17a46cc0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="54fe0c5c-03e6-46b5-91a8-98e60453a330"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d3ef7fe7-6b62-4c0b-927e-81a87a5ac6f2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="84014c12-237c-42c7-81f8-ff8d74aa2e9a"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="51f2a217-6c77-4267-b7c4-cc2f847605f5"
+              LastKnownName="Accordion"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65ce8cf6-5223-457e-8b4a-87f025d46f55"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56ca3e3f-edfa-4a34-a2a4-0bbcc95423cd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b3bdfdf7-ef1e-49b4-b1ca-590210e29371"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e038f757-3d70-46c3-9215-b59135ec7707"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="d7f446ad-3da8-465a-8ee4-6562593fb677"
+            name="syncZoom"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="401bb91b-c6d8-479a-8e56-9b4553dfa0e0"
+            name="useFilter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7abd3b7f-c00a-4dcb-86d9-daeec37718ad"
+            name="useDrawFunc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -616,15 +778,16 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="1118ca09-1305-4042-baaa-11e4213e711d">
-            <interfaceMoniker
-              Id="2e4f0cb8-adf6-4ea5-b4a8-14f9b1149cb4"
-              LastKnownName="Options"
+        <generalsInternal>
+          <generalization
+            Id="f5f006e3-c02b-4758-ab24-80cb2c2fb40a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+              LastKnownName="Qt::QWidget"
               LastKnownLocation="ModelingProject1.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="ffab313b-0a8f-4d39-a7b4-855466847e65"
@@ -640,22 +803,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
             isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="26171eb0-c128-412d-8749-4ab877e70e73"
-            name="getOptionWidget"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="237440e5-25ea-4c17-b6f9-c2657377fb32"
-            name="getName"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="b39410fd-04d7-4209-9bdc-3be97bfd64ef"
             name="getImgPoint"
@@ -1015,6 +1162,16 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="41fdf896-d29d-4389-98a2-e7d760fc2f84"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+              LastKnownName="Qt::QWidget"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation
             Id="fa3365fd-4a06-447c-a9a2-595550a0fa8e"
@@ -1053,56 +1210,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association
-            Id="a98c716f-3848-413e-a769-e1789de9017c"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="dfd9bf51-65de-41ed-ba40-e107623479cd"
-              LastKnownName="nImageView"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a009b1ba-fb99-4134-bd65-c91b1618aad2"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="803dcfab-325e-4228-9465-d0fc44c94011"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="10c2103f-f010-4a0e-a03f-717c99507978"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2d18bfed-ed70-4747-a808-8576e5c3f14d"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="8610e8e6-8987-4fe5-8052-a2ecb1ee8679"
             isDerived="false"
@@ -4239,21 +4346,22 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="c9782aa4-8490-4ed3-b729-3632beb59d48">
-            <interfaceMoniker
-              Id="2e4f0cb8-adf6-4ea5-b4a8-14f9b1149cb4"
-              LastKnownName="Options"
+        <generalsInternal>
+          <generalization
+            Id="e84f7c01-ede5-459c-ac9c-052dbb4b3717"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2409a9f9-b643-4cd2-8964-5f2d479488ce"
+              LastKnownName="Qt::QWidget"
               LastKnownLocation="ModelingProject1.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="0d8f9c78-0e12-4ceb-ba55-22f1c7653e81"
             isDerived="false"
-            sourceEndRoleName="MatchSelectorWidget"
-            targetEndRoleName="SetOperatorWidget"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -4264,7 +4372,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b3f7041b-7d20-4d13-9e26-bfa73a71e787"
-                  name="MatchSelectorWidget"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -4277,7 +4384,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="4f61a439-966e-43d4-9d7c-2d13cbb80c54"
-                  name="SetOperatorWidget"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -4950,7 +5056,38 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
         name="std::optional&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="acf41892-53a5-4550-a836-c22438eb336d"
+            name="bool"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="814fe40a-e2a8-41c6-87f4-caba62983afb"
+            name="content:T"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -5126,6 +5263,42 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="34fa9129-59da-4efc-9519-5e0799711879"
+        name="Histogramm"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1">
+            <interfaceMoniker
+              Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
+              LastKnownName="Filterview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="450c7680-de98-4c8e-9d20-23844613cf26"
+        name="Diffimage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8246392d-9c78-446b-aa19-994e92c810cb">
+            <interfaceMoniker
+              Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
+              LastKnownName="Filterview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
