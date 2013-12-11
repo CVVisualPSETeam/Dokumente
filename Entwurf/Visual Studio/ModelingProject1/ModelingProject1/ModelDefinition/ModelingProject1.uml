@@ -193,6 +193,45 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="00beb49e-275c-4f8f-b2d6-a6b5f58b0809"
+            isDerived="false"
+            sourceEndRoleName="nImageView"
+            targetEndRoleName="ImgDisplay"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9d9f82a6-234a-4bdd-aa90-38c9b2c4b024"
+              LastKnownName="ImgDisplay"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f58d90f7-c9dd-4516-b60a-17b087ca9b2d"
+                  name="nImageView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2777d27f-6dd6-4de7-a44a-2072a896f1f0"
+                  name="ImgDisplay"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -238,108 +277,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="d7e114eb-1557-491a-bdcc-9a1de6a89038"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="9d9f82a6-234a-4bdd-aa90-38c9b2c4b024"
-              LastKnownName="ImgDisplay"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6d21c0d6-6eae-48d0-9a65-2a47b3a29f1b"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="40288b32-08df-4b42-9bfb-a8a6be3ab14e"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="bd3bbd36-18a6-4cca-afda-bf23115129f6"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="2a66083f-4a41-42b1-9d69-15cc8ee34b21"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="1ea26373-ff49-480e-b099-cbe2289e8aee"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <interfaceMoniker
-              Id="a0222bb3-9bd2-4cdd-8b17-743990002698"
-              LastKnownName="SingleFilterFunction"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="26dda51d-61d9-4687-9571-c14850086454"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="dc8c033d-93ec-4b44-acb6-a2e516eb43d7"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="e9310481-9849-445e-ab8f-88328a19d602"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6f0e58cf-01dd-45ca-afd8-9215e49dae99"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="20ee4685-94e7-4c30-85d8-847c3c921ed8"
@@ -600,58 +537,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="f7c44ce3-af15-4f67-8022-ec3c90ea65e4"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <interfaceMoniker
-              Id="7dff2039-b955-4694-9e1e-73f5de4b63bf"
-              LastKnownName="DrawMatchFunction"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="16d55c61-44be-49d6-a69f-0822b98d65a8"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="3122dd93-e858-42ee-9f32-0b25c7433ae2"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="1fca95f3-d5eb-4301-9d51-73c7f8d00a00"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="e5eb004f-df83-498b-8313-49917de0a179"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="e609ae13-a23e-459c-9f7c-eec984de90e8"
@@ -3705,7 +3590,20 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c30507d1-70cc-4dac-83b4-674969370537"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d4553cd4-f052-4d9f-a847-46f7d829c73f"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -3764,7 +3662,20 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
                   isDerivedUnion="false"
                   aggregation="Shared"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6ff7a488-7777-4c58-bb81-21da6d4aa2f0"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="00f22275-1741-4672-823f-34f6ec228857"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -4339,69 +4250,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
         </suppliersInternal>
         <targetEnds>
           <association
-            Id="ed469d73-df99-48b3-b775-0ed15067618b"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="124774a9-2ede-4818-8623-c14f8af47c68"
-              LastKnownName="MatchImgPanel"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f31b0ff8-e4bd-4fb3-a85c-2f79e70e275d"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="0888871b-36b5-4fce-a0c1-eabe74823f66"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="9812e0c1-7a63-417d-81d3-2f00595e5c85"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c7460687-6899-4252-b1d9-2141c315d736"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="91c3aa30-d8cf-4fcc-aebd-ab5de69127b5"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6b7d71d4-23b2-49a8-8f4d-c065fa05db34"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="0d8f9c78-0e12-4ceb-ba55-22f1c7653e81"
             isDerived="false"
             sourceEndRoleName="MatchSelectorWidget"
@@ -4562,56 +4410,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
                   <upperValueInternal>
                     <literalString
                       Id="d3625a7b-8aee-4c8b-b646-7f64d6529599"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="1835676a-5e6d-4019-96f7-3fc1efbf96d1"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <interfaceMoniker
-              Id="69e1beda-466e-442f-9e79-10e26f0118f5"
-              LastKnownName="DoubleFilterFunction"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="12fe4114-52e3-410e-83cd-7c3639a19bc5"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5d7c5848-e68c-4a39-bb9a-80addbb65ae8"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="2b53456a-7f56-4c27-91dd-116038d3c5c2"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="57ea1c5f-d3bb-4b81-b04a-ee2bbb64cd8a"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -5320,6 +5118,14 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="08031c0f-0ab5-44dc-a6fd-58f246ca1ff0"
+        name="SingleFilterFunction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
