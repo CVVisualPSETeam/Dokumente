@@ -33,7 +33,9 @@
 qgraphicsscene:
 http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
 
-=&gt; umstrukturierung</body>
+=&gt; umstrukturierung
+
+ersatz: siehe unten</body>
     </comment>
     <comment
       Id="f12c57ac-7d58-4e9d-a115-8a4782ca60d8">
@@ -55,7 +57,7 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
     </comment>
     <comment
       Id="de599330-8faf-4998-966c-240a3c48a446">
-      <body>Wahrscheinlich benötigte Klassen</body>
+      <body>Klassen die es schon gibt (brauchen nicht neu erfunden werden....)</body>
     </comment>
     <comment
       Id="2b240c8b-bb88-4249-8d5e-323801470d30">
@@ -71,6 +73,39 @@ nim best / worst /cut</body>
       Id="895f0465-fbaa-4979-b6f2-2ef97900cdd7">
       <body>aus all / selection
 nimm complement ?</body>
+    </comment>
+    <comment
+      Id="cea9c767-5ff1-4294-ba07-2c3e0ffd2f70">
+      <body>Alleinstehende Funktionen:
+	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
+	- std::optional&lt;Point&gt; relative2absolutePoint(rect, Point)
+	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)</body>
+    </comment>
+    <comment
+      Id="90723046-7c4d-4ff6-a758-e4b96f949845">
+      <body>style generell:
+	- tooltip sichtbar
+
+linien:
+	- falschfarben / farbe / farbe+alpha
+	- durchgezogen / gestrichelt
+
+punktgruppen:
+	- linie (pen)
+	- füllen (brush)
+-------------------------
+
+zur id:
+	- ermöglicht stylechanges für nur eine instanz
+	- maxvalue = alles</body>
+    </comment>
+    <comment
+      Id="af9c3261-012a-4d82-8d3b-f970a3917e34">
+      <body>todo:
+imageinfo
+keypointinfo
+matchinfo
+</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -4526,7 +4561,7 @@ nimm complement ?</body>
             isComposite="false" />
           <property
             Id="769b69eb-3b67-4590-8f7f-7fc1cdc9ef9c"
-            name="comparator(T,T)"
+            name="{comparator(T,T)"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -4538,14 +4573,14 @@ nimm complement ?</body>
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
-                LastKnownName="int"
+                Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53"
+                LastKnownName="int}"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
             Id="a95e7ae5-7a2c-4e5a-87e5-e230ff25be1e"
-            name="doubleExtractor(T)"
+            name="{doubleExtractor(T)"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -4557,8 +4592,8 @@ nimm complement ?</body>
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="4a9b6850-46ea-4421-b6ed-e03188ba183a"
-                LastKnownName="double"
+                Id="0d52659f-6699-43e7-88f6-7ef15755c0bb"
+                LastKnownName="double}"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -5259,7 +5294,7 @@ nimm complement ?</body>
             isComposite="false" />
           <property
             Id="86df702a-62e1-4dd8-85ce-20cd4dd7d834"
-            name="comparator(T,T)"
+            name="{comparator(T,T)"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -5271,8 +5306,8 @@ nimm complement ?</body>
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
-                LastKnownName="int"
+                Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53"
+                LastKnownName="int}"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -5496,10 +5531,49 @@ nimm complement ?</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="dec4d5d1-7356-4783-8692-d38286d7df99"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2e034223-1dc9-4024-98a1-2172857fed9e"
+              LastKnownName="SelectableHistogram"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="143f6ed0-2333-4bc6-8599-ba6a14b35ab7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f1fcad57-7f74-4ccc-9916-7986fcc1b125"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="1f5a39eb-0cb7-4129-8548-c8ceb0853cc2"
-            name="doubleExtractor(T)"
+            name="{doubleExtractor(T)"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -5511,8 +5585,8 @@ nimm complement ?</body>
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="4a9b6850-46ea-4421-b6ed-e03188ba183a"
-                LastKnownName="double"
+                Id="0d52659f-6699-43e7-88f6-7ef15755c0bb"
+                LastKnownName="double}"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -5566,7 +5640,7 @@ nimm complement ?</body>
             isComposite="false" />
           <property
             Id="f1d3441a-aa50-43e8-bdbf-1107ad970006"
-            name="?? SelectableHist hist"
+            name="SelectableHistogram hist"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -5609,7 +5683,7 @@ nimm complement ?</body>
         <ownedAttributesInternal>
           <property
             Id="b2b6a277-d83a-4bd1-94db-f27b97c33ad6"
-            name="comparator(T,T)"
+            name="{comparator(T,T)"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -5621,8 +5695,8 @@ nimm complement ?</body>
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
-                LastKnownName="int"
+                Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53"
+                LastKnownName="int}"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -5699,7 +5773,7 @@ nimm complement ?</body>
     <packageHasNamedElement>
       <class
         Id="2e034223-1dc9-4024-98a1-2172857fed9e"
-        name="Histogram"
+        name="SelectableHistogram"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -5819,6 +5893,56 @@ nimm complement ?</body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="4b9323b0-2bb7-42e3-a6eb-27d24c771afe"
+            name="///slot selectInterval"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cfe26656-16bb-4180-af14-6821ecd3a96c"
+                  name="double from"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ad01360c-a29a-43cb-aa87-8408f82398c3"
+                  name="double to"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a428bfa-d528-49a2-828f-6f0b257ebc65"
+            name="///signal intervalSelected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04602e08-6c27-4a30-b3c5-2d70020a5c80"
+                  name="double from"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="64f4545a-045b-4a61-8210-1b14c9b4a8de"
+                  name="double to"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -5826,6 +5950,711 @@ nimm complement ?</body>
       <undefinedType
         Id="0d52659f-6699-43e7-88f6-7ef15755c0bb"
         name="double}" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53"
+        name="int}" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96516523-11ed-448e-b3ed-68261c6bc909"
+        name="GraphicsSceneLineGroup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="3a6433f7-6663-4ac4-88fb-a3ceaaaa5624"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fb21137e-550b-4149-828e-b2aeaf0e52e1"
+            name="bool tooltipEnabled"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a0c63cec-472f-45cd-bcf7-ebb757a3642b"
+            name="Point basepointA"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cb782610-eb22-4054-a415-bc98979296ba"
+            name="Point basepointB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="12730037-06ba-41e8-9564-336264ac5b58"
+            name="///slot pointAUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9b94848-0abe-430f-b189-cbb7c9357186"
+                  name="Point"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8181bf0b-1542-4db8-888b-bbac3f5ac10e"
+            name="///slot pointBUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ba26bab-0622-4c24-ad8c-bb201f0452ab"
+                  name="Point"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a1a2512e-1bbf-4c78-88fa-664aa62d78f3"
+            name="///slot styleUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec7dbab9-7d24-49be-b5b5-38b59d155b52"
+                  name="..."
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61fdbc1d-c82c-423e-8ce0-558cf1cc1914"
+                  name="size_t id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d2cd9bbc-1e87-4795-a5be-ec07916a7291"
+        name="GraphicsScenePointGroup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="09e6b69b-dd07-480e-8e16-ec32c2869272"
+            name="polygone"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="84ae1fc2-227a-4f05-8c09-e0d4698fe914"
+            name="Point basePoint"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9c0d3829-ef2f-4aaa-acf5-e207da4631fe"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="86528056-67c0-4cc6-ab6d-6c3b35b616a2"
+            name="bool tooltipEnabled"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b68cd775-094b-4bb9-a6a1-1c40c7b458a5"
+            name="///signal basePointChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b4c8a8c-fc7d-484b-85f4-240ba6209287"
+                  name="Point"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a0095190-ee5c-414e-bad4-fdc726593cd4"
+            name="///signal selected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="00bcc5d8-d5ea-4da9-acdb-6209ea9a7129"
+            name="///slot areaChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f379ddb-10af-411a-92ab-ed9ab2910f36"
+                  name="Rect"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5e408ac2-675d-4b2e-aa79-1ecae9dd3862"
+            name="///slot styleUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04c7f548-07ff-4973-8d57-940dfee5a55a"
+                  name="..."
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a911f21-d349-40d9-9101-da9a1116e7a0"
+                  name="size_t id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8e8dc87f-93d2-4158-8928-2b6efdde397d"
+        name="ZoomableImage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ccccf51d-6546-4bc8-af75-33053fadc5d1"
+            name="image"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d6671f6c-f045-4011-b3d7-28bc9a6dc340"
+            name="Rect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c7a6d69a-fdc7-4f46-a9ac-3054e1e824d3"
+            name="bool tooltipEnabled"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="43fc58c0-fa0c-4d9b-acdd-ce195a4a5967"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d36a733d-aa8f-41da-80a7-573dacaa7ef8"
+            name="/// signal zoomChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="960d6d17-b8d6-47b9-be42-59330c2ce8e0"
+                  name="Rect"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="64ca22f4-1013-48fc-9e33-d88d8840a790"
+            name="///slot setZoom"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc0ba2f9-6d49-42d7-ae81-abb930c34458"
+                  name="Rect"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e37e0751-0f68-4d41-b4a1-523aaf912e3f"
+            name="setImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="749208cd-b38c-4bd4-8991-e6c4943443a4"
+        name="GraphicsSceneArrow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7cfa99a2-2314-4bae-b831-09db4b0b920d"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29b9d97e-854d-47e1-bc3b-6de9b5703a58"
+            name="bool tooltipEnabled"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="519c6bee-e87f-4e2e-bc72-b5fb37113307"
+            name="Point basepoint"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="490bd288-e55e-4099-b85c-48541f97c209"
+            name="Point relativeVector"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f0338a4d-8557-406d-ac9c-0d91cd00e207"
+            name="///slot styleUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="baa99e82-6135-49be-8696-3159b0bb6d2f"
+                  name="..."
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14010ccc-8ebe-4d3d-8a2d-c86073bd594c"
+                  name="size_t id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b4d93b5e-539d-42c1-b915-bfe8ad6b67f4"
+            name="///slot positionUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dd9494da-3459-4a99-b9b1-4e680731eb74"
+                  name="Point"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e869e698-9a39-42b7-9913-80f4687a404f"
+        name="SingleImageFilterWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="02002ee4-8dc1-4a24-826f-5e5c79d341dc"
+            name="Image&amp; image"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a3449f7b-d65f-48c1-bbb2-02a454d77b89"
+            name="Image output"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="50d1885b-3718-4799-9b70-3e4919087218"
+            name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9341348f-8eb3-4b8b-8c36-80e0c4ff4627"
+            name="///slot setInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ea9d48f-c6fc-4e44-b2ae-06a4f318eb84"
+                  name="Image&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="87c818d0-e52c-46d1-b3f1-e6c3584c0888"
+            name="///signal newOutputImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f99f6d6-796d-4991-9716-1bf8eeb80f9e"
+                  name="Image&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b54046e-dd61-46b6-a5c5-a3b7115798b0"
+            name="registerFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5d19732-7c7f-4c0d-8fb4-4b4b49e8e995"
+                  name="QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6070ceaa-8839-4c99-a6fc-57b4f22476eb"
+                  name="descriptor"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98cdb604-d10b-4e8f-aafa-efbad33d5ebb"
+        name="DualImageFilterWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5855fa8e-c24b-4927-bb42-7fbbc9930850"
+            name="Image&amp; imageA"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="49095215-0e31-4eae-ba4e-a3931e8e3e3a"
+            name="Image&amp; imageB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a2b1db32-a9ba-43db-8d1f-f332df33de0a"
+            name="Image output"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="760325c8-2b8b-418d-ab20-3fa40c4d36b9"
+            name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d57d9a52-cc4d-4e6a-87b8-db3d9632dfb7"
+            name="///slot setInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9ca0fba-56fd-4b1b-9137-d6b88e2bf4b9"
+                  name="Image&amp; a"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f16b8872-f95c-45c8-9810-3225acae4e10"
+                  name="Image&amp; b"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d54524fd-1670-420d-bb20-0dfec64203af"
+            name="///signal newOutputImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfb4065c-6369-42dd-9f2f-b5448ea9ac3b"
+                  name="Image&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ed562c0d-f5b3-4037-b6c3-5109e1921dd4"
+            name="registerFilter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c552d01-07c8-4634-b439-27bd8cd51df1"
+                  name="QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1819765e-1229-434c-b103-5143ad2d982d"
+                  name="descriptor"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
