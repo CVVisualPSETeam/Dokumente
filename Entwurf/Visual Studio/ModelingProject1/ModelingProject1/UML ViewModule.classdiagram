@@ -59,21 +59,11 @@ zur id:
       <elementDefinition Id="67316ebe-c909-4c45-88d9-eb515dd8f538" />
       <body>NOch nicht bearbeitet</body>
     </comment>
+    <comment Id="20904845-0eb0-4cf6-9a48-4ba65ee1bf0f">
+      <elementDefinition Id="446d7eba-0e0d-41dc-876d-afe553d5da02" />
+      <body>Wrapper für OpenCV funktionen</body>
+    </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="e87c2ed2-08b8-4d1a-834e-b0cbe175f952">
-      <profileInstance Id="a1aeb578-e1ca-4853-8947-0597512d6f16" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="88098316-f596-4e9d-b2fa-c63f32f4313d">
-      <profileInstance Id="34171449-0d8c-4395-b0b9-e512ec20c15c" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="394eefda-1430-443d-b597-d59a180b6231" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
@@ -1283,12 +1273,26 @@ zur id:
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="Histogram2" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="HistogramImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="a46f7f19-98c8-4838-aed1-8781c8f2c432" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e87c2ed2-08b8-4d1a-834e-b0cbe175f952">
+        <profileInstance Id="a1aeb578-e1ca-4853-8947-0597512d6f16" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="88098316-f596-4e9d-b2fa-c63f32f4313d">
+        <profileInstance Id="34171449-0d8c-4395-b0b9-e512ec20c15c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
