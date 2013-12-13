@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -15,14 +15,14 @@
 - Farben
 	
 	- Grau: externe klassen/objekte
+ 	- Rot:noch nicht fertig durchdachte Views (ggf benötigte Klassen hinzufügen)
 
-	- Rot:noch nicht fertig durchdachte Views (ggf benötigte Klassen 	hinzufügen)
-	- Orange: Zuständigkeit Raphael bzw von raphael hinzugefügt
-	- Gelb: Zuständigkeit: Florian
+	- Orange: Raphaelt
+	- Gelb: Florian
 	- Olivegrün: Johannes
 	- Blau: Nikolai
 	- Lila: Erich
-	- hellgrün: Ferienzeit</body>
+	- hellgrün: Ferienzeit(siehe ViewModule)</body>
     </comment>
     <comment Id="48df6797-c36b-492b-9779-ceaa04ba5e2f">
       <elementDefinition Id="96307e42-0fb7-4ffc-9d21-567524b1d86f" />
@@ -37,11 +37,6 @@
     <comment Id="d11801d1-8cb7-48e5-bbf7-eaac73ef7008">
       <elementDefinition Id="93c75e53-e250-4135-bfe7-ebb022e53c2e" />
       <body>soll angeblich woanders hin</body>
-    </comment>
-    <comment Id="b854f58b-d308-498c-9b2d-d884a3fe145f">
-      <elementDefinition Id="c6f02913-259e-49ab-bda2-a4294e54f189" />
-      <body>nur eine verbindungslinie
-</body>
     </comment>
     <comment Id="a3e39088-cbfc-4808-8d8f-8ad8a8a92e22">
       <elementDefinition Id="a10372d5-8e78-4167-b3c8-d9d742c9f065" />
@@ -254,22 +249,6 @@ matchinfo
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="c9088d59-41a9-4f5f-b897-c1fc9da38af3" />
-          </association>
-          <association Id="de3c7fce-3034-4098-b5a3-c13f1db027b6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="c8a37d34-116e-4818-9048-6efd2065d73c" LastKnownName="DataConroller" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6de1d0f1-0e8d-4e9f-96e5-b5f41bb5bd77" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2bd09791-278e-4add-b85b-bed2b3619f11" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="4c97b5ca-fd55-4e6b-adc4-48595b249eca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="493551e4-1dfd-4373-8589-989038a5b5d6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d4fea9b6-9ec8-43d4-94e1-0bb03dee1f1f" />
           </association>
         </targetEnds>
       </class>
@@ -525,6 +504,17 @@ matchinfo
           <interfaceRealization Id="68adf08a-ce9d-4d9b-8726-e269a3e54bf5">
             <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="Filterview" />
             <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6ba7f2b6-a4ee-4aea-831a-37ba56a6514e" name="TranslationView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2bf7b77d-4daa-4be2-aab3-7c9c7932f680" />
+        <suppliersInternal>
+          <interfaceRealization Id="3c66a875-489f-4f33-b517-c81fc2591919">
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <elementDefinition Id="f95f26c7-2fc3-401d-ab18-5d5b8bf8c0dc" />
           </interfaceRealization>
         </suppliersInternal>
       </class>

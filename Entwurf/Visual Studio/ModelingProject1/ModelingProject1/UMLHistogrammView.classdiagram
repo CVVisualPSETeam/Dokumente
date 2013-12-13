@@ -2,22 +2,22 @@
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="028cfae3-6d63-4e73-9143-d1a0dab401ce" name="UMLClassDiagram1" linkedPackageId="2d301ace-a34d-4f17-ae77-ccf7556ff57c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="736eb095-3c56-437b-b5ad-8fe7e32afcaf" name="Filterview2" isAbstract="false" isLeaf="false">
+      <Interface Id="736eb095-3c56-437b-b5ad-8fe7e32afcaf" name="Filterview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="60a868c9-c5ee-46a7-b746-1de40e52f0fd" />
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6dae6293-3576-43b8-8a7a-28ce73cc0c94" name="HistogrammView1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6dae6293-3576-43b8-8a7a-28ce73cc0c94" name="HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="08612060-042d-4fdb-976b-0ea3b9520bb7" />
         <suppliersInternal>
           <interfaceRealization Id="a7bee830-fb2e-4dd1-9189-5ab769fa5016">
-            <interfaceMoniker Id="736eb095-3c56-437b-b5ad-8fe7e32afcaf" LastKnownName="Filterview2" />
+            <interfaceMoniker Id="736eb095-3c56-437b-b5ad-8fe7e32afcaf" LastKnownName="Filterview" />
             <elementDefinition Id="94ee7ee7-5d3e-4e15-9424-9c9bfd83ea96" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="c3f52d72-b570-4e2f-a992-a5f90a95b8a4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="87e71d03-b72f-4fa4-bf45-97d0a94ce606" LastKnownName="Accordion22" />
+            <classMoniker Id="87e71d03-b72f-4fa4-bf45-97d0a94ce606" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="8cfb34e8-4de2-49d1-9f95-314b84a80c66" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -72,7 +72,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fc934baf-899d-4ed9-b0d3-4020dc928ce3" name="Collapsable12" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="fc934baf-899d-4ed9-b0d3-4020dc928ce3" name="Collapsable" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b7e5ace3-356d-4987-8ecb-61f0504884b2" />
         <ownedAttributesInternal>
           <property Id="d5363fa2-5ab2-401d-9bf3-0db99c24a2a9" name="QWidget widget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -99,11 +99,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="87e71d03-b72f-4fa4-bf45-97d0a94ce606" name="Accordion22" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="87e71d03-b72f-4fa4-bf45-97d0a94ce606" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8960d28e-e130-4fa5-8b24-af11ef4554c3" />
         <targetEnds>
           <association Id="17c89bcb-f123-4607-a136-1d5defdb2ff7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="fc934baf-899d-4ed9-b0d3-4020dc928ce3" LastKnownName="Collapsable12" />
+            <classMoniker Id="fc934baf-899d-4ed9-b0d3-4020dc928ce3" LastKnownName="Collapsable" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="0e37d9f0-c2c2-43d6-91c7-3562d1fffde2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">

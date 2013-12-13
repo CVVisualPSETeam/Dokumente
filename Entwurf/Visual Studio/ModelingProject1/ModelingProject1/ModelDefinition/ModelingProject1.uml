@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -18,14 +18,14 @@
 - Farben
 	
 	- Grau: externe klassen/objekte
+ 	- Rot:noch nicht fertig durchdachte Views (ggf benötigte Klassen hinzufügen)
 
-	- Rot:noch nicht fertig durchdachte Views (ggf benötigte Klassen 	hinzufügen)
-	- Orange: Zuständigkeit Raphael bzw von raphael hinzugefügt
-	- Gelb: Zuständigkeit: Florian
+	- Orange: Raphaelt
+	- Gelb: Florian
 	- Olivegrün: Johannes
 	- Blau: Nikolai
 	- Lila: Erich
-	- hellgrün: Ferienzeit</body>
+	- hellgrün: Ferienzeit(siehe ViewModule)</body>
     </comment>
     <comment
       Id="96307e42-0fb7-4ffc-9d21-567524b1d86f">
@@ -42,19 +42,12 @@
       <body>soll angeblich woanders hin</body>
     </comment>
     <comment
-      Id="c6f02913-259e-49ab-bda2-a4294e54f189">
-      <body>nur eine verbindungslinie
-</body>
-    </comment>
-    <comment
       Id="4da131c9-0e3b-4d09-b5ba-40b55002096c">
       <body>Alleinstehende Funktionen:
 	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
 	- std::optional&lt;Point&gt; relative2absolutePoint(rect, Point)
-	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)  
-
-
-WENN MÖGLICH BITTE IN DER LISTE BEARBEITEN NICHT HIER
+	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)
+	- levensteinDistance
 </body>
     </comment>
     <comment
@@ -170,6 +163,21 @@ zur id:
     <comment
       Id="446d7eba-0e0d-41dc-876d-afe553d5da02">
       <body>Wrapper für OpenCV funktionen</body>
+    </comment>
+    <comment
+      Id="dce7ca83-e1c9-431a-8fcb-3f3a79d94750">
+      <body>Speicherfunktion
+</body>
+    </comment>
+    <comment
+      Id="5839e1f7-2d90-4306-96b3-be366ae6cad9">
+      <body>Diffimage
+Overlap Image</body>
+    </comment>
+    <comment
+      Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a">
+      <body>Diffimage
+Overlap Image</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -2016,43 +2024,6 @@ zur id:
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="bb83294d-93e2-4474-8ba2-21908199d34e"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="d4fea9b6-9ec8-43d4-94e1-0bb03dee1f1f"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ae9e801e-2a86-4548-940c-88fcce7a9598"
-              LastKnownName="DataConroller"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2bd09791-278e-4add-b85b-bed2b3619f11"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="493551e4-1dfd-4373-8589-989038a5b5d6"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -6816,7 +6787,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-        name="SelectorWidget&lt;T&gt;1"
+        name="SelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -6830,7 +6801,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="30ed6329-f803-4f4e-af94-32c1f5c200e8"
-              LastKnownName="GroupOperatorWidget&lt;T&gt;1"
+              LastKnownName="GroupOperatorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -6867,7 +6838,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="5340958f-9df4-4138-897c-8c5b59be929d"
-              LastKnownName="IntervalSelectorWidget&lt;T&gt;1"
+              LastKnownName="IntervalSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -6904,7 +6875,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="87c3c7e3-a403-4269-86eb-1edf57044051"
-              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;1"
+              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -7052,7 +7023,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="87c3c7e3-a403-4269-86eb-1edf57044051"
-        name="RelativePortionSelectorWidget&lt;T&gt;1"
+        name="RelativePortionSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7144,7 +7115,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="5340958f-9df4-4138-897c-8c5b59be929d"
-        name="IntervalSelectorWidget&lt;T&gt;1"
+        name="IntervalSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7158,7 +7129,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="672b1e69-7088-4746-b5a1-493cc0c0f86f"
-              LastKnownName="SelectableHistogram1"
+              LastKnownName="SelectableHistogram"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -7293,7 +7264,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="672b1e69-7088-4746-b5a1-493cc0c0f86f"
-        name="SelectableHistogram1"
+        name="SelectableHistogram"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7469,7 +7440,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="30ed6329-f803-4f4e-af94-32c1f5c200e8"
-        name="GroupOperatorWidget&lt;T&gt;1"
+        name="GroupOperatorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7677,7 +7648,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d"
-        name="Collapsable1"
+        name="Collapsable"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7750,7 +7721,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
-        name="Accordion2"
+        name="Accordion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7764,7 +7735,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d"
-              LastKnownName="Collapsable1"
+              LastKnownName="Collapsable"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -8028,7 +7999,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7"
-        name="ZoomableImage1"
+        name="ZoomableImage"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8172,7 +8143,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
-        name="GraphicsScenePointGroup1"
+        name="GraphicsScenePointGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8341,7 +8312,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="0bf19076-72bf-494a-adff-955c372a782d"
-        name="GraphicsSceneLineGroup1"
+        name="GraphicsSceneLineGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8502,7 +8473,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed"
-        name="GraphicsSceneArrow1"
+        name="GraphicsSceneArrow"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8645,7 +8616,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-        name="DualImageFilterWidget1"
+        name="DualImageFilterWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8774,7 +8745,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
-        name="SingleImageFilterWidget1"
+        name="SingleImageFilterWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8884,7 +8855,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="191d0a32-7682-4312-9601-5e68d486f332"
-        name="CV::Mat1"
+        name="CV::Mat"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -8892,7 +8863,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="dd4edd49-4caf-4965-8166-656dff28b45d"
-        name="CV::DataType1"
+        name="CV::DataType"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -8900,7 +8871,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="ae2af5c8-c4fc-4405-84e2-c6c1a7d95f80"
-        name="CV::Point_&lt;T&gt;1"
+        name="CV::Point_&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8933,7 +8904,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="2d925316-1c55-4fa0-9857-2bab83499ae8"
-        name="CV::Size_&lt;T&gt;1"
+        name="CV::Size_&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -8966,7 +8937,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="70f885c0-b1d1-4429-a1eb-75ebad01aad5"
-        name="CV::Rect_&lt;T&gt;1"
+        name="CV::Rect_&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9021,7 +8992,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="2c96b0c7-7b58-48b4-a07a-7e7eb132ef3e"
-        name="Qt::QString 1"
+        name="Qt::QString"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -9029,7 +9000,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="73aaa98b-2776-4ed2-8d12-139553f1f555"
-        name="std::optional&lt;T&gt;1"
+        name="std::optional&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9076,7 +9047,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="a35d124e-a1c1-463d-9066-a276df5eecc2"
-        name="DoubleFilterFunction1"
+        name="DoubleFilterFunction"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -9084,7 +9055,7 @@ zur id:
             Id="624d43de-515a-4839-b466-0cc5d9f8a482">
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="DualImageFilterWidget1"
+              LastKnownName="DualImageFilterWidget"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -9120,7 +9091,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="947b431d-6c2f-46ef-b7c7-681b74c78475"
-        name="SingleFilterFunction1"
+        name="SingleFilterFunction"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -9128,7 +9099,7 @@ zur id:
             Id="0bfc2977-3780-43c4-8dce-4c608e70eb69">
             <classMoniker
               Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
-              LastKnownName="SingleImageFilterWidget1"
+              LastKnownName="SingleImageFilterWidget"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -9170,7 +9141,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="55b1ff7d-c80e-44aa-bc19-0f357719e380"
-        name="DrawMatchFunction2"
+        name="DrawMatchFunction"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -9178,21 +9149,21 @@ zur id:
             Id="99d95e48-8508-4457-8f09-da3f19d4c6d5">
             <classMoniker
               Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed"
-              LastKnownName="GraphicsSceneArrow1"
+              LastKnownName="GraphicsSceneArrow"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
           <dependency
             Id="b5828c51-c665-4bb2-8ca1-3de9e14c1508">
             <classMoniker
               Id="0bf19076-72bf-494a-adff-955c372a782d"
-              LastKnownName="GraphicsSceneLineGroup1"
+              LastKnownName="GraphicsSceneLineGroup"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
           <dependency
             Id="c2700f9e-1144-4a93-8438-125da5c78a11">
             <classMoniker
               Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
-              LastKnownName="GraphicsScenePointGroup1"
+              LastKnownName="GraphicsScenePointGroup"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -9242,7 +9213,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="4bb95601-c917-448d-ba24-41e68d730917"
-        name="nImageView1"
+        name="nImageView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9256,7 +9227,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="fcedbfba-f25d-40f0-8fd0-b877280b25da"
-              LastKnownName="ImgDisplay2"
+              LastKnownName="ImgDisplay"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9306,7 +9277,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="c1d2ab69-981e-4f2f-a3a8-08b465cfc1f6"
-              LastKnownName="Accordion3"
+              LastKnownName="Accordion"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9356,7 +9327,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="5e9e9a56-0874-473c-a028-9fdbace9f4b0"
-              LastKnownName="SingleImageFilterWidget2"
+              LastKnownName="SingleImageFilterWidget"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9393,7 +9364,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="1c35a0f5-5954-43fe-81d3-0d91a7257cbe"
-              LastKnownName="SelectorWidget&lt;T&gt;2"
+              LastKnownName="SelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9456,7 +9427,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="fcedbfba-f25d-40f0-8fd0-b877280b25da"
-        name="ImgDisplay2"
+        name="ImgDisplay"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9558,7 +9529,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="c1d2ab69-981e-4f2f-a3a8-08b465cfc1f6"
-        name="Accordion3"
+        name="Accordion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9572,7 +9543,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="a3cf44d1-8dc0-4818-87b8-ccc5489a5019"
-              LastKnownName="Collapsable2"
+              LastKnownName="Collapsable"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9836,7 +9807,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="a3cf44d1-8dc0-4818-87b8-ccc5489a5019"
-        name="Collapsable2"
+        name="Collapsable"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9909,7 +9880,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="1c35a0f5-5954-43fe-81d3-0d91a7257cbe"
-        name="SelectorWidget&lt;T&gt;2"
+        name="SelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -9923,7 +9894,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="c27965e3-df85-4ab2-8dcc-73a394b44044"
-              LastKnownName="GroupOperatorWidget&lt;T&gt;2"
+              LastKnownName="GroupOperatorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9960,7 +9931,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="06819a7c-0a21-4f71-8828-3eee46fdec7d"
-              LastKnownName="IntervalSelectorWidget&lt;T&gt;2"
+              LastKnownName="IntervalSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -9997,7 +9968,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="8ec47f89-ac9b-469d-8569-a1c874cfc374"
-              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;2"
+              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -10145,7 +10116,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="519bda37-ebaa-4262-b679-2107455908b9"
-        name="SingleFilterFunction2"
+        name="SingleFilterFunction"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -10186,7 +10157,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="8198754d-8f62-4e99-a339-4cca6c325641"
-        name="DrawMatchFunction3"
+        name="DrawMatchFunction"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -10235,7 +10206,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="541585cd-1e57-4363-9044-55a90140388f"
-        name="DoubleFilterFunction2"
+        name="DoubleFilterFunction"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -10278,7 +10249,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="c27965e3-df85-4ab2-8dcc-73a394b44044"
-        name="GroupOperatorWidget&lt;T&gt;2"
+        name="GroupOperatorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -10486,7 +10457,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="06819a7c-0a21-4f71-8828-3eee46fdec7d"
-        name="IntervalSelectorWidget&lt;T&gt;2"
+        name="IntervalSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -10500,7 +10471,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="7c08cdb6-21b2-48dc-929c-272040b622c2"
-              LastKnownName="SelectableHistogram2"
+              LastKnownName="SelectableHistogram"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -10635,7 +10606,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="8ec47f89-ac9b-469d-8569-a1c874cfc374"
-        name="RelativePortionSelectorWidget&lt;T&gt;2"
+        name="RelativePortionSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -10727,7 +10698,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="7c08cdb6-21b2-48dc-929c-272040b622c2"
-        name="SelectableHistogram2"
+        name="SelectableHistogram"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -10903,7 +10874,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="c869b5b2-59b7-43bd-a720-babc26ee77c6"
-        name="GraphicsSceneLineGroup2"
+        name="GraphicsSceneLineGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11025,7 +10996,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="a6c4909e-0433-4c1b-b2fe-53f0a123a659"
-        name="GraphicsScenePointGroup2"
+        name="GraphicsScenePointGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11155,7 +11126,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="4cf8e43a-150b-4a3d-a8fc-b8aadbf5cd5e"
-        name="ZoomableImage2"
+        name="ZoomableImage"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11260,7 +11231,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="099196c6-b49c-4f43-89c7-3df6a736dfcb"
-        name="GraphicsSceneArrow2"
+        name="GraphicsSceneArrow"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11364,7 +11335,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="5e9e9a56-0874-473c-a028-9fdbace9f4b0"
-        name="SingleImageFilterWidget2"
+        name="SingleImageFilterWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11378,7 +11349,7 @@ zur id:
             isAbstract="false">
             <interfaceMoniker
               Id="519bda37-ebaa-4262-b679-2107455908b9"
-              LastKnownName="SingleFilterFunction2"
+              LastKnownName="SingleFilterFunction"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11526,7 +11497,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="fabe2e48-a66c-470a-a7e4-35e3498d3b1c"
-        name="DualImageFilterWidget2"
+        name="DualImageFilterWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11540,7 +11511,7 @@ zur id:
             isAbstract="false">
             <interfaceMoniker
               Id="541585cd-1e57-4363-9044-55a90140388f"
-              LastKnownName="DoubleFilterFunction2"
+              LastKnownName="DoubleFilterFunction"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11729,7 +11700,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="a6c4909e-0433-4c1b-b2fe-53f0a123a659"
-              LastKnownName="GraphicsScenePointGroup2"
+              LastKnownName="GraphicsScenePointGroup"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11753,7 +11724,20 @@ zur id:
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4b269f07-cc7d-4f46-be48-141ec4f90b70"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="07181a32-3d16-48f3-a957-ed86f7aaf031"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -11766,7 +11750,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="c869b5b2-59b7-43bd-a720-babc26ee77c6"
-              LastKnownName="GraphicsSceneLineGroup2"
+              LastKnownName="GraphicsSceneLineGroup"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11790,7 +11774,20 @@ zur id:
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="54d949ce-0d07-4dfe-bff3-2de3a644fc56"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6f7ad39a-e08b-4705-aa8e-f3ab317039f6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -11803,7 +11800,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="099196c6-b49c-4f43-89c7-3df6a736dfcb"
-              LastKnownName="GraphicsSceneArrow2"
+              LastKnownName="GraphicsSceneArrow"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11827,7 +11824,20 @@ zur id:
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6ce2f6b2-3062-4eb2-9b5e-5f96f21d06b0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="186df65f-6480-4aa8-94b3-018fadb6b2e4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -11837,16 +11847,23 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="18007148-be68-4fc2-b61e-a8d0e1528973"
-        name="FilterIamgeView"
+        name="FilterImageView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
+          <interfaceRealization
+            Id="3e9f9756-051c-429a-9f7e-8f96eb7da1a0">
+            <interfaceMoniker
+              Id="bf4b3bf9-7c63-40b3-8421-7530562b083d"
+              LastKnownName="Filterview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
           <dependency
             Id="5e744a50-12d1-4722-bc2f-e7e1398afe1e">
             <classMoniker
               Id="4bb95601-c917-448d-ba24-41e68d730917"
-              LastKnownName="nImageView1"
+              LastKnownName="nImageView"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -11855,16 +11872,23 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="332a60dd-36d0-4b04-bfb6-0ffb405ae7b3"
-        name="MathcImageView"
+        name="MatchImageView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
+          <interfaceRealization
+            Id="52ae67fe-c692-49f1-b0c2-f982b4534074">
+            <interfaceMoniker
+              Id="435ab9ed-ac4a-4612-8793-4932cf4355f1"
+              LastKnownName="Matchview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
           <dependency
             Id="1e79eb03-acd6-430e-ae1b-ede66bf377b6">
             <classMoniker
               Id="4bb95601-c917-448d-ba24-41e68d730917"
-              LastKnownName="nImageView1"
+              LastKnownName="nImageView"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -11888,7 +11912,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="fc60f9b3-6b37-4e69-b9ed-609ccdb2c4a2"
-        name="DiffimageView1"
+        name="DiffimageView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -11897,48 +11921,11 @@ zur id:
             Id="24fd5a6c-5bfc-4312-9b5e-5edf3bb7db40">
             <interfaceMoniker
               Id="11e95d2f-33c0-473c-9a4b-51ac0636488d"
-              LastKnownName="Filterview1"
+              LastKnownName="Filterview"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
-          <association
-            Id="25416c3b-1cae-45f4-a934-8b8143c89b4f"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-              LastKnownName="QTGRaphicScene1"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1ded0b46-ca48-4a93-b721-3319783f9960"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0a69762c-9029-4f64-bb3a-a765b8622d8d"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="69a0937c-4674-4692-9d31-7af499d6be0e"
             isDerived="false"
@@ -11948,7 +11935,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="1422fef0-0995-48ef-9918-afda18407aea"
-              LastKnownName="DualImageFilterWidget11"
+              LastKnownName="DualImageFilterWidget"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -11998,7 +11985,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="08cd2941-c9fc-41b5-9f33-e8f7e008df91"
-              LastKnownName="Accordion21"
+              LastKnownName="Accordion"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12035,7 +12022,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="2c826178-21c2-4a36-b05c-172db29c4cfa"
-              LastKnownName="SelectorWidget&lt;T&gt;11"
+              LastKnownName="SelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12063,20 +12050,57 @@ zur id:
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="a4501e91-218c-441b-9de4-0227ab1fa360"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
+              LastKnownName="QTGRaphicScene"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0cff98ca-b079-4317-8c2a-557c57f80063"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2aaf074d-7b55-406f-a0f5-0dde57668fe0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
         Id="11e95d2f-33c0-473c-9a4b-51ac0636488d"
-        name="Filterview1"
+        name="Filterview"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="5496d63b-e766-4266-9549-4fbcc47fb251"
-        name="ZoomableImage11"
+        name="ZoomableImage"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -12090,7 +12114,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-              LastKnownName="QTGRaphicScene1"
+              LastKnownName="QTGRaphicScene"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12220,7 +12244,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="e6f6312b-9687-40c4-a122-b950595c3b09"
-        name="GraphicsScenePointGroup11"
+        name="GraphicsScenePointGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -12234,7 +12258,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-              LastKnownName="QTGRaphicScene1"
+              LastKnownName="QTGRaphicScene"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12389,7 +12413,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="5159524d-7f12-4359-bbc7-82e6536076d9"
-        name="GraphicsSceneLineGroup11"
+        name="GraphicsSceneLineGroup"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -12403,7 +12427,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-              LastKnownName="QTGRaphicScene1"
+              LastKnownName="QTGRaphicScene"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12550,7 +12574,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="cf87c1cd-a7c9-42c8-be7f-f72743ad05a0"
-        name="GraphicsSceneArrow11"
+        name="GraphicsSceneArrow"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -12564,7 +12588,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-              LastKnownName="QTGRaphicScene1"
+              LastKnownName="QTGRaphicScene"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -12693,7 +12717,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="70389013-aaa3-42ff-80dc-fa9c2cb32177"
-        name="QTGRaphicScene1"
+        name="QTGRaphicScene"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -12701,7 +12725,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="73e58868-4f1a-4c61-b951-5b57dcbdfcbd"
-        name="DrawMatchFunction21"
+        name="DrawMatchFunction"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -12709,21 +12733,21 @@ zur id:
             Id="a4fd11e1-caa5-4ca7-8054-3addc2d2347c">
             <classMoniker
               Id="cf87c1cd-a7c9-42c8-be7f-f72743ad05a0"
-              LastKnownName="GraphicsSceneArrow11"
+              LastKnownName="GraphicsSceneArrow"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
           <dependency
             Id="bd167de5-92e4-4d67-9536-98da49352151">
             <classMoniker
               Id="5159524d-7f12-4359-bbc7-82e6536076d9"
-              LastKnownName="GraphicsSceneLineGroup11"
+              LastKnownName="GraphicsSceneLineGroup"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
           <dependency
             Id="f137dfdf-03cd-47c1-b4a3-40293cc79e3b">
             <classMoniker
               Id="e6f6312b-9687-40c4-a122-b950595c3b09"
-              LastKnownName="GraphicsScenePointGroup11"
+              LastKnownName="GraphicsScenePointGroup"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -12773,7 +12797,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="1422fef0-0995-48ef-9918-afda18407aea"
-        name="DualImageFilterWidget11"
+        name="DualImageFilterWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -12902,7 +12926,7 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="0aba3031-834b-4413-a252-7a66add2119d"
-        name="DoubleFilterFunction11"
+        name="DoubleFilterFunction"
         isAbstract="false"
         isLeaf="false">
         <suppliersInternal>
@@ -12910,7 +12934,7 @@ zur id:
             Id="20289f84-304c-49d8-8b69-523fe5b326f1">
             <classMoniker
               Id="1422fef0-0995-48ef-9918-afda18407aea"
-              LastKnownName="DualImageFilterWidget11"
+              LastKnownName="DualImageFilterWidget"
               LastKnownLocation="ModelingProject1.uml" />
           </dependency>
         </suppliersInternal>
@@ -12946,7 +12970,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="30565ede-cc57-48a6-ba27-27ca6a765306"
-        name="Collapsable11"
+        name="Collapsable"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13019,7 +13043,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="08cd2941-c9fc-41b5-9f33-e8f7e008df91"
-        name="Accordion21"
+        name="Accordion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13033,7 +13057,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="30565ede-cc57-48a6-ba27-27ca6a765306"
-              LastKnownName="Collapsable11"
+              LastKnownName="Collapsable"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -13297,7 +13321,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="2c826178-21c2-4a36-b05c-172db29c4cfa"
-        name="SelectorWidget&lt;T&gt;11"
+        name="SelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13311,7 +13335,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="ae9501ce-6a3e-4e24-93b1-e82306989f72"
-              LastKnownName="GroupOperatorWidget&lt;T&gt;11"
+              LastKnownName="GroupOperatorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -13348,7 +13372,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="6b486780-5f13-4ec4-ad68-a08fda2f0d61"
-              LastKnownName="IntervalSelectorWidget&lt;T&gt;11"
+              LastKnownName="IntervalSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -13385,7 +13409,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="5e59837e-7a30-4a4f-af91-226841648611"
-              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;11"
+              LastKnownName="RelativePortionSelectorWidget&lt;T&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -13533,7 +13557,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="5e59837e-7a30-4a4f-af91-226841648611"
-        name="RelativePortionSelectorWidget&lt;T&gt;11"
+        name="RelativePortionSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13625,7 +13649,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="6b486780-5f13-4ec4-ad68-a08fda2f0d61"
-        name="IntervalSelectorWidget&lt;T&gt;11"
+        name="IntervalSelectorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13639,7 +13663,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="2e077217-6de8-43b5-af2e-acf31c47e4c1"
-              LastKnownName="SelectableHistogram11"
+              LastKnownName="SelectableHistogram"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -13774,7 +13798,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="2e077217-6de8-43b5-af2e-acf31c47e4c1"
-        name="SelectableHistogram11"
+        name="SelectableHistogram"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -13950,7 +13974,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="ae9501ce-6a3e-4e24-93b1-e82306989f72"
-        name="GroupOperatorWidget&lt;T&gt;11"
+        name="GroupOperatorWidget&lt;T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -14158,14 +14182,14 @@ zur id:
     <packageHasNamedElement>
       <Interface
         Id="60a868c9-c5ee-46a7-b746-1de40e52f0fd"
-        name="Filterview2"
+        name="Filterview"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="08612060-042d-4fdb-976b-0ea3b9520bb7"
-        name="HistogrammView1"
+        name="HistogrammView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -14174,7 +14198,7 @@ zur id:
             Id="94ee7ee7-5d3e-4e15-9424-9c9bfd83ea96">
             <interfaceMoniker
               Id="60a868c9-c5ee-46a7-b746-1de40e52f0fd"
-              LastKnownName="Filterview2"
+              LastKnownName="Filterview"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -14188,7 +14212,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="8960d28e-e130-4fa5-8b24-af11ef4554c3"
-              LastKnownName="Accordion22"
+              LastKnownName="Accordion"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -14284,7 +14308,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="b7e5ace3-356d-4987-8ecb-61f0504884b2"
-        name="Collapsable12"
+        name="Collapsable"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -14357,7 +14381,7 @@ zur id:
     <packageHasNamedElement>
       <class
         Id="8960d28e-e130-4fa5-8b24-af11ef4554c3"
-        name="Accordion22"
+        name="Accordion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -14371,7 +14395,7 @@ zur id:
             isAbstract="false">
             <classMoniker
               Id="b7e5ace3-356d-4987-8ecb-61f0504884b2"
-              LastKnownName="Collapsable12"
+              LastKnownName="Collapsable"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -17135,6 +17159,63 @@ zur id:
       <class
         Id="bc4da818-3210-4056-aa0c-0e17c4856ee0"
         name="Histogram21"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="bf4b3bf9-7c63-40b3-8421-7530562b083d"
+        name="Filterview"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="435ab9ed-ac4a-4612-8793-4932cf4355f1"
+        name="Matchview"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2bf7b77d-4daa-4be2-aab3-7c9c7932f680"
+        name="TranslationView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f95f26c7-2fc3-401d-ab18-5d5b8bf8c0dc">
+            <interfaceMoniker
+              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
+              LastKnownName="Matchview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="82882761-360e-4d4c-b354-af60a69eea9d"
+        name="OverLapView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="754801ac-a6d7-4da6-9b6e-f9e39510d82f">
+            <interfaceMoniker
+              Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
+              LastKnownName="Filterview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97567e86-3ca5-4d91-b42d-d360aef12c90"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
