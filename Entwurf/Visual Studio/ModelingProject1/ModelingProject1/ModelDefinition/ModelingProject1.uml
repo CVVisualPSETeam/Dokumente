@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -114,10 +114,6 @@ zur id:
 </body>
     </comment>
     <comment
-      Id="67316ebe-c909-4c45-88d9-eb515dd8f538">
-      <body>NOch nicht bearbeitet</body>
-    </comment>
-    <comment
       Id="000cf503-048c-4b22-b619-d87d4dd5b057">
       <body>aus all / selection
 nimm complement ?</body>
@@ -165,11 +161,6 @@ zur id:
       <body>Wrapper für OpenCV funktionen</body>
     </comment>
     <comment
-      Id="dce7ca83-e1c9-431a-8fcb-3f3a79d94750">
-      <body>Speicherfunktion
-</body>
-    </comment>
-    <comment
       Id="5839e1f7-2d90-4306-96b3-be366ae6cad9">
       <body>Diffimage
 Overlap Image</body>
@@ -178,6 +169,11 @@ Overlap Image</body>
       Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a">
       <body>Diffimage
 Overlap Image</body>
+    </comment>
+    <comment
+      Id="dab9c53c-3419-4f14-8905-07dc208011bd">
+      <body>nach möglichleit genauer definieren
+</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -1839,13 +1835,13 @@ Overlap Image</body>
                     <literalString
                       Id="6c10591d-3720-472c-b480-7993978f713e"
                       name="Lower"
-                      value="0-1" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="582e141e-2cb4-41de-8e44-fbfeeb4e8004"
                       name="Upper"
-                      value="0-1" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1872,6 +1868,43 @@ Overlap Image</body>
                       value="n" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7eff4278-5be5-46ba-a544-814db2c84bc6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259"
+              LastKnownName="Overview"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae31145c-7dd7-491f-bc5b-e875aabe3c08"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd64c442-8eee-4281-b412-ef767606e040"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -14659,7 +14692,7 @@ Overlap Image</body>
     <packageHasNamedElement>
       <class
         Id="af60c330-f53f-499d-8e5c-eac8f9fe2e9a"
-        name="QImage??"
+        name="QGraphicscene??"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -14677,10 +14710,49 @@ Overlap Image</body>
             isSubstitutable="false">
             <classMoniker
               Id="af60c330-f53f-499d-8e5c-eac8f9fe2e9a"
-              LastKnownName="QImage??"
+              LastKnownName="QGraphicscene??"
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="d1428978-451a-4711-972b-46e667d01059"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3829a5e2-9a64-440d-b82b-360d2bdfd58d"
+              LastKnownName="HistogrammFunction"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f53737e4-75ca-4c5d-b62b-3db5bfe4ff2e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="632955b9-768e-4626-b6c3-36a5912daeba"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -14689,7 +14761,18 @@ Overlap Image</body>
         name="HistogramImage"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f99e6dd0-6cdc-4084-b72d-510ea77c4da2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65"
+              LastKnownName="QGraphicscene"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -17216,6 +17299,22 @@ Overlap Image</body>
     <packageHasNamedElement>
       <class
         Id="97567e86-3ca5-4d91-b42d-d360aef12c90"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3829a5e2-9a64-440d-b82b-360d2bdfd58d"
+        name="HistogrammFunction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65"
+        name="QGraphicscene"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />

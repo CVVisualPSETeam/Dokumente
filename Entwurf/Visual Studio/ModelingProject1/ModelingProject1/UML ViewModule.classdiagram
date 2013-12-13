@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="50648bfa-15ac-4292-a778-7bddbc7c306c" name="UMLClassDiagram1" linkedPackageId="a46f7f19-98c8-4838-aed1-8781c8f2c432" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="50648bfa-15ac-4292-a778-7bddbc7c306c" name="UMLClassDiagram1" linkedPackageId="a46f7f19-98c8-4838-aed1-8781c8f2c432" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9ccf8435-bb76-4867-9c0f-f58cd16cb982">
       <elementDefinition Id="4da131c9-0e3b-4d09-b5ba-40b55002096c" />
@@ -53,23 +53,19 @@ zur id:
 	- ermöglicht stylechanges für nur eine instanz
 	- maxvalue = alles</body>
     </comment>
-    <comment Id="391ed0e0-e015-4e73-b6be-1c30fb48d32c">
-      <elementDefinition Id="67316ebe-c909-4c45-88d9-eb515dd8f538" />
-      <body>NOch nicht bearbeitet</body>
-    </comment>
     <comment Id="20904845-0eb0-4cf6-9a48-4ba65ee1bf0f">
       <elementDefinition Id="446d7eba-0e0d-41dc-876d-afe553d5da02" />
       <body>Wrapper für OpenCV funktionen</body>
-    </comment>
-    <comment Id="f1d4fcc6-8641-4e7a-abf4-a3dde88d3715">
-      <elementDefinition Id="dce7ca83-e1c9-431a-8fcb-3f3a79d94750" />
-      <body>Speicherfunktion
-</body>
     </comment>
     <comment Id="3282e6dc-9203-4baf-b2c1-d267a893f6d7">
       <elementDefinition Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a" />
       <body>Diffimage
 Overlap Image</body>
+    </comment>
+    <comment Id="8ae2e8ce-d683-4472-94c4-d686dc8ec93b">
+      <elementDefinition Id="dab9c53c-3419-4f14-8905-07dc208011bd" />
+      <body>nach möglichleit genauer definieren
+</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -1283,6 +1279,17 @@ Overlap Image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="HistogramImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
+        <generalsInternal>
+          <generalization Id="d5c69130-a05d-48cd-b4ce-86b653a8631c" isSubstitutable="false">
+            <classMoniker Id="01855cfc-de78-4627-ad44-fee48b177aaf" LastKnownName="QGraphicscene" />
+            <elementDefinition Id="f99e6dd0-6cdc-4084-b72d-510ea77c4da2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
