@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML DiffImageView" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML DiffImageView" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="e3f192c8-7988-4089-829f-1592c984df36">
       <elementDefinition Id="5839e1f7-2d90-4306-96b3-be366ae6cad9" />
@@ -86,6 +86,16 @@ Overlap Image</body>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="76719215-b833-47f0-acf7-b13a32f60e3a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="705a008b-090b-4e58-9cad-c1c38b44a5c6" name="Lower" value="1">
+                      <elementDefinition Id="6d74235c-d55a-42c4-88d9-f64635ef7e0c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="415f1932-7e82-4de7-b907-905177af5dcf" name="Upper" value="3">
+                      <elementDefinition Id="2eb317cd-1620-4c64-a3b3-6b9c19b32b1f" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="2aaf074d-7b55-406f-a0f5-0dde57668fe0" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -93,6 +103,44 @@ Overlap Image</body>
             <elementDefinition Id="a4501e91-218c-441b-9de4-0227ab1fa360" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9166be98-58d8-4086-b8c7-82e306afceca" name="vector&lt;image&gt; images" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="df5c6a02-6d89-4fa2-8ee7-5805ab651ec3" />
+          </property>
+          <property Id="e0466bd9-6141-4fec-a0b2-c7a0a8c5a93a" name="int threshold" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3d8fec1a-8ef7-4ab2-87c8-654ae6cdce3f" />
+          </property>
+          <property Id="0e74c69e-130d-4fba-ac9d-cba1b00c0c6e" name="image diffImg" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ed0169e9-a2c3-48e2-84a8-c9f9058c7c95" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="155c8f02-b24c-406c-a335-633ec6c5a228" name="calcDiffImg" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1045c3c7-9b30-41f7-89b2-01ec279d9a7d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="48ccb1b6-a61c-4887-85af-3a1368143d84" name="image old" direction="In" isUnique="false">
+                  <elementDefinition Id="44e94954-b5b4-4ccd-9093-be7f11d98ed6" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e33a2144-3e41-475b-84eb-efae8a215982" name="image new" direction="In" isUnique="false">
+                  <elementDefinition Id="ad3c2b15-a922-4757-8696-c3067a5745ca" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1eb0535a-32b2-4d01-9fc1-a2ee95c5670d" name="setThreshold" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="61ed688b-798d-44b5-84fd-86cfab091362" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ea5a42c6-fbb3-472d-8dc5-b66b32e10c1f" name="int threshold" direction="In" isUnique="false">
+                  <elementDefinition Id="dc337ec3-e0ed-4a6d-951b-ec226ea87f50" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
