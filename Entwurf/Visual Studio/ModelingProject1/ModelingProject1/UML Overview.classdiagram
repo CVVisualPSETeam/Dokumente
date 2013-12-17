@@ -34,10 +34,6 @@
       <body>klassenstruktur der drei kassen nooch unklar
 </body>
     </comment>
-    <comment Id="d11801d1-8cb7-48e5-bbf7-eaac73ef7008">
-      <elementDefinition Id="93c75e53-e250-4135-bfe7-ebb022e53c2e" />
-      <body>soll angeblich woanders hin</body>
-    </comment>
     <comment Id="a3e39088-cbfc-4808-8d8f-8ad8a8a92e22">
       <elementDefinition Id="a10372d5-8e78-4167-b3c8-d9d742c9f065" />
       <body>todo:
@@ -261,17 +257,6 @@ matchinfo
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1a4a3a3d-c031-4c4f-a960-6cd3eba1bb6d" name="ViewRaw" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="49c00c98-04e7-4e4f-9340-946386fa95e2" />
-        <suppliersInternal>
-          <interfaceRealization Id="e90103c9-c6a5-4c4c-9f39-8c839a3ce593">
-            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
-            <elementDefinition Id="7aef2336-f4e4-4886-a134-b4315545940b" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="35eec434-c366-4367-a3e9-573314cfdb2b" name="MatchCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="426e73ff-ff5a-4efd-8d1c-4f3d5ef3fc7e" />
         <generalsInternal>
@@ -439,17 +424,22 @@ matchinfo
         </suppliersInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="6ba7f2b6-a4ee-4aea-831a-37ba56a6514e" name="TranslationView" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="2bf7b77d-4daa-4be2-aab3-7c9c7932f680" />
+    <logicalClassDesignerModelHasPackages>
+      <package Id="8e2c2e5f-5ca4-4154-b389-93f96eb0111a" name="Package3">
+        <elementDefinition Id="1fe31e3a-c918-49cf-9521-b064bba0ea89" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <class Id="1a4a3a3d-c031-4c4f-a960-6cd3eba1bb6d" name="ViewRaw" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="49c00c98-04e7-4e4f-9340-946386fa95e2" />
         <suppliersInternal>
-          <interfaceRealization Id="3c66a875-489f-4f33-b517-c81fc2591919">
+          <interfaceRealization Id="e90103c9-c6a5-4c4c-9f39-8c839a3ce593">
             <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
-            <elementDefinition Id="f95f26c7-2fc3-401d-ab18-5d5b8bf8c0dc" />
+            <elementDefinition Id="7aef2336-f4e4-4886-a134-b4315545940b" />
           </interfaceRealization>
         </suppliersInternal>
       </class>
-    </logicalClassDesignerModelHasTypes>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="9ed153e1-5642-406a-bb57-5c20848259a3" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

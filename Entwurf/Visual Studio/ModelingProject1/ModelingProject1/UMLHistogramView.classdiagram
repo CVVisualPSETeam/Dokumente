@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="573c0635-c1ad-4771-8133-2e3a0c163f2d" name="UMLHistogramView2" linkedPackageId="6a89df30-fc7b-44da-97e3-fd633d6746e4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="92a360d2-8b9e-4474-bc0a-ef209b417818" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
+        <elementDefinition Id="80d60066-3c41-4dcb-b3d7-07cff0aa9f8c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7c64cc50-3fc3-47df-8ef8-33480548de70" name="handle_t.." isAbstract="false" isLeaf="false" cachedFullName="handle_t..">
+        <elementDefinition Id="be019750-59f1-44a9-8e65-87880432c241" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="62d5ab12-e8e2-4c5b-9ceb-42e75c32f99e" name="QWidget&amp;" isAbstract="false" isLeaf="false" cachedFullName="QWidget&amp;">
+        <elementDefinition Id="2e72d7af-f188-4c4b-8e00-9a246c8b7312" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e7ab622d-d977-4573-af01-7a4aece81184" name="QString&amp;" isAbstract="false" isLeaf="false" cachedFullName="QString&amp;">
+        <elementDefinition Id="7b1f3fab-3b36-45c0-b80b-3755e2a24a79" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e503abec-73c4-40ba-9253-a03c70d477ce" name="Accordion2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f1e6011e-67b3-4efe-8c93-2e5a66ce9536" />
+        <targetEnds>
+          <association Id="e57eaca5-81fc-4299-9873-53ba852e2d9c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1471e8b1-319a-409b-946e-07b0b6848a93" LastKnownName="Collapsable1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4661ea58-e5d2-4dd4-b6dd-e98a8ec68873" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3acd1b8b-8f74-4236-836c-c55a1804eed3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="298d1a9e-bf6c-41ca-acdd-5b832c0f8afe" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="5f102649-0b41-4cad-a332-1cd731ea2802" name="Lower" value="*">
+                      <elementDefinition Id="0bd40853-e3c0-40dc-8244-a13539412636" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="098cb37b-261a-4c48-80af-1fc1b580037f" name="Upper" value="*">
+                      <elementDefinition Id="896e9eb2-45c7-41ea-90a2-85606d31f74a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0f5beb32-a367-4a90-8777-31c50d12a799" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e83d1dcb-e36c-4342-887c-61662ed2a40c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="00d724b9-8d32-47fc-b04d-5000afb02f70" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e5fcbd9-3fb2-41f6-b78a-0f278fd9f2fe" />
+          </property>
+          <property Id="781e134f-b7b2-42ee-bdcc-10c0f5215250" name="// typedef size_t handle_t" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="true" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d8a415e-9683-41ad-adb6-cd316bcd5681" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ad9c208c-a8d3-4c47-930f-428163f6280d" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b247bc4-3d75-411d-b90a-bd2c01f63dcd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="24214656-b2a2-4d42-8849-b930e88eb4fd" direction="Return" isUnique="false">
+                  <elementDefinition Id="8926bcf5-77d8-401d-9a5e-ac949c57ec76" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92a360d2-8b9e-4474-bc0a-ef209b417818" LastKnownName="handle_t" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ba97f059-dc48-4bb6-8534-0a1d6d3bc205" name="QString" direction="In" isUnique="false">
+                  <elementDefinition Id="a574569f-3e3c-4a4d-8a7e-97e5a81a34c1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c32f31f1-c274-4c17-96c6-335fca9b83b6" name="QWidget" direction="In" isUnique="false">
+                  <elementDefinition Id="1e165e90-b5f4-4c71-a234-2663ae77c42c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="faccc4ee-86fe-4eec-872f-6fbb66fe0bd3" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88bc91ea-6431-4529-a404-289c04cea721" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fa30a0df-fe83-419b-bff0-86303428a342" direction="Return" isUnique="false">
+                  <elementDefinition Id="21956ca4-e441-4710-ac71-02e51a5abae3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7c64cc50-3fc3-47df-8ef8-33480548de70" LastKnownName="handle_t.." />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7344f863-bf23-4940-b426-4ff58c986e8f" name="tuple&lt;QString" direction="In" isUnique="false">
+                  <elementDefinition Id="d58be65d-7cdb-4bd2-b1d1-069abc3c63b2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ab3c279-0e61-4723-be5c-0977dc92b3e1" name="QWidget&gt;.." direction="In" isUnique="false">
+                  <elementDefinition Id="7b459a19-17b8-4b22-b1a0-61c300f37d7d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6ebcaf4c-4766-4190-9741-4280245c0893" name="expandAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04775b76-9705-49cd-88ae-2431634c5822" />
+          </operation>
+          <operation Id="705f831e-2674-48be-bcf3-3671b1ef3183" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4daf7e86-e398-4fef-9318-72206ed2db6c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e3ed6f8a-4e60-4414-b2e4-00c6de7f9011" name="handle_t" direction="In" isUnique="false">
+                  <elementDefinition Id="335eab99-3d84-4f1e-869d-10856440a3d8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9960c750-2b33-4b54-8841-3f2db16a2635" name="collapseAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cc977938-55f0-4824-ad0a-21b3dad24108" />
+          </operation>
+          <operation Id="b0624017-717a-4a04-a45b-ea7f74ee7449" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b53cfa43-42c4-4be0-ac09-90009570d981" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="19cccd46-f21c-4917-8d94-42293e28e126" name="handle_t" direction="In" isUnique="false">
+                  <elementDefinition Id="9a70973f-f159-404d-9fab-ed494d8db971" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5c357470-188e-4374-bafb-73ad72f80d9e" name="getWidget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d150947e-7060-4bce-91b2-76dfc4823747" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c50126c-047c-4492-9377-0986210d99f8" direction="Return" isUnique="false">
+                  <elementDefinition Id="2d26f08f-bf76-4421-844f-1c0e05cc1869" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="62d5ab12-e8e2-4c5b-9ceb-42e75c32f99e" LastKnownName="QWidget&amp;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="42c5339a-f3e8-415c-a96b-8f4abad37812" name="handle_t" direction="In" isUnique="false">
+                  <elementDefinition Id="f0f09ac5-f135-4358-b0cb-247dbd7bc4a3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="717869a7-0395-431b-9b9b-b7813b5ec142" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3367d827-cf02-4630-a067-09cb34607c77" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af9ce29f-60e1-4c05-b942-733930152f08" direction="Return" isUnique="false">
+                  <elementDefinition Id="0a2e71bd-8a29-4558-a707-0b4bda49464d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e7ab622d-d977-4573-af01-7a4aece81184" LastKnownName="QString&amp;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2393f15-ca58-425f-ae3d-341b7909d34b" name="handle_t" direction="In" isUnique="false">
+                  <elementDefinition Id="0c01fe87-6363-4d16-9662-e4a6cf782507" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1471e8b1-319a-409b-946e-07b0b6848a93" name="Collapsable1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90596ebd-248d-4296-930a-ce7ccfb90db5" />
+        <ownedAttributesInternal>
+          <property Id="599508ce-5fad-4dac-86da-cd650f694d9f" name="QWidget widget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b5e40ab-119e-4a53-8562-82f8777dda9c" />
+          </property>
+          <property Id="11ce4556-ee34-4f41-bbf4-c06addbf7fab" name="bool visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c703ec1-5eb3-443b-9a73-02b6fa363476" />
+          </property>
+          <property Id="176e34ff-5806-4c68-a1f7-b93f5ac9e74c" name="QSting name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0b5947f7-ff6f-4f52-b530-587b180f4c31" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e4c180a6-51e4-4055-9ff8-30022d9e062a" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="445c9cec-2782-4918-ae1c-b30a63a06251" />
+          </operation>
+          <operation Id="e1ce9dcd-0572-4894-82d4-76f0ccce6609" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="47216e4e-abed-49b3-a3a9-ea1c753d317f" />
+          </operation>
+          <operation Id="348a5e85-0219-4b49-a9a2-d4a54b6db4a1" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="44979345-e262-4185-bcbd-83fd6ff18e07" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b9cd8d5-7fe7-4726-b4b3-afd3794b158d" name="HistogramView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="15e21969-f9f3-4f78-89dc-286ccbb1f69a" />
+        <suppliersInternal>
+          <interfaceRealization Id="9c9e10f7-d923-43bf-be8f-e97b28cdcf07">
+            <interfaceMoniker Id="4d59b6d1-0f72-4e2e-9d91-fa223a7f1777" LastKnownName="Filterview1" />
+            <elementDefinition Id="b69ae1c0-f99f-4480-bb93-3808f0b12708" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="67fe295a-2380-495d-9f89-5994b2a52c69" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="51e7cac1-9bd3-4b79-b7b7-132c66b10763" LastKnownName="HistrogramWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="776b94ec-440c-47f8-bca9-0d67d216942b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="49729b38-bb56-49f5-8853-82431e55a416" name="Lower" value="1">
+                      <elementDefinition Id="128c6160-4f3c-4ab3-bf7b-1ec2b8d485e2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9190dba3-a243-4c9b-872e-5b0bf04805d6" name="Upper" value="2">
+                      <elementDefinition Id="c36c5e37-d9ca-480f-b4f6-014d0c474403" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9567fff3-1e3a-49d5-9b47-e723b806babd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cb65938-bcaa-43d1-b096-7d16c637d19e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3b8ba696-5a0d-4965-8602-cb346e3dd536" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="837a25bd-a504-45ff-875d-47aec75d2206" />
+          </association>
+          <association Id="54f1e3f5-4bdf-4057-994b-6d8f1215b5da" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e503abec-73c4-40ba-9253-a03c70d477ce" LastKnownName="Accordion2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="805eb33e-7648-4c1c-82fe-a3c412246bd4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3637cfb2-36f0-46f6-b612-957da915a436" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57465db5-16da-40f8-b356-075defac4a58" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58c950fd-62b5-440d-81a3-8f5c2c0396d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f7e373b1-cfdd-40db-a615-74094d7d024f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="51e7cac1-9bd3-4b79-b7b7-132c66b10763" name="HistrogramWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93a27c7a-fe4b-4f96-a9a0-13b90c502fe6" />
+        <targetEnds>
+          <association Id="c3f3c2b8-1fde-42bb-82c5-7c017e884a7c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f0812b9c-e85d-463e-8ffe-ed334753687d" LastKnownName="SelectableHistogram" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="538e53fe-89ec-47d0-93a5-785cdcf4267b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="aec2942b-27a8-4f0e-8635-01038497909e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b54edba4-4e10-4d8d-9e67-004994082b68" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dab36624-00c1-441c-8de4-effda2402f9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="548719c6-3307-4792-824d-f9a6060570df" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="fbc8a232-8e40-4d79-90d3-c6e8757e944d" name="image img" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ea979ea9-2085-4158-ad42-734aca77e013" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1c22f2c9-c45e-491e-8bd3-3a6fe2752f27" name="updateImg" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ce82ada-201b-49ff-ba77-087c49f823cb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f0812b9c-e85d-463e-8ffe-ed334753687d" name="SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c1b80e7e-90fa-4c72-b0fe-3888537283dd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4d59b6d1-0f72-4e2e-9d91-fa223a7f1777" name="Filterview1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da3a36ca-d89f-4b64-804b-e73acd3873bd" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="6a89df30-fc7b-44da-97e3-fd633d6746e4" name="ModelingProject1">
+    <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f387c018-f308-4f88-a68a-15fae97a5415">
+        <profileInstance Id="966e098c-e8b9-4d5e-ac99-f37911466287" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e67caf1-6c7c-4366-baae-034d2d032282">
+        <profileInstance Id="a0d3761b-50b5-438e-a1b4-84ceeff5f77b" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

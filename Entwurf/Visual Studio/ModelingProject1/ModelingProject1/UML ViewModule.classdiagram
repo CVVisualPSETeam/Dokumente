@@ -62,11 +62,6 @@ zur id:
       <body>Diffimage
 Overlap Image</body>
     </comment>
-    <comment Id="8ae2e8ce-d683-4472-94c4-d686dc8ec93b">
-      <elementDefinition Id="dab9c53c-3419-4f14-8905-07dc208011bd" />
-      <body>nach möglichleit genauer definieren
-</body>
-    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
@@ -692,12 +687,28 @@ Overlap Image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="71359322-080c-4907-9423-550110f86138" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
+        <generalsInternal>
+          <generalization Id="e724fac2-69d9-430a-8fac-83197cf56662" isSubstitutable="false">
+            <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+            <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="d10e3dda-765a-4c0f-b0e6-0287dcda7768" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="8a730143-bba9-4973-9283-88c3327b8b0b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4a9c09e8-d5ed-4f8a-8cc5-700db48026ec" name="Lower" value="*">
+                      <elementDefinition Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f3f00006-9ec1-4627-ba2b-e7bd4cff6be3" name="Upper" value="*">
+                      <elementDefinition Id="82ed5bfd-8195-40f5-bf6a-be46746291e5" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="e527e507-47ae-4ca9-a647-6329f59e9683" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -760,6 +771,16 @@ Overlap Image</body>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="4fd5dccf-3b2a-4084-939b-53d6d3470374" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="c28bcaa5-9fd6-4738-b8ce-45a3608236db" name="Lower" value="*">
+                      <elementDefinition Id="d62b9227-82a0-446f-950d-07b163861c89" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="22a18680-9fe1-4ef2-8325-925b97e6f333" name="Upper" value="*">
+                      <elementDefinition Id="80b4b179-624a-45e3-a9c1-0d365405a1dc" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="3cfeb3ac-09bf-4f6d-b6f3-8fcee7deabb8" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -837,6 +858,16 @@ Overlap Image</body>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="f1991270-1c6c-4dfa-9c17-40c3e8f57f5c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="fb60918b-9771-475d-bd3d-fb36c675518e" name="Lower" value="*">
+                      <elementDefinition Id="9dc27298-8e36-48d3-b48f-24176f5948a7" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0bd30295-0173-4051-aa5f-0114ce4efd2f" name="Upper" value="*">
+                      <elementDefinition Id="f2dd1da2-3ba2-4e26-89cb-c0a36b8320e1" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="b30f31d8-5ac3-48ef-b383-d83fec643436" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -847,6 +878,32 @@ Overlap Image</body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="612cc2bf-1cee-4487-90fd-2d0305782af8" />
+          </association>
+          <association Id="d57ec003-1bde-4d46-a409-49781aff6349" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="GraphicsScenePointGroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3e37f19f-9848-48e9-93ce-798cfeb74ad4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b783cfa-cede-4138-8d31-e04334211e81" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f84e2b2-db64-40c4-aba5-9c8dc40110b7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="7bbc0e1e-7824-47d1-9487-979ee83adb90" name="Lower" value="2">
+                      <elementDefinition Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4b033f7d-d64d-4b9b-8525-5052800db53f" name="Upper" value="2">
+                      <elementDefinition Id="d0d84d68-dd93-45de-a868-0961d08dad0c" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e4437283-2627-49b6-9f51-c7430dbd3ea3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -911,6 +968,16 @@ Overlap Image</body>
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ca5abb3f-1e2e-4ee9-816e-27531aae423b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="f8293b42-371b-4f97-8f60-11915d08bcd2" name="Lower" value="*">
+                      <elementDefinition Id="9d4c8153-b96e-4a2f-aee7-7e583ff1ad95" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4547f352-e3ec-48f7-83d2-e3475fa6dfe9" name="Upper" value="*">
+                      <elementDefinition Id="d2cac984-4e75-4e71-89b2-d80f6f58f291" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="791d89e8-4c88-497e-a091-ba0b667b7e37" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -921,6 +988,32 @@ Overlap Image</body>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="f9dbc8d0-7822-4678-9f90-4ba9e1dcccf1" />
+          </association>
+          <association Id="3d1f1928-5f30-459b-b6b6-41b900b73b70" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="GraphicsScenePointGroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fb068055-f23e-4ebf-8525-9cfbe6f28c15" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e43ba79-0772-4a6a-a5cd-c35a98a29581" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="12cd7dab-93ea-4258-b85c-961a8630c947" name="Lower" value="2">
+                      <elementDefinition Id="d6a688de-6bd0-4055-80f9-a70a23c6093f" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="3526556b-a65a-4f44-8821-194bf70eb517" name="Upper" value="2">
+                      <elementDefinition Id="f4dec3a0-5395-4f40-974d-7213ff5e4282" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="52ac5632-ef5d-4da3-98d0-b4a20e510223" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="87ff7570-d633-40a2-a428-91d78a18fc4d" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -1080,11 +1173,6 @@ Overlap Image</body>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="34e4402e-ab09-42b6-80c4-15a42124a8a2" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
-        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="afba14b8-5fbb-443f-9d97-a7b2d165de7b" name="CV::Mat" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="191d0a32-7682-4312-9601-5e68d486f332" />
@@ -1143,22 +1231,6 @@ Overlap Image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="ce621b38-b490-4fc5-a6b2-96c1270c9fd0" name="Qt::QString" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2c96b0c7-7b58-48b4-a07a-7e7eb132ef3e" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="f7bb7074-4bcb-4955-9d59-f1f55fdbe1c6" name="std::optional&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="73aaa98b-2776-4ed2-8d12-139553f1f555" />
-        <ownedAttributesInternal>
-          <property Id="b22869fa-25c4-4018-896c-e79a074735bd" name="bool" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="db932c06-d580-4744-87e4-9da00b73412a" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="34e4402e-ab09-42b6-80c4-15a42124a8a2" LastKnownName="Boolean" />
-            </type_NamedElement>
-          </property>
-          <property Id="d8d72880-66c3-4fda-8012-15e453ed4df3" name="content:T" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7ed226ed-2c4b-46a8-8bad-5b8b8572049b" />
-          </property>
-        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -1231,53 +1303,7 @@ Overlap Image</body>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="7bcf210c-eb33-4391-b99a-438384e8a104" name="DrawMatchFunction" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="55b1ff7d-c80e-44aa-bc19-0f357719e380" />
-        <suppliersInternal>
-          <dependency Id="d8b8c99d-0567-4bc4-8f29-3abe044de87f">
-            <classMoniker Id="78aa24fe-9117-4eed-bef6-a4ad1e1c8eba" LastKnownName="GraphicsSceneArrow" />
-            <elementDefinition Id="99d95e48-8508-4457-8f09-da3f19d4c6d5" />
-          </dependency>
-          <dependency Id="9b30024b-b4aa-4341-a51e-cc8cbfd15b61">
-            <classMoniker Id="13d450f0-612b-4912-b7a7-44f05586136e" LastKnownName="GraphicsSceneLineGroup" />
-            <elementDefinition Id="b5828c51-c665-4bb2-8ca1-3de9e14c1508" />
-          </dependency>
-          <dependency Id="2e360c4c-7076-4832-ad21-549783d5e0e6">
-            <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="GraphicsScenePointGroup" />
-            <elementDefinition Id="c2700f9e-1144-4a93-8438-125da5c78a11" />
-          </dependency>
-        </suppliersInternal>
-        <ownedOperations>
-          <operation Id="f44e29eb-3869-41f8-ba0c-35f4c9ff048d" name="draw" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="170c4849-d76f-4536-a2a1-fcd44aa52ac9" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f2fcfac4-0bcf-43c7-9236-8290d9ef0d3c" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="917c58d8-50c5-489c-92f3-0ba026b0f204" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="366dc505-efdc-4c07-a955-1f38fa7b59f0" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="6dedc65e-0c46-474c-865e-81ab51799c96" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="3536c9b6-b84b-480c-a7b2-30f5c2224de7" name="value" direction="In" isUnique="false">
-                  <elementDefinition Id="1f25477b-84e0-4f32-a15f-261ba1996ad9" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="df304fd4-3284-41e4-bd0e-1dce6089970f" name="Widget" direction="In" isUnique="false">
-                  <elementDefinition Id="fa554a32-a373-43f6-99c3-c58340fbda78" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="HistogramImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
         <generalsInternal>
           <generalization Id="d5c69130-a05d-48cd-b4ce-86b653a8631c" isSubstitutable="false">
@@ -1290,6 +1316,11 @@ Overlap Image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="de6599fa-7bcc-4c10-81ed-cb00cd794178" name="Optional" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="829e0697-b42d-4e8e-89b5-9a6a1159ae8e" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

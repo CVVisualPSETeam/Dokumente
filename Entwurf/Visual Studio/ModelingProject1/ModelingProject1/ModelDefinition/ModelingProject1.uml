@@ -38,10 +38,6 @@
 </body>
     </comment>
     <comment
-      Id="93c75e53-e250-4135-bfe7-ebb022e53c2e">
-      <body>soll angeblich woanders hin</body>
-    </comment>
-    <comment
       Id="4da131c9-0e3b-4d09-b5ba-40b55002096c">
       <body>Alleinstehende Funktionen:
 	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
@@ -53,13 +49,6 @@
     <comment
       Id="3b495c6e-6dc8-4071-b2fd-caf00cca8041">
       <body>Klassen die es schon gibt (brauchen nicht neu erfunden werden....)</body>
-    </comment>
-    <comment
-      Id="907ceded-9387-4a77-b465-b3a526653cfc">
-      <body>Bitte überarbeiten
-
-
-können eigenständig über die weihnachtszeit implementiert </body>
     </comment>
     <comment
       Id="b696a9cb-5db8-4948-9ae9-edfc4ca07e0f">
@@ -107,11 +96,6 @@ punktgruppen:
 zur id:
 	- ermöglicht stylechanges für nur eine instanz
 	- maxvalue = alles</body>
-    </comment>
-    <comment
-      Id="0c1b12f7-237a-41cb-92bb-ca3e21af2ae1">
-      <body>ÜBERARBEITEN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11111111111111111111111111111111111111111111111111111einself
-</body>
     </comment>
     <comment
       Id="000cf503-048c-4b22-b619-d87d4dd5b057">
@@ -169,11 +153,6 @@ Overlap Image</body>
       Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a">
       <body>Diffimage
 Overlap Image</body>
-    </comment>
-    <comment
-      Id="dab9c53c-3419-4f14-8905-07dc208011bd">
-      <body>nach möglichleit genauer definieren
-</body>
     </comment>
     <comment
       Id="72dbaaca-512e-4ff9-930d-38845ac6a3db">
@@ -2231,24 +2210,6 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="49c00c98-04e7-4e4f-9340-946386fa95e2"
-        name="ViewRaw"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="7aef2336-f4e4-4886-a134-b4315545940b">
-            <interfaceMoniker
-              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="ModelingProject1.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -8055,6 +8016,16 @@ project selected points from focussed image to other image</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="17471453-9815-450c-ab98-8dc0c84db57e"
+              LastKnownName="QTGRaphicScene"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="20c61dd4-5970-4686-9327-50bc6836f1e5"
@@ -8078,7 +8049,20 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="82ed5bfd-8195-40f5-bf6a-be46746291e5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -8222,7 +8206,20 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d62b9227-82a0-446f-950d-07b163861c89"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="80b4b179-624a-45e3-a9c1-0d365405a1dc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -8391,7 +8388,20 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9dc27298-8e36-48d3-b48f-24176f5948a7"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f2dd1da2-3ba2-4e26-89cb-c0a36b8320e1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -8403,6 +8413,56 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
+              LastKnownName="GraphicsScenePointGroup"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b783cfa-cede-4138-8d31-e04334211e81"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4437283-2627-49b6-9f51-c7430dbd3ea3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d0d84d68-dd93-45de-a868-0961d08dad0c"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -8552,7 +8612,20 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false"
-                  isNavigableOwned="false" />
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9d4c8153-b96e-4a2f-aee7-7e583ff1ad95"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d2cac984-4e75-4e71-89b2-d80f6f58f291"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -8564,6 +8637,56 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="87ff7570-d633-40a2-a428-91d78a18fc4d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
+              LastKnownName="GraphicsScenePointGroup"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52ac5632-ef5d-4da3-98d0-b4a20e510223"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d6a688de-6bd0-4055-80f9-a70a23c6093f"
+                      name="Lower"
+                      value="2" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f4dec3a0-5395-4f40-974d-7213ff5e4282"
+                      name="Upper"
+                      value="2" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -9434,6 +9557,43 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="1b0361eb-2fd2-4ba5-82af-218157cb3bed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5d604bd1-afd9-4b7c-aa88-9aa0fb396969"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f04d405f-10f5-48a8-91af-343dd5274baf"
+              LastKnownName="QTGraphicScene"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5e6630a8-8ec1-4a95-8397-1d283a97e73c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71199d6b-88fc-4494-adbe-8b8d26f87976"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -11890,6 +12050,43 @@ project selected points from focussed image to other image</body>
                       value="*" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8ddfdbcb-4b32-46ca-b7ba-325210f99a65"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4cf8e43a-150b-4a3d-a8fc-b8aadbf5cd5e"
+              LastKnownName="ZoomableImage"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a4f2806e-ce4a-4ecb-8d65-3823b3008849"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c89b2f8-0e6e-4f0b-9b73-1038ab455ea1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -14873,7 +15070,7 @@ project selected points from focussed image to other image</body>
     <packageHasNamedElement>
       <class
         Id="065d96ad-6692-43c2-bcae-c783c5364f38"
-        name="HistogramImage"
+        name="HistogrammWidget"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -17445,8 +17642,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="e83d1dcb-e36c-4342-887c-61662ed2a40c"
             isDerived="false"
-            sourceEndRoleName="Accordion2"
-            targetEndRoleName="Collapsable1"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -17457,7 +17654,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="3acd1b8b-8f74-4236-836c-c55a1804eed3"
-                  name="Accordion2"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17470,7 +17666,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0f5beb32-a367-4a90-8777-31c50d12a799"
-                  name="Collapsable1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17807,8 +18002,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="837a25bd-a504-45ff-875d-47aec75d2206"
             isDerived="false"
-            sourceEndRoleName="HistogramView"
-            targetEndRoleName="HistrogramWidget"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -17819,7 +18014,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="9567fff3-1e3a-49d5-9b47-e723b806babd"
-                  name="HistogramView"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17845,7 +18039,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="3b8ba696-5a0d-4965-8602-cb346e3dd536"
-                  name="HistrogramWidget"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17859,8 +18052,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="f7e373b1-cfdd-40db-a615-74094d7d024f"
             isDerived="false"
-            sourceEndRoleName="HistogramView"
-            targetEndRoleName="Accordion2"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -17871,7 +18064,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="3637cfb2-36f0-46f6-b612-957da915a436"
-                  name="HistogramView"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17884,7 +18076,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="58c950fd-62b5-440d-81a3-8f5c2c0396d0"
-                  name="Accordion2"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17909,8 +18100,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="548719c6-3307-4792-824d-f9a6060570df"
             isDerived="false"
-            sourceEndRoleName="HistrogramWidget"
-            targetEndRoleName="SelectableHistogram"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -17921,7 +18112,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="aec2942b-27a8-4f0e-8635-01038497909e"
-                  name="HistrogramWidget"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -17934,7 +18124,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="dab36624-00c1-441c-8de4-effda2402f9e"
-                  name="SelectableHistogram"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -19521,8 +19710,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="92cb0a82-0a34-440f-863e-97998e856d7d"
             isDerived="false"
-            sourceEndRoleName="DiffimageView1"
-            targetEndRoleName="SelectorWidget&lt;T&gt;1"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -19533,7 +19722,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="77a568ac-22f2-4809-bce3-8b711d9efaf8"
-                  name="DiffimageView1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -19546,7 +19734,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="ea2bf324-c162-4526-be6c-c1e32b6eb4e0"
-                  name="SelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -19573,8 +19760,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="524f080a-50a9-4b53-b39b-16aad3997ae7"
             isDerived="false"
-            sourceEndRoleName="FilterImgView"
-            targetEndRoleName="SingleImageFilterWidget2"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -19585,7 +19772,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="31e1457d-94ce-471e-b5b4-ff88bc89308d"
-                  name="FilterImgView"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -19598,7 +19784,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="c0b7bbed-85f6-40ba-8ef8-a486e71acf2e"
-                  name="SingleImageFilterWidget2"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21069,8 +21254,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="ffa68b40-44e2-42d2-8bc9-1142b7931a8d"
             isDerived="false"
-            sourceEndRoleName="SelectorWidget&lt;T&gt;1"
-            targetEndRoleName="RelativePortionSelectorWidget&lt;T&gt;1"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -21081,7 +21266,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="9254aec4-1630-4a47-986a-6721737a8e88"
-                  name="SelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21094,7 +21278,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="19f77478-d95d-42dd-8f07-b8dbd596064a"
-                  name="RelativePortionSelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21108,8 +21291,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="3713bdb7-c369-4aa2-9a22-7ce067f662c1"
             isDerived="false"
-            sourceEndRoleName="SelectorWidget&lt;T&gt;1"
-            targetEndRoleName="IntervalSelectorWidget&lt;T&gt;1"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -21120,7 +21303,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="f4634210-c6fc-4f09-b6c7-b08c1c1f3d9a"
-                  name="SelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21133,7 +21315,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0ff79a14-0284-410e-8817-33996e01bea8"
-                  name="IntervalSelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21147,8 +21328,8 @@ project selected points from focussed image to other image</body>
           <association
             Id="c6d72552-dce7-41f6-b345-3aa7a302ec10"
             isDerived="false"
-            sourceEndRoleName="SelectorWidget&lt;T&gt;1"
-            targetEndRoleName="GroupOperatorWidget&lt;T&gt;1"
+            sourceEndRoleName=""
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -21159,7 +21340,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="c6168adb-9c49-418c-ae18-e4c290b1f908"
-                  name="SelectorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21172,7 +21352,6 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="a821e84d-dc61-448c-80d6-bb84fd2a4f03"
-                  name="GroupOperatorWidget&lt;T&gt;1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -21646,7 +21825,7 @@ project selected points from focussed image to other image</body>
     <packageHasNamedElement>
       <class
         Id="01ab54f9-940f-4fc6-b2dd-af974092d74c"
-        name="Accordion31"
+        name="Accordion"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -21997,7 +22176,7 @@ project selected points from focussed image to other image</body>
             isAbstract="false">
             <classMoniker
               Id="01ab54f9-940f-4fc6-b2dd-af974092d74c"
-              LastKnownName="Accordion31"
+              LastKnownName="Accordion"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -26322,6 +26501,31 @@ project selected points from focussed image to other image</body>
       <undefinedType
         Id="ed102711-b308-43a9-9239-70eabf3976b2"
         name="vec&lt;GraphicSceneArrow&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="829e0697-b42d-4e8e-89b5-9a6a1159ae8e"
+        name="Optional"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="88a67811-2ca2-4b8b-a204-15e68dded34f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="73aaa98b-2776-4ed2-8d12-139553f1f555"
+              LastKnownName="std::optional&lt;T&gt;"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1fe31e3a-c918-49cf-9521-b064bba0ea89"
+        LastKnownName="Package3"
+        LastKnownLocation="Package_1522.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

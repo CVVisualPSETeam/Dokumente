@@ -7,20 +7,6 @@
 drin?</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="af394b2e-a181-432b-82eb-e224a701fa5e">
-      <profileInstance Id="8c270b34-1173-4b23-82ab-46437dc8164d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4a9a0b47-6016-4636-9a61-e178f38cc248">
-      <profileInstance Id="ca421682-ee77-40be-8865-054d0753aed4" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="c5a05d79-e100-4bf8-8d19-78c3fde603bd" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -70,7 +56,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d1e01037-3043-4bd2-833e-15a13ec952ea" name="Accordion31" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d1e01037-3043-4bd2-833e-15a13ec952ea" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="01ab54f9-940f-4fc6-b2dd-af974092d74c" />
         <targetEnds>
           <association Id="60106b14-b20f-4545-a36c-81df26beb40c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -257,7 +243,7 @@ drin?</body>
             <elementDefinition Id="7e6759f7-8fe9-4a2f-9964-8e7cb9506dcd" />
           </association>
           <association Id="0947b93a-a413-423d-9d27-137d37383375" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="d1e01037-3043-4bd2-833e-15a13ec952ea" LastKnownName="Accordion31" />
+            <classMoniker Id="d1e01037-3043-4bd2-833e-15a13ec952ea" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c234e391-40fb-45f2-8ad5-56f19ee8d977" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -508,5 +494,19 @@ drin?</body>
   </packagedElements>
   <package Id="963d173e-e030-47e9-9b50-fff318f8acb0" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="af394b2e-a181-432b-82eb-e224a701fa5e">
+        <profileInstance Id="8c270b34-1173-4b23-82ab-46437dc8164d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4a9a0b47-6016-4636-9a61-e178f38cc248">
+        <profileInstance Id="ca421682-ee77-40be-8865-054d0753aed4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

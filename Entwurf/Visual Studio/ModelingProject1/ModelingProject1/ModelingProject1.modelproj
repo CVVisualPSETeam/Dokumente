@@ -22,6 +22,9 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ModelDefinition\Package_1522.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package_1649.uml">
       <SubType>Content</SubType>
     </Content>
@@ -70,19 +73,12 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLFilterOverlayView.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UMLHistogramView2.classdiagram">
+    <Content Include="UMLHistogramView.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLHistogramView2.classdiagram.layout">
+    <Content Include="UMLHistogramView.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLHistogramView2.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLHistogrammView.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLHistogrammView.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLHistogrammView.classdiagram</DependentUpon>
+      <DependentUpon>UMLHistogramView.classdiagram</DependentUpon>
     </Content>
     <Content Include="UMLPointTranslationsView.classdiagram">
       <SubType>Content</SubType>

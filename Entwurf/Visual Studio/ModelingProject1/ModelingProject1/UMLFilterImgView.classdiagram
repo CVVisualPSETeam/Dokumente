@@ -11,20 +11,6 @@ drin?</body>
       <body>needed?</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="41a79b04-10f3-49c0-a761-324a9992be2e">
-      <profileInstance Id="005fe027-51df-4b95-85a9-98405db744ca" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="340f2433-d056-437c-8cc3-4c8f45c834bc">
-      <profileInstance Id="d66d2ca6-5c25-4fff-a7c2-7523b77bea94" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="5d0c56f3-fb05-4b18-b523-cd0d9d2729ce" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -389,16 +375,16 @@ drin?</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="40be846b-155f-4cf8-924a-6bb585205f93" />
           </association>
-          <association Id="010ec982-ffba-41e6-932d-00607b87b14c" isDerived="false" sourceEndRoleName="DiffimageView1" targetEndRoleName="SelectorWidget&lt;T&gt;1" isLeaf="false" isAbstract="false">
+          <association Id="010ec982-ffba-41e6-932d-00607b87b14c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="b3c92bb1-b5a3-4d54-9610-49d7da401329" LastKnownName="SelectorWidget&lt;T&gt;1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="fcb1a393-a661-4bd6-91a1-c641269b553d" name="DiffimageView1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="fcb1a393-a661-4bd6-91a1-c641269b553d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="77a568ac-22f2-4809-bce3-8b711d9efaf8" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="793f0875-9b57-44c6-b9fb-410706c728f4" name="SelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="793f0875-9b57-44c6-b9fb-410706c728f4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="98523e08-267a-4709-8252-8b5f3667a47f" name="Lower" value="1">
                       <elementDefinition Id="7c5812e7-d954-4a3d-b6d6-10428dd17ef9" />
@@ -415,16 +401,16 @@ drin?</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="92cb0a82-0a34-440f-863e-97998e856d7d" />
           </association>
-          <association Id="468608b1-dab8-47cb-b9b0-6cbc4257e84a" isDerived="false" sourceEndRoleName="FilterImgView" targetEndRoleName="SingleImageFilterWidget2" isLeaf="false" isAbstract="false">
+          <association Id="468608b1-dab8-47cb-b9b0-6cbc4257e84a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="5e377da4-5ae3-4ca9-984e-ba10f31a0ff2" LastKnownName="SingleImageFilterWidget2" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="84afd0e2-d43c-4d39-b423-bf926d205bd6" name="FilterImgView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="84afd0e2-d43c-4d39-b423-bf926d205bd6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="31e1457d-94ce-471e-b5b4-ff88bc89308d" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="d21d386f-c4ba-4148-940d-85f60484be0f" name="SingleImageFilterWidget2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="d21d386f-c4ba-4148-940d-85f60484be0f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="07320d99-c4af-412b-9c19-7436bf39c918" name="Lower" value="0">
                       <elementDefinition Id="aa474427-9577-447f-a457-80499bb91263" />
@@ -882,48 +868,48 @@ drin?</body>
       <class Id="b3c92bb1-b5a3-4d54-9610-49d7da401329" name="SelectorWidget&lt;T&gt;1" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0b385bfe-4927-49d1-986f-ffb66b276f4c" />
         <targetEnds>
-          <association Id="14d38e43-ed25-415d-9ce0-416886bba2c9" isDerived="false" sourceEndRoleName="SelectorWidget&lt;T&gt;1" targetEndRoleName="RelativePortionSelectorWidget&lt;T&gt;1" isLeaf="false" isAbstract="false">
+          <association Id="14d38e43-ed25-415d-9ce0-416886bba2c9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="c0e5ade1-d4df-4b69-8782-73765a50ef87" LastKnownName="RelativePortionSelectorWidget&lt;T&gt;1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="2aa728bc-601a-402f-bae6-e6174528ddc2" name="SelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="2aa728bc-601a-402f-bae6-e6174528ddc2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="9254aec4-1630-4a47-986a-6721737a8e88" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="14604546-dc53-41b5-b0a7-cc875304f21e" name="RelativePortionSelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="14604546-dc53-41b5-b0a7-cc875304f21e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="19f77478-d95d-42dd-8f07-b8dbd596064a" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="ffa68b40-44e2-42d2-8bc9-1142b7931a8d" />
           </association>
-          <association Id="0b7aba27-b631-4efe-9b72-8c81ba7639e4" isDerived="false" sourceEndRoleName="SelectorWidget&lt;T&gt;1" targetEndRoleName="IntervalSelectorWidget&lt;T&gt;1" isLeaf="false" isAbstract="false">
+          <association Id="0b7aba27-b631-4efe-9b72-8c81ba7639e4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="b990811a-02c3-42ea-9be7-9238534465b6" LastKnownName="IntervalSelectorWidget&lt;T&gt;1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="24906c58-4f41-4170-9241-e6e5408e63f2" name="SelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="24906c58-4f41-4170-9241-e6e5408e63f2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="f4634210-c6fc-4f09-b6c7-b08c1c1f3d9a" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="462a85dd-6a3e-4f57-8480-f99d69efd8a5" name="IntervalSelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="462a85dd-6a3e-4f57-8480-f99d69efd8a5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="0ff79a14-0284-410e-8817-33996e01bea8" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="3713bdb7-c369-4aa2-9a22-7ce067f662c1" />
           </association>
-          <association Id="074b9f24-39cc-4dee-acad-da391dd9c435" isDerived="false" sourceEndRoleName="SelectorWidget&lt;T&gt;1" targetEndRoleName="GroupOperatorWidget&lt;T&gt;1" isLeaf="false" isAbstract="false">
+          <association Id="074b9f24-39cc-4dee-acad-da391dd9c435" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="42480e1a-233b-4ba8-b29d-115a49481a5c" LastKnownName="GroupOperatorWidget&lt;T&gt;1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="b2f2f639-dc44-4d22-b4da-89c6e1329e0b" name="SelectorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="b2f2f639-dc44-4d22-b4da-89c6e1329e0b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="c6168adb-9c49-418c-ae18-e4c290b1f908" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="b99d0340-6399-4926-8c01-1041d1404683" name="GroupOperatorWidget&lt;T&gt;1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="b99d0340-6399-4926-8c01-1041d1404683" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="a821e84d-dc61-448c-80d6-bb84fd2a4f03" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -1070,5 +1056,19 @@ drin?</body>
   </packagedElements>
   <package Id="8a17b042-2499-4094-a0ab-d26f0da8f2be" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="41a79b04-10f3-49c0-a761-324a9992be2e">
+        <profileInstance Id="005fe027-51df-4b95-85a9-98405db744ca" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="340f2433-d056-437c-8cc3-4c8f45c834bc">
+        <profileInstance Id="d66d2ca6-5c25-4fff-a7c2-7523b77bea94" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
