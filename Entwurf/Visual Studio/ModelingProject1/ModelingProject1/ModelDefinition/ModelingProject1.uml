@@ -1685,7 +1685,66 @@ project selected points from focussed image to other image</body>
         name="CallTab"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de"
+            name="Name.QString"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fdbcc7fe-8619-470d-9f08-13a098997589"
+            name="setName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b5d33d1-140f-4d1c-832b-969f29756889"
+                  name="QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a4882bbc-5156-401a-b6c3-c623f69ad80a"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d6b3bd71-4468-4535-a098-b5dbf4560a12"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -3827,6 +3886,40 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="b37e5e81-2583-4c0f-b00c-607bc73ada3f"
+            name="MatchCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8617d0e5-0303-4a03-9892-d9b7efe43cbb"
+                  name="MatchCall"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a59f6f73-fae2-4e37-8c3b-4d1b97bd2ad7"
+                  name="CallWindow"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="087fbd1f-67a7-4464-a491-fa657fa9b5f5"
+                  name="WindowController"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -3898,6 +3991,40 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="5494f505-0a1b-4199-8f5d-449713e80bb7"
+            name="FilterCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8be67e9a-3e32-44bb-b71d-0a1f8828fb16"
+                  name="FilterCall"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0b3f360-6846-4f09-9d1a-5b4979a60f9a"
+                  name="CallWindow"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2d0e0b8-dbb2-4898-b089-85cd59d30403"
+                  name="WindowController"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4761,14 +4888,52 @@ project selected points from focussed image to other image</body>
         Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
         name="Filterview"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="ec80052f-cdf1-4f98-a957-aaf990358fcd"
+            name="//singal UpdateLeftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b"
+            name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
         Id="aac0c29a-786e-472e-8e13-e6123a01f149"
         name="Matchview"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <ownedOperations>
+          <operation
+            Id="71cedba7-a856-424b-8bc5-d41d56a0445b"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -4825,6 +4990,24 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="302545df-1334-4e81-acf3-f7b14143ba23"
+            name="//singal UpdateLeftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6d1ac341-d828-4983-8d21-154a79580b5c"
+            name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -4882,6 +5065,24 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="40624edb-007d-44e5-a05e-887165ca47c9"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3af8b949-ee6b-4529-be30-7c172719f6df"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -5541,6 +5742,24 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6f2951e1-558c-43be-bc56-2edf2bc560cc"
+            name="//singal UpdateLeftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b426b630-7c66-4ff5-83f7-1bce0ffd3192"
+            name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -5559,6 +5778,24 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="708e5eb2-2978-464d-8a23-fff5367e911a"
+            name="//singal UpdateLeftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="541d681d-e925-4284-9d46-1aa74bb5b736"
+            name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -17588,6 +17825,24 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3db0f03f-72f8-43f1-a370-c8f006e294ad"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7e1195e8-68de-465d-a847-e276134f0588"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -17606,6 +17861,24 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="709335ba-9bcf-431a-b4f5-a25bb1132f96"
+            name="//singal UpdateLeftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4a26fca8-03da-429d-89e5-75bd2c46f308"
+            name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -26526,6 +26799,42 @@ project selected points from focussed image to other image</body>
         Id="1fe31e3a-c918-49cf-9521-b064bba0ea89"
         LastKnownName="Package3"
         LastKnownLocation="Package_1522.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a6819919-bf80-43b1-abd0-24bdef54ad80"
+        name="RawView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="9b701cbe-f26b-4b4a-9842-da7de5791441">
+            <interfaceMoniker
+              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
+              LastKnownName="Matchview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c78804d6-2ea5-44f8-b095-6a3a09556b31"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="904285ae-6e20-4cc2-9167-dfa398daa442"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

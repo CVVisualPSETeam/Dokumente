@@ -63,6 +63,36 @@ matchinfo
     <logicalClassDesignerModelHasTypes>
       <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4f11f6c-4caf-498d-95db-0db216026cc5" />
+        <ownedAttributesInternal>
+          <property Id="f36ce5f8-f1ad-44e0-aca1-66106a25fad2" name="Name.QString" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="868d4dc7-41ea-40a5-97e7-dc3859067a6a" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fdbcc7fe-8619-470d-9f08-13a098997589" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9829df4f-a2a5-4883-bb32-3a877dc013dd" name="QString" direction="In" isUnique="false">
+                  <elementDefinition Id="9b5d33d1-140f-4d1c-832b-969f29756889" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9b518c35-0e18-4fb2-8018-8fcd19da5fec" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a4882bbc-5156-401a-b6c3-c623f69ad80a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f08bc739-0e9a-4f6c-9276-e19ae6814836" direction="Return" isUnique="false">
+                  <elementDefinition Id="d6b3bd71-4468-4535-a098-b5dbf4560a12" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -293,6 +323,28 @@ matchinfo
             <elementDefinition Id="831649e8-af5e-4814-b6dd-c9aa72564188" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="6d4c4aa2-8219-49fc-b006-f74f1ad0a45c" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b37e5e81-2583-4c0f-b00c-607bc73ada3f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7879863f-2ab5-4e26-bdf3-ddae7932a8d7" name="MatchCall" direction="In" isUnique="false">
+                  <elementDefinition Id="8617d0e5-0303-4a03-9892-d9b7efe43cbb" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a0366891-058b-4ebc-9690-d951130d7b32" name="CallWindow" direction="In" isUnique="false">
+                  <elementDefinition Id="a59f6f73-fae2-4e37-8c3b-4d1b97bd2ad7" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d2d7f95c-f06e-4e1d-8b72-6be1677d1b00" name="WindowController" direction="In" isUnique="false">
+                  <elementDefinition Id="087fbd1f-67a7-4464-a491-fa657fa9b5f5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -332,16 +384,54 @@ matchinfo
             <elementDefinition Id="5825c98b-1a07-4ab2-b5fc-932c2787fb08" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="97f6c614-1980-4093-afaf-7011ce8000d1" name="FilterCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5494f505-0a1b-4199-8f5d-449713e80bb7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6919bcd5-b06d-400a-bcc2-54b1ebeab40c" name="FilterCall" direction="In" isUnique="false">
+                  <elementDefinition Id="8be67e9a-3e32-44bb-b71d-0a1f8828fb16" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6ca01241-e712-4f1e-8af2-d319abe69486" name="CallWindow" direction="In" isUnique="false">
+                  <elementDefinition Id="c0b3f360-6846-4f09-9d1a-5b4979a60f9a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d2ae8dfd-cff6-4958-818d-6d0e25909227" name="WindowController" direction="In" isUnique="false">
+                  <elementDefinition Id="e2d0e0b8-dbb2-4898-b089-85cd59d30403" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" name="Filterview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
+        <ownedOperations>
+          <operation Id="594cd7eb-ac0c-4397-9852-06310e5222b3" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ec80052f-cdf1-4f98-a957-aaf990358fcd" />
+          </operation>
+          <operation Id="699887e8-34ab-4618-9444-6d3b6524e4e6" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b" />
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" name="Matchview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
+        <ownedOperations>
+          <operation Id="e4d9d1cd-26ac-4ad8-b59c-3371879fca55" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71cedba7-a856-424b-8bc5-d41d56a0445b" />
+          </operation>
+          <operation Id="d6b0ddde-9661-44e2-b3b0-c47ab587ae31" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0" />
+          </operation>
+        </ownedOperations>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -371,6 +461,14 @@ matchinfo
             <elementDefinition Id="8cf263ab-3d85-4c56-ad16-d2d6218b1f39" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="6753af55-8779-46da-ad3d-be5cb103d7c6" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="302545df-1334-4e81-acf3-f7b14143ba23" />
+          </operation>
+          <operation Id="27261540-a249-44a1-87d1-8d2ec49d4826" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6d1ac341-d828-4983-8d21-154a79580b5c" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -400,6 +498,14 @@ matchinfo
             <elementDefinition Id="714e4da3-8958-4a24-8fb4-ef96659a0b69" />
           </association>
         </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="1d38822e-bb44-44ae-b7ce-5d90db163fa6" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="40624edb-007d-44e5-a05e-887165ca47c9" />
+          </operation>
+          <operation Id="a2b9ef85-cb78-4fdf-be8a-4c5a51f57fa3" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3af8b949-ee6b-4529-be30-7c172719f6df" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -411,6 +517,14 @@ matchinfo
             <elementDefinition Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="f8113820-3a40-4b53-8dc8-a1ba181b6a09" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6f2951e1-558c-43be-bc56-2edf2bc560cc" />
+          </operation>
+          <operation Id="67294be3-2ec7-4b63-9312-73008f690929" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b426b630-7c66-4ff5-83f7-1bce0ffd3192" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -422,24 +536,40 @@ matchinfo
             <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="5872ee81-01d5-4b50-b91e-2a8bc066995b" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="708e5eb2-2978-464d-8a23-fff5367e911a" />
+          </operation>
+          <operation Id="f9f1a0f5-f684-4d86-83f4-e11ff1070564" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="541d681d-e925-4284-9d46-1aa74bb5b736" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasPackages>
-      <package Id="8e2c2e5f-5ca4-4154-b389-93f96eb0111a" name="Package3">
-        <elementDefinition Id="1fe31e3a-c918-49cf-9521-b064bba0ea89" />
-      </package>
-    </logicalClassDesignerModelHasPackages>
     <packageHasNamedElement>
-      <class Id="1a4a3a3d-c031-4c4f-a960-6cd3eba1bb6d" name="ViewRaw" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="49c00c98-04e7-4e4f-9340-946386fa95e2" />
+      <referencedType Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8610fe8b-5459-4a08-88d9-8c8295ada9d8" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a6819919-bf80-43b1-abd0-24bdef54ad80" />
         <suppliersInternal>
-          <interfaceRealization Id="e90103c9-c6a5-4c4c-9f39-8c839a3ce593">
+          <interfaceRealization Id="43cff7c8-e988-4d8a-8836-3904026f43fb">
             <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
-            <elementDefinition Id="7aef2336-f4e4-4886-a134-b4315545940b" />
+            <elementDefinition Id="9b701cbe-f26b-4b4a-9842-da7de5791441" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="528aa0f7-4d5d-4c01-af14-b856a292e307" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c78804d6-2ea5-44f8-b095-6a3a09556b31" />
+          </operation>
+          <operation Id="5ae66109-8247-4b91-9a53-d5481b15b834" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="904285ae-6e20-4cc2-9167-dfa398daa442" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
-    </packageHasNamedElement>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="9ed153e1-5642-406a-bb57-5c20848259a3" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
