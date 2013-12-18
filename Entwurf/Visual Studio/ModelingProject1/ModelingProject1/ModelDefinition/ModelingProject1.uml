@@ -173,6 +173,11 @@ drin?</body>
       <body>project():
 project selected points from focussed image to other image</body>
     </comment>
+    <comment
+      Id="e8f3f23e-ba06-4400-88df-315dd0c0b3df">
+      <body>dies ist nur ein klassen diagramm genauere Beschreibung und Erklärung wird seperat abgegeben
+</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -2114,6 +2119,43 @@ project selected points from focussed image to other image</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="bb83294d-93e2-4474-8ba2-21908199d34e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3e75ccb9-63ff-4142-b4be-83a56f206395"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
+              LastKnownName="STFLEngine"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19f3a0c6-9afd-4c95-b53f-5d9ce05c320c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f7a60e94-5a33-4668-b401-199cb67a15f1"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -26806,28 +26848,232 @@ project selected points from focussed image to other image</body>
         name="RawView"
         isAbstract="false"
         isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2986ec34-59a7-442a-9e78-50172acc74cb"
+        name="- DebugFlag"
+        isAbstract="false"
+        isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="9b701cbe-f26b-4b4a-9842-da7de5791441">
-            <interfaceMoniker
-              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="ModelingProject1.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f6c9f23e-28d2-4083-9dc7-bb47cc39be69"
+            name="flag"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="c78804d6-2ea5-44f8-b095-6a3a09556b31"
-            name="//signal UpdateLeftFooter"
+            Id="2ca99aab-2edc-4b37-bdec-827365a7cec2"
+            name="operator bool"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="904285ae-6e20-4cc2-9167-dfa398daa442"
-            name="//signal UpdateRightFooter"
+            Id="54715d48-97f4-48ed-8718-1148696b3785"
+            name="operator!"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3a1d687-62b2-4639-b82a-8932f7820217"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="66a40f6c-a004-4cb5-a89b-f9b2dcab57cd"
+            name="set"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2852b65a-3670-4404-ab4b-7ba2c5b0e4a8"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d10a2234-3da7-40f5-a04f-8395bf52b2a6"
+        name="- CodeLocation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1d9ec929-4005-4063-a759-4ffa0e4e57fa"
+            name="file"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="947ac4fa-40aa-4dfb-a0aa-ad9b32fba4bc"
+            name="Line"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
+                LastKnownName="int"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="28c0a315-be35-4f32-be24-28157a2a3c2a"
+            name="function"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a413f5bf-dcc0-444e-84f2-4e6b39237d4d"
+            name="is_set"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a704bfd0-0333-4939-89e8-95821bb6f80d"
+            name="ctor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6311d8c6-ff05-4872-b708-c7b0b0aaee90"
+            name="ctor"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c997ad12-36d4-476a-86bf-3984ef9cbb21"
+                  name="file"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="19319863-1cc9-4852-abf6-16e43e9540cd"
+                  name="line"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9648c65-74d5-40a4-870d-31ba32067911"
+                  name="func"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="02f6104a-f414-4ace-9c8b-2b0efde041af"
+            name="operator bool"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7ba017bd-a6a1-4cac-b369-70ff30523b3b"
+            name="operator!"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="206a0fed-d2df-4d73-a5eb-f6c36281163b"
+            name="isSet"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -26835,6 +27081,924 @@ project selected points from focussed image to other image</body>
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="15239127-8c93-4fe8-8feb-b1d921dee354"
+        name="Public Interface"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3d6d1b07-5b3c-444d-b086-d538c262b0f6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d10a2234-3da7-40f5-a04f-8395bf52b2a6"
+              LastKnownName="- CodeLocation"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2537b0c-ecc9-4224-9b7c-68b53655ddb7"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1e40b5c-3dac-4450-bf2a-5911bd679809"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a58a45df-7122-491e-8a84-1ec02ec12517"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9de03afd-897a-4bb8-b8af-a21bbf6a74e2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="65ab097b-4522-40db-a332-70dcebd3638c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2986ec34-59a7-442a-9e78-50172acc74cb"
+              LastKnownName="- DebugFlag"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c3569ae-7666-43b3-931e-f133e135bef8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f00eb51-c3c1-4c02-833d-c03f5d548445"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
+        name="STFLEngine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3604f9aa-cbeb-410c-a215-6f09e503f24e"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1c71abde-fb42-49c1-8277-73c72d8eb844"
+              LastKnownName="SortStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc7f8ff0-812a-4b88-955b-d8fc5ed512e0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8603ef9-f356-45fa-8155-515081434eff"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a7839afc-99c9-4dc6-b5aa-d1866cd9bc5f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8acfcc73-b170-4bca-afd8-023fb736c750"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="34faf136-9ce6-43ff-a05b-7f2affc7cd5f"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="3a017254-6033-4543-b341-a2baec1f2eec"
+              LastKnownName="GroupStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94feb4a1-f13e-4241-bbf3-d790c9d4b59d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51ac8e70-4011-49ad-b627-1871724c740c"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c9bfcd2-cf03-45fc-b2be-00ac8d85edce"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7dca6719-fe47-4725-be54-9cbe279dcccc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3470446f-7f69-4568-bc9c-247431042bae"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="54c7fcbd-21c5-427a-8ea6-dc82b6bd5bd9"
+              LastKnownName="FilterStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9007ccf-96d7-4f06-8d03-9ebf14d9e845"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="add92867-6c4e-41f6-beee-56c2ca91e354"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c01ffa30-4d58-4edf-afc4-e1f744492fe8"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f7a18308-5d92-4141-bf36-1be1bfe4d434"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="08808972-42d4-4713-9c19-28168270a311"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6520f2c4-0a70-43d5-afd9-87a4a19e67fe"
+              LastKnownName="CustomStatements"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d6f0873-d865-49fd-b8c8-9e520e1cbabe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5be37402-b3ce-4a40-bfd2-fd6ef707a018"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="75e5168d-1587-4432-bd29-f4232e62ce25"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5c7fbfbb-4bed-4218-9124-63530a8088ee"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3207d53a-d2cf-404e-ac5b-b38015fe076f"
+            name="filterStatements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                LastKnownName="Vector"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce07bcc3-c136-493a-b2c3-5b47616e1e29"
+            name="groupByStatements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="277baaeb-1c4f-49f7-ab7a-c484b9825ffc"
+                LastKnownName="Vecor"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7954061d-4b20-4ea4-8907-4cd7698d7d78"
+            name="sortByStatements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                LastKnownName="Vector"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="870cfcdc-fed7-4345-8c11-399b93a44392"
+            name="customStatements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                LastKnownName="Vector"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d692a5e1-aee6-41a3-9ca8-fa2d9a00a4c6"
+            name="query"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc255a1a-0dc9-43ee-a5f5-8e2d1a908992"
+                  name="entries"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a3d19fe7-5b86-4173-8da8-ac94d0dc105e"
+                      LastKnownName="Vector&lt;TableEntry&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9af755e7-8e22-446e-8128-d554cc1a5ddf"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                      LastKnownName="Vector"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a5dbae45-2b7c-4701-9005-af96561696ac"
+            name="filter"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f60c6435-5a99-46ef-b905-e66f64c83eb0"
+                  name="entries"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
+                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="42fe711b-535c-452a-9a38-a10d217d86e6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                      LastKnownName="Vector"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3fa2e403-0e8d-4ad8-b3e6-6de630919c4a"
+            name="group"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f400e058-12fb-44ef-894c-08326e70fa50"
+                  name="entries"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
+                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63f429ab-3df0-4430-af5d-e1b2717df6f0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                      LastKnownName="Vector"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="330db343-50bd-4ec9-9d1c-a5d6fffcea00"
+            name="sort"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="649feaee-9560-4697-9116-912ee5ce1525"
+                  name="entries"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
+                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94711679-27e0-40ba-b9bd-d1fe57af9950"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+                      LastKnownName="Vector"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
+        name="Vector" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="277baaeb-1c4f-49f7-ab7a-c484b9825ffc"
+        name="Vecor" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a3d19fe7-5b86-4173-8da8-ac94d0dc105e"
+        name="Vector&lt;TableEntry&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
+        name="Vector&lt;TableEntries&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac182aee-2e76-4e70-8ec9-bb0d8d07f8e2"
+        name="STFLStatement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="098578a9-10b3-45ae-98af-db1e600d332f"
+            name="dsecriptor"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="54c7fcbd-21c5-427a-8ea6-dc82b6bd5bd9"
+        name="FilterStatement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="935b5d8a-887a-4ed4-83ed-7c093b978eac"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ac182aee-2e76-4e70-8ec9-bb0d8d07f8e2"
+              LastKnownName="STFLStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="93989210-e827-42ca-8fa1-24015a2851b0"
+            name="filter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="60ada2c4-9b50-433e-a105-b72fbb2f5376"
+                  name="filterText"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ecc3c1c9-e8f5-4d45-8dd3-4a76215f4690"
+                  name="entry"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+                      LastKnownName="TableEntry"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f84e4c93-540f-4de5-89ee-d926b0e6ac8d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+        name="TableEntry" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a017254-6033-4543-b341-a2baec1f2eec"
+        name="GroupStatement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7c47ce2d-c057-4f78-bd4e-e4e1216029f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ac182aee-2e76-4e70-8ec9-bb0d8d07f8e2"
+              LastKnownName="STFLStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="211f3971-8b81-4116-b400-6aa521490ba0"
+            name="group"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c1a65c7-da76-40ac-a84f-bc5f36f3b209"
+                  name="GroupText"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2e7d7db-b663-446f-9746-3882d4aafc72"
+                  name="entry"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+                      LastKnownName="TableEntry"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1da6af46-7e1f-4043-8f19-ab12622210d9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1c71abde-fb42-49c1-8277-73c72d8eb844"
+        name="SortStatement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ff4c8db1-a419-469d-901e-7904ecb21d90"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ac182aee-2e76-4e70-8ec9-bb0d8d07f8e2"
+              LastKnownName="STFLStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8319774b-0b9b-4e20-a25d-6a348eb5f36c"
+            name="sortText"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6fb5cf9f-42a5-4a82-807d-72ac314b71a2"
+            name="updateSortText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4cf28f5f-d086-4ebb-b285-27b7f6c62250"
+                  name="text"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="43b96678-d83d-462e-982a-126736b338fd"
+            name="compare"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="81ba5db2-c98b-4f4e-aa3f-ace217b2ca9d"
+                  name="entry1"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+                      LastKnownName="TableEntry"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b178aa9d-ef83-4c99-bdbe-0b36c40e8a16"
+                  name="entry2"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+                      LastKnownName="TableEntry"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="919a92c0-8651-4bd0-a50b-b157315f3269"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
+                      LastKnownName="int"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6520f2c4-0a70-43d5-afd9-87a4a19e67fe"
+        name="CustomStatements"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f443a474-a67c-4294-b10a-9a4c06638047"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ac182aee-2e76-4e70-8ec9-bb0d8d07f8e2"
+              LastKnownName="STFLStatement"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d016549c-0d25-4214-bf2f-735dcc160163"
+            name="action"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c44074e9-5007-47da-a05f-6a9b30127fd2"
+                  name="inputText"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39f3991a-cfc7-422d-925c-67a88f2d1bd1"
+                  name="entry"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a51fef81-3ea2-46a2-b80b-d5701501aa1b"
+                      LastKnownName="TableEntry"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67bd9717-9495-41c1-a866-c0bc662ceecc"
+        name="RawView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
