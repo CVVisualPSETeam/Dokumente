@@ -57,7 +57,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="603dd621-828a-4a0f-973c-e8f0975674b6" name="nImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="603dd621-828a-4a0f-973c-e8f0975674b6" name="MatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4bb95601-c917-448d-ba24-41e68d730917" />
         <targetEnds>
           <association Id="233dbb89-e096-4322-8b8c-f2c8dddf7264" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -1131,26 +1131,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c893977c-7aeb-47bb-853c-3076b8809ccd" name="FilterImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="18007148-be68-4fc2-b61e-a8d0e1528973" />
-        <suppliersInternal>
-          <dependency Id="d2d56dbf-156b-48cf-8e3a-2710ca661d90">
-            <classMoniker Id="603dd621-828a-4a0f-973c-e8f0975674b6" LastKnownName="nImageView" />
-            <elementDefinition Id="5e744a50-12d1-4722-bc2f-e7e1398afe1e" />
-          </dependency>
-          <interfaceRealization Id="3c07eb81-4426-42a8-bfd3-d58bee53b9e1">
-            <interfaceMoniker Id="5eccfb00-e0e8-4e4f-99ea-fae287958ed0" LastKnownName="Filterview" />
-            <elementDefinition Id="3e9f9756-051c-429a-9f7e-8f96eb7da1a0" />
-          </interfaceRealization>
-        </suppliersInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="fc21e814-ceae-4978-9ce7-4443c944b56b" name="MatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="332a60dd-36d0-4b04-bfb6-0ffb405ae7b3" />
         <suppliersInternal>
           <dependency Id="e3118fa7-0a8e-4e8b-9bb4-b68add64a2a6">
-            <classMoniker Id="603dd621-828a-4a0f-973c-e8f0975674b6" LastKnownName="nImageView" />
+            <classMoniker Id="603dd621-828a-4a0f-973c-e8f0975674b6" LastKnownName="MatchImageView" />
             <elementDefinition Id="1e79eb03-acd6-430e-ae1b-ede66bf377b6" />
           </dependency>
           <interfaceRealization Id="cb473493-e3d1-4d18-98e9-e6639b40d399">
@@ -1159,11 +1144,6 @@
           </interfaceRealization>
         </suppliersInternal>
       </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="5eccfb00-e0e8-4e4f-99ea-fae287958ed0" name="Filterview" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="bf4b3bf9-7c63-40b3-8421-7530562b083d" />
-      </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="a68000d0-c707-430c-a6f0-e88b03345116" name="Matchview" isAbstract="false" isLeaf="false">
