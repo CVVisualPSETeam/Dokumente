@@ -2097,6 +2097,16 @@ sues defaultView
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5852e955-828e-4efb-98c7-cf2ebc4a5da3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="c9088d59-41a9-4f5f-b897-c1fc9da38af3"
@@ -2144,7 +2154,7 @@ sues defaultView
             isAbstract="false">
             <classMoniker
               Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
-              LastKnownName="STFLEngine"
+              LastKnownName="STFLEngine&lt;CollumnType&gt;"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2173,6 +2183,143 @@ sues defaultView
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ecd77bee-5d1e-47c4-ac7f-3af17941f4f2"
+            name="table"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="87765c78-3386-4885-b341-fbb794629642"
+                LastKnownName="OverviewTable"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="820cfdf6-0855-4670-8efc-302b1c4b7147"
+            name="queryWidget"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="85643f81-f0d3-412b-87b4-de6d5d892cc3"
+                LastKnownName="STFLQueryWindget"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="93342bd0-f6b5-4c10-bc64-c1a3f46974d2"
+            name="queryEngine"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d644aba0-54ad-4a86-9df6-8e7a371e5de2"
+                LastKnownName="STFLEngine&lt;CollumnTyp&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e371b39f-a728-44ef-9db6-5cf4b92c4c87"
+            name="//slot filterquery"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2dab216c-582b-4ac0-9eb1-05c0d9613f38"
+                  name="Qsitrng"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e8afc408-d662-41f3-8946-3cde80d483fc"
+            name="//slot updateQuerySlot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20fd1a51-22fe-408e-88cd-fa347ede19ff"
+                  name="query"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e912d6e6-0b23-429e-bce4-f68d66abc3bd"
+                      LastKnownName="Qstring"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="673c0242-7cc9-4fa5-94bb-bd90940be871"
+            name="addElement"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="366618bf-b00e-4fce-b743-8c311fb0bb8d"
+                  name="elemt"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                      LastKnownName="CallData"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2c548162-d4aa-4ed5-b4a7-5dc8f4004ffa"
+            name="OverviewPanel(data:vector&lt;CallData&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -22355,7 +22502,7 @@ sues defaultView
     <packageHasNamedElement>
       <class
         Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
-        name="STFLEngine"
+        name="STFLEngine&lt;CollumnType&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -22563,8 +22710,8 @@ sues defaultView
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="3207d53a-d2cf-404e-ac5b-b38015fe076f"
-            name="filterStatements"
+            Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85"
+            name="elemente"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -22576,14 +22723,14 @@ sues defaultView
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                LastKnownName="Vector"
+                Id="781c3bae-190e-4314-8096-8835519ff865"
+                LastKnownName="vector&lt;CollumType&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
-            Id="ce07bcc3-c136-493a-b2c3-5b47616e1e29"
-            name="groupByStatements"
+            Id="d8cdc633-6e33-438a-8ace-b19b16c29c7f"
+            name="groupTunes"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -22595,14 +22742,14 @@ sues defaultView
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="277baaeb-1c4f-49f7-ab7a-c484b9825ffc"
-                LastKnownName="Vecor"
+                Id="90890b3c-c85e-47cd-ae2c-abda2c4d970d"
+                LastKnownName="map&lt;QString,std::functions&lt;QString(CollumnType)&gt;&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
-            Id="7954061d-4b20-4ea4-8907-4cd7698d7d78"
-            name="sortByStatements"
+            Id="03ec0898-1fd5-4528-bdb2-151a22c8a116"
+            name="sortTunes"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -22614,14 +22761,14 @@ sues defaultView
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                LastKnownName="Vector"
+                Id="a4361589-56d0-4438-99f9-9a5ab6203e02"
+                LastKnownName="map&lt;QString,std::function&lt;int,CollumType,CollumnType&gt;&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
-            Id="870cfcdc-fed7-4345-8c11-399b93a44392"
-            name="customStatements"
+            Id="84a8fd7a-e0f0-4d0a-bcf1-53c753bfe800"
+            name="filterTunes"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -22633,16 +22780,168 @@ sues defaultView
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                LastKnownName="Vector"
+                Id="f285b0c2-7528-4bbd-9168-341a0c0f0c59"
+                LastKnownName="map&lt;QString&lt;std::function&lt;???(QSTring,CollumType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="234b15a8-a77f-44b7-9dcc-28d41b59a6d2"
+            name="filter??Tunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5c6f5258-9a26-4462-9c8e-3811ab878e42"
+                LastKnownName="map&lt;QString,std::function&lt;??(QString,vector&lt;CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="616170c6-52a8-48af-abe7-ada052eb1b09"
+            name="rawFilterFunc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6e2d0113-c92c-459c-85c0-799489961296"
+                LastKnownName="std::function&lt;float??(QString,CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5612023d-7b3c-413b-8718-a3c566af4c1c"
+            name="filterPeelTunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b1874eef-817b-46c0-8ef8-c5eae674d638"
+                LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="90c14263-027a-4e8e-9764-4d15de253f6c"
+            name="filter??Tunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b1874eef-817b-46c0-8ef8-c5eae674d638"
+                LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="35e0737c-8b58-46a7-88d3-8d9ca8fde2e1"
+            name="rawFilterPoolFunc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="632e9d7b-ae86-4c26-b5aa-2ef8e345f5e3"
+                LastKnownName="std::function&lt;QString(CollmnType)&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="59c5affd-6536-4693-ac8a-7dde7f3e6f8c"
+            name="filterPool"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ab28afe5-223f-4dd9-b4a4-439b64cc921c"
+                LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="929aeb43-f4b7-4484-9cc6-163ae282c8c7"
+            name="filter????"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ab28afe5-223f-4dd9-b4a4-439b64cc921c"
+                LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bdd96864-4500-4f34-aebe-298e6ff55a37"
+            name="rawFilterPool"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4532b210-1eb4-4792-b819-a5a4dea49ad9"
+                LastKnownName="vector&lt;QSring&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="d692a5e1-aee6-41a3-9ca8-fa2d9a00a4c6"
-            name="query"
+            Id="6c7d2f8e-24b7-4393-bfd1-4bae3ba41dbc"
+            name="update??????Elements"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22651,27 +22950,14 @@ sues defaultView
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="cc255a1a-0dc9-43ee-a5f5-8e2d1a908992"
-                  name="entries"
+                  Id="a6106a4a-6695-42a9-8a36-d11a198f6194"
+                  name="newElement"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="a3d19fe7-5b86-4173-8da8-ac94d0dc105e"
-                      LastKnownName="Vector&lt;TableEntry&gt;"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9af755e7-8e22-446e-8128-d554cc1a5ddf"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                      LastKnownName="Vector"
+                      Id="b6d2b472-5296-424e-83d3-af896c8726c3"
+                      LastKnownName="vecotr&lt;CollumnType&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -22679,9 +22965,8 @@ sues defaultView
             </ownedParameters>
           </operation>
           <operation
-            Id="a5dbae45-2b7c-4701-9005-af96561696ac"
-            name="filter"
-            visibility="Protected"
+            Id="f7decfae-9492-4601-af5e-a80af9827dc3"
+            name="parse"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22690,27 +22975,27 @@ sues defaultView
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="f60c6435-5a99-46ef-b905-e66f64c83eb0"
-                  name="entries"
-                  direction="In"
+                  Id="30275bef-7c99-4b1b-ab9d-acb1b73496ad"
+                  direction="Return"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
-                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      Id="da4808e8-1841-40b6-b47f-4698573c122c"
+                      LastKnownName="vector&lt;ElementGroup&lt;CollumnType&gt;&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="42fe711b-535c-452a-9a38-a10d217d86e6"
-                  direction="Return"
+                  Id="dc8dddb3-a1c0-4fec-a83b-5d2896ca80f2"
+                  name="query"
+                  direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                      LastKnownName="Vector"
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -22718,9 +23003,8 @@ sues defaultView
             </ownedParameters>
           </operation>
           <operation
-            Id="3fa2e403-0e8d-4ad8-b3e6-6de630919c4a"
-            name="group"
-            visibility="Protected"
+            Id="a7206cff-357d-4453-87f9-0230aaf22313"
+            name="getSuggestions"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22729,27 +23013,28 @@ sues defaultView
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="f400e058-12fb-44ef-894c-08326e70fa50"
-                  name="entries"
+                  Id="c806245e-23e1-4e89-acb3-dfb7446271a9"
+                  name="query"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
-                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="63f429ab-3df0-4430-af5d-e1b2717df6f0"
-                  direction="Return"
+                  Id="d9f48d3d-5404-4d96-a33d-c9bbcd922280"
+                  name="number"
+                  direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                      LastKnownName="Vector"
+                      Id="bb703aa4-f27d-4902-85bb-07de09d3ed15"
+                      LastKnownName="int)vector&lt;QString&gt;("
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -22757,9 +23042,8 @@ sues defaultView
             </ownedParameters>
           </operation>
           <operation
-            Id="330db343-50bd-4ec9-9d1c-a5d6fffcea00"
-            name="sort"
-            visibility="Protected"
+            Id="2c3f5261-9ec8-448a-af8d-e8ce5be76496"
+            name="STFLEngineCollumType&gt;"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22768,33 +23052,51 @@ sues defaultView
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="649feaee-9560-4697-9116-912ee5ce1525"
-                  name="entries"
+                  Id="0f0ac001-8f9a-42f7-84cc-ba0a95dfb636"
+                  name="elements"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="c10c48fb-169c-40e2-8066-f349de90e7bd"
-                      LastKnownName="Vector&lt;TableEntries&gt;"
+                      Id="a3090082-c2bd-45fb-b102-ba3d4fa3161e"
+                      LastKnownName="vector&lt;CollumTyp&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="94711679-27e0-40ba-b9bd-d1fe57af9950"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="b67e05c8-906f-481e-8f9e-43db6c7ca8b5"
-                      LastKnownName="Vector"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  Id="e4d85464-066a-428a-81a7-6e4587468c30"
+                  name="rawFilterTune("
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="6ac7dfe5-62cb-4375-a0b7-71d90963f21a"
+            name="STFLgroupTunes:map&lt;.,.&gt;,sortTunes:...,filterTunes"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="69e32efb-ac5e-4024-9abb-80da8ed1efa6"
+            name="STFLEnginefilterCSTunes:--"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dc20c63d-710d-4b9f-a541-f7c4421f5e44"
+            name="???????????????????????????????"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -23456,6 +23758,1639 @@ sues defaultView
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="781c3bae-190e-4314-8096-8835519ff865"
+        name="vector&lt;CollumType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e7c1502d-3201-4c27-a55d-61e2a1ae238e"
+        name="map&lt;QString,std::Functions" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="90890b3c-c85e-47cd-ae2c-abda2c4d970d"
+        name="map&lt;QString,std::functions&lt;QString(CollumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2e03922c-fe5c-4823-9c96-a76b67e0f476"
+        name="map&lt;QString,std::function&lt;int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a4361589-56d0-4438-99f9-9a5ab6203e02"
+        name="map&lt;QString,std::function&lt;int,CollumType,CollumnType&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1809c1e4-4a23-4bc3-998e-91e03cded6de"
+        name="map&lt;QString&lt;std::function" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f285b0c2-7528-4bbd-9168-341a0c0f0c59"
+        name="map&lt;QString&lt;std::function&lt;???(QSTring,CollumType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7eca903f-00e5-4ae5-962d-d0a1b6a76ff0"
+        name="map&lt;QString,std::function&lt;??" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5c6f5258-9a26-4462-9c8e-3811ab878e42"
+        name="map&lt;QString,std::function&lt;??(QString,vector&lt;CollumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c872f083-5423-47e6-812d-b12545e0eec7"
+        name="std::function&lt;float??(QString" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="dbd7f933-7f73-4db7-971a-33e8e1a296f0"
+        name="std::function&lt;float??(QString,CollumnType" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6e2d0113-c92c-459c-85c0-799489961296"
+        name="std::function&lt;float??(QString,CollumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="67a3cbc8-cdcb-4dd3-8cf6-6b1d4d203b59"
+        name="maps&lt;Qstring,std::function" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b1874eef-817b-46c0-8ef8-c5eae674d638"
+        name="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f2d3c4d3-fe65-47b3-9dc9-ad04bd64561a"
+        name="?????" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="524d2e11-cf3d-4dd7-8081-5aa323d59170"
+        name="std::function&lt;QString" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="632e9d7b-ae86-4c26-b5aa-2ef8e345f5e3"
+        name="std::function&lt;QString(CollmnType)&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="396a0989-dea1-4cd5-9877-e6f1c7c55169"
+        name="map&lt;QString,vector&lt;QString" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ab28afe5-223f-4dd9-b4a4-439b64cc921c"
+        name="map&lt;QString,vector&lt;QString&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4532b210-1eb4-4792-b819-a5a4dea49ad9"
+        name="vector&lt;QSring&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b6d2b472-5296-424e-83d3-af896c8726c3"
+        name="vecotr&lt;CollumnType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="951a17e4-a646-437c-92a1-a148df9b6eef"
+        name="vector&lt;Elemen" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="da4808e8-1841-40b6-b47f-4698573c122c"
+        name="vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7b8fdc9c-d5e6-4feb-83dc-098442dae994"
+        name="int)vector&lt;QString(" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bb703aa4-f27d-4902-85bb-07de09d3ed15"
+        name="int)vector&lt;QString&gt;(" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a3090082-c2bd-45fb-b102-ba3d4fa3161e"
+        name="vector&lt;CollumTyp&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5ecede7-7c72-4a42-990c-7314c24af491"
+        name="FilterQueryWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4432a66d-4dab-457e-b2de-0559e33caacd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d461c87c-1e9e-463c-a135-e2ea6a5458b8"
+              LastKnownName="???????"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dbc66141-3caa-4708-8616-51c36cb8ac48"
+            name="viewController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                LastKnownName="ViewController"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1d475386-4380-42e4-b732-33aa410aae68"
+            name="///signal filfoSignalguoy:QString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c9949d3a-260c-444a-a593-0c6dbc527d20"
+            name="///signal usefullUpdateSetquery:QString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fa0a878c-8cdf-4a9b-8c41-81bd34e19358"
+            name="showSuggestoins"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a5157c6-c880-49ed-8cd3-f094e0df8906"
+                  name="suggestions"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f48aa8e6-e4a4-4ed5-b71f-347d81280ef3"
+                      LastKnownName="vector&lt;QSTring&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d461c87c-1e9e-463c-a135-e2ea6a5458b8"
+        name="???????"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+        name="ViewController" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f48aa8e6-e4a4-4ed5-b71f-347d81280ef3"
+        name="vector&lt;QSTring&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f1c3da65-6d49-4b93-815c-6adb2cc4838e"
+        name="STFLEngine&lt;CollumnType&gt;1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e0241fab-a0c5-4bfc-9eec-ea4668ff402b"
+            name="elemente"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="781c3bae-190e-4314-8096-8835519ff865"
+                LastKnownName="vector&lt;CollumType&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="656c5565-d5f4-45c4-b74b-ecc0f54af717"
+            name="groupTunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="90890b3c-c85e-47cd-ae2c-abda2c4d970d"
+                LastKnownName="map&lt;QString,std::functions&lt;QString(CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eed8a966-c089-4707-a7b3-703a4c9c8e89"
+            name="sortTunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a4361589-56d0-4438-99f9-9a5ab6203e02"
+                LastKnownName="map&lt;QString,std::function&lt;int,CollumType,CollumnType&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d5b05aca-738a-493e-bf6d-11b9c210195a"
+            name="filterTunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f285b0c2-7528-4bbd-9168-341a0c0f0c59"
+                LastKnownName="map&lt;QString&lt;std::function&lt;???(QSTring,CollumType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9657d056-1ebd-4f7d-9a04-755426fccc11"
+            name="filter??Tunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5c6f5258-9a26-4462-9c8e-3811ab878e42"
+                LastKnownName="map&lt;QString,std::function&lt;??(QString,vector&lt;CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="28a2f605-1bed-4679-88e8-2f333cba3ad0"
+            name="rawFilterFunc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6e2d0113-c92c-459c-85c0-799489961296"
+                LastKnownName="std::function&lt;float??(QString,CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b92e06dc-930e-4481-a649-3ebe3047a8be"
+            name="filterPeelTunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b1874eef-817b-46c0-8ef8-c5eae674d638"
+                LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ef24a41a-f363-481a-93c4-947e52fbb19c"
+            name="filter??Tunes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b1874eef-817b-46c0-8ef8-c5eae674d638"
+                LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="14eff4db-207d-4ba9-a9f1-c73d5ca7e26b"
+            name="rawFilterPoolFunc"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="632e9d7b-ae86-4c26-b5aa-2ef8e345f5e3"
+                LastKnownName="std::function&lt;QString(CollmnType)&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="cd337c52-f441-4ae2-a8ee-f9c350511810"
+            name="filterPool"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ab28afe5-223f-4dd9-b4a4-439b64cc921c"
+                LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fea18098-a102-4c94-a154-117cd6adb718"
+            name="filter????"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ab28afe5-223f-4dd9-b4a4-439b64cc921c"
+                LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3dc7d854-4eee-45a3-a4c6-126edb8b65a7"
+            name="rawFilterPool"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="4532b210-1eb4-4792-b819-a5a4dea49ad9"
+                LastKnownName="vector&lt;QSring&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bba5b278-86c5-450a-8cc3-6decc38e46af"
+            name="update??????Elements"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1973b3b8-9c77-4883-99b6-8e4bafd3564e"
+                  name="newElement"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b6d2b472-5296-424e-83d3-af896c8726c3"
+                      LastKnownName="vecotr&lt;CollumnType&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="94317167-fc09-4633-b009-079de8e30bab"
+            name="parse"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b874c21-d233-4969-aab6-7cada7b31b16"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="da4808e8-1841-40b6-b47f-4698573c122c"
+                      LastKnownName="vector&lt;ElementGroup&lt;CollumnType&gt;&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d8700b9a-4ddb-49e3-ad30-9b99295c1f3f"
+                  name="query"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52a437c3-cb69-46db-a142-b7c5fd10da78"
+            name="getSuggestions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c09b66f-4783-4b3f-8b93-9820c781212e"
+                  name="query"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="814da07e-cdd0-43ca-8a2a-c15b154b4f27"
+                  name="number"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb703aa4-f27d-4902-85bb-07de09d3ed15"
+                      LastKnownName="int)vector&lt;QString&gt;("
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="207901db-0c8b-4274-8e10-3a374c98db70"
+            name="STFLEngineCollumType&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b9b4b4d-7b8b-4317-a822-ba607f37cf8e"
+                  name="elements"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a3090082-c2bd-45fb-b102-ba3d4fa3161e"
+                      LastKnownName="vector&lt;CollumTyp&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73c32319-11ca-4c18-9542-737b333742d4"
+                  name="rawFilterTune("
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f064c71c-2217-47b9-a753-16d01675d2a2"
+            name="STFLgroupTunes:map&lt;.,.&gt;,sortTunes:...,filterTunes"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ce2a4b9b-e6b5-4bd2-b21a-5572e3f9537f"
+            name="STFLEnginefilterCSTunes:--"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a5ec962b-4266-4453-abb9-cc707d78ee81"
+            name="???????????????????????????????"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8778293c-c16d-4962-996b-43d231b9d3c0"
+        name="???????1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc"
+        name="FilterQueryWidget1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="836fecf7-81e7-4a10-af36-4d2bc5d4d485"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8778293c-c16d-4962-996b-43d231b9d3c0"
+              LastKnownName="???????1"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2352ef17-7917-438e-b950-f1fbff1b5605"
+            name="viewController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                LastKnownName="ViewController"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1cdf73d7-31ed-4e2e-8a7e-29f32eb22413"
+            name="///signal filfoSignalguoy:QString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="453721d7-a35a-4784-bcc0-2e4d14ecaacc"
+            name="///signal usefullUpdateSetquery:QString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e5f3d467-c273-455f-befe-5274e80ad8b3"
+            name="showSuggestoins"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="417928b7-49bb-4462-b45f-2c17d967f135"
+                  name="suggestions"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f48aa8e6-e4a4-4ed5-b71f-347d81280ef3"
+                      LastKnownName="vector&lt;QSTring&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7b73a384-3b55-461d-ab57-96f9cffbf230"
+        name="ElementGroup&lt;ElementType&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="390fa909-9cae-4da8-b64a-a03eaf767d6a"
+            name="title"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6ccf683f-f217-4303-b31d-f1ed4e18261c"
+            name="elements"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="248140d4-5a19-4194-8b0d-2d8d5747aa7a"
+                LastKnownName="vector&lt;ElementType&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2db50de9-520d-4db0-88f2-2cba645a54a5"
+            name="getTitle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac3705cb-ae72-4f23-b4bb-d2b40fdde4e6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e912d6e6-0b23-429e-bce4-f68d66abc3bd"
+                      LastKnownName="Qstring"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="91aaf3ac-7c6e-48d2-85cf-7d65e1c72706"
+            name="getElements"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38619f03-cbca-47bd-bd45-b13b4f97b19d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e18cb602-df21-46df-a7bc-9498f6f63d0b"
+                      LastKnownName="const vector&lt;ElementType&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f2daf87-61c4-40d8-84af-8e7f0173fd2a"
+            name="setSize"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="16be598a-6d4c-4658-9039-4e8a56c17238"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
+                      LastKnownName="int"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a49eae67-a518-4fce-97e5-5872bc790fe0"
+            name="contains"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7fb900f1-5bf6-44ce-a884-0c9ecf526360"
+                  name="element"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="fc7a9634-6d89-4a41-879e-4d31fefae5bf"
+                      LastKnownName="ElementType"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="17ebada1-b509-4847-b9af-43cfcad7c065"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="903a5409-d0d7-4906-8e21-3817b9d98e2a"
+            name="ElementGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1105fbfc-fbef-430c-a39f-b40a19b013a3"
+                  name="title"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d33957b-696a-4893-b67d-b75d38e4256e"
+                  name="elements"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="744482f4-cc4f-429c-b4a2-28484374d155"
+                      LastKnownName="vector&lt;ElementTyp&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="03ae4a2c-9e19-4f5a-8970-db75fad14654"
+            name="operator[]"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="248140d4-5a19-4194-8b0d-2d8d5747aa7a"
+        name="vector&lt;ElementType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e912d6e6-0b23-429e-bce4-f68d66abc3bd"
+        name="Qstring" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e18cb602-df21-46df-a7bc-9498f6f63d0b"
+        name="const vector&lt;ElementType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="fc7a9634-6d89-4a41-879e-4d31fefae5bf"
+        name="ElementType" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="744482f4-cc4f-429c-b4a2-28484374d155"
+        name="vector&lt;ElementTyp&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+        name="QWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="87765c78-3386-4885-b341-fbb794629642"
+        name="OverviewTable" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="85643f81-f0d3-412b-87b4-de6d5d892cc3"
+        name="STFLQueryWindget" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d644aba0-54ad-4a86-9df6-8e7a371e5de2"
+        name="STFLEngine&lt;CollumnTyp&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+        name="CallData" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="85cd40d0-fbdb-47e5-b615-7d7335e0fa38"
+        name="GroupableTable&lt;CollumType&lt;TableCollumn&gt;&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c96bccef-d819-4049-8789-a8b2b5114014"
+            name="collumGroup"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="fea00d7b-3f1b-4d24-a235-314412993d05"
+                LastKnownName="vector&lt;ElementGroup&lt;CollumTyp&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f13f811b-ef6c-49bb-b6b6-5eadad11d61c"
+            name="groupTables"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7cf514c8-06dd-4dce-ac61-e4b2547d4a68"
+        name="vector&lt;ElementGroup&lt;CollumTyp" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="fea00d7b-3f1b-4d24-a235-314412993d05"
+        name="vector&lt;ElementGroup&lt;CollumTyp&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f5294fd2-2f31-4fdd-95da-fc73d66466dd"
+        name="TableCollum"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="258d14df-3c0a-4967-8584-25060373d1a2"
+            name="get???QTCollum()???"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="01a550e4-c9bf-4f8e-b2cc-39f77b3b63e8"
+        name="OverviewTableCollums"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="11b4cd54-5771-4696-b836-db73c7387aa0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f5294fd2-2f31-4fdd-95da-fc73d66466dd"
+              LastKnownName="TableCollum"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="043a005b-3746-4d9c-8e04-f5cfb97de69d"
+            name="callData"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                LastKnownName="CallData"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c6c1b537-6df8-4dbe-af5c-a1958aada5f2"
+            name="generateQTCollum"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aaaf4c1d-15fb-444e-9bdb-a35d01ca5e75"
+            name="OverviewTableCollumn"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ee11ea9-6391-4276-94d0-9e8b370a862a"
+                  name="callData"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                      LastKnownName="CallData"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2016622d-cec7-4ac5-ba5d-667be0016b30"
+        name="RawViewTableCollumn"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e0e9ec11-9601-4c97-81ee-f4a7d2c300a4"
+            name="TODO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cf38b194-baec-47e5-b668-bd8393dc9516"
+            name="generateQTCollumn"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c223c8a9-c852-420c-9d7b-92caf79c65fc"
+        name="RawViewTableCollumn"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b1900ca1-9f69-4e59-abe7-205ba4aeb17f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f5294fd2-2f31-4fdd-95da-fc73d66466dd"
+              LastKnownName="TableCollum"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="fa001721-b630-440e-b796-adf8178e50b6"
+            name="TODO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="707fa28a-c5d8-4230-b153-fdfd0f443df3"
+        name="TableCollum1"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5b084adc-7d02-486a-8278-ff8b03f95b17"
+            name="get???QTCollum()???"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0dbd22b6-5c59-40d7-b3e8-b534ce69b7c7"
+        name="OverviewTableCollums1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="dc2e44da-81f7-4a88-9766-6dab006f592c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="707fa28a-c5d8-4230-b153-fdfd0f443df3"
+              LastKnownName="TableCollum1"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a392b315-4a95-49e0-bda8-54648e5239be"
+            name="callData"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                LastKnownName="CallData"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4651ca0c-3b82-4d0b-bc94-0c978015e11a"
+            name="generateQTCollum"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="df5ea56f-5f21-4a50-a4f2-2d9d5f89dd93"
+            name="OverviewTableCollumn"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68064f90-3652-4368-9777-f03bf503f263"
+                  name="callData"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                      LastKnownName="CallData"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c246bc6c-3225-41ad-88a2-c9d7f8c6e74d"
+        name="RawViewTableCollumn1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7c2db732-c515-47dc-b904-a01e51e54a91"
+            isSubstitutable="false">
+            <classMoniker
+              Id="707fa28a-c5d8-4230-b153-fdfd0f443df3"
+              LastKnownName="TableCollum1"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="694a6412-ba5c-4fa2-981d-dc16e4a3b025"
+            name="TODO"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b0288fe4-6ea6-48ca-baa8-8e26b6ee1158"
+        name="GroupableTable&lt;CollumType&lt;TableCollumn&gt;&gt;1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="00a5c57a-f487-42bb-b53d-a01162fd0c29"
+            name="collumGroup"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="fea00d7b-3f1b-4d24-a235-314412993d05"
+                LastKnownName="vector&lt;ElementGroup&lt;CollumTyp&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="24d4a3b7-317e-4eec-a256-ec0390a2f7e9"
+            name="groupTables"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c7398aa7-5dd0-4a19-ab47-a6333d49c19a"
+        name="OverviewTable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8e945c19-55d0-4bd2-9f21-e5c81e9fdf3c"
+            name="collumnGRoup"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9fd384a7-2aa9-407c-aa7f-023a0f4b2504"
+                LastKnownName="vector&lt;???&lt;OverviewTableCollumn&gt;&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="161533d3-5fb1-42e0-8875-7367085bf85d"
+            name="groupSubTable"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="556a622b-25df-43da-8891-d14a42918361"
+                LastKnownName="vector&lt;OverviewGroupSubTable&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a00eb750-85f8-403a-8162-581abf4a64bf"
+            name="???"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ba4110cc-28b7-4985-a89e-bb90a134e3f2"
+                LastKnownName="OverviewPanel??"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60f33a6f-4ae4-418c-8786-e4976afb072c"
+            name="viewController"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                LastKnownName="ViewController"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5442c50d-5a4a-4aea-b8e4-de12acc07005"
+            name="updateCollumnGroups"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="29ba70b1-5d38-42a3-a0a5-8a90def657cf"
+                  name="newGroups"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="8c83637f-c4b9-49f9-8a21-7120a4f1eca5"
+                      LastKnownName="vector&lt;ElementGroup&lt;OverviewTableCollum&gt;&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2c44557b-b6ce-484e-8bd1-2f2f8f4dd824"
+            name="OverviewTable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ffde78a5-128a-4564-bd29-64a66a51f59c"
+                  name="viewController"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bbc8a4ef-dd01-4b42-9ffc-96e70d152a6b"
+                  name="parent"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c7398aa7-5dd0-4a19-ab47-a6333d49c19a"
+                      LastKnownName="OverviewTable"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08672daa-b995-4700-94d8-590ed4dfd4e2"
+                  name="collumnGroup"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9eb03c20-e83f-4957-9410-02a02fea66c6"
+        name="vector&lt;???&lt;OverviewTable" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9fd384a7-2aa9-407c-aa7f-023a0f4b2504"
+        name="vector&lt;???&lt;OverviewTableCollumn&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7778d9a8-6ce0-4340-963e-94158720968d"
+        name="vector&lt;OverviewGroups" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="556a622b-25df-43da-8891-d14a42918361"
+        name="vector&lt;OverviewGroupSubTable&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ba4110cc-28b7-4985-a89e-bb90a134e3f2"
+        name="OverviewPanel??" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8c83637f-c4b9-49f9-8a21-7120a4f1eca5"
+        name="vector&lt;ElementGroup&lt;OverviewTableCollum&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4c2c04a3-4e36-486a-9ece-a39a2fcd0cba"
+        name="OverviewGroupSubtable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b5ba4680-29a2-4662-ab2f-eb0432b249ab"
+            name="parentPanel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="db640c1b-0b04-403d-a2e9-8d311cb34b74"
+                LastKnownName="OverviewPanel"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c16fd39b-8ceb-409c-80da-cc1fb5cf725d"
+            name="viewController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                LastKnownName="ViewController"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eed18e40-7005-4a17-b661-d66dd32a3b60"
+            name="groupElementGroupOverviewTableCollum&gt;"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ead1b553-86ac-4eb5-8601-3514aa3449ff"
+            name="OverviewGroupSubTable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9161201c-4b0d-4d0f-8ffa-c8af9e917a66"
+            name="updateGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="db640c1b-0b04-403d-a2e9-8d311cb34b74"
+        name="OverviewPanel" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9a3dd2bf-0247-4e65-8d4c-d3708734aa03"
+        name="Q" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
