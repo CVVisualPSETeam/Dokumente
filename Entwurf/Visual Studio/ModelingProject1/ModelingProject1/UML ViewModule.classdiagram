@@ -14,17 +14,6 @@
       <elementDefinition Id="3b495c6e-6dc8-4071-b2fd-caf00cca8041" />
       <body>Klassen die es schon gibt (brauchen nicht neu erfunden werden....)</body>
     </comment>
-    <comment Id="0ab22a3f-695e-4edd-a539-aa3e0b9f234f">
-      <elementDefinition Id="b696a9cb-5db8-4948-9ae9-edfc4ca07e0f" />
-      <body>aus all / selection
-nimm complement ?</body>
-    </comment>
-    <comment Id="8607d806-0ed4-4cc1-9be2-6f945323ca70">
-      <elementDefinition Id="d121338d-43f1-441c-848b-82a6afd4885f" />
-      <body>als % / absolute
-aus all / selection
-nim best / worst /cut</body>
-    </comment>
     <comment Id="47c0bf9c-bfe6-4a3e-87c9-8094ec2ae31c">
       <elementDefinition Id="7a351886-c766-4c6b-a2cd-7b1eae3667ab" />
       <body>
@@ -34,33 +23,6 @@ http://qt-project.org/doc/qt-5.1/qtwidgets/qgraphicsscene.html#details
 =&gt; umstrukturierung
 
 ersatz: siehe unten</body>
-    </comment>
-    <comment Id="2ed1f2a5-f74b-4e4f-a83c-04d2122c1a64">
-      <elementDefinition Id="53734cf6-3686-4989-a14a-07f1e2621cc5" />
-      <body>style generell:
-	- tooltip sichtbar
-
-linien:
-	- falschfarben / farbe / farbe+alpha
-	- durchgezogen / gestrichelt
-
-punktgruppen:
-	- linie (pen)
-	- füllen (brush)
--------------------------
-
-zur id:
-	- ermöglicht stylechanges für nur eine instanz
-	- maxvalue = alles</body>
-    </comment>
-    <comment Id="20904845-0eb0-4cf6-9a48-4ba65ee1bf0f">
-      <elementDefinition Id="446d7eba-0e0d-41dc-876d-afe553d5da02" />
-      <body>Wrapper für OpenCV funktionen</body>
-    </comment>
-    <comment Id="3282e6dc-9203-4baf-b2c1-d267a893f6d7">
-      <elementDefinition Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a" />
-      <body>Diffimage
-Overlap Image</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -114,1011 +76,6 @@ Overlap Image</body>
         <elementDefinition Id="7b1f3fab-3b36-45c0-b80b-3755e2a24a79" />
       </referencedType>
     </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="92caad71-0903-4bf7-a8b6-99f5335e46b0" name="==SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
-        <targetEnds>
-          <association Id="99da4436-4153-40b7-96a7-6e81a06df6e4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7a3ddaf6-e09f-4129-9669-822f290fdacb" LastKnownName="==GroupOperatorWidget&lt;T&gt;" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d9b84637-7ff1-4d34-a128-5c8699f01f6c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="90ea4cca-2ac9-4e7c-8b27-3c9e9592fc93" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b8b5782a-b3dc-4641-8184-f511c121b4eb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="7836c0bf-230d-4f02-b0a6-7abe609ee8a7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f92d377c-be12-4c91-8481-d160ff1f02e8" />
-          </association>
-          <association Id="a7c9c78c-e70c-40ab-b51b-0dbb2705626d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="0ca1d245-deb3-4965-8105-2facbf5b1e1d" LastKnownName="==IntervalSelectorWidget&lt;T&gt;" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fa81fedb-0281-4f77-a9fb-4c3911123257" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="222169e2-d984-40c6-876b-2858406a5ba2" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8ff8370b-fe37-4aaf-a1a5-57a796710bc9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="67b74876-180b-4b73-802e-ad8ac10b74fe" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="06c35eb0-9bc7-4c7b-99d1-a32b84c6bd92" />
-          </association>
-          <association Id="fe919a6c-046a-43ec-8b9b-bc056a93dcc3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="613af059-f5a8-473a-9e2f-ed94d629de4f" LastKnownName="==RelativePortionSelectorWidget&lt;T&gt;" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="093a5c6f-b54c-4d48-9343-2fbb1654ba3b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="2ee99d99-ae7a-44de-ad76-02c1417c01d9" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="1d03281a-9bbd-4d29-931e-f3e28439aa3d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cc73d529-77ca-445e-8b81-2de5a8641c83" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f5c589de-ebf8-40e2-90b3-26a18133fe21" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="7d3abd86-c5fa-4da2-82ef-5329535732e0" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
-          </property>
-          <property Id="520fb500-234e-438a-afe2-461014fa7fd1" name="vec&lt;T&gt; selectionInternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b68f354b-9f1e-44eb-ba6a-1c9313020379" />
-          </property>
-          <property Id="91c474ee-f38d-45ac-acc3-bdf17c64bbf1" name="vec&lt;T&gt; selectionExternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6a7fc005-e2b6-4b62-8d86-40f0fa4df9a3" />
-          </property>
-          <property Id="d9491ece-0783-4900-9dbd-67fdf412c6bb" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cc1b7755-42a9-4510-8e9a-a4c37689d95f" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="394eefda-1430-443d-b597-d59a180b6231" LastKnownName="int}" />
-            </type_NamedElement>
-          </property>
-          <property Id="05fd2e20-b5e2-482c-a2ad-93ecbf00d2c6" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d757b12f-5a28-480b-a4d2-d1a1da7a2cbc" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="2cfb515a-7540-4aeb-8b6d-0fcf518f7109" LastKnownName="double}" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="0db3f7c3-0b1d-4bc7-8827-158a95764ccb" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="1daff54e-9881-4428-9f85-fc65a7e9a010" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="713c788a-bc61-4e0c-b191-eacc1cb90a45" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="0f6d10b1-0138-4f83-b9ef-bbf9dd344457" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="99145706-3b82-4e5b-90c5-441e6a17ec25" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a97069b2-00b3-4412-85a8-ba2d7ed1a778" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="fd31f784-5af4-40cd-9713-dc4a0ce689d0" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="197d356c-d115-45ac-956b-56f5ac78f212" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="613af059-f5a8-473a-9e2f-ed94d629de4f" name="==RelativePortionSelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="87c3c7e3-a403-4269-86eb-1edf57044051" />
-        <ownedAttributesInternal>
-          <property Id="d6a3c8aa-b900-4e83-86db-77f4bfb6ef42" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d45afeaa-ee26-41eb-bc51-b1b7431b6257" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="d7d8e431-0772-4d1b-92ea-2fd83a496bde" LastKnownName="int}" />
-            </type_NamedElement>
-          </property>
-          <property Id="736d99eb-17c5-4a49-827c-ed725788b822" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="660d2a3f-c545-4d0c-bead-3c6e2b60ce16" />
-          </property>
-          <property Id="c8cf198c-af5f-4556-8ba2-279ecb75b7c9" name="vec&lt;T&gt; selection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="84e91518-a682-47a6-b1a0-f68da3da9082" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="0dbd4bb6-21ae-4957-be73-95250e889ab3" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b850ab21-3050-4cc5-bb75-9c313b3a838e" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="563ad53e-21bb-4a1b-8673-c1ce4f98248e" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="de60a1b7-4894-4d06-9dd9-529830862afe" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="33a053a9-14c3-466a-ab44-cf9a75ca1e3b" name="///slot inputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="321d20ab-2eea-4c5a-9c79-07e1e0d5ae24" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="cca716c3-e864-4505-b278-2d4aee54174a" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="ef109715-a924-4516-80b4-0a3ba24e6cfb" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="0ca1d245-deb3-4965-8105-2facbf5b1e1d" name="==IntervalSelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="5340958f-9df4-4138-897c-8c5b59be929d" />
-        <targetEnds>
-          <association Id="f494446b-4dfb-46d4-8a81-1e52469b4f20" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="19f72e5c-2443-4190-8f6b-31985371cd0d" LastKnownName="==SelectableHistogram" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8f0dd28c-f828-4c15-a97c-3cff53734a49" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e3fadbf5-14fc-4f6a-b6e0-7a4fab2df71d" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b5f63e6f-1082-46bc-be83-8fec0ebbe3fd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c193ecae-2b31-4c76-831b-1fe4c772b20f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7b2dc2be-9716-4d8e-aa34-157b32b2729c" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="8cebd14d-17b5-4709-ba63-627eaa1d637f" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f1e06f60-a3f2-40bd-b0cb-c27f07a2d23e" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="5be1d5b1-717b-4987-bc45-9ee2a25b5a8f" LastKnownName="double}" />
-            </type_NamedElement>
-          </property>
-          <property Id="24c4fe63-5319-4e26-abe5-9db522ec72c7" name="double min" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7f62b007-b641-4909-a86a-7e0c6dfd520d" />
-          </property>
-          <property Id="8a0b5d0a-b914-47b6-9861-83d8b2b2b6ff" name="double max" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="992ca98c-698f-409e-8e03-3c077c16474b" />
-          </property>
-          <property Id="ba16fa3a-14e5-409e-ae79-131c919ee723" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6c0cc2da-572f-46e4-972d-25bf9cc4a1fc" />
-          </property>
-          <property Id="f199f9cf-93cb-42a2-a0df-846060c31596" name="vec&lt;T&gt; selection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="76e5486e-bd57-4a67-a3e2-36ce85deedc9" />
-          </property>
-          <property Id="180fc9a7-87f8-466c-ae30-7fad1e45ba7a" name="SelectableHistogram hist" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="81d3c798-cd51-4ace-8ebb-55c70efda050" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="e2f8560b-6b43-4c97-b1d5-4d1fb86f458f" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="3c4f481d-bc3f-4f44-90b3-69028026a82d" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="bcdda6df-baa6-49a7-97ca-8cf5887aeded" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="e04c547f-852b-4b28-a015-b5f33c8facca" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="19f72e5c-2443-4190-8f6b-31985371cd0d" name="==SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="672b1e69-7088-4746-b5a1-493cc0c0f86f" />
-        <ownedAttributesInternal>
-          <property Id="34338cf4-0b99-4d9d-a0aa-487e3fd2747a" name="Image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f1c7fc57-b92f-4ef4-aa3c-3d748e8e2354" />
-          </property>
-          <property Id="dc1edeee-fe1e-458e-a2d7-6d75f7e986a0" name="double minValue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3f26ecba-a83b-4171-b3f9-98c2b61b1c1f" />
-          </property>
-          <property Id="b5d1b2b8-ac14-4dac-bcd2-a5066302d6ca" name="double maxValue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5aede31b-fe5c-44b4-9349-d18750f1db47" />
-          </property>
-          <property Id="1085cbd1-4b85-42c5-b0db-e508ece1f04f" name="bool scaleToTotale" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cf8fdc4d-a392-4ba4-a9f6-59351188b24a" />
-          </property>
-          <property Id="5ae99a76-1661-492c-b07f-d788f1ce901e" name="int totale" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3b27e2a3-cf2e-46cf-8f48-e5b4d0d7216c" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="4e6f6df5-5df2-4471-ba02-338cfd0f36d5" name="Histogram" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="76b6cb06-e048-418a-bdfd-002f1076d525" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4ded114e-86cd-4dca-b288-dfc00326aee3" name="min" direction="In" isUnique="false">
-                  <elementDefinition Id="712bafde-c229-4652-8c78-f2e157950f8f" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9b60c51e-9198-41af-840d-7c06fc7f79ef" name="max" direction="In" isUnique="false">
-                  <elementDefinition Id="702bf3e2-bcf4-42c0-ae6a-59ace846afef" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="39c37fa0-8d49-44a1-bec3-61b750a44c28" name="number OfIntervals" direction="In" isUnique="false">
-                  <elementDefinition Id="dddc8b72-391d-4325-ad23-64f61117fcbc" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="6c41d13d-997b-42a3-a40b-33fcc3b4f7e8" name="vec&lt;T&gt; data" direction="In" isUnique="false">
-                  <elementDefinition Id="c58b7494-5f9f-4149-b89c-4d00fe8a7e1f" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ed07e682-e71c-454a-bd53-156efd2ac9c9" name="{doubleExtractor(T)" direction="In" isUnique="false">
-                  <elementDefinition Id="0373c3d3-a6c9-490d-92b4-b0a1306cb7d9" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6e3cb148-d9f5-45d6-a4a7-a0e44aefee5b" LastKnownName="double}" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="705878d1-9fca-4867-bb90-d53bff3aa45f" name="///slot selectInterval" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="31adc5c5-64d0-4575-b420-569ac7c354f7" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="d8bb101b-2593-49e6-b388-857fb5335f29" name="double from" direction="In" isUnique="false">
-                  <elementDefinition Id="6b6f0d84-9ca5-4321-afca-b3be1665b446" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="19f71f87-77be-46ec-b8de-5ecc4ec21536" name="double to" direction="In" isUnique="false">
-                  <elementDefinition Id="5463ba1e-281a-4825-8b36-eac36d41e8aa" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="0b45d5c1-047c-470c-9ccb-08ee3f0de0cb" name="///signal intervalSelected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="09a5d6f8-5c4d-4267-bc76-6a9cf2b73bea" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="02c24235-af25-4f53-a26f-a7e48c159b22" name="double from" direction="In" isUnique="false">
-                  <elementDefinition Id="39b9ce1e-8ff9-4a1c-bf72-44cc7adb3db7" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9052b565-8abe-4729-86cf-bd719e51aa34" name="double to" direction="In" isUnique="false">
-                  <elementDefinition Id="97eac443-fee0-4330-8226-13e513395205" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="7a3ddaf6-e09f-4129-9669-822f290fdacb" name="==GroupOperatorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="30ed6329-f803-4f4e-af94-32c1f5c200e8" />
-        <ownedAttributesInternal>
-          <property Id="fc968ca3-854d-4eb3-b5c1-dc34a9c047a3" name="vec&lt;tupel&lt;string,vec&lt;T&gt;&gt;&gt; groups" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cbfe3c25-b4c1-434d-a26d-168a134e02cf" />
-          </property>
-          <property Id="f98b209a-aab7-48fb-af59-52f519942d32" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="339e326c-f805-4931-930a-0e6c4e63acea" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="2414899d-e50a-4589-b058-0d97312c6276" LastKnownName="int}" />
-            </type_NamedElement>
-          </property>
-          <property Id="20bf9a46-e0ef-4519-9bee-c6f1f9def47e" name="std::optional&lt;vec&lt;T&gt;&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="2efb9105-b44e-4568-a398-ca578145f5cd" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="7b9fb6e8-0e2c-4ca2-8a8e-0a645a31f957" name="groupComplement" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ad0d8dab-a62a-4110-a4da-fbf10d9e69a6" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="cdf80133-ae6c-4d45-ac05-5bd38933c396" name="size_t" direction="In" isUnique="false">
-                  <elementDefinition Id="3f629d9e-2570-44a2-b692-5fc6a5508677" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="96102d88-224b-4bbe-b20a-dd2c093fabae" name="groupIntersection" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="227009d7-cc1e-4f10-bf51-3d4397cd6a5b" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7fd177b0-9242-4783-9fe2-aaeefbc4aaa2" name="size_t..." direction="In" isUnique="false">
-                  <elementDefinition Id="2765ce97-0cf3-48fa-b5cf-e0ced65ac351" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="1fcec6e0-fde0-417c-92e5-2ede7f7a1709" name="groupRelativeComplement" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b4bac202-3f6d-45cb-a324-33c89a97e62c" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a45bfb52-17d5-409e-9e70-32d044068a24" name="size_t a" direction="In" isUnique="false">
-                  <elementDefinition Id="2a65beb8-ae4f-45ef-bfeb-9e285605403f" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0a96ce70-1a96-493f-b889-dba579362277" name="size_t b" direction="In" isUnique="false">
-                  <elementDefinition Id="b20605d9-3487-47fd-a131-f68192186ec2" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="3d9ac4c7-a64a-4963-906e-31eab4b9d6cc" name="groupSymmetricDifference" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="40161728-453c-4cd3-a132-69e01dc44509" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="1a7fd925-986f-4653-94f8-f6f057bda907" name="size_t a" direction="In" isUnique="false">
-                  <elementDefinition Id="67c52e16-84c9-4422-9457-dbf028c327e4" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f5dccc5d-d85c-488f-af5c-4297352aef47" name="size_t b" direction="In" isUnique="false">
-                  <elementDefinition Id="05f8868c-b32f-420a-bd2e-3759b0e503fe" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="c4d08271-1213-4f40-be5e-3bd67274ca4e" name="groupUnion" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a7126b7d-43d2-4360-9ad7-6bedbe7598ff" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="d33d9912-39ac-4975-97cc-580cf5775301" name="size_t..." direction="In" isUnique="false">
-                  <elementDefinition Id="1e410eb9-803f-42ce-a63d-dec4440c07b2" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="d8a3cb9c-75b9-41f8-8ed3-e8e4698a6c4b" name="/// signal groupSelected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="97f9399f-8c57-4760-8347-062f23f8bddc" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="c7a69ded-f0f6-4f61-91b9-82fd86d96800" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="487c36e2-9829-48ce-8ef0-c27aeca42318" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="af2be0a6-25ec-4a40-845c-bbe2f88d67f8" name="/// setGroup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="68d55c00-8791-4aaf-b2cb-50bf26705c51" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="715abd54-ff9e-48f4-8afb-7ac09dddafd6" name="QString name" direction="In" isUnique="false">
-                  <elementDefinition Id="79a9c1e6-827b-4b01-86cf-ac69320b684b" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="fc5ca86b-6888-4872-b231-33d7940d1646" name="vec&lt;T&gt; elements" direction="In" isUnique="false">
-                  <elementDefinition Id="c314ec1c-856a-43ff-9e16-72791fafce3e" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="02003dd8-672e-488f-a17d-b14cd2f68be5" name="==Collapsable" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d" />
-        <ownedAttributesInternal>
-          <property Id="6e850406-5f36-451f-a5e0-27c27556a231" name="QWidget widget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9d5b52ea-e693-46c7-ad21-b0c49ac767ae" />
-          </property>
-          <property Id="8ae615df-c0f2-474f-ba18-207e93267c81" name="bool visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c83c21f0-cf90-430b-bc6d-9d8a65c5770a" />
-          </property>
-          <property Id="59c5aa02-7b82-47c7-93ee-c297da557978" name="QSting name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="15d6bea6-05b2-4ab1-aacd-22e2ec2d94cd" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="1743c28f-3ce2-4a38-a917-5fbb2e9dc04a" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4d547a94-da79-4b14-9164-25e1f9d0d7d9" />
-          </operation>
-          <operation Id="def75177-2961-4b9b-969f-e310ef4fba17" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="8b038d65-8e08-4ebb-b622-bb50a61de2e9" />
-          </operation>
-          <operation Id="0764766f-55af-47ae-baaf-2cd558653f7e" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d41853f6-dfb8-4539-923c-9f91d0bceeee" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="b3473fe8-da60-4062-8353-ee5971508ba7" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
-        <targetEnds>
-          <association Id="de18da5c-d7c2-4fa1-9bde-5b7dd2c91c74" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="02003dd8-672e-488f-a17d-b14cd2f68be5" LastKnownName="==Collapsable" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d1a85bf1-13d5-4f7c-b67f-ad22b5338aa6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e4e908fd-f483-4355-8fda-98b2b02a9e95" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e5bf9a32-d48b-43a7-adee-79ee20621610" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="dd702b06-6fc6-475b-a2a8-c3520aca3ec5" name="Lower" value="*">
-                      <elementDefinition Id="9baddbb7-1d14-4090-9e32-9c47a6d7b295" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="712020d2-5e31-4d8a-8d18-5d0908c513ec" name="Upper" value="*">
-                      <elementDefinition Id="604d6f4b-b172-4746-8234-ab5aa7756025" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="7e1557e1-332d-446d-a683-d2de1f3b0391" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="119461d4-353e-4ddb-b1f9-fe6a6577aed9" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="e446e26a-f68a-45da-b39b-32414865d55b" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e9da0758-4452-4ba7-8233-a27d8d4b4421" />
-          </property>
-          <property Id="6a253731-948b-472b-a118-4b4f0125f4b3" name="// typedef size_t handle_t" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="true" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9d2286a1-7ade-4e95-9656-99539a7596f4" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="318989f6-980c-4cf4-96cf-fde9f0a052a5" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d7291491-9fcc-4290-828c-a87bcf865d61" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="bdf45457-a0b4-4bbb-83ca-848fa7afc039" direction="Return" isUnique="false">
-                  <elementDefinition Id="7806428d-7d04-40cb-af50-1212812fb44e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="a3030f90-101e-4b59-a2a6-595ac78fe4e7" LastKnownName="handle_t" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7eb4f959-6fe3-4117-8959-67ba59232b64" name="QString" direction="In" isUnique="false">
-                  <elementDefinition Id="db89cf46-cef7-4728-8f2b-80d283ddb7de" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0b53ed1d-a6a7-4425-b9e1-c992e9f1e968" name="QWidget" direction="In" isUnique="false">
-                  <elementDefinition Id="cf2b4f40-1c34-4462-a101-3084cef06939" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="12da0892-719e-4766-a104-187774ae913c" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="adf15c8b-3f25-4d17-84fe-196cdff0b10a" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="28d28968-4c1b-4c3c-81a5-a94c69b8f1ea" direction="Return" isUnique="false">
-                  <elementDefinition Id="a3643cf1-01ef-4c8f-98d9-2c68cb8355b1" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="f8c93401-006a-4af6-b6c4-601d0188b552" LastKnownName="handle_t.." />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="e26a4885-f434-4e5a-a50e-31e6786513a0" name="tuple&lt;QString" direction="In" isUnique="false">
-                  <elementDefinition Id="909224fe-1c37-4a9b-886e-3213e73d8826" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="34a71871-b800-47ab-8b69-b81e6b5f450a" name="QWidget&gt;.." direction="In" isUnique="false">
-                  <elementDefinition Id="36cd10ef-c05f-44ac-8bd9-28e08e8c3bee" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="e5c652fe-56ed-42c4-881f-f1a5724ced15" name="expandAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="511f1a3c-85b3-4ef7-a9bf-39208d8ff6a4" />
-          </operation>
-          <operation Id="6a679bfb-c4ce-437d-88d7-f66b7e02c76e" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="0b42f3d5-8d79-4cb2-bb0e-94d36374fa17" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="00c832f3-c110-4842-818c-12a13469fc4c" name="handle_t" direction="In" isUnique="false">
-                  <elementDefinition Id="15fd9f0c-38c8-43a1-aa33-0155d4575acb" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="3d54247d-2355-4fd5-baed-d69f57781a3d" name="collapseAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="f0c0550a-f4e1-468e-bbc9-692d82345824" />
-          </operation>
-          <operation Id="c93da047-82da-4650-84f9-404aca470a4f" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b0b59f22-ada9-4be9-a9a8-30b754a8a3d7" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ae4c0bd6-0ced-41d3-b82b-7af050e1ae59" name="handle_t" direction="In" isUnique="false">
-                  <elementDefinition Id="e5034ac3-2da5-40aa-b1f5-1bf5cd2162a6" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="6e920c7c-b473-4e59-9d0c-030cee1b0ac2" name="getWidget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d7efd65d-2030-4c14-9120-58ef9caa17e5" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b611a553-84cf-4d1b-8ac3-a3824188da88" direction="Return" isUnique="false">
-                  <elementDefinition Id="cc0c7a1c-be38-40aa-8de9-e368b132040c" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="847c918d-ac2d-47e0-b57d-be8760709cb0" LastKnownName="QWidget&amp;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="1d2e0c97-9dfe-4594-9562-3c4573c4cec6" name="handle_t" direction="In" isUnique="false">
-                  <elementDefinition Id="0a7a4fee-2aca-4b19-988c-4168658467ac" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="f03994e4-e89c-4cf2-8b23-de3401824a64" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="bcf7f565-bafe-4f1c-9ffd-7355ba1836c4" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="d994011b-30f7-49da-8824-d9225124e596" direction="Return" isUnique="false">
-                  <elementDefinition Id="8b89321e-064c-4402-bc45-bf4e3171a251" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="76a64c4d-23f4-4817-a018-364f51d3c6aa" LastKnownName="QString&amp;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f27934fe-c154-4271-9bbc-33b19563c38f" name="handle_t" direction="In" isUnique="false">
-                  <elementDefinition Id="937697d0-3196-46a7-981d-21944bb6a858" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="71359322-080c-4907-9423-550110f86138" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
-        <generalsInternal>
-          <generalization Id="e724fac2-69d9-430a-8fac-83197cf56662" isSubstitutable="false">
-            <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="==QTGRaphicScene" />
-            <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
-          </generalization>
-        </generalsInternal>
-        <targetEnds>
-          <association Id="d10e3dda-765a-4c0f-b0e6-0287dcda7768" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="==QTGRaphicScene" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8a730143-bba9-4973-9283-88c3327b8b0b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="4a9c09e8-d5ed-4f8a-8cc5-700db48026ec" name="Lower" value="*">
-                      <elementDefinition Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="f3f00006-9ec1-4627-ba2b-e7bd4cff6be3" name="Upper" value="*">
-                      <elementDefinition Id="82ed5bfd-8195-40f5-bf6a-be46746291e5" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="e527e507-47ae-4ca9-a647-6329f59e9683" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="4eed4dc2-ef89-41ff-9aff-6a887b0b80cb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="c0263f0d-df85-4326-8425-2dfd42ec3fb6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="20c61dd4-5970-4686-9327-50bc6836f1e5" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="80248343-9028-4826-ab37-455e82976dfe" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
-          </property>
-          <property Id="28517d26-ce26-4962-919a-72dcc343280c" name="Rect" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="930c31ad-6b57-4106-b41e-3f977af0a491" />
-          </property>
-          <property Id="3a83d677-72b1-45f1-a434-1955dbc4e31a" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="83878494-7e56-4f11-a990-ddccdbf7c55c" />
-          </property>
-          <property Id="ec71a542-bced-460b-8ec4-063d9b587675" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="da1fd8d1-64fe-4ed6-abad-733fe9d42087" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="186e7c5f-a0ef-4ee6-b9b3-ac41217aceb0" name="/// signal zoomChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="52302410-ce50-4460-9e0c-3d9dfdcc9696" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a95a47a7-7dad-491f-a1bb-3d2f8620ce95" name="Rect" direction="In" isUnique="false">
-                  <elementDefinition Id="0b63067d-1855-4e4d-80bb-e2ff371f654f" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="5bf1fc45-ffbc-4463-b367-9a316b92d5a0" name="///slot setZoom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e8b47853-52a9-4ce3-9ce7-046f98affb18" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="1cab2e3e-f157-4739-8908-5c74bab3d4e6" name="Rect" direction="In" isUnique="false">
-                  <elementDefinition Id="bc086bd5-0c94-49b9-be89-e7b7eddee9c9" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="53e60715-6b98-461d-816a-33a8758e2a1b" name="setImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4c56dbc2-c7e2-44cf-80e1-237c6c513619" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="f17833eb-0bca-47fd-a986-72353022ce60" name="==GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18" />
-        <ownedAttributesInternal>
-          <property Id="137ed241-f1e8-40bb-b305-79ef53243e62" name="polygone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="0ddcbff4-7912-4969-bfd0-cd83d937a239" />
-          </property>
-          <property Id="e62716e7-2bbe-432c-88d1-9748e65b4332" name="Point basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="376c9012-65d9-4079-83ee-b6f42c2f0e30" />
-          </property>
-          <property Id="6f686cd1-0453-406f-9457-d14fe1798dee" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="58ef51cf-2cdc-41d5-bb29-4d9852e3df00" />
-          </property>
-          <property Id="7bcbb40f-a574-4441-8b2c-a5201166ddf1" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a96f34fb-3c39-4eac-af2c-792ed90d6388" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="9fdb9899-3a98-424a-948d-0552ca5f7743" name="///signal basePointChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7d855985-eb11-45dc-93ae-caaa9ba40e92" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="67c04eb1-f5a8-4466-aa57-868fcfcf0a18" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="aa9966b3-b915-4968-ba69-161bf89613c0" name="///signal selected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5ab60a31-3dea-4cc1-be50-2743b771c170" />
-          </operation>
-          <operation Id="c5470380-9814-4153-8b6d-cc3573de90a7" name="///slot areaChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="69fbc48b-eb40-4e7d-9232-72d6d57d7c8a" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ed517a61-5ae2-4a5b-a697-e0d1cf0c9cc2" name="Rect" direction="In" isUnique="false">
-                  <elementDefinition Id="677070b4-38d3-4cb4-8556-b051718a46fb" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="d7b54290-7ce1-48df-a019-a3a7e5381bc0" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="00179b6c-060d-405a-8d03-51267424f707" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="c7f95727-f864-4802-b36b-a6e6d7bc7d06" name="..." direction="In" isUnique="false">
-                  <elementDefinition Id="c268bff2-64a8-4f3a-918e-8118053042c3" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="02a28580-598e-466f-b11a-5739edba905c" name="size_t id" direction="In" isUnique="false">
-                  <elementDefinition Id="4c7f6d3b-3a50-4c99-9eaa-275fb14c253e" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="13d450f0-612b-4912-b7a7-44f05586136e" name="==GraphicsSceneLineGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="0bf19076-72bf-494a-adff-955c372a782d" />
-        <targetEnds>
-          <association Id="d57ec003-1bde-4d46-a409-49781aff6349" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="==GraphicsScenePointGroup" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3e37f19f-9848-48e9-93ce-798cfeb74ad4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="6b783cfa-cede-4138-8d31-e04334211e81" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="1f84e2b2-db64-40c4-aba5-9c8dc40110b7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="7bbc0e1e-7824-47d1-9487-979ee83adb90" name="Lower" value="2">
-                      <elementDefinition Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="4b033f7d-d64d-4b9b-8525-5052800db53f" name="Upper" value="2">
-                      <elementDefinition Id="d0d84d68-dd93-45de-a868-0961d08dad0c" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="e4437283-2627-49b6-9f51-c7430dbd3ea3" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="38249a4f-d273-4ef9-bdcb-38827f90edc7" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="77f30454-bb1e-44a5-aadf-ae7a12ee7dfd" />
-          </property>
-          <property Id="52d98496-58cf-4284-8848-e9dbb146ef89" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="01fdc8a3-52e2-49a5-805b-84aa67490441" />
-          </property>
-          <property Id="c5957979-ba36-44de-817b-4d0875b22967" name="Point basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="25cb0575-2060-4b67-a1a2-08c4c3577653" />
-          </property>
-          <property Id="34357cfd-d945-44f9-936f-575d9295611a" name="Point basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="c7de8251-7f64-443a-ac0c-00e864421e41" name="///slot pointAUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="352e23b3-ba88-4697-9450-66b13f46f34a" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="160e92f3-7bef-4225-94bd-a2d5df6fe88f" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="c33907ad-98e3-4cdf-99af-9e9ccf649871" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="a99e341a-a3fa-4803-b7d9-ec1a95860c5e" name="///slot pointBUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c0090c57-66df-43fe-ae79-49a896dc4c24" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="150ef2c8-986e-4a14-ab72-fa8efe3c7e79" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="0d63d97d-582b-41e6-8256-f702ce18b341" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="6daeae2d-c028-4f76-8e80-16ca30478249" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d0c873ed-da0f-4939-9d93-81e769ce87b5" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0238f40e-681c-42f8-971b-8d99d19a9a57" name="..." direction="In" isUnique="false">
-                  <elementDefinition Id="a58b1024-1ebf-49a8-bb7e-a69b97a3ad25" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9082f8fb-0ac1-4bfb-9136-ee415b82bc8a" name="size_t id" direction="In" isUnique="false">
-                  <elementDefinition Id="1a57f265-7773-4861-986a-6c061794839f" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="78aa24fe-9117-4eed-bef6-a4ad1e1c8eba" name="==GraphicsSceneArrow" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed" />
-        <targetEnds>
-          <association Id="f1c08a49-705c-4892-978c-c68587ec49b2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="==QTGRaphicScene" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ca5abb3f-1e2e-4ee9-816e-27531aae423b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="f8293b42-371b-4f97-8f60-11915d08bcd2" name="Lower" value="*">
-                      <elementDefinition Id="9d4c8153-b96e-4a2f-aee7-7e583ff1ad95" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="4547f352-e3ec-48f7-83d2-e3475fa6dfe9" name="Upper" value="*">
-                      <elementDefinition Id="d2cac984-4e75-4e71-89b2-d80f6f58f291" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="791d89e8-4c88-497e-a091-ba0b667b7e37" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e015cf4f-29fa-4ab9-87c2-82451eb3c175" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="877ac789-df94-4488-b2b2-327b3e506528" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f9dbc8d0-7822-4678-9f90-4ba9e1dcccf1" />
-          </association>
-          <association Id="3d1f1928-5f30-459b-b6b6-41b900b73b70" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="==GraphicsScenePointGroup" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fb068055-f23e-4ebf-8525-9cfbe6f28c15" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8e43ba79-0772-4a6a-a5cd-c35a98a29581" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="12cd7dab-93ea-4258-b85c-961a8630c947" name="Lower" value="2">
-                      <elementDefinition Id="d6a688de-6bd0-4055-80f9-a70a23c6093f" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="3526556b-a65a-4f44-8821-194bf70eb517" name="Upper" value="2">
-                      <elementDefinition Id="f4dec3a0-5395-4f40-974d-7213ff5e4282" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="52ac5632-ef5d-4da3-98d0-b4a20e510223" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="87ff7570-d633-40a2-a428-91d78a18fc4d" />
-          </association>
-        </targetEnds>
-        <ownedAttributesInternal>
-          <property Id="d98b9628-5c36-4c84-9d27-d91be34f7359" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7fe8f84c-9043-4f65-ae5e-ac28b2a206e3" />
-          </property>
-          <property Id="b07c0214-bbdf-4e6a-a0cd-c47f7efa57f9" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6ed4a634-0ffc-4f29-b612-a85a73e28b35" />
-          </property>
-          <property Id="0c07c622-1dba-4c24-a867-cbc36a7d4413" name="Point basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f6d9482b-ceae-4319-a375-ee067753f7d9" />
-          </property>
-          <property Id="8f48232c-31ba-4a9b-8d42-dbde20756456" name="Point relativeVector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ec81a246-3b40-439b-a1f4-8250d4ba7c2c" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="d1d9d070-ae40-4398-92ce-9a0da9594f46" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="67017b28-2396-4660-9a6f-7367bb437842" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="76f361d3-0e5b-4143-aa0b-1aeccfa8d415" name="..." direction="In" isUnique="false">
-                  <elementDefinition Id="25451575-a403-4c0e-9378-0199b56cd4fa" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="34cc764c-c94a-44ec-a497-59d7921d6863" name="size_t id" direction="In" isUnique="false">
-                  <elementDefinition Id="88e3af3f-77b0-43fd-9c5c-558efba08958" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="c44e1dad-25cd-4545-ac74-1fc8c50ff4e7" name="///slot positionUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e07b0b2a-14e0-435e-a282-95bf6c7b8a9f" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="fc2055a1-a598-4183-9f31-9b2719bff155" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="439bac1b-f95b-45bb-8357-d3a548e2d772" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="98313a79-30d0-4855-aa4d-064abde802bb" name="==DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
-        <ownedAttributesInternal>
-          <property Id="ab7e3af5-b40b-49c2-bb85-46d1dfbcb919" name="Image&amp; imageA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4e6b9d36-c1d0-487f-ad73-f9a1043f1128" />
-          </property>
-          <property Id="f67bb664-68d7-4912-8ef2-e30de4da0f68" name="Image&amp; imageB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f612a66f-08cb-4548-9451-7d56fc9cd66a" />
-          </property>
-          <property Id="0be83937-4b8d-4bc5-98d0-e1f54058e366" name="Image output" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="53c753df-35a4-4216-9627-f39b0b622ec1" />
-          </property>
-          <property Id="13d98445-4fd7-4fbb-a39c-d902f14218d9" name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="426cee24-0927-4a78-b5dc-5774c6828d25" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="388865f9-1528-4e70-966c-e279148e9d72" name="///slot setInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5b8e1a0c-a159-4d8d-ba4b-261392b16238" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="637ac8ba-b258-4c58-bbf1-b8fe0661d23f" name="Image&amp; a" direction="In" isUnique="false">
-                  <elementDefinition Id="e24f93c7-d7f8-46e7-97f4-f42bef527696" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7d0a1508-66ed-4228-8521-1508f88d75d7" name="Image&amp; b" direction="In" isUnique="false">
-                  <elementDefinition Id="8b1b5609-7226-4c03-bff6-5f598b7506bb" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="b9ebdb86-2be4-413a-bb25-9aac32dca659" name="///signal newOutputImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5d152848-0a15-4b4a-a199-19f7eccaac63" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0ca66695-baf2-4b0e-867f-dcfc597675dd" name="Image&amp;" direction="In" isUnique="false">
-                  <elementDefinition Id="5d6e3b4c-4a49-4a15-96fc-4b52d5317088" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="2fcdf889-ca00-41e5-bf6d-02032b67b3fa" name="registerFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="49d7d717-5fec-4b2c-bb85-d9ce23d57a08" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0b94234d-17c3-4781-91d4-faf99c1e9a1d" name="QString" direction="In" isUnique="false">
-                  <elementDefinition Id="01caa9e9-4014-4db6-8fd2-851b741c8e87" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="641c6f4a-57f1-4653-9371-46da21c09bfa" name="descriptor" direction="In" isUnique="false">
-                  <elementDefinition Id="98f874f3-dab5-4df3-bce0-112ab43b87d6" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="e41504f7-bf41-4534-8981-8e1528023c94" name="==SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c" />
-        <ownedAttributesInternal>
-          <property Id="3ba7eebc-f24b-44e1-a63e-69f05729f863" name="Image&amp; image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4a64caf6-c94f-439e-ade1-5e226001826c" />
-          </property>
-          <property Id="36ec5d45-3a52-43d2-8831-cd73a07d4bba" name="Image output" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9ea30fd6-a9dc-467c-a149-cb729cbf7092" />
-          </property>
-          <property Id="6c880dae-2923-4f1e-aae6-95b0488b6ff4" name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4ed10ad2-fb5e-4fc7-9989-53c9583d8017" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="c8115785-8eee-4089-abba-1a7fb2136e03" name="///slot setInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="6bba7f33-534a-4c01-89b9-29eee73acbd6" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="e83a3adf-523c-4b40-8d14-712eb37328ae" name="Image&amp;" direction="In" isUnique="false">
-                  <elementDefinition Id="65900894-9a48-4f73-943e-3ec2d56679d3" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="fe421b8c-e2f0-4c6c-b480-a0f3d6b9bd7c" name="///signal newOutputImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ef327e42-35c9-45af-a4b4-dfbec9d6ca2e" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ebde0d4e-6f28-46e5-87dc-7aadae976b70" name="Image&amp;" direction="In" isUnique="false">
-                  <elementDefinition Id="3ae4dd3a-76b1-4641-9915-78e392aa49a7" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="bb05fe8d-c92a-437d-a1aa-86cf38c275a9" name="registerFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="14bfed13-1dad-4a25-98e8-6a94904ed012" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b324d0a6-02e9-430a-94fc-8e97f87f28e8" name="QString" direction="In" isUnique="false">
-                  <elementDefinition Id="637c6702-a23f-4ce5-a4cc-8816d73f3bf3" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="94df9443-2b0a-4c0c-804b-225b235acd0d" name="descriptor" direction="In" isUnique="false">
-                  <elementDefinition Id="6bc26694-ad8c-468d-845f-e4335ce15c0b" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="afba14b8-5fbb-443f-9d97-a7b2d165de7b" name="==CV::Mat" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="191d0a32-7682-4312-9601-5e68d486f332" />
@@ -1179,8 +136,1159 @@ Overlap Image</body>
         <elementDefinition Id="2c96b0c7-7b58-48b4-a07a-7e7eb132ef3e" />
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+    <packageHasNamedElement>
+      <referencedType Id="7def7154-1c2e-4629-b17a-7629f4d916f9" name="CVImage" isAbstract="false" isLeaf="false" cachedFullName="CVImage">
+        <elementDefinition Id="23439685-d046-48ea-8654-af9ee5342fa4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ce90c41b-6512-4d60-b715-eb7d036e0981" name="util">
+        <ownedCommentsInternal>
+          <comment Id="2ed1f2a5-f74b-4e4f-a83c-04d2122c1a64">
+            <elementDefinition Id="53734cf6-3686-4989-a14a-07f1e2621cc5" />
+            <body>style generell:
+	- tooltip sichtbar
+
+linien:
+	- falschfarben / farbe / farbe+alpha
+	- durchgezogen / gestrichelt
+
+punktgruppen:
+	- linie (pen)
+	- füllen (brush)
+-------------------------
+
+zur id:
+	- ermöglicht stylechanges für nur eine instanz
+	- maxvalue = alles</body>
+          </comment>
+          <comment Id="20904845-0eb0-4cf6-9a48-4ba65ee1bf0f">
+            <elementDefinition Id="446d7eba-0e0d-41dc-876d-afe553d5da02" />
+            <body>Wrapper für OpenCV funktionen</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="71359322-080c-4907-9423-550110f86138" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
+              <generalsInternal>
+                <generalization Id="e724fac2-69d9-430a-8fac-83197cf56662" isSubstitutable="false">
+                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+                  <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="d10e3dda-765a-4c0f-b0e6-0287dcda7768" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8a730143-bba9-4973-9283-88c3327b8b0b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="4a9c09e8-d5ed-4f8a-8cc5-700db48026ec" name="Lower" value="*">
+                            <elementDefinition Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="f3f00006-9ec1-4627-ba2b-e7bd4cff6be3" name="Upper" value="*">
+                            <elementDefinition Id="82ed5bfd-8195-40f5-bf6a-be46746291e5" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="e527e507-47ae-4ca9-a647-6329f59e9683" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4eed4dc2-ef89-41ff-9aff-6a887b0b80cb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="c0263f0d-df85-4326-8425-2dfd42ec3fb6" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="20c61dd4-5970-4686-9327-50bc6836f1e5" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="80248343-9028-4826-ab37-455e82976dfe" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
+                </property>
+                <property Id="28517d26-ce26-4962-919a-72dcc343280c" name="Rect" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="930c31ad-6b57-4106-b41e-3f977af0a491" />
+                </property>
+                <property Id="3a83d677-72b1-45f1-a434-1955dbc4e31a" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83878494-7e56-4f11-a990-ddccdbf7c55c" />
+                </property>
+                <property Id="ec71a542-bced-460b-8ec4-063d9b587675" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da1fd8d1-64fe-4ed6-abad-733fe9d42087" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="186e7c5f-a0ef-4ee6-b9b3-ac41217aceb0" name="/// signal zoomChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="52302410-ce50-4460-9e0c-3d9dfdcc9696" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a95a47a7-7dad-491f-a1bb-3d2f8620ce95" name="Rect" direction="In" isUnique="false">
+                        <elementDefinition Id="0b63067d-1855-4e4d-80bb-e2ff371f654f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="5bf1fc45-ffbc-4463-b367-9a316b92d5a0" name="///slot setZoom" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e8b47853-52a9-4ce3-9ce7-046f98affb18" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1cab2e3e-f157-4739-8908-5c74bab3d4e6" name="Rect" direction="In" isUnique="false">
+                        <elementDefinition Id="bc086bd5-0c94-49b9-be89-e7b7eddee9c9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="53e60715-6b98-461d-816a-33a8758e2a1b" name="setImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4c56dbc2-c7e2-44cf-80e1-237c6c513619" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f17833eb-0bca-47fd-a986-72353022ce60" name="==GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18" />
+              <ownedAttributesInternal>
+                <property Id="137ed241-f1e8-40bb-b305-79ef53243e62" name="polygone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0ddcbff4-7912-4969-bfd0-cd83d937a239" />
+                </property>
+                <property Id="e62716e7-2bbe-432c-88d1-9748e65b4332" name="Point basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="376c9012-65d9-4079-83ee-b6f42c2f0e30" />
+                </property>
+                <property Id="6f686cd1-0453-406f-9457-d14fe1798dee" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58ef51cf-2cdc-41d5-bb29-4d9852e3df00" />
+                </property>
+                <property Id="7bcbb40f-a574-4441-8b2c-a5201166ddf1" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a96f34fb-3c39-4eac-af2c-792ed90d6388" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="9fdb9899-3a98-424a-948d-0552ca5f7743" name="///signal basePointChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7d855985-eb11-45dc-93ae-caaa9ba40e92" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="67c04eb1-f5a8-4466-aa57-868fcfcf0a18" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="aa9966b3-b915-4968-ba69-161bf89613c0" name="///signal selected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5ab60a31-3dea-4cc1-be50-2743b771c170" />
+                </operation>
+                <operation Id="c5470380-9814-4153-8b6d-cc3573de90a7" name="///slot areaChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="69fbc48b-eb40-4e7d-9232-72d6d57d7c8a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ed517a61-5ae2-4a5b-a697-e0d1cf0c9cc2" name="Rect" direction="In" isUnique="false">
+                        <elementDefinition Id="677070b4-38d3-4cb4-8556-b051718a46fb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="d7b54290-7ce1-48df-a019-a3a7e5381bc0" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="00179b6c-060d-405a-8d03-51267424f707" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c7f95727-f864-4802-b36b-a6e6d7bc7d06" name="..." direction="In" isUnique="false">
+                        <elementDefinition Id="c268bff2-64a8-4f3a-918e-8118053042c3" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="02a28580-598e-466f-b11a-5739edba905c" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="4c7f6d3b-3a50-4c99-9eaa-275fb14c253e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="13d450f0-612b-4912-b7a7-44f05586136e" name="==GraphicsSceneLineGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0bf19076-72bf-494a-adff-955c372a782d" />
+              <targetEnds>
+                <association Id="d57ec003-1bde-4d46-a409-49781aff6349" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="==GraphicsScenePointGroup" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="3e37f19f-9848-48e9-93ce-798cfeb74ad4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6b783cfa-cede-4138-8d31-e04334211e81" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1f84e2b2-db64-40c4-aba5-9c8dc40110b7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="7bbc0e1e-7824-47d1-9487-979ee83adb90" name="Lower" value="2">
+                            <elementDefinition Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="4b033f7d-d64d-4b9b-8525-5052800db53f" name="Upper" value="2">
+                            <elementDefinition Id="d0d84d68-dd93-45de-a868-0961d08dad0c" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="e4437283-2627-49b6-9f51-c7430dbd3ea3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="38249a4f-d273-4ef9-bdcb-38827f90edc7" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77f30454-bb1e-44a5-aadf-ae7a12ee7dfd" />
+                </property>
+                <property Id="52d98496-58cf-4284-8848-e9dbb146ef89" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01fdc8a3-52e2-49a5-805b-84aa67490441" />
+                </property>
+                <property Id="c5957979-ba36-44de-817b-4d0875b22967" name="Point basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="25cb0575-2060-4b67-a1a2-08c4c3577653" />
+                </property>
+                <property Id="34357cfd-d945-44f9-936f-575d9295611a" name="Point basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="c7de8251-7f64-443a-ac0c-00e864421e41" name="///slot pointAUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="352e23b3-ba88-4697-9450-66b13f46f34a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="160e92f3-7bef-4225-94bd-a2d5df6fe88f" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="c33907ad-98e3-4cdf-99af-9e9ccf649871" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="a99e341a-a3fa-4803-b7d9-ec1a95860c5e" name="///slot pointBUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c0090c57-66df-43fe-ae79-49a896dc4c24" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="150ef2c8-986e-4a14-ab72-fa8efe3c7e79" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="0d63d97d-582b-41e6-8256-f702ce18b341" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6daeae2d-c028-4f76-8e80-16ca30478249" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d0c873ed-da0f-4939-9d93-81e769ce87b5" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0238f40e-681c-42f8-971b-8d99d19a9a57" name="..." direction="In" isUnique="false">
+                        <elementDefinition Id="a58b1024-1ebf-49a8-bb7e-a69b97a3ad25" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9082f8fb-0ac1-4bfb-9136-ee415b82bc8a" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="1a57f265-7773-4861-986a-6c061794839f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="78aa24fe-9117-4eed-bef6-a4ad1e1c8eba" name="==GraphicsSceneArrow" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed" />
+              <targetEnds>
+                <association Id="f1c08a49-705c-4892-978c-c68587ec49b2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ca5abb3f-1e2e-4ee9-816e-27531aae423b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="f8293b42-371b-4f97-8f60-11915d08bcd2" name="Lower" value="*">
+                            <elementDefinition Id="9d4c8153-b96e-4a2f-aee7-7e583ff1ad95" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="4547f352-e3ec-48f7-83d2-e3475fa6dfe9" name="Upper" value="*">
+                            <elementDefinition Id="d2cac984-4e75-4e71-89b2-d80f6f58f291" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="791d89e8-4c88-497e-a091-ba0b667b7e37" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e015cf4f-29fa-4ab9-87c2-82451eb3c175" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="877ac789-df94-4488-b2b2-327b3e506528" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="f9dbc8d0-7822-4678-9f90-4ba9e1dcccf1" />
+                </association>
+                <association Id="3d1f1928-5f30-459b-b6b6-41b900b73b70" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="==GraphicsScenePointGroup" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="fb068055-f23e-4ebf-8525-9cfbe6f28c15" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8e43ba79-0772-4a6a-a5cd-c35a98a29581" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="12cd7dab-93ea-4258-b85c-961a8630c947" name="Lower" value="2">
+                            <elementDefinition Id="d6a688de-6bd0-4055-80f9-a70a23c6093f" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="3526556b-a65a-4f44-8821-194bf70eb517" name="Upper" value="2">
+                            <elementDefinition Id="f4dec3a0-5395-4f40-974d-7213ff5e4282" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="52ac5632-ef5d-4da3-98d0-b4a20e510223" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="87ff7570-d633-40a2-a428-91d78a18fc4d" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="d98b9628-5c36-4c84-9d27-d91be34f7359" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7fe8f84c-9043-4f65-ae5e-ac28b2a206e3" />
+                </property>
+                <property Id="b07c0214-bbdf-4e6a-a0cd-c47f7efa57f9" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6ed4a634-0ffc-4f29-b612-a85a73e28b35" />
+                </property>
+                <property Id="0c07c622-1dba-4c24-a867-cbc36a7d4413" name="Point basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f6d9482b-ceae-4319-a375-ee067753f7d9" />
+                </property>
+                <property Id="8f48232c-31ba-4a9b-8d42-dbde20756456" name="Point relativeVector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec81a246-3b40-439b-a1f4-8250d4ba7c2c" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="d1d9d070-ae40-4398-92ce-9a0da9594f46" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="67017b28-2396-4660-9a6f-7367bb437842" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="76f361d3-0e5b-4143-aa0b-1aeccfa8d415" name="..." direction="In" isUnique="false">
+                        <elementDefinition Id="25451575-a403-4c0e-9378-0199b56cd4fa" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="34cc764c-c94a-44ec-a497-59d7921d6863" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="88e3af3f-77b0-43fd-9c5c-558efba08958" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="c44e1dad-25cd-4545-ac74-1fc8c50ff4e7" name="///slot positionUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e07b0b2a-14e0-435e-a282-95bf6c7b8a9f" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="fc2055a1-a598-4183-9f31-9b2719bff155" name="Point" direction="In" isUnique="false">
+                        <elementDefinition Id="439bac1b-f95b-45bb-8357-d3a548e2d772" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="==HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
+              <generalsInternal>
+                <generalization Id="d5c69130-a05d-48cd-b4ce-86b653a8631c" isSubstitutable="false">
+                  <classMoniker Id="01855cfc-de78-4627-ad44-fee48b177aaf" LastKnownName="==QGraphicscene" />
+                  <elementDefinition Id="f99e6dd0-6cdc-4084-b72d-510ea77c4da2" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="==QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="157f16ac-648b-4931-86c7-2274c04f41d0" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="67bd9717-9495-41c1-a866-c0bc662ceecc" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a0dfbf97-4bd1-4e35-b99a-e5d2d288fd0f" name="Optional" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <package Id="329d419b-57f2-4681-92a5-6cd904284579" name="Otions">
+              <ownedCommentsInternal>
+                <comment Id="0ab22a3f-695e-4edd-a539-aa3e0b9f234f">
+                  <elementDefinition Id="b696a9cb-5db8-4948-9ae9-edfc4ca07e0f" />
+                  <body>aus all / selection
+nimm complement ?</body>
+                </comment>
+                <comment Id="8607d806-0ed4-4cc1-9be2-6f945323ca70">
+                  <elementDefinition Id="d121338d-43f1-441c-848b-82a6afd4885f" />
+                  <body>als % / absolute
+aus all / selection
+nim best / worst /cut</body>
+                </comment>
+                <comment Id="3282e6dc-9203-4baf-b2c1-d267a893f6d7">
+                  <elementDefinition Id="311f5ea2-ae88-461c-8d44-19ea1dd85e6a" />
+                  <body>Diffimage
+Overlap Image</body>
+                </comment>
+              </ownedCommentsInternal>
+              <elementDefinition Id="cd8c8d84-29ac-40ed-9e13-06cb05a9053e" />
+              <packagedElements>
+                <packageHasNamedElement>
+                  <class Id="92caad71-0903-4bf7-a8b6-99f5335e46b0" name="==SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
+                    <targetEnds>
+                      <association Id="99da4436-4153-40b7-96a7-6e81a06df6e4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="7a3ddaf6-e09f-4129-9669-822f290fdacb" LastKnownName="==GroupOperatorWidget&lt;T&gt;" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="d9b84637-7ff1-4d34-a128-5c8699f01f6c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="90ea4cca-2ac9-4e7c-8b27-3c9e9592fc93" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="b8b5782a-b3dc-4641-8184-f511c121b4eb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="7836c0bf-230d-4f02-b0a6-7abe609ee8a7" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="f92d377c-be12-4c91-8481-d160ff1f02e8" />
+                      </association>
+                      <association Id="a7c9c78c-e70c-40ab-b51b-0dbb2705626d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="0ca1d245-deb3-4965-8105-2facbf5b1e1d" LastKnownName="==IntervalSelectorWidget&lt;T&gt;" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="fa81fedb-0281-4f77-a9fb-4c3911123257" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="222169e2-d984-40c6-876b-2858406a5ba2" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="8ff8370b-fe37-4aaf-a1a5-57a796710bc9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="67b74876-180b-4b73-802e-ad8ac10b74fe" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="06c35eb0-9bc7-4c7b-99d1-a32b84c6bd92" />
+                      </association>
+                      <association Id="fe919a6c-046a-43ec-8b9b-bc056a93dcc3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="613af059-f5a8-473a-9e2f-ed94d629de4f" LastKnownName="==RelativePortionSelectorWidget&lt;T&gt;" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="093a5c6f-b54c-4d48-9343-2fbb1654ba3b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="2ee99d99-ae7a-44de-ad76-02c1417c01d9" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="1d03281a-9bbd-4d29-931e-f3e28439aa3d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="cc73d529-77ca-445e-8b81-2de5a8641c83" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="f5c589de-ebf8-40e2-90b3-26a18133fe21" />
+                      </association>
+                    </targetEnds>
+                    <ownedAttributesInternal>
+                      <property Id="7d3abd86-c5fa-4da2-82ef-5329535732e0" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
+                      </property>
+                      <property Id="520fb500-234e-438a-afe2-461014fa7fd1" name="vec&lt;T&gt; selectionInternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="b68f354b-9f1e-44eb-ba6a-1c9313020379" />
+                      </property>
+                      <property Id="91c474ee-f38d-45ac-acc3-bdf17c64bbf1" name="vec&lt;T&gt; selectionExternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="6a7fc005-e2b6-4b62-8d86-40f0fa4df9a3" />
+                      </property>
+                      <property Id="d9491ece-0783-4900-9dbd-67fdf412c6bb" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="cc1b7755-42a9-4510-8e9a-a4c37689d95f" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="394eefda-1430-443d-b597-d59a180b6231" LastKnownName="int}" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="05fd2e20-b5e2-482c-a2ad-93ecbf00d2c6" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="d757b12f-5a28-480b-a4d2-d1a1da7a2cbc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2cfb515a-7540-4aeb-8b6d-0fcf518f7109" LastKnownName="double}" />
+                        </type_NamedElement>
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="0db3f7c3-0b1d-4bc7-8827-158a95764ccb" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1daff54e-9881-4428-9f85-fc65a7e9a010" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="713c788a-bc61-4e0c-b191-eacc1cb90a45" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="0f6d10b1-0138-4f83-b9ef-bbf9dd344457" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="99145706-3b82-4e5b-90c5-441e6a17ec25" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a97069b2-00b3-4412-85a8-ba2d7ed1a778" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="fd31f784-5af4-40cd-9713-dc4a0ce689d0" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="197d356c-d115-45ac-956b-56f5ac78f212" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="613af059-f5a8-473a-9e2f-ed94d629de4f" name="==RelativePortionSelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="87c3c7e3-a403-4269-86eb-1edf57044051" />
+                    <ownedAttributesInternal>
+                      <property Id="d6a3c8aa-b900-4e83-86db-77f4bfb6ef42" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="d45afeaa-ee26-41eb-bc51-b1b7431b6257" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d7d8e431-0772-4d1b-92ea-2fd83a496bde" LastKnownName="int}" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="736d99eb-17c5-4a49-827c-ed725788b822" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="660d2a3f-c545-4d0c-bead-3c6e2b60ce16" />
+                      </property>
+                      <property Id="c8cf198c-af5f-4556-8ba2-279ecb75b7c9" name="vec&lt;T&gt; selection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="84e91518-a682-47a6-b1a0-f68da3da9082" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="0dbd4bb6-21ae-4957-be73-95250e889ab3" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="b850ab21-3050-4cc5-bb75-9c313b3a838e" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="563ad53e-21bb-4a1b-8673-c1ce4f98248e" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="de60a1b7-4894-4d06-9dd9-529830862afe" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="33a053a9-14c3-466a-ab44-cf9a75ca1e3b" name="///slot inputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="321d20ab-2eea-4c5a-9c79-07e1e0d5ae24" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="cca716c3-e864-4505-b278-2d4aee54174a" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="ef109715-a924-4516-80b4-0a3ba24e6cfb" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="0ca1d245-deb3-4965-8105-2facbf5b1e1d" name="==IntervalSelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="5340958f-9df4-4138-897c-8c5b59be929d" />
+                    <targetEnds>
+                      <association Id="f494446b-4dfb-46d4-8a81-1e52469b4f20" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                        <classMoniker Id="19f72e5c-2443-4190-8f6b-31985371cd0d" LastKnownName="==SelectableHistogram" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="8f0dd28c-f828-4c15-a97c-3cff53734a49" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="e3fadbf5-14fc-4f6a-b6e0-7a4fab2df71d" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="b5f63e6f-1082-46bc-be83-8fec0ebbe3fd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <elementDefinition Id="c193ecae-2b31-4c76-831b-1fe4c772b20f" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="7b2dc2be-9716-4d8e-aa34-157b32b2729c" />
+                      </association>
+                    </targetEnds>
+                    <ownedAttributesInternal>
+                      <property Id="8cebd14d-17b5-4709-ba63-627eaa1d637f" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f1e06f60-a3f2-40bd-b0cb-c27f07a2d23e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="5be1d5b1-717b-4987-bc45-9ee2a25b5a8f" LastKnownName="double}" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="24c4fe63-5319-4e26-abe5-9db522ec72c7" name="double min" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="7f62b007-b641-4909-a86a-7e0c6dfd520d" />
+                      </property>
+                      <property Id="8a0b5d0a-b914-47b6-9861-83d8b2b2b6ff" name="double max" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="992ca98c-698f-409e-8e03-3c077c16474b" />
+                      </property>
+                      <property Id="ba16fa3a-14e5-409e-ae79-131c919ee723" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="6c0cc2da-572f-46e4-972d-25bf9cc4a1fc" />
+                      </property>
+                      <property Id="f199f9cf-93cb-42a2-a0df-846060c31596" name="vec&lt;T&gt; selection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="76e5486e-bd57-4a67-a3e2-36ce85deedc9" />
+                      </property>
+                      <property Id="180fc9a7-87f8-466c-ae30-7fad1e45ba7a" name="SelectableHistogram hist" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="81d3c798-cd51-4ace-8ebb-55c70efda050" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="e2f8560b-6b43-4c97-b1d5-4d1fb86f458f" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="3c4f481d-bc3f-4f44-90b3-69028026a82d" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="bcdda6df-baa6-49a7-97ca-8cf5887aeded" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="e04c547f-852b-4b28-a015-b5f33c8facca" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="19f72e5c-2443-4190-8f6b-31985371cd0d" name="==SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="672b1e69-7088-4746-b5a1-493cc0c0f86f" />
+                    <ownedAttributesInternal>
+                      <property Id="34338cf4-0b99-4d9d-a0aa-487e3fd2747a" name="Image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f1c7fc57-b92f-4ef4-aa3c-3d748e8e2354" />
+                      </property>
+                      <property Id="dc1edeee-fe1e-458e-a2d7-6d75f7e986a0" name="double minValue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="3f26ecba-a83b-4171-b3f9-98c2b61b1c1f" />
+                      </property>
+                      <property Id="b5d1b2b8-ac14-4dac-bcd2-a5066302d6ca" name="double maxValue" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="5aede31b-fe5c-44b4-9349-d18750f1db47" />
+                      </property>
+                      <property Id="1085cbd1-4b85-42c5-b0db-e508ece1f04f" name="bool scaleToTotale" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="cf8fdc4d-a392-4ba4-a9f6-59351188b24a" />
+                      </property>
+                      <property Id="5ae99a76-1661-492c-b07f-d788f1ce901e" name="int totale" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="3b27e2a3-cf2e-46cf-8f48-e5b4d0d7216c" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="4e6f6df5-5df2-4471-ba02-338cfd0f36d5" name="Histogram" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="76b6cb06-e048-418a-bdfd-002f1076d525" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="4ded114e-86cd-4dca-b288-dfc00326aee3" name="min" direction="In" isUnique="false">
+                              <elementDefinition Id="712bafde-c229-4652-8c78-f2e157950f8f" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="9b60c51e-9198-41af-840d-7c06fc7f79ef" name="max" direction="In" isUnique="false">
+                              <elementDefinition Id="702bf3e2-bcf4-42c0-ae6a-59ace846afef" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="39c37fa0-8d49-44a1-bec3-61b750a44c28" name="number OfIntervals" direction="In" isUnique="false">
+                              <elementDefinition Id="dddc8b72-391d-4325-ad23-64f61117fcbc" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="6c41d13d-997b-42a3-a40b-33fcc3b4f7e8" name="vec&lt;T&gt; data" direction="In" isUnique="false">
+                              <elementDefinition Id="c58b7494-5f9f-4149-b89c-4d00fe8a7e1f" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="ed07e682-e71c-454a-bd53-156efd2ac9c9" name="{doubleExtractor(T)" direction="In" isUnique="false">
+                              <elementDefinition Id="0373c3d3-a6c9-490d-92b4-b0a1306cb7d9" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="6e3cb148-d9f5-45d6-a4a7-a0e44aefee5b" LastKnownName="double}" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="705878d1-9fca-4867-bb90-d53bff3aa45f" name="///slot selectInterval" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="31adc5c5-64d0-4575-b420-569ac7c354f7" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="d8bb101b-2593-49e6-b388-857fb5335f29" name="double from" direction="In" isUnique="false">
+                              <elementDefinition Id="6b6f0d84-9ca5-4321-afca-b3be1665b446" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="19f71f87-77be-46ec-b8de-5ecc4ec21536" name="double to" direction="In" isUnique="false">
+                              <elementDefinition Id="5463ba1e-281a-4825-8b36-eac36d41e8aa" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="0b45d5c1-047c-470c-9ccb-08ee3f0de0cb" name="///signal intervalSelected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="09a5d6f8-5c4d-4267-bc76-6a9cf2b73bea" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="02c24235-af25-4f53-a26f-a7e48c159b22" name="double from" direction="In" isUnique="false">
+                              <elementDefinition Id="39b9ce1e-8ff9-4a1c-bf72-44cc7adb3db7" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="9052b565-8abe-4729-86cf-bd719e51aa34" name="double to" direction="In" isUnique="false">
+                              <elementDefinition Id="97eac443-fee0-4330-8226-13e513395205" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="7a3ddaf6-e09f-4129-9669-822f290fdacb" name="==GroupOperatorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="30ed6329-f803-4f4e-af94-32c1f5c200e8" />
+                    <ownedAttributesInternal>
+                      <property Id="fc968ca3-854d-4eb3-b5c1-dc34a9c047a3" name="vec&lt;tupel&lt;string,vec&lt;T&gt;&gt;&gt; groups" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="cbfe3c25-b4c1-434d-a26d-168a134e02cf" />
+                      </property>
+                      <property Id="f98b209a-aab7-48fb-af59-52f519942d32" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="339e326c-f805-4931-930a-0e6c4e63acea" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="2414899d-e50a-4589-b058-0d97312c6276" LastKnownName="int}" />
+                        </type_NamedElement>
+                      </property>
+                      <property Id="20bf9a46-e0ef-4519-9bee-c6f1f9def47e" name="std::optional&lt;vec&lt;T&gt;&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="2efb9105-b44e-4568-a398-ca578145f5cd" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="7b9fb6e8-0e2c-4ca2-8a8e-0a645a31f957" name="groupComplement" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="ad0d8dab-a62a-4110-a4da-fbf10d9e69a6" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="cdf80133-ae6c-4d45-ac05-5bd38933c396" name="size_t" direction="In" isUnique="false">
+                              <elementDefinition Id="3f629d9e-2570-44a2-b692-5fc6a5508677" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="96102d88-224b-4bbe-b20a-dd2c093fabae" name="groupIntersection" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="227009d7-cc1e-4f10-bf51-3d4397cd6a5b" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="7fd177b0-9242-4783-9fe2-aaeefbc4aaa2" name="size_t..." direction="In" isUnique="false">
+                              <elementDefinition Id="2765ce97-0cf3-48fa-b5cf-e0ced65ac351" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="1fcec6e0-fde0-417c-92e5-2ede7f7a1709" name="groupRelativeComplement" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="b4bac202-3f6d-45cb-a324-33c89a97e62c" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="a45bfb52-17d5-409e-9e70-32d044068a24" name="size_t a" direction="In" isUnique="false">
+                              <elementDefinition Id="2a65beb8-ae4f-45ef-bfeb-9e285605403f" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="0a96ce70-1a96-493f-b889-dba579362277" name="size_t b" direction="In" isUnique="false">
+                              <elementDefinition Id="b20605d9-3487-47fd-a131-f68192186ec2" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="3d9ac4c7-a64a-4963-906e-31eab4b9d6cc" name="groupSymmetricDifference" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="40161728-453c-4cd3-a132-69e01dc44509" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="1a7fd925-986f-4653-94f8-f6f057bda907" name="size_t a" direction="In" isUnique="false">
+                              <elementDefinition Id="67c52e16-84c9-4422-9457-dbf028c327e4" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="f5dccc5d-d85c-488f-af5c-4297352aef47" name="size_t b" direction="In" isUnique="false">
+                              <elementDefinition Id="05f8868c-b32f-420a-bd2e-3759b0e503fe" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="c4d08271-1213-4f40-be5e-3bd67274ca4e" name="groupUnion" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="a7126b7d-43d2-4360-9ad7-6bedbe7598ff" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="d33d9912-39ac-4975-97cc-580cf5775301" name="size_t..." direction="In" isUnique="false">
+                              <elementDefinition Id="1e410eb9-803f-42ce-a63d-dec4440c07b2" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="d8a3cb9c-75b9-41f8-8ed3-e8e4698a6c4b" name="/// signal groupSelected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="97f9399f-8c57-4760-8347-062f23f8bddc" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="c7a69ded-f0f6-4f61-91b9-82fd86d96800" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                              <elementDefinition Id="487c36e2-9829-48ce-8ef0-c27aeca42318" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="af2be0a6-25ec-4a40-845c-bbe2f88d67f8" name="/// setGroup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="68d55c00-8791-4aaf-b2cb-50bf26705c51" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="715abd54-ff9e-48f4-8afb-7ac09dddafd6" name="QString name" direction="In" isUnique="false">
+                              <elementDefinition Id="79a9c1e6-827b-4b01-86cf-ac69320b684b" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="fc5ca86b-6888-4872-b231-33d7940d1646" name="vec&lt;T&gt; elements" direction="In" isUnique="false">
+                              <elementDefinition Id="c314ec1c-856a-43ff-9e16-72791fafce3e" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="98313a79-30d0-4855-aa4d-064abde802bb" name="==DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
+                    <ownedAttributesInternal>
+                      <property Id="ab7e3af5-b40b-49c2-bb85-46d1dfbcb919" name="Image&amp; imageA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4e6b9d36-c1d0-487f-ad73-f9a1043f1128" />
+                      </property>
+                      <property Id="f67bb664-68d7-4912-8ef2-e30de4da0f68" name="Image&amp; imageB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f612a66f-08cb-4548-9451-7d56fc9cd66a" />
+                      </property>
+                      <property Id="0be83937-4b8d-4bc5-98d0-e1f54058e366" name="Image output" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="53c753df-35a4-4216-9627-f39b0b622ec1" />
+                      </property>
+                      <property Id="13d98445-4fd7-4fbb-a39c-d902f14218d9" name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="426cee24-0927-4a78-b5dc-5774c6828d25" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="388865f9-1528-4e70-966c-e279148e9d72" name="///slot setInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5b8e1a0c-a159-4d8d-ba4b-261392b16238" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="637ac8ba-b258-4c58-bbf1-b8fe0661d23f" name="Image&amp; a" direction="In" isUnique="false">
+                              <elementDefinition Id="e24f93c7-d7f8-46e7-97f4-f42bef527696" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="7d0a1508-66ed-4228-8521-1508f88d75d7" name="Image&amp; b" direction="In" isUnique="false">
+                              <elementDefinition Id="8b1b5609-7226-4c03-bff6-5f598b7506bb" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="b9ebdb86-2be4-413a-bb25-9aac32dca659" name="///signal newOutputImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="5d152848-0a15-4b4a-a199-19f7eccaac63" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="0ca66695-baf2-4b0e-867f-dcfc597675dd" name="Image&amp;" direction="In" isUnique="false">
+                              <elementDefinition Id="5d6e3b4c-4a49-4a15-96fc-4b52d5317088" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="2fcdf889-ca00-41e5-bf6d-02032b67b3fa" name="registerFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="49d7d717-5fec-4b2c-bb85-d9ce23d57a08" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="0b94234d-17c3-4781-91d4-faf99c1e9a1d" name="QString" direction="In" isUnique="false">
+                              <elementDefinition Id="01caa9e9-4014-4db6-8fd2-851b741c8e87" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="641c6f4a-57f1-4653-9371-46da21c09bfa" name="descriptor" direction="In" isUnique="false">
+                              <elementDefinition Id="98f874f3-dab5-4df3-bce0-112ab43b87d6" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="e41504f7-bf41-4534-8981-8e1528023c94" name="==SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c" />
+                    <ownedAttributesInternal>
+                      <property Id="3ba7eebc-f24b-44e1-a63e-69f05729f863" name="Image&amp; image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4a64caf6-c94f-439e-ade1-5e226001826c" />
+                      </property>
+                      <property Id="36ec5d45-3a52-43d2-8831-cd73a07d4bba" name="Image output" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="9ea30fd6-a9dc-467c-a149-cb729cbf7092" />
+                      </property>
+                      <property Id="6c880dae-2923-4f1e-aae6-95b0488b6ff4" name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="4ed10ad2-fb5e-4fc7-9989-53c9583d8017" />
+                      </property>
+                    </ownedAttributesInternal>
+                    <ownedOperationsInternal>
+                      <operation Id="c8115785-8eee-4089-abba-1a7fb2136e03" name="///slot setInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="6bba7f33-534a-4c01-89b9-29eee73acbd6" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="e83a3adf-523c-4b40-8d14-712eb37328ae" name="Image&amp;" direction="In" isUnique="false">
+                              <elementDefinition Id="65900894-9a48-4f73-943e-3ec2d56679d3" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="fe421b8c-e2f0-4c6c-b480-a0f3d6b9bd7c" name="///signal newOutputImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="ef327e42-35c9-45af-a4b4-dfbec9d6ca2e" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="ebde0d4e-6f28-46e5-87dc-7aadae976b70" name="Image&amp;" direction="In" isUnique="false">
+                              <elementDefinition Id="3ae4dd3a-76b1-4641-9915-78e392aa49a7" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                      <operation Id="bb05fe8d-c92a-437d-a1aa-86cf38c275a9" name="registerFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="14bfed13-1dad-4a25-98e8-6a94904ed012" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="b324d0a6-02e9-430a-94fc-8e97f87f28e8" name="QString" direction="In" isUnique="false">
+                              <elementDefinition Id="637c6702-a23f-4ce5-a4cc-8816d73f3bf3" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="94df9443-2b0a-4c0c-804b-225b235acd0d" name="descriptor" direction="In" isUnique="false">
+                              <elementDefinition Id="6bc26694-ad8c-468d-845f-e4335ce15c0b" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperationsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="7c3d2c13-db20-4832-ac3a-7b84a868fd0e" name="==DoubleFilterFunction" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="a35d124e-a1c1-463d-9066-a276df5eecc2" />
+                    <suppliersInternal>
+                      <dependency Id="00c2b99b-dbb5-45ae-a5bb-ee1d202f69a9">
+                        <classMoniker Id="98313a79-30d0-4855-aa4d-064abde802bb" LastKnownName="==DualImageFilterWidget" />
+                        <elementDefinition Id="624d43de-515a-4839-b466-0cc5d9f8a482" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperations>
+                      <operation Id="92b93199-7743-4c70-9163-aa0732cb6a6e" name="getFilteredImage" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="d5181d7c-c723-4427-8516-7d391216bbbc" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="23891197-64b3-4fe1-8069-278bc9d17325" name="image1" direction="In" isUnique="false">
+                              <elementDefinition Id="3c20a978-6f2b-467e-9847-4d5f27ec1108" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="d2b4e158-dfa7-4b07-8c2c-92df01d46dce" name="image2" direction="In" isUnique="false">
+                              <elementDefinition Id="0ff3a411-c54d-4030-bcfa-727cd019edb1" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <Interface Id="3052398d-4ab6-43c7-901c-d0ef4114b5d9" name="==SingleFilterFunction" isAbstract="false" isLeaf="false">
+                    <elementDefinition Id="947b431d-6c2f-46ef-b7c7-681b74c78475" />
+                    <suppliersInternal>
+                      <dependency Id="2b3ba3be-218c-4399-8575-4262ac2bad44">
+                        <classMoniker Id="e41504f7-bf41-4534-8981-8e1528023c94" LastKnownName="==SingleImageFilterWidget" />
+                        <elementDefinition Id="0bfc2977-3780-43c4-8dce-4c608e70eb69" />
+                      </dependency>
+                    </suppliersInternal>
+                    <ownedOperations>
+                      <operation Id="883bf485-6875-43e8-9065-b004b450f4c1" name="filterImg" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                        <elementDefinition Id="1a146972-17a4-42b9-b3c8-5a08c0bbd5f2" />
+                        <ownedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="55798384-b2b7-4157-9db3-8c46d7fa1063" name="CVImage" direction="In" isUnique="false">
+                              <elementDefinition Id="14e7ae72-544e-4e37-a3e6-3dcd1ca2c188" />
+                            </parameter>
+                          </operationHasOwnedParameters>
+                          <operationHasOwnedParameters>
+                            <parameter Id="61ec5adc-f5e9-4b9a-a560-3bdb0c096ecc" direction="Return" isUnique="false">
+                              <elementDefinition Id="5a53bed2-c34e-482d-8e77-4fc3f888939b" />
+                              <type_NamedElement>
+                                <referencedTypeMoniker Id="7def7154-1c2e-4629-b17a-7629f4d916f9" LastKnownName="CVImage" />
+                              </type_NamedElement>
+                            </parameter>
+                          </operationHasOwnedParameters>
+                        </ownedParameters>
+                      </operation>
+                    </ownedOperations>
+                  </Interface>
+                </packageHasNamedElement>
+              </packagedElements>
+            </package>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b3473fe8-da60-4062-8353-ee5971508ba7" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
+              <targetEnds>
+                <association Id="de18da5c-d7c2-4fa1-9bde-5b7dd2c91c74" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="02003dd8-672e-488f-a17d-b14cd2f68be5" LastKnownName="==Collapsable" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d1a85bf1-13d5-4f7c-b67f-ad22b5338aa6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="e4e908fd-f483-4355-8fda-98b2b02a9e95" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e5bf9a32-d48b-43a7-adee-79ee20621610" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="dd702b06-6fc6-475b-a2a8-c3520aca3ec5" name="Lower" value="*">
+                            <elementDefinition Id="9baddbb7-1d14-4090-9e32-9c47a6d7b295" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="712020d2-5e31-4d8a-8d18-5d0908c513ec" name="Upper" value="*">
+                            <elementDefinition Id="604d6f4b-b172-4746-8234-ab5aa7756025" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="7e1557e1-332d-446d-a683-d2de1f3b0391" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="119461d4-353e-4ddb-b1f9-fe6a6577aed9" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="e446e26a-f68a-45da-b39b-32414865d55b" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e9da0758-4452-4ba7-8233-a27d8d4b4421" />
+                </property>
+                <property Id="6a253731-948b-472b-a118-4b4f0125f4b3" name="// typedef size_t handle_t" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="true" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9d2286a1-7ade-4e95-9656-99539a7596f4" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="318989f6-980c-4cf4-96cf-fde9f0a052a5" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d7291491-9fcc-4290-828c-a87bcf865d61" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bdf45457-a0b4-4bbb-83ca-848fa7afc039" direction="Return" isUnique="false">
+                        <elementDefinition Id="7806428d-7d04-40cb-af50-1212812fb44e" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a3030f90-101e-4b59-a2a6-595ac78fe4e7" LastKnownName="handle_t" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7eb4f959-6fe3-4117-8959-67ba59232b64" name="QString" direction="In" isUnique="false">
+                        <elementDefinition Id="db89cf46-cef7-4728-8f2b-80d283ddb7de" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="0b53ed1d-a6a7-4425-b9e1-c992e9f1e968" name="QWidget" direction="In" isUnique="false">
+                        <elementDefinition Id="cf2b4f40-1c34-4462-a101-3084cef06939" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="12da0892-719e-4766-a104-187774ae913c" name="add" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="adf15c8b-3f25-4d17-84fe-196cdff0b10a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="28d28968-4c1b-4c3c-81a5-a94c69b8f1ea" direction="Return" isUnique="false">
+                        <elementDefinition Id="a3643cf1-01ef-4c8f-98d9-2c68cb8355b1" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="f8c93401-006a-4af6-b6c4-601d0188b552" LastKnownName="handle_t.." />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="e26a4885-f434-4e5a-a50e-31e6786513a0" name="tuple&lt;QString" direction="In" isUnique="false">
+                        <elementDefinition Id="909224fe-1c37-4a9b-886e-3213e73d8826" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="34a71871-b800-47ab-8b69-b81e6b5f450a" name="QWidget&gt;.." direction="In" isUnique="false">
+                        <elementDefinition Id="36cd10ef-c05f-44ac-8bd9-28e08e8c3bee" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="e5c652fe-56ed-42c4-881f-f1a5724ced15" name="expandAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="511f1a3c-85b3-4ef7-a9bf-39208d8ff6a4" />
+                </operation>
+                <operation Id="6a679bfb-c4ce-437d-88d7-f66b7e02c76e" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0b42f3d5-8d79-4cb2-bb0e-94d36374fa17" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="00c832f3-c110-4842-818c-12a13469fc4c" name="handle_t" direction="In" isUnique="false">
+                        <elementDefinition Id="15fd9f0c-38c8-43a1-aa33-0155d4575acb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3d54247d-2355-4fd5-baed-d69f57781a3d" name="collapseAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f0c0550a-f4e1-468e-bbc9-692d82345824" />
+                </operation>
+                <operation Id="c93da047-82da-4650-84f9-404aca470a4f" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b0b59f22-ada9-4be9-a9a8-30b754a8a3d7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="ae4c0bd6-0ced-41d3-b82b-7af050e1ae59" name="handle_t" direction="In" isUnique="false">
+                        <elementDefinition Id="e5034ac3-2da5-40aa-b1f5-1bf5cd2162a6" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="6e920c7c-b473-4e59-9d0c-030cee1b0ac2" name="getWidget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d7efd65d-2030-4c14-9120-58ef9caa17e5" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b611a553-84cf-4d1b-8ac3-a3824188da88" direction="Return" isUnique="false">
+                        <elementDefinition Id="cc0c7a1c-be38-40aa-8de9-e368b132040c" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="847c918d-ac2d-47e0-b57d-be8760709cb0" LastKnownName="QWidget&amp;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1d2e0c97-9dfe-4594-9562-3c4573c4cec6" name="handle_t" direction="In" isUnique="false">
+                        <elementDefinition Id="0a7a4fee-2aca-4b19-988c-4168658467ac" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f03994e4-e89c-4cf2-8b23-de3401824a64" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bcf7f565-bafe-4f1c-9ffd-7355ba1836c4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d994011b-30f7-49da-8824-d9225124e596" direction="Return" isUnique="false">
+                        <elementDefinition Id="8b89321e-064c-4402-bc45-bf4e3171a251" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="76a64c4d-23f4-4817-a018-364f51d3c6aa" LastKnownName="QString&amp;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="f27934fe-c154-4271-9bbc-33b19563c38f" name="handle_t" direction="In" isUnique="false">
+                        <elementDefinition Id="937697d0-3196-46a7-981d-21944bb6a858" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="02003dd8-672e-488f-a17d-b14cd2f68be5" name="==Collapsable" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d" />
+              <ownedAttributesInternal>
+                <property Id="6e850406-5f36-451f-a5e0-27c27556a231" name="QWidget widget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9d5b52ea-e693-46c7-ad21-b0c49ac767ae" />
+                </property>
+                <property Id="8ae615df-c0f2-474f-ba18-207e93267c81" name="bool visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c83c21f0-cf90-430b-bc6d-9d8a65c5770a" />
+                </property>
+                <property Id="59c5aa02-7b82-47c7-93ee-c297da557978" name="QSting name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="15d6bea6-05b2-4ab1-aacd-22e2ec2d94cd" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1743c28f-3ce2-4a38-a917-5fbb2e9dc04a" name="collapse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4d547a94-da79-4b14-9164-25e1f9d0d7d9" />
+                </operation>
+                <operation Id="def75177-2961-4b9b-969f-e310ef4fba17" name="expand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8b038d65-8e08-4ebb-b622-bb50a61de2e9" />
+                </operation>
+                <operation Id="0764766f-55af-47ae-baaf-2cd558653f7e" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d41853f6-dfb8-4539-923c-9f91d0bceeee" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <class Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" name="QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="b5128ba0-1bfe-4477-a153-a5453ee5d546" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -1237,92 +1345,7 @@ Overlap Image</body>
           </association>
         </targetEnds>
       </class>
-    </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="7def7154-1c2e-4629-b17a-7629f4d916f9" name="CVImage" isAbstract="false" isLeaf="false" cachedFullName="CVImage">
-        <elementDefinition Id="23439685-d046-48ea-8654-af9ee5342fa4" />
-      </referencedType>
     </packageHasNamedElement>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="7c3d2c13-db20-4832-ac3a-7b84a868fd0e" name="==DoubleFilterFunction" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="a35d124e-a1c1-463d-9066-a276df5eecc2" />
-        <suppliersInternal>
-          <dependency Id="00c2b99b-dbb5-45ae-a5bb-ee1d202f69a9">
-            <classMoniker Id="98313a79-30d0-4855-aa4d-064abde802bb" LastKnownName="==DualImageFilterWidget" />
-            <elementDefinition Id="624d43de-515a-4839-b466-0cc5d9f8a482" />
-          </dependency>
-        </suppliersInternal>
-        <ownedOperations>
-          <operation Id="92b93199-7743-4c70-9163-aa0732cb6a6e" name="getFilteredImage" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d5181d7c-c723-4427-8516-7d391216bbbc" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="23891197-64b3-4fe1-8069-278bc9d17325" name="image1" direction="In" isUnique="false">
-                  <elementDefinition Id="3c20a978-6f2b-467e-9847-4d5f27ec1108" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="d2b4e158-dfa7-4b07-8c2c-92df01d46dce" name="image2" direction="In" isUnique="false">
-                  <elementDefinition Id="0ff3a411-c54d-4030-bcfa-727cd019edb1" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="3052398d-4ab6-43c7-901c-d0ef4114b5d9" name="==SingleFilterFunction" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="947b431d-6c2f-46ef-b7c7-681b74c78475" />
-        <suppliersInternal>
-          <dependency Id="2b3ba3be-218c-4399-8575-4262ac2bad44">
-            <classMoniker Id="e41504f7-bf41-4534-8981-8e1528023c94" LastKnownName="==SingleImageFilterWidget" />
-            <elementDefinition Id="0bfc2977-3780-43c4-8dce-4c608e70eb69" />
-          </dependency>
-        </suppliersInternal>
-        <ownedOperations>
-          <operation Id="883bf485-6875-43e8-9065-b004b450f4c1" name="filterImg" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="1a146972-17a4-42b9-b3c8-5a08c0bbd5f2" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="55798384-b2b7-4157-9db3-8c46d7fa1063" name="CVImage" direction="In" isUnique="false">
-                  <elementDefinition Id="14e7ae72-544e-4e37-a3e6-3dcd1ca2c188" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="61ec5adc-f5e9-4b9a-a560-3bdb0c096ecc" direction="Return" isUnique="false">
-                  <elementDefinition Id="5a53bed2-c34e-482d-8e77-4fc3f888939b" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="7def7154-1c2e-4629-b17a-7629f4d916f9" LastKnownName="CVImage" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="71e74dda-e898-4f7b-b2be-bc407a331385" name="==HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
-        <generalsInternal>
-          <generalization Id="d5c69130-a05d-48cd-b4ce-86b653a8631c" isSubstitutable="false">
-            <classMoniker Id="01855cfc-de78-4627-ad44-fee48b177aaf" LastKnownName="==QGraphicscene" />
-            <elementDefinition Id="f99e6dd0-6cdc-4084-b72d-510ea77c4da2" />
-          </generalization>
-        </generalsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="==QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="157f16ac-648b-4931-86c7-2274c04f41d0" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="67bd9717-9495-41c1-a866-c0bc662ceecc" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="a46f7f19-98c8-4838-aed1-8781c8f2c432" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
