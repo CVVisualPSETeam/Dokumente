@@ -5,6 +5,12 @@
 #include <cstddef>
 #include <utility>
 
+#include "optional.hpp"
+
+namespace cvv {
+namespace pub_util {
+
+
 struct CallData {
 public:
 	CallData() = default;
@@ -20,6 +26,8 @@ public:
 	bool isKnown = false;
 };
 
-#define CVVISUAL_LOCATION CallData{__FILE__, __LINE__, __func__, true}
+}} //namespaces
+
+#define CVVISUAL_LOCATION ::cvv::pub_util::CallData(__FILE__, __LINE__, __func__, true)
 
 #endif
