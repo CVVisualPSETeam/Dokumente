@@ -7,20 +7,6 @@
 project selected points from focussed image to other image</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="461f4ac5-497d-4a1b-aad5-ec80af94a9ab">
-      <profileInstance Id="df48ced1-cfbd-4c5d-b979-b41ce797a487" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="54179fa3-0824-41b7-9cca-f2fdfc3723d6">
-      <profileInstance Id="eeb16355-a261-4974-9ce6-40d9f3c3739e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="4dbae27c-42cc-433f-a4ab-84b4e4889893" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
@@ -648,7 +634,7 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f4d48e15-d6b0-4280-9f00-dba9aab4208c" name="ZoomableImage2" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="f4d48e15-d6b0-4280-9f00-dba9aab4208c" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="09871476-b7d8-46b7-93c1-b7b227f23eed" />
         <targetEnds>
           <association Id="e83d9d77-b3fa-45a0-b652-e44f7143e707" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -796,32 +782,32 @@ project selected points from focussed image to other image</body>
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
-          <association Id="0450fc5a-bf07-413f-8c94-c389f0767306" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="Accordion4" isLeaf="false" isAbstract="false">
+          <association Id="0450fc5a-bf07-413f-8c94-c389f0767306" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="cb2112cf-d4c1-4fe0-9f93-12c06100df28" LastKnownName="Accordion4" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="931860cc-94ab-47dc-a836-b2752d7c8843" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="931860cc-94ab-47dc-a836-b2752d7c8843" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="2d6ae332-8952-49f0-9ae6-d69956f9d549" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="c0742e48-9406-4003-92fc-18daab35f367" name="Accordion4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="c0742e48-9406-4003-92fc-18daab35f367" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="4c0a12de-4e8c-4d4c-ab27-fd27a529d948" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="82882121-b566-4a0e-a93c-5a2b5d351127" />
           </association>
-          <association Id="2d44ebef-0b20-43b1-b336-f8965bc2a553" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="SelectorWidget&lt;T&gt;2" isLeaf="false" isAbstract="false">
+          <association Id="2d44ebef-0b20-43b1-b336-f8965bc2a553" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="cc370743-16f4-4297-a841-774010fe4217" LastKnownName="SelectorWidget&lt;Match&gt;2" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="6d01d4aa-8598-46df-8044-274dd73b16e6" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="6d01d4aa-8598-46df-8044-274dd73b16e6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="cc352486-61af-4fbf-8935-7b0404687632" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="dd99a948-e1df-4ca8-9e7d-4b6172723ca0" name="SelectorWidget&lt;T&gt;2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="dd99a948-e1df-4ca8-9e7d-4b6172723ca0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="9f33c21c-13be-4086-b2e2-c9e254720dbd" name="Lower" value="2">
                       <elementDefinition Id="ceace0ec-5540-4a36-9190-01b9bb2da925" />
@@ -838,16 +824,16 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="b0426f90-89ff-48f3-b7bd-b9af81a66545" />
           </association>
-          <association Id="900abed1-cadf-4a3d-88f2-e964da5b71b4" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="QTGRaphicScene3" isLeaf="false" isAbstract="false">
+          <association Id="900abed1-cadf-4a3d-88f2-e964da5b71b4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="526d93b7-db6f-4186-8ca9-a25ffe1ce5de" LastKnownName="QTGRaphicScene3" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="542ff22c-66f5-4b55-b8e9-b6209d0f6fc4" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="542ff22c-66f5-4b55-b8e9-b6209d0f6fc4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="fbb9eedb-7e23-4ee2-982c-741d154149ee" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="fd516f9c-9e41-4c57-85a9-92b91799792d" name="QTGRaphicScene3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="fd516f9c-9e41-4c57-85a9-92b91799792d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="1f53eb6a-a731-48c3-9f75-67d132d72208" name="Lower" value="2">
                       <elementDefinition Id="756e4707-3468-4917-a297-7c9c8419e26c" />
@@ -908,5 +894,19 @@ project selected points from focussed image to other image</body>
   </packagedElements>
   <package Id="0ec927b0-4f76-4107-93ac-ed75646c1e41" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="461f4ac5-497d-4a1b-aad5-ec80af94a9ab">
+        <profileInstance Id="df48ced1-cfbd-4c5d-b979-b41ce797a487" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="54179fa3-0824-41b7-9cca-f2fdfc3723d6">
+        <profileInstance Id="eeb16355-a261-4974-9ce6-40d9f3c3739e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

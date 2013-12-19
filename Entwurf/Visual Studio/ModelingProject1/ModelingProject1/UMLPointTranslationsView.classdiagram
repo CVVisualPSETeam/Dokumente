@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="26df9a36-1a91-4d11-adca-e0351a970dcb" name="UMLPointTranslationsView" linkedPackageId="8a46061a-0f9e-402c-bd59-141acf3c7f19" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="50330371-5055-4148-9b5a-b1c6ccfcb16d">
-      <profileInstance Id="6ec2808d-3a39-40ce-b60b-a593f3d209a4" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="04d73697-3a72-42a2-95a0-f82df86238d7">
-      <profileInstance Id="b9862270-73aa-44fc-91ad-cc1fe9aced75" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="8c82dc64-7eca-4bd0-b267-62a2f802cb2b" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
@@ -96,16 +82,16 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="49a22009-f28d-4ac7-ac91-38c10facf575" />
           </association>
-          <association Id="01ac5d7c-37d4-4cc6-96ba-b5a56c597d07" isDerived="false" sourceEndRoleName="SelectorWidget&lt;Match&gt;21" targetEndRoleName="RelativePortionSelectorWidget&lt;T&gt;21" isLeaf="false" isAbstract="false">
+          <association Id="01ac5d7c-37d4-4cc6-96ba-b5a56c597d07" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="ab1824af-7551-48af-909e-61c1725c78f0" LastKnownName="RelativePortionSelectorWidget&lt;T&gt;21" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="0d31f278-8df0-46db-ae1a-9c562927da92" name="SelectorWidget&lt;Match&gt;21" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="0d31f278-8df0-46db-ae1a-9c562927da92" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="73391f60-a588-475b-b7c3-904b7abc9a5b" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="c295241c-bdca-4c65-bcd7-369c05daa049" name="RelativePortionSelectorWidget&lt;T&gt;21" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="c295241c-bdca-4c65-bcd7-369c05daa049" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="c5ad8095-eda9-41f2-8b90-21ec4ae61095" name="Lower" value="3">
                       <elementDefinition Id="2763f632-7779-4c82-8a9f-bd66621a2499" />
@@ -676,32 +662,32 @@
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
-          <association Id="6573ba2a-04f0-462f-a841-697cf45b6711" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="Accordion4" isLeaf="false" isAbstract="false">
+          <association Id="6573ba2a-04f0-462f-a841-697cf45b6711" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="730ab057-9098-4a37-a49a-58fb8d4e7ee2" LastKnownName="Accordion41" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="f8642bb7-6f19-48c9-a27b-edd81f9e4df9" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="f8642bb7-6f19-48c9-a27b-edd81f9e4df9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="8818be52-a63e-49fb-b75a-d2d9d9404e40" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="f66bc87c-e331-4fdb-b718-a89a71785995" name="Accordion4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="f66bc87c-e331-4fdb-b718-a89a71785995" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="773bc264-a94d-4b0e-aae6-7667b9b8d798" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="962b31c8-6dc8-483c-a395-23eb1eb1cc64" />
           </association>
-          <association Id="0966ad32-2f50-4194-8141-d9edbe39a59b" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="SelectorWidget&lt;T&gt;2" isLeaf="false" isAbstract="false">
+          <association Id="0966ad32-2f50-4194-8141-d9edbe39a59b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="fcb75ad3-6ae8-4bf1-a0f6-585b34894887" LastKnownName="SelectorWidget&lt;Match&gt;21" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="eae2940a-5a56-49a2-b3c8-3ce4448af6b9" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="eae2940a-5a56-49a2-b3c8-3ce4448af6b9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="09553b66-5a54-4b22-88eb-04b67a255d86" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="e18d4ea9-2f59-4ef2-b889-b0671a74cadb" name="SelectorWidget&lt;T&gt;2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="e18d4ea9-2f59-4ef2-b889-b0671a74cadb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="f8378d8f-5bef-4187-9dfe-66eafbdc3cf5" name="Lower" value="1">
                       <elementDefinition Id="182b1a78-8310-4004-85f5-1b51ec74ac25" />
@@ -718,16 +704,16 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="df45f943-5bd6-45ab-8cda-4e3ce235b8a1" />
           </association>
-          <association Id="fd634d57-6007-4786-81a0-844f199f5a34" isDerived="false" sourceEndRoleName="ProjectionView" targetEndRoleName="QTGRaphicScene3" isLeaf="false" isAbstract="false">
+          <association Id="fd634d57-6007-4786-81a0-844f199f5a34" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="b5f08b10-d22e-474e-8763-ed1b3c8fb0d4" LastKnownName="QTGRaphicScene31" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="d20af259-419b-4733-b3cf-0d846cd980a7" name="ProjectionView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="d20af259-419b-4733-b3cf-0d846cd980a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="1d8b1980-c3e8-4f49-a562-e1fee8473706" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="a3713eb7-e8a7-492e-90f2-23e0b1d7ed2d" name="QTGRaphicScene3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="a3713eb7-e8a7-492e-90f2-23e0b1d7ed2d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
                     <literalString Id="e86cf325-fe48-4608-9473-0740cce2a853" name="Lower" value="1">
                       <elementDefinition Id="61a622c9-8ba8-4a61-a51e-743f89f6d147" />
@@ -867,11 +853,11 @@
       <class Id="2ad2528e-df53-4187-9a53-8667a427f8b0" name="GraphicsSceneArrow2" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d525252e-439c-4599-8288-ad97288e5f2e" />
         <targetEnds>
-          <association Id="90ad118b-f613-49ae-9689-80f6aef1aee7" isDerived="false" sourceEndRoleName="GraphicsSceneArrow2" targetEndRoleName="QTGRaphicScene31" isLeaf="false" isAbstract="false">
+          <association Id="90ad118b-f613-49ae-9689-80f6aef1aee7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="b5f08b10-d22e-474e-8763-ed1b3c8fb0d4" LastKnownName="QTGRaphicScene31" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="424955cf-2b10-4414-aac1-c7b36651435c" name="GraphicsSceneArrow2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="424955cf-2b10-4414-aac1-c7b36651435c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString Id="c9fb5d51-4596-4512-8e68-b54269fa42b5" name="Lower" value="*">
                       <elementDefinition Id="3dfa4291-3319-466b-9b5d-d3ac4b1c4d0a" />
@@ -886,7 +872,7 @@
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="828f6bbd-224f-4769-9712-4aa8f3473224" name="QTGRaphicScene31" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="828f6bbd-224f-4769-9712-4aa8f3473224" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="38fb285d-e82f-48d3-8ec7-ffe973228619" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -955,5 +941,19 @@
   </packagedElements>
   <package Id="8a46061a-0f9e-402c-bd59-141acf3c7f19" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="50330371-5055-4148-9b5a-b1c6ccfcb16d">
+        <profileInstance Id="6ec2808d-3a39-40ce-b60b-a593f3d209a4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="04d73697-3a72-42a2-95a0-f82df86238d7">
+        <profileInstance Id="b9862270-73aa-44fc-91ad-cc1fe9aced75" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
