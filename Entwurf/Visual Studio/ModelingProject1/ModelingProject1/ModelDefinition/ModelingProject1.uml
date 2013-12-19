@@ -28,16 +28,6 @@
 	- hellgrün: Ferienzeit(siehe ViewModule)</body>
     </comment>
     <comment
-      Id="96307e42-0fb7-4ffc-9d21-567524b1d86f">
-      <body>schnittstellen ggf ersetzen durch abstrakte unterklasse von QWidget??
-</body>
-    </comment>
-    <comment
-      Id="4c50c3e3-b286-4d2c-9cff-a721a38b78d5">
-      <body>klassenstruktur der drei kassen nooch unklar
-</body>
-    </comment>
-    <comment
       Id="4da131c9-0e3b-4d09-b5ba-40b55002096c">
       <body>Alleinstehende Funktionen:
 	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
@@ -177,6 +167,21 @@ project selected points from focussed image to other image</body>
     <comment
       Id="b6f8a230-69ed-44fe-9906-c094d20a8049">
       <body>dualfilterView wegen andere Bildordnung??
+</body>
+    </comment>
+    <comment
+      Id="fedb185a-6a91-4667-946c-a761062a1916">
+      <body>MatchCallTab(matchCall:MatchCall)
+sues defaultView
+</body>
+    </comment>
+    <comment
+      Id="0567760f-64b4-49c1-9a56-27e107e83828">
+      <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
+    </comment>
+    <comment
+      Id="7bb022c0-edb2-4eba-803f-0fdcf378880b">
+      <body>pdf or html file
 </body>
     </comment>
   </ownedCommentsInternal>
@@ -3863,7 +3868,7 @@ project selected points from focussed image to other image</body>
     <packageHasNamedElement>
       <class
         Id="426e73ff-ff5a-4efd-8d1c-4f3d5ef3fc7e"
-        name="MatchCallTab"
+        name="FilterCallTab"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3879,45 +3884,106 @@ project selected points from focussed image to other image</body>
         </generalsInternal>
         <targetEnds>
           <association
-            Id="831649e8-af5e-4814-b6dd-c9aa72564188"
+            Id="7c871460-c4f5-4b65-a7b6-242064c3061f"
             isDerived="false"
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a"
-              LastKnownName="MatchCall"
+              Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
+              LastKnownName="QComboBox"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="18ff31ef-a009-4187-a66c-24bdbb0cef3e"
+                  Id="22df01d4-4fca-441a-af33-49e651011603"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d8629572-b41f-4744-883c-690589298d04"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8eebbe55-d348-4b60-a654-5b7bd565caea"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53837842-37ec-4013-80e9-4758de9a0719"
+              LastKnownName="HelpButton"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ef4474a-421b-4b9e-897b-7cad289dbfa6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
                   isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="c30507d1-70cc-4dac-83b4-674969370537"
-                      name="Lower"
-                      value="n" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="d4553cd4-f052-4d9f-a847-46f7d829c73f"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="cc5a9ed6-8400-4824-955a-eb70935103fd"
+                  Id="cc2bc292-ef25-4442-9438-1cb49861c5cb"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5aaada51-4086-403a-8568-b3ba67729719"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e"
+              LastKnownName="FilterCall"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce5c9df2-1c8f-4146-a89f-91d2bdfd5ab8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="099eabb2-f45c-407e-9d18-55570e102d51"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -3929,10 +3995,50 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2f388c4a-85e7-41e9-84c0-d4f45aaa72ec"
+            name="static filterViewMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3"
+                LastKnownName="map&lt;FilterView,QString&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f1930a3a-e2fb-4d6a-9ca9-65e6cc3a1b3d"
+            name="static defaultFilterViewID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="b37e5e81-2583-4c0f-b00c-607bc73ada3f"
-            name="MatchCallTab"
+            name="FilterCallTab"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3941,34 +4047,128 @@ project selected points from focussed image to other image</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="8617d0e5-0303-4a03-9892-d9b7efe43cbb"
-                  name="MatchCall"
+                  Id="5ccc1e48-4662-42f4-999f-837de2e134a6"
+                  name="FilterCall"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a59f6f73-fae2-4e37-8c3b-4d1b97bd2ad7"
+                  Id="a79da97b-86fd-446d-89b0-6d7f45908ca3"
                   name="CallWindow"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="087fbd1f-67a7-4464-a491-fa657fa9b5f5"
+                  Id="36337fb8-2881-416a-9517-7d4d1b093184"
                   name="WindowController"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="6c35ee1e-eef4-4379-8477-adfba2598900"
+            name="FilterCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dc6c601e-eb37-403f-bdb4-25411f4c4714"
+                  name="filterCall"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e"
+                      LastKnownName="FilterCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338"
+                  name="filterViewID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1aeb19b0-67e8-4fa9-88b5-e3f1acb35272"
+            name="static addFilterViewToMap"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11076813-09dd-493f-90e6-2728e87360cf"
+                  name="filterView"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9607e170-2579-41f8-ab68-9d812b1746b3"
+                      LastKnownName="FilterView"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c5c3c20-5afc-463d-a526-f3c4a1e9f1ff"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0ed6a4f3-ef89-4976-a7ee-7cfb145a0c5c"
+            name="///slot:currentIndexChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4239f60d-022a-4628-8e62-4ac0899fe8e5"
+            name="///slot: defaultFilterViewChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="4b43811e-b185-4d07-a7e7-a1b66bc0d66b"
-        name="FilterCallTab"
+        name="MatchCallTab"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3984,20 +4184,20 @@ project selected points from focussed image to other image</body>
         </generalsInternal>
         <targetEnds>
           <association
-            Id="5825c98b-1a07-4ab2-b5fc-932c2787fb08"
+            Id="a0c7d27c-5b60-4e36-98c7-971f7165fb7c"
             isDerived="false"
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e"
-              LastKnownName="FilterCall"
+              Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
+              LastKnownName="QComboBox"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c688aa99-543d-4f01-947a-d92ca3cabc80"
+                  Id="94044b9f-bb39-4805-979a-862324144d2b"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -4005,24 +4205,85 @@ project selected points from focussed image to other image</body>
                   isDerivedUnion="false"
                   aggregation="Shared"
                   isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="6ff7a488-7777-4c58-bb81-21da6d4aa2f0"
-                      name="Lower"
-                      value="n" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="00f22275-1741-4672-823f-34f6ec228857"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="85b392e3-2587-443a-b05a-0bd0cf8859c3"
+                  Id="a187e7fb-c5e3-43d6-8114-2cb5eeb25126"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3db1dcb3-b6e0-4474-8901-da5b598be8b2"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53837842-37ec-4013-80e9-4758de9a0719"
+              LastKnownName="HelpButton"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03afa260-2abf-4817-a74f-19d035933e5d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1a43f20-48f4-4224-8dbd-338b3e2d28fa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e7a0f383-a295-49ae-aae0-15790751c24c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a"
+              LastKnownName="MatchCall"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="441d2d44-620f-410f-9dd6-817f85aa3507"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a946f50e-8f3c-4e47-99bd-f58fe6e34a60"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -4034,10 +4295,50 @@ project selected points from focussed image to other image</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="46209df7-c1ba-466b-a808-45f1e97f3fbd"
+            name="static matchViewMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee"
+                LastKnownName="map&lt;MatchView,QString&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="26c6e417-cf3e-45b1-86c8-f8bb42f892a9"
+            name="static defaultMatchViewID"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="5494f505-0a1b-4199-8f5d-449713e80bb7"
-            name="FilterCallTab"
+            name="MatchCallTab"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -4046,27 +4347,139 @@ project selected points from focussed image to other image</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="8be67e9a-3e32-44bb-b71d-0a1f8828fb16"
-                  name="FilterCall"
+                  Id="8abe205f-cc26-4656-b2a9-898a5e4f4a58"
+                  name="MatchCall"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c0b3f360-6846-4f09-9d1a-5b4979a60f9a"
+                  Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8"
                   name="CallWindow"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e2d0e0b8-dbb2-4898-b089-85cd59d30403"
+                  Id="a597ec97-d953-4bdf-8866-a025c3cab162"
                   name="WindowController"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="3f88d6ab-5653-4b57-b395-d2221953dfb2"
+            name="MatchCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5b3feed-ef07-4103-a9a4-50d036f680af"
+                  name="matchCall"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a"
+                      LastKnownName="MatchCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ab52b51d-2eb2-4780-bbde-8024cae3383e"
+                  name="matchViewID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="03304257-5794-477c-9c09-fe84e195815e"
+            name="MatchCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71bc99f4-b909-4e6b-9663-338718381921"
+                  name="MatchCall"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4510903c-0b9e-478d-a441-4114534bcfaf"
+            name="static addMatchViewToMap"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4feb6d2a-3c74-4392-acf0-659d2edc103b"
+                  name="matchView"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="279a9507-f5ee-4dbc-95dc-8b7953719b08"
+                      LastKnownName="MatchView"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="900b6a05-3aa8-466b-a6ed-34150e42a048"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6793b93a-80ce-4c9a-9581-82cab03a799c"
+            name="///slot:currentIndexChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bd2c0ee0-0b6c-4dc5-b5f1-77e52b028b48"
+            name="///slot:defaultMatchViewChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -4981,7 +5394,7 @@ project selected points from focussed image to other image</body>
     <packageHasNamedElement>
       <class
         Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5"
-        name="nFilterImgeView"
+        name="SingleFilterView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -4994,45 +5407,6 @@ project selected points from focussed image to other image</body>
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
-        <targetEnds>
-          <association
-            Id="8cf263ab-3d85-4c56-ad16-d2d6218b1f39"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="dfd9bf51-65de-41ed-ba40-e107623479cd"
-              LastKnownName="nImageView"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5a44fdc3-0432-42f5-8017-efe5d3d0019f"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="04a39f29-6d9c-43dd-bb60-54021cd55e8b"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="302545df-1334-4e81-acf3-f7b14143ba23"
@@ -5808,7 +6182,7 @@ project selected points from focussed image to other image</body>
     <packageHasNamedElement>
       <class
         Id="450c7680-de98-4c8e-9d20-23844613cf26"
-        name="DiffimageView"
+        name="DualFilterView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -22797,6 +23171,291 @@ project selected points from focussed image to other image</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7008bc87-6810-47c7-9000-c65d1da6b0ff"
+        name="TranslationView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bc711ebe-d4ed-465c-a087-0cff804d71f9">
+            <interfaceMoniker
+              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
+              LastKnownName="Matchview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e501459e-4837-49c6-9d7a-8be567f1955c"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="220048b9-c088-4288-892b-ebcca7622058"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e4f85351-6dc7-43b2-8284-4c87243e9cbe"
+        name="ProjectionView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="55555d79-643d-45c6-afb6-fdcb1a52274f">
+            <interfaceMoniker
+              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
+              LastKnownName="Matchview"
+              LastKnownLocation="ModelingProject1.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="52e9e2c7-24ce-4c29-b61b-1832e5f62ef3"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b478af19-ef4e-468e-b853-99e058c683e8"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0"
+        name="OverlayFilterView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee"
+        name="map&lt;MatchView,QString&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3"
+        name="map&lt;FilterView,QString&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9607e170-2579-41f8-ab68-9d812b1746b3"
+        name="FilterView" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
+        name="QComboBox"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="53837842-37ec-4013-80e9-4758de9a0719"
+        name="HelpButton"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ff32128f-08b7-4559-a26d-cfcb37ce0e0d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8"
+              LastKnownName="QPushButton"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2eb0514d-e9d6-4921-9250-a3fa7207b292"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="signal"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5"
+              LastKnownName="Help"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85f0d7e6-e69c-4717-98b5-92dc335edd44"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba53b98e-67e3-4a0b-9b48-5f54e60213e5"
+                  name="signal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ee26632f-6470-420d-9b2b-fc99e545f2af"
+            name="page"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="57ed5d52-28c7-46ba-ae0e-086d8a604448"
+            name="setPage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73017ec0-a99d-4457-9910-53b907b92693"
+                  name="QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="784ec17f-243b-4442-99da-4f0798554575"
+            name="///Signal:clicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8"
+        name="QPushButton"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5"
+        name="Help"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1cd76f02-b753-457a-8259-31a73006e956"
+            name="helpDocument"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b646c3be-c304-4114-8e24-c89525bb9802"
+            name="open"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a5dde01-0d07-40e2-9883-5eb10dfc65af"
+                  name="page"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bbbd1a16-6493-4b44-8881-8bb556a9d0cb"
+            name="open"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="108efac0-2abd-4585-914c-9b399267fe15"
+            name="///slot:clicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -24,16 +24,6 @@
 	- Lila: Erich
 	- hellgrün: Ferienzeit(siehe ViewModule)</body>
     </comment>
-    <comment Id="48df6797-c36b-492b-9779-ceaa04ba5e2f">
-      <elementDefinition Id="96307e42-0fb7-4ffc-9d21-567524b1d86f" />
-      <body>schnittstellen ggf ersetzen durch abstrakte unterklasse von QWidget??
-</body>
-    </comment>
-    <comment Id="bbbd1243-2ccf-4658-a530-00cf088e6fbd">
-      <elementDefinition Id="4c50c3e3-b286-4d2c-9cff-a721a38b78d5" />
-      <body>klassenstruktur der drei kassen nooch unklar
-</body>
-    </comment>
     <comment Id="a3e39088-cbfc-4808-8d8f-8ad8a8a92e22">
       <elementDefinition Id="a10372d5-8e78-4167-b3c8-d9d742c9f065" />
       <body>todo:
@@ -47,24 +37,23 @@ matchinfo
       <body>dies ist nur ein klassen diagramm genauere Beschreibung und Erklärung wird seperat abgegeben
 </body>
     </comment>
+    <comment Id="18fbaf93-1b16-49f7-a410-c6d4ce05e2bb">
+      <elementDefinition Id="fedb185a-6a91-4667-946c-a761062a1916" />
+      <body>MatchCallTab(matchCall:MatchCall)
+sues defaultView
+</body>
+    </comment>
+    <comment Id="1830ecbe-fec5-4cf0-a756-c8aee522bc0f">
+      <elementDefinition Id="0567760f-64b4-49c1-9a56-27e107e83828" />
+      <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
+    </comment>
+    <comment Id="d09a5c68-9308-4a92-a220-643725b39b74">
+      <elementDefinition Id="7bb022c0-edb2-4eba-803f-0fdcf378880b" />
+      <body>pdf or html file
+</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="0cc3aa5f-2f78-471d-8ebb-3dc336d9d89b" name="nImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="dfd9bf51-65de-41ed-ba40-e107623479cd" />
-        <ownedOperationsInternal>
-          <operation Id="ab96bd9b-02d4-42e6-b9dd-b10b16e2cf04" name="syncZoom" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d7f446ad-3da8-465a-8ee4-6562593fb677" />
-          </operation>
-          <operation Id="8881804b-2f25-4de3-aa0d-3ebf52031ab1" name="useFilter" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="401bb91b-c6d8-479a-8e56-9b4553dfa0e0" />
-          </operation>
-          <operation Id="b0548acb-5f7e-45d0-9cf1-f1016a4ecbd6" name="useDrawFunc" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="7abd3b7f-c00a-4dcb-86d9-daeec37718ad" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4f11f6c-4caf-498d-95db-0db216026cc5" />
@@ -308,7 +297,7 @@ matchinfo
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="35eec434-c366-4367-a3e9-573314cfdb2b" name="MatchCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="35eec434-c366-4367-a3e9-573314cfdb2b" name="FilterCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="426e73ff-ff5a-4efd-8d1c-4f3d5ef3fc7e" />
         <generalsInternal>
           <generalization Id="23b0ffb4-0016-42b7-b2af-106921dd69dd" isSubstitutable="false">
@@ -317,59 +306,143 @@ matchinfo
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="33725593-6b99-45d4-91e7-5bfb40c49fba" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="3af7a420-1ef1-45ac-8f26-09fbd1679eb0" LastKnownName="MatchCall" />
+          <association Id="a071c561-3aec-4688-b663-40737241838f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="QComboBox" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="aca338d7-f53a-4fae-bb26-e678d77def44" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="d01670e0-cbce-456e-ab33-f1b9d2d1eba5" name="Lower" value="n">
-                      <elementDefinition Id="c30507d1-70cc-4dac-83b4-674969370537" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="f8f7bc25-94b0-489e-85a9-35636dff0fd5" name="Upper" value="n">
-                      <elementDefinition Id="d4553cd4-f052-4d9f-a847-46f7d829c73f" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="18ff31ef-a009-4187-a66c-24bdbb0cef3e" />
+                <memberEnd Id="e43a6981-a7c7-4179-9a77-2bee13270d48" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22df01d4-4fca-441a-af33-49e651011603" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="c1943eef-16c5-4db6-b842-349c5d9142e5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cc5a9ed6-8400-4824-955a-eb70935103fd" />
+                <memberEnd Id="54e13a5c-f000-42c3-8394-9618e4a4768e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d8629572-b41f-4744-883c-690589298d04" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="831649e8-af5e-4814-b6dd-c9aa72564188" />
+            <elementDefinition Id="7c871460-c4f5-4b65-a7b6-242064c3061f" />
+          </association>
+          <association Id="afdf9bac-5e3e-4307-92fe-e5bf69af67c4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="HelpButton" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc881c6f-acce-4f38-93a9-a49c28757f58" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3ef4474a-421b-4b9e-897b-7cad289dbfa6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b60c0477-b315-43cf-a034-f347f7923fb9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc2bc292-ef25-4442-9438-1cb49861c5cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8eebbe55-d348-4b60-a654-5b7bd565caea" />
+          </association>
+          <association Id="8799f813-9f05-4058-97de-f98c27ade5cb" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="35e373a1-a47b-457f-a644-06a3df6cba7a" LastKnownName="FilterCall" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5e58e2e-7b1b-471c-bae9-51f799948317" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ce5c9df2-1c8f-4146-a89f-91d2bdfd5ab8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="205f6d54-be9d-4cc0-a960-1d64615b92bc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="099eabb2-f45c-407e-9d18-55570e102d51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5aaada51-4086-403a-8568-b3ba67729719" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="359f3c4e-7fa3-431e-89db-5a07bc95452f" name="static filterViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2f388c4a-85e7-41e9-84c0-d4f45aaa72ec" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" LastKnownName="map&lt;FilterView,QString&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="5f2aa241-a06e-438e-b061-324de024f4b2" name="static defaultFilterViewID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1930a3a-e2fb-4d6a-9ca9-65e6cc3a1b3d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="6d4c4aa2-8219-49fc-b006-f74f1ad0a45c" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="6d4c4aa2-8219-49fc-b006-f74f1ad0a45c" name="FilterCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="b37e5e81-2583-4c0f-b00c-607bc73ada3f" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="7879863f-2ab5-4e26-bdf3-ddae7932a8d7" name="MatchCall" direction="In" isUnique="false">
-                  <elementDefinition Id="8617d0e5-0303-4a03-9892-d9b7efe43cbb" />
+                <parameter Id="e88a5995-0954-4533-b833-3d993ea06608" name="FilterCall" direction="In" isUnique="false">
+                  <elementDefinition Id="5ccc1e48-4662-42f4-999f-837de2e134a6" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a0366891-058b-4ebc-9690-d951130d7b32" name="CallWindow" direction="In" isUnique="false">
-                  <elementDefinition Id="a59f6f73-fae2-4e37-8c3b-4d1b97bd2ad7" />
+                <parameter Id="fee50447-0354-478e-9c01-468742baffe7" name="CallWindow" direction="In" isUnique="false">
+                  <elementDefinition Id="a79da97b-86fd-446d-89b0-6d7f45908ca3" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d2d7f95c-f06e-4e1d-8b72-6be1677d1b00" name="WindowController" direction="In" isUnique="false">
-                  <elementDefinition Id="087fbd1f-67a7-4464-a491-fa657fa9b5f5" />
+                <parameter Id="9c92e91d-e5bf-4615-9ab7-4f9f9c9fd487" name="WindowController" direction="In" isUnique="false">
+                  <elementDefinition Id="36337fb8-2881-416a-9517-7d4d1b093184" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="43ebeed5-54fe-41c7-9822-f03ef5b146cc" name="FilterCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c35ee1e-eef4-4379-8477-adfba2598900" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dc35cb73-b939-4a08-bfed-5fa09e628170" name="filterCall" direction="In" isUnique="false">
+                  <elementDefinition Id="dc6c601e-eb37-403f-bdb4-25411f4c4714" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" LastKnownName="FilterCall" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a6d3aff5-66a5-43ac-b761-64f3881445f2" name="filterViewID" direction="In" isUnique="false">
+                  <elementDefinition Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="025903c1-ae16-4ef9-9cdb-eff4409e526f" name="static addFilterViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1aeb19b0-67e8-4fa9-88b5-e3f1acb35272" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="28e16177-5ee4-4a25-868a-16fd3c923eef" name="filterView" direction="In" isUnique="false">
+                  <elementDefinition Id="11076813-09dd-493f-90e6-2728e87360cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="240cf3e1-a394-4d92-b0ce-fee88db5dde7" LastKnownName="FilterView" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="17dd9394-2dfc-4174-adda-58a48ca20fee" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="6c5c3c20-5afc-463d-a526-f3c4a1e9f1ff" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d5d0507e-cf35-463d-bd32-ad4d78eef59a" name="///slot:currentIndexChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ed6a4f3-ef89-4976-a7ee-7cfb145a0c5c" />
+          </operation>
+          <operation Id="6c173580-5738-4aad-9e12-65c4c5c52c78" name="///slot: defaultFilterViewChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4239f60d-022a-4628-8e62-4ac0899fe8e5" />
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="10a4e754-42ab-43e8-9218-ae531dab3ad6" name="FilterCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="10a4e754-42ab-43e8-9218-ae531dab3ad6" name="MatchCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4b43811e-b185-4d07-a7e7-a1b66bc0d66b" />
         <generalsInternal>
           <generalization Id="e6d3e3cc-e33d-4896-a0db-d9b520c1d3f5" isSubstitutable="false">
@@ -378,53 +451,147 @@ matchinfo
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="b892cf21-186f-4002-b672-8418619a8973" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="35e373a1-a47b-457f-a644-06a3df6cba7a" LastKnownName="FilterCall" />
+          <association Id="19644003-0b0c-4b41-9322-f3524e30ee25" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="QComboBox" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="cafcb558-f7a3-4164-bdf1-fe2ff7f50f95" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="a0fd2551-97f1-4e2f-b90a-fd656b5bc83a" name="Lower" value="n">
-                      <elementDefinition Id="6ff7a488-7777-4c58-bb81-21da6d4aa2f0" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="cc34ff1b-e5d3-4939-899f-c1c47eb5064e" name="Upper" value="n">
-                      <elementDefinition Id="00f22275-1741-4672-823f-34f6ec228857" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="c688aa99-543d-4f01-947a-d92ca3cabc80" />
+                <memberEnd Id="be435b23-ebc1-4615-bf34-4a4ab499ac5e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94044b9f-bb39-4805-979a-862324144d2b" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6ab48e25-503e-4cd3-b5fe-840ae083181e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="85b392e3-2587-443a-b05a-0bd0cf8859c3" />
+                <memberEnd Id="307b368e-6007-4622-8a43-f7946849d4c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a187e7fb-c5e3-43d6-8114-2cb5eeb25126" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5825c98b-1a07-4ab2-b5fc-932c2787fb08" />
+            <elementDefinition Id="a0c7d27c-5b60-4e36-98c7-971f7165fb7c" />
+          </association>
+          <association Id="d656a7ee-9470-4df3-9c92-df8f73411d42" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="HelpButton" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f9d76d5-c283-40c6-a500-c60314d28a78" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="03afa260-2abf-4817-a74f-19d035933e5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ace542aa-c0cf-4df6-a395-e291f295e307" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1a43f20-48f4-4224-8dbd-338b3e2d28fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3db1dcb3-b6e0-4474-8901-da5b598be8b2" />
+          </association>
+          <association Id="eb1b7d7a-d43b-4b43-9275-d5d41bf61fed" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3af7a420-1ef1-45ac-8f26-09fbd1679eb0" LastKnownName="MatchCall" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0070a2be-d99f-4345-a6b4-2282bd458a83" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="441d2d44-620f-410f-9dd6-817f85aa3507" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5b42f34-4f3d-43bc-b390-b53ff737cbde" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a946f50e-8f3c-4e47-99bd-f58fe6e34a60" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e7a0f383-a295-49ae-aae0-15790751c24c" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4347bc2c-f268-4fc3-a973-b55abef54859" name="static matchViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="46209df7-c1ba-466b-a808-45f1e97f3fbd" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" LastKnownName="map&lt;MatchView,QString&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="c238d2ff-6c98-4cd8-87c9-b2f147e26d5f" name="static defaultMatchViewID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26c6e417-cf3e-45b1-86c8-f8bb42f892a9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="97f6c614-1980-4093-afaf-7011ce8000d1" name="FilterCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="97f6c614-1980-4093-afaf-7011ce8000d1" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="5494f505-0a1b-4199-8f5d-449713e80bb7" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="6919bcd5-b06d-400a-bcc2-54b1ebeab40c" name="FilterCall" direction="In" isUnique="false">
-                  <elementDefinition Id="8be67e9a-3e32-44bb-b71d-0a1f8828fb16" />
+                <parameter Id="9a5ec4ff-3723-4570-ab91-dedc69e36f9f" name="MatchCall" direction="In" isUnique="false">
+                  <elementDefinition Id="8abe205f-cc26-4656-b2a9-898a5e4f4a58" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="6ca01241-e712-4f1e-8af2-d319abe69486" name="CallWindow" direction="In" isUnique="false">
-                  <elementDefinition Id="c0b3f360-6846-4f09-9d1a-5b4979a60f9a" />
+                <parameter Id="ee743334-ad6a-42b0-9af5-37336a64588f" name="CallWindow" direction="In" isUnique="false">
+                  <elementDefinition Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="d2ae8dfd-cff6-4958-818d-6d0e25909227" name="WindowController" direction="In" isUnique="false">
-                  <elementDefinition Id="e2d0e0b8-dbb2-4898-b089-85cd59d30403" />
+                <parameter Id="860eabf7-a561-4fff-8191-e67799bed3b5" name="WindowController" direction="In" isUnique="false">
+                  <elementDefinition Id="a597ec97-d953-4bdf-8866-a025c3cab162" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="9f8e07a2-f857-499c-8b6b-aae4c16de8da" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3f88d6ab-5653-4b57-b395-d2221953dfb2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0a0c1608-79fd-4d7a-89ff-d8bfc0609b8c" name="matchCall" direction="In" isUnique="false">
+                  <elementDefinition Id="b5b3feed-ef07-4103-a9a4-50d036f680af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" LastKnownName="MatchCall" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="01ace9f5-b8db-4eca-82b3-ad491bebf2e6" name="matchViewID" direction="In" isUnique="false">
+                  <elementDefinition Id="ab52b51d-2eb2-4780-bbde-8024cae3383e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="76663276-ce28-4355-8271-e4ee88dd789b" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="03304257-5794-477c-9c09-fe84e195815e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0475dcbe-42bf-4bb8-a716-b4448169ffb9" name="MatchCall" direction="In" isUnique="false">
+                  <elementDefinition Id="71bc99f4-b909-4e6b-9663-338718381921" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="99307fa3-239c-48ba-8c8b-dea68e068bd9" name="static addMatchViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4510903c-0b9e-478d-a441-4114534bcfaf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1bc7beeb-a13e-4a43-98dd-c57f1acf2197" name="matchView" direction="In" isUnique="false">
+                  <elementDefinition Id="4feb6d2a-3c74-4392-acf0-659d2edc103b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" LastKnownName="MatchView" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12414bfd-37ec-45d7-800b-486112852d89" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="900b6a05-3aa8-466b-a6ed-34150e42a048" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="467f76a2-32d4-4471-885f-bd64681c08d1" name="///slot:currentIndexChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6793b93a-80ce-4c9a-9581-82cab03a799c" />
+          </operation>
+          <operation Id="7cefab94-0d69-4cb8-884c-5d26934e6207" name="///slot:defaultMatchViewChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bd2c0ee0-0b6c-4dc5-b5f1-77e52b028b48" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -456,7 +623,7 @@ matchinfo
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ea84b160-927a-44df-8b44-333ff3e16957" name="nFilterImgeView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ea84b160-927a-44df-8b44-333ff3e16957" name="SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5" />
         <suppliersInternal>
           <interfaceRealization Id="35189a80-cd54-40b5-88c4-f61bb24edc97">
@@ -464,24 +631,6 @@ matchinfo
             <elementDefinition Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57" />
           </interfaceRealization>
         </suppliersInternal>
-        <targetEnds>
-          <association Id="41deeebf-39a9-461f-adf1-fcca414f2937" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="0cc3aa5f-2f78-471d-8ebb-3dc336d9d89b" LastKnownName="nImageView" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="81d9ef91-967f-41d3-8091-13e9ff4ce423" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5a44fdc3-0432-42f5-8017-efe5d3d0019f" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3e7b522a-082b-4515-a774-aab7a1b25424" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="04a39f29-6d9c-43dd-bb60-54021cd55e8b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="8cf263ab-3d85-4c56-ad16-d2d6218b1f39" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="6753af55-8779-46da-ad3d-be5cb103d7c6" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="302545df-1334-4e81-acf3-f7b14143ba23" />
@@ -501,24 +650,6 @@ matchinfo
             <elementDefinition Id="16055378-bceb-4fd8-8035-36bb689a28fd" />
           </interfaceRealization>
         </suppliersInternal>
-        <targetEnds>
-          <association Id="05e3ddf1-98b1-4f65-af9f-d0c5e2a16539" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="0cc3aa5f-2f78-471d-8ebb-3dc336d9d89b" LastKnownName="nImageView" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="7432ec95-5623-4e4f-ae06-ace8cf702c7e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="8e161476-eaad-432a-b7eb-2fe6be3b7431" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="aef44760-1b84-4c00-b372-eb4f04d7daee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="4b53bcbd-6a7f-4bd6-85a9-0dd09754c9e6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="714e4da3-8958-4a24-8fb4-ef96659a0b69" />
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation Id="1d38822e-bb44-44ae-b7ce-5d90db163fa6" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="40624edb-007d-44e5-a05e-887165ca47c9" />
@@ -549,7 +680,7 @@ matchinfo
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c1e1d5f0-b5a2-4b2d-be6d-46015b24cbd0" name="DiffimageView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c1e1d5f0-b5a2-4b2d-be6d-46015b24cbd0" name="DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
           <interfaceRealization Id="68adf08a-ce9d-4d9b-8726-e269a3e54bf5">
@@ -1169,6 +1300,172 @@ matchinfo
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="896ebf36-83f7-40cb-a160-901923ea0ad8" name="TranslationView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7008bc87-6810-47c7-9000-c65d1da6b0ff" />
+        <suppliersInternal>
+          <interfaceRealization Id="7099adec-f839-41ec-a56a-0cc43e41ad26">
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <elementDefinition Id="bc711ebe-d4ed-465c-a087-0cff804d71f9" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="b5ead683-f5e7-4329-8065-87959a4dd97c" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e501459e-4837-49c6-9d7a-8be567f1955c" />
+          </operation>
+          <operation Id="39e1b803-9064-4bab-9002-a0e57806e34f" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="220048b9-c088-4288-892b-ebcca7622058" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="535c70c3-de1d-430e-8ffe-265b669b875d" name="ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4f85351-6dc7-43b2-8284-4c87243e9cbe" />
+        <suppliersInternal>
+          <interfaceRealization Id="214b0ec6-f9f2-407d-acc2-e8e15a120691">
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <elementDefinition Id="55555d79-643d-45c6-afb6-fdcb1a52274f" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="e9324cf7-e630-43c1-90f4-48fcd8edabea" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="52e9e2c7-24ce-4c29-b61b-1832e5f62ef3" />
+          </operation>
+          <operation Id="bc22f53c-0004-4a55-b5c8-6a4827bae372" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b478af19-ef4e-468e-b853-99e058c683e8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="386c1e68-9880-41a0-aeb2-ab42480a4596" name="OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" name="map&lt;MatchView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;MatchView,QString&gt;">
+        <elementDefinition Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" name="MatchCall" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::MatchCall">
+        <elementDefinition Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" name="MatchView" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::MatchView">
+        <elementDefinition Id="279a9507-f5ee-4dbc-95dc-8b7953719b08" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" name="map&lt;FilterView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;FilterView,QString&gt;">
+        <elementDefinition Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" name="FilterCall" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::FilterCall">
+        <elementDefinition Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="240cf3e1-a394-4d92-b0ce-fee88db5dde7" name="FilterView" isAbstract="false" isLeaf="false" cachedFullName="FilterView">
+        <elementDefinition Id="9607e170-2579-41f8-ab68-9d812b1746b3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f920ccab-e617-4466-9253-fd4b460f0b21" name="QComboBox" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da9ef71b-c376-46fb-9af8-01e06efbd64c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" name="HelpButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53837842-37ec-4013-80e9-4758de9a0719" />
+        <generalsInternal>
+          <generalization Id="93d0a3be-4a7f-4c3e-b350-90c9ab768843" isSubstitutable="false">
+            <classMoniker Id="2343d5a4-923c-4c65-9752-95fc3d57503e" LastKnownName="QPushButton" />
+            <elementDefinition Id="ff32128f-08b7-4559-a26d-cfcb37ce0e0d" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="23272ace-1ebf-4ce1-a8b5-167d96f55d62" isDerived="false" sourceEndRoleName="" targetEndRoleName="signal" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" LastKnownName="Help" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a3e203f3-50de-4d51-8b79-beca82532d77" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="85f0d7e6-e69c-4717-98b5-92dc335edd44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="891185f8-84e9-4037-b407-04b9f26d1436" name="signal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba53b98e-67e3-4a0b-9b48-5f54e60213e5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2eb0514d-e9d6-4921-9250-a3fa7207b292" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="599d6561-fed5-424e-bfa4-60c599a8a4b5" name="page" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee26632f-6470-420d-9b2b-fc99e545f2af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a4af9896-53fa-4712-896e-7c5d75f99824" name="setPage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="57ed5d52-28c7-46ba-ae0e-086d8a604448" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="762a7da5-70f0-4b95-b122-d7bdfe14ab98" name="QString" direction="In" isUnique="false">
+                  <elementDefinition Id="73017ec0-a99d-4457-9910-53b907b92693" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4f44136b-a728-4fc4-a19d-dfc8e99f5d8c" name="///Signal:clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="784ec17f-243b-4442-99da-4f0798554575" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2343d5a4-923c-4c65-9752-95fc3d57503e" name="QPushButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5" />
+        <ownedAttributesInternal>
+          <property Id="2232da0d-4999-4196-ab41-4cdf30ab67d4" name="helpDocument" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cd76f02-b753-457a-8259-31a73006e956" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a40978a8-d024-443b-8604-694370f010c9" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b646c3be-c304-4114-8e24-c89525bb9802" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6cffac7a-1a36-427d-9877-8dd604b049f3" name="page" direction="In" isUnique="false">
+                  <elementDefinition Id="5a5dde01-0d07-40e2-9883-5eb10dfc65af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="dc116b63-625b-4fcb-ab30-73e7ea8aed0c" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bbbd1a16-6493-4b44-8881-8bb556a9d0cb" />
+          </operation>
+          <operation Id="b3f91bb6-4640-4f2c-b53e-7df2a0db12be" name="///slot:clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="108efac0-2abd-4585-914c-9b399267fe15" />
           </operation>
         </ownedOperationsInternal>
       </class>
