@@ -903,52 +903,6 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="be0cfb07-19c9-4431-8278-2fbe8fd95108" name="GraphicsSceneArrow" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="099196c6-b49c-4f43-89c7-3df6a736dfcb" />
-        <ownedAttributesInternal>
-          <property Id="d683f034-9116-4658-a78d-42bb1f668805" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ae1dc10e-4e69-46c0-8949-6d4f7d783d60" />
-          </property>
-          <property Id="5aa248bf-3edb-4af9-9f7e-25709b418b2a" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d63b36e5-189e-44d8-86da-337bcf0d3448" />
-          </property>
-          <property Id="9cd93933-8c97-4f06-862e-8065dbd6b272" name="Point basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4448607a-f55d-489c-86dc-1e509719f123" />
-          </property>
-          <property Id="b8596c6c-2da3-484c-a894-64b3daa6f1f1" name="Point relativeVector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="7d764964-03c8-4c32-b775-d0ff6093ff5b" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="4567b456-85dc-4653-a921-513da1e4c91d" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="cfa844f6-6193-4634-b582-921d268558a8" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="457d8a7b-4f0c-43fd-ae3b-e72fd9c6b834" name="..." direction="In" isUnique="false">
-                  <elementDefinition Id="8d304fc4-893c-4bf5-a810-8cfc21b501b1" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0430d15a-92c3-4a26-8c45-af5e7b59c576" name="size_t id" direction="In" isUnique="false">
-                  <elementDefinition Id="687ac2a1-957a-4e27-b4a5-25597f40f67b" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="345853fb-4a84-476e-8e9e-5154850a0581" name="///slot positionUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="8d4244e3-c2c4-4c34-84e5-55bb5de1028c" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="0b5de142-103e-447e-88b8-39ff25cbaa18" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="7b2bd42f-49e7-40fe-bca8-85b84ad58307" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="ba738a61-caf7-464b-b360-c97ed99d8a18" name="SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5e9e9a56-0874-473c-a028-9fdbace9f4b0" />
         <targetEnds>
@@ -1084,32 +1038,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="c2dfa09c-8928-4a24-8e69-bce9541a286d" />
-          </association>
-          <association Id="1df1bc56-05d3-4a85-9beb-67daf8248603" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="be0cfb07-19c9-4431-8278-2fbe8fd95108" LastKnownName="GraphicsSceneArrow" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="def4d5eb-0671-4fb1-84dd-238818350c44" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="4b3346b3-42f1-4b01-86ea-e53389be4bdd" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="36231c52-92b3-45c3-b1f2-626816985013" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="56c61a60-d394-4987-b8c2-3b72dee50c04" name="Lower" value="*">
-                      <elementDefinition Id="6ce2f6b2-3062-4eb2-9b5e-5f96f21d06b0" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="a8b4d7db-e834-4f7a-86d6-18651d6ff9ee" name="Upper" value="*">
-                      <elementDefinition Id="186df65f-6480-4aa8-94b3-018fadb6b2e4" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="2d904f7d-cd59-449e-8779-7ee6ee640e97" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="78c417ad-98a2-4546-92f5-f4e2ded175c8" />
           </association>
           <association Id="0beadd30-e98c-4a45-9acd-23aefea73025" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="3d76c703-f515-4606-962a-61976d7398e4" LastKnownName="ZoomableImage" />
