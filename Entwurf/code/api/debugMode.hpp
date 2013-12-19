@@ -9,7 +9,7 @@ namespace cvv{
 namespace impl {
 
 static inline std::atomic<bool>& getDebugFlag() {
-	thread_local std::atomic<bool> flag{true};
+	thread_local static std::atomic<bool> flag{true};
 	return flag;
 }
 

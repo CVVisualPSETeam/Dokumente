@@ -3,20 +3,21 @@
 
 #include "Call.hpp"
 
-#include "ocv_moc.hpp"
+#include "../moc/ocv_moc.hpp"
 
 namespace cvv {
-namespace pub_util {
 
 class FilterCall: public Call {
-	FilterCall(ocv::InputArray in, ocv::OutputArray out, CallData data):
+public:
+	FilterCall(ocv::InputArray in, ocv::OutputArray out, impl::CallData data):
 		Call(data), input(in), output(out) {}
-// Filterdata
+	
+private:
 	ocv::InputArray input;
 	ocv::OutputArray output;
 };
 
 
-}} //namespaces
+} //namespace
 
 #endif

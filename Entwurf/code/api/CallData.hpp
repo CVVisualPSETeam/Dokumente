@@ -5,17 +5,14 @@
 #include <cstddef>
 #include <utility>
 
-#include "optional.hpp"
-
 namespace cvv {
-namespace pub_util {
-
+namespace impl {
 
 struct CallData {
 public:
 	CallData() = default;
 	CallData(const std::string file, size_t line, const std::string function) :
-		file{std::move(file)}, line{line}, function{std::move(function)}, isKnown{true} {}
+		file(std::move(file)), line(line), function(std::move(function)), isKnown(true) {}
 	operator bool() {
 		return isKnown;
 	}
@@ -28,6 +25,6 @@ public:
 
 }} //namespaces
 
-#define CVVISUAL_LOCATION ::cvv::pub_util::CallData(__FILE__, __LINE__, __func__, true)
+#define CVVISUAL_LOCATION ::cvv::impl::CallData(__FILE__, __LINE__, __func__, true)
 
 #endif
