@@ -56,11 +56,54 @@ sues defaultView
       <body>pdf or html file
 </body>
     </comment>
+    <comment Id="a0c1a035-8c95-49b9-b1fc-5810c7bd7d39">
+      <elementDefinition Id="5105a396-7fab-46e9-bd6a-bad5ef263be4" />
+      <body>use Help Menu</body>
+    </comment>
+    <comment Id="0a13259a-8660-49cf-ae58-55897fe7ea46">
+      <elementDefinition Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374" />
+      <body>the page name here is equal to the name of the view, i.e. its ID
+</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="==CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4f11f6c-4caf-498d-95db-0db216026cc5" />
+        <targetEnds>
+          <association Id="001377f7-33b7-4699-9ff8-a6e42b092d2f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="==QComboBox" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7b6ae421-e12a-4b5a-9ab1-90b8d7bc22b2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="217275e4-a44a-4eaf-b60f-b57c5f9ff08a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="55ac884a-f050-44a3-986d-25bc6a028648" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a08d1218-fbdf-4e33-a08f-81702bb1011d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0bd4919a-e1cf-4047-a695-b3be3455028a" />
+          </association>
+          <association Id="80529a14-6d37-47de-a52c-f015dd7fb794" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="==HelpButton" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1db9a26c-b209-4593-8505-16e9aa61cef1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e413f90b-c0fa-42b4-9eae-a386133c5ce7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e41f565-d7ab-49a6-94da-b99f08a939fc" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d3e409b-75ca-4426-9eed-20b004a8204a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac916f90-3112-40e0-ab29-ef5e8a8b43bb" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="f36ce5f8-f1ad-44e0-aca1-66106a25fad2" name="Name.QString" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de" />
@@ -372,38 +415,6 @@ sues defaultView
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="a071c561-3aec-4688-b663-40737241838f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="==QComboBox" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="e43a6981-a7c7-4179-9a77-2bee13270d48" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="22df01d4-4fca-441a-af33-49e651011603" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="54e13a5c-f000-42c3-8394-9618e4a4768e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d8629572-b41f-4744-883c-690589298d04" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7c871460-c4f5-4b65-a7b6-242064c3061f" />
-          </association>
-          <association Id="afdf9bac-5e3e-4307-92fe-e5bf69af67c4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="==HelpButton" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="bc881c6f-acce-4f38-93a9-a49c28757f58" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3ef4474a-421b-4b9e-897b-7cad289dbfa6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="b60c0477-b315-43cf-a034-f347f7923fb9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cc2bc292-ef25-4442-9438-1cb49861c5cb" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="8eebbe55-d348-4b60-a654-5b7bd565caea" />
-          </association>
           <association Id="4eaf2e4e-89cd-4604-ada4-b424b291a9bf" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="47535fef-439f-4e2f-a6d4-d76f63d4be76" LastKnownName="==FilterCall" />
             <relationshipOwnedElementsInternal>
@@ -517,38 +528,6 @@ sues defaultView
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="19644003-0b0c-4b41-9322-f3524e30ee25" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="==QComboBox" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="be435b23-ebc1-4615-bf34-4a4ab499ac5e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="94044b9f-bb39-4805-979a-862324144d2b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="307b368e-6007-4622-8a43-f7946849d4c6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="a187e7fb-c5e3-43d6-8114-2cb5eeb25126" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="a0c7d27c-5b60-4e36-98c7-971f7165fb7c" />
-          </association>
-          <association Id="d656a7ee-9470-4df3-9c92-df8f73411d42" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="==HelpButton" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3f9d76d5-c283-40c6-a500-c60314d28a78" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="03afa260-2abf-4817-a74f-19d035933e5d" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ace542aa-c0cf-4df6-a395-e291f295e307" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="b1a43f20-48f4-4224-8dbd-338b3e2d28fa" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="3db1dcb3-b6e0-4474-8901-da5b598be8b2" />
-          </association>
           <association Id="89d1d2d2-0ef9-43c4-a5ff-55ecd3dcb846" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="55d4561d-a9e4-4459-a840-bdfb64fb8f4d" LastKnownName="==MatchCall" />
             <relationshipOwnedElementsInternal>
@@ -1027,6 +1006,14 @@ sues defaultView
     <logicalClassDesignerModelHasTypes>
       <class Id="f920ccab-e617-4466-9253-fd4b460f0b21" name="==QComboBox" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="da9ef71b-c376-46fb-9af8-01e06efbd64c" />
+        <ownedOperationsInternal>
+          <operation Id="acc1a70c-a6e2-4db9-8c43-b110269db2cd" name="setItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d762f14-1a62-4d0d-9942-ea5f202ac128" />
+          </operation>
+          <operation Id="1ef959c9-becd-447e-a4b9-5b8d317e0eb8" name="//signalcurrentIndexChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90c96166-bcda-4819-908f-26891e2bf10b" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
