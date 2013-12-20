@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="f1a241a6-fa9b-44f6-92b3-6539f34a9f55">
-      <profileInstance Id="68de4faf-f40c-4725-b64f-687d6d511a27" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b8dbdcec-fd1b-47bf-b599-a5e5d5660052">
-      <profileInstance Id="70a42490-1c5e-4c8f-bf3c-74546d2d2c05" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="15765961-809a-4747-b800-62b2eb4a4fa3" name="vector&lt;CollumType&gt;" isAbstract="false" isLeaf="false" cachedFullName="vector&lt;CollumType&gt;">
@@ -47,11 +33,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="ac73df81-2322-48ab-ac37-e83766452d12" name="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;">
-        <elementDefinition Id="b1874eef-817b-46c0-8ef8-c5eae674d638" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="93012846-ed7e-434f-aa26-d434fb63cdd3" name="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;">
         <elementDefinition Id="b1874eef-817b-46c0-8ef8-c5eae674d638" />
       </referencedType>
     </packageHasNamedElement>
@@ -106,175 +87,12 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="091c6b71-bae0-406f-8967-c94d9f58597c" name="STFLEngine&lt;CollumnType&gt;1" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="f1c3da65-6d49-4b93-815c-6adb2cc4838e" />
-        <ownedAttributesInternal>
-          <property Id="4d59ec3a-a910-4b62-a76a-9f8e3c0c34ba" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e0241fab-a0c5-4bfc-9eec-ea4668ff402b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="15765961-809a-4747-b800-62b2eb4a4fa3" LastKnownName="vector&lt;CollumType&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="c2240ac9-b942-4cd3-af7d-38f0d08ef794" name="groupTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="656c5565-d5f4-45c4-b74b-ecc0f54af717" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="0aa0a182-6284-4a09-959c-188594b8efbc" LastKnownName="map&lt;QString,std::functions&lt;QString(CollumnType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="9b38c5c7-1845-40fa-a92c-d9b1dcb4e0f5" name="sortTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="eed8a966-c089-4707-a7b3-703a4c9c8e89" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="c9ce6e6b-98ad-4892-8b79-8855c26739f2" LastKnownName="map&lt;QString,std::function&lt;int,CollumType,CollumnType&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="39965d76-b17f-4b02-8bdb-581129edebe0" name="filterTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d5b05aca-738a-493e-bf6d-11b9c210195a" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ecadf878-a629-48cb-8301-af91f80c0a9c" LastKnownName="map&lt;QString&lt;std::function&lt;???(QSTring,CollumType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="13248431-6bb2-4d36-b2fd-1a8b2e57d526" name="filter??Tunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="9657d056-1ebd-4f7d-9a04-755426fccc11" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="4b21be5a-6a5d-41ad-99ed-47e90de6887d" LastKnownName="map&lt;QString,std::function&lt;??(QString,vector&lt;CollumnType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="f3d97ce8-532c-4d93-80a1-f0db87ae34a5" name="rawFilterFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="28a2f605-1bed-4679-88e8-2f333cba3ad0" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="1530f7d1-93a3-4d90-bf66-8fd1181306b6" LastKnownName="std::function&lt;float??(QString,CollumnType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="2aa42c68-328e-445e-9c0e-c6b46a097984" name="filterPeelTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b92e06dc-930e-4481-a649-3ebe3047a8be" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="ac73df81-2322-48ab-ac37-e83766452d12" LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="fe062610-8926-47e5-a20f-5dd6557ee599" name="filter??Tunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ef24a41a-f363-481a-93c4-947e52fbb19c" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="93012846-ed7e-434f-aa26-d434fb63cdd3" LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="a41b499d-0a06-4dd3-bd7b-cb0639375fa9" name="rawFilterPoolFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="14eff4db-207d-4ba9-a9f1-c73d5ca7e26b" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="0a906cba-b24d-433b-9dde-095788b87f6f" LastKnownName="std::function&lt;QString(CollmnType)&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="5f717092-344a-4975-9caf-d634cebefa69" name="filterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cd337c52-f441-4ae2-a8ee-f9c350511810" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="6e183ca1-7a46-428c-922e-30199430a3d8" LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="d11b0387-ec1a-4699-8e26-a309b4b1ebc5" name="filter????" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="fea18098-a102-4c94-a154-117cd6adb718" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="6e183ca1-7a46-428c-922e-30199430a3d8" LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="c42a6e43-4e35-4130-b351-2c24172eb72c" name="rawFilterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3dc7d854-4eee-45a3-a4c6-126edb8b65a7" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="c1a7ef8c-74c5-4d23-8d51-7ba636c13ccd" LastKnownName="vector&lt;QSring&gt;" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="4a2b04e3-c1ed-49e8-a84d-0d81c90f9b4d" name="update??????Elements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="bba5b278-86c5-450a-8cc3-6decc38e46af" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a62115b6-e9ed-4625-881e-0be902dcb7e6" name="newElement" direction="In" isUnique="false">
-                  <elementDefinition Id="1973b3b8-9c77-4883-99b6-8e4bafd3564e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="f9975602-158d-44b5-a352-8f8e48285fec" LastKnownName="vecotr&lt;CollumnType&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="9b622fca-e821-4913-9733-c8c540e5af5f" name="parse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="94317167-fc09-4633-b009-079de8e30bab" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4f4ccc04-570f-438e-855e-5d59497cd17f" direction="Return" isUnique="false">
-                  <elementDefinition Id="9b874c21-d233-4969-aab6-7cada7b31b16" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="cf97b8f0-689d-4d00-a866-d4c2a674dc7b" LastKnownName="vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="230bfc93-982c-4ca9-b7ce-c886de77b65c" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="d8700b9a-4ddb-49e3-ad30-9b99295c1f3f" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="990f8e6b-a030-4d3e-b648-65c6d3c91985" name="getSuggestions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="52a437c3-cb69-46db-a142-b7c5fd10da78" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="2ab60be0-88c3-44e4-bb98-a56fc45b774a" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="5c09b66f-4783-4b3f-8b93-9820c781212e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="d99c62d2-c0d8-4d5d-8adc-c1847ca7a789" name="number" direction="In" isUnique="false">
-                  <elementDefinition Id="814da07e-cdd0-43ca-8a2a-c15b154b4f27" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="35cd6054-40b0-48fc-be68-2fd2a028522c" LastKnownName="int)vector&lt;QString&gt;(" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="52946c61-f4e5-4df5-8eb6-e6f7c92c01fc" name="STFLEngineCollumType&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="207901db-0c8b-4274-8e10-3a374c98db70" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b3e22db9-d80a-4dff-87dd-bda4f8f5fe89" name="elements" direction="In" isUnique="false">
-                  <elementDefinition Id="4b9b4b4d-7b8b-4317-a822-ba607f37cf8e" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="7b549f43-1140-4ab1-addb-103f868f7264" LastKnownName="vector&lt;CollumTyp&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f25b9d8c-1a2d-4586-bc58-4c95b16abeca" name="rawFilterTune(" direction="In" isUnique="false">
-                  <elementDefinition Id="73c32319-11ca-4c18-9542-737b333742d4" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="ba2f0c61-d9de-4090-bf34-422d45f75f75" name="STFLgroupTunes:map&lt;.,.&gt;,sortTunes:...,filterTunes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="f064c71c-2217-47b9-a753-16d01675d2a2" />
-          </operation>
-          <operation Id="935ade75-d009-4027-8196-0be6b775e62a" name="STFLEnginefilterCSTunes:--" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ce2a4b9b-e6b5-4bd2-b21a-5572e3f9537f" />
-          </operation>
-          <operation Id="7adcca2c-7b0f-4e3d-a0ce-bdac8518cbde" name="???????????????????????????????" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a5ec962b-4266-4453-abb9-cc707d78ee81" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="62d73a50-93e1-4946-a67f-29bd8bd5bef9" name="???????1" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8778293c-c16d-4962-996b-43d231b9d3c0" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="9bdfa20c-8e39-4dd5-8cc7-14857955f1ca" name="FilterQueryWidget1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="9bdfa20c-8e39-4dd5-8cc7-14857955f1ca" name="==FilterQueryWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc" />
         <generalsInternal>
           <generalization Id="3eed38c8-cf9f-4534-b40a-830a763e599d" isSubstitutable="false">
@@ -314,7 +132,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="0ed03a5b-0876-4691-b4a6-586abed00894" name="ElementGroup&lt;ElementType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="0ed03a5b-0876-4691-b4a6-586abed00894" name="==ElementGroup&lt;ElementType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7b73a384-3b55-461d-ab57-96f9cffbf230" />
         <ownedAttributesInternal>
           <property Id="6e8a3836-fbfd-402c-b1f9-1872fb4a1049" name="title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -464,7 +282,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" name="TableCollum1" isAbstract="true" isLeaf="false" isActiveClass="false">
+      <class Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" name="==TableCollum" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="707fa28a-c5d8-4230-b153-fdfd0f443df3" />
         <ownedOperationsInternal>
           <operation Id="e4f4055b-d008-40c2-ab19-feb30745e5f7" name="get???QTCollum()???" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -474,11 +292,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="27db2ab3-8eb3-4bde-9a5b-653e193842ec" name="OverviewTableCollums1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="27db2ab3-8eb3-4bde-9a5b-653e193842ec" name="==OverviewTableCollums" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0dbd22b6-5c59-40d7-b3e8-b534ce69b7c7" />
         <generalsInternal>
           <generalization Id="5aa3664a-ed91-48a8-a0fc-d8886dbed75e" isSubstitutable="false">
-            <classMoniker Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" LastKnownName="TableCollum1" />
+            <classMoniker Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" LastKnownName="==TableCollum" />
             <elementDefinition Id="dc2e44da-81f7-4a88-9766-6dab006f592c" />
           </generalization>
         </generalsInternal>
@@ -511,11 +329,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1f476763-a122-40ec-8c05-b36d198eac24" name="RawViewTableCollumn1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="1f476763-a122-40ec-8c05-b36d198eac24" name="==RawViewTableCollumn" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c246bc6c-3225-41ad-88a2-c9d7f8c6e74d" />
         <generalsInternal>
           <generalization Id="3ddeb268-0a8b-4dff-abe6-3f9a2d511e12" isSubstitutable="false">
-            <classMoniker Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" LastKnownName="TableCollum1" />
+            <classMoniker Id="e8f6a424-915d-4e1e-829b-fc00489dc6ad" LastKnownName="==TableCollum" />
             <elementDefinition Id="7c2db732-c515-47dc-b904-a01e51e54a91" />
           </generalization>
         </generalsInternal>
@@ -527,7 +345,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c29aba3d-036a-4353-bb46-1cf37510b9e1" name="GroupableTable&lt;CollumType&lt;TableCollumn&gt;&gt;1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c29aba3d-036a-4353-bb46-1cf37510b9e1" name="==GroupableTable&lt;CollumType&lt;TableCollumn&gt;&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b0288fe4-6ea6-48ca-baa8-8e26b6ee1158" />
         <ownedAttributesInternal>
           <property Id="79720fe5-3077-49ac-9602-61d0d5131e20" name="collumGroup" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -543,7 +361,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="a4da33ae-af54-4777-a2ac-b1db938c114f" name="OverviewTable" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="a4da33ae-af54-4777-a2ac-b1db938c114f" name="==OverviewTable" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c7398aa7-5dd0-4a19-ab47-a6333d49c19a" />
         <ownedAttributesInternal>
           <property Id="6e48d311-975b-4e1e-aab3-341d645e68cb" name="collumnGRoup" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -600,7 +418,7 @@
                 <parameter Id="35348145-fa84-499a-9d0a-a80e04df4088" name="parent" direction="In" isUnique="false">
                   <elementDefinition Id="bbc8a4ef-dd01-4b42-9ffc-96e70d152a6b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="20ccb54f-7f85-4ce0-b971-2e3771004637" LastKnownName="OverviewTable" />
+                    <referencedTypeMoniker Id="20ccb54f-7f85-4ce0-b971-2e3771004637" LastKnownName="==OverviewTable" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -635,12 +453,12 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="20ccb54f-7f85-4ce0-b971-2e3771004637" name="OverviewTable" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OverviewTable">
+      <referencedType Id="20ccb54f-7f85-4ce0-b971-2e3771004637" name="==OverviewTable" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::==OverviewTable">
         <elementDefinition Id="c7398aa7-5dd0-4a19-ab47-a6333d49c19a" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="4cd80587-dc25-4e9c-bca0-3e38adb662f9" name="OverviewGroupSubtable" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="4cd80587-dc25-4e9c-bca0-3e38adb662f9" name="==OverviewGroupSubtable" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4c2c04a3-4e36-486a-9ece-a39a2fcd0cba" />
         <ownedAttributesInternal>
           <property Id="f48b75e7-0741-494c-9302-653b18269f21" name="parentPanel" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -674,8 +492,185 @@
         <elementDefinition Id="db640c1b-0b04-403d-a2e9-8d311cb34b74" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" name="==STFLEngine&lt;CollumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="428b6ce2-a140-47d8-91c1-e67a22def15a" />
+        <ownedAttributesInternal>
+          <property Id="0622617d-87c4-45f8-ac13-b73261ca9a1d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="15765961-809a-4747-b800-62b2eb4a4fa3" LastKnownName="vector&lt;CollumType&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="52a68b94-bdd2-4ea6-ae81-7d836a216016" name="groupTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d8cdc633-6e33-438a-8ace-b19b16c29c7f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0aa0a182-6284-4a09-959c-188594b8efbc" LastKnownName="map&lt;QString,std::functions&lt;QString(CollumnType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="38a9af7d-0fb6-4e85-bb87-0b8d389e6a72" name="sortTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03ec0898-1fd5-4528-bdb2-151a22c8a116" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c9ce6e6b-98ad-4892-8b79-8855c26739f2" LastKnownName="map&lt;QString,std::function&lt;int,CollumType,CollumnType&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="7b16c1ea-4e7a-4ffb-9a0c-87c6ee35446e" name="filterTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84a8fd7a-e0f0-4d0a-bcf1-53c753bfe800" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ecadf878-a629-48cb-8301-af91f80c0a9c" LastKnownName="map&lt;QString&lt;std::function&lt;???(QSTring,CollumType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="3fb41276-1e88-4bab-8cf9-24437d186a98" name="filter??Tunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="234b15a8-a77f-44b7-9dcc-28d41b59a6d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4b21be5a-6a5d-41ad-99ed-47e90de6887d" LastKnownName="map&lt;QString,std::function&lt;??(QString,vector&lt;CollumnType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2025ac3a-e1aa-4220-afda-e755dced3a44" name="rawFilterFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="616170c6-52a8-48af-abe7-ada052eb1b09" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1530f7d1-93a3-4d90-bf66-8fd1181306b6" LastKnownName="std::function&lt;float??(QString,CollumnType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="b9f8e977-6368-4ba9-ba72-bd2df51a10d0" name="filterPeelTunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5612023d-7b3c-413b-8718-a3c566af4c1c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac73df81-2322-48ab-ac37-e83766452d12" LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="e64634ae-dc84-4c1b-bb93-c4dcfcc9fc0d" name="filter??Tunes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90c14263-027a-4e8e-9764-4d15de253f6c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac73df81-2322-48ab-ac37-e83766452d12" LastKnownName="maps&lt;Qstring,std::function&lt;QString(CollumnType)&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="bf248d5a-edd4-4241-a604-718c73eea98b" name="rawFilterPoolFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35e0737c-8b58-46a7-88d3-8d9ca8fde2e1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0a906cba-b24d-433b-9dde-095788b87f6f" LastKnownName="std::function&lt;QString(CollmnType)&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="fc99fbbc-e79a-4c17-8b40-7d1e834c0c19" name="filterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="59c5affd-6536-4693-ac8a-7dde7f3e6f8c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6e183ca1-7a46-428c-922e-30199430a3d8" LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="6c636f1c-82da-4f13-973a-e7dfdb9d3dac" name="filter????" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="929aeb43-f4b7-4484-9cc6-163ae282c8c7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6e183ca1-7a46-428c-922e-30199430a3d8" LastKnownName="map&lt;QString,vector&lt;QString&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="fb3bf97b-7ba8-4bf2-9460-06fa20b5605f" name="rawFilterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bdd96864-4500-4f34-aebe-298e6ff55a37" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c1a7ef8c-74c5-4d23-8d51-7ba636c13ccd" LastKnownName="vector&lt;QSring&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="17c26c00-2e82-4527-acf6-93aa0e013bbe" name="update??????Elements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c7d2f8e-24b7-4393-bfd1-4bae3ba41dbc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="072d67d3-e775-4080-848d-9a1704f9b9f6" name="newElement" direction="In" isUnique="false">
+                  <elementDefinition Id="a6106a4a-6695-42a9-8a36-d11a198f6194" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f9975602-158d-44b5-a352-8f8e48285fec" LastKnownName="vecotr&lt;CollumnType&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c57161fd-259a-4a02-8b04-81ac224040de" name="parse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f7decfae-9492-4601-af5e-a80af9827dc3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3bddc0db-a90c-432b-8212-590fe9eb8073" direction="Return" isUnique="false">
+                  <elementDefinition Id="30275bef-7c99-4b1b-ab9d-acb1b73496ad" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cf97b8f0-689d-4d00-a866-d4c2a674dc7b" LastKnownName="vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7cd5e561-1646-455c-8105-fdc62a36a987" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="dc8dddb3-a1c0-4fec-a83b-5d2896ca80f2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fcc237b4-33ae-490b-8841-265675cc7a67" name="getSuggestions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a7206cff-357d-4453-87f9-0230aaf22313" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f91135c5-cd49-47f3-b693-4d0afd4dccae" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="c806245e-23e1-4e89-acb3-dfb7446271a9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59f7fde3-37c1-4dcd-97cd-b32b5d5e7c79" name="number" direction="In" isUnique="false">
+                  <elementDefinition Id="d9f48d3d-5404-4d96-a33d-c9bbcd922280" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="35cd6054-40b0-48fc-be68-2fd2a028522c" LastKnownName="int)vector&lt;QString&gt;(" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5cff3662-1094-429b-ad90-542996f5d20b" name="STFLEngineCollumType&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2c3f5261-9ec8-448a-af8d-e8ce5be76496" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec89e97e-9a05-4047-aacb-ad64f34aae9b" name="elements" direction="In" isUnique="false">
+                  <elementDefinition Id="0f0ac001-8f9a-42f7-84cc-ba0a95dfb636" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b549f43-1140-4ab1-addb-103f868f7264" LastKnownName="vector&lt;CollumTyp&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6ab0d639-1fc5-4fae-a526-60fe50062aa3" name="rawFilterTune(" direction="In" isUnique="false">
+                  <elementDefinition Id="e4d85464-066a-428a-81a7-6e4587468c30" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3c9c9c8b-1cda-496c-b068-059b1e9978e6" name="STFLgroupTunes:map&lt;.,.&gt;,sortTunes:...,filterTunes" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ac7dfe5-62cb-4375-a0b7-71d90963f21a" />
+          </operation>
+          <operation Id="31c32a56-8891-422c-a814-1101f316dcbb" name="STFLEnginefilterCSTunes:--" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="69e32efb-ac5e-4024-9abb-80da8ed1efa6" />
+          </operation>
+          <operation Id="07dcfd09-3408-4032-91e4-e08bef20ab58" name="???????????????????????????????" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc20c63d-710d-4b9f-a541-f7c4421f5e44" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="f1a241a6-fa9b-44f6-92b3-6539f34a9f55">
+        <profileInstance Id="68de4faf-f40c-4725-b64f-687d6d511a27" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b8dbdcec-fd1b-47bf-b599-a5e5d5660052">
+        <profileInstance Id="70a42490-1c5e-4c8f-bf3c-74546d2d2c05" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

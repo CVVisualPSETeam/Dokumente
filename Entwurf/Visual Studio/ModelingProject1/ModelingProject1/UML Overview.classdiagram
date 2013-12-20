@@ -42,11 +42,6 @@ sues defaultView
       <elementDefinition Id="0567760f-64b4-49c1-9a56-27e107e83828" />
       <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
     </comment>
-    <comment Id="d09a5c68-9308-4a92-a220-643725b39b74">
-      <elementDefinition Id="7bb022c0-edb2-4eba-803f-0fdcf378880b" />
-      <body>pdf or html file
-</body>
-    </comment>
     <comment Id="30c68ed8-df10-4dfb-8727-c6dbb3819b1b">
       <elementDefinition Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312" />
       <body>singleton (threadlokal)
@@ -56,10 +51,15 @@ sues defaultView
       <elementDefinition Id="ada9b889-3348-45bb-8ba8-6f5227593183" />
       <body>???</body>
     </comment>
+    <comment Id="888d8431-263d-431c-9991-2b479d8c78be">
+      <elementDefinition Id="62bc6995-ba3a-4357-a697-1f0dce3bd5e3" />
+      <body>pdf or html file
+</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="==CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4f11f6c-4caf-498d-95db-0db216026cc5" />
         <ownedAttributesInternal>
           <property Id="f36ce5f8-f1ad-44e0-aca1-66106a25fad2" name="Name.QString" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -94,11 +94,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="919f63b5-c585-4beb-8864-df7c9cb2cd1e" name="CallWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="919f63b5-c585-4beb-8864-df7c9cb2cd1e" name="==CallWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d5fc2fdc-cdfa-4127-b47c-28bdd5aabf6c" />
         <targetEnds>
           <association Id="575fc649-6742-4d5b-b0b7-ab00ecaf35e4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="CallTab" />
+            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="==CallTab" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="f7b3bf33-39d0-4ff9-8d70-4abcd59f53b3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -134,7 +134,7 @@ sues defaultView
             <elementDefinition Id="33ab6d89-3f96-4a93-8801-b77e6c7a4df5" />
           </association>
           <association Id="9404be90-1ddf-48d3-be6b-183c97f16eab" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="Overview" />
+            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="==Overview" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="25f41e6b-b8dc-4442-87ef-1f6c3878b90b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -153,11 +153,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" name="WindowController" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" name="==WindowController" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="494b007a-4297-405f-806d-95f26f8f955a" />
         <targetEnds>
           <association Id="0a32f514-3e7a-475f-8e4f-ead2cab08de1" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="919f63b5-c585-4beb-8864-df7c9cb2cd1e" LastKnownName="CallWindow" />
+            <classMoniker Id="919f63b5-c585-4beb-8864-df7c9cb2cd1e" LastKnownName="==CallWindow" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="860dd184-4270-461b-ae43-589341b992a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -186,17 +186,17 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="Overview" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="==Overview" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259" />
         <generalsInternal>
           <generalization Id="7fd895e8-1d63-4dc8-b884-8647bea48e8e" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
+            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="==QWidget" />
             <elementDefinition Id="5852e955-828e-4efb-98c7-cf2ebc4a5da3" />
           </generalization>
         </generalsInternal>
         <targetEnds>
           <association Id="d1a0daca-89ef-42b8-b999-0673da239664" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" LastKnownName="WindowController" />
+            <classMoniker Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" LastKnownName="==WindowController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="586dff59-3f32-4a88-8a5b-89fe40dbb500" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -212,7 +212,7 @@ sues defaultView
             <elementDefinition Id="c9088d59-41a9-4f5f-b897-c1fc9da38af3" />
           </association>
           <association Id="d0a510d6-2df6-4b1a-853e-f78d721c02fd" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="eef28968-ef25-452a-9535-dcb6d8c3198d" LastKnownName="STFLEngine&lt;CollumnType&gt;" />
+            <classMoniker Id="eef28968-ef25-452a-9535-dcb6d8c3198d" LastKnownName="==STFLEngine&lt;CollumnType&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1cb7fe34-9735-4061-b799-c1af6f362759" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -292,11 +292,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c8a37d34-116e-4818-9048-6efd2065d73c" name="DataConroller" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c8a37d34-116e-4818-9048-6efd2065d73c" name="==DataConroller" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ae9e801e-2a86-4548-940c-88fcce7a9598" />
         <targetEnds>
           <association Id="339bb9ba-e07c-45dd-82e9-8d2eb766f8b9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" LastKnownName="WindowController" />
+            <classMoniker Id="6df4d20a-050c-4a1b-95f5-c6e00ddef409" LastKnownName="==WindowController" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="2b3ac683-316d-40e6-b50e-67bc6c8c91f1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -312,7 +312,7 @@ sues defaultView
             <elementDefinition Id="e335026f-6f62-44d9-aa71-51ad33604c5e" />
           </association>
           <association Id="7dd609ab-dbe5-4b1a-b57e-8465331a7d24" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="*" isAbstract="false">
-            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="Call" />
+            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="==Call" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="97250865-fe54-4210-990e-4a90f4030dd9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -363,17 +363,17 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="35eec434-c366-4367-a3e9-573314cfdb2b" name="FilterCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="35eec434-c366-4367-a3e9-573314cfdb2b" name="==FilterCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="426e73ff-ff5a-4efd-8d1c-4f3d5ef3fc7e" />
         <generalsInternal>
           <generalization Id="23b0ffb4-0016-42b7-b2af-106921dd69dd" isSubstitutable="false">
-            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="CallTab" />
+            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="==CallTab" />
             <elementDefinition Id="600a301a-51f2-42e2-a84e-4356d2782591" />
           </generalization>
         </generalsInternal>
         <targetEnds>
           <association Id="a071c561-3aec-4688-b663-40737241838f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="QComboBox" />
+            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="==QComboBox" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e43a6981-a7c7-4179-9a77-2bee13270d48" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -389,7 +389,7 @@ sues defaultView
             <elementDefinition Id="7c871460-c4f5-4b65-a7b6-242064c3061f" />
           </association>
           <association Id="afdf9bac-5e3e-4307-92fe-e5bf69af67c4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="HelpButton" />
+            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="==HelpButton" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="bc881c6f-acce-4f38-93a9-a49c28757f58" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -403,6 +403,22 @@ sues defaultView
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="8eebbe55-d348-4b60-a654-5b7bd565caea" />
+          </association>
+          <association Id="4eaf2e4e-89cd-4604-ada4-b424b291a9bf" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="47535fef-439f-4e2f-a6d4-d76f63d4be76" LastKnownName="==FilterCall" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60d70e2b-63c0-44f9-9a85-7ec10bb80f4a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36c2cd5a-7f54-4c42-b572-4c6c3bdf6617" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fee417ce-0f24-43ed-a2dc-49dda1d6353f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="faa9308b-5578-4925-a68f-8dd7b195554c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dff2be81-adfc-4c78-b069-00e2e5b45008" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -492,17 +508,17 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="10a4e754-42ab-43e8-9218-ae531dab3ad6" name="MatchCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="10a4e754-42ab-43e8-9218-ae531dab3ad6" name="==MatchCallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4b43811e-b185-4d07-a7e7-a1b66bc0d66b" />
         <generalsInternal>
           <generalization Id="e6d3e3cc-e33d-4896-a0db-d9b520c1d3f5" isSubstitutable="false">
-            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="CallTab" />
+            <classMoniker Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" LastKnownName="==CallTab" />
             <elementDefinition Id="287cc437-13fc-4300-a97c-54f53954e148" />
           </generalization>
         </generalsInternal>
         <targetEnds>
           <association Id="19644003-0b0c-4b41-9322-f3524e30ee25" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="QComboBox" />
+            <classMoniker Id="f920ccab-e617-4466-9253-fd4b460f0b21" LastKnownName="==QComboBox" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="be435b23-ebc1-4615-bf34-4a4ab499ac5e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -518,7 +534,7 @@ sues defaultView
             <elementDefinition Id="a0c7d27c-5b60-4e36-98c7-971f7165fb7c" />
           </association>
           <association Id="d656a7ee-9470-4df3-9c92-df8f73411d42" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="HelpButton" />
+            <classMoniker Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" LastKnownName="==HelpButton" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="3f9d76d5-c283-40c6-a500-c60314d28a78" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -532,6 +548,22 @@ sues defaultView
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="3db1dcb3-b6e0-4474-8901-da5b598be8b2" />
+          </association>
+          <association Id="89d1d2d2-0ef9-43c4-a5ff-55ecd3dcb846" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="55d4561d-a9e4-4459-a840-bdfb64fb8f4d" LastKnownName="==MatchCall" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2b7f97a-e73e-4186-b15d-85c4f7f6eba4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="bc7eef39-91ef-4caf-b4cb-5f5225e7cc9b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ece4535b-8fb2-4bc5-aeb7-8dbdd729aa6a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="20d9987b-20ac-4269-98c4-4671e0d198e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a401927b-7265-44ed-9192-a38c843a3b35" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -631,7 +663,7 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" name="Filterview" isAbstract="false" isLeaf="false">
+      <Interface Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" name="==Filterview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="594cd7eb-ac0c-4397-9852-06310e5222b3" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -644,7 +676,7 @@ sues defaultView
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" name="Matchview" isAbstract="false" isLeaf="false">
+      <Interface Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" name="==Matchview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
         <ownedOperations>
           <operation Id="e4d9d1cd-26ac-4ad8-b59c-3371879fca55" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -657,11 +689,11 @@ sues defaultView
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ea84b160-927a-44df-8b44-333ff3e16957" name="SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ea84b160-927a-44df-8b44-333ff3e16957" name="==SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5" />
         <suppliersInternal>
           <interfaceRealization Id="35189a80-cd54-40b5-88c4-f61bb24edc97">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
             <elementDefinition Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57" />
           </interfaceRealization>
         </suppliersInternal>
@@ -676,11 +708,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2576a700-ec3c-4b04-a50c-46bbc91add16" name="nMatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2576a700-ec3c-4b04-a50c-46bbc91add16" name="==nMatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e596f02b-5e80-4098-a393-f1aa2d08d754" />
         <suppliersInternal>
           <interfaceRealization Id="51fe1857-7627-49cd-8762-4cbcefb1c47d">
-            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="==Matchview" />
             <elementDefinition Id="16055378-bceb-4fd8-8035-36bb689a28fd" />
           </interfaceRealization>
         </suppliersInternal>
@@ -695,11 +727,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="56b4c532-0e82-4257-90b2-d7ff58115d68" name="HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="56b4c532-0e82-4257-90b2-d7ff58115d68" name="==HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="34fa9129-59da-4efc-9519-5e0799711879" />
         <suppliersInternal>
           <interfaceRealization Id="e852c35a-7c2b-49eb-89ff-fec47f391f41">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
             <elementDefinition Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1" />
           </interfaceRealization>
         </suppliersInternal>
@@ -714,11 +746,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c1e1d5f0-b5a2-4b2d-be6d-46015b24cbd0" name="DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c1e1d5f0-b5a2-4b2d-be6d-46015b24cbd0" name="==DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
           <interfaceRealization Id="68adf08a-ce9d-4d9b-8726-e269a3e54bf5">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
             <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
           </interfaceRealization>
         </suppliersInternal>
@@ -743,7 +775,7 @@ sues defaultView
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="eef28968-ef25-452a-9535-dcb6d8c3198d" name="STFLEngine&lt;CollumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="eef28968-ef25-452a-9535-dcb6d8c3198d" name="==STFLEngine&lt;CollumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="428b6ce2-a140-47d8-91c1-e67a22def15a" />
         <ownedAttributesInternal>
           <property Id="5acd5ae1-3fce-4f1d-b98c-2d1cdb6cd46d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -906,11 +938,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="896ebf36-83f7-40cb-a160-901923ea0ad8" name="TranslationView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="896ebf36-83f7-40cb-a160-901923ea0ad8" name="==TranslationView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7008bc87-6810-47c7-9000-c65d1da6b0ff" />
         <suppliersInternal>
           <interfaceRealization Id="7099adec-f839-41ec-a56a-0cc43e41ad26">
-            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="==Matchview" />
             <elementDefinition Id="bc711ebe-d4ed-465c-a087-0cff804d71f9" />
           </interfaceRealization>
         </suppliersInternal>
@@ -925,11 +957,11 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="535c70c3-de1d-430e-8ffe-265b669b875d" name="ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="535c70c3-de1d-430e-8ffe-265b669b875d" name="==ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e4f85351-6dc7-43b2-8284-4c87243e9cbe" />
         <suppliersInternal>
           <interfaceRealization Id="214b0ec6-f9f2-407d-acc2-e8e15a120691">
-            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="Matchview" />
+            <interfaceMoniker Id="2def8410-7dbb-46aa-9114-3e62ca9c14c1" LastKnownName="==Matchview" />
             <elementDefinition Id="55555d79-643d-45c6-afb6-fdcb1a52274f" />
           </interfaceRealization>
         </suppliersInternal>
@@ -944,8 +976,22 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="386c1e68-9880-41a0-aeb2-ab42480a4596" name="OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="386c1e68-9880-41a0-aeb2-ab42480a4596" name="==OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
+        <suppliersInternal>
+          <interfaceRealization Id="6ef8d7a0-ceeb-4a29-a97f-d3eb9b02ca8b">
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
+            <elementDefinition Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="1a99653d-4484-4dc8-9464-a58987cfae48" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="20cc7f1a-f67b-4b9d-8254-c9594b513321" />
+          </operation>
+          <operation Id="108ac7e8-b610-4e7b-aa16-e59bb107768f" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="180cb9a6-4fed-452b-a944-fb6734804b0e" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
@@ -979,22 +1025,22 @@ sues defaultView
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f920ccab-e617-4466-9253-fd4b460f0b21" name="QComboBox" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="f920ccab-e617-4466-9253-fd4b460f0b21" name="==QComboBox" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="da9ef71b-c376-46fb-9af8-01e06efbd64c" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" name="HelpButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="657bff0d-e0a1-455b-bf46-e25cf97136e2" name="==HelpButton" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="53837842-37ec-4013-80e9-4758de9a0719" />
         <generalsInternal>
           <generalization Id="93d0a3be-4a7f-4c3e-b350-90c9ab768843" isSubstitutable="false">
-            <classMoniker Id="2343d5a4-923c-4c65-9752-95fc3d57503e" LastKnownName="QPushButton" />
+            <classMoniker Id="2343d5a4-923c-4c65-9752-95fc3d57503e" LastKnownName="==QPushButton" />
             <elementDefinition Id="ff32128f-08b7-4559-a26d-cfcb37ce0e0d" />
           </generalization>
         </generalsInternal>
         <targetEnds>
           <association Id="23272ace-1ebf-4ce1-a8b5-167d96f55d62" isDerived="false" sourceEndRoleName="" targetEndRoleName="signal" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" LastKnownName="Help" />
+            <classMoniker Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" LastKnownName="==Help" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="a3e203f3-50de-4d51-8b79-beca82532d77" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -1036,12 +1082,12 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2343d5a4-923c-4c65-9752-95fc3d57503e" name="QPushButton" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2343d5a4-923c-4c65-9752-95fc3d57503e" name="==QPushButton" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8" />
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" name="==Help" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5" />
         <ownedAttributesInternal>
           <property Id="2232da0d-4999-4196-ab41-4cdf30ab67d4" name="helpDocument" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1147,7 +1193,7 @@ sues defaultView
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" name="QWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" name="==QWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e7b1ac62-f852-4d28-9382-8d483866006a" />
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1181,7 +1227,7 @@ sues defaultView
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="==CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
               <ownedAttributesInternal>
                 <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1223,7 +1269,7 @@ sues defaultView
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" name="debugDilate" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" name="==debugDilate" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="ea75c4ae-b271-4956-956e-7d9d76fe8ba4" />
               <ownedOperationsInternal>
                 <operation Id="9c418031-0b21-4dc6-a787-c90ca3daf7a9" name="debugDilate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1259,7 +1305,7 @@ sues defaultView
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="849626b0-2a53-4236-9662-edf95596223d" name="debugMode" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="849626b0-2a53-4236-9662-edf95596223d" name="==debugMode" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="c49c5aeb-95c5-410c-b692-4716f86ec669" />
               <ownedOperationsInternal>
                 <operation Id="97c32f41-1156-49ec-8c20-564f787053c3" name="getDebugFlag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1328,7 +1374,7 @@ sues defaultView
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="de71854a-6c93-4726-9fb1-20e3b44c0640" name="Call" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="de71854a-6c93-4726-9fb1-20e3b44c0640" name="==Call" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="551929e6-748e-4559-bf1e-3d58d21c558b" />
         <ownedAttributesInternal>
           <property Id="abef5c18-dcee-434f-8c14-10b363aaba91" name="callData" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1367,22 +1413,22 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="55d4561d-a9e4-4459-a840-bdfb64fb8f4d" name="MatchCall" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="55d4561d-a9e4-4459-a840-bdfb64fb8f4d" name="==MatchCall" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="084d2a69-a878-45d1-87b6-3873870cf2ca" />
         <generalsInternal>
           <generalization Id="974c60de-338e-4025-b2b0-906a2aa0853b" isSubstitutable="false">
-            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="Call" />
+            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="==Call" />
             <elementDefinition Id="a30a2c45-8e2e-48b9-8981-041f85e65222" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="47535fef-439f-4e2f-a6d4-d76f63d4be76" name="FilterCall" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="47535fef-439f-4e2f-a6d4-d76f63d4be76" name="==FilterCall" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8128dba4-8923-4cfb-aa27-7c4d7ff03a23" />
         <generalsInternal>
           <generalization Id="b9544a3c-5542-4c0e-ba42-2fa2c02d03aa" isSubstitutable="false">
-            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="Call" />
+            <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="==Call" />
             <elementDefinition Id="9eedf97b-ba3f-4b8d-950f-eb19503d0121" />
           </generalization>
         </generalsInternal>
@@ -1457,21 +1503,14 @@ sues defaultView
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
       <package Id="be1da4b4-714a-45a0-9e0e-dc721a54fcae" name="impl">
-        <ownedCommentsInternal>
-          <comment Id="d456de1d-1d87-49e4-a02a-cc9ebfedb83a">
-            <elementDefinition Id="dc7c439b-e9ff-4d17-b015-be4a3538916f" />
-            <body>optional ausgellassen 
-</body>
-          </comment>
-        </ownedCommentsInternal>
         <elementDefinition Id="d483e5f9-235f-4e43-849e-d8eb1df3335c" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="==Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="e3c88f83-b3b0-441e-98ae-705ee3c02a29" />
               <generalsInternal>
                 <generalization Id="d6ac8070-0cd6-4ffa-b06c-6931b7daee60" isSubstitutable="false">
-                  <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="debugDilate" />
+                  <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="==debugDilate" />
                   <elementDefinition Id="bb794b2d-d3a0-4e28-9203-c870109912b0" />
                 </generalization>
               </generalsInternal>

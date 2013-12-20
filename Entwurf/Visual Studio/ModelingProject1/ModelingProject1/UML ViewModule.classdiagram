@@ -174,38 +174,10 @@ zur id:
               <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
               <generalsInternal>
                 <generalization Id="e724fac2-69d9-430a-8fac-83197cf56662" isSubstitutable="false">
-                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="==QTGRaphicScene" />
                   <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
                 </generalization>
               </generalsInternal>
-              <targetEnds>
-                <association Id="d10e3dda-765a-4c0f-b0e6-0287dcda7768" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="8a730143-bba9-4973-9283-88c3327b8b0b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <lowerValueInternal>
-                          <literalString Id="4a9c09e8-d5ed-4f8a-8cc5-700db48026ec" name="Lower" value="*">
-                            <elementDefinition Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec" />
-                          </literalString>
-                        </lowerValueInternal>
-                        <upperValueInternal>
-                          <literalString Id="f3f00006-9ec1-4627-ba2b-e7bd4cff6be3" name="Upper" value="*">
-                            <elementDefinition Id="82ed5bfd-8195-40f5-bf6a-be46746291e5" />
-                          </literalString>
-                        </upperValueInternal>
-                        <elementDefinition Id="e527e507-47ae-4ca9-a647-6329f59e9683" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="4eed4dc2-ef89-41ff-9aff-6a887b0b80cb" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="c0263f0d-df85-4326-8425-2dfd42ec3fb6" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="20c61dd4-5970-4686-9327-50bc6836f1e5" />
-                </association>
-              </targetEnds>
               <ownedAttributesInternal>
                 <property Id="80248343-9028-4826-ab37-455e82976dfe" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
@@ -395,7 +367,7 @@ zur id:
               <elementDefinition Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed" />
               <targetEnds>
                 <association Id="f1c08a49-705c-4892-978c-c68587ec49b2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="QTGRaphicScene" />
+                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="==QTGRaphicScene" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="ca5abb3f-1e2e-4ee9-816e-27531aae423b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -499,25 +471,38 @@ zur id:
                   <elementDefinition Id="f99e6dd0-6cdc-4084-b72d-510ea77c4da2" />
                 </generalization>
               </generalsInternal>
+              <targetEnds>
+                <association Id="ea2c3ba8-de80-4339-927b-6a573c0ace2c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="19f72e5c-2443-4190-8f6b-31985371cd0d" LastKnownName="==SelectableHistogram" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1100c5bc-d51b-4b5c-9136-1569fac3b4c2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="817d86c2-8a84-4f57-9765-d64b5070ecd8" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="50091be8-98ce-418f-bcc1-3761a23cd887" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="793d9f87-a92c-43b8-a444-785ec4e64d33" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3b78feea-67e0-4096-8024-efcc82c0aea0" />
+                </association>
+              </targetEnds>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="==QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="157f16ac-648b-4931-86c7-2274c04f41d0" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="157f16ac-648b-4931-86c7-2274c04f41d0" name="==RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="67bd9717-9495-41c1-a866-c0bc662ceecc" />
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="a0dfbf97-4bd1-4e35-b99a-e5d2d288fd0f" name="Optional" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="a0dfbf97-4bd1-4e35-b99a-e5d2d288fd0f" name="==Optional" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02" />
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <package Id="329d419b-57f2-4681-92a5-6cd904284579" name="Otions">
+            <package Id="329d419b-57f2-4681-92a5-6cd904284579" name="Options">
               <ownedCommentsInternal>
                 <comment Id="0ab22a3f-695e-4edd-a539-aa3e0b9f234f">
                   <elementDefinition Id="b696a9cb-5db8-4948-9ae9-edfc4ca07e0f" />
@@ -994,6 +979,34 @@ Overlap Image</body>
                 <packageHasNamedElement>
                   <class Id="e41504f7-bf41-4534-8981-8e1528023c94" name="==SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c" />
+                    <targetEnds>
+                      <association Id="c7ef850d-079e-44a3-9872-ce87a8f83b00" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+                        <interfaceMoniker Id="3052398d-4ab6-43c7-901c-d0ef4114b5d9" LastKnownName="==SingleFilterFunction" />
+                        <relationshipOwnedElementsInternal>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="acd44c80-8637-4ba1-b488-7b3441743221" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                              <elementDefinition Id="c7abfca8-59ec-4efa-9f18-2283163d8d35" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                          <associationHasOwnedEnds>
+                            <memberEnd Id="7e952c00-05fc-4fac-bdae-9f7aa8589a95" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                              <lowerValueInternal>
+                                <literalString Id="1c25b7db-baad-46c1-9530-53039cc0575c" name="Lower" value="*">
+                                  <elementDefinition Id="6be2e3e8-9df7-41c6-bb07-f84488548294" />
+                                </literalString>
+                              </lowerValueInternal>
+                              <upperValueInternal>
+                                <literalString Id="d823c635-ea5d-4986-8c24-1655d2a9b5bd" name="Upper" value="*">
+                                  <elementDefinition Id="a7599fee-7f05-4d4c-97fd-02a3d710d434" />
+                                </literalString>
+                              </upperValueInternal>
+                              <elementDefinition Id="174b51b6-12b8-4100-932e-675c79e99b47" />
+                            </memberEnd>
+                          </associationHasOwnedEnds>
+                        </relationshipOwnedElementsInternal>
+                        <elementDefinition Id="eaf4410b-e16e-455b-86ec-42bf20819426" />
+                      </association>
+                    </targetEnds>
                     <ownedAttributesInternal>
                       <property Id="3ba7eebc-f24b-44e1-a63e-69f05729f863" name="Image&amp; image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="4a64caf6-c94f-439e-ade1-5e226001826c" />
@@ -1075,12 +1088,6 @@ Overlap Image</body>
                 <packageHasNamedElement>
                   <Interface Id="3052398d-4ab6-43c7-901c-d0ef4114b5d9" name="==SingleFilterFunction" isAbstract="false" isLeaf="false">
                     <elementDefinition Id="947b431d-6c2f-46ef-b7c7-681b74c78475" />
-                    <suppliersInternal>
-                      <dependency Id="2b3ba3be-218c-4399-8575-4262ac2bad44">
-                        <classMoniker Id="e41504f7-bf41-4534-8981-8e1528023c94" LastKnownName="==SingleImageFilterWidget" />
-                        <elementDefinition Id="0bfc2977-3780-43c4-8dce-4c608e70eb69" />
-                      </dependency>
-                    </suppliersInternal>
                     <ownedOperations>
                       <operation Id="883bf485-6875-43e8-9065-b004b450f4c1" name="filterImg" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="1a146972-17a4-42b9-b3c8-5a08c0bbd5f2" />
@@ -1288,7 +1295,7 @@ Overlap Image</body>
       </package>
     </logicalClassDesignerModelHasPackages>
     <packageHasNamedElement>
-      <class Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" name="QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="b5128ba0-1bfe-4477-a153-a5453ee5d546" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -1343,7 +1350,28 @@ Overlap Image</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="b578f8f8-45d7-4447-a74b-bbf30ef6e5ce" />
           </association>
+          <association Id="be7c48da-37bf-4441-826a-f024aeaad7d3" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="71359322-080c-4907-9423-550110f86138" LastKnownName="==ZoomableImage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="822d9247-b1af-4286-8a09-80db5a846b4b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5d366c3b-daa7-4e90-a81c-85637ad16d52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="601e95cf-e3e5-45e8-a0e0-ecfe950da832" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d384fd6-303b-494d-aa17-e507affbf106" />
+          </association>
         </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="01855cfc-de78-4627-ad44-fee48b177aaf" name="==QGraphicscene" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e42a255a-0e9d-43c4-8c5c-6a931d9aef65" />
       </class>
     </packageHasNamedElement>
   </packagedElements>

@@ -17,62 +17,10 @@
             isSubstitutable="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package_0018.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="20c61dd4-5970-4686-9327-50bc6836f1e5"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="QTGRaphicScene"
-              LastKnownLocation="Package_0018.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e527e507-47ae-4ca9-a647-6329f59e9683"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="8b80f2a3-aebf-4ae9-acc5-434c343b3fec"
-                      name="Lower"
-                      value="*" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="82ed5bfd-8195-40f5-bf6a-be46746291e5"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c0263f0d-df85-4326-8425-2dfd42ec3fb6"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="d2d838cf-4154-4d12-ad3c-5c959742b012"
@@ -492,7 +440,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -684,7 +632,7 @@
     <packageHasNamedElement>
       <class
         Id="17471453-9815-450c-ab98-8dc0c84db57e"
-        name="QTGRaphicScene"
+        name="==QTGRaphicScene"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -789,6 +737,43 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="5d384fd6-303b-494d-aa17-e507affbf106"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7"
+              LastKnownName="==ZoomableImage"
+              LastKnownLocation="Package_0018.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d366c3b-daa7-4e90-a81c-85637ad16d52"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -809,6 +794,45 @@
               LastKnownLocation="Package_0018.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="3b78feea-67e0-4096-8024-efcc82c0aea0"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="672b1e69-7088-4746-b5a1-493cc0c0f86f"
+              LastKnownName="==SelectableHistogram"
+              LastKnownLocation="Package1_0018.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="817d86c2-8a84-4f57-9765-d64b5070ecd8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="793d9f87-a92c-43b8-a444-785ec4e64d33"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -822,7 +846,7 @@
     <packageHasNamedElement>
       <class
         Id="67bd9717-9495-41c1-a866-c0bc662ceecc"
-        name="RawView"
+        name="==RawView"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -830,7 +854,7 @@
     <packageHasNamedElement>
       <class
         Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02"
-        name="Optional"
+        name="==Optional"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -838,7 +862,7 @@
     <packageHasNamedElement>
       <packageMoniker
         Id="cd8c8d84-29ac-40ed-9e13-06cb05a9053e"
-        LastKnownName="Otions"
+        LastKnownName="Options"
         LastKnownLocation="Package1_0018.uml" />
     </packageHasNamedElement>
     <packageHasNamedElement>

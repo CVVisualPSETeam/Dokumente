@@ -1,122 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.75, 8.5" name="UMLFilterOverlayView">
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.5, 10.25" name="UMLFilterOverlayView">
   <logicalClassDesignerModelMoniker Id="33d96eac-c47c-4ad7-abf6-6bb2ac44a5eb" />
   <nestedChildShapes>
-    <classShape Id="dd4b96e9-0b91-44ed-97c4-4006eff21a3f" absoluteBounds="7.5, 2.125, 2.5, 1.7031249602635699" hideQualifiedName="false" increaseHeight="0" customColor="Fuchsia">
-      <classMoniker Id="92433ad9-0a6e-4c48-8a40-3869df60bf6b" LastKnownName="FilterOverlayView" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="d244b8f3-9673-438a-8653-b8d58f529142" absoluteBounds="7.5150000000000006, 2.515, 2.4699999999999998, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="4b97bb2c-bd6b-4ea8-a270-a15c76e5a7d1" absoluteBounds="7.5150000000000006, 3.2066406026482586, 2.4699999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <interfaceShape Id="4d5f4fcf-e567-4cd3-bd13-0fbae8b0a648" isExpanded="false" absoluteBounds="8.125, 0.75, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="LightSkyBlue">
-      <interfaceMoniker Id="4e0aece0-fc64-4aca-9c1e-94eb15d8b7c0" LastKnownName="Filterview21" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="053d609c-3c25-4fd9-b386-c7d655d7e167" absoluteBounds="-12.375, -2.625, 0.125, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="c35f3c20-712e-49fe-841d-ba5ba7bb421d" absoluteBounds="-12.375, -2.625, 0.125, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </interfaceShape>
-    <realizationConnector edgePoints="[(8.75 : 2.125); (8.75 : 1.625); (8.875 : 1.625); (8.875 : 1.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
-      <interfaceRealizationMoniker Id="ac627ffc-1850-48b5-833a-07f6153016ef" />
-      <relativeChildShapes />
-      <nodes>
-        <classShapeMoniker Id="dd4b96e9-0b91-44ed-97c4-4006eff21a3f" />
-        <interfaceShapeMoniker Id="4d5f4fcf-e567-4cd3-bd13-0fbae8b0a648" />
-      </nodes>
-    </realizationConnector>
-    <classShape Id="39be10ac-573c-4d56-aa30-4476e18c8ce8" isExpanded="false" absoluteBounds="11, 5.125, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="Gray">
-      <classMoniker Id="c63a6b00-507a-472c-a8f2-7f5defbcf98f" LastKnownName="QTGRaphicScene11" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="7adc84dd-7a28-4216-abf9-bbf583e9b212" absoluteBounds="-9.375, -2.75, 0.125, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="17f05672-3a34-407b-9461-d15a2c45135a" absoluteBounds="-9.375, -2.75, 0.125, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(8.64843875 : 3.82812496026357); (8.64843875 : 5.4609375); (11 : 5.4609375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
-      <associationMoniker Id="e55ea9d0-6159-41a5-9fd9-0988d4c0e617" />
-      <relativeChildShapes />
-      <nodes>
-        <classShapeMoniker Id="dd4b96e9-0b91-44ed-97c4-4006eff21a3f" />
-        <classShapeMoniker Id="39be10ac-573c-4d56-aa30-4476e18c8ce8" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="3a0f6bd6-3601-448d-aa44-c6ca52965c3f" isExpanded="false" absoluteBounds="10, 7, 2, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
-      <classMoniker Id="0f533860-69bc-48d3-8b58-e263106e1cf2" LastKnownName="ZoomableImage11" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="951cf5c9-811b-45a9-a6d6-5d54570329e5" absoluteBounds="-9.375, -2.75, 0.125, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="ef1b9e01-d01c-495b-8fd2-698f515db752" absoluteBounds="-9.375, -2.75, 0.125, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(11.21875 : 7); (11.21875 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
-      <associationMoniker Id="3855c412-933d-4e0a-8c5d-7c07237e257d" />
-      <relativeChildShapes />
-      <nodes>
-        <classShapeMoniker Id="3a0f6bd6-3601-448d-aa44-c6ca52965c3f" />
-        <classShapeMoniker Id="39be10ac-573c-4d56-aa30-4476e18c8ce8" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="1c197189-4bbe-4fb5-a7fc-fea2a68c761a" isExpanded="false" absoluteBounds="4.75, 5.25, 2.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
-      <classMoniker Id="f7b7c9c5-9c88-430e-a8c3-88bcb8ea5955" LastKnownName="DualImageFilterWidget11" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="82e66a3b-fe2f-4ea1-8ba7-37285bd69411" absoluteBounds="-19.875, -2.875, 0.125, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="7825a7eb-1cbf-48b1-9eb5-b2462977a7e6" absoluteBounds="-19.875, -2.875, 0.125, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(7.9218725 : 3.82812496026357); (7.9218725 : 5.609375); (7.25 : 5.609375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
-      <associationMoniker Id="4e1e5d28-c63b-419f-87fd-f6203f667b8c" />
-      <relativeChildShapes />
-      <nodes>
-        <classShapeMoniker Id="dd4b96e9-0b91-44ed-97c4-4006eff21a3f" />
-        <classShapeMoniker Id="1c197189-4bbe-4fb5-a7fc-fea2a68c761a" />
-      </nodes>
-    </associationConnector>
-    <interfaceShape Id="2fb7beb6-aa61-4f31-9652-6bd96b916ea9" isExpanded="false" absoluteBounds="5.125, 6.625, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="128, 255, 128">
-      <interfaceMoniker Id="9326fe2e-e92f-4c7d-9b21-9f5561410e96" LastKnownName="DoubleFilterFunction11" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="a32ba921-0183-4ead-bc26-da153a706bca" absoluteBounds="-20.125, -4.125, 0.125, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="adf8268c-bf40-4210-9266-e05dfa55d302" absoluteBounds="-20.125, -4.125, 0.125, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </interfaceShape>
-    <dependencyConnector edgePoints="[(5.875 : 6.625); (5.875 : 5.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <dependencyMoniker Id="51b8b704-2ae7-4e9b-a8ac-3ccdd7310430" />
-      <relativeChildShapes />
-      <nodes>
-        <interfaceShapeMoniker Id="2fb7beb6-aa61-4f31-9652-6bd96b916ea9" />
-        <classShapeMoniker Id="1c197189-4bbe-4fb5-a7fc-fea2a68c761a" />
-      </nodes>
-    </dependencyConnector>
     <commentShape Id="a59c4e20-1930-4298-a1a3-a607181734d6" absoluteBounds="9.375, 4.5, 1.5, 0.75" customColor="251, 247, 200">
       <commentMoniker Id="42a7362c-2556-4d0e-9daa-0c20c2053b76" />
       <relativeChildShapes />
     </commentShape>
-    <classShape Id="4d3475c7-0230-45b2-a76f-6581470e639d" isExpanded="false" absoluteBounds="1, 2.25, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
-      <classMoniker Id="c5262132-42fb-4be8-8ca0-4717652ab38e" LastKnownName="==Collapsable" />
-      <nestedChildShapes>
-        <AttributeElementListCompartment Id="fcbd4acd-4fee-42af-983c-1a72abf70ef2" absoluteBounds="1.0150000000000001, 2.6399999999999997, 1.4700000000000002, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="346636f7-1381-4edc-8192-993288e9f6a9" absoluteBounds="1.0150000000000001, 3.3316406026482586, 1.4700000000000002, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="8d71c969-4463-4035-8edd-fe53578550c9" isExpanded="false" absoluteBounds="4.25, 2.125, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
+    <classShape Id="8d71c969-4463-4035-8edd-fe53578550c9" absoluteBounds="3.875, 6, 1.875, 2.5039061854283009" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
       <classMoniker Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" LastKnownName="==Accordion" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="9e10ef0d-868d-4ded-8d19-cf3b47ab8850" absoluteBounds="4.2650000000000006, 2.5149999999999997, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="7d9647e1-c1fa-425c-a8a2-686b9720e5bb" absoluteBounds="4.2650000000000006, 3.046484357615312, 1.4700000000000002, 1.4824218278129893" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="9e10ef0d-868d-4ded-8d19-cf3b47ab8850" absoluteBounds="3.89, 6.39, 1.8450000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7d9647e1-c1fa-425c-a8a2-686b9720e5bb" absoluteBounds="3.89, 6.921484357615312, 1.8450000000000002, 1.4824218278129893" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4.25 : 2.4375); (2.5 : 2.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
-      <associationMoniker Id="2c794c5d-2599-4ced-841b-69da9a69b4a0" />
+    <classShape Id="59d25f06-5867-4695-ba08-934f4089af41" absoluteBounds="7.25, 6.125, 3, 2.0234374503294621" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
+      <classMoniker Id="4e55b24d-c83f-4788-87f4-e1b8aa8d92ac" LastKnownName="==DualImageFilterWidget" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3042cb20-ab01-498c-bde6-6255f68a2f3d" absoluteBounds="7.265, 6.515, 2.9699999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4a40c94d-ee4f-4a69-b897-1c1d81e254ac" absoluteBounds="7.265, 7.3667968476812042, 2.9699999999999998, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="726c40eb-59ec-4ee0-9ab5-3f7e8d6ebe18" absoluteBounds="11.75, 8, 2.5, 2.0234374503294621" hideQualifiedName="false" increaseHeight="0" customColor="255, 128, 0">
+      <classMoniker Id="93d9ca5a-3af8-4bb2-abf3-e8b5b5b37a72" LastKnownName="==ZoomableImage" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="934f2ae5-d60e-4b56-8182-44bd08f2e9c0" absoluteBounds="11.765, 8.39, 2.4699999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c7deeda5-bfc9-4537-918e-378d6b356809" absoluteBounds="11.765, 9.2417968476812042, 2.4699999999999998, 0.68164060264825821" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c3a9fde-3065-4962-be21-b76bf8954457" absoluteBounds="11.875, 6.125, 2.375, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="Gray">
+      <classMoniker Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" LastKnownName="==QTGRaphicScene" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="6acdb419-4004-4ec2-932d-34a465281391" absoluteBounds="11.89, 6.515, 2.3449999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4166702d-db69-44f6-b8eb-57f885af1732" absoluteBounds="11.89, 6.72617186754942, 2.3449999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <generalizationConnector edgePoints="[(13 : 8); (13 : 7.40234373509884); (13.0625 : 7.40234373509884); (13.0625 : 7.02734373509884)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="255, 128, 0">
+      <generalizationMoniker Id="f13ebac7-bc61-4031-b086-9a0ee2b2389f" />
       <relativeChildShapes />
       <nodes>
-        <classShapeMoniker Id="8d71c969-4463-4035-8edd-fe53578550c9" />
-        <classShapeMoniker Id="4d3475c7-0230-45b2-a76f-6581470e639d" />
+        <classShapeMoniker Id="726c40eb-59ec-4ee0-9ab5-3f7e8d6ebe18" />
+        <classShapeMoniker Id="8c3a9fde-3065-4962-be21-b76bf8954457" />
       </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(7.5 : 2.375); (5.75 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="1">
-      <associationMoniker Id="dda62cc6-2fb0-46ab-890c-021d963a64e2" />
+    </generalizationConnector>
+    <associationConnector edgePoints="[(13.71875 : 7.02734373509884); (13.71875 : 8)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="255, 128, 0" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="74835891-8cc3-4f90-b0db-0fb1185a8ede" />
       <relativeChildShapes />
       <nodes>
-        <classShapeMoniker Id="dd4b96e9-0b91-44ed-97c4-4006eff21a3f" />
+        <classShapeMoniker Id="8c3a9fde-3065-4962-be21-b76bf8954457" />
+        <classShapeMoniker Id="726c40eb-59ec-4ee0-9ab5-3f7e8d6ebe18" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" absoluteBounds="8, 2.75, 2.25, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="Fuchsia">
+      <classMoniker Id="df26e4a8-7d3c-487e-8ef4-98b7a86f6cc4" LastKnownName="==OverlayFilterView" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="f13de9d3-af6a-4f46-8995-6f627b9c0bd0" absoluteBounds="8.015, 3.14, 2.2199999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="be3d5722-312a-49f9-a335-e0201fac346e" absoluteBounds="8.015, 3.3511718675494193, 2.2199999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8 : 3.36132811258237); (4.8125 : 3.36132811258237); (4.8125 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="2024e300-852a-4d67-840a-a149d4366bf6" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
         <classShapeMoniker Id="8d71c969-4463-4035-8edd-fe53578550c9" />
       </nodes>
     </associationConnector>
+    <associationConnector edgePoints="[(8.65625 : 3.97265622516473); (8.65625 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="186f9680-68ab-4097-980b-9846d381daa8" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
+        <classShapeMoniker Id="59d25f06-5867-4695-ba08-934f4089af41" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.25 : 3.36132811258237); (13.0625 : 3.36132811258237); (13.0625 : 6.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+      <associationMoniker Id="d8b48f7b-cd21-48eb-ab1b-813c65b50b8f" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="13.179253470152617, 5.0282569751143456, 0.125, 0.1341145783662796" shapeFieldName="TargetRoleName" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
+        <classShapeMoniker Id="8c3a9fde-3065-4962-be21-b76bf8954457" />
+      </nodes>
+    </associationConnector>
+    <interfaceShape Id="932de2b7-c34a-424d-a8f9-efbd82fba210" absoluteBounds="8.125, 0.75, 2.125, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="DeepSkyBlue">
+      <interfaceMoniker Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" LastKnownName="==Filterview" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="1d6026d9-5bfb-4d33-96bd-10a3fe39a293" absoluteBounds="8.14, 1.1400000000000001, 2.0949999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="07a3d8a8-c1d6-4346-a35a-e55ee3cad440" absoluteBounds="8.14, 1.3511718675494193, 2.0949999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(9.125 : 2.75); (9.125 : 2.34765622516473); (9.1875 : 2.34765622516473); (9.1875 : 1.97265622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="7b5fee8f-c34f-483c-9db9-dcfca77cf45c" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
+        <interfaceShapeMoniker Id="932de2b7-c34a-424d-a8f9-efbd82fba210" />
+      </nodes>
+    </realizationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>
