@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -161,13 +161,9 @@ project selected points from focussed image to other image</body>
     </comment>
     <comment
       Id="fedb185a-6a91-4667-946c-a761062a1916">
-      <body>MatchCallTab(matchCall:MatchCall)
-sues defaultView
-</body>
-    </comment>
-    <comment
-      Id="0567760f-64b4-49c1-9a56-27e107e83828">
-      <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
+      <body>MatchCallTab(matchCall:MatchCall, viewController: ViewController) 
+uses default View
+ from the settings</body>
     </comment>
     <comment
       Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312">
@@ -179,18 +175,13 @@ sues defaultView
       <body>???</body>
     </comment>
     <comment
-      Id="62bc6995-ba3a-4357-a697-1f0dce3bd5e3">
-      <body>pdf or html file
-</body>
-    </comment>
-    <comment
-      Id="5105a396-7fab-46e9-bd6a-bad5ef263be4">
-      <body>use Help Menu</body>
-    </comment>
-    <comment
       Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374">
       <body>the page name here is equal to the name of the view, i.e. its ID
 </body>
+    </comment>
+    <comment
+      Id="5075c893-4d2a-4bcc-a60a-65f4ff0046ad">
+      <body>getId(): returns ID of call</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -1711,82 +1702,6 @@ sues defaultView
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="0bd4919a-e1cf-4047-a695-b3be3455028a"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
-              LastKnownName="==QComboBox"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="217275e4-a44a-4eaf-b60f-b57c5f9ff08a"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a08d1218-fbdf-4e33-a08f-81702bb1011d"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="ac916f90-3112-40e0-ab29-ef5e8a8b43bb"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="53837842-37ec-4013-80e9-4758de9a0719"
-              LastKnownName="==HelpButton"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e413f90b-c0fa-42b4-9eae-a386133c5ce7"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="7d3e409b-75ca-4426-9eed-20b004a8204a"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de"
@@ -5080,6 +4995,117 @@ sues defaultView
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="e606ecad-2e3d-496d-b081-28da6844a9cf"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53837842-37ec-4013-80e9-4758de9a0719"
+              LastKnownName="==HelpButton"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb299aeb-36ba-42d0-9b71-a71650c51f63"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3e260f09-e551-437f-b7d2-e99a56ee7ef0"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d3bbb077-d919-4d71-bb22-e70fd5e1adbc"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
+              LastKnownName="==QComboBox"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78b1a4bb-197e-4414-b71d-1a6129ab77c9"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c49ab6f4-422a-45ea-ac0d-6c76d7307b6b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aeecab4a-9af8-46d1-82af-f3b1bca7ca5d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="494b007a-4297-405f-806d-95f26f8f955a"
+              LastKnownName="==ViewController"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bebefe9d-758c-45d5-8323-cfed5721ad14"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e90c2963-cf69-4f2b-8169-9fa9cf39c31d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -5101,25 +5127,6 @@ sues defaultView
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="f1930a3a-e2fb-4d6a-9ca9-65e6cc3a1b3d"
-            name="static defaultFilterViewID"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                LastKnownName="QString"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -5134,23 +5141,30 @@ sues defaultView
               <operationHasOwnedParameters>
                 <parameter
                   Id="5ccc1e48-4662-42f4-999f-837de2e134a6"
-                  name="FilterCall"
+                  name="filterCall"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5fd74114-17e0-4d80-a0e9-651212113b78"
+                      LastKnownName="FilterCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="a79da97b-86fd-446d-89b0-6d7f45908ca3"
-                  name="CallWindow"
+                  name="viewController"
                   direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="36337fb8-2881-416a-9517-7d4d1b093184"
-                  name="WindowController"
-                  direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7e34c639-1b07-474e-a4b4-260252e04b43"
+                      LastKnownName="viewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -5170,17 +5184,30 @@ sues defaultView
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e"
+                    <undefinedTypeMoniker
+                      Id="5fd74114-17e0-4d80-a0e9-651212113b78"
                       LastKnownName="FilterCall"
-                      LastKnownLocation="Package_2352.uml" />
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338"
-                  name="filterViewID"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7f0ad073-a470-4cac-bb35-7a6dff350d0f"
+                  name="filterViewId"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -5219,7 +5246,7 @@ sues defaultView
               <operationHasOwnedParameters>
                 <parameter
                   Id="6c5c3c20-5afc-463d-a526-f3c4a1e9f1ff"
-                  name="ID"
+                  name="id"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -5241,8 +5268,31 @@ sues defaultView
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="4239f60d-022a-4628-8e62-4ac0899fe8e5"
-            name="///slot: defaultFilterViewChanged"
+            Id="9dfeb086-bd6d-4fdf-a151-c3215bdf7732"
+            name="getId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a94397ab-bfba-4c54-aaaf-1057fb5c02e6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8d379353-5b8e-46d9-a125-9cb3b1b51cc8"
+            name="///slot: clicked"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -5343,6 +5393,117 @@ sues defaultView
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="95db0452-9298-441f-98b6-5bf4c52a37e2"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53837842-37ec-4013-80e9-4758de9a0719"
+              LastKnownName="==HelpButton"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a20f66d6-d104-444f-b376-1d4a0b467bbe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6acb19a4-a23c-49b5-8cc3-4c0ebd48164a"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c448947f-e03f-40ea-88f3-5c5c660e9bf6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="da9ef71b-c376-46fb-9af8-01e06efbd64c"
+              LastKnownName="==QComboBox"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4b6cb0d-b8b3-4a0f-8892-1cd39f282236"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5161475b-025e-4e0a-bc1c-00bce32419bd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d0cd936d-1451-4e72-aa2f-7be7a18a185f"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="494b007a-4297-405f-806d-95f26f8f955a"
+              LastKnownName="==ViewController"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e0ca7b0-8f20-47a9-ab37-bff4ac26dfb5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3957460b-fe1c-43ec-a8f6-f75c317b4570"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -5364,25 +5525,6 @@ sues defaultView
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="26c6e417-cf3e-45b1-86c8-f8bb42f892a9"
-            name="static defaultMatchViewID"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                LastKnownName="QString"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -5397,23 +5539,30 @@ sues defaultView
               <operationHasOwnedParameters>
                 <parameter
                   Id="8abe205f-cc26-4656-b2a9-898a5e4f4a58"
-                  name="MatchCall"
+                  name="matchCall"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="c76c307f-6988-4ed1-9f22-016202f64b04"
+                      LastKnownName="MatchCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8"
-                  name="CallWindow"
+                  name="viewController"
                   direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a597ec97-d953-4bdf-8866-a025c3cab162"
-                  name="WindowController"
-                  direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -5433,17 +5582,30 @@ sues defaultView
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a"
+                    <undefinedTypeMoniker
+                      Id="c76c307f-6988-4ed1-9f22-016202f64b04"
                       LastKnownName="MatchCall"
-                      LastKnownLocation="Package_2352.uml" />
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="ab52b51d-2eb2-4780-bbde-8024cae3383e"
-                  name="matchViewID"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9821606-f1fd-4e2f-9289-6e569886b43f"
+                  name="matchViewId"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -5453,24 +5615,6 @@ sues defaultView
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="03304257-5794-477c-9c09-fe84e195815e"
-            name="MatchCallTab"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="71bc99f4-b909-4e6b-9663-338718381921"
-                  name="MatchCall"
-                  direction="In"
-                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -5500,7 +5644,7 @@ sues defaultView
               <operationHasOwnedParameters>
                 <parameter
                   Id="900b6a05-3aa8-466b-a6ed-34150e42a048"
-                  name="ID"
+                  name="id"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -5522,8 +5666,31 @@ sues defaultView
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="bd2c0ee0-0b6c-4dc5-b5f1-77e52b028b48"
-            name="///slot:defaultMatchViewChanged"
+            Id="366ac647-4e75-465e-bd12-4c70a7ed2583"
+            name="getId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59f0112f-c818-4e9f-9e55-e54f31404916"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8eb5f85d-d9b1-4a7b-b987-2d90802ce148"
+            name="///slot: clicked"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -25638,6 +25805,26 @@ sues defaultView
       <undefinedType
         Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9"
         name="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5fd74114-17e0-4d80-a0e9-651212113b78"
+        name="FilterCall" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9ce171f7-434e-4c82-acb4-43cd757523b4"
+        name="CallWindow" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7e34c639-1b07-474e-a4b4-260252e04b43"
+        name="viewController" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c76c307f-6988-4ed1-9f22-016202f64b04"
+        name="MatchCall" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
