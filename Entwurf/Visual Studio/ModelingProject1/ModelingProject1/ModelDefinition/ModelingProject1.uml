@@ -3033,6 +3033,31 @@ sues defaultView
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="969b37d3-e239-43af-95aa-4d966687179e"
+            name="showCallTab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a64c02d-11e9-458e-af90-24367bf350b9"
+                  name="tabId"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -6366,7 +6391,7 @@ sues defaultView
     <packageHasNamedElement>
       <Interface
         Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-        name="==Filterview"
+        name="==FilterView"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -6427,7 +6452,7 @@ sues defaultView
             Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="==Filterview"
+              LastKnownName="==FilterView"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -7477,7 +7502,7 @@ sues defaultView
             Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="==Filterview"
+              LastKnownName="==FilterView"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -7626,7 +7651,7 @@ sues defaultView
             Id="8246392d-9c78-446b-aa19-994e92c810cb">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="==Filterview"
+              LastKnownName="==FilterView"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -14156,7 +14181,7 @@ sues defaultView
             Id="754801ac-a6d7-4da6-9b6e-f9e39510d82f">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="==Filterview"
+              LastKnownName="==FilterView"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>
@@ -22922,7 +22947,7 @@ sues defaultView
             Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="==Filterview"
+              LastKnownName="==FilterView"
               LastKnownLocation="ModelingProject1.uml" />
           </interfaceRealization>
         </suppliersInternal>

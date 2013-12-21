@@ -656,6 +656,19 @@ sues defaultView
           <operation Id="1b9f778f-67f2-4905-9e55-f22794428dc2" name="exec" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="3a2cda02-c2fc-4737-9106-61a2e15fc9d7" />
           </operation>
+          <operation Id="be1ff0f5-2999-4c17-b0e4-79773c124779" name="showCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="969b37d3-e239-43af-95aa-4d966687179e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="284e0d7d-1f49-4459-8fc8-1d6768d41c2d" name="tabId" direction="In" isUnique="false">
+                  <elementDefinition Id="9a64c02d-11e9-458e-af90-24367bf350b9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1070,7 +1083,7 @@ sues defaultView
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" name="==Filterview" isAbstract="false" isLeaf="false">
+      <Interface Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" name="==FilterView" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="594cd7eb-ac0c-4397-9852-06310e5222b3" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -1100,7 +1113,7 @@ sues defaultView
         <elementDefinition Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5" />
         <suppliersInternal>
           <interfaceRealization Id="35189a80-cd54-40b5-88c4-f61bb24edc97">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==FilterView" />
             <elementDefinition Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57" />
           </interfaceRealization>
         </suppliersInternal>
@@ -1138,7 +1151,7 @@ sues defaultView
         <elementDefinition Id="34fa9129-59da-4efc-9519-5e0799711879" />
         <suppliersInternal>
           <interfaceRealization Id="e852c35a-7c2b-49eb-89ff-fec47f391f41">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==FilterView" />
             <elementDefinition Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1" />
           </interfaceRealization>
         </suppliersInternal>
@@ -1157,7 +1170,7 @@ sues defaultView
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
           <interfaceRealization Id="68adf08a-ce9d-4d9b-8726-e269a3e54bf5">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==FilterView" />
             <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
           </interfaceRealization>
         </suppliersInternal>
@@ -1390,7 +1403,7 @@ sues defaultView
         <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
         <suppliersInternal>
           <interfaceRealization Id="6ef8d7a0-ceeb-4a29-a97f-d3eb9b02ca8b">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="==FilterView" />
             <elementDefinition Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced" />
           </interfaceRealization>
         </suppliersInternal>
