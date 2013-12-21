@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="e061f2bf-b49e-4f5d-b9ff-a22b6d300182">
-      <profileInstance Id="b0aa6823-5541-45da-a4dd-02bd9e69b76c" name="TextTemplateBindings">
-        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
-      </profileInstance>
-      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
@@ -494,14 +486,14 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="11102c66-3adf-4a80-a043-c20d2cf83a0f" name="updateElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="11102c66-3adf-4a80-a043-c20d2cf83a0f" name="addNewElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="28307e28-4e5d-4c5f-a3ad-fd013b84874e" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="fcab53b4-d797-4004-8bc6-cbc0d28df4e4" name="newElements" direction="In" isUnique="false">
-                  <elementDefinition Id="5fc039bf-f930-45a2-aeee-eaeb1926da27" />
+                <parameter Id="b165ee09-b332-4eb5-a581-7d4d03fa2a59" name="element" direction="In" isUnique="false">
+                  <elementDefinition Id="18830b39-ba0a-4538-9be2-e39489adf833" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="f00e2244-ce55-42c6-810a-765dd3d56012" LastKnownName="std::vector&lt;ColumnType&gt;" />
+                    <referencedTypeMoniker Id="d80ab362-e4a5-449c-a03e-a11540cbd8c1" LastKnownName="ColumnType" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -514,13 +506,13 @@
                 <parameter Id="16ae7164-0f22-4f90-b34e-614997557597" direction="Return" isUnique="false">
                   <elementDefinition Id="44912ab5-2b95-4aff-af92-5ac46abba7e6" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="3230b24e-32df-49e5-8b03-fc71df3bedda" LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;" />
+                    <referencedTypeMoniker Id="e35b1002-3528-43e1-90e6-a8f22c7820bc" LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="b7ee40ed-762a-41d7-a785-4b0b8061fae7" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="bc597504-56e9-470d-942a-41eca3810c56" />
+                <parameter Id="e7e5b6d7-3006-421e-8b27-ad48792f7a76" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
                   </type_NamedElement>
@@ -552,6 +544,19 @@
                   <elementDefinition Id="d2a7f299-2ef6-41a8-8b4d-e6c8751a2de7" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="a3a24d39-2806-4c38-bd1d-9d4b33509b7c" LastKnownName="std::vector&lt;QString&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a2ceae05-1b59-4f91-81fe-0c2800bbe7ad" name="updateElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b44d0ee-d874-4713-8e4e-7a36af44a9cb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="adfdfa83-8132-41b2-81b9-7eb9b673c564" name="newElements" direction="In" isUnique="false">
+                  <elementDefinition Id="b91cbe0d-1314-4cda-8504-f67b8a021fc6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3ed5a17f-97ff-4e1b-b1ad-5e552f99554a" LastKnownName="std::vector&lt;ColumnType&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -616,16 +621,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="f00e2244-ce55-42c6-810a-765dd3d56012" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
-        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="3230b24e-32df-49e5-8b03-fc71df3bedda" name="std::vector&lt;ElementGroup&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;ColumnType&gt;">
-        <elementDefinition Id="7ea39b18-b94c-4e80-baa6-ab07096d767b" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="9f188eb1-82ed-4b90-9c95-2ba54e5267a6" name="..." isAbstract="false" isLeaf="false" cachedFullName="...">
         <elementDefinition Id="0e7e7ed0-7ddd-4d47-9eb1-dc1edc70c3a0" />
       </referencedType>
@@ -660,6 +655,21 @@
         <elementDefinition Id="79ab773e-d84b-46a8-b1b9-4e999e9345f3" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d80ab362-e4a5-449c-a03e-a11540cbd8c1" name="ColumnType" isAbstract="false" isLeaf="false" cachedFullName="ColumnType">
+        <elementDefinition Id="b3f4589d-9347-4705-a008-70f6213d7570" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3ed5a17f-97ff-4e1b-b1ad-5e552f99554a" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
+        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e35b1002-3528-43e1-90e6-a8f22c7820bc" name="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;">
+        <elementDefinition Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
@@ -675,6 +685,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e061f2bf-b49e-4f5d-b9ff-a22b6d300182">
+        <profileInstance Id="b0aa6823-5541-45da-a4dd-02bd9e69b76c" name="TextTemplateBindings">
+          <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+        </profileInstance>
+        <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

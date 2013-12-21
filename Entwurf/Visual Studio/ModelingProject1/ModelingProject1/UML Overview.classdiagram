@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -1259,14 +1259,14 @@ sues defaultView
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="2e44605c-6e1a-446f-9a7a-326e0d6201a7" name="updateElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="2e44605c-6e1a-446f-9a7a-326e0d6201a7" name="addNewElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="28307e28-4e5d-4c5f-a3ad-fd013b84874e" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="feb3248b-e96c-4bf6-98e3-92336133d5b1" name="newElements" direction="In" isUnique="false">
-                  <elementDefinition Id="5fc039bf-f930-45a2-aeee-eaeb1926da27" />
+                <parameter Id="0bb6b223-c8a0-48f0-9d9a-df6142488cf6" name="element" direction="In" isUnique="false">
+                  <elementDefinition Id="18830b39-ba0a-4538-9be2-e39489adf833" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="3134d39f-5cee-4b55-add2-3a84b35303ff" LastKnownName="std::vector&lt;ColumnType&gt;" />
+                    <referencedTypeMoniker Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" LastKnownName="ColumnType" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1279,13 +1279,13 @@ sues defaultView
                 <parameter Id="f2b9da34-b3ce-484e-9f3c-4a0c23e349db" direction="Return" isUnique="false">
                   <elementDefinition Id="44912ab5-2b95-4aff-af92-5ac46abba7e6" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="3179c270-ec26-4b8f-a5ad-0e87f2dedc2d" LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;" />
+                    <referencedTypeMoniker Id="57a962f6-f8c7-4379-97af-1efdbe40f060" LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="748bbf96-d277-4f12-880e-29eb32e4c110" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="bc597504-56e9-470d-942a-41eca3810c56" />
+                <parameter Id="6695951e-b7bf-4e67-81d4-e465830d274c" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
@@ -1317,6 +1317,19 @@ sues defaultView
                   <elementDefinition Id="d2a7f299-2ef6-41a8-8b4d-e6c8751a2de7" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="a5ac0d79-7b87-444e-860a-fa5ae16a1851" LastKnownName="std::vector&lt;QString&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="65a3f157-b5ca-4d4c-8a1f-369e8ee86548" name="updateElements" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b44d0ee-d874-4713-8e4e-7a36af44a9cb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d2f920c3-4c3e-4ed8-b234-9562737dc3a0" name="newElements" direction="In" isUnique="false">
+                  <elementDefinition Id="b91cbe0d-1314-4cda-8504-f67b8a021fc6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="abfc148a-aaea-44c8-84ee-c621ef02102c" LastKnownName="std::vector&lt;ColumnType&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1896,16 +1909,6 @@ sues defaultView
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="3134d39f-5cee-4b55-add2-3a84b35303ff" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
-        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="3179c270-ec26-4b8f-a5ad-0e87f2dedc2d" name="std::vector&lt;ElementGroup&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;ColumnType&gt;">
-        <elementDefinition Id="7ea39b18-b94c-4e80-baa6-ab07096d767b" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="c23f8fdc-b9fc-46bb-a8db-15481a64d463" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
         <elementDefinition Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1" />
       </referencedType>
@@ -2069,6 +2072,21 @@ sues defaultView
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" name="ColumnType" isAbstract="false" isLeaf="false" cachedFullName="ColumnType">
+        <elementDefinition Id="b3f4589d-9347-4705-a008-70f6213d7570" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="abfc148a-aaea-44c8-84ee-c621ef02102c" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
+        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="57a962f6-f8c7-4379-97af-1efdbe40f060" name="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;">
+        <elementDefinition Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="9ed153e1-5642-406a-bb57-5c20848259a3" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

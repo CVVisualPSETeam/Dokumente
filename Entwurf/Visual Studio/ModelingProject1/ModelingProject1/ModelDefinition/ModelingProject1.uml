@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -22191,7 +22191,7 @@ sues defaultView
         <ownedOperationsInternal>
           <operation
             Id="28307e28-4e5d-4c5f-a3ad-fd013b84874e"
-            name="updateElements"
+            name="addNewElement"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22200,14 +22200,14 @@ sues defaultView
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5fc039bf-f930-45a2-aeee-eaeb1926da27"
-                  name="newElements"
+                  Id="18830b39-ba0a-4538-9be2-e39489adf833"
+                  name="element"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa"
-                      LastKnownName="std::vector&lt;ColumnType&gt;"
+                      Id="b3f4589d-9347-4705-a008-70f6213d7570"
+                      LastKnownName="ColumnType"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -22230,15 +22230,15 @@ sues defaultView
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="7ea39b18-b94c-4e80-baa6-ab07096d767b"
-                      LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;"
+                      Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9"
+                      LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="bc597504-56e9-470d-942a-41eca3810c56"
+                  Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831"
                   name="query"
                   direction="In"
                   isUnique="false">
@@ -22298,6 +22298,31 @@ sues defaultView
                     <undefinedTypeMoniker
                       Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf"
                       LastKnownName="std::vector&lt;QString&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9b44d0ee-d874-4713-8e4e-7a36af44a9cb"
+            name="updateElements"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b91cbe0d-1314-4cda-8504-f67b8a021fc6"
+                  name="newElements"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa"
+                      LastKnownName="std::vector&lt;ColumnType&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -25551,6 +25576,16 @@ sues defaultView
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b3f4589d-9347-4705-a008-70f6213d7570"
+        name="ColumnType" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9"
+        name="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
