@@ -1257,6 +1257,12 @@ sues defaultView
               <referencedTypeMoniker Id="a5ac0d79-7b87-444e-860a-fa5ae16a1851" LastKnownName="std::vector&lt;QString&gt;" />
             </type_NamedElement>
           </property>
+          <property Id="1b708102-55ba-492e-9c3b-e68fa2bddf8e" name="lastQuery" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a71869b-e116-4c71-9131-d5f48125576f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="2e44605c-6e1a-446f-9a7a-326e0d6201a7" name="addNewElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1272,7 +1278,7 @@ sues defaultView
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="396fce9d-186f-4f48-96ed-777d62c2da43" name="parse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="396fce9d-186f-4f48-96ed-777d62c2da43" name="query" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fa0a4c85-b519-4d14-8198-b164d2dc1d3d" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -1284,8 +1290,8 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="6695951e-b7bf-4e67-81d4-e465830d274c" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831" />
+                <parameter Id="840e2eb9-6f09-414c-81ce-9b7bafb8e0a6" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="2a465bbc-4918-42fc-8afa-f00cc6abcece" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
@@ -1334,6 +1340,9 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="a4d1efb2-d984-4222-a594-01d86a199eea" name="reexecuteLastQuery" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fdcd78cc-f9b7-4b32-89ba-d0eb61a982fd" />
           </operation>
         </ownedOperationsInternal>
       </class>

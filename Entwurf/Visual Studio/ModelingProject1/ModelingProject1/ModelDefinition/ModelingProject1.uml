@@ -22187,6 +22187,25 @@ sues defaultView
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="3a71869b-e116-4c71-9131-d5f48125576f"
+            name="lastQuery"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -22216,7 +22235,7 @@ sues defaultView
           </operation>
           <operation
             Id="fa0a4c85-b519-4d14-8198-b164d2dc1d3d"
-            name="parse"
+            name="query"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -22238,7 +22257,7 @@ sues defaultView
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831"
+                  Id="2a465bbc-4918-42fc-8afa-f00cc6abcece"
                   name="query"
                   direction="In"
                   isUnique="false">
@@ -22329,6 +22348,14 @@ sues defaultView
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="fdcd78cc-f9b7-4b32-89ba-d0eb61a982fd"
+            name="reexecuteLastQuery"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

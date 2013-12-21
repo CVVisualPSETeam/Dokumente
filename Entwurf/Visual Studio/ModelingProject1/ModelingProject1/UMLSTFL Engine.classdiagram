@@ -484,6 +484,12 @@
               <referencedTypeMoniker Id="a3a24d39-2806-4c38-bd1d-9d4b33509b7c" LastKnownName="std::vector&lt;QString&gt;" />
             </type_NamedElement>
           </property>
+          <property Id="1a514040-fd3d-4eb1-99b4-0afbc162b68c" name="lastQuery" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a71869b-e116-4c71-9131-d5f48125576f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="11102c66-3adf-4a80-a043-c20d2cf83a0f" name="addNewElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -499,7 +505,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="95cc0a86-2a86-4771-a110-fe11f931de42" name="parse" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="95cc0a86-2a86-4771-a110-fe11f931de42" name="query" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fa0a4c85-b519-4d14-8198-b164d2dc1d3d" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -511,8 +517,8 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e7e5b6d7-3006-421e-8b27-ad48792f7a76" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="87b1ce2f-9e7b-4a59-9ac8-0bbc5e2e7831" />
+                <parameter Id="43a12fc9-82a2-4c3c-a14c-4ff1cddf961d" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="2a465bbc-4918-42fc-8afa-f00cc6abcece" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
                   </type_NamedElement>
@@ -561,6 +567,9 @@
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="0a03d4ed-a741-4802-b8fd-4ff99f8cb682" name="reexecuteLastQuery" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fdcd78cc-f9b7-4b32-89ba-d0eb61a982fd" />
           </operation>
         </ownedOperationsInternal>
       </class>
