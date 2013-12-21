@@ -1,5 +1,5 @@
 
- * **DEADLINE:** 13.12, 12:00:00
+ * **DEADLINE:** 23.12, 12:00:00
 
  * Johannes: Sequenzdiagram
  * Florian: Codingstandards, CMake, Struktur, DataController
