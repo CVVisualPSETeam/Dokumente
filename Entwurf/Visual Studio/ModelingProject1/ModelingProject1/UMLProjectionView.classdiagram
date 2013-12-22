@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b20edc69-98d9-4b68-93a5-7612192ba610" name="UMLProjectionView" linkedPackageId="0ec927b0-4f76-4107-93ac-ed75646c1e41" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b20edc69-98d9-4b68-93a5-7612192ba610" name="UMLProjectionView" linkedPackageId="0ec927b0-4f76-4107-93ac-ed75646c1e41" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="3e3ab7c4-83e9-437c-8fa2-81cffd9a2517">
       <elementDefinition Id="cf6c72e3-a5ce-424c-ba6e-b2a01eec4d3d" />
@@ -7,14 +7,6 @@
 project selected points from focussed image to other image</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="b8f41589-7943-43e1-8686-04784282e31b">
-      <profileInstance Id="0a01eb25-81b7-4572-ae0e-54a384903065" name="TextTemplateBindings">
-        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
-      </profileInstance>
-      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="4dbae27c-42cc-433f-a4ab-84b4e4889893" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
@@ -27,7 +19,7 @@ project selected points from focussed image to other image</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" name="==SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" name="SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
         <ownedAttributesInternal>
           <property Id="28d4ca1b-2107-4410-b745-b01bd5329777" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -77,7 +69,7 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7362eb8c-cb89-4a4f-a5df-6578c726e08d" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7362eb8c-cb89-4a4f-a5df-6578c726e08d" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="79db02c5-1cd4-4eee-bb7b-04608af7bc30" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -220,7 +212,7 @@ project selected points from focussed image to other image</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6fe83525-f095-475a-93c7-179b61de6f65" name="==GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6fe83525-f095-475a-93c7-179b61de6f65" name="GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18" />
         <ownedAttributesInternal>
           <property Id="f77455c0-e8b2-49d8-b5f9-1d9e3d76d168" name="polygone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -279,11 +271,11 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fcd984bc-2098-410b-8043-72b76b4e98c3" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="fcd984bc-2098-410b-8043-72b76b4e98c3" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="f002b980-b284-4b33-bf71-e46aa7f93d23" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6fe83525-f095-475a-93c7-179b61de6f65" LastKnownName="==GraphicsScenePointGroup" />
+            <classMoniker Id="6fe83525-f095-475a-93c7-179b61de6f65" LastKnownName="GraphicsScenePointGroup" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="5d0e0373-8fb5-4d35-904f-fb989a91f45e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -309,7 +301,7 @@ project selected points from focussed image to other image</body>
             <elementDefinition Id="d1030154-a6ca-400e-b350-29ee684b558e" />
           </association>
           <association Id="461e8dc8-0f42-4e4c-b691-78db3347a6db" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="1ab5b54a-cefb-4222-9bed-61cd7b19cc37" LastKnownName="==ZoomableImage" />
+            <classMoniker Id="1ab5b54a-cefb-4222-9bed-61cd7b19cc37" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ebb893f6-0d75-49ca-bdc7-1f831e3b8c91" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -328,11 +320,11 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1ab5b54a-cefb-4222-9bed-61cd7b19cc37" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="1ab5b54a-cefb-4222-9bed-61cd7b19cc37" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <generalsInternal>
           <generalization Id="20f1a541-8a76-46e0-ab2c-c5a672396324" isSubstitutable="false">
-            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="???????==QTGRaphicScene" />
             <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
           </generalization>
         </generalsInternal>
@@ -378,17 +370,17 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ce428cba-bed9-4c5d-a3f0-465c3bc5abb9" name="==ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="ce428cba-bed9-4c5d-a3f0-465c3bc5abb9" name="ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e4f85351-6dc7-43b2-8284-4c87243e9cbe" />
         <suppliersInternal>
           <interfaceRealization Id="3bbcad27-3227-4926-9724-69aa376199ce">
-            <interfaceMoniker Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" LastKnownName="==Matchview" />
+            <interfaceMoniker Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" LastKnownName="Matchview" />
             <elementDefinition Id="55555d79-643d-45c6-afb6-fdcb1a52274f" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="3e2a1a10-688b-413c-ba18-df5612b44e69" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" LastKnownName="==SelectorWidget&lt;T&gt;" />
+            <classMoniker Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" LastKnownName="SelectorWidget&lt;T&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="aa1bc182-6572-47d7-b187-f5fa30ec7b5a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -404,7 +396,7 @@ project selected points from focussed image to other image</body>
             <elementDefinition Id="2754e1c9-a398-4d33-b886-c40d2e89d5cd" />
           </association>
           <association Id="d6dacaf2-44bc-4fe6-ae86-925f43aca78f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7362eb8c-cb89-4a4f-a5df-6578c726e08d" LastKnownName="==Accordion" />
+            <classMoniker Id="7362eb8c-cb89-4a4f-a5df-6578c726e08d" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="83588bb3-d5db-45f1-8c80-a99de4438a84" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -420,7 +412,7 @@ project selected points from focussed image to other image</body>
             <elementDefinition Id="a627eab3-353a-4a3d-a1f6-7f04bb927429" />
           </association>
           <association Id="983c77b3-1bc1-42ed-b6bf-dae24a6d0ff6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="184d9580-7a54-42b5-ab77-f7fea422ed8a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -447,7 +439,7 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" name="==Matchview" isAbstract="false" isLeaf="false">
+      <Interface Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" name="Matchview" isAbstract="false" isLeaf="false">
         <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
         <ownedOperations>
           <operation Id="1f8539eb-5afe-4790-b289-d1bbc5618051" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -474,6 +466,12 @@ project selected points from focussed image to other image</body>
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b8f41589-7943-43e1-8686-04784282e31b">
+        <profileInstance Id="0a01eb25-81b7-4572-ae0e-54a384903065" name="TextTemplateBindings">
+          <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+        </profileInstance>
+        <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

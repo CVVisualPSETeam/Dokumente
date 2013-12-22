@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a775ea84-a59f-4b45-8653-d4c3c6b24345"
+  name="CVVisual" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b"
+        LastKnownName="util"
+        LastKnownLocation="Package_0018.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f9d24451-cacd-458f-9fa2-72197ce82f37"
+        LastKnownName="__Alleinstehende Funktionen"
+        LastKnownLocation="Package_0004.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="51b7c039-93ad-44fd-8c48-448772a0a49c"
+        LastKnownName="__Api or impl??"
+        LastKnownLocation="Package_2352.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d483e5f9-235f-4e43-849e-d8eb1df3335c"
+        LastKnownName="__impl"
+        LastKnownLocation="Package_0010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7008bc87-6810-47c7-9000-c65d1da6b0ff"
+        name="TranslationView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="bc711ebe-d4ed-465c-a087-0cff804d71f9">
+            <interfaceMoniker
+              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
+              LastKnownName="Matchview"
+              LastKnownLocation="Package1_0050.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e501459e-4837-49c6-9d7a-8be567f1955c"
+            name="//signal UpdateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="220048b9-c088-4288-892b-ebcca7622058"
+            name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="325bbde7-84c1-4d6e-8f45-6d9942eb05cb"
+        LastKnownName="view"
+        LastKnownLocation="Package_0045.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7479c561-76be-40a8-b575-407add153e3a"
+        LastKnownName="stfl"
+        LastKnownLocation="Package_0049.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ec592eff-c8cb-4291-84cd-7d96794b3578"
+        LastKnownName="management"
+        LastKnownLocation="Package_0052.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="35ac3f9f-e13b-41f3-bcec-4262265c2d25"
+        LastKnownName="data"
+        LastKnownLocation="Package_0058.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bbc887ba-b006-40e8-97b8-ab79fbd66b89"
+        LastKnownName="controller"
+        LastKnownLocation="Package_0111.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="53837842-37ec-4013-80e9-4758de9a0719"
+        name="HelpButton"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ff32128f-08b7-4559-a26d-cfcb37ce0e0d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8"
+              LastKnownName="QPushButton"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2eb0514d-e9d6-4921-9250-a3fa7207b292"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="signal"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5"
+              LastKnownName="Help"
+              LastKnownLocation="Package_0038.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85f0d7e6-e69c-4717-98b5-92dc335edd44"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba53b98e-67e3-4a0b-9b48-5f54e60213e5"
+                  name="signal"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ee26632f-6470-420d-9b2b-fc99e545f2af"
+            name="page"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="57ed5d52-28c7-46ba-ae0e-086d8a604448"
+            name="setPage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73017ec0-a99d-4457-9910-53b907b92693"
+                  name="QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="784ec17f-243b-4442-99da-4f0798554575"
+            name="///Signal:clicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5"
+        name="Help"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1cd76f02-b753-457a-8259-31a73006e956"
+            name="helpDocument"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b646c3be-c304-4114-8e24-c89525bb9802"
+            name="open"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a5dde01-0d07-40e2-9883-5eb10dfc65af"
+                  name="page"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bbbd1a16-6493-4b44-8881-8bb556a9d0cb"
+            name="open"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="108efac0-2abd-4585-914c-9b399267fe15"
+            name="///slot:clicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

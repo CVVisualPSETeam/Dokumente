@@ -7,6 +7,14 @@
 drin?</body>
     </comment>
   </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="bd54578f-0f97-4dc7-af92-fac4881146e5">
+      <profileInstance Id="125703be-31cf-40c7-b4a2-196496e49b7c" name="TextTemplateBindings">
+        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+      </profileInstance>
+      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="5d0c56f3-fb05-4b18-b523-cd0d9d2729ce" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -29,7 +37,7 @@ drin?</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f6050aea-386c-4000-83b6-bb075dd927ae" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="f6050aea-386c-4000-83b6-bb075dd927ae" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="bbb46fa1-55ea-417c-bef7-c33a727f936e" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -152,11 +160,11 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <generalsInternal>
           <generalization Id="7222c238-4a08-4a5c-a6a8-aaaff4113567" isSubstitutable="false">
-            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="???????==QTGRaphicScene" />
             <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
           </generalization>
         </generalsInternal>
@@ -202,7 +210,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d3003fdb-7117-4e24-8bd7-7e7c669b2431" name="==SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d3003fdb-7117-4e24-8bd7-7e7c669b2431" name="SingleImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c" />
         <ownedAttributesInternal>
           <property Id="d6c2d75b-32c0-46b9-8f09-cc8bc8a0ee7c" name="Image&amp; image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -255,17 +263,17 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d7d8dc87-29dc-4204-a8d7-55a51f5616ea" name="==SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d7d8dc87-29dc-4204-a8d7-55a51f5616ea" name="SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5" />
         <suppliersInternal>
           <interfaceRealization Id="f566ee20-9fe3-4c2e-a3b5-9a4da26d1db6">
-            <interfaceMoniker Id="9459d4e4-26a5-450c-be5c-b042a238aca4" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="9459d4e4-26a5-450c-be5c-b042a238aca4" LastKnownName="FilterView" />
             <elementDefinition Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="339cc119-c557-469f-90d4-c7002e48a298" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="f6050aea-386c-4000-83b6-bb075dd927ae" LastKnownName="==Accordion" />
+            <classMoniker Id="f6050aea-386c-4000-83b6-bb075dd927ae" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="5c630561-61d5-4ce8-8d8b-636d1912c96a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -281,7 +289,7 @@ drin?</body>
             <elementDefinition Id="8e767675-b366-4951-8b26-39a01de85703" />
           </association>
           <association Id="4450b331-cdf7-40c1-947f-13162836e785" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="d3003fdb-7117-4e24-8bd7-7e7c669b2431" LastKnownName="==SingleImageFilterWidget" />
+            <classMoniker Id="d3003fdb-7117-4e24-8bd7-7e7c669b2431" LastKnownName="SingleImageFilterWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="12e9a35e-8640-479f-bca0-9ec8fc13d7b6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -297,7 +305,7 @@ drin?</body>
             <elementDefinition Id="549590b4-d9e7-4127-bb1a-ca6b9ccc7fe7" />
           </association>
           <association Id="fb9c5195-e3e6-4943-8634-8b1f57cf04bf" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="9d187d90-98ae-4203-8f7c-5914b651656e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -324,7 +332,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="9459d4e4-26a5-450c-be5c-b042a238aca4" name="==Filterview" isAbstract="false" isLeaf="false">
+      <Interface Id="9459d4e4-26a5-450c-be5c-b042a238aca4" name="FilterView" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="4eb3ab76-27c1-4489-b425-c0a60b837dd7" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -337,11 +345,11 @@ drin?</body>
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="d0f0a69c-96b0-4c59-b7be-1e6cec54352b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" LastKnownName="==ZoomableImage" />
+            <classMoniker Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="57c24e15-4668-41d8-b1f4-96d0c3e9961a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">

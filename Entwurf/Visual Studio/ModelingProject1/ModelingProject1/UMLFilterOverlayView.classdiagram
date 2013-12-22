@@ -7,6 +7,14 @@
 drin?</body>
     </comment>
   </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="a2e514aa-7fc0-4c1e-8875-109cc4846c40">
+      <profileInstance Id="5a2d24fd-3d6e-443d-8d19-bfacaa6f0ba4" name="TextTemplateBindings">
+        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+      </profileInstance>
+      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="c5a05d79-e100-4bf8-8d19-78c3fde603bd" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -29,7 +37,7 @@ drin?</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="5744a9b0-482f-4a8d-bbe0-4605cec2b9a6" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -152,7 +160,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="4e55b24d-c83f-4788-87f4-e1b8aa8d92ac" name="==DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="4e55b24d-c83f-4788-87f4-e1b8aa8d92ac" name="DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
         <ownedAttributesInternal>
           <property Id="9adfbf7d-e60c-47a0-81c3-1ed6e019afea" name="Image&amp; imageA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -213,11 +221,11 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="93d9ca5a-3af8-4bb2-abf3-e8b5b5b37a72" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="93d9ca5a-3af8-4bb2-abf3-e8b5b5b37a72" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <generalsInternal>
           <generalization Id="f13ebac7-bc61-4031-b086-9a0ee2b2389f" isSubstitutable="false">
-            <classMoniker Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" LastKnownName="???????==QTGRaphicScene" />
             <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
           </generalization>
         </generalsInternal>
@@ -263,11 +271,11 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="74835891-8cc3-4f90-b0db-0fb1185a8ede" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="93d9ca5a-3af8-4bb2-abf3-e8b5b5b37a72" LastKnownName="==ZoomableImage" />
+            <classMoniker Id="93d9ca5a-3af8-4bb2-abf3-e8b5b5b37a72" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="29cba638-6c83-41c8-a068-74e86852427d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -286,17 +294,17 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="df26e4a8-7d3c-487e-8ef4-98b7a86f6cc4" name="==OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="df26e4a8-7d3c-487e-8ef4-98b7a86f6cc4" name="OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
         <suppliersInternal>
           <interfaceRealization Id="7b5fee8f-c34f-483c-9db9-dcfca77cf45c">
-            <interfaceMoniker Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" LastKnownName="FilterView" />
             <elementDefinition Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="2024e300-852a-4d67-840a-a149d4366bf6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" LastKnownName="==Accordion" />
+            <classMoniker Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="a9775bf3-7279-45ce-972d-3a744d7912f7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -312,7 +320,7 @@ drin?</body>
             <elementDefinition Id="dea14e40-f6ab-4021-a839-e39a1630618c" />
           </association>
           <association Id="186f9680-68ab-4097-980b-9846d381daa8" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="4e55b24d-c83f-4788-87f4-e1b8aa8d92ac" LastKnownName="==DualImageFilterWidget" />
+            <classMoniker Id="4e55b24d-c83f-4788-87f4-e1b8aa8d92ac" LastKnownName="DualImageFilterWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="69e22afd-978f-40bc-9596-4c357e29b782" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -328,7 +336,7 @@ drin?</body>
             <elementDefinition Id="6f56353e-5ed5-4d34-a637-4c12f89bbe3b" />
           </association>
           <association Id="d8b48f7b-cd21-48eb-ab1b-813c65b50b8f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="2c6efe2c-8b22-4d2b-ab47-a401c4f11d6d" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="3f848a9a-3b92-4319-994b-88ebed414b9f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -355,7 +363,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" name="==Filterview" isAbstract="false" isLeaf="false">
+      <Interface Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" name="FilterView" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="b0b50074-fb4d-47d7-99fa-45e639867069" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">

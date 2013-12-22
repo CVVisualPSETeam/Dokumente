@@ -22,7 +22,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="7ce6fe7d-8889-4062-b7d8-18cba365e24f" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="7ce6fe7d-8889-4062-b7d8-18cba365e24f" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="e4758043-3eea-4746-b31f-8328f11e88ff" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -145,7 +145,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="698b3ec9-8c02-4657-a450-4794659da111" name="==FilterView" isAbstract="false" isLeaf="false">
+      <Interface Id="698b3ec9-8c02-4657-a450-4794659da111" name="FilterView" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="21183774-29a0-43c7-9e6d-404a8f3e9444" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
@@ -158,17 +158,17 @@
       </Interface>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="4c564f42-3ee6-48ee-b0ed-010c56e051cc" name="==HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="4c564f42-3ee6-48ee-b0ed-010c56e051cc" name="HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="34fa9129-59da-4efc-9519-5e0799711879" />
         <suppliersInternal>
           <interfaceRealization Id="5b607e0d-8e9b-4682-9f46-3db1dcc1c100">
-            <interfaceMoniker Id="698b3ec9-8c02-4657-a450-4794659da111" LastKnownName="==FilterView" />
+            <interfaceMoniker Id="698b3ec9-8c02-4657-a450-4794659da111" LastKnownName="FilterView" />
             <elementDefinition Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="f2d99e94-1ccb-4621-8646-600c0ee8b7cd" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="7ce6fe7d-8889-4062-b7d8-18cba365e24f" LastKnownName="==Accordion" />
+            <classMoniker Id="7ce6fe7d-8889-4062-b7d8-18cba365e24f" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="4d2856db-7fa6-445c-8f93-7a87ad0422e2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -184,7 +184,7 @@
             <elementDefinition Id="ddfa7387-5846-4033-8a1e-f41ba6efd5b6" />
           </association>
           <association Id="6181ce39-f3e2-4bb7-9eae-9d7d21fbb115" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="3fae995d-bb12-4763-8087-c3b6fb2e6e8e" LastKnownName="==HistogrammWidget" />
+            <classMoniker Id="3fae995d-bb12-4763-8087-c3b6fb2e6e8e" LastKnownName="HistogrammWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="435c9820-31c4-4f29-b908-9b416b1b16c1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -211,11 +211,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="3fae995d-bb12-4763-8087-c3b6fb2e6e8e" name="==HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="3fae995d-bb12-4763-8087-c3b6fb2e6e8e" name="HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
         <targetEnds>
           <association Id="35adf184-7661-463a-a305-2ec752295c56" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="41fcb840-3c19-4c56-a4db-6271fb4f9d57" LastKnownName="==SelectableHistogram" />
+            <classMoniker Id="41fcb840-3c19-4c56-a4db-6271fb4f9d57" LastKnownName="SelectableHistogram" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="9b7fc1d1-68fe-4ff8-add8-931443f605fa" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -234,7 +234,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="41fcb840-3c19-4c56-a4db-6271fb4f9d57" name="==SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="41fcb840-3c19-4c56-a4db-6271fb4f9d57" name="SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="672b1e69-7088-4746-b5a1-493cc0c0f86f" />
         <ownedAttributesInternal>
           <property Id="a4a9040c-3e36-49fd-a9a1-1970751b32b2" name="Image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">

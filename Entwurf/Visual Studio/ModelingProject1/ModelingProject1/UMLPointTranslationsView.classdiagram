@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="26df9a36-1a91-4d11-adca-e0351a970dcb" name="UMLPointTranslationsView" linkedPackageId="8a46061a-0f9e-402c-bd59-141acf3c7f19" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="07e6aca5-2567-4eb5-a974-8542955eb9ab">
-      <profileInstance Id="64b3bfd9-31f8-4a96-b3d1-cb58715808b0" name="TextTemplateBindings">
-        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
-      </profileInstance>
-      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="26df9a36-1a91-4d11-adca-e0351a970dcb" name="UMLPointTranslationsView" linkedPackageId="8a46061a-0f9e-402c-bd59-141acf3c7f19" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="8c82dc64-7eca-4bd0-b267-62a2f802cb2b" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
@@ -23,14 +15,14 @@
       <class Id="c47ca7b7-245f-42f5-81a0-f05a5726e202" name="PointTranslationsView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ee5abef-4d7c-4085-a5a5-dbe6018b9934" />
         <suppliersInternal>
-          <interfaceRealization Id="98a97fdb-5315-4ffb-bb9c-6657c210cc66">
-            <interfaceMoniker Id="d33c34ee-c92f-4ac1-8b12-62ea9cc7ac32" LastKnownName="MatchView1" />
-            <elementDefinition Id="55dc84ef-8d13-47e5-84f4-ffdd886294df" />
+          <interfaceRealization Id="f74c8305-5e9b-43a5-a663-197479349d68">
+            <interfaceMoniker Id="6375c227-4ef9-4e73-b440-29414feb4edd" LastKnownName="Matchview" />
+            <elementDefinition Id="1de1f153-ab01-4d21-b119-cfb9e343a006" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="ee275397-4beb-4102-b9b2-97fbef36f63b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="c20c4ad4-c670-4599-a894-70d34757577d" LastKnownName="==SelectorWidget&lt;T&gt;" />
+            <classMoniker Id="c20c4ad4-c670-4599-a894-70d34757577d" LastKnownName="SelectorWidget&lt;T&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c464b2cf-ae2b-4412-9f62-f35f9f1dd912" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -46,7 +38,7 @@
             <elementDefinition Id="58dec7c3-3046-440c-a135-4571ea2a1458" />
           </association>
           <association Id="8a29abb2-1fe2-44f1-bdc5-14efc923ca4f" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="deb26af6-5bad-4e09-8bcb-b167f6f70a73" LastKnownName="==Accordion" />
+            <classMoniker Id="deb26af6-5bad-4e09-8bcb-b167f6f70a73" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="6280ddec-4124-4382-96d5-ef0e724ddb16" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -62,7 +54,7 @@
             <elementDefinition Id="0b9fbe4f-75f2-4fed-a1e1-def38d7573b2" />
           </association>
           <association Id="41033aaf-3565-4ece-b996-687bbd6639d8" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="04b126ab-2656-41ec-ad36-d2fdd2763ac5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -142,13 +134,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="eaf45bf3-025e-43c6-92a6-458debefc58c" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d871b15-eef6-4819-8292-45c546e3cd8b" />
+          </operation>
+          <operation Id="c9703a1d-67d5-41ef-a6d7-83f451c36c78" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2bb0fc42-634b-4268-8705-b2db1ad548cf" />
+          </operation>
         </ownedOperationsInternal>
       </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <Interface Id="d33c34ee-c92f-4ac1-8b12-62ea9cc7ac32" name="MatchView1" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="276c435f-24e3-47ec-9564-a0e0d571dc06" />
-      </Interface>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
       <referencedType Id="78ce0b5e-fc19-4e1f-ae5e-0cc995f4b58c" name="int index*/" isAbstract="false" isLeaf="false" cachedFullName="int index*/">
@@ -166,7 +159,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c20c4ad4-c670-4599-a894-70d34757577d" name="==SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c20c4ad4-c670-4599-a894-70d34757577d" name="SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
         <ownedAttributesInternal>
           <property Id="ae645454-80cf-4a2e-9f2c-975b599f35ce" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -216,7 +209,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="deb26af6-5bad-4e09-8bcb-b167f6f70a73" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="deb26af6-5bad-4e09-8bcb-b167f6f70a73" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="918a3023-a696-43cb-9362-263d3f720d02" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -359,11 +352,11 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="8570a324-6dde-42bc-b601-0acc6abb0945" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="affd411c-627d-4c4b-a73e-e4f1dee413ae" LastKnownName="==ZoomableImage" />
+            <classMoniker Id="affd411c-627d-4c4b-a73e-e4f1dee413ae" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="bb5b58e8-d612-4adf-b14c-e852adeef870" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -382,11 +375,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="dadb4d40-eac7-4872-81ee-fe34198f73d9" name="==GraphicsSceneArrow" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="dadb4d40-eac7-4872-81ee-fe34198f73d9" name="GraphicsSceneArrow" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed" />
         <targetEnds>
           <association Id="4bdebc0d-48bb-49e9-87c7-ece81b4c90a0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c9c337c9-6d6f-448c-ab79-efb9e6a721e2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -456,11 +449,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="affd411c-627d-4c4b-a73e-e4f1dee413ae" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="affd411c-627d-4c4b-a73e-e4f1dee413ae" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <generalsInternal>
           <generalization Id="e4a1ac2d-2f3f-4dfd-b85e-2834565301c6" isSubstitutable="false">
-            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="???????==QTGRaphicScene" />
             <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
           </generalization>
         </generalsInternal>
@@ -505,6 +498,19 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6375c227-4ef9-4e73-b440-29414feb4edd" name="Matchview" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
+        <ownedOperations>
+          <operation Id="d3af3e81-edf0-410c-852e-589e77ff02d0" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71cedba7-a856-424b-8bc5-d41d56a0445b" />
+          </operation>
+          <operation Id="5d837709-793e-4232-8cb2-a06f6b20c75b" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="8a46061a-0f9e-402c-bd59-141acf3c7f19" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
@@ -520,6 +526,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="07e6aca5-2567-4eb5-a974-8542955eb9ab">
+        <profileInstance Id="64b3bfd9-31f8-4a96-b3d1-cb58715808b0" name="TextTemplateBindings">
+          <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+        </profileInstance>
+        <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

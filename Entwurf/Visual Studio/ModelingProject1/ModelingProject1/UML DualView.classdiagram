@@ -7,6 +7,14 @@
 Overlap Image</body>
     </comment>
   </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="ac22b6aa-bec0-403c-bc29-3c572d26949f">
+      <profileInstance Id="729fafd1-904f-4123-9d18-ae2237fb1026" name="TextTemplateBindings">
+        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+      </profileInstance>
+      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="c1837836-74cf-4454-9f6d-0449b5f01a6e" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -39,7 +47,7 @@ Overlap Image</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="54c4974f-85bc-4325-a9c4-8edf1d34859a" name="==Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="54c4974f-85bc-4325-a9c4-8edf1d34859a" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <ownedAttributesInternal>
           <property Id="ea9f6532-b9f0-49e9-8a6c-7936d8aed3e0" name="vec&lt;Collapsable&gt; elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -162,7 +170,7 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" name="==DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" name="DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
         <ownedAttributesInternal>
           <property Id="337d39ba-0d48-44e1-b690-f758b1b2aee6" name="Image&amp; imageA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -223,7 +231,7 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" name="==SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" name="SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
         <ownedAttributesInternal>
           <property Id="84db237f-844f-482c-baa6-231a5cc4c3cb" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -273,11 +281,11 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e8864923-1289-44f8-ac26-d1dd03405b98" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e8864923-1289-44f8-ac26-d1dd03405b98" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="31f2c62e-b21d-4bd1-aff7-665f43732ee2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="722a6d15-9bf4-44ad-b744-913662b083d1" LastKnownName="==ZoomableImage" />
+            <classMoniker Id="722a6d15-9bf4-44ad-b744-913662b083d1" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="3d10ceee-ee74-46d4-bf39-cf710321830b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -296,11 +304,11 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="722a6d15-9bf4-44ad-b744-913662b083d1" name="==ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="722a6d15-9bf4-44ad-b744-913662b083d1" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <generalsInternal>
           <generalization Id="94e518eb-aa15-48c2-b616-617f19903d09" isSubstitutable="false">
-            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="???????==QTGRaphicScene" />
             <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
           </generalization>
         </generalsInternal>
@@ -346,17 +354,17 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="74f5a311-2ea5-4858-b5b9-e3734b1afba5" name="==DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="74f5a311-2ea5-4858-b5b9-e3734b1afba5" name="DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
           <interfaceRealization Id="4b69c195-986e-4aff-a87d-c462dac06b80">
-            <interfaceMoniker Id="189d3034-4345-4cad-a00a-283fcf4d1298" LastKnownName="==Filterview" />
+            <interfaceMoniker Id="189d3034-4345-4cad-a00a-283fcf4d1298" LastKnownName="FilterView" />
             <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="b9f15787-2760-4d2f-85f7-02c86423a68e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" LastKnownName="==SelectorWidget&lt;T&gt;" />
+            <classMoniker Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" LastKnownName="SelectorWidget&lt;T&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="483194a1-a0cc-453d-b25d-aca19411087b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -372,7 +380,7 @@ Overlap Image</body>
             <elementDefinition Id="ea0bb0e7-a5f0-4b8b-b27a-41108365b102" />
           </association>
           <association Id="851ab4c6-a333-46d3-a881-4d67987a9716" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="54c4974f-85bc-4325-a9c4-8edf1d34859a" LastKnownName="==Accordion" />
+            <classMoniker Id="54c4974f-85bc-4325-a9c4-8edf1d34859a" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c163cdcb-97ae-41f5-a080-e41c0ff80ba4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -388,7 +396,7 @@ Overlap Image</body>
             <elementDefinition Id="458076d0-b775-43f5-b38d-b8ebb9021234" />
           </association>
           <association Id="53a7d966-e710-4838-8b07-a4662ddbfe7c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" LastKnownName="==DualImageFilterWidget" />
+            <classMoniker Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" LastKnownName="DualImageFilterWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b5dd95e3-8891-4311-a64e-ed934af3c203" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -404,7 +412,7 @@ Overlap Image</body>
             <elementDefinition Id="2696d70b-afb0-46a9-8ac4-6c4a2918ea9e" />
           </association>
           <association Id="db1310bf-b12d-4de4-ac44-7c3a51dcd1e7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="???????==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e7b6bf65-c770-48d8-9fd9-7565eaeb56a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -431,7 +439,7 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="189d3034-4345-4cad-a00a-283fcf4d1298" name="==Filterview" isAbstract="false" isLeaf="false">
+      <Interface Id="189d3034-4345-4cad-a00a-283fcf4d1298" name="FilterView" isAbstract="false" isLeaf="false">
         <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
         <ownedOperations>
           <operation Id="e61020c9-3184-4687-a561-08b130abf60a" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
