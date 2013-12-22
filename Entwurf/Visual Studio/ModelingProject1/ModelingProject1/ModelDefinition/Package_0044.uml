@@ -11,12 +11,32 @@
 delay= (multDelay*delay+multLast*lastExecTime)/div
 </body>
     </comment>
+    <comment
+      Id="25b89c75-3bab-4778-ae18-3d108fa6df89">
+      <body>FSW: 	ermöglicht auswahl des filters durch nutzer
+	ist nach auswahl wie eine funktion verwendbar
+	wendet den filter NICHT selber an</body>
+    </comment>
+    <comment
+      Id="46f56a89-5c44-4b53-b8f6-3734479f408b">
+      <body>FFW: ist ein widget welches schaltflächen zur einstellung eines filters anbietet und diesen als funktion anbietet
+
+- es muss für jeden filter erstellt werden
+- er nimmt In bilder an und liefert Out bilder
+- er sollte bei FSW registiert werden</body>
+    </comment>
+    <comment
+      Id="37124305-e0cf-46bf-ae7c-9a0c90658459">
+      <body>AF: 
+- nimmt bilder an (mit adresse für den output)
+- es können verschiedene Filter an verschiedenen gruppen gebunden werden, welche bei änderungen automatisch ihre ausgabe an die hinterlegten stellen speichern</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <Interface
         Id="947b431d-6c2f-46ef-b7c7-681b74c78475"
-        name="SingleFilterFunction"
+        name="FilterFunctionWidget&lt;1,1&gt;"
         isAbstract="false"
         isLeaf="false">
         <ownedOperations>
@@ -57,18 +77,9 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
     <packageHasNamedElement>
       <Interface
         Id="a35d124e-a1c1-463d-9066-a276df5eecc2"
-        name="DoubleFilterFunction"
+        name="FilterFunctionWidget&lt;2,1&gt;"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="624d43de-515a-4839-b466-0cc5d9f8a482">
-            <classMoniker
-              Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="DualImageFilterWidget"
-              LastKnownLocation="Package_0044.uml" />
-          </dependency>
-        </suppliersInternal>
         <ownedOperations>
           <operation
             Id="d5181d7c-c723-4427-8516-7d391216bbbc"
@@ -101,10 +112,20 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
     <packageHasNamedElement>
       <class
         Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
-        name="SingleImageFilterWidget"
+        name="FilterSelectorWidget&lt;1,1&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2341e774-6ac1-42bb-bce6-d86afc24dcda"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="eaf4410b-e16e-455b-86ec-42bf20819426"
@@ -115,7 +136,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             isAbstract="false">
             <interfaceMoniker
               Id="947b431d-6c2f-46ef-b7c7-681b74c78475"
-              LastKnownName="SingleFilterFunction"
+              LastKnownName="FilterFunctionWidget&lt;1,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -156,21 +177,42 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
+        name="FilterSelectorWidget&lt;2,1&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="067fd752-1375-4735-9232-19b43f7ed468"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
           <association
-            Id="ea790fb3-8d0e-455e-b7ed-009f97bb161a"
+            Id="5b6897eb-2d68-40c9-90bf-705180860fa5"
             isDerived="false"
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <interfaceMoniker
-              Id="947b431d-6c2f-46ef-b7c7-681b74c78475"
-              LastKnownName="SingleFilterFunction"
+              Id="a35d124e-a1c1-463d-9066-a276df5eecc2"
+              LastKnownName="FilterFunctionWidget&lt;2,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="2d74f656-f5f9-461d-91a0-c3c5efeae6e1"
+                  Id="a9623a27-1974-42f5-98d0-b5c92580049a"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -182,7 +224,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="7d9f3bb3-b27d-40a4-9115-1a535dc65073"
+                  Id="863db2b3-3194-4564-8538-2f43152c3723"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -192,13 +234,13 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
                   isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="1ba8eadd-b8ac-479e-b152-1a88c46001f1"
+                      Id="e877fab7-a46f-4537-ac16-20cdf45043d8"
                       name="Lower"
                       value="*" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="15126fd1-7794-474f-82e3-ace763f265e5"
+                      Id="84c98b08-dd46-435b-b15a-72d630ba6638"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -207,236 +249,6 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedAttributesInternal>
-          <property
-            Id="4a64caf6-c94f-439e-ade1-5e226001826c"
-            name="Image&amp; image"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="9ea30fd6-a9dc-467c-a149-cb729cbf7092"
-            name="Image output"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="4ed10ad2-fb5e-4fc7-9989-53c9583d8017"
-            name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="6bba7f33-534a-4c01-89b9-29eee73acbd6"
-            name="///slot setInput"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="65900894-9a48-4f73-943e-3ec2d56679d3"
-                  name="Image&amp;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="ef327e42-35c9-45af-a4b4-dfbec9d6ca2e"
-            name="///signal newOutputImage"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="3ae4dd3a-76b1-4641-9915-78e392aa49a7"
-                  name="Image&amp;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="14bfed13-1dad-4a25-98e8-6a94904ed012"
-            name="registerFilter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="637c6702-a23f-4ce5-a4cc-8816d73f3bf3"
-                  name="QString"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6bc26694-ad8c-468d-845f-e4335ce15c0b"
-                  name="descriptor"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-        name="DualImageFilterWidget"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <ownedAttributesInternal>
-          <property
-            Id="4e6b9d36-c1d0-487f-ad73-f9a1043f1128"
-            name="Image&amp; imageA"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="f612a66f-08cb-4548-9451-7d56fc9cd66a"
-            name="Image&amp; imageB"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="53c753df-35a4-4216-9627-f39b0b622ec1"
-            name="Image output"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="426cee24-0927-4a78-b5dc-5774c6828d25"
-            name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="5b8e1a0c-a159-4d8d-ba4b-261392b16238"
-            name="///slot setInput"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e24f93c7-d7f8-46e7-97f4-f42bef527696"
-                  name="Image&amp; a"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="8b1b5609-7226-4c03-bff6-5f598b7506bb"
-                  name="Image&amp; b"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="5d152848-0a15-4b4a-a199-19f7eccaac63"
-            name="///signal newOutputImage"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="5d6e3b4c-4a49-4a15-96fc-4b52d5317088"
-                  name="Image&amp;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="49d7d717-5fec-4b2c-bb85-d9ce23d57a08"
-            name="registerFilter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="01caa9e9-4014-4db6-8fd2-851b741c8e87"
-                  name="QString"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="98f874f3-dab5-4df3-bce0-112ab43b87d6"
-                  name="descriptor"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2861,6 +2673,16 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="35397d31-b56b-448f-a506-cb457be92c98"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="5a7b2893-8f25-4518-9b35-24ee6ca14015"
@@ -2889,13 +2711,13 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
                     <literalString
                       Id="f86dc43d-6c24-421b-9fd1-bb41bffd1dc4"
                       name="Lower"
-                      value="*" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
                       Id="71e49842-20fb-44aa-ae35-08765b01db82"
                       name="Upper"
-                      value="*" />
+                      value="1" />
                   </upperValueInternal>
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -2908,7 +2730,20 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6f4fe792-da08-4f2c-b1ec-db7f4d5e0a0d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="15722179-57b0-457b-9b01-222194cbbc29"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -3041,7 +2876,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
         <ownedOperationsInternal>
           <operation
             Id="7b323079-9508-4405-a8a5-f2f3f2aba56f"
-            name="bool register"
+            name="register"
             isLeaf="false"
             isStatic="true"
             isAbstract="false"
@@ -3050,24 +2885,37 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="17b089c7-84e6-434d-b63a-0f2229710d0b"
+                  Id="bf7f63f0-bc74-495a-9ec6-76af5c078268"
                   name="QString"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="3cfedf53-8734-4e86-8607-c19651af0e85"
+                  Id="f5c81aef-a03a-45d3-8e73-8463ce7e9e69"
                   name="{FilterFunctionWidget&lt;In"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="94b7a324-4993-41be-8790-368eb08f39f6"
+                  Id="2a7612da-b9d8-4f98-a54d-238681f97d30"
                   name="Out&gt;(*)()}"
                   direction="In"
                   isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="261f37cb-efee-441a-8659-d419e4e2aee5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -3218,6 +3066,81 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b3c3b6b8-310c-43cd-8c47-fed5177c1ff2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7e49449a-1bd8-46ef-b87b-6758688ee222"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b"
+              LastKnownName="FilterSelectorWidget"
+              LastKnownLocation="Package_0044.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a99728fe-6ccf-4706-a401-d5b2bcea7fab"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a12cad69-8d49-4139-af69-79c849574878"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0d4841b7-8fc1-46c7-99c4-4dbb7662c1e8"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95c8d40d-6325-4410-b9fb-a4b76c865cba"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="533d7264-9599-45b3-a6f5-04dd3af8632e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="67411385-dc74-45e3-a4f0-16a76afbdf59"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedRedefinableTemplateSignatureInternal>
           <redefinableTemplateSignature
             Id="1e88483a-6d7b-4fd4-bf3e-e70d62d6c9b0"
@@ -3245,6 +3168,105 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             </ownedParameters>
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b21bb266-7b7f-4b76-86de-750f887e6fde"
+            name="vector&lt; tuple&lt; FilterSelectorWidget&lt;In,Out&gt;, set&lt;size_t&gt;&gt; filter"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3a778d1c-decb-4a4d-bf56-850ee6f64f98"
+            name="vector&lt; tuple&lt;QString, const Array&lt;const Mat&amp;,In&gt;&amp;, Array&lt;Mat&amp;, Out&gt;&amp;&gt;&gt; input"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="afe64302-5f28-4e98-8600-ac45aa44fb1d"
+            name="setInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bdaeb4b9-fcc2-4575-8fa6-7ba60e61c3ff"
+                  name="initializer_list&lt;tuple&lt;QString"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7728a394-e7f4-4265-9e61-34f7d0eeef41"
+                  name="const Array&lt;const Mat&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cb9bf214-e1f7-4833-bcf6-9b24102e96fd"
+                  name="In&gt;&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94c016a8-47a0-4a9c-bf85-068aa4a187ee"
+                  name="Array&lt;Mat&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83636e57-9e1c-4c52-9dfe-ccb80a1a148b"
+                  name="Out&gt;&amp;&gt;&gt; input"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b350acd3-90a2-4e97-9a1c-9562728d72a7"
+            name="///signal updated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d73f1c4-5fe1-4bca-8855-8a738fe5e1fe"
+                  name="vector&lt;optional&lt;Array&lt;Mat&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="769eaaa1-8699-4e8b-bd20-1c4273b8d0e8"
+                  name="Out&gt;&amp;&gt;&gt; elems)"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
