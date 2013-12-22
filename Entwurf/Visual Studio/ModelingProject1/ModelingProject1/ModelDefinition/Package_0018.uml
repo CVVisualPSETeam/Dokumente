@@ -10,13 +10,107 @@
         name="Optional"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="060828c3-a4d5-4d7f-94e3-3b800a5907b2"
+            parameters=""
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="3890d4be-ee35-4e3e-85cb-30d7d708c53f">
+                <ownedParameterableElement>
+                  <class
+                    Id="b6bb15a0-89e8-4f72-9422-a6bb8c98bf2f"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0e5ff7f4-2072-409f-80a6-9ca247dfbd36"
+            name="bool"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9f80967f-838b-4a9f-9c78-4f6aaf31c4df"
+            name="T"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker
         Id="d8560c72-af48-470e-99cc-a11f79a02036"
         LastKnownName="qt"
         LastKnownLocation="Package_0044.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62c335cc-b8ef-4dd1-9949-cf9611410a78"
+        name="Identified "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="f2169410-7567-4bc8-af71-479bd38825d9"
+            parameters=""
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="f13bc064-fc67-440a-bd49-e78ea636e8d3">
+                <ownedParameterableElement>
+                  <class
+                    Id="1979dcfb-a502-4428-9e4f-e364969ea61c"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d6536439-7069-46ba-a93e-d509162c3db9"
+            name="size_t id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ab679688-61ae-4ad8-bc97-78593a652e9f"
+            name="T"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>

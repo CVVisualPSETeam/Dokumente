@@ -77,17 +77,11 @@ zur id:
           <packageHasNamedElement>
             <class Id="71359322-080c-4907-9423-550110f86138" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
-              <generalsInternal>
-                <generalization Id="e724fac2-69d9-430a-8fac-83197cf56662" isSubstitutable="false">
-                  <classMoniker Id="d88fa623-d52c-4d5e-9cdb-65b9cf242f17" LastKnownName="???????==QTGRaphicScene" />
-                  <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
-                </generalization>
-              </generalsInternal>
               <ownedAttributesInternal>
                 <property Id="80248343-9028-4826-ab37-455e82976dfe" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
                 </property>
-                <property Id="28517d26-ce26-4962-919a-72dcc343280c" name="Rect" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="28517d26-ce26-4962-919a-72dcc343280c" name="Rect visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="930c31ad-6b57-4106-b41e-3f977af0a491" />
                 </property>
                 <property Id="3a83d677-72b1-45f1-a434-1955dbc4e31a" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -120,6 +114,16 @@ zur id:
                 </operation>
                 <operation Id="53e60715-6b98-461d-816a-33a8758e2a1b" name="setImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="4c56dbc2-c7e2-44cf-80e1-237c6c513619" />
+                </operation>
+                <operation Id="fb6c07e4-ba62-48ea-b9b7-bfa5b0f270c6" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="90d42fde-4e06-44ed-9077-e2b8fde643de" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="379732a4-798d-4542-b5d3-3fb321080173" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="4b04d47f-0692-4c3d-ae54-16a2869fc22b" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -154,12 +158,12 @@ zur id:
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
-                <operation Id="9fdb9899-3a98-424a-948d-0552ca5f7743" name="///signal basePointChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="9fdb9899-3a98-424a-948d-0552ca5f7743" name="///signal pointUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="ec430c6d-97f7-44d9-b376-c4e6e10ea0ba" name="optional&lt;Point&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="a29ed58a-d126-4cc9-a778-a1d2e98fce28" />
+                      <parameter Id="72f7201e-ac69-49b0-97a6-d52d575df85d" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="a6cb88c7-6e16-4e54-8bd8-50926d93812a" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -194,9 +198,6 @@ zur id:
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="36df4910-6739-4059-acb2-47c3e7335960" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="148f61f9-fe1b-408a-adb2-ae511d5d3732" />
-                </operation>
                 <operation Id="62e6ebe8-a645-488d-a5b9-e6623c4e9c76" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="1a9c2249-9da0-4f49-85ef-2157834ff285" />
                   <ownedParameters>
@@ -229,6 +230,16 @@ zur id:
                 </operation>
                 <operation Id="cf226873-b13d-426d-b522-8cab361ebc69" name="///slot showRelegated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="78882be7-8a60-4fd2-bd02-1042641577cd" />
+                </operation>
+                <operation Id="368e7eaf-2267-40b6-a5e6-29319d501aef" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="6ba519e9-d28e-4832-91fe-605ce6445110" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d261f593-a0fa-4af1-b7e3-3280467a70ea" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="22c30295-4493-4c95-bed0-33cbdefbef29" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -303,9 +314,6 @@ zur id:
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="546f506b-132d-4dfd-92a0-3820af5635e1" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="72709281-db4a-420a-8b32-34575cc06cad" />
-                </operation>
                 <operation Id="6f7220a1-7ac5-4f43-8636-800dc165b652" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="1199beb0-30a5-4139-86ab-8dfd799039e7" />
                   <ownedParameters>
@@ -322,6 +330,16 @@ zur id:
                     <operationHasOwnedParameters>
                       <parameter Id="8c95d065-1c2d-4f59-982f-f17003ea3e78" name="QPen" direction="In" isUnique="false">
                         <elementDefinition Id="ebf0b9a7-1af8-450f-a545-23bb9c3e7ca7" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="1d8f8865-a3e2-478b-8519-80f7c56d525b" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="ddd0209f-1bbf-4f83-a117-ad9e852d9e7c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="58c09722-fcd5-4207-995e-f3477f471b7b" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="999a3b97-fd1c-4789-97b8-aa64ec185c1f" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -416,6 +434,13 @@ zur id:
                 </operation>
                 <operation Id="33c51a97-e7ce-4b2a-8c60-804b72476034" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="28728c1e-06de-4a8f-9cdd-b732df93b68a" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bd2eae64-d8d3-4214-a208-7ae8ecf7d5f7" name="size_t id" direction="In" isUnique="false">
+                        <elementDefinition Id="b4793a87-8e87-46fc-a3d2-b035d939bccb" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
                 </operation>
                 <operation Id="fac0f8e4-5dea-42c7-803f-9cc63ee47340" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="de6bd52d-c920-4b36-8b06-f13e90996989" />
@@ -444,6 +469,29 @@ zur id:
           <packageHasNamedElement>
             <class Id="a0dfbf97-4bd1-4e35-b99a-e5d2d288fd0f" name="Optional" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02" />
+              <ownedRedefinableTemplateSignatureInternal>
+                <redefinableTemplateSignature Id="a7080c94-b079-459d-b6ee-d0c68c916838" parameters="" isLeaf="false">
+                  <elementDefinition Id="060828c3-a4d5-4d7f-94e3-3b800a5907b2" />
+                  <ownedParameters>
+                    <classifierTemplateParameter Id="bdfe8d2f-c007-45dd-918e-b9932ae0eedf">
+                      <elementDefinition Id="3890d4be-ee35-4e3e-85cb-30d7d708c53f" />
+                      <ownedParameterableElement>
+                        <class Id="a014e200-d16f-4c90-b3ff-969286a3a672" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="b6bb15a0-89e8-4f72-9422-a6bb8c98bf2f" />
+                        </class>
+                      </ownedParameterableElement>
+                    </classifierTemplateParameter>
+                  </ownedParameters>
+                </redefinableTemplateSignature>
+              </ownedRedefinableTemplateSignatureInternal>
+              <ownedAttributesInternal>
+                <property Id="fb2a085c-14eb-4af6-9b5d-19f4177fef57" name="bool" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e5ff7f4-2072-409f-80a6-9ca247dfbd36" />
+                </property>
+                <property Id="d2a3fae9-4165-45f5-8179-88d9d2a3bbc7" name="T" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9f80967f-838b-4a9f-9c78-4f6aaf31c4df" />
+                </property>
+              </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
