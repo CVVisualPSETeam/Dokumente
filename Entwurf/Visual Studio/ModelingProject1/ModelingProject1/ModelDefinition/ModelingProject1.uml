@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -162,12 +162,8 @@ project selected points from focussed image to other image</body>
     <comment
       Id="fedb185a-6a91-4667-946c-a761062a1916">
       <body>MatchCallTab(matchCall:MatchCall)
-sues defaultView
-</body>
-    </comment>
-    <comment
-      Id="0567760f-64b4-49c1-9a56-27e107e83828">
-      <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
+uses default View
+ from settings</body>
     </comment>
     <comment
       Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312">
@@ -179,18 +175,13 @@ sues defaultView
       <body>???</body>
     </comment>
     <comment
-      Id="62bc6995-ba3a-4357-a697-1f0dce3bd5e3">
-      <body>pdf or html file
-</body>
-    </comment>
-    <comment
-      Id="5105a396-7fab-46e9-bd6a-bad5ef263be4">
-      <body>use Help Menu</body>
-    </comment>
-    <comment
       Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374">
       <body>the page name here is equal to the name of the view, i.e. its ID
 </body>
+    </comment>
+    <comment
+      Id="8a7fbbd0-9e98-4d7f-a86b-e8f6d1e25430">
+      <body>getId(): returns ID of the Call</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>

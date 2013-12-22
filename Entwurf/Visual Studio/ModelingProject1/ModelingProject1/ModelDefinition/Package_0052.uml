@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="ec592eff-c8cb-4291-84cd-7d96794b3578"
   name="management" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -228,25 +228,6 @@
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="26c6e417-cf3e-45b1-86c8-f8bb42f892a9"
-            name="static defaultMatchViewID"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                LastKnownName="QString"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -268,14 +249,7 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8"
-                  name="CallWindow"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a597ec97-d953-4bdf-8866-a025c3cab162"
-                  name="WindowController"
+                  name="ViewController"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -307,7 +281,20 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="ab52b51d-2eb2-4780-bbde-8024cae3383e"
-                  name="matchViewID"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f29077c0-d44f-476b-ab31-2d8d8052d8e0"
+                  name="matchViewId"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -317,24 +304,6 @@
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="03304257-5794-477c-9c09-fe84e195815e"
-            name="MatchCallTab"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="71bc99f4-b909-4e6b-9663-338718381921"
-                  name="MatchCall"
-                  direction="In"
-                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -364,7 +333,7 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="900b6a05-3aa8-466b-a6ed-34150e42a048"
-                  name="ID"
+                  name="id"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -386,8 +355,31 @@
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="bd2c0ee0-0b6c-4dc5-b5f1-77e52b028b48"
-            name="///slot:defaultMatchViewChanged"
+            Id="e291507d-df14-4eff-b971-799b0fe73afe"
+            name="getId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14698e5b-c78e-4122-9f65-e39392e02d91"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cbc8564c-23aa-4337-a92c-460d21bc941e"
+            name="///slot: clicked"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -688,25 +680,6 @@
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="f1930a3a-e2fb-4d6a-9ca9-65e6cc3a1b3d"
-            name="static defaultFilterViewID"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                LastKnownName="QString"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -728,14 +701,7 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="a79da97b-86fd-446d-89b0-6d7f45908ca3"
-                  name="CallWindow"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="36337fb8-2881-416a-9517-7d4d1b093184"
-                  name="WindowController"
+                  name="ViewController"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -767,7 +733,20 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338"
-                  name="filterViewID"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
+                      LastKnownName="ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ab610940-17f7-446b-b59a-dc256e63a011"
+                  name="filterViewId"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -806,7 +785,7 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="6c5c3c20-5afc-463d-a526-f3c4a1e9f1ff"
-                  name="ID"
+                  name="id"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -828,8 +807,31 @@
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="4239f60d-022a-4628-8e62-4ac0899fe8e5"
-            name="///slot: defaultFilterViewChanged"
+            Id="56685628-e3d1-4643-9135-e25f3d278dbf"
+            name="getId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b65008d5-568d-4661-80d7-81307c519ed0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1882b351-d2e9-457f-a506-61f01b1fa79b"
+            name="///slot: clicked"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1198,7 +1200,7 @@
         <ownedAttributesInternal>
           <property
             Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de"
-            name="Name.QString"
+            name="name"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1207,7 +1209,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                LastKnownName="QString"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -35,12 +35,8 @@ matchinfo
     <comment Id="18fbaf93-1b16-49f7-a410-c6d4ce05e2bb">
       <elementDefinition Id="fedb185a-6a91-4667-946c-a761062a1916" />
       <body>MatchCallTab(matchCall:MatchCall)
-sues defaultView
-</body>
-    </comment>
-    <comment Id="1830ecbe-fec5-4cf0-a756-c8aee522bc0f">
-      <elementDefinition Id="0567760f-64b4-49c1-9a56-27e107e83828" />
-      <body>defaultMatchViewChanged()-signal emitted by the class that handles changing(and accessing, in the beginning) the configurations</body>
+uses default View
+ from settings</body>
     </comment>
     <comment Id="30c68ed8-df10-4dfb-8727-c6dbb3819b1b">
       <elementDefinition Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312" />
@@ -51,19 +47,14 @@ sues defaultView
       <elementDefinition Id="ada9b889-3348-45bb-8ba8-6f5227593183" />
       <body>???</body>
     </comment>
-    <comment Id="888d8431-263d-431c-9991-2b479d8c78be">
-      <elementDefinition Id="62bc6995-ba3a-4357-a697-1f0dce3bd5e3" />
-      <body>pdf or html file
-</body>
-    </comment>
-    <comment Id="a0c1a035-8c95-49b9-b1fc-5810c7bd7d39">
-      <elementDefinition Id="5105a396-7fab-46e9-bd6a-bad5ef263be4" />
-      <body>use Help Menu</body>
-    </comment>
     <comment Id="0a13259a-8660-49cf-ae58-55897fe7ea46">
       <elementDefinition Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374" />
       <body>the page name here is equal to the name of the view, i.e. its ID
 </body>
+    </comment>
+    <comment Id="5af89a0e-62c6-45f0-a178-9510d242dd3d">
+      <elementDefinition Id="8a7fbbd0-9e98-4d7f-a86b-e8f6d1e25430" />
+      <body>getId(): returns ID of the Call</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -71,8 +62,11 @@ sues defaultView
       <class Id="fe5e2914-3352-4d03-9fe4-4dcd85a1226e" name="CallTab" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4f11f6c-4caf-498d-95db-0db216026cc5" />
         <ownedAttributesInternal>
-          <property Id="f36ce5f8-f1ad-44e0-aca1-66106a25fad2" name="Name.QString" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="f36ce5f8-f1ad-44e0-aca1-66106a25fad2" name="name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f07cb67d-72d5-4f5a-8ecf-4a3322d6a4de" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="67e331f5-b20e-4b49-8dc8-022d876b7d4d" LastKnownName="QString" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -894,12 +888,6 @@ sues defaultView
               <referencedTypeMoniker Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" LastKnownName="map&lt;FilterView,QString&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="5f2aa241-a06e-438e-b061-324de024f4b2" name="static defaultFilterViewID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f1930a3a-e2fb-4d6a-9ca9-65e6cc3a1b3d" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="6d4c4aa2-8219-49fc-b006-f74f1ad0a45c" name="FilterCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -911,13 +899,8 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="fee50447-0354-478e-9c01-468742baffe7" name="CallWindow" direction="In" isUnique="false">
+                <parameter Id="fee50447-0354-478e-9c01-468742baffe7" name="ViewController" direction="In" isUnique="false">
                   <elementDefinition Id="a79da97b-86fd-446d-89b0-6d7f45908ca3" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9c92e91d-e5bf-4615-9ab7-4f9f9c9fd487" name="WindowController" direction="In" isUnique="false">
-                  <elementDefinition Id="36337fb8-2881-416a-9517-7d4d1b093184" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -934,8 +917,16 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a6d3aff5-66a5-43ac-b761-64f3881445f2" name="filterViewID" direction="In" isUnique="false">
+                <parameter Id="a6d3aff5-66a5-43ac-b761-64f3881445f2" name="viewController" direction="In">
                   <elementDefinition Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0938f540-adf8-4058-846d-5b9d27e1a620" LastKnownName="ViewController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4a1fd3e2-4819-4a3e-a075-737e794f18a0" name="filterViewId" direction="In" isUnique="false">
+                  <elementDefinition Id="ab610940-17f7-446b-b59a-dc256e63a011" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
@@ -955,7 +946,7 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="17dd9394-2dfc-4174-adda-58a48ca20fee" name="ID" direction="In" isUnique="false">
+                <parameter Id="17dd9394-2dfc-4174-adda-58a48ca20fee" name="id" direction="In" isUnique="false">
                   <elementDefinition Id="6c5c3c20-5afc-463d-a526-f3c4a1e9f1ff" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
@@ -967,8 +958,21 @@ sues defaultView
           <operation Id="d5d0507e-cf35-463d-bd32-ad4d78eef59a" name="///slot:currentIndexChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="0ed6a4f3-ef89-4976-a7ee-7cfb145a0c5c" />
           </operation>
-          <operation Id="6c173580-5738-4aad-9e12-65c4c5c52c78" name="///slot: defaultFilterViewChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4239f60d-022a-4628-8e62-4ac0899fe8e5" />
+          <operation Id="1150c125-148b-46c9-b243-4a54d6e1a798" name="getId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="56685628-e3d1-4643-9135-e25f3d278dbf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="35a2ba17-436a-46ac-9542-2d181ed25bc2" direction="Return">
+                  <elementDefinition Id="b65008d5-568d-4661-80d7-81307c519ed0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="acd79a5f-938e-4b4e-abf3-54a31afc1d07" LastKnownName="size_t" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6c34de19-a3da-4ef2-ad12-7017ffdeb054" name="///slot: clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1882b351-d2e9-457f-a506-61f01b1fa79b" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1055,12 +1059,6 @@ sues defaultView
               <referencedTypeMoniker Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" LastKnownName="map&lt;MatchView,QString&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="c238d2ff-6c98-4cd8-87c9-b2f147e26d5f" name="static defaultMatchViewID" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="26c6e417-cf3e-45b1-86c8-f8bb42f892a9" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="97f6c614-1980-4093-afaf-7011ce8000d1" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1072,13 +1070,8 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="ee743334-ad6a-42b0-9af5-37336a64588f" name="CallWindow" direction="In" isUnique="false">
+                <parameter Id="ee743334-ad6a-42b0-9af5-37336a64588f" name="ViewController" direction="In" isUnique="false">
                   <elementDefinition Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="860eabf7-a561-4fff-8191-e67799bed3b5" name="WindowController" direction="In" isUnique="false">
-                  <elementDefinition Id="a597ec97-d953-4bdf-8866-a025c3cab162" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1095,21 +1088,19 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="01ace9f5-b8db-4eca-82b3-ad491bebf2e6" name="matchViewID" direction="In" isUnique="false">
+                <parameter Id="01ace9f5-b8db-4eca-82b3-ad491bebf2e6" name="viewController" direction="In">
                   <elementDefinition Id="ab52b51d-2eb2-4780-bbde-8024cae3383e" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                    <referencedTypeMoniker Id="0938f540-adf8-4058-846d-5b9d27e1a620" LastKnownName="ViewController" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="76663276-ce28-4355-8271-e4ee88dd789b" name="MatchCallTab" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="03304257-5794-477c-9c09-fe84e195815e" />
-            <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="0475dcbe-42bf-4bb8-a716-b4448169ffb9" name="MatchCall" direction="In" isUnique="false">
-                  <elementDefinition Id="71bc99f4-b909-4e6b-9663-338718381921" />
+                <parameter Id="3bd29036-4674-49bb-a315-aaac0bd5b2fe" name="matchViewId" direction="In" isUnique="false">
+                  <elementDefinition Id="f29077c0-d44f-476b-ab31-2d8d8052d8e0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1126,7 +1117,7 @@ sues defaultView
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="12414bfd-37ec-45d7-800b-486112852d89" name="ID" direction="In" isUnique="false">
+                <parameter Id="12414bfd-37ec-45d7-800b-486112852d89" name="id" direction="In" isUnique="false">
                   <elementDefinition Id="900b6a05-3aa8-466b-a6ed-34150e42a048" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
@@ -1138,8 +1129,21 @@ sues defaultView
           <operation Id="467f76a2-32d4-4471-885f-bd64681c08d1" name="///slot:currentIndexChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="6793b93a-80ce-4c9a-9581-82cab03a799c" />
           </operation>
-          <operation Id="7cefab94-0d69-4cb8-884c-5d26934e6207" name="///slot:defaultMatchViewChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="bd2c0ee0-0b6c-4dc5-b5f1-77e52b028b48" />
+          <operation Id="2d1ba7ce-0346-4d52-a61e-23bd4b0ee435" name="getId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e291507d-df14-4eff-b971-799b0fe73afe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c2fa960-2201-46bf-8eb4-f3d1febdac99" direction="Return">
+                  <elementDefinition Id="14698e5b-c78e-4122-9f65-e39392e02d91" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1a224c86-23da-431d-80cf-726878625f20" LastKnownName="size_t" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="743f8d87-c0c0-4466-b211-ff440485bc4d" name="///slot: clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cbc8564c-23aa-4337-a92c-460d21bc941e" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1546,24 +1550,6 @@ sues defaultView
             <elementDefinition Id="ff32128f-08b7-4559-a26d-cfcb37ce0e0d" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association Id="23272ace-1ebf-4ce1-a8b5-167d96f55d62" isDerived="false" sourceEndRoleName="" targetEndRoleName="signal" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" LastKnownName="Help" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="a3e203f3-50de-4d51-8b79-beca82532d77" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="85f0d7e6-e69c-4717-98b5-92dc335edd44" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="891185f8-84e9-4037-b407-04b9f26d1436" name="signal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ba53b98e-67e3-4a0b-9b48-5f54e60213e5" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="2eb0514d-e9d6-4921-9250-a3fa7207b292" />
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property Id="599d6561-fed5-424e-bfa4-60c599a8a4b5" name="page" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ee26632f-6470-420d-9b2b-fc99e545f2af" />
@@ -1592,37 +1578,6 @@ sues defaultView
     <logicalClassDesignerModelHasTypes>
       <class Id="2343d5a4-923c-4c65-9752-95fc3d57503e" name="QPushButton" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2708fd8a-e674-40f5-b4a6-28e3586d5ea8" />
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="6fdf79f3-db9f-4a2f-82eb-86f95ba30524" name="Help" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="6330eff4-0b0a-43a5-a2fd-c0b9613916d5" />
-        <ownedAttributesInternal>
-          <property Id="2232da0d-4999-4196-ab41-4cdf30ab67d4" name="helpDocument" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="1cd76f02-b753-457a-8259-31a73006e956" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="a40978a8-d024-443b-8604-694370f010c9" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b646c3be-c304-4114-8e24-c89525bb9802" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="6cffac7a-1a36-427d-9877-8dd604b049f3" name="page" direction="In" isUnique="false">
-                  <elementDefinition Id="5a5dde01-0d07-40e2-9883-5eb10dfc65af" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="dc116b63-625b-4fcb-ab30-73e7ea8aed0c" name="open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="bbbd1a16-6493-4b44-8881-8bb556a9d0cb" />
-          </operation>
-          <operation Id="b3f91bb6-4640-4f2c-b53e-7df2a0db12be" name="///slot:clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="108efac0-2abd-4585-914c-9b399267fe15" />
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
@@ -2184,6 +2139,21 @@ sues defaultView
     <packageHasNamedElement>
       <referencedType Id="57a962f6-f8c7-4379-97af-1efdbe40f060" name="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;">
         <elementDefinition Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="acd79a5f-938e-4b4e-abf3-54a31afc1d07" name="size_t" isAbstract="false" isLeaf="false" cachedFullName="size_t">
+        <elementDefinition Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1a224c86-23da-431d-80cf-726878625f20" name="size_t" isAbstract="false" isLeaf="false" cachedFullName="size_t">
+        <elementDefinition Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="67e331f5-b20e-4b49-8dc8-022d876b7d4d" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
