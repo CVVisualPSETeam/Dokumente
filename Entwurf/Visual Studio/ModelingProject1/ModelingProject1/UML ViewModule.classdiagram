@@ -128,17 +128,29 @@ zur id:
             <class Id="f17833eb-0bca-47fd-a986-72353022ce60" name="GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18" />
               <ownedAttributesInternal>
-                <property Id="137ed241-f1e8-40bb-b305-79ef53243e62" name="polygone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="0ddcbff4-7912-4969-bfd0-cd83d937a239" />
-                </property>
-                <property Id="e62716e7-2bbe-432c-88d1-9748e65b4332" name="Point basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="e62716e7-2bbe-432c-88d1-9748e65b4332" name="optional&lt;Point&gt; basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="376c9012-65d9-4079-83ee-b6f42c2f0e30" />
-                </property>
-                <property Id="6f686cd1-0453-406f-9457-d14fe1798dee" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="58ef51cf-2cdc-41d5-bb29-4d9852e3df00" />
                 </property>
                 <property Id="7bcbb40f-a574-4441-8b2c-a5201166ddf1" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="a96f34fb-3c39-4eac-af2c-792ed90d6388" />
+                </property>
+                <property Id="4aee03b8-763a-45b5-907c-5a8a2562fe63" name="vector&lt;Point&gt; Points" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19c3862e-ebed-41e3-b637-a5a3ad545835" />
+                </property>
+                <property Id="b45984c2-83b6-43af-842c-3d0e58ef8d59" name="QPen pen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="83d30585-3dab-4cc5-b055-b99d354d2ac0" />
+                </property>
+                <property Id="9b551f7b-978f-400d-a369-41567f8db0f3" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="399e2ccc-7e9c-4cd0-8960-d30daf7a0c46" />
+                </property>
+                <property Id="f90be3f7-b26c-49ff-bdb8-8d5b3cc0d387" name="bool selected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="054567b6-ba63-4777-ade8-952ac0206a30" />
+                </property>
+                <property Id="3a87221c-7229-44df-a126-4f5d4472f2ce" name="QPen penWhenSelected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e83d5055-2aac-4910-823c-a14f7c6fdff4" />
+                </property>
+                <property Id="3ccbe9ce-254d-4dfe-bab1-7920edbcf576" name="bool isMiss" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5b9dc031-a48b-429b-89a7-3c17f57470da" />
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
@@ -146,14 +158,11 @@ zur id:
                   <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="7d855985-eb11-45dc-93ae-caaa9ba40e92" name="Point" direction="In" isUnique="false">
-                        <elementDefinition Id="67c04eb1-f5a8-4466-aa57-868fcfcf0a18" />
+                      <parameter Id="ec430c6d-97f7-44d9-b376-c4e6e10ea0ba" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="a29ed58a-d126-4cc9-a778-a1d2e98fce28" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
-                </operation>
-                <operation Id="aa9966b3-b915-4968-ba69-161bf89613c0" name="///signal selected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="5ab60a31-3dea-4cc1-be50-2743b771c170" />
                 </operation>
                 <operation Id="c5470380-9814-4153-8b6d-cc3573de90a7" name="///slot areaChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="69fbc48b-eb40-4e7d-9232-72d6d57d7c8a" />
@@ -165,20 +174,61 @@ zur id:
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="d7b54290-7ce1-48df-a019-a3a7e5381bc0" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="00179b6c-060d-405a-8d03-51267424f707" />
+                <operation Id="da91a2ae-61d0-4bfd-8162-c8f1e0431500" name="///slot showTooltip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7904e2d5-6dd0-4b88-8be8-45702cb30c45" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="c7f95727-f864-4802-b36b-a6e6d7bc7d06" name="..." direction="In" isUnique="false">
-                        <elementDefinition Id="c268bff2-64a8-4f3a-918e-8118053042c3" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="02a28580-598e-466f-b11a-5739edba905c" name="size_t id" direction="In" isUnique="false">
-                        <elementDefinition Id="4c7f6d3b-3a50-4c99-9eaa-275fb14c253e" />
+                      <parameter Id="8c417de9-598e-4f1d-85e6-1eda9e26ac6a" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="d630785c-f055-4c95-8379-d3a4de0eec0e" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
+                </operation>
+                <operation Id="f83831bf-796a-4716-ad7c-b0c4cd513a45" name="///slot setVisibility" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b16a0bfb-1ce9-4c5d-8a1b-bd75c43e71c4" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a276990a-2fef-412d-8245-ab81d9248421" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="b4d1ed87-b5ed-4c32-8506-e5af0ce045b2" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="36df4910-6739-4059-acb2-47c3e7335960" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="148f61f9-fe1b-408a-adb2-ae511d5d3732" />
+                </operation>
+                <operation Id="62e6ebe8-a645-488d-a5b9-e6623c4e9c76" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1a9c2249-9da0-4f49-85ef-2157834ff285" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="96a4749a-3f22-493f-aac6-0d5796a24842" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="55bd02d9-95f5-4982-ae56-334460a64704" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="41cd9439-ca00-4a3b-8769-665c5032d2e2" name="///slot penUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c5855109-d521-4739-b413-86f3e632d9e9" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="85038c9a-7042-4acd-91a4-3c2a26c74827" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="e0b57609-162c-47f6-8ac9-7c132f19499c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="2e91deef-c81b-49f2-9d96-09589c4edf1a" name="///slot showMiss" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f7591ee7-8185-4341-849b-f9d17f98ce04" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="188ed20c-a723-451d-9529-9f966ed5549e" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="1870e602-2ab9-46de-af62-07573f1ab200" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cf226873-b13d-426d-b522-8cab361ebc69" name="///slot showRelegated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="78882be7-8a60-4fd2-bd02-1042641577cd" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -186,46 +236,30 @@ zur id:
           <packageHasNamedElement>
             <class Id="13d450f0-612b-4912-b7a7-44f05586136e" name="GraphicsSceneLineGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="0bf19076-72bf-494a-adff-955c372a782d" />
-              <targetEnds>
-                <association Id="d57ec003-1bde-4d46-a409-49781aff6349" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="GraphicsScenePointGroup" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="3e37f19f-9848-48e9-93ce-798cfeb74ad4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="6b783cfa-cede-4138-8d31-e04334211e81" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="1f84e2b2-db64-40c4-aba5-9c8dc40110b7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <lowerValueInternal>
-                          <literalString Id="7bbc0e1e-7824-47d1-9487-979ee83adb90" name="Lower" value="2">
-                            <elementDefinition Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2" />
-                          </literalString>
-                        </lowerValueInternal>
-                        <upperValueInternal>
-                          <literalString Id="4b033f7d-d64d-4b9b-8525-5052800db53f" name="Upper" value="2">
-                            <elementDefinition Id="d0d84d68-dd93-45de-a868-0961d08dad0c" />
-                          </literalString>
-                        </upperValueInternal>
-                        <elementDefinition Id="e4437283-2627-49b6-9f51-c7430dbd3ea3" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7" />
-                </association>
-              </targetEnds>
               <ownedAttributesInternal>
-                <property Id="38249a4f-d273-4ef9-bdcb-38827f90edc7" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="77f30454-bb1e-44a5-aadf-ae7a12ee7dfd" />
-                </property>
                 <property Id="52d98496-58cf-4284-8848-e9dbb146ef89" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="01fdc8a3-52e2-49a5-805b-84aa67490441" />
                 </property>
-                <property Id="c5957979-ba36-44de-817b-4d0875b22967" name="Point basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="c5957979-ba36-44de-817b-4d0875b22967" name="optional&lt;Point&gt; basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="25cb0575-2060-4b67-a1a2-08c4c3577653" />
                 </property>
-                <property Id="34357cfd-d945-44f9-936f-575d9295611a" name="Point basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="34357cfd-d945-44f9-936f-575d9295611a" name="optional&lt;Point&gt; basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea" />
+                </property>
+                <property Id="5f51cea0-c3ea-4977-bb8e-837fba166efb" name="QPen pen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="afcf11d6-7d30-47fb-a9e9-5e986eebd3d6" />
+                </property>
+                <property Id="28353866-226a-4e71-9eb8-7954758388da" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e2b144c4-161d-40d8-a77f-95134f161edf" />
+                </property>
+                <property Id="fe34de41-58a3-4dff-b2c3-c938b49b9b63" name="bool selected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c5bd5203-32c9-4e53-9702-e296d6afd5ec" />
+                </property>
+                <property Id="76ab9de2-1270-40ab-837d-07d834e011ca" name="QPen penWhenSelected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fe2c0c95-432e-4be2-b525-17f881d4f8df" />
+                </property>
+                <property Id="9a6fe07c-1f45-4295-a717-67dd2f34360e" name="double quality" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="083ab19d-600f-4f10-877a-d1d1aa9982c1" />
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
@@ -233,8 +267,8 @@ zur id:
                   <elementDefinition Id="352e23b3-ba88-4697-9450-66b13f46f34a" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="160e92f3-7bef-4225-94bd-a2d5df6fe88f" name="Point" direction="In" isUnique="false">
-                        <elementDefinition Id="c33907ad-98e3-4cdf-99af-9e9ccf649871" />
+                      <parameter Id="120fb140-7ef4-474d-a403-d8c2129b4de8" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="2cf5abff-b4bd-46c8-9906-a334f7ea9809" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -243,23 +277,51 @@ zur id:
                   <elementDefinition Id="c0090c57-66df-43fe-ae79-49a896dc4c24" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="150ef2c8-986e-4a14-ab72-fa8efe3c7e79" name="Point" direction="In" isUnique="false">
-                        <elementDefinition Id="0d63d97d-582b-41e6-8256-f702ce18b341" />
+                      <parameter Id="a43e70e6-9909-4eb0-86c8-e2d2e877c16c" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="9d00e1d1-2342-4aab-a600-6a12a3596fdc" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="6daeae2d-c028-4f76-8e80-16ca30478249" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="d0c873ed-da0f-4939-9d93-81e769ce87b5" />
+                <operation Id="f10d1638-e528-474f-a530-ec09b0ec2d53" name="///slot showTooltip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="361d6844-e31d-4681-8e50-f37f37302ecd" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="0238f40e-681c-42f8-971b-8d99d19a9a57" name="..." direction="In" isUnique="false">
-                        <elementDefinition Id="a58b1024-1ebf-49a8-bb7e-a69b97a3ad25" />
+                      <parameter Id="08236151-914b-410d-bcf6-1e8fbb5447e9" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="3b87b18e-0dd4-4a2d-91ea-c484847b54e9" />
                       </parameter>
                     </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="43d484f6-fc19-443f-ba5b-c44039f51697" name="///signal visible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7c7bc4e3-fc0a-4ad5-bde3-b684633736ed" />
+                  <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="9082f8fb-0ac1-4bfb-9136-ee415b82bc8a" name="size_t id" direction="In" isUnique="false">
-                        <elementDefinition Id="1a57f265-7773-4861-986a-6c061794839f" />
+                      <parameter Id="45995d89-33a9-4710-95dc-48069be297a7" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="8082d32f-0ec2-494e-962b-3b2c2c420b20" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="546f506b-132d-4dfd-92a0-3820af5635e1" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="72709281-db4a-420a-8b32-34575cc06cad" />
+                </operation>
+                <operation Id="6f7220a1-7ac5-4f43-8636-800dc165b652" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1199beb0-30a5-4139-86ab-8dfd799039e7" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5ed5f8cb-90bd-424e-89a6-329c99dcbd0a" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="f19127aa-91c9-4d61-81c7-e7c067e8c6f9" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="857cac55-937b-426a-958e-fa12963221f1" name="///slot penUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="35a9e9e7-0f5b-4610-b2ac-e9264797ce8e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="8c95d065-1c2d-4f59-982f-f17003ea3e78" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="ebf0b9a7-1af8-450f-a545-23bb9c3e7ca7" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -297,59 +359,37 @@ zur id:
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="f9dbc8d0-7822-4678-9f90-4ba9e1dcccf1" />
                 </association>
-                <association Id="3d1f1928-5f30-459b-b6b6-41b900b73b70" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="f17833eb-0bca-47fd-a986-72353022ce60" LastKnownName="GraphicsScenePointGroup" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="fb068055-f23e-4ebf-8525-9cfbe6f28c15" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="8e43ba79-0772-4a6a-a5cd-c35a98a29581" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <lowerValueInternal>
-                          <literalString Id="12cd7dab-93ea-4258-b85c-961a8630c947" name="Lower" value="2">
-                            <elementDefinition Id="d6a688de-6bd0-4055-80f9-a70a23c6093f" />
-                          </literalString>
-                        </lowerValueInternal>
-                        <upperValueInternal>
-                          <literalString Id="3526556b-a65a-4f44-8821-194bf70eb517" name="Upper" value="2">
-                            <elementDefinition Id="f4dec3a0-5395-4f40-974d-7213ff5e4282" />
-                          </literalString>
-                        </upperValueInternal>
-                        <elementDefinition Id="52ac5632-ef5d-4da3-98d0-b4a20e510223" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="87ff7570-d633-40a2-a428-91d78a18fc4d" />
-                </association>
               </targetEnds>
               <ownedAttributesInternal>
-                <property Id="d98b9628-5c36-4c84-9d27-d91be34f7359" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="7fe8f84c-9043-4f65-ae5e-ac28b2a206e3" />
-                </property>
                 <property Id="b07c0214-bbdf-4e6a-a0cd-c47f7efa57f9" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="6ed4a634-0ffc-4f29-b612-a85a73e28b35" />
                 </property>
-                <property Id="0c07c622-1dba-4c24-a867-cbc36a7d4413" name="Point basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="0c07c622-1dba-4c24-a867-cbc36a7d4413" name="optional&lt;Point&gt; basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="f6d9482b-ceae-4319-a375-ee067753f7d9" />
                 </property>
                 <property Id="8f48232c-31ba-4a9b-8d42-dbde20756456" name="Point relativeVector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ec81a246-3b40-439b-a1f4-8250d4ba7c2c" />
                 </property>
+                <property Id="757d5631-4510-4fb0-823b-84ab05edce6b" name="QPen pen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="38b70f9b-ebd4-4125-8bed-13de063e5feb" />
+                </property>
+                <property Id="27327791-7a63-405d-bb03-2b9ea1dd3a58" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6d3e4543-ee54-434c-9e62-e09514a6d587" />
+                </property>
+                <property Id="cd5a15bc-77da-4af0-8fa6-e4096b6ba50d" name="QPen penWhenSelected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0347d0da-2095-439a-b6c2-3d967c0ebd64" />
+                </property>
+                <property Id="fc6e9397-a2bb-44bf-9589-ea5d6c1d54df" name="bool selected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ddee6770-8088-4aca-b0dd-d58a529e712d" />
+                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
-                <operation Id="d1d9d070-ae40-4398-92ce-9a0da9594f46" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="d1d9d070-ae40-4398-92ce-9a0da9594f46" name="///slot penUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="67017b28-2396-4660-9a6f-7367bb437842" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="76f361d3-0e5b-4143-aa0b-1aeccfa8d415" name="..." direction="In" isUnique="false">
-                        <elementDefinition Id="25451575-a403-4c0e-9378-0199b56cd4fa" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="34cc764c-c94a-44ec-a497-59d7921d6863" name="size_t id" direction="In" isUnique="false">
-                        <elementDefinition Id="88e3af3f-77b0-43fd-9c5c-558efba08958" />
+                      <parameter Id="9fec297b-bf22-4d22-9e34-1d004e8a736b" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="46dbdc94-eea1-44ac-bf55-a4344052f2ca" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -358,8 +398,31 @@ zur id:
                   <elementDefinition Id="e07b0b2a-14e0-435e-a282-95bf6c7b8a9f" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="fc2055a1-a598-4183-9f31-9b2719bff155" name="Point" direction="In" isUnique="false">
-                        <elementDefinition Id="439bac1b-f95b-45bb-8357-d3a548e2d772" />
+                      <parameter Id="8b5531b0-a53d-41a1-bd53-abd92a8daa23" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="4d6d3d2e-6208-4209-9b9d-a780e24f9b4b" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="f875a1c2-c28c-49e9-95a4-892eb1d1b3a1" name="///slot showTooltip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="54c50ef4-24fc-4bcb-9667-b4434b6828fb" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="2844d616-b39d-470a-a1fb-5ba91c128a78" name="bool" direction="In" isUnique="false">
+                        <elementDefinition Id="f3274387-71fd-4b3a-a541-b5091fec8d19" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="33c51a97-e7ce-4b2a-8c60-804b72476034" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="28728c1e-06de-4a8f-9cdd-b732df93b68a" />
+                </operation>
+                <operation Id="fac0f8e4-5dea-42c7-803f-9cc63ee47340" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="de6bd52d-c920-4b36-8b06-f13e90996989" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="9d8743e3-f575-463f-8506-e83cb1f1cf3d" name="QPen" direction="In" isUnique="false">
+                        <elementDefinition Id="8e0bfc39-35db-4bb8-bf6e-c73ea74ade7b" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>

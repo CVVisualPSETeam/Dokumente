@@ -1445,6 +1445,14 @@
               LastKnownName="???????==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
           </generalization>
+          <generalization
+            Id="11efcfeb-8626-40ac-9639-7ba805f42e41"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2572d7c6-2567-471b-885e-62ec3e080572"
+              LastKnownName="QGraphicsView"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
           <property
@@ -1551,34 +1559,20 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="70130e37-795f-41db-bf44-f7df6a8ba10a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="415c4d66-760c-42b6-b3f1-e2700454ec6d"
+              LastKnownName="QGraphicsItem"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
-            Id="0ddcbff4-7912-4969-bfd0-cd83d937a239"
-            name="polygone"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="376c9012-65d9-4079-83ee-b6f42c2f0e30"
-            name="Point basePoint"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="58ef51cf-2cdc-41d5-bb29-4d9852e3df00"
-            name="size_t id"
+            name="optional&lt;Point&gt; basePoint"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1591,6 +1585,78 @@
           <property
             Id="a96f34fb-3c39-4eac-af2c-792ed90d6388"
             name="bool tooltipEnabled"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="19c3862e-ebed-41e3-b637-a5a3ad545835"
+            name="vector&lt;Point&gt; Points"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="83d30585-3dab-4cc5-b055-b99d354d2ac0"
+            name="QPen pen"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="399e2ccc-7e9c-4cd0-8960-d30daf7a0c46"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="054567b6-ba63-4777-ade8-952ac0206a30"
+            name="bool selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e83d5055-2aac-4910-823c-a14f7c6fdff4"
+            name="QPen penWhenSelected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5b9dc031-a48b-429b-89a7-3c17f57470da"
+            name="bool isMiss"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1613,21 +1679,13 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="67c04eb1-f5a8-4466-aa57-868fcfcf0a18"
-                  name="Point"
+                  Id="a29ed58a-d126-4cc9-a778-a1d2e98fce28"
+                  name="optional&lt;Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="5ab60a31-3dea-4cc1-be50-2743b771c170"
-            name="///signal selected"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="69fbc48b-eb40-4e7d-9232-72d6d57d7c8a"
             name="///slot areaChanged"
@@ -1647,8 +1705,8 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="00179b6c-060d-405a-8d03-51267424f707"
-            name="///slot styleUpdated"
+            Id="7904e2d5-6dd0-4b88-8be8-45702cb30c45"
+            name="///slot showTooltip"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1657,20 +1715,101 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c268bff2-64a8-4f3a-918e-8118053042c3"
-                  name="..."
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4c7f6d3b-3a50-4c99-9eaa-275fb14c253e"
-                  name="size_t id"
+                  Id="d630785c-f055-4c95-8379-d3a4de0eec0e"
+                  name="bool"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="b16a0bfb-1ce9-4c5d-8a1b-bd75c43e71c4"
+            name="///slot setVisibility"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4d1ed87-b5ed-4c32-8506-e5af0ce045b2"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="148f61f9-fe1b-408a-adb2-ae511d5d3732"
+            name="///signal klicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1a9c2249-9da0-4f49-85ef-2157834ff285"
+            name="///slot penWhenSelectedUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="55bd02d9-95f5-4982-ae56-334460a64704"
+                  name="QPen"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c5855109-d521-4739-b413-86f3e632d9e9"
+            name="///slot penUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0b57609-162c-47f6-8ac9-7c132f19499c"
+                  name="QPen"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f7591ee7-8185-4341-849b-f9d17f98ce04"
+            name="///slot showMiss"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1870e602-2ab9-46de-af62-07573f1ab200"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="78882be7-8a60-4fd2-bd02-1042641577cd"
+            name="///slot showRelegated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1681,71 +1820,17 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <targetEnds>
-          <association
-            Id="9f0abd85-90f6-4883-a796-cf1527bb1ef7"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
+        <generalsInternal>
+          <generalization
+            Id="2d81a073-77ef-4309-b55b-91e54b6f71cf"
+            isSubstitutable="false">
             <classMoniker
-              Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
-              LastKnownName="GraphicsScenePointGroup"
-              LastKnownLocation="Package_0044.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="6b783cfa-cede-4138-8d31-e04334211e81"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e4437283-2627-49b6-9f51-c7430dbd3ea3"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="80559bcb-86e7-4a11-a6b9-e8838e76fdd2"
-                      name="Lower"
-                      value="2" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="d0d84d68-dd93-45de-a868-0961d08dad0c"
-                      name="Upper"
-                      value="2" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+              Id="415c4d66-760c-42b6-b3f1-e2700454ec6d"
+              LastKnownName="QGraphicsItem"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
-          <property
-            Id="77f30454-bb1e-44a5-aadf-ae7a12ee7dfd"
-            name="size_t id"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
           <property
             Id="01fdc8a3-52e2-49a5-805b-84aa67490441"
             name="bool tooltipEnabled"
@@ -1760,7 +1845,7 @@
             isComposite="false" />
           <property
             Id="25cb0575-2060-4b67-a1a2-08c4c3577653"
-            name="Point basepointA"
+            name="optional&lt;Point&gt; basepointA"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1772,7 +1857,67 @@
             isComposite="false" />
           <property
             Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea"
-            name="Point basepointB"
+            name="optional&lt;Point&gt; basepointB"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="afcf11d6-7d30-47fb-a9e9-5e986eebd3d6"
+            name="QPen pen"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e2b144c4-161d-40d8-a77f-95134f161edf"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5bd5203-32c9-4e53-9702-e296d6afd5ec"
+            name="bool selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fe2c0c95-432e-4be2-b525-17f881d4f8df"
+            name="QPen penWhenSelected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="083ab19d-600f-4f10-877a-d1d1aa9982c1"
+            name="double quality"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1795,8 +1940,8 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c33907ad-98e3-4cdf-99af-9e9ccf649871"
-                  name="Point"
+                  Id="2cf5abff-b4bd-46c8-9906-a334f7ea9809"
+                  name="optional&lt;Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -1813,16 +1958,16 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="0d63d97d-582b-41e6-8256-f702ce18b341"
-                  name="Point"
+                  Id="9d00e1d1-2342-4aab-a600-6a12a3596fdc"
+                  name="optional&lt;Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
-            Id="d0c873ed-da0f-4939-9d93-81e769ce87b5"
-            name="///slot styleUpdated"
+            Id="361d6844-e31d-4681-8e50-f37f37302ecd"
+            name="///slot showTooltip"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1831,15 +1976,70 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a58b1024-1ebf-49a8-bb7e-a69b97a3ad25"
-                  name="..."
+                  Id="3b87b18e-0dd4-4a2d-91ea-c484847b54e9"
+                  name="bool"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7c7bc4e3-fc0a-4ad5-bde3-b684633736ed"
+            name="///signal visible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1a57f265-7773-4861-986a-6c061794839f"
-                  name="size_t id"
+                  Id="8082d32f-0ec2-494e-962b-3b2c2c420b20"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="72709281-db4a-420a-8b32-34575cc06cad"
+            name="///signal klicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1199beb0-30a5-4139-86ab-8dfd799039e7"
+            name="///slot penWhenSelectedUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f19127aa-91c9-4d61-81c7-e7c067e8c6f9"
+                  name="QPen"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="35a9e9e7-0f5b-4610-b2ac-e9264797ce8e"
+            name="///slot penUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ebf0b9a7-1af8-450f-a545-23bb9c3e7ca7"
+                  name="QPen"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -1855,6 +2055,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b252d151-e99c-49aa-9169-da1afaa32635"
+            isSubstitutable="false">
+            <classMoniker
+              Id="415c4d66-760c-42b6-b3f1-e2700454ec6d"
+              LastKnownName="QGraphicsItem"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="f9dbc8d0-7822-4678-9f90-4ba9e1dcccf1"
@@ -1906,70 +2116,8 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
-          <association
-            Id="87ff7570-d633-40a2-a428-91d78a18fc4d"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18"
-              LastKnownName="GraphicsScenePointGroup"
-              LastKnownLocation="Package_0044.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0ddb5a57-1582-4f2e-888b-fcc8b9974fce"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="52ac5632-ef5d-4da3-98d0-b4a20e510223"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="d6a688de-6bd0-4055-80f9-a70a23c6093f"
-                      name="Lower"
-                      value="2" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="f4dec3a0-5395-4f40-974d-7213ff5e4282"
-                      name="Upper"
-                      value="2" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property
-            Id="7fe8f84c-9043-4f65-ae5e-ac28b2a206e3"
-            name="size_t id"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
           <property
             Id="6ed4a634-0ffc-4f29-b612-a85a73e28b35"
             name="bool tooltipEnabled"
@@ -1984,7 +2132,7 @@
             isComposite="false" />
           <property
             Id="f6d9482b-ceae-4319-a375-ee067753f7d9"
-            name="Point basepoint"
+            name="optional&lt;Point&gt; basepoint"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -2006,11 +2154,59 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="38b70f9b-ebd4-4125-8bed-13de063e5feb"
+            name="QPen pen"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d3e4543-ee54-434c-9e62-e09514a6d587"
+            name="size_t id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0347d0da-2095-439a-b6c2-3d967c0ebd64"
+            name="QPen penWhenSelected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ddee6770-8088-4aca-b0dd-d58a529e712d"
+            name="bool selected"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="67017b28-2396-4660-9a6f-7367bb437842"
-            name="///slot styleUpdated"
+            name="///slot penUpdated"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2019,15 +2215,8 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="25451575-a403-4c0e-9378-0199b56cd4fa"
-                  name="..."
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="88e3af3f-77b0-43fd-9c5c-558efba08958"
-                  name="size_t id"
+                  Id="46dbdc94-eea1-44ac-bf55-a4344052f2ca"
+                  name="QPen"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -2044,8 +2233,52 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="439bac1b-f95b-45bb-8357-d3a548e2d772"
-                  name="Point"
+                  Id="4d6d3d2e-6208-4209-9b9d-a780e24f9b4b"
+                  name="optional&lt;Point&gt;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="54c50ef4-24fc-4bcb-9667-b4434b6828fb"
+            name="///slot showTooltip"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3274387-71fd-4b3a-a541-b5091fec8d19"
+                  name="bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="28728c1e-06de-4a8f-9cdd-b732df93b68a"
+            name="///signal klicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="de6bd52d-c920-4b36-8b06-f13e90996989"
+            name="///slot penWhenSelectedUpdated"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e0bfc39-35db-4bb8-bf6e-c73ea74ade7b"
+                  name="QPen"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -2061,6 +2294,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="11830377-e162-4ea1-ba18-4830f6574d85"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="9d5b52ea-e693-46c7-ad21-b0c49ac767ae"
@@ -2134,6 +2377,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="714355a3-2db2-47e2-ac24-607cc7d5b1a9"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="119461d4-353e-4ddb-b1f9-fe6a6577aed9"
