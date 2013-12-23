@@ -213,12 +213,12 @@ drin?</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="d7d8dc87-29dc-4204-a8d7-55a51f5616ea" name="SingleFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5" />
-        <suppliersInternal>
-          <interfaceRealization Id="f566ee20-9fe3-4c2e-a3b5-9a4da26d1db6">
-            <interfaceMoniker Id="9459d4e4-26a5-450c-be5c-b042a238aca4" LastKnownName="FilterView" />
-            <elementDefinition Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="8d7fd33b-75a3-4897-b29f-8f9f46b91354" isSubstitutable="false">
+            <classMoniker Id="af3695c1-089d-416d-85fb-46ac71c05a89" LastKnownName="FilterView" />
+            <elementDefinition Id="e49218f7-cb3a-4e09-99d3-e99770052975" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="339cc119-c557-469f-90d4-c7002e48a298" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="f6050aea-386c-4000-83b6-bb075dd927ae" LastKnownName="Accordion" />
@@ -280,19 +280,6 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="9459d4e4-26a5-450c-be5c-b042a238aca4" name="FilterView" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
-        <ownedOperations>
-          <operation Id="4eb3ab76-27c1-4489-b425-c0a60b837dd7" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ec80052f-cdf1-4f98-a957-aaf990358fcd" />
-          </operation>
-          <operation Id="1c4a9843-3175-4ad9-8ef0-85ce3b2e24af" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b" />
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
@@ -306,6 +293,16 @@ drin?</body>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="79441096-0258-420d-9c99-8f57ee67e136" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c8fd8710-d53b-4e2b-a5c5-07054fec84bb" name="Lower" value="*">
+                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e97bf107-c596-467d-adb5-3cb019db6cc6" name="Upper" value="*">
+                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -313,6 +310,19 @@ drin?</body>
             <elementDefinition Id="5d384fd6-303b-494d-aa17-e507affbf106" />
           </association>
         </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="af3695c1-089d-416d-85fb-46ac71c05a89" name="FilterView" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad" />
+        <ownedOperationsInternal>
+          <operation Id="5d8f73eb-838a-4ace-8a53-fe0c2f4e5371" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
+          </operation>
+          <operation Id="fb8a0ad1-891b-49b0-9d9f-95e23c83325e" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

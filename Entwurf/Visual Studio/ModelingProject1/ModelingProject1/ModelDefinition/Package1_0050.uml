@@ -1,35 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="f7d360cc-fb83-44e9-a77f-cfb03ac203fb"
   name="MatchView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
-    <packageHasNamedElement>
-      <Interface
-        Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-        name="Matchview"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedOperations>
-          <operation
-            Id="71cedba7-a856-424b-8bc5-d41d56a0445b"
-            name="//signal UpdateLeftFooter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0"
-            name="//signal UpdateRightFooter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperations>
-      </Interface>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="67bd9717-9495-41c1-a866-c0bc662ceecc"
@@ -50,10 +24,20 @@
             Id="55555d79-643d-45c6-afb6-fdcb1a52274f">
             <interfaceMoniker
               Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="Package1_0050.uml" />
+              LastKnownName="__Matchview"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="ef1bf151-655c-423d-bf46-da1f6b71775f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="2754e1c9-a398-4d33-b886-c40d2e89d5cd"
@@ -64,7 +48,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget&lt;T&gt;"
+              LastKnownName="SelectorWidget"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -138,7 +122,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -199,10 +183,20 @@
             Id="1de1f153-ab01-4d21-b119-cfb9e343a006">
             <interfaceMoniker
               Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="Package1_0050.uml" />
+              LastKnownName="__Matchview"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="eacf133b-db40-4e40-9b35-18af82981c3b"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="962b31c8-6dc8-483c-a395-23eb1eb1cc64"
@@ -300,7 +294,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget&lt;T&gt;"
+              LastKnownName="SelectorWidget"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -374,7 +368,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -575,10 +569,20 @@
             Id="16055378-bceb-4fd8-8035-36bb689a28fd">
             <interfaceMoniker
               Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="Package1_0050.uml" />
+              LastKnownName="__Matchview"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="47b01569-769a-4ae5-aa28-477513252dfe"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="714e4da3-8958-4a24-8fb4-ef96659a0b69"
@@ -626,7 +630,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget&lt;T&gt;"
+              LastKnownName="SelectorWidget"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -700,7 +704,7 @@
             isAbstract="false">
             <classMoniker
               Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
-              LastKnownName="SingleImageFilterWidget"
+              LastKnownName="FilterSelectorWidget&lt;1,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -737,7 +741,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -778,6 +782,43 @@
           <operation
             Id="3af8b949-ee6b-4529-be30-7c172719f6df"
             name="//signal UpdateRightFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+        name="MatchView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="337587c5-0e7b-4523-904c-ca91770f4489"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e"
+            name="//singal updateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="00467f1c-47f7-4b55-92e3-a9c169d02722"
+            name="//signal updateRightFooter"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

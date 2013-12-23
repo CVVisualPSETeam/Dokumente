@@ -5,32 +5,6 @@
   name="FilterView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
-      <Interface
-        Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-        name="FilterView"
-        isAbstract="false"
-        isLeaf="false">
-        <ownedOperations>
-          <operation
-            Id="ec80052f-cdf1-4f98-a957-aaf990358fcd"
-            name="//singal UpdateLeftFotter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b"
-            name="//signal UpdateleftFotter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="true"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperations>
-      </Interface>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <class
         Id="d62f9c6f-e088-47d7-a4fa-dad5dc4ecff5"
         name="SingleFilterView"
@@ -42,10 +16,20 @@
             Id="10ee4980-a2dc-48c9-bcb8-6f935db35f57">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="FilterView"
-              LastKnownLocation="Package_0050.uml" />
+              LastKnownName="__FilterView"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="e49218f7-cb3a-4e09-99d3-e99770052975"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="8e767675-b366-4951-8b26-39a01de85703"
@@ -167,7 +151,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -228,10 +212,20 @@
             Id="63ed1016-6aa4-4404-8a5b-03763f2b8be4">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="FilterView"
-              LastKnownLocation="Package_0050.uml" />
+              LastKnownName="__FilterView"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="f0c6e69f-0847-4ebc-924e-955608e1aeb5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="ea0bb0e7-a5f0-4b8b-b27a-41108365b102"
@@ -353,7 +347,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -414,10 +408,20 @@
             Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="FilterView"
-              LastKnownLocation="Package_0050.uml" />
+              LastKnownName="__FilterView"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="36e8f78a-7b91-41c3-a382-57edd1c274ff"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="dea14e40-f6ab-4021-a839-e39a1630618c"
@@ -502,7 +506,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="???????==QTGRaphicScene"
+              LastKnownName="==QTGRaphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -563,10 +567,20 @@
             Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
-              LastKnownName="FilterView"
-              LastKnownLocation="Package_0050.uml" />
+              LastKnownName="__FilterView"
+              LastKnownLocation="Package_1649.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7bc6dcc8-b8eb-45f9-91d6-ffe2359cf7f2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="ddfa7387-5846-4033-8a1e-f41ba6efd5b6"
@@ -692,6 +706,43 @@
           <operation
             Id="b426b630-7c66-4ff5-83f7-1bce0ffd3192"
             name="//signal UpdateleftFotter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+        name="FilterView"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7d1d0168-f779-4c3f-a6d2-23081b50d7bd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ba904822-5794-48b4-8d39-f24b00724de5"
+            name="//signal updateLeftFooter"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="492eb556-9087-49fb-abdf-b10b9b80225a"
+            name="//signal updateRightFooter"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

@@ -34,7 +34,7 @@
         <OperationElementListCompartment Id="4166702d-db69-44f6-b8eb-57f885af1732" absoluteBounds="11.89, 5.72617186754942, 2.3449999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(13.0625 : 5.625); (13.0625 : 7)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="255, 128, 0" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(13.0625 : 5.625); (13.0625 : 7)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="255, 128, 0" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="74835891-8cc3-4f90-b0db-0fb1185a8ede" />
       <relativeChildShapes />
       <nodes>
@@ -49,7 +49,7 @@
         <OperationElementListCompartment Id="be3d5722-312a-49f9-a335-e0201fac346e" absoluteBounds="7.64, 3.3511718675494193, 3.2199999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.625 : 3.36132811258237); (5.125 : 3.36132811258237); (5.125 : 6)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(7.625 : 3.36132811258237); (5.125 : 3.36132811258237); (5.125 : 6)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="2024e300-852a-4d67-840a-a149d4366bf6" />
       <relativeChildShapes />
       <nodes>
@@ -57,7 +57,7 @@
         <classShapeMoniker Id="8d71c969-4463-4035-8edd-fe53578550c9" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.46875 : 3.97265622516473); (8.46875 : 6.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(8.46875 : 3.97265622516473); (8.46875 : 6.125)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="186f9680-68ab-4097-980b-9846d381daa8" />
       <relativeChildShapes />
       <nodes>
@@ -65,31 +65,31 @@
         <classShapeMoniker Id="59d25f06-5867-4695-ba08-934f4089af41" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(9.7031275 : 3.97265622516473); (9.7031275 : 5.375); (11.875 : 5.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
+    <associationConnector edgePoints="[(9.7031275 : 3.97265622516473); (9.7031275 : 5.375); (11.875 : 5.375)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia" sourceMultiplicity="1" targetMultiplicity="1">
       <associationMoniker Id="d8b48f7b-cd21-48eb-ab1b-813c65b50b8f" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="10.789758708328009, 5.1217447966337213, 0.125, 0.1341145783662796" shapeFieldName="TargetRoleName" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="10.796703152358532, 5.1217447966337213, 0.125, 0.1341145783662796" shapeFieldName="TargetRoleName" />
       </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
         <classShapeMoniker Id="8c3a9fde-3065-4962-be21-b76bf8954457" />
       </nodes>
     </associationConnector>
-    <interfaceShape Id="932de2b7-c34a-424d-a8f9-efbd82fba210" absoluteBounds="7.75, 0.625, 3, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="DeepSkyBlue">
-      <interfaceMoniker Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" LastKnownName="FilterView" />
+    <classShape Id="d9549f35-962c-43aa-82a9-68deec843bc2" isExpanded="false" absoluteBounds="8.375, 1.25, 1.5, 0.5" hideQualifiedName="false" increaseHeight="0" customColor="Aqua">
+      <classMoniker Id="fa10120a-5231-411e-958b-4e0cc8a571b2" LastKnownName="FilterView" />
       <nestedChildShapes>
-        <AttributeElementListCompartment Id="1d6026d9-5bfb-4d33-96bd-10a3fe39a293" absoluteBounds="7.765, 1.0150000000000001, 2.9699999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
-        <OperationElementListCompartment Id="07a3d8a8-c1d6-4346-a35a-e55ee3cad440" absoluteBounds="7.765, 1.2261718675494193, 2.9699999999999998, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <AttributeElementListCompartment Id="bf9e4dc9-91c9-4fb2-8d0f-7cda37e8e0b6" absoluteBounds="8.39, 1.6400000000000001, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c18263a5-5145-4a10-b8e7-05d074b1be05" absoluteBounds="8.39, 1.8511718675494193, 1.4700000000000002, 0.521484357615312" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
-    </interfaceShape>
-    <realizationConnector edgePoints="[(9.25 : 2.75); (9.25 : 1.84765622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
-      <interfaceRealizationMoniker Id="7b5fee8f-c34f-483c-9db9-dcfca77cf45c" />
+    </classShape>
+    <generalizationConnector edgePoints="[(9.25 : 2.75); (9.25 : 2.125); (9.125 : 2.125); (9.125 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Fuchsia">
+      <generalizationMoniker Id="fcf63c19-02c7-44dc-91c7-80c32515ca29" />
       <relativeChildShapes />
       <nodes>
         <classShapeMoniker Id="b067ec07-c3b9-4ca5-a774-f8001db08bde" />
-        <interfaceShapeMoniker Id="932de2b7-c34a-424d-a8f9-efbd82fba210" />
+        <classShapeMoniker Id="d9549f35-962c-43aa-82a9-68deec843bc2" />
       </nodes>
-    </realizationConnector>
+    </generalizationConnector>
   </nestedChildShapes>
 </logicalClassDesignerDiagram>

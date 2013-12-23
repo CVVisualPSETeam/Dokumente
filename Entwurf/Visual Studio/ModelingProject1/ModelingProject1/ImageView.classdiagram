@@ -585,12 +585,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="859759e9-f1b3-4d09-944f-1462bf45b179" name="nMatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e596f02b-5e80-4098-a393-f1aa2d08d754" />
-        <suppliersInternal>
-          <interfaceRealization Id="0e826f0a-da9f-42be-8328-50481f12ba84">
-            <interfaceMoniker Id="1110fe67-7065-44ab-b93e-0bb7d4365c7f" LastKnownName="Matchview" />
-            <elementDefinition Id="16055378-bceb-4fd8-8035-36bb689a28fd" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="5da9dfb2-6986-4b57-af0b-b30b17cb0d20" isSubstitutable="false">
+            <classMoniker Id="c2e56df1-8b74-4173-b9e1-32fbc2e43cc5" LastKnownName="MatchView" />
+            <elementDefinition Id="47b01569-769a-4ae5-aa28-477513252dfe" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="506e3163-18d5-43a4-ad3c-eeec01584741" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="be454cbd-40c6-4b3d-a38a-278f09c1e980" LastKnownName="SelectorWidget" />
@@ -668,17 +668,17 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="1110fe67-7065-44ab-b93e-0bb7d4365c7f" name="Matchview" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
-        <ownedOperations>
-          <operation Id="0858961b-e3a1-4ab0-aa16-bc8e71997037" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="71cedba7-a856-424b-8bc5-d41d56a0445b" />
+      <class Id="c2e56df1-8b74-4173-b9e1-32fbc2e43cc5" name="MatchView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ff67bde-4c26-428e-9f07-39f36721a679" />
+        <ownedOperationsInternal>
+          <operation Id="a13274f6-e794-41aa-b609-4b2cc3cfd1a1" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
           </operation>
-          <operation Id="ed05cf9b-a621-4a17-abe0-d8ce1dd1b6f1" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0" />
+          <operation Id="d6c51cb8-e80e-478e-9b26-f01c573b1a55" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
           </operation>
-        </ownedOperations>
-      </Interface>
+        </ownedOperationsInternal>
+      </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="4719e952-f625-4e0f-9feb-f8fb23857ef5" name="ModelingProject1">

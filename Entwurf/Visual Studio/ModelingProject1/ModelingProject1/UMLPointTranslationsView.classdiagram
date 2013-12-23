@@ -14,12 +14,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="c47ca7b7-245f-42f5-81a0-f05a5726e202" name="PointTranslationsView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ee5abef-4d7c-4085-a5a5-dbe6018b9934" />
-        <suppliersInternal>
-          <interfaceRealization Id="f74c8305-5e9b-43a5-a663-197479349d68">
-            <interfaceMoniker Id="6375c227-4ef9-4e73-b440-29414feb4edd" LastKnownName="Matchview" />
-            <elementDefinition Id="1de1f153-ab01-4d21-b119-cfb9e343a006" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="b1f5c1d7-f7dd-402e-9169-40a19bd023eb" isSubstitutable="false">
+            <classMoniker Id="51e056e0-1bf6-4e03-b12d-5ea1a4013032" LastKnownName="MatchView" />
+            <elementDefinition Id="eacf133b-db40-4e40-9b35-18af82981c3b" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="ee275397-4beb-4102-b9b2-97fbef36f63b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="c20c4ad4-c670-4599-a894-70d34757577d" LastKnownName="SelectorWidget" />
@@ -54,7 +54,7 @@
             <elementDefinition Id="0b9fbe4f-75f2-4fed-a1e1-def38d7573b2" />
           </association>
           <association Id="41033aaf-3565-4ece-b996-687bbd6639d8" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="???????==QTGRaphicScene" />
+            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="04b126ab-2656-41ec-ad36-d2fdd2763ac5" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -367,7 +367,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="8570a324-6dde-42bc-b601-0acc6abb0945" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -380,6 +380,16 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="2ce97ddd-9951-478e-a4a0-03935245a9e3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="abff231e-ae63-4ef8-87db-83b2542c64cc" name="Lower" value="*">
+                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b2b63376-5bd2-4374-a6c5-09d0c00c1ca6" name="Upper" value="*">
+                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -394,7 +404,7 @@
         <elementDefinition Id="b7d48896-a4a9-45b5-84b5-ce1dcf4112ed" />
         <targetEnds>
           <association Id="4bdebc0d-48bb-49e9-87c7-ece81b4c90a0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="???????==QTGRaphicScene" />
+            <classMoniker Id="59fa0a67-51f0-4347-a3ba-86a2ea95f938" LastKnownName="==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c9c337c9-6d6f-448c-ab79-efb9e6a721e2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -552,17 +562,17 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="6375c227-4ef9-4e73-b440-29414feb4edd" name="Matchview" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
-        <ownedOperations>
-          <operation Id="d3af3e81-edf0-410c-852e-589e77ff02d0" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="71cedba7-a856-424b-8bc5-d41d56a0445b" />
+      <class Id="51e056e0-1bf6-4e03-b12d-5ea1a4013032" name="MatchView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ff67bde-4c26-428e-9f07-39f36721a679" />
+        <ownedOperationsInternal>
+          <operation Id="e3e936a0-9d8f-4afc-88e7-65bcc3dd3447" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
           </operation>
-          <operation Id="5d837709-793e-4232-8cb2-a06f6b20c75b" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0" />
+          <operation Id="5c887367-8be1-4fc1-8e0b-cb1f90ad0369" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
           </operation>
-        </ownedOperations>
-      </Interface>
+        </ownedOperationsInternal>
+      </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="8a46061a-0f9e-402c-bd59-141acf3c7f19" name="ModelingProject1">

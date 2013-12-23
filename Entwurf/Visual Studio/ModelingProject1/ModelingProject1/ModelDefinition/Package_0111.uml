@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="bbc887ba-b006-40e8-97b8-ab79fbd66b89"
   name="controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -59,7 +59,7 @@
             isAbstract="false">
             <classMoniker
               Id="551929e6-748e-4559-bf1e-3d58d21c558b"
-              LastKnownName="??Call2"
+              LastKnownName="Call"
               LastKnownLocation="Package_0058.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -158,6 +158,77 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="bfa73479-717b-4fec-bfa2-06493caace26"
+            name="removeCall"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59270c43-be91-4e45-a413-025fb5b3b725"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="731d30e3-7408-4323-b582-296be90e8152"
+            name="geCall"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0afc3b77-5ede-4def-96cd-cd394eaef9fe"
+                  name="ID"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73788942-7cef-460d-a73b-956f4eef3363"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="22ba9a5f-e092-4dc1-98c9-491e1dafa649"
+                      LastKnownName="&amp;Call"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="619382e1-d684-4577-9347-f7e3a75810fe"
+            name="callUI"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -178,7 +249,7 @@
             isAbstract="false">
             <classMoniker
               Id="d5fc2fdc-cdfa-4127-b47c-28bdd5aabf6c"
-              LastKnownName="????CallWindow"
+              LastKnownName="CallWindow"
               LastKnownLocation="Package_0052.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -326,7 +397,7 @@
             isAbstract="false">
             <classMoniker
               Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259"
-              LastKnownName="???????OverviewPanel"
+              LastKnownName="==OverviewPanel"
               LastKnownLocation="Package_0049.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -362,7 +433,7 @@
             isAbstract="false">
             <classMoniker
               Id="9478ca4e-698c-4a03-bcc1-6b19ecc857c7"
-              LastKnownName="????MainCallWindow"
+              LastKnownName="==MainCallWindow"
               LastKnownLocation="Package_0052.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>

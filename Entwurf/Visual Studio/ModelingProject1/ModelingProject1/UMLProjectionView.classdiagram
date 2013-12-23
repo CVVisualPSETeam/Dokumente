@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b20edc69-98d9-4b68-93a5-7612192ba610" name="UMLProjectionView" linkedPackageId="0ec927b0-4f76-4107-93ac-ed75646c1e41" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b20edc69-98d9-4b68-93a5-7612192ba610" name="UMLProjectionView" linkedPackageId="0ec927b0-4f76-4107-93ac-ed75646c1e41" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="3e3ab7c4-83e9-437c-8fa2-81cffd9a2517">
       <elementDefinition Id="cf6c72e3-a5ce-424c-ba6e-b2a01eec4d3d" />
@@ -19,8 +19,23 @@ project selected points from focussed image to other image</body>
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" name="SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" name="SelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="a938f0de-d6c9-4ec1-9b0a-75c4b68ac786" parameters="" isLeaf="false">
+            <elementDefinition Id="eeaf2f98-7b56-4698-adf3-8547a77fd886" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="bb8742cd-2c90-40d7-8ab0-88a0b188da08">
+                <elementDefinition Id="ada952b7-f13e-4558-8b6e-9c58bc990e67" />
+                <ownedParameterableElement>
+                  <class Id="01e0db05-7b8d-4297-b27c-b10815969b3d" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="9fb27b02-e188-428d-85a2-2889df8b4ba8" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property Id="28d4ca1b-2107-4410-b745-b01bd5329777" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
@@ -215,32 +230,41 @@ project selected points from focussed image to other image</body>
       <class Id="6fe83525-f095-475a-93c7-179b61de6f65" name="GraphicsScenePointGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="d3fde3e9-f2f3-4eb0-ab88-f98a7f8e2a18" />
         <ownedAttributesInternal>
-          <property Id="f77455c0-e8b2-49d8-b5f9-1d9e3d76d168" name="polygone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="0ddcbff4-7912-4969-bfd0-cd83d937a239" />
-          </property>
-          <property Id="73bb92b7-b293-4d2e-ab1a-505033ed4def" name="Point basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="73bb92b7-b293-4d2e-ab1a-505033ed4def" name="optional&lt;Point&gt; basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="376c9012-65d9-4079-83ee-b6f42c2f0e30" />
-          </property>
-          <property Id="b0a64980-b501-486c-9107-2d09c7c8fbdd" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="58ef51cf-2cdc-41d5-bb29-4d9852e3df00" />
           </property>
           <property Id="72b819a2-73f1-4d62-87a7-91385c796ec4" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="a96f34fb-3c39-4eac-af2c-792ed90d6388" />
           </property>
+          <property Id="efe7fff3-4357-4a83-8781-ac702823f35f" name="vector&lt;Point&gt; Points" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="19c3862e-ebed-41e3-b637-a5a3ad545835" />
+          </property>
+          <property Id="618cd1a8-e9c7-4112-850d-dfa7d936850b" name="QPen pen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83d30585-3dab-4cc5-b055-b99d354d2ac0" />
+          </property>
+          <property Id="4306519a-0b0a-4770-967d-20f6f5aea73b" name="size_t id" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="399e2ccc-7e9c-4cd0-8960-d30daf7a0c46" />
+          </property>
+          <property Id="f41a2f4c-3125-4514-aac7-4f47f157eb47" name="bool selected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="054567b6-ba63-4777-ade8-952ac0206a30" />
+          </property>
+          <property Id="e94638ca-0efe-4cd9-b087-7e6519c03d58" name="QPen penWhenSelected" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e83d5055-2aac-4910-823c-a14f7c6fdff4" />
+          </property>
+          <property Id="99d78948-93dc-4242-950c-21efca34f3ba" name="bool isMiss" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b9dc031-a48b-429b-89a7-3c17f57470da" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="ce6295fa-afff-4f50-bf21-e05bea839f58" name="///signal basePointChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="ce6295fa-afff-4f50-bf21-e05bea839f58" name="///signal pointUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="1088700c-dc23-4af8-8033-f48dd830a998" name="Point" direction="In" isUnique="false">
-                  <elementDefinition Id="67c04eb1-f5a8-4466-aa57-868fcfcf0a18" />
+                <parameter Id="b671eb15-a779-41f0-b2dd-d42ce808e0c8" name="optional&lt;Point&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="a6cb88c7-6e16-4e54-8bd8-50926d93812a" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="d5556e21-c504-406a-baf7-3a6c63fb6791" name="///signal selected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5ab60a31-3dea-4cc1-be50-2743b771c170" />
           </operation>
           <operation Id="9022f362-1a65-4e53-81da-eb52a1d28bc3" name="///slot areaChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="69fbc48b-eb40-4e7d-9232-72d6d57d7c8a" />
@@ -252,17 +276,65 @@ project selected points from focussed image to other image</body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="94814be0-ef54-4c97-b8f6-cd56283b8715" name="///slot styleUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="00179b6c-060d-405a-8d03-51267424f707" />
+          <operation Id="53b9a733-d1b0-43ef-a492-f2d8b23ff629" name="///slot showTooltip" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7904e2d5-6dd0-4b88-8be8-45702cb30c45" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="fe768dde-2741-4409-af00-d414973d27f7" name="..." direction="In" isUnique="false">
-                  <elementDefinition Id="c268bff2-64a8-4f3a-918e-8118053042c3" />
+                <parameter Id="0626fc1b-9005-4bf6-922f-cd978074bdf4" name="bool" direction="In" isUnique="false">
+                  <elementDefinition Id="d630785c-f055-4c95-8379-d3a4de0eec0e" />
                 </parameter>
               </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9f4d919e-4229-4e01-9999-62affbe3e4fc" name="///slot setVisibility" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b16a0bfb-1ce9-4c5d-8a1b-bd75c43e71c4" />
+            <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="1bee9065-cf82-4c61-81fc-dd5e7cc61d54" name="size_t id" direction="In" isUnique="false">
-                  <elementDefinition Id="4c7f6d3b-3a50-4c99-9eaa-275fb14c253e" />
+                <parameter Id="c00d8e02-d5d3-42be-b491-2ea529a7c4b2" name="bool" direction="In" isUnique="false">
+                  <elementDefinition Id="b4d1ed87-b5ed-4c32-8506-e5af0ce045b2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="92b0f65b-3e56-4aec-8bfe-22940c652cc2" name="///slot penWhenSelectedUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1a9c2249-9da0-4f49-85ef-2157834ff285" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be06f61f-bfee-4168-ab67-67078c3b3d5a" name="QPen" direction="In" isUnique="false">
+                  <elementDefinition Id="55bd02d9-95f5-4982-ae56-334460a64704" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a7c11fb2-2337-456f-9a5a-680db6c2af9e" name="///slot penUpdated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5855109-d521-4739-b413-86f3e632d9e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d515de75-7a8d-4aca-8017-afd506392e8f" name="QPen" direction="In" isUnique="false">
+                  <elementDefinition Id="e0b57609-162c-47f6-8ac9-7c132f19499c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8f97215c-8da9-4d48-801b-2b707ec74b88" name="///slot showMiss" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f7591ee7-8185-4341-849b-f9d17f98ce04" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="61dae46f-8642-4994-9e7f-99e27af2a8d8" name="bool" direction="In" isUnique="false">
+                  <elementDefinition Id="1870e602-2ab9-46de-af62-07573f1ab200" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f75c31a8-73e7-42e7-a92d-de6aafbf0433" name="///slot showRelegated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78882be7-8a60-4fd2-bd02-1042641577cd" />
+          </operation>
+          <operation Id="5fab7e18-85ce-4afc-a27a-87a071048d2d" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ba519e9-d28e-4832-91fe-605ce6445110" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4ad2edf-3af1-4541-9813-4666d05d4570" name="size_t id" direction="In" isUnique="false">
+                  <elementDefinition Id="22c30295-4493-4c95-bed0-33cbdefbef29" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -271,7 +343,7 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fcd984bc-2098-410b-8043-72b76b4e98c3" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="fcd984bc-2098-410b-8043-72b76b4e98c3" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="f002b980-b284-4b33-bf71-e46aa7f93d23" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -310,6 +382,16 @@ project selected points from focussed image to other image</body>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="14ee9ecd-e6b7-47c4-b4c6-a94aa69019ca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3923491b-82b4-446a-a395-1d2b648d92de" name="Lower" value="*">
+                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="65454e9a-ce92-42e1-83a9-4264b2d13d8b" name="Upper" value="*">
+                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -322,17 +404,11 @@ project selected points from focussed image to other image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="1ab5b54a-cefb-4222-9bed-61cd7b19cc37" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
-        <generalsInternal>
-          <generalization Id="20f1a541-8a76-46e0-ab2c-c5a672396324" isSubstitutable="false">
-            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="???????==QTGRaphicScene" />
-            <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="9878cb8a-0fa8-4ae7-b628-2d8343231312" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
           </property>
-          <property Id="d73d18ec-91a6-4f1b-a401-297e3eb17a31" name="Rect" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="d73d18ec-91a6-4f1b-a401-297e3eb17a31" name="Rect visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="930c31ad-6b57-4106-b41e-3f977af0a491" />
           </property>
           <property Id="dcea18a1-2e1a-4910-94de-85add44716ac" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -366,21 +442,31 @@ project selected points from focussed image to other image</body>
           <operation Id="77f0f663-dcca-4f34-9d3f-20e3abe14fd0" name="setImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4c56dbc2-c7e2-44cf-80e1-237c6c513619" />
           </operation>
+          <operation Id="f052c5bb-e342-4d44-a2d8-f1305a6c5f3c" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90d42fde-4e06-44ed-9077-e2b8fde643de" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e343516-b29d-4d81-bd33-ad82410f23ba" name="size_t id" direction="In" isUnique="false">
+                  <elementDefinition Id="4b04d47f-0692-4c3d-ae54-16a2869fc22b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="ce428cba-bed9-4c5d-a3f0-465c3bc5abb9" name="ProjectionView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e4f85351-6dc7-43b2-8284-4c87243e9cbe" />
-        <suppliersInternal>
-          <interfaceRealization Id="3bbcad27-3227-4926-9724-69aa376199ce">
-            <interfaceMoniker Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" LastKnownName="Matchview" />
-            <elementDefinition Id="55555d79-643d-45c6-afb6-fdcb1a52274f" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="cfe37f59-4af9-4ed7-8e9e-58fbf8b18736" isSubstitutable="false">
+            <classMoniker Id="c4e85572-c902-4841-9d6c-796b569423d5" LastKnownName="MatchView" />
+            <elementDefinition Id="ef1bf151-655c-423d-bf46-da1f6b71775f" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="3e2a1a10-688b-413c-ba18-df5612b44e69" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" LastKnownName="SelectorWidget&lt;T&gt;" />
+            <classMoniker Id="e0ea93d2-a76a-423a-8161-0373cc21c6bb" LastKnownName="SelectorWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="aa1bc182-6572-47d7-b187-f5fa30ec7b5a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -412,7 +498,7 @@ project selected points from focussed image to other image</body>
             <elementDefinition Id="a627eab3-353a-4a3d-a1f6-7f04bb927429" />
           </association>
           <association Id="983c77b3-1bc1-42ed-b6bf-dae24a6d0ff6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="???????==QTGRaphicScene" />
+            <classMoniker Id="fcd984bc-2098-410b-8043-72b76b4e98c3" LastKnownName="==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="184d9580-7a54-42b5-ab77-f7fea422ed8a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -439,17 +525,17 @@ project selected points from focussed image to other image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="eac10489-29ba-4961-8ffe-68e4ba5fe655" name="Matchview" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="aac0c29a-786e-472e-8e13-e6123a01f149" />
-        <ownedOperations>
-          <operation Id="1f8539eb-5afe-4790-b289-d1bbc5618051" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="71cedba7-a856-424b-8bc5-d41d56a0445b" />
+      <class Id="c4e85572-c902-4841-9d6c-796b569423d5" name="MatchView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ff67bde-4c26-428e-9f07-39f36721a679" />
+        <ownedOperationsInternal>
+          <operation Id="ceb017ef-3caa-43e1-bbad-66ac5bceac74" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
           </operation>
-          <operation Id="9ee54f94-913c-4b37-9f26-3c81fce6c81f" name="//signal UpdateRightFooter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="2b5504e7-45a2-4a0d-9ef2-2afa3e1662b0" />
+          <operation Id="34452044-be36-4f48-a332-e50057ece1a1" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
           </operation>
-        </ownedOperations>
-      </Interface>
+        </ownedOperationsInternal>
+      </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="0ec927b0-4f76-4107-93ac-ed75646c1e41" name="ModelingProject1">

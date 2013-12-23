@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="573c0635-c1ad-4771-8133-2e3a0c163f2d" name="UMLHistogramView2" linkedPackageId="6a89df30-fc7b-44da-97e3-fd633d6746e4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="573c0635-c1ad-4771-8133-2e3a0c163f2d" name="UMLHistogramView2" linkedPackageId="6a89df30-fc7b-44da-97e3-fd633d6746e4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="92a360d2-8b9e-4474-bc0a-ef209b417818" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -145,27 +145,14 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="698b3ec9-8c02-4657-a450-4794659da111" name="FilterView" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
-        <ownedOperations>
-          <operation Id="21183774-29a0-43c7-9e6d-404a8f3e9444" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ec80052f-cdf1-4f98-a957-aaf990358fcd" />
-          </operation>
-          <operation Id="41cdab8c-5037-4d72-a460-c02f0e8ef0f3" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b" />
-          </operation>
-        </ownedOperations>
-      </Interface>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="4c564f42-3ee6-48ee-b0ed-010c56e051cc" name="HistogrammView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="34fa9129-59da-4efc-9519-5e0799711879" />
-        <suppliersInternal>
-          <interfaceRealization Id="5b607e0d-8e9b-4682-9f46-3db1dcc1c100">
-            <interfaceMoniker Id="698b3ec9-8c02-4657-a450-4794659da111" LastKnownName="FilterView" />
-            <elementDefinition Id="06372af3-e4ac-4f8f-a8d2-8acd5dc5f9d1" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="63b85672-7a0b-4102-a0c5-9305c8c08794" isSubstitutable="false">
+            <classMoniker Id="1fc58324-fa77-406b-9765-4ec0a81d8c05" LastKnownName="FilterView" />
+            <elementDefinition Id="7bc6dcc8-b8eb-45f9-91d6-ffe2359cf7f2" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="f2d99e94-1ccb-4621-8646-600c0ee8b7cd" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="7ce6fe7d-8889-4062-b7d8-18cba365e24f" LastKnownName="Accordion" />
@@ -325,6 +312,19 @@
         <elementDefinition Id="0d52659f-6699-43e7-88f6-7ef15755c0bb" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1fc58324-fa77-406b-9765-4ec0a81d8c05" name="FilterView" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad" />
+        <ownedOperationsInternal>
+          <operation Id="b256a2d6-e9fa-4ba0-bc6f-8ff2f65a7fbe" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
+          </operation>
+          <operation Id="508e0046-75ab-416d-aaf4-b9b4da169838" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="6a89df30-fc7b-44da-97e3-fd633d6746e4" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

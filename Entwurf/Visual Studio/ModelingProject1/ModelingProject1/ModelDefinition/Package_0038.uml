@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="a775ea84-a59f-4b45-8653-d4c3c6b24345"
   name="CVVisual" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -21,48 +21,6 @@
         Id="51b7c039-93ad-44fd-8c48-448772a0a49c"
         LastKnownName="__Api or impl??"
         LastKnownLocation="Package_2352.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <packageMoniker
-        Id="d483e5f9-235f-4e43-849e-d8eb1df3335c"
-        LastKnownName="__impl"
-        LastKnownLocation="Package_0010.uml" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <class
-        Id="7008bc87-6810-47c7-9000-c65d1da6b0ff"
-        name="TranslationView"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="bc711ebe-d4ed-465c-a087-0cff804d71f9">
-            <interfaceMoniker
-              Id="aac0c29a-786e-472e-8e13-e6123a01f149"
-              LastKnownName="Matchview"
-              LastKnownLocation="Package1_0050.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="e501459e-4837-49c6-9d7a-8be567f1955c"
-            name="//signal UpdateLeftFooter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="220048b9-c088-4288-892b-ebcca7622058"
-            name="//signal UpdateRightFooter"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
-      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <packageMoniker

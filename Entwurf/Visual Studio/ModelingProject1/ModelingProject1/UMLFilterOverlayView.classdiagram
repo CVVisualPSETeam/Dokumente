@@ -225,6 +225,16 @@ drin? sollten
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd Id="85e4ab24-fec4-42b9-b938-f535cbaf75e1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4b08a813-3c0f-47cc-be06-9b0e0460f55a" name="Lower" value="*">
+                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="83087e96-970b-47d8-b445-d74ef0be8955" name="Upper" value="*">
+                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
+                    </literalString>
+                  </upperValueInternal>
                   <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -237,12 +247,12 @@ drin? sollten
     <logicalClassDesignerModelHasTypes>
       <class Id="df26e4a8-7d3c-487e-8ef4-98b7a86f6cc4" name="OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
-        <suppliersInternal>
-          <interfaceRealization Id="7b5fee8f-c34f-483c-9db9-dcfca77cf45c">
-            <interfaceMoniker Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" LastKnownName="FilterView" />
-            <elementDefinition Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced" />
-          </interfaceRealization>
-        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="fcf63c19-02c7-44dc-91c7-80c32515ca29" isSubstitutable="false">
+            <classMoniker Id="fa10120a-5231-411e-958b-4e0cc8a571b2" LastKnownName="FilterView" />
+            <elementDefinition Id="36e8f78a-7b91-41c3-a382-57edd1c274ff" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="2024e300-852a-4d67-840a-a149d4366bf6" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="e5dbbd44-a15e-4d24-903a-d9d895723d80" LastKnownName="Accordion" />
@@ -304,17 +314,17 @@ drin? sollten
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <Interface Id="d8be7d67-e997-4c1b-a3b7-b0f913b9b7a8" name="FilterView" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad" />
-        <ownedOperations>
-          <operation Id="b0b50074-fb4d-47d7-99fa-45e639867069" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ec80052f-cdf1-4f98-a957-aaf990358fcd" />
+      <class Id="fa10120a-5231-411e-958b-4e0cc8a571b2" name="FilterView" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad" />
+        <ownedOperationsInternal>
+          <operation Id="a7a446ed-27d7-4b7a-8cd7-809c0134b011" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
           </operation>
-          <operation Id="cb60e59c-62bc-4eeb-ad74-d4cefc82d570" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="00bddb9c-be99-4bf4-8551-6e8866e7de0b" />
+          <operation Id="8b3fa68c-ad00-4504-8c6c-cf8863d14090" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
           </operation>
-        </ownedOperations>
-      </Interface>
+        </ownedOperationsInternal>
+      </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="963d173e-e030-47e9-9b50-fff318f8acb0" name="ModelingProject1">
