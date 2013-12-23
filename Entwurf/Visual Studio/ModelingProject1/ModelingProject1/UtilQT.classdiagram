@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="11355f87-fec2-42ad-9bbd-fdc498c52c16" name="UtilQT" linkedPackageId="602381ed-628f-4b7d-b226-05e3a4959e26" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="e85b82fd-4f25-4b89-9caa-7fd406645e2d">
-      <profileInstance Id="11a2e37a-5c87-43cd-bc4c-bb6c58541701" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="2d1274c2-16d2-4eae-873c-b8c2ce5c96a9">
-      <profileInstance Id="2b6ea12c-54c9-453c-a046-47772059afa3" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="37b9a35d-33af-4949-8012-baec298c9777">
-      <profileInstance Id="11425b18-a487-4c17-9832-39c49fff27f0" name="TextTemplateBindings">
-        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
-      </profileInstance>
-      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="11355f87-fec2-42ad-9bbd-fdc498c52c16" name="UtilQT" linkedPackageId="602381ed-628f-4b7d-b226-05e3a4959e26" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="7eb0ff2a-79ea-4183-9a7d-35706c96fd93">
+      <elementDefinition Id="05fe8315-a9ad-480b-885a-5ab6de6e4cb1" />
+      <body>style generell:
+	- tooltip sichtbar
+
+linien:
+	- falschfarben / farbe / farbe+alpha
+	- durchgezogen / gestrichelt
+
+punktgruppen:
+	- linie (pen)
+	- füllen (brush)
+-------------------------
+
+zur id:
+	- ermöglicht stylechanges für nur eine instanz
+	- maxvalue = alles</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="1f17f6d9-025c-4d65-9aa0-017fe6ca9a96" name="qt">
@@ -490,7 +490,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             </Interface>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" name="FilterSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" name="FilterSelectorWidget" isAbstract="true" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b" />
               <generalsInternal>
                 <generalization Id="1792192a-beec-4f76-ad46-44f2d15ed363" isSubstitutable="false">
@@ -1758,5 +1758,25 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
   </packagedElements>
   <package Id="602381ed-628f-4b7d-b226-05e3a4959e26" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e85b82fd-4f25-4b89-9caa-7fd406645e2d">
+        <profileInstance Id="11a2e37a-5c87-43cd-bc4c-bb6c58541701" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2d1274c2-16d2-4eae-873c-b8c2ce5c96a9">
+        <profileInstance Id="2b6ea12c-54c9-453c-a046-47772059afa3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="37b9a35d-33af-4949-8012-baec298c9777">
+        <profileInstance Id="11425b18-a487-4c17-9832-39c49fff27f0" name="TextTemplateBindings">
+          <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+        </profileInstance>
+        <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

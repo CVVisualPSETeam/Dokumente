@@ -24,14 +24,6 @@
 	- Lila: Erich
 	</body>
     </comment>
-    <comment Id="a3e39088-cbfc-4808-8d8f-8ad8a8a92e22">
-      <elementDefinition Id="a10372d5-8e78-4167-b3c8-d9d742c9f065" />
-      <body>todo:
-imageinfo
-keypointinfo
-matchinfo
-</body>
-    </comment>
     <comment Id="18fbaf93-1b16-49f7-a410-c6d4ce05e2bb">
       <elementDefinition Id="fedb185a-6a91-4667-946c-a761062a1916" />
       <body>MatchCallTab(matchCall:MatchCall)
@@ -42,10 +34,6 @@ uses default View
       <elementDefinition Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312" />
       <body>singleton (threadlokal)
 </body>
-    </comment>
-    <comment Id="a92b6736-5e54-4828-9365-b00979b61a4f">
-      <elementDefinition Id="ada9b889-3348-45bb-8ba8-6f5227593183" />
-      <body>???</body>
     </comment>
     <comment Id="0a13259a-8660-49cf-ae58-55897fe7ea46">
       <elementDefinition Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374" />
@@ -335,7 +323,7 @@ uses default View
             <elementDefinition Id="e92f04ca-056b-41c1-8f57-f515ce41b024" />
           </association>
           <association Id="208a9c46-94b8-4dfa-afe7-e620e3e9b5c1" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="???????OverviewPanel" />
+            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="==OverviewPanel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b61ab514-ee56-4b9f-ac2a-2dbd46e95343" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -351,7 +339,7 @@ uses default View
             <elementDefinition Id="7c2cc205-2294-4dce-b416-efdb39a366cf" />
           </association>
           <association Id="7a1ea7c0-773f-4d0e-a986-d012608d1275" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="6a5db47e-f747-4352-8d7d-fb3f0d3c014b" LastKnownName="????MainCallWindow" />
+            <classMoniker Id="6a5db47e-f747-4352-8d7d-fb3f0d3c014b" LastKnownName="==MainCallWindow" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="6bc29d69-9807-4f2d-8e28-2e04c96ec5e2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false">
@@ -633,7 +621,7 @@ uses default View
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="???????OverviewPanel" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="==OverviewPanel" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259" />
         <generalsInternal>
           <generalization Id="7fd895e8-1d63-4dc8-b884-8647bea48e8e" isSubstitutable="false">
@@ -912,7 +900,7 @@ uses default View
                 <parameter Id="dc35cb73-b939-4a08-bfed-5fa09e628170" name="filterCall" direction="In" isUnique="false">
                   <elementDefinition Id="dc6c601e-eb37-403f-bdb4-25411f4c4714" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" LastKnownName="FilterCall" />
+                    <referencedTypeMoniker Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" LastKnownName="??FilterCall2" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1083,7 +1071,7 @@ uses default View
                 <parameter Id="0a0c1608-79fd-4d7a-89ff-d8bfc0609b8c" name="matchCall" direction="In" isUnique="false">
                   <elementDefinition Id="b5b3feed-ef07-4103-a9a4-50d036f680af" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" LastKnownName="MatchCall" />
+                    <referencedTypeMoniker Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" LastKnownName="??MatchCall2" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1235,17 +1223,17 @@ uses default View
       <class Id="c1e1d5f0-b5a2-4b2d-be6d-46015b24cbd0" name="DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
-          <interfaceRealization Id="68adf08a-ce9d-4d9b-8726-e269a3e54bf5">
+          <interfaceRealization Id="affc8325-26f7-4501-8f23-0104fef27177">
             <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="FilterView" />
-            <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
+            <elementDefinition Id="63ed1016-6aa4-4404-8a5b-03763f2b8be4" />
           </interfaceRealization>
         </suppliersInternal>
         <ownedOperationsInternal>
-          <operation Id="5872ee81-01d5-4b50-b91e-2a8bc066995b" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="708e5eb2-2978-464d-8a23-fff5367e911a" />
+          <operation Id="bf5e51a7-29d0-42d3-9459-b02285056153" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e552468-ed47-4fa7-a7a8-e8e618a38c54" />
           </operation>
-          <operation Id="f9f1a0f5-f684-4d86-83f4-e11ff1070564" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="541d681d-e925-4284-9d46-1aa74bb5b736" />
+          <operation Id="a9edd341-d3e8-4cd5-9837-f69bfc4c9997" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="599cd67c-fbbd-4670-99fd-5961e584d660" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1479,37 +1467,18 @@ uses default View
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="386c1e68-9880-41a0-aeb2-ab42480a4596" name="OverlayFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e83df37c-7161-4d2c-96e3-12e6cd5de9c0" />
-        <suppliersInternal>
-          <interfaceRealization Id="6ef8d7a0-ceeb-4a29-a97f-d3eb9b02ca8b">
-            <interfaceMoniker Id="11e31ef4-fcfe-4381-85ce-c03db23eaf53" LastKnownName="FilterView" />
-            <elementDefinition Id="1350d24f-7eb2-4c4d-9fae-d3414fcddced" />
-          </interfaceRealization>
-        </suppliersInternal>
-        <ownedOperationsInternal>
-          <operation Id="1a99653d-4484-4dc8-9464-a58987cfae48" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="20cc7f1a-f67b-4b9d-8254-c9594b513321" />
-          </operation>
-          <operation Id="108ac7e8-b610-4e7b-aa16-e59bb107768f" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="180cb9a6-4fed-452b-a944-fb6734804b0e" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
       <referencedType Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" name="map&lt;MatchView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;MatchView,QString&gt;">
         <elementDefinition Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" name="MatchCall" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Api or impl??::MatchCall">
+      <referencedType Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" name="??MatchCall2" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::??MatchCall2">
         <elementDefinition Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" name="MatchView" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::MatchView">
+      <referencedType Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" name="MatchView" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::MatchView">
         <elementDefinition Id="279a9507-f5ee-4dbc-95dc-8b7953719b08" />
       </referencedType>
     </packageHasNamedElement>
@@ -1519,7 +1488,7 @@ uses default View
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" name="FilterCall" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Api or impl??::FilterCall">
+      <referencedType Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" name="??FilterCall2" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::??FilterCall2">
         <elementDefinition Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e" />
       </referencedType>
     </packageHasNamedElement>
@@ -2008,7 +1977,7 @@ uses default View
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6a5db47e-f747-4352-8d7d-fb3f0d3c014b" name="????MainCallWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6a5db47e-f747-4352-8d7d-fb3f0d3c014b" name="==MainCallWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="9478ca4e-698c-4a03-bcc1-6b19ecc857c7" />
         <generalsInternal>
           <generalization Id="cd315059-c773-486d-9af8-010d80bae6ae" isSubstitutable="false">
@@ -2018,7 +1987,7 @@ uses default View
         </generalsInternal>
         <targetEnds>
           <association Id="476d277b-fa83-4022-ab82-d22d5aeb294a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="???????OverviewPanel" />
+            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="==OverviewPanel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="92c813f7-1d4b-4ceb-8f86-fae03140d845" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">

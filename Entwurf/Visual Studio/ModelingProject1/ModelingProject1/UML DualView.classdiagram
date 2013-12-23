@@ -1,20 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML DiffImageView" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="e3f192c8-7988-4089-829f-1592c984df36">
-      <elementDefinition Id="5839e1f7-2d90-4306-96b3-be366ae6cad9" />
-      <body>Diffimage
-Overlap Image</body>
-    </comment>
-  </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="ac22b6aa-bec0-403c-bc29-3c572d26949f">
-      <profileInstance Id="729fafd1-904f-4123-9d18-ae2237fb1026" name="TextTemplateBindings">
-        <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
-      </profileInstance>
-      <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML DiffImageView" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="c1837836-74cf-4454-9f6d-0449b5f01a6e" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -170,69 +155,28 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" name="DualImageFilterWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" name="FilterSelectorWidget&lt;2,1&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
-        <ownedAttributesInternal>
-          <property Id="337d39ba-0d48-44e1-b690-f758b1b2aee6" name="Image&amp; imageA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4e6b9d36-c1d0-487f-ad73-f9a1043f1128" />
-          </property>
-          <property Id="b5324859-6756-4176-b40f-a1e35670ad1e" name="Image&amp; imageB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f612a66f-08cb-4548-9451-7d56fc9cd66a" />
-          </property>
-          <property Id="c78d6dc9-c70e-4aa8-9dab-9c2258adbaa6" name="Image output" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="53c753df-35a4-4216-9627-f39b0b622ec1" />
-          </property>
-          <property Id="93e9d4d2-e079-4f38-945b-ef9dd365d040" name="vec&lt;tuple&lt;QString, descriptor&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="426cee24-0927-4a78-b5dc-5774c6828d25" />
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="05c17d8f-1f37-47af-b144-69f739bbc2c3" name="///slot setInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5b8e1a0c-a159-4d8d-ba4b-261392b16238" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4db3914a-d36e-4a8b-ab66-a562007edef5" name="Image&amp; a" direction="In" isUnique="false">
-                  <elementDefinition Id="e24f93c7-d7f8-46e7-97f4-f42bef527696" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="2a278e5c-36f4-43e5-bd0b-a1a380e513aa" name="Image&amp; b" direction="In" isUnique="false">
-                  <elementDefinition Id="8b1b5609-7226-4c03-bff6-5f598b7506bb" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="2f36d3d8-2815-40d7-b3a4-d035e571adcb" name="///signal newOutputImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5d152848-0a15-4b4a-a199-19f7eccaac63" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="cb81b878-153a-44cb-87c3-e5ed2a6294cb" name="Image&amp;" direction="In" isUnique="false">
-                  <elementDefinition Id="5d6e3b4c-4a49-4a15-96fc-4b52d5317088" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="3df8db2f-8f3e-4968-acc8-3116f8bf640a" name="registerFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="49d7d717-5fec-4b2c-bb85-d9ce23d57a08" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="331e05ae-649e-4a36-95a6-7fcfcf2b8d14" name="QString" direction="In" isUnique="false">
-                  <elementDefinition Id="01caa9e9-4014-4db6-8fd2-851b741c8e87" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="2f4464d8-eb7e-4c8f-85a7-c47e626a275f" name="descriptor" direction="In" isUnique="false">
-                  <elementDefinition Id="98f874f3-dab5-4df3-bce0-112ab43b87d6" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" name="SelectorWidget&lt;T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" name="SelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="2774c2d5-fb9c-454a-a203-c39cae81b0d4" parameters="" isLeaf="false">
+            <elementDefinition Id="eeaf2f98-7b56-4698-adf3-8547a77fd886" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="827cca57-1de1-4356-9c96-944d901aac70">
+                <elementDefinition Id="ada952b7-f13e-4558-8b6e-9c58bc990e67" />
+                <ownedParameterableElement>
+                  <class Id="c4a431ff-f38d-4346-b0a6-2d70b2ab1e20" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="9fb27b02-e188-428d-85a2-2889df8b4ba8" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property Id="84db237f-844f-482c-baa6-231a5cc4c3cb" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
@@ -281,7 +225,7 @@ Overlap Image</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e8864923-1289-44f8-ac26-d1dd03405b98" name="???????==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e8864923-1289-44f8-ac26-d1dd03405b98" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="31f2c62e-b21d-4bd1-aff7-665f43732ee2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -306,17 +250,11 @@ Overlap Image</body>
     <logicalClassDesignerModelHasTypes>
       <class Id="722a6d15-9bf4-44ad-b744-913662b083d1" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
-        <generalsInternal>
-          <generalization Id="94e518eb-aa15-48c2-b616-617f19903d09" isSubstitutable="false">
-            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="???????==QTGRaphicScene" />
-            <elementDefinition Id="d0d324ec-a689-47ea-b0ac-1ab8b4c350bf" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="50c4370a-d7cd-4fdb-a496-05fbb2ccab67" name="image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="d2d838cf-4154-4d12-ad3c-5c959742b012" />
           </property>
-          <property Id="28196f55-4eb1-4cbf-936a-54fc19e01f6d" name="Rect" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="28196f55-4eb1-4cbf-936a-54fc19e01f6d" name="Rect visible" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="930c31ad-6b57-4106-b41e-3f977af0a491" />
           </property>
           <property Id="c7ed17e4-bf6f-4af8-a794-e721616f711f" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -350,6 +288,16 @@ Overlap Image</body>
           <operation Id="a4fd2a0d-c05f-4b04-bc37-9b5d49ca0613" name="setImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4c56dbc2-c7e2-44cf-80e1-237c6c513619" />
           </operation>
+          <operation Id="edde5864-058b-429f-b4c4-0a0f689e5b03" name="///signal klicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="90d42fde-4e06-44ed-9077-e2b8fde643de" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="354831a6-a732-4a8e-a22e-971d3f831158" name="size_t id" direction="In" isUnique="false">
+                  <elementDefinition Id="4b04d47f-0692-4c3d-ae54-16a2869fc22b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -357,14 +305,14 @@ Overlap Image</body>
       <class Id="74f5a311-2ea5-4858-b5b9-e3734b1afba5" name="DualFilterView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="450c7680-de98-4c8e-9d20-23844613cf26" />
         <suppliersInternal>
-          <interfaceRealization Id="4b69c195-986e-4aff-a87d-c462dac06b80">
+          <interfaceRealization Id="934a413e-28c8-4802-b58a-e074090d8ebe">
             <interfaceMoniker Id="189d3034-4345-4cad-a00a-283fcf4d1298" LastKnownName="FilterView" />
-            <elementDefinition Id="8246392d-9c78-446b-aa19-994e92c810cb" />
+            <elementDefinition Id="63ed1016-6aa4-4404-8a5b-03763f2b8be4" />
           </interfaceRealization>
         </suppliersInternal>
         <targetEnds>
           <association Id="b9f15787-2760-4d2f-85f7-02c86423a68e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" LastKnownName="SelectorWidget&lt;T&gt;" />
+            <classMoniker Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" LastKnownName="SelectorWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="483194a1-a0cc-453d-b25d-aca19411087b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -396,7 +344,7 @@ Overlap Image</body>
             <elementDefinition Id="458076d0-b775-43f5-b38d-b8ebb9021234" />
           </association>
           <association Id="53a7d966-e710-4838-8b07-a4662ddbfe7c" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" LastKnownName="DualImageFilterWidget" />
+            <classMoniker Id="b3bccc1d-7d34-469e-9654-cb03b2a87423" LastKnownName="FilterSelectorWidget&lt;2,1&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b5dd95e3-8891-4311-a64e-ed934af3c203" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -412,7 +360,7 @@ Overlap Image</body>
             <elementDefinition Id="2696d70b-afb0-46a9-8ac4-6c4a2918ea9e" />
           </association>
           <association Id="db1310bf-b12d-4de4-ac44-7c3a51dcd1e7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="???????==QTGRaphicScene" />
+            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="==QTGRaphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e7b6bf65-c770-48d8-9fd9-7565eaeb56a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -429,11 +377,11 @@ Overlap Image</body>
           </association>
         </targetEnds>
         <ownedOperationsInternal>
-          <operation Id="872fff3b-4843-449a-8afe-ec8d84887386" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="708e5eb2-2978-464d-8a23-fff5367e911a" />
+          <operation Id="976c410e-a044-405d-add3-9b980f355f5d" name="//singal UpdateLeftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e552468-ed47-4fa7-a7a8-e8e618a38c54" />
           </operation>
-          <operation Id="a191794f-4d47-41f3-9219-810b618f5b3d" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="541d681d-e925-4284-9d46-1aa74bb5b736" />
+          <operation Id="542da75b-494c-411d-bd4f-bcf285163674" name="//signal UpdateleftFotter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="599cd67c-fbbd-4670-99fd-5961e584d660" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -466,6 +414,12 @@ Overlap Image</body>
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ac22b6aa-bec0-403c-bc29-3c572d26949f">
+        <profileInstance Id="729fafd1-904f-4123-9d18-ae2237fb1026" name="TextTemplateBindings">
+          <elementDefinition Id="bc7118d5-2b45-41f1-909a-574de460ef2a" />
+        </profileInstance>
+        <elementDefinition Id="8db2ce9b-9e11-4db3-bb95-52478955b9e0" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

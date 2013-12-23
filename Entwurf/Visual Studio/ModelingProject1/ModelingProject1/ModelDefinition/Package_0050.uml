@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="6b391ca1-d577-4da7-8a2c-2133c733e6c2"
   name="FilterView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -93,7 +93,7 @@
             isAbstract="false">
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="DualImageFilterWidget"
+              LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -130,7 +130,7 @@
             isAbstract="false">
             <classMoniker
               Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
-              LastKnownName="SingleImageFilterWidget"
+              LastKnownName="FilterSelectorWidget&lt;1,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -225,7 +225,7 @@
         isActiveClass="false">
         <suppliersInternal>
           <interfaceRealization
-            Id="8246392d-9c78-446b-aa19-994e92c810cb">
+            Id="63ed1016-6aa4-4404-8a5b-03763f2b8be4">
             <interfaceMoniker
               Id="29ea8881-0222-4fbc-908a-cb8ceaaa51ad"
               LastKnownName="FilterView"
@@ -242,7 +242,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget&lt;T&gt;"
+              LastKnownName="SelectorWidget"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -316,7 +316,7 @@
             isAbstract="false">
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="DualImageFilterWidget"
+              LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -384,7 +384,7 @@
         </targetEnds>
         <ownedOperationsInternal>
           <operation
-            Id="708e5eb2-2978-464d-8a23-fff5367e911a"
+            Id="0e552468-ed47-4fa7-a7a8-e8e618a38c54"
             name="//singal UpdateLeftFotter"
             isLeaf="false"
             isStatic="false"
@@ -392,7 +392,7 @@
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="541d681d-e925-4284-9d46-1aa74bb5b736"
+            Id="599cd67c-fbbd-4670-99fd-5961e584d660"
             name="//signal UpdateleftFotter"
             isLeaf="false"
             isStatic="false"
@@ -465,7 +465,7 @@
             isAbstract="false">
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="DualImageFilterWidget"
+              LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
               LastKnownLocation="Package_0044.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
