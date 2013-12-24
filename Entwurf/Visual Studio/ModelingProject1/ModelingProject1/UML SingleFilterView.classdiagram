@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a7c9865e-a327-40eb-9ae4-f563c17f98b7" name="UMLFilterImgView" linkedPackageId="8a17b042-2499-4094-a0ab-d26f0da8f2be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="0625d82c-7d58-405c-ab29-8357e6aab976">
-      <elementDefinition Id="e9db4776-9fa5-4d32-9997-15e346d18420" />
-      <body>calcDiffImg(...) evtl. schon in DualImageFilterWidget
-drin?</body>
-    </comment>
-  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="5d0c56f3-fb05-4b18-b523-cd0d9d2729ce" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -253,7 +246,7 @@ drin?</body>
             <elementDefinition Id="549590b4-d9e7-4127-bb1a-ca6b9ccc7fe7" />
           </association>
           <association Id="fb9c5195-e3e6-4943-8634-8b1f57cf04bf" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="==QTGRaphicScene" />
+            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="QTGraphicScene" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="9d187d90-98ae-4203-8f7c-5914b651656e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -280,7 +273,7 @@ drin?</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="==QTGRaphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="QTGraphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
         <targetEnds>
           <association Id="d0f0a69c-96b0-4c59-b7be-1e6cec54352b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">

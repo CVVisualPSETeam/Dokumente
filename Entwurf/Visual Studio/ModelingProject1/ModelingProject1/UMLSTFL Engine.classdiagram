@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
@@ -14,11 +14,6 @@
     <packageHasNamedElement>
       <referencedType Id="ccdc7a06-3f81-455b-9ae1-34fcec328a13" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
         <elementDefinition Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="b92a60a4-0aa2-438f-ab7d-569a46138821" name="ElementType" isAbstract="false" isLeaf="false" cachedFullName="ElementType">
-        <elementDefinition Id="fc7a9634-6d89-4a41-879e-4d31fefae5bf" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -132,11 +127,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="d80ab362-e4a5-449c-a03e-a11540cbd8c1" name="ColumnType" isAbstract="false" isLeaf="false" cachedFullName="ColumnType">
-        <elementDefinition Id="b3f4589d-9347-4705-a008-70f6213d7570" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="3ed5a17f-97ff-4e1b-b1ad-5e552f99554a" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
         <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
       </referencedType>
@@ -151,8 +141,23 @@
         <elementDefinition Id="7479c561-76be-40a8-b575-407add153e3a" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" name="STFLEngine&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" name="STFLEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="428b6ce2-a140-47d8-91c1-e67a22def15a" />
+              <ownedRedefinableTemplateSignatureInternal>
+                <redefinableTemplateSignature Id="e9f3144f-7ff9-40d1-9ae6-49f3f9da9d1b" parameters="" isLeaf="false">
+                  <elementDefinition Id="43f2caca-9daa-409c-bb4d-4d0fb4257039" />
+                  <ownedParameters>
+                    <classifierTemplateParameter Id="f7908811-21de-410e-8a1e-4882f31ab1c3">
+                      <elementDefinition Id="22a7906b-52b3-4446-a8d8-e800f1977457" />
+                      <ownedParameterableElement>
+                        <class Id="1fed55c9-f19c-4c25-b2e2-4adf99a666bb" name="ColumnType" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
+                        </class>
+                      </ownedParameterableElement>
+                    </classifierTemplateParameter>
+                  </ownedParameters>
+                </redefinableTemplateSignature>
+              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="0622617d-87c4-45f8-ac13-b73261ca9a1d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
@@ -241,7 +246,7 @@
                       <parameter Id="b165ee09-b332-4eb5-a581-7d4d03fa2a59" name="element" direction="In" isUnique="false">
                         <elementDefinition Id="18830b39-ba0a-4538-9be2-e39489adf833" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="d80ab362-e4a5-449c-a03e-a11540cbd8c1" LastKnownName="ColumnType" />
+                          <referencedTypeMoniker Id="9bbc8693-dec8-4c6c-90d7-199841652bd0" LastKnownName="ColumnType" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
@@ -317,8 +322,23 @@
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="0ed03a5b-0876-4691-b4a6-586abed00894" name="ElementGroup&lt;ElementType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="0ed03a5b-0876-4691-b4a6-586abed00894" name="ElementGroup" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="7b73a384-3b55-461d-ab57-96f9cffbf230" />
+              <ownedRedefinableTemplateSignatureInternal>
+                <redefinableTemplateSignature Id="45a4b185-df1e-47b7-b3f2-18a05c7c7692" parameters="" isLeaf="false">
+                  <elementDefinition Id="1a165b76-a37e-4327-9c53-c6c2e8c71b9f" />
+                  <ownedParameters>
+                    <classifierTemplateParameter Id="9dac503c-242a-4f17-b560-4d3037850128">
+                      <elementDefinition Id="312b4a81-87f8-4c9c-acfd-3b91929c6a8c" />
+                      <ownedParameterableElement>
+                        <class Id="41d03086-0518-47e5-86c7-0be6c266a1c3" name="ElementType" isAbstract="false" isLeaf="false" isActiveClass="false">
+                          <elementDefinition Id="bed889a1-b2c9-4638-9a3c-70ab8b57e6ec" />
+                        </class>
+                      </ownedParameterableElement>
+                    </classifierTemplateParameter>
+                  </ownedParameters>
+                </redefinableTemplateSignature>
+              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="6e8a3836-fbfd-402c-b1f9-1872fb4a1049" name="title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="390fa909-9cae-4da8-b64a-a03eaf767d6a" />
@@ -380,7 +400,7 @@
                       <parameter Id="52299a48-017d-4983-8ab3-b3139049379e" name="element" direction="In" isUnique="false">
                         <elementDefinition Id="7fb900f1-5bf6-44ce-a884-0c9ecf526360" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="b92a60a4-0aa2-438f-ab7d-569a46138821" LastKnownName="ElementType" />
+                          <referencedTypeMoniker Id="4bc3893c-ec47-447a-92ab-2959b6d71328" LastKnownName="ElementType" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
@@ -409,7 +429,7 @@
                       <parameter Id="0a5635da-245e-4673-b5a1-72fff0465ae3" direction="Return" isUnique="false">
                         <elementDefinition Id="fd81b777-93a8-4f2d-a38f-e7657c83ea18" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="b92a60a4-0aa2-438f-ab7d-569a46138821" LastKnownName="ElementType" />
+                          <referencedTypeMoniker Id="4bc3893c-ec47-447a-92ab-2959b6d71328" LastKnownName="ElementType" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
@@ -686,6 +706,16 @@
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="9bbc8693-dec8-4c6c-90d7-199841652bd0" name="ColumnType" isAbstract="false" isLeaf="false" cachedFullName="ColumnType">
+        <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4bc3893c-ec47-447a-92ab-2959b6d71328" name="ElementType" isAbstract="false" isLeaf="false" cachedFullName="ElementType">
+        <elementDefinition Id="bed889a1-b2c9-4638-9a3c-70ab8b57e6ec" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

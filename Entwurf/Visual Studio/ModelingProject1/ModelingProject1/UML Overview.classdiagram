@@ -323,7 +323,7 @@ uses default View
             <elementDefinition Id="e92f04ca-056b-41c1-8f57-f515ce41b024" />
           </association>
           <association Id="208a9c46-94b8-4dfa-afe7-e620e3e9b5c1" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="==OverviewPanel" />
+            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="OverviewPanel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b61ab514-ee56-4b9f-ac2a-2dbd46e95343" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -621,7 +621,7 @@ uses default View
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="==OverviewPanel" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="29aab215-81aa-4610-a006-7ccc428441eb" name="OverviewPanel" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259" />
         <generalsInternal>
           <generalization Id="7fd895e8-1d63-4dc8-b884-8647bea48e8e" isSubstitutable="false">
@@ -771,10 +771,10 @@ uses default View
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="942614ed-ff32-4236-a4a0-cda865d5dc93" name="WindowsController" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="942614ed-ff32-4236-a4a0-cda865d5dc93" name="viewController" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="31c8ce50-06ce-4266-bc03-912868559369" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="c436e82c-dcb4-42ba-ad20-0e245201fe33" LastKnownName="WindowsController" />
+              <referencedTypeMoniker Id="6f848165-1251-4b39-9ed6-1f427189c024" LastKnownName="ViewController" />
             </type_NamedElement>
           </property>
           <property Id="2093f8ce-3510-4498-be59-5a13c1e67a28" name="calls" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1193,7 +1193,7 @@ uses default View
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2576a700-ec3c-4b04-a50c-46bbc91add16" name="nMatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2576a700-ec3c-4b04-a50c-46bbc91add16" name="MatchImageView" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e596f02b-5e80-4098-a393-f1aa2d08d754" />
         <generalsInternal>
           <generalization Id="496f6181-74ed-400f-b965-948198c9664c" isSubstitutable="false">
@@ -1581,7 +1581,7 @@ uses default View
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="??CallData3" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
               <ownedAttributesInternal>
                 <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1623,7 +1623,7 @@ uses default View
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" name="==debugDilate" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" name="debugDilate" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="ea75c4ae-b271-4956-956e-7d9d76fe8ba4" />
               <ownedOperationsInternal>
                 <operation Id="9c418031-0b21-4dc6-a787-c90ca3daf7a9" name="debugDilate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1659,7 +1659,7 @@ uses default View
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="849626b0-2a53-4236-9662-edf95596223d" name="==debugMode" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="849626b0-2a53-4236-9662-edf95596223d" name="debugMode" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="c49c5aeb-95c5-410c-b692-4716f86ec669" />
               <ownedOperationsInternal>
                 <operation Id="97c32f41-1156-49ec-8c20-564f787053c3" name="getDebugFlag" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1699,11 +1699,11 @@ uses default View
               <elementDefinition Id="d483e5f9-235f-4e43-849e-d8eb1df3335c" />
               <packagedElements>
                 <packageHasNamedElement>
-                  <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="==Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="e3c88f83-b3b0-441e-98ae-705ee3c02a29" />
                     <generalsInternal>
                       <generalization Id="d6ac8070-0cd6-4ffa-b06c-6931b7daee60" isSubstitutable="false">
-                        <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="==debugDilate" />
+                        <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="debugDilate" />
                         <elementDefinition Id="bb794b2d-d3a0-4e28-9203-c870109912b0" />
                       </generalization>
                     </generalsInternal>
@@ -1869,11 +1869,6 @@ uses default View
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="c436e82c-dcb4-42ba-ad20-0e245201fe33" name="WindowsController" isAbstract="false" isLeaf="false" cachedFullName="WindowsController">
-        <elementDefinition Id="68d3efc2-b88e-4e5f-82c3-d1d429f12ed3" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="15eba550-5105-4537-a118-c19c58443b5e" name="opc::OutputArray" isAbstract="false" isLeaf="false" cachedFullName="opc::OutputArray">
         <elementDefinition Id="86a94e95-d1c3-4004-a2a7-5259b2b728fa" />
       </referencedType>
@@ -1979,7 +1974,7 @@ uses default View
         </generalsInternal>
         <targetEnds>
           <association Id="476d277b-fa83-4022-ab82-d22d5aeb294a" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="==OverviewPanel" />
+            <classMoniker Id="29aab215-81aa-4610-a006-7ccc428441eb" LastKnownName="OverviewPanel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="92c813f7-1d4b-4ceb-8f86-fae03140d845" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -2260,6 +2255,11 @@ uses default View
     <packageHasNamedElement>
       <referencedType Id="b586f84f-5ba7-4508-9a64-8f7687b1812d" name="&amp;Call" isAbstract="false" isLeaf="false" cachedFullName="&amp;Call">
         <elementDefinition Id="22ba9a5f-e092-4dc1-98c9-491e1dafa649" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6f848165-1251-4b39-9ed6-1f427189c024" name="ViewController" isAbstract="false" isLeaf="false" cachedFullName="ViewController">
+        <elementDefinition Id="5beac5e5-03fc-4246-b7a1-328b3fb13582" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

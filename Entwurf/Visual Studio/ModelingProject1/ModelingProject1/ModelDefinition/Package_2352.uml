@@ -17,7 +17,7 @@
     <packageHasNamedElement>
       <class
         Id="ea75c4ae-b271-4956-956e-7d9d76fe8ba4"
-        name="==debugDilate"
+        name="debugDilate"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -93,7 +93,7 @@
     <packageHasNamedElement>
       <class
         Id="c49c5aeb-95c5-410c-b692-4716f86ec669"
-        name="==debugMode"
+        name="debugMode"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -168,6 +168,119 @@
         Id="d483e5f9-235f-4e43-849e-d8eb1df3335c"
         LastKnownName="__impl"
         LastKnownLocation="Package_0010.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4e476b67-3333-40be-ac11-fa086a167f06"
+        name="CallData"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="ee3540b9-de76-400f-9ba2-a3bbaf690b9b"
+            name="file"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="afc3265a-f041-49ff-992c-c694781f4e11"
+                LastKnownName="std::string"
+                LastKnownLocation="Package_2352.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fd4ed057-b5ab-4ac4-b13b-d304b24c4980"
+            name="line"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                LastKnownName="size_t"
+                LastKnownLocation="Package_2352.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1c765c80-bc88-4ffd-ae77-5c7ec2d3bb4d"
+            name="function"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="afc3265a-f041-49ff-992c-c694781f4e11"
+                LastKnownName="std::string"
+                LastKnownLocation="Package_2352.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="df87ef8d-4038-441f-8ef4-ba8e305be85b"
+            name="isKnown"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3e0b7652-fcb3-4cf4-95c5-233669b9d0c8"
+            name="CallData"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5e8657e4-0651-4949-bc30-13625714384d"
+            name="CallData(file:const std::String,line:size_t,function: const stdString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d1e07cc7-f98c-48c5-9452-92531fa8a61a"
+            name="operator bool"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
 </package>
