@@ -1284,12 +1284,6 @@ uses default View
               <referencedTypeMoniker Id="9340927f-cd02-46a1-9fc3-dbcd869d86c4" LastKnownName="vector&lt;CollumType&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="1ba0d323-8989-4aad-908e-261c7c6b8c67" name="rawFilterPoolFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="35e0737c-8b58-46a7-88d3-8d9ca8fde2e1" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="1dd75cd6-4641-44da-90c7-c84677223de1" LastKnownName="std::function&lt;QString(CollmnType)&gt;" />
-            </type_NamedElement>
-          </property>
           <property Id="b71a4a20-6a42-4887-85ec-1dcc8c2d5c83" name="groupFuncs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="929aeb43-f4b7-4484-9cc6-163ae282c8c7" />
             <type_NamedElement>
@@ -1314,12 +1308,6 @@ uses default View
               <referencedTypeMoniker Id="09bb9573-3734-4638-aad8-7a9318770a79" LastKnownName="std::map&lt;QString, std::function&lt;float(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;" />
             </type_NamedElement>
           </property>
-          <property Id="cc201225-074c-49f2-a538-bf2e011a2a33" name="rawFilterFunc" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="e43fa15f-bddc-48ae-bfe9-2b6d2dc48daa" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="da25805b-9ca4-473e-a992-2a5ba5cecce9" LastKnownName="std::function&lt;float(QString, ColumnType)&gt;" />
-            </type_NamedElement>
-          </property>
           <property Id="d058965d-0be9-49d3-bed9-2aa947db043e" name="filterPoolFuncs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f404f782-251b-4765-83b0-33947cebe940" />
             <type_NamedElement>
@@ -1342,12 +1330,6 @@ uses default View
             <elementDefinition Id="cf313f28-8683-4421-9824-543253555972" />
             <type_NamedElement>
               <referencedTypeMoniker Id="7a85a268-d43d-464c-87bf-39afe04861bf" LastKnownName="std::map&lt;QString, std::vector&lt;QString&gt;&gt;" />
-            </type_NamedElement>
-          </property>
-          <property Id="16f08ef2-fb92-4e6f-96f7-4710ca291e37" name="rawFilterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="11427cac-62c5-4c21-98cf-af1149164e69" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="a5ac0d79-7b87-444e-860a-fa5ae16a1851" LastKnownName="std::vector&lt;QString&gt;" />
             </type_NamedElement>
           </property>
           <property Id="1b708102-55ba-492e-9c3b-e68fa2bddf8e" name="lastQuery" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1546,11 +1528,6 @@ uses default View
         <elementDefinition Id="781c3bae-190e-4314-8096-8835519ff865" />
       </referencedType>
     </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="1dd75cd6-4641-44da-90c7-c84677223de1" name="std::function&lt;QString(CollmnType)&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::function&lt;QString(CollmnType)&gt;">
-        <elementDefinition Id="632e9d7b-ae86-4c26-b5aa-2ef8e345f5e3" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
       <class Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" name="QWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e7b1ac62-f852-4d28-9382-8d483866006a" />
@@ -1577,7 +1554,7 @@ uses default View
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
-      <package Id="58d25ab6-5936-4f2b-ad91-a3d0b25a7786" name="__Api or impl??">
+      <package Id="58d25ab6-5936-4f2b-ad91-a3d0b25a7786" name="__Api">
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
@@ -1772,10 +1749,10 @@ uses default View
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="5f0786c8-20ac-4879-80b3-603137a257e1" name="CallData" direction="In" isUnique="false">
-                  <elementDefinition Id="bf60b3b2-d036-4234-9dc2-6987aae3bdd9" />
+                <parameter Id="ad4e7077-695f-4f51-b946-78e5dfcce36a" name="CallData" direction="In" isUnique="false">
+                  <elementDefinition Id="dfef1188-b778-4b8b-9f65-0b6c88987c73" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="4ac6d686-ed2a-443b-bf97-3e69cb5f83e9" LastKnownName="impl::CallDAta" />
+                    <referencedTypeMoniker Id="1de67504-359f-47df-b217-14b5f2b16ff6" LastKnownName="impl::CallData" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1849,11 +1826,6 @@ uses default View
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="4ac6d686-ed2a-443b-bf97-3e69cb5f83e9" name="impl::CallDAta" isAbstract="false" isLeaf="false" cachedFullName="impl::CallDAta">
-        <elementDefinition Id="2a234ab0-97ba-43b3-b82d-95f818a6b714" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="85c8fbfe-6a6a-4970-99a3-3270f4f1401f" name="callData" isAbstract="false" isLeaf="false" cachedFullName="callData">
         <elementDefinition Id="39044a7a-7366-45bb-bb38-d89128740148" />
       </referencedType>
@@ -1891,11 +1863,6 @@ uses default View
     <packageHasNamedElement>
       <referencedType Id="09bb9573-3734-4638-aad8-7a9318770a79" name="std::map&lt;QString, std::function&lt;float(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::map&lt;QString, std::function&lt;float(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;">
         <elementDefinition Id="cc9a7135-bc55-41a2-8f3b-4eb640d7d287" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="da25805b-9ca4-473e-a992-2a5ba5cecce9" name="std::function&lt;float(QString, ColumnType)&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::function&lt;float(QString, ColumnType)&gt;">
-        <elementDefinition Id="27484b69-4797-4c47-8c9a-7755b9d53007" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
