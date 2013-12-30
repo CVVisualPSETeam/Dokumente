@@ -44,6 +44,17 @@ uses default View
       <elementDefinition Id="8a7fbbd0-9e98-4d7f-a86b-e8f6d1e25430" />
       <body>getId(): returns ID of the Call</body>
     </comment>
+    <comment Id="10918c52-a25d-46e1-8650-14e64dd86579">
+      <elementDefinition Id="37cd4c14-a2bf-4f47-a3c3-f75fa8d9453c" />
+      <body>benötigte Attribute;
+zwei Bilder
+die KeyPoints
+die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind sondern irgendwo anders)</body>
+    </comment>
+    <comment Id="04b67c01-6b28-49e3-84dc-384d3b40b03e">
+      <elementDefinition Id="e879cb7b-8d61-4b2a-b961-40f3700a2595" />
+      <body>irgendwie sollte auch ein Aufruf mit zwei Bildern zusammen möglich sein, falls es schon eingeplant ist bitte kommentar an der Stelle einfügen</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
@@ -1558,48 +1569,6 @@ uses default View
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
-              <ownedAttributesInternal>
-                <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ee3540b9-de76-400f-9ba2-a3bbaf690b9b" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="818a1449-4e1c-4823-9dae-af694ab73310" LastKnownName="std::string" />
-                  </type_NamedElement>
-                </property>
-                <property Id="9d732df8-9d46-425c-86bc-406f91728ff2" name="line" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fd4ed057-b5ab-4ac4-b13b-d304b24c4980" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
-                  </type_NamedElement>
-                </property>
-                <property Id="3caf84f0-4598-49ff-b184-38c09bfa0429" name="function" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="1c765c80-bc88-4ffd-ae77-5c7ec2d3bb4d" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="10a8e801-4466-499d-939d-1db5ee3cf2cb" LastKnownName="std::string" />
-                  </type_NamedElement>
-                </property>
-                <property Id="2a509570-de7f-4aa7-975c-08e6094fb471" name="isKnown" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="df87ef8d-4038-441f-8ef4-ba8e305be85b" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
-                  </type_NamedElement>
-                </property>
-              </ownedAttributesInternal>
-              <ownedOperationsInternal>
-                <operation Id="67e28e69-56ee-45d3-9dfb-cda10f18e963" name="CallData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="3e0b7652-fcb3-4cf4-95c5-233669b9d0c8" />
-                </operation>
-                <operation Id="55ab9c72-cc7c-4565-affe-605941ec6f50" name="CallData(file:const std::String,line:size_t,function: const stdString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="5e8657e4-0651-4949-bc30-13625714384d" />
-                </operation>
-                <operation Id="35a00fe7-4716-4e06-9c6f-acf8852d913e" name="operator bool" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="d1e07cc7-f98c-48c5-9452-92531fa8a61a" />
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
-          <packageHasNamedElement>
             <class Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" name="debugDilate" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="ea75c4ae-b271-4956-956e-7d9d76fe8ba4" />
               <ownedOperationsInternal>
@@ -1672,22 +1641,57 @@ uses default View
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <package Id="be1da4b4-714a-45a0-9e0e-dc721a54fcae" name="__impl">
-              <elementDefinition Id="d483e5f9-235f-4e43-849e-d8eb1df3335c" />
-              <packagedElements>
-                <packageHasNamedElement>
-                  <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
-                    <elementDefinition Id="e3c88f83-b3b0-441e-98ae-705ee3c02a29" />
-                    <generalsInternal>
-                      <generalization Id="d6ac8070-0cd6-4ffa-b06c-6931b7daee60" isSubstitutable="false">
-                        <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="debugDilate" />
-                        <elementDefinition Id="bb794b2d-d3a0-4e28-9203-c870109912b0" />
-                      </generalization>
-                    </generalsInternal>
-                  </class>
-                </packageHasNamedElement>
-              </packagedElements>
-            </package>
+            <class Id="a4d338f6-025c-4ebe-af5b-4443a27a4101" name="Dilate" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e3c88f83-b3b0-441e-98ae-705ee3c02a29" />
+              <generalsInternal>
+                <generalization Id="d6ac8070-0cd6-4ffa-b06c-6931b7daee60" isSubstitutable="false">
+                  <classMoniker Id="1408a4f8-b9de-4b7a-854d-c6cdd731f884" LastKnownName="debugDilate" />
+                  <elementDefinition Id="bb794b2d-d3a0-4e28-9203-c870109912b0" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
+              <ownedAttributesInternal>
+                <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ee3540b9-de76-400f-9ba2-a3bbaf690b9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="818a1449-4e1c-4823-9dae-af694ab73310" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="9d732df8-9d46-425c-86bc-406f91728ff2" name="line" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fd4ed057-b5ab-4ac4-b13b-d304b24c4980" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
+                  </type_NamedElement>
+                </property>
+                <property Id="3caf84f0-4598-49ff-b184-38c09bfa0429" name="function" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c765c80-bc88-4ffd-ae77-5c7ec2d3bb4d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="10a8e801-4466-499d-939d-1db5ee3cf2cb" LastKnownName="std::string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="2a509570-de7f-4aa7-975c-08e6094fb471" name="isKnown" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df87ef8d-4038-441f-8ef4-ba8e305be85b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="67e28e69-56ee-45d3-9dfb-cda10f18e963" name="CallData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3e0b7652-fcb3-4cf4-95c5-233669b9d0c8" />
+                </operation>
+                <operation Id="55ab9c72-cc7c-4565-affe-605941ec6f50" name="CallData(file:const std::String,line:size_t,function: const stdString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5e8657e4-0651-4949-bc30-13625714384d" />
+                </operation>
+                <operation Id="35a00fe7-4716-4e06-9c6f-acf8852d913e" name="operator bool" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d1e07cc7-f98c-48c5-9452-92531fa8a61a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
           </packageHasNamedElement>
         </packagedElements>
       </package>
@@ -1725,6 +1729,24 @@ uses default View
     <logicalClassDesignerModelHasTypes>
       <class Id="de71854a-6c93-4726-9fb1-20e3b44c0640" name="Call" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="551929e6-748e-4559-bf1e-3d58d21c558b" />
+        <targetEnds>
+          <association Id="c89ca359-ec69-4566-a2f0-9c814462776b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" LastKnownName="CallData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8a0f354f-6fa9-4c11-a2cc-341d903ba68b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="14a5c7e6-579a-4d47-8db8-04529384ffb4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0aab7e20-740d-446d-9469-d46119c2f03b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="619c5a28-2122-43e0-b3be-bb97a6acb1d1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="058b5425-e768-45fe-b00d-7e298fc43457" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="abef5c18-dcee-434f-8c14-10b363aaba91" name="callData" visibility="Protected" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="cb4d62ba-5d3b-44b8-b61e-2dd2a8c233ae" />

@@ -98,8 +98,7 @@ Overlap Image</body>
     <comment
       Id="72dbaaca-512e-4ff9-930d-38845ac6a3db">
       <body>calcOverlayImg(...) evtl. schon in DualImageFilterWidget
-drin? sollten
-</body>
+drin? JA</body>
     </comment>
     <comment
       Id="cf6c72e3-a5ce-424c-ba6e-b2a01eec4d3d">
@@ -143,6 +142,65 @@ punktgruppen:
 zur id:
 	- ermöglicht stylechanges für nur eine instanz
 	- maxvalue = alles</body>
+    </comment>
+    <comment
+      Id="37cd4c14-a2bf-4f47-a3c3-f75fa8d9453c">
+      <body>benötigte Attribute;
+zwei Bilder
+die KeyPoints
+die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind sondern irgendwo anders)</body>
+    </comment>
+    <comment
+      Id="e879cb7b-8d61-4b2a-b961-40f3700a2595">
+      <body>irgendwie sollte auch ein Aufruf mit zwei Bildern zusammen möglich sein, falls es schon eingeplant ist bitte kommentar an der Stelle einfügen</body>
+    </comment>
+    <comment
+      Id="dc0bbe61-0159-4021-be4e-d275842f6c95">
+      <body>In diesem View werden zwei Bilder angezeigt mit den gegebenen Matches als Verbindungslinien.
+Die Zeichenart der Verbindungslinien wird über einen QPen angegeben.</body>
+    </comment>
+    <comment
+      Id="4fb48080-b9b9-43dc-8fb0-520e33d45c15">
+      <body>Wird zurzeit nicht verwendet
+</body>
+    </comment>
+    <comment
+      Id="2446d2ee-b861-4ff3-9897-53d022cf0530">
+      <body>Es wird ein Histogramm eines gegebenen Bildes angezeigt. Optional kann ein Bildausschnitt ausgewählt werden.</body>
+    </comment>
+    <comment
+      Id="f0b4d7ad-f11a-407a-a6b0-f4e7620bd7fb">
+      <body>Zeigt die Verschiebung der Matches auf beiden Bildern als Pfeile an</body>
+    </comment>
+    <comment
+      Id="3d4d9fcf-9248-4043-9c8d-7c850fa70c67">
+      <body>ggf das Package qt löschen da util nur 1 oder 2 Klasse(n) enthält welche nicht im qt Package sind</body>
+    </comment>
+    <comment
+      Id="c5d80238-55dc-4980-8537-f1f31353b471">
+      <body>Die Projection wird nirgendswo berechnet, ggf util Klasse hinzufügen</body>
+    </comment>
+    <comment
+      Id="a80a35b6-137a-45f8-9f8f-2afca004206c">
+      <body>Dieser View benutzt Filter welche 2 Bilder bracuhen wie Overlay und Difference </body>
+    </comment>
+    <comment
+      Id="7b0789cb-12fc-4f23-ba60-614f469ea8ff">
+      <body>Diese View benutzt Filter welche auf ein einzelnes Bild angewendet werden.</body>
+    </comment>
+    <comment
+      Id="1bd20a29-fcb2-4212-909a-2c2df81cd480">
+      <body>reference==optional???
+
+eine Projection klasse vird noch benötigt (siehe ProjectionView)</body>
+    </comment>
+    <comment
+      Id="4926c08b-ebb8-45cf-bed7-797a6f2bc25c">
+      <body>RawView bitte nochmal überarbeiten</body>
+    </comment>
+    <comment
+      Id="dead9039-6e04-45a5-b193-fec10737fd68">
+      <body>Bitte noch aggregationen-,uses-, etc Relationen einfügen</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
