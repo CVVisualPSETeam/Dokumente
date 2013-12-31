@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="ec592eff-c8cb-4291-84cd-7d96794b3578"
   name="management" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -207,6 +207,95 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="165898f1-db0e-47a8-8c37-398db2b4bebd"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="matchViewMap"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b29622cc-9dca-4a40-88ba-059646231dbf"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ceaf47a0-d462-4f13-9e8f-34935293dff9"
+                  name="matchViewMap"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="973f7d08-c8ef-4157-8486-9e929bce687a"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ead8cea3-3e66-4e38-b7fc-120631a4098d"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0fc11066-489b-48ac-9772-eb946cfdbd6c"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="matchView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad97beda-b451-49f8-8a74-da2aebec6a5d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d97cc85-502f-4b1f-a47c-51fb6c6d9395"
+                  name="matchView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -242,16 +331,43 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="8abe205f-cc26-4656-b2a9-898a5e4f4a58"
-                  name="MatchCall"
-                  direction="In"
-                  isUnique="false" />
+                  name="name"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8"
-                  name="ViewController"
+                  name="matchCall"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7deed095-f2c7-44cc-bbf3-8e33c5fe7b66"
+                      LastKnownName="CVVisual::data::MatchCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db507534-c7b8-4d0c-a098-348b1a3f75c3"
+                  name="viewController"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d341529b-b716-48ce-bc78-e66a45183615"
+                      LastKnownName="CVVisual::controller::ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -267,26 +383,26 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="b5b3feed-ef07-4103-a9a4-50d036f680af"
-                  name="matchCall"
-                  direction="In"
-                  isUnique="false">
+                  name="name"
+                  direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a"
-                      LastKnownName="??MatchCall2"
-                      LastKnownLocation="Package_1649.uml" />
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="ab52b51d-2eb2-4780-bbde-8024cae3383e"
-                  name="viewController"
-                  direction="In">
+                  name="matchCall"
+                  direction="In"
+                  isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
-                      LastKnownName="ViewController"
+                      Id="7deed095-f2c7-44cc-bbf3-8e33c5fe7b66"
+                      LastKnownName="CVVisual::data::MatchCall"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -294,6 +410,19 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="f29077c0-d44f-476b-ab31-2d8d8052d8e0"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d341529b-b716-48ce-bc78-e66a45183615"
+                      LastKnownName="CVVisual::controller::ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a74c6648-3dee-438e-a40e-d39c80fc08ca"
                   name="matchViewId"
                   direction="In"
                   isUnique="false">
@@ -323,10 +452,10 @@
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <interfaceMoniker
-                      Id="279a9507-f5ee-4dbc-95dc-8b7953719b08"
-                      LastKnownName="MatchView"
-                      LastKnownLocation="Package_1649.uml" />
+                    <undefinedTypeMoniker
+                      Id="8d3e6f37-08aa-494c-825c-80c7e384ee32"
+                      LastKnownName="CVVisual::MatchView::MatchView"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -377,14 +506,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="cbc8564c-23aa-4337-a92c-460d21bc941e"
-            name="///slot: clicked"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -659,6 +780,95 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="ee3c375a-e760-4454-be54-c94f68d5ccf2"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="filterViewMap"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bcfaf6b-9477-419e-86f0-fb00d246614d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="372b5a4e-5bc7-455e-a8be-69da61d44a1e"
+                  name="filterViewMap"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="437c2a69-6973-429c-b274-f5755f67c629"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b32dba47-a4f4-4d82-9833-68a6de5c383b"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="209b8e89-1602-459a-9fe1-4525d68ca176"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName="filterView"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad"
+              LastKnownName="FilterView"
+              LastKnownLocation="Package_0050.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1cb8870c-479b-4c10-8d18-e429c7d5e211"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0cfb6f4-af63-4b2f-a40e-f89ef17902e7"
+                  name="filterView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -694,16 +904,43 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="5ccc1e48-4662-42f4-999f-837de2e134a6"
-                  name="FilterCall"
-                  direction="In"
-                  isUnique="false" />
+                  name="name"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="a79da97b-86fd-446d-89b0-6d7f45908ca3"
-                  name="ViewController"
+                  name="filterCall"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="92c33d3a-9bc2-4b9c-beb9-13c2f08573cf"
+                      LastKnownName="CVVisual::data::FilterCall"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="96ffbc5f-3770-4e82-83e9-b3ac5a5d919b"
+                  name="viewController"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="80d4d950-2465-4c8c-82d2-9fe4fffd4f6b"
+                      LastKnownName="CVVisual::controller:ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -719,26 +956,26 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="dc6c601e-eb37-403f-bdb4-25411f4c4714"
-                  name="filterCall"
-                  direction="In"
-                  isUnique="false">
+                  name="name"
+                  direction="In">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e"
-                      LastKnownName="??FilterCall2"
-                      LastKnownLocation="Package_1649.uml" />
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
                   Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338"
-                  name="viewController"
-                  direction="In">
+                  name="filterCall"
+                  direction="In"
+                  isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="5beac5e5-03fc-4246-b7a1-328b3fb13582"
-                      LastKnownName="ViewController"
+                      Id="92c33d3a-9bc2-4b9c-beb9-13c2f08573cf"
+                      LastKnownName="CVVisual::data::FilterCall"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -746,6 +983,19 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="ab610940-17f7-446b-b59a-dc256e63a011"
+                  name="viewController"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="80d4d950-2465-4c8c-82d2-9fe4fffd4f6b"
+                      LastKnownName="CVVisual::controller:ViewController"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2d685191-965e-49c6-b9d3-cc9c5e2c575f"
                   name="filterViewId"
                   direction="In"
                   isUnique="false">
@@ -829,14 +1079,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="1882b351-d2e9-457f-a506-61f01b1fa79b"
-            name="///slot: clicked"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>

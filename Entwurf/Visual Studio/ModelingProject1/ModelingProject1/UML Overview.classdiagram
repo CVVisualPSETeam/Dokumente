@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -23,12 +23,6 @@
 	- Blau: Nikolai
 	- Lila: Erich
 	</body>
-    </comment>
-    <comment Id="18fbaf93-1b16-49f7-a410-c6d4ce05e2bb">
-      <elementDefinition Id="fedb185a-6a91-4667-946c-a761062a1916" />
-      <body>MatchCallTab(matchCall:MatchCall)
-uses default View
- from settings</body>
     </comment>
     <comment Id="30c68ed8-df10-4dfb-8727-c6dbb3819b1b">
       <elementDefinition Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312" />
@@ -916,6 +910,48 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="2f202a43-b433-4678-b377-543df8447966" />
           </association>
+          <association Id="3f3cbefe-28fe-414f-ba06-423e3f085a17" isDerived="false" sourceEndRoleName="" targetEndRoleName="filterViewMap" isLeaf="false" isAbstract="false">
+            <classMoniker Id="03eed30b-fcfd-4ae2-ae47-c568931cafbd" LastKnownName="FilterView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49e69cb3-47c2-4df2-9975-8bd8ca165ced" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1bcfaf6b-9477-419e-86f0-fb00d246614d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eeb5d798-0cac-462d-9c1b-805c335276b0" name="filterViewMap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="8d1ec792-6094-4895-916f-a1fcaf43f469" name="Lower" value="n">
+                      <elementDefinition Id="437c2a69-6973-429c-b274-f5755f67c629" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="96070d38-2c1f-4228-88ce-25ca91331350" name="Upper" value="n">
+                      <elementDefinition Id="b32dba47-a4f4-4d82-9833-68a6de5c383b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="372b5a4e-5bc7-455e-a8be-69da61d44a1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee3c375a-e760-4454-be54-c94f68d5ccf2" />
+          </association>
+          <association Id="51432140-01cc-4609-b859-2e56da69cc6b" isDerived="false" sourceEndRoleName="" targetEndRoleName="filterView" isLeaf="false" isAbstract="false">
+            <classMoniker Id="03eed30b-fcfd-4ae2-ae47-c568931cafbd" LastKnownName="FilterView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e33a7ce-75d9-4c05-b20b-0c0a3ff58d00" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1cb8870c-479b-4c10-8d18-e429c7d5e211" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="241723e1-1718-4ca3-881c-71420e02cea3" name="filterView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a0cfb6f4-af63-4b2f-a40e-f89ef17902e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="209b8e89-1602-459a-9fe1-4525d68ca176" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="359f3c4e-7fa3-431e-89db-5a07bc95452f" name="static filterViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -930,13 +966,27 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="b37e5e81-2583-4c0f-b00c-607bc73ada3f" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e88a5995-0954-4533-b833-3d993ea06608" name="FilterCall" direction="In" isUnique="false">
+                <parameter Id="e88a5995-0954-4533-b833-3d993ea06608" name="name" direction="In">
                   <elementDefinition Id="5ccc1e48-4662-42f4-999f-837de2e134a6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="fee50447-0354-478e-9c01-468742baffe7" name="ViewController" direction="In" isUnique="false">
+                <parameter Id="fee50447-0354-478e-9c01-468742baffe7" name="filterCall" direction="In" isUnique="false">
                   <elementDefinition Id="a79da97b-86fd-446d-89b0-6d7f45908ca3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f06403c6-78be-4861-88db-e704d63e27f4" LastKnownName="CVVisual::data::FilterCall" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1c9cb12f-8591-4c11-9d62-5b94031b89e5" name="viewController" direction="In" isUnique="false">
+                  <elementDefinition Id="96ffbc5f-3770-4e82-83e9-b3ac5a5d919b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5d45963a-521a-48be-9255-19f621277309" LastKnownName="CVVisual::controller:ViewController" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -945,24 +995,32 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="6c35ee1e-eef4-4379-8477-adfba2598900" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="dc35cb73-b939-4a08-bfed-5fa09e628170" name="filterCall" direction="In" isUnique="false">
+                <parameter Id="dc35cb73-b939-4a08-bfed-5fa09e628170" name="name" direction="In">
                   <elementDefinition Id="dc6c601e-eb37-403f-bdb4-25411f4c4714" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" LastKnownName="??FilterCall2" />
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a6d3aff5-66a5-43ac-b761-64f3881445f2" name="viewController" direction="In">
+                <parameter Id="a6d3aff5-66a5-43ac-b761-64f3881445f2" name="filterCall" direction="In" isUnique="false">
                   <elementDefinition Id="b1307cc7-ad5f-4ef0-a1e1-d64730210338" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0938f540-adf8-4058-846d-5b9d27e1a620" LastKnownName="ViewController" />
+                    <referencedTypeMoniker Id="f06403c6-78be-4861-88db-e704d63e27f4" LastKnownName="CVVisual::data::FilterCall" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="4a1fd3e2-4819-4a3e-a075-737e794f18a0" name="filterViewId" direction="In" isUnique="false">
+                <parameter Id="4a1fd3e2-4819-4a3e-a075-737e794f18a0" name="viewController" direction="In">
                   <elementDefinition Id="ab610940-17f7-446b-b59a-dc256e63a011" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5d45963a-521a-48be-9255-19f621277309" LastKnownName="CVVisual::controller:ViewController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4fa05158-8e62-4b90-88d6-2cd1a17efadf" name="filterViewId" direction="In" isUnique="false">
+                  <elementDefinition Id="2d685191-965e-49c6-b9d3-cc9c5e2c575f" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
@@ -1006,9 +1064,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="6c34de19-a3da-4ef2-ad12-7017ffdeb054" name="///slot: clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="1882b351-d2e9-457f-a506-61f01b1fa79b" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1087,6 +1142,48 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="69fe95f7-1eda-4998-b391-4d44075eae94" />
           </association>
+          <association Id="1697e977-ca35-436f-b61f-22daa71cc43f" isDerived="false" sourceEndRoleName="" targetEndRoleName="matchViewMap" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2d55fc00-8af4-40ea-839a-b73e2d20f193" LastKnownName="MatchView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="93da79db-b9cf-4d27-84ca-b899d565cafd" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b29622cc-9dca-4a40-88ba-059646231dbf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d6ff6caf-67a8-4dc5-a06c-3bc0c28d1bc4" name="matchViewMap" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="accddbad-139f-4ad7-8f47-a6d7001086f2" name="Lower" value="n">
+                      <elementDefinition Id="973f7d08-c8ef-4157-8486-9e929bce687a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="772fe522-ca98-46c2-b6a9-42c6c51de0b1" name="Upper" value="n">
+                      <elementDefinition Id="ead8cea3-3e66-4e38-b7fc-120631a4098d" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ceaf47a0-d462-4f13-9e8f-34935293dff9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="165898f1-db0e-47a8-8c37-398db2b4bebd" />
+          </association>
+          <association Id="f9dae092-195c-403c-b004-61d079a25c1e" isDerived="false" sourceEndRoleName="" targetEndRoleName="matchView" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2d55fc00-8af4-40ea-839a-b73e2d20f193" LastKnownName="MatchView" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c01e8bda-6225-48dc-ae49-c2deb01af827" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad97beda-b451-49f8-8a74-da2aebec6a5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bac3e4a1-dd63-4574-81e6-0fa295a4bc23" name="matchView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2d97cc85-502f-4b1f-a47c-51fb6c6d9395" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0fc11066-489b-48ac-9772-eb946cfdbd6c" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="4347bc2c-f268-4fc3-a973-b55abef54859" name="static matchViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1101,13 +1198,27 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="5494f505-0a1b-4199-8f5d-449713e80bb7" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="9a5ec4ff-3723-4570-ab91-dedc69e36f9f" name="MatchCall" direction="In" isUnique="false">
+                <parameter Id="9a5ec4ff-3723-4570-ab91-dedc69e36f9f" name="name" direction="In">
                   <elementDefinition Id="8abe205f-cc26-4656-b2a9-898a5e4f4a58" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="ee743334-ad6a-42b0-9af5-37336a64588f" name="ViewController" direction="In" isUnique="false">
+                <parameter Id="ee743334-ad6a-42b0-9af5-37336a64588f" name="matchCall" direction="In" isUnique="false">
                   <elementDefinition Id="b4bd85ef-e459-4ef7-967e-d6e79cffa0f8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c03712ea-1cdf-4870-b3b1-43a24c6c78c5" LastKnownName="CVVisual::data::MatchCall" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dd6bd37f-364e-4938-999e-ca3f880eccfe" name="viewController" direction="In" isUnique="false">
+                  <elementDefinition Id="db507534-c7b8-4d0c-a098-348b1a3f75c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9621545c-71e4-44e4-9a6b-7c5085e077a6" LastKnownName="CVVisual::controller::ViewController" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1116,24 +1227,32 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="3f88d6ab-5653-4b57-b395-d2221953dfb2" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="0a0c1608-79fd-4d7a-89ff-d8bfc0609b8c" name="matchCall" direction="In" isUnique="false">
+                <parameter Id="0a0c1608-79fd-4d7a-89ff-d8bfc0609b8c" name="name" direction="In">
                   <elementDefinition Id="b5b3feed-ef07-4103-a9a4-50d036f680af" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" LastKnownName="??MatchCall2" />
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="01ace9f5-b8db-4eca-82b3-ad491bebf2e6" name="viewController" direction="In">
+                <parameter Id="01ace9f5-b8db-4eca-82b3-ad491bebf2e6" name="matchCall" direction="In" isUnique="false">
                   <elementDefinition Id="ab52b51d-2eb2-4780-bbde-8024cae3383e" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0938f540-adf8-4058-846d-5b9d27e1a620" LastKnownName="ViewController" />
+                    <referencedTypeMoniker Id="c03712ea-1cdf-4870-b3b1-43a24c6c78c5" LastKnownName="CVVisual::data::MatchCall" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="3bd29036-4674-49bb-a315-aaac0bd5b2fe" name="matchViewId" direction="In" isUnique="false">
+                <parameter Id="3bd29036-4674-49bb-a315-aaac0bd5b2fe" name="viewController" direction="In">
                   <elementDefinition Id="f29077c0-d44f-476b-ab31-2d8d8052d8e0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9621545c-71e4-44e4-9a6b-7c5085e077a6" LastKnownName="CVVisual::controller::ViewController" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7ad746bb-6b55-4f13-8c20-fada01568f4a" name="matchViewId" direction="In" isUnique="false">
+                  <elementDefinition Id="a74c6648-3dee-438e-a40e-d39c80fc08ca" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
@@ -1148,7 +1267,7 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 <parameter Id="1bc7beeb-a13e-4a43-98dd-c57f1acf2197" name="matchView" direction="In" isUnique="false">
                   <elementDefinition Id="4feb6d2a-3c74-4392-acf0-659d2edc103b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" LastKnownName="MatchView" />
+                    <referencedTypeMoniker Id="4a0355c6-8fc5-4249-a3a4-9b7dcfdbbcab" LastKnownName="CVVisual::MatchView::MatchView" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1177,9 +1296,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
-          </operation>
-          <operation Id="743f8d87-c0c0-4466-b211-ff440485bc4d" name="///slot: clicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="cbc8564c-23aa-4337-a92c-460d21bc941e" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1458,23 +1574,8 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="5fa141e0-ebe5-478f-80c9-2cd7acae385b" name="??MatchCall2" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::??MatchCall2">
-        <elementDefinition Id="2cd2f5bb-10a7-4fcf-bfb8-6a1c14c8182a" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="3e7e53b1-3b71-497d-bb46-2ec55e2afeef" name="MatchView" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::MatchView">
-        <elementDefinition Id="279a9507-f5ee-4dbc-95dc-8b7953719b08" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" name="map&lt;FilterView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;FilterView,QString&gt;">
         <elementDefinition Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="1466ea93-01b8-437d-8d69-7f2f36478d5e" name="??FilterCall2" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::__müll::??FilterCall2">
-        <elementDefinition Id="2f9fc9c5-4acc-4e16-b81a-d930e18ffc0e" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2113,9 +2214,29 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
         <ownedOperationsInternal>
           <operation Id="fe0e17da-d6ad-4cd6-8c7a-d14fb6b13ba4" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4d77f0a1-46a5-4463-bf38-06db7bcefd9c" name="newText" direction="In">
+                  <elementDefinition Id="e848cfd1-6608-408b-af7a-111056eec5cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="7b14d365-37f6-4be2-b1aa-b4fad6c91e50" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6033ab37-d73d-4e2f-bbe0-53bb8982a7f1" name="newText" direction="In">
+                  <elementDefinition Id="cc39df33-9161-4b05-b7e2-9ab68eb3f82f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -2132,9 +2253,29 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
         <ownedOperationsInternal>
           <operation Id="7336a5a8-867f-4459-9125-80bd647875b3" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="48cf9e3c-851a-45a5-ab8a-1fda7a6da22f" name="newText" direction="In">
+                  <elementDefinition Id="01dd8c31-6c4d-4303-922c-8cbe18aa6226" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="259ee5d2-d914-45ee-8ca3-c9298993891f" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c22b3d96-a194-41ac-beb5-e15068b08eff" name="newText" direction="In">
+                  <elementDefinition Id="c549f22c-5e2c-4433-a51f-2002544cd90a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -2249,6 +2390,31 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
     <packageHasNamedElement>
       <referencedType Id="6f848165-1251-4b39-9ed6-1f427189c024" name="ViewController" isAbstract="false" isLeaf="false" cachedFullName="ViewController">
         <elementDefinition Id="5beac5e5-03fc-4246-b7a1-328b3fb13582" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c03712ea-1cdf-4870-b3b1-43a24c6c78c5" name="CVVisual::data::MatchCall" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::data::MatchCall">
+        <elementDefinition Id="7deed095-f2c7-44cc-bbf3-8e33c5fe7b66" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9621545c-71e4-44e4-9a6b-7c5085e077a6" name="CVVisual::controller::ViewController" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::controller::ViewController">
+        <elementDefinition Id="d341529b-b716-48ce-bc78-e66a45183615" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a0355c6-8fc5-4249-a3a4-9b7dcfdbbcab" name="CVVisual::MatchView::MatchView" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::MatchView::MatchView">
+        <elementDefinition Id="8d3e6f37-08aa-494c-825c-80c7e384ee32" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f06403c6-78be-4861-88db-e704d63e27f4" name="CVVisual::data::FilterCall" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::data::FilterCall">
+        <elementDefinition Id="92c33d3a-9bc2-4b9c-beb9-13c2f08573cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5d45963a-521a-48be-9255-19f621277309" name="CVVisual::controller:ViewController" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::controller:ViewController">
+        <elementDefinition Id="80d4d950-2465-4c8c-82d2-9fe4fffd4f6b" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

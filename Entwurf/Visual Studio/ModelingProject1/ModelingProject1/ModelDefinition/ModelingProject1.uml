@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -104,12 +104,6 @@ drin? JA</body>
       Id="cf6c72e3-a5ce-424c-ba6e-b2a01eec4d3d">
       <body>project():
 project selected points from focussed image to other image</body>
-    </comment>
-    <comment
-      Id="fedb185a-6a91-4667-946c-a761062a1916">
-      <body>MatchCallTab(matchCall:MatchCall)
-uses default View
- from settings</body>
     </comment>
     <comment
       Id="96edebda-09cd-4ce2-a9a5-ea96b82ae312">
@@ -878,6 +872,31 @@ eine Projection klasse vird noch benötigt (siehe ProjectionView)</body>
       <undefinedType
         Id="22ba9a5f-e092-4dc1-98c9-491e1dafa649"
         name="&amp;Call" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7deed095-f2c7-44cc-bbf3-8e33c5fe7b66"
+        name="CVVisual::data::MatchCall" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d341529b-b716-48ce-bc78-e66a45183615"
+        name="CVVisual::controller::ViewController" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8d3e6f37-08aa-494c-825c-80c7e384ee32"
+        name="CVVisual::MatchView::MatchView" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="92c33d3a-9bc2-4b9c-beb9-13c2f08573cf"
+        name="CVVisual::data::FilterCall" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="80d4d950-2465-4c8c-82d2-9fe4fffd4f6b"
+        name="CVVisual::controller:ViewController" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

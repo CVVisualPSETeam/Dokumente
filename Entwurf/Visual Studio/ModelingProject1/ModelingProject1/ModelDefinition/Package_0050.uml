@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="6b391ca1-d577-4da7-8a2c-2133c733e6c2"
   name="FilterView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -151,7 +151,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="==QTGRaphicScene"
+              LastKnownName="QTGraphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -347,7 +347,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="==QTGRaphicScene"
+              LastKnownName="QTGraphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -506,7 +506,7 @@
             isAbstract="false">
             <classMoniker
               Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="==QTGRaphicScene"
+              LastKnownName="QTGraphicScene"
               LastKnownLocation="Package1_0038.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -739,7 +739,23 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e848cfd1-6608-408b-af7a-111056eec5cf"
+                  name="newText"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="492eb556-9087-49fb-abdf-b10b9b80225a"
             name="//signal updateRightFooter"
@@ -747,7 +763,23 @@
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc39df33-9161-4b05-b7e2-9ab68eb3f82f"
+                  name="newText"
+                  direction="In">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
