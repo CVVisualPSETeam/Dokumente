@@ -17,8 +17,8 @@ static map<MatchView, QString> matchViewMap: Speichert mögliche Match-Views und 
 ViewController viewController: MatchCallTab beuntzt einige Methoden des darüber stehenden ViewControllers, um etwa auf die Settings oder die Hilfe zuzugreifen.  
 MatchView matchView: Das augenblicklich ausgewählte View, welches angezeigt wird, wenn das Tab angezeigt wird.  
 MatchCall matchCall: Der Call, der die Informationen enthält, die im View dargestellt werden.  
-QComboBox viewSelection: Erlaubt die Auswahl eines der Views aus matchViewMap für die Anzeige.  
-CVVisual::HelpButton helpButton: Öffnet bei Mausklick die relevante Hilfeseite.  
+QComboBox viewSelection: Erlaubt die Auswahl eines der Views aus matchViewMap für die Anzeige. Dabei kennt die ComboBox nur die IDs der Views, der Zugriff efolgt vermittelst des currentIndexChanged-Signals über die matchViewMap.
+CVVisual::HelpButton helpButton: Öffnet bei Mausklick die relevante Hilfeseite. Die page (s. HelpButton) ist dabei wiederum der Name, dh. die ID des gerade ausgewählten MatchView.  
 Methoden:  
 size_t getId(): GIbt die ID des zugehörigen MatchCalls zurück, die gleichzeitig als ID des Tabs fungiert.  
 static addMatchViewToMap(MatchView matchView, QString id): Fügt der matchViewMap matchView mit id hinzu.  
@@ -47,9 +47,10 @@ Ein zu MatchView analoges Interface über FilterViews.
   
 ##HelpButton  
 CVVisual::HelpButton  
+Erbt von QPushButton.  
 Ein Button, der bei Mausklick eine Hilfeseite öffnet.  
 Attribute:  
-QString page: Auch topic. Die Seite bzw. der Themenbereich, der von diesem Button bei Mausklick in der Hilfe geöffnet wird.  
+QString page: Die Seite bzw. der Themenbereich, der von diesem Button bei Mausklick in der Hilfe geöffnet wird.  
 Methoden:  
 setPage(QString newPage): Setzt page auf newPage.  
   
