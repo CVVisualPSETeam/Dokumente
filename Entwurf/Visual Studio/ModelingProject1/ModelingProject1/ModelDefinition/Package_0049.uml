@@ -3,6 +3,13 @@
   dslVersion="1.0.0.0"
   Id="7479c561-76be-40a8-b575-407add153e3a"
   name="stfl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="a0762027-d351-4177-ac0f-ff6ec6650231">
+      <body>TODO:
+Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (oder je nach Aufteilung in das Paket mit den Views - scheint besser zu sein) </body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -11,6 +18,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d852456e-1cd0-48c7-8f9a-923b1b8b3448">
+            <classMoniker
+              Id="7b73a384-3b55-461d-ab57-96f9cffbf230"
+              LastKnownName="ElementGroup"
+              LastKnownLocation="Package_0049.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="3604f9aa-cbeb-410c-a215-6f09e503f24e"
@@ -248,9 +264,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="d9eb5fbe-df73-4626-80f6-f94f69d7d40d"
-                LastKnownName="std::vector&lt;ColumType&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="65da8cd1-469a-4e39-b9aa-414a24c0adfe"
+                LastKnownName="QList&lt;ColumType&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -267,9 +283,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="34a3d59c-a494-4d4f-a9d1-9bfc43c68b7c"
-                LastKnownName="std::map&lt;QString, std::function&lt;QString(ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="9842460c-ec4c-4779-8459-9a6890aadd14"
+                LastKnownName="QMap&lt;QString, std::function&lt;QString(ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -286,9 +302,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5fed1f84-0fe6-4ee9-bdb1-789de4ff299e"
-                LastKnownName="map&lt;QString, std::function&lt;int(ColumnType, ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="028c4fe7-05fe-4f6b-b848-e9f28cee198b"
+                LastKnownName="QMap&lt;QString, std::function&lt;bool(ColumnType, ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -305,9 +321,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="ab414b61-05d6-4b1b-9163-7d1e5c30ea1b"
-                LastKnownName="std::map&lt;QString, std::function&lt;float(QString, ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="ae4b6396-8973-48ba-88a0-01ccfcecc3f1"
+                LastKnownName="QMap&lt;QString, std::function&lt;bool(QString, ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -324,9 +340,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="cc9a7135-bc55-41a2-8f3b-4eb640d7d287"
-                LastKnownName="std::map&lt;QString, std::function&lt;float(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="6ac21343-f880-4caf-9a82-6831977c569d"
+                LastKnownName="QMap&lt;QString, std::function&lt;bool(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -343,9 +359,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="34a3d59c-a494-4d4f-a9d1-9bfc43c68b7c"
-                LastKnownName="std::map&lt;QString, std::function&lt;QString(ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="9842460c-ec4c-4779-8459-9a6890aadd14"
+                LastKnownName="QMap&lt;QString, std::function&lt;QString(ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -362,9 +378,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="4506e412-82f8-4817-8eb1-439e9c26d513"
-                LastKnownName="std::map&lt;QString, std::function&lt;std::vector&lt;QString&gt;(ColumnType)&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="3c5cf8c1-ef02-4144-ad1d-eb5fc6b72acb"
+                LastKnownName="QMap&lt;QString, std::function&lt;QStringList(ColumnType)&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -381,9 +397,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="62874d75-3fce-44a6-b301-0cc10bbf0c1b"
-                LastKnownName="std::map&lt;QString, std::vector&lt;QString&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="3be35265-eb66-44e6-997e-2915bc76d59c"
+                LastKnownName="QMap&lt;QString, QStringList&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -400,9 +416,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="62874d75-3fce-44a6-b301-0cc10bbf0c1b"
-                LastKnownName="std::map&lt;QString, std::vector&lt;QString&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="7bdbf9a4-a5fe-4a24-aefa-261d6d57c42b"
+                LastKnownName="QMap&lt;QString, std::vector&lt;QString&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -452,44 +468,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="fa0a4c85-b519-4d14-8198-b164d2dc1d3d"
-            name="query"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="44912ab5-2b95-4aff-af92-5ac46abba7e6"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9a2ab340-9e82-4d73-b5dd-10b047d232d9"
-                      LastKnownName="std::vector&lt;ElementGroup&lt;ColumnType&gt;&gt;"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="2a465bbc-4918-42fc-8afa-f00cc6abcece"
-                  name="query"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                      LastKnownName="QString"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="7eff27da-02f8-4a32-8ff4-fe23a0ae84b9"
             name="getSuggestions"
             isLeaf="false"
@@ -500,7 +478,20 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ca6df20b-b766-4534-974c-fc981813cb62"
+                  Id="d2a7f299-2ef6-41a8-8b4d-e6c8751a2de7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
+                      LastKnownName="QStringList"
+                      LastKnownLocation="Package_0049.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af5c04a2-7a41-4419-b03d-50369fba4d06"
                   name="query"
                   direction="In"
                   isUnique="false">
@@ -514,7 +505,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1b583c21-4fe9-405c-b5a2-8e25079500a1"
+                  Id="55aac342-f225-4036-8204-b8cd702a08bb"
                   name="number"
                   direction="In"
                   isUnique="false">
@@ -522,19 +513,6 @@
                     <undefinedTypeMoniker
                       Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
                       LastKnownName="int"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d2a7f299-2ef6-41a8-8b4d-e6c8751a2de7"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf"
-                      LastKnownName="std::vector&lt;QString&gt;"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -552,15 +530,15 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b91cbe0d-1314-4cda-8504-f67b8a021fc6"
+                  Id="beeab019-a983-47e7-9e94-5fb6f9a33d32"
                   name="newElements"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa"
-                      LastKnownName="std::vector&lt;ColumnType&gt;"
-                      LastKnownLocation="ModelingProject1.uml" />
+                      Id="3cdd9d6f-be8c-41c2-9343-c547b8d14790"
+                      LastKnownName="QList&lt;ColumnType&gt;"
+                      LastKnownLocation="Package_0049.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -574,6 +552,37 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="03dd5d4d-01a8-471a-ba4e-379217b7da44"
+            name="query"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b06b053-fa11-4e29-8ea4-3f98d43d8334"
+                  name="QString query"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9d5b3c7c-e88c-4e38-8d8a-6a85cc454399"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="0f0bb7ab-2707-456d-9ebf-573ff83246ec"
+                      LastKnownName="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;"
+                      LastKnownLocation="Package_0049.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -971,6 +980,56 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="ac363fa6-5aae-4c2f-99cb-cf6cf1f365b8"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b73a384-3b55-461d-ab57-96f9cffbf230"
+              LastKnownName="ElementGroup"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ddb0fdf0-a1b3-4160-83e8-a96dd045926d"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa0fddd8-c2cc-4dff-85d5-e221e0baa4c3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fd408795-29ed-46da-b6fa-34e23125a625"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="92033921-22d8-4d08-8403-f8b5858fdb53"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -1137,6 +1196,56 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="0b90b083-04da-472c-8e34-0f6039d9cfc8"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b73a384-3b55-461d-ab57-96f9cffbf230"
+              LastKnownName="ElementGroup"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87c98541-0f3c-4461-b88a-20bca528bc3e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc91e3c2-72a5-494e-afab-c43b7fb2c944"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b2f39ccd-d532-4fb8-abf0-e0eed2d669ba"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="88072dcc-1770-46cb-ac6e-ad8eabee2aca"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -1153,9 +1262,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="89ebcbac-08c6-465e-a5a7-d7dd550ec30a"
-                LastKnownName="vector&lt;ElementGroup&lt;OverviewTableCollumn&gt;&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="2834ed13-40ea-44e9-91fd-b9ca60fbc708"
+                LastKnownName="std::vector&lt;ElementGroup&lt;OverviewTableCollumn&gt;&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -1310,6 +1419,31 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="c819b2e1-a01e-4b07-8614-8e62bf59928c"
+            name="updateCollumnGroups"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="275d8523-e1ee-4e6d-a106-09e9013142bf"
+                  name="newGroups"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="153e8e63-64ba-4b36-8d9a-dd19bf86e407"
+                      LastKnownName="QList&lt;ElementGroup&lt;OverviewTableCollum&gt;&gt;"
+                      LastKnownLocation="Package_0049.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1390,9 +1524,9 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                LastKnownName="QString"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
+                LastKnownName="QStringList"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -1409,16 +1543,16 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc"
-                LastKnownName="std::vector&lt;ElementType&gt;"
-                LastKnownLocation="ModelingProject1.uml" />
+                Id="7c8cade4-bc52-4a57-aea7-b047046f26ee"
+                LastKnownName="QList&lt;ElementType&gt;"
+                LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="2db50de9-520d-4db0-88f2-2cba645a54a5"
-            name="getTitle"
+            name="getTitles"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1432,9 +1566,9 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
-                      LastKnownName="QString"
-                      LastKnownLocation="ModelingProject1.uml" />
+                      Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
+                      LastKnownName="QStringList"
+                      LastKnownLocation="Package_0049.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1456,9 +1590,9 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc"
-                      LastKnownName="std::vector&lt;ElementType&gt;"
-                      LastKnownLocation="ModelingProject1.uml" />
+                      Id="7c8cade4-bc52-4a57-aea7-b047046f26ee"
+                      LastKnownName="QList&lt;ElementType&gt;"
+                      LastKnownLocation="Package_0049.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1466,7 +1600,7 @@
           </operation>
           <operation
             Id="3f2daf87-61c4-40d8-84af-8e7f0173fd2a"
-            name="getSize"
+            name="size"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1480,9 +1614,9 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
-                      LastKnownName="int"
-                      LastKnownLocation="ModelingProject1.uml" />
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1537,20 +1671,6 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1db87d54-928c-4868-909c-e168f3024499"
-                  name="index"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="21444a3e-f1eb-4228-88e5-3c02873f6eb1"
-                      LastKnownName="int"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="fd81b777-93a8-4f2d-a38f-e7657c83ea18"
                   direction="Return"
                   isUnique="false">
@@ -1559,6 +1679,20 @@
                       Id="bed889a1-b2c9-4638-9a3c-70ab8b57e6ec"
                       LastKnownName="ElementType"
                       LastKnownLocation="Package_0049.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c235be14-10c8-4369-89c4-9d6caa7562fe"
+                  name="index"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1675,6 +1809,56 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="96b13063-d65d-484f-98fe-76fc55e3471a"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7b73a384-3b55-461d-ab57-96f9cffbf230"
+              LastKnownName="ElementGroup"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7766e11c-4a3f-4353-beba-e24d24a3b62e"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32a2064d-9c95-4c66-8309-9300100274bb"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="85bb5fb5-96b4-4eb4-83ad-72491671431c"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="005733d9-bbf0-47fb-aa9c-363818faeabb"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -1691,8 +1875,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="12bfe676-6923-4302-909a-89e81c47206d"
-                LastKnownName="vector&lt;ElementGroup&lt;RawViewTableCollumn&gt;&gt;"
+                Id="e1315a7d-802a-46bf-b29b-0cf4ab9aee2a"
+                LastKnownName="std::vector&lt;ElementGroup&lt;RawViewTableCollumn&gt;&gt;"
                 LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
@@ -1754,33 +1938,6 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="5402364d-3f94-4a10-be31-5165a79ff26b"
-            name="updateCollumnGroups"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0d45349e-b023-4a75-b2e3-50e0bf86281e"
-                  name="newGroups"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="8c83637f-c4b9-49f9-8a21-7120a4f1eca5"
-                      LastKnownName="vector&lt;ElementGroup&lt;OverviewTableCollum&gt;&gt;"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1931,6 +2088,348 @@
       <undefinedType
         Id="403a04eb-4860-4392-afb1-29891ab0e2de"
         name="QTableWidget" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4fce206d-7a65-461a-a8f0-e77b15ca5996"
+        name="QMap&lt;QString, std::function&lt;float(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="65da8cd1-469a-4e39-b9aa-414a24c0adfe"
+        name="QList&lt;ColumType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7bdbf9a4-a5fe-4a24-aefa-261d6d57c42b"
+        name="QMap&lt;QString, std::vector&lt;QString&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="de7adcdb-689b-45bd-a925-84fd03166503"
+        name="QMap&lt;QString, std::function&lt;std::vector&lt;QString&gt;(ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3c5cf8c1-ef02-4144-ad1d-eb5fc6b72acb"
+        name="QMap&lt;QString, std::function&lt;QStringList(ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="955f95ae-545a-42b8-b561-0f50f69cd239"
+        name="QMap&lt;QString, std::function&lt;float(QString, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3be35265-eb66-44e6-997e-2915bc76d59c"
+        name="QMap&lt;QString, QStringList&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9842460c-ec4c-4779-8459-9a6890aadd14"
+        name="QMap&lt;QString, std::function&lt;QString(ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d7ad5e1c-e33d-4021-aad1-de80b93b6fa4"
+        name="QHash&lt;QString, std::vector&lt;QString&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c867d2dc-cb8e-499d-a1b5-c8aa88d4dbb1"
+        name="QMap&lt;QString, std::function&lt;(ColumnType, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="028c4fe7-05fe-4f6b-b848-e9f28cee198b"
+        name="QMap&lt;QString, std::function&lt;bool(ColumnType, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ae4b6396-8973-48ba-88a0-01ccfcecc3f1"
+        name="QMap&lt;QString, std::function&lt;bool(QString, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6ac21343-f880-4caf-9a82-6831977c569d"
+        name="QMap&lt;QString, std::function&lt;bool(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2f5bf1ff-d20a-4589-bd2d-07fecfe207d9"
+        name="QStringList&lt;QString&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3cdd9d6f-be8c-41c2-9343-c547b8d14790"
+        name="QList&lt;ColumnType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d0ec37e0-1628-4cb0-aae7-a059ea60eae0"
+        name="QList&lt;ElementGroup&lt;ColumnType&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
+        name="QStringList" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7c8cade4-bc52-4a57-aea7-b047046f26ee"
+        name="QList&lt;ElementType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3717a4fd-4c79-4b3d-83f2-9a91d24360a1"
+        name="QList&lt;ElementGroup&lt;OverviewTableCollumn&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="153e8e63-64ba-4b36-8d9a-dd19bf86e407"
+        name="QList&lt;ElementGroup&lt;OverviewTableCollum&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a5360125-50f1-478d-8a67-dd9bc8bf3ae1"
+        name="RawView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="79026f9e-22d7-4d93-a99d-6671a275586a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1ff67bde-4c26-428e-9f07-39f36721a679"
+              LastKnownName="MatchView"
+              LastKnownLocation="Package1_0050.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="33d97ee7-328d-4ddd-a8bc-6095d9e2331a"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="91171319-b1b6-42c2-84e9-4a758d3fcdff"
+              LastKnownName="RawViewTable"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b804725f-fe32-4823-a8b3-0eebb5b79f33"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22b9dfdb-2970-4c46-bf47-27110ea03835"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="59acdd02-43e9-483a-8349-fddbea17c39d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc"
+              LastKnownName="FilterQueryWidget"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f749234-7ee1-40aa-97f7-c9c9e58160bd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f758240-6f7a-4142-8354-5d5d51d6c913"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8c5d6bdf-ff1f-48b1-a75d-ac3a26f9977d"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
+              LastKnownName="STFLEngine"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66cbba7d-69e9-44f0-9c2e-248dc746cae8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eb451d96-9989-473d-8a1c-9f017cad8dc4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9145c412-081f-41b8-a9de-4ce2b9bfbe04"
+            name="queryEngine"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="c2276f74-0291-4448-abd7-8ab385d007aa"
+                LastKnownName="STFLEngine&lt;RawViewTableCollumn&gt;"
+                LastKnownLocation="Package_0049.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2d89f46a-af12-468a-9852-80922d00117b"
+            name="queryWidget"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="85643f81-f0d3-412b-87b4-de6d5d892cc3"
+                LastKnownName="STFLQueryWindget"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="09f35623-02b6-4635-9eff-6f01d711ec58"
+            name="table"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="91171319-b1b6-42c2-84e9-4a758d3fcdff"
+                LastKnownName="RawViewTable"
+                LastKnownLocation="Package_0049.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6fe97957-6477-4f09-91aa-26b1598dca82"
+            name="///signal outputInternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f10331c-3810-44d1-890b-f4190f53c26a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7392b67d-ff07-4453-b1d7-43a672bf1e5d"
+                      LastKnownName="std::vector&lt;MatchCall&gt;"
+                      LastKnownLocation="Package_0049.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7392b67d-ff07-4453-b1d7-43a672bf1e5d"
+        name="std::vector&lt;MatchCall&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c2276f74-0291-4448-abd7-8ab385d007aa"
+        name="STFLEngine&lt;RawViewTableCollumn&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="2834ed13-40ea-44e9-91fd-b9ca60fbc708"
+        name="std::vector&lt;ElementGroup&lt;OverviewTableCollumn&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e1315a7d-802a-46bf-b29b-0cf4ab9aee2a"
+        name="std::vector&lt;ElementGroup&lt;RawViewTableCollumn&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0f0bb7ab-2707-456d-9ebf-573ff83246ec"
+        name="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
