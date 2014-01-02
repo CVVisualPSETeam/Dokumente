@@ -1,29 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="11355f87-fec2-42ad-9bbd-fdc498c52c16" name="UtilQT" linkedPackageId="602381ed-628f-4b7d-b226-05e3a4959e26" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="7eb0ff2a-79ea-4183-9a7d-35706c96fd93">
-      <elementDefinition Id="05fe8315-a9ad-480b-885a-5ab6de6e4cb1" />
-      <body>style generell:
-	- tooltip sichtbar
-
-linien:
-	- falschfarben / farbe / farbe+alpha
-	- durchgezogen / gestrichelt
-
-punktgruppen:
-	- linie (pen)
-	- füllen (brush)
--------------------------
-
-zur id:
-	- ermöglicht stylechanges für nur eine instanz
-	- maxvalue = alles</body>
-    </comment>
-    <comment Id="65791a5a-8b40-499d-96f4-e22ca7ceeb2b">
-      <elementDefinition Id="3d4d9fcf-9248-4043-9c8d-7c850fa70c67" />
-      <body>ggf das Package qt löschen da util nur 1 oder 2 Klasse(n) enthält welche nicht im qt Package sind</body>
-    </comment>
-  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="720a4d2a-6fb8-43fd-a47f-cd97ab71a472" name="handle_t" isAbstract="false" isLeaf="false" cachedFullName="handle_t">
@@ -628,7 +604,10 @@ zur id:
             <body>autotuning:
 
 delay= (multDelay*delay+multLast*lastExecTime)/div
-</body>
+
+dies könnte auch an anderer stelle implementiert sein:
+	- die nutzende klasse
+	- in einem wrapper</body>
           </comment>
           <comment Id="2972c609-e766-46a4-841d-7062f8673754">
             <elementDefinition Id="25b89c75-3bab-4778-ae18-3d108fa6df89" />
@@ -638,13 +617,21 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
           </comment>
           <comment Id="f09c4c98-4f63-4975-a344-0f56a5c26742">
             <elementDefinition Id="c7c7f99c-5684-4093-ae87-6791515d1793" />
-            <body>FilterSelectorWidget ist abstract kann also nicht benutzt werden. Wenn die rechten klassen davon erben sollen bitte nochtmal das Auto Widget anschauen</body>
+            <body>FilterSelectorWidget ist NICHT abstract kann also benutzt werden. 
+apply filter wird an das member currentFilter weitergeleited
+das signal wird auch vom aktuellen Filter weitergeleited (bzw ggf werden signale unterdrückt)
+der slot fängt das signal des inneren FFW und leitet es über das signal weiter.</body>
           </comment>
           <comment Id="2e20715d-d975-4e2f-846b-dd3cb72f79e3">
             <elementDefinition Id="37124305-e0cf-46bf-ae7c-9a0c90658459" />
             <body>AF: 
 - nimmt bilder an (mit adresse für den output)
 - es können verschiedene Filter an verschiedenen gruppen gebunden werden, welche bei änderungen automatisch ihre ausgabe an die hinterlegten stellen speichern</body>
+          </comment>
+          <comment Id="41383d94-249e-4303-bb3b-5d946af42540">
+            <elementDefinition Id="13bc07d7-cef9-4aaf-a8f8-cf8376a5c4cd" />
+            <body>von uns genutzte parametrisierungen.
+ggf bessere namen per typedef o.Ä.</body>
           </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
@@ -970,10 +957,10 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="5d05ea88-524e-429e-a658-26f4ef11c067" name="///signal stateChanged" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                <operation Id="5d05ea88-524e-429e-a658-26f4ef11c067" name="///signal stateChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="0708de00-f525-494f-a84a-48258b5233d0" />
                 </operation>
-                <operation Id="375cf09d-03a2-48a7-bfc6-aa22fe4a2fb1" name="///slot stateChanged" visibility="Private" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                <operation Id="375cf09d-03a2-48a7-bfc6-aa22fe4a2fb1" name="///slot stateChanged" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="7a279b46-1e70-4700-b37e-d241ae99f60e" />
                 </operation>
                 <operation Id="b30178d4-cb0e-4a11-9dda-cbced224ff94" name="setDelay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1016,7 +1003,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="e5d9f71a-376b-4110-9d9d-bd52b4f7c606" name="applyFilter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                <operation Id="e5d9f71a-376b-4110-9d9d-bd52b4f7c606" name="applyFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="24b7094c-5fd8-42fc-bc0f-e5a46756a6ba" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
@@ -1181,6 +1168,17 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
     </logicalClassDesignerModelHasPackages>
     <logicalClassDesignerModelHasPackages>
       <package Id="4a4367c9-0157-4016-8e32-7830d3be7f9c" name="util">
+        <ownedCommentsInternal>
+          <comment Id="21f3edab-b6b2-462c-bdf9-c424373b70b5">
+            <elementDefinition Id="7b26c190-4d33-47f6-8812-02bc378284d9" />
+            <body>repräsentiert ein akkordeon welches widgets und ihre titel anzeigt.
+die widgets können eingefahren werden</body>
+          </comment>
+          <comment Id="69247834-03c1-4afe-9044-55f656bafcf5">
+            <elementDefinition Id="abb6abee-b5a9-47ad-be8e-fda16c647c58" />
+            <body>repräsentiert ein widget mit einem titel, welches ein unterwidget anzeigen bzw ausblenden kann</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
         <packagedElements>
           <packageHasNamedElement>

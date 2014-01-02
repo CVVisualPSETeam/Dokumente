@@ -17,7 +17,10 @@
       <body>autotuning:
 
 delay= (multDelay*delay+multLast*lastExecTime)/div
-</body>
+
+dies könnte auch an anderer stelle implementiert sein:
+	- die nutzende klasse
+	- in einem wrapper</body>
     </comment>
     <comment
       Id="25b89c75-3bab-4778-ae18-3d108fa6df89">
@@ -27,13 +30,30 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
     </comment>
     <comment
       Id="c7c7f99c-5684-4093-ae87-6791515d1793">
-      <body>FilterSelectorWidget ist abstract kann also nicht benutzt werden. Wenn die rechten klassen davon erben sollen bitte nochtmal das Auto Widget anschauen</body>
+      <body>FilterSelectorWidget ist NICHT abstract kann also benutzt werden. 
+apply filter wird an das member currentFilter weitergeleited
+das signal wird auch vom aktuellen Filter weitergeleited (bzw ggf werden signale unterdrückt)
+der slot fängt das signal des inneren FFW und leitet es über das signal weiter.</body>
     </comment>
     <comment
       Id="37124305-e0cf-46bf-ae7c-9a0c90658459">
       <body>AF: 
 - nimmt bilder an (mit adresse für den output)
 - es können verschiedene Filter an verschiedenen gruppen gebunden werden, welche bei änderungen automatisch ihre ausgabe an die hinterlegten stellen speichern</body>
+    </comment>
+    <comment
+      Id="13bc07d7-cef9-4aaf-a8f8-cf8376a5c4cd">
+      <body>von uns genutzte parametrisierungen.
+ggf bessere namen per typedef o.Ä.</body>
+    </comment>
+    <comment
+      Id="7b26c190-4d33-47f6-8812-02bc378284d9">
+      <body>repräsentiert ein akkordeon welches widgets und ihre titel anzeigt.
+die widgets können eingefahren werden</body>
+    </comment>
+    <comment
+      Id="abb6abee-b5a9-47ad-be8e-fda16c647c58">
+      <body>repräsentiert ein widget mit einem titel, welches ein unterwidget anzeigen bzw ausblenden kann</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -3319,7 +3339,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             name="///signal stateChanged"
             isLeaf="false"
             isStatic="false"
-            isAbstract="true"
+            isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
           <operation
@@ -3328,7 +3348,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             visibility="Private"
             isLeaf="false"
             isStatic="false"
-            isAbstract="true"
+            isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
           <operation
@@ -3404,7 +3424,7 @@ delay= (multDelay*delay+multLast*lastExecTime)/div
             name="applyFilter"
             isLeaf="false"
             isStatic="false"
-            isAbstract="true"
+            isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
             <ownedParameters>
