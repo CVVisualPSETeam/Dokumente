@@ -1,10 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
-    <comment Id="c857fc35-2259-4da9-be9e-b88cda575efa">
-      <elementDefinition Id="a0762027-d351-4177-ac0f-ff6ec6650231" />
-      <body>TODO:
-Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (oder je nach Aufteilung in das Paket mit den Views - scheint besser zu sein) </body>
+    <comment Id="86a3a966-1f73-4260-8b52-94665dd3862a">
+      <elementDefinition Id="c6bd5dbd-1727-4bb2-9dc2-6f004e74f958" />
+      <body>Gruppiert eine Menge von Elementen und gibt dieser Gruppe einen Titel (bestehend aus mehreren EInzeltiteln).</body>
+    </comment>
+    <comment Id="31743090-82a0-408e-9525-02de089586d0">
+      <elementDefinition Id="0110094b-d12b-4430-a6e5-5a2bf264012b" />
+      <body>Ermöglicht es eine Menge von Elementen zu filter, grupieren und zu sortieren mit einer textuellen Query-Sprache.</body>
+    </comment>
+    <comment Id="4ef0c266-7bad-424f-9cdf-b3a7e1a86227">
+      <elementDefinition Id="e638ed9e-8adc-4c1b-ab1e-a8041e81e537" />
+      <body>Tabelle der Übersichtsseite</body>
+    </comment>
+    <comment Id="77c9a8ee-e646-4ef6-a58d-11cfc9d32d54">
+      <elementDefinition Id="a8835cb9-0924-463e-b3d9-954784970bc2" />
+      <body>View, welcher die Rohdaten eines Match-Datensatzes tabellarisch darstellt.</body>
+    </comment>
+    <comment Id="004e3e1a-531b-4023-9883-7664e0c66f86">
+      <elementDefinition Id="1690ed57-730c-441e-a423-1eddac013354" />
+      <body>Rohdatentabelle des RawViews.</body>
+    </comment>
+    <comment Id="16618647-4ab9-4f3d-a99f-769a1059783b">
+      <elementDefinition Id="e9017bb7-a67c-4d8f-bd39-42aeccadbc63" />
+      <body>Spalte der Rohdatentabelle</body>
+    </comment>
+    <comment Id="673544e7-f9cf-4387-b503-d1a96162d8cc">
+      <elementDefinition Id="e455f40b-710a-4215-9305-9ba43d560c51" />
+      <body>Suchleisten Widget</body>
+    </comment>
+    <comment Id="badba26b-3ee3-4656-91c2-193bcbd7a1ff">
+      <elementDefinition Id="2cb3b752-a6d9-4e6b-87f5-459e1994dc86" />
+      <body>Tabelle für gruppierte Calls der Übersichtsseite</body>
+    </comment>
+    <comment Id="bb0634c8-2952-40db-9d2e-48272911b480">
+      <elementDefinition Id="9fce3105-e723-42c6-9736-0b43251e7392" />
+      <body>Spalte einer Übersichtsseitentabelle</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -74,7 +105,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="dc63ccbf-14d1-48b6-9ab4-754bda2b6709" name="Accordion" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVVisual::util::qt::Accordion">
+      <referencedType Id="dc63ccbf-14d1-48b6-9ab4-754bda2b6709" name="Accordion" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVVisual::util::Accordion">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
       </referencedType>
     </packageHasNamedElement>
@@ -144,21 +175,6 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="e614cd28-3260-4164-bb26-bdf432729ee5" name="QStringList" isAbstract="false" isLeaf="false" cachedFullName="QStringList">
-        <elementDefinition Id="022bc291-64fc-44ab-9540-e10ec3ef4a28" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="fb332c2e-800c-4533-b08a-c0dd01e91ac6" name="QList&lt;ElementType&gt;" isAbstract="false" isLeaf="false" cachedFullName="QList&lt;ElementType&gt;">
-        <elementDefinition Id="7c8cade4-bc52-4a57-aea7-b047046f26ee" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="b857d83a-2db8-437b-8a68-093517d677f0" name="QStringList" isAbstract="false" isLeaf="false" cachedFullName="QStringList">
-        <elementDefinition Id="022bc291-64fc-44ab-9540-e10ec3ef4a28" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="52130693-d23a-4fc0-a62e-7d79b6c08ae1" name="size_t" isAbstract="false" isLeaf="false" cachedFullName="size_t">
         <elementDefinition Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f" />
       </referencedType>
@@ -174,7 +190,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="b4c76d05-0c74-4cdd-be2c-db12af92b297" name="RawViewTable" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVVisual::stfl::RawViewTable">
+      <referencedType Id="b4c76d05-0c74-4cdd-be2c-db12af92b297" name="RawViewTable" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVVisual::MatchView::RawViewTable">
         <elementDefinition Id="91171319-b1b6-42c2-84e9-4a758d3fcdff" />
       </referencedType>
     </packageHasNamedElement>
@@ -262,11 +278,6 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
           </operation>
         </ownedOperationsInternal>
       </class>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="383bc9db-e3a0-4174-9dff-df6812bcc8a2" name="std::map&lt;ColumType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::map&lt;ColumType&gt;">
-        <elementDefinition Id="3f9542b4-4267-4d75-9e03-02b00a70b612" />
-      </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="aea0e58b-85ce-470f-ab74-2ae6936957ee" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
@@ -548,10 +559,10 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
-          <property Id="0622617d-87c4-45f8-ac13-b73261ca9a1d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="0622617d-87c4-45f8-ac13-b73261ca9a1d" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="383bc9db-e3a0-4174-9dff-df6812bcc8a2" LastKnownName="std::map&lt;ColumType&gt;" />
+              <referencedTypeMoniker Id="af3200ed-48a3-4f06-80e6-a0e964653cd9" LastKnownName="std::map&lt;ColumType&gt;" />
             </type_NamedElement>
           </property>
           <property Id="6c636f1c-82da-4f13-973a-e7dfdb9d3dac" name="groupFuncs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -951,13 +962,13 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
           <property Id="6e8a3836-fbfd-402c-b1f9-1872fb4a1049" name="title" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="390fa909-9cae-4da8-b64a-a03eaf767d6a" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="b857d83a-2db8-437b-8a68-093517d677f0" LastKnownName="QStringList" />
+              <referencedTypeMoniker Id="e157e73d-962e-4131-b9a6-eb7e60513a42" LastKnownName="std::vector&lt;QString&gt;" />
             </type_NamedElement>
           </property>
           <property Id="072c0048-f671-4654-8936-6a61903ee28b" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="6ccf683f-f217-4303-b31d-f1ed4e18261c" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="fb332c2e-800c-4533-b08a-c0dd01e91ac6" LastKnownName="QList&lt;ElementType&gt;" />
+              <referencedTypeMoniker Id="824d946c-c0cf-41ad-8236-47edf64c5310" LastKnownName="std::vector&lt;ElementType&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -969,7 +980,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                 <parameter Id="bd4fca42-ac00-45b0-af3b-f8a7a60e54a1" direction="Return" isUnique="false">
                   <elementDefinition Id="ac3705cb-ae72-4f23-b4bb-d2b40fdde4e6" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="e614cd28-3260-4164-bb26-bdf432729ee5" LastKnownName="QStringList" />
+                    <referencedTypeMoniker Id="a3a24d39-2806-4c38-bd1d-9d4b33509b7c" LastKnownName="std::vector&lt;QString&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -982,7 +993,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                 <parameter Id="9dbc22aa-67fb-4736-a601-ce905733ab68" direction="Return" isUnique="false">
                   <elementDefinition Id="38619f03-cbca-47bd-bd45-b13b4f97b19d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="fb332c2e-800c-4533-b08a-c0dd01e91ac6" LastKnownName="QList&lt;ElementType&gt;" />
+                    <referencedTypeMoniker Id="69c7904a-e928-4a22-b966-c109c598f4f0" LastKnownName="std::vector&lt;ElementType&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1046,6 +1057,164 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="af3200ed-48a3-4f06-80e6-a0e964653cd9" name="std::map&lt;ColumType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::map&lt;ColumType&gt;">
+        <elementDefinition Id="3f9542b4-4267-4d75-9e03-02b00a70b612" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="69c7904a-e928-4a22-b966-c109c598f4f0" name="std::vector&lt;ElementType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementType&gt;">
+        <elementDefinition Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e157e73d-962e-4131-b9a6-eb7e60513a42" name="std::vector&lt;QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;QString&gt;">
+        <elementDefinition Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="824d946c-c0cf-41ad-8236-47edf64c5310" name="std::vector&lt;ElementType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementType&gt;">
+        <elementDefinition Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="26b66041-9b0a-440e-91ba-eb4ca5fc720f" name="OverviewTable" isAbstract="false" isLeaf="false" cachedFullName="OverviewTable">
+        <elementDefinition Id="87765c78-3386-4885-b341-fbb794629642" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="13b137ff-7e92-43b9-8b5b-638dfafed524" name="STFLQueryWindget" isAbstract="false" isLeaf="false" cachedFullName="STFLQueryWindget">
+        <elementDefinition Id="85643f81-f0d3-412b-87b4-de6d5d892cc3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1690ba12-3b1c-4114-9aba-c58a0b66c6ce" name="STFLEngine&lt;OverviewTableColumn&gt;" isAbstract="false" isLeaf="false" cachedFullName="STFLEngine&lt;OverviewTableColumn&gt;">
+        <elementDefinition Id="2f289db3-198e-45b7-87da-42666659af90" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c75e7183-88a7-4fff-9653-432f6954a2e8" name="Qstring" isAbstract="false" isLeaf="false" cachedFullName="Qstring">
+        <elementDefinition Id="e912d6e6-0b23-429e-bce4-f68d66abc3bd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7a949388-93a1-4906-a35c-d8aa12d75154" name="CallData" isAbstract="false" isLeaf="false" cachedFullName="CallData">
+        <elementDefinition Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="889c2867-3fe0-4cc7-9218-d7b62905abd6" name="OverviewPanel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6fe4203-ac34-40c4-a5f3-3c9ed4ad0259" />
+        <targetEnds>
+          <association Id="a60d2b1c-e2f9-4a2b-bbab-ec9ea1c15e44" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" LastKnownName="STFLEngine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b08df73e-5ba4-4190-a557-d6ceff847d3c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19f3a0c6-9afd-4c95-b53f-5d9ce05c320c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b385737f-89b1-48e8-bae3-18e08b8a1a0c" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f7a60e94-5a33-4668-b401-199cb67a15f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3e75ccb9-63ff-4142-b4be-83a56f206395" />
+          </association>
+          <association Id="bec6e5dc-3652-40eb-8fef-b944dd9245cb" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9bdfa20c-8e39-4dd5-8cc7-14857955f1ca" LastKnownName="FilterQueryWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="afa53685-d16d-4c14-aed5-87732e045b4d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94a6aa4e-00d8-4057-a66c-754e4f7a4847" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="486ecd44-2219-4209-855c-3569d3095aa1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cb1f24c1-76fd-4faf-8b34-9450fb62e5de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5cd9cda6-5e54-4a39-b125-0d9a1c39344a" />
+          </association>
+          <association Id="41d304a5-3c35-42f0-8cc4-05c49919ab56" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a4da33ae-af54-4777-a2ac-b1db938c114f" LastKnownName="OverviewTable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49cefeeb-4d2e-4f5b-a28d-6423a67bded9" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1042cef-c153-4291-af20-618725d94d2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a30c4246-7c85-4f1b-b421-07951b810e9a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e5ee1a8-38c3-41b1-9a38-76ec81812d4a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9a8505cd-4a89-46e4-9768-fd6e370c5113" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b313140a-558f-40e0-bfaf-e5d674bf0557" name="table" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ecd77bee-5d1e-47c4-ac7f-3af17941f4f2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="26b66041-9b0a-440e-91ba-eb4ca5fc720f" LastKnownName="OverviewTable" />
+            </type_NamedElement>
+          </property>
+          <property Id="9a2987fc-92ea-47b7-904e-845f21c04b4f" name="queryWidget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="820cfdf6-0855-4670-8efc-302b1c4b7147" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="13b137ff-7e92-43b9-8b5b-638dfafed524" LastKnownName="STFLQueryWindget" />
+            </type_NamedElement>
+          </property>
+          <property Id="c6f5bb80-d74d-4db6-9221-f7f2ac50fe24" name="queryEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="93342bd0-f6b5-4c10-bc64-c1a3f46974d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1690ba12-3b1c-4114-9aba-c58a0b66c6ce" LastKnownName="STFLEngine&lt;OverviewTableColumn&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5ab92c6d-c85d-4096-8385-5c7b978bbb93" name="//slot filterquery" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e371b39f-a728-44ef-9db6-5cf4b92c4c87" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d549b85c-b4aa-4ab3-967a-623a592bc0dc" name="Qsitrng" direction="In" isUnique="false">
+                  <elementDefinition Id="2dab216c-582b-4ac0-9eb1-05c0d9613f38" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9960482b-17e0-4fd4-9b3a-d94ef5c2b5bd" name="//slot updateQuerySlot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e8afc408-d662-41f3-8946-3cde80d483fc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e614c62-b511-4638-be9b-cc34e7f22ce0" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="20fd1a51-22fe-408e-88cd-fa347ede19ff" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c75e7183-88a7-4fff-9653-432f6954a2e8" LastKnownName="Qstring" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="15c5a6e7-5423-4e22-8b00-c93b7798dead" name="addElement" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="673c0242-7cc9-4fa5-94bb-bd90940be871" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="35f79c1c-6d7f-4615-8527-5e179580c7a5" name="elemt" direction="In" isUnique="false">
+                  <elementDefinition Id="366618bf-b00e-4fce-b743-8c311fb0bb8d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7a949388-93a1-4906-a35c-d8aa12d75154" LastKnownName="CallData" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

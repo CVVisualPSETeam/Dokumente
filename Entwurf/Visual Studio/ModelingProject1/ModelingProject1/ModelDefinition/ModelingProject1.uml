@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -158,6 +158,60 @@ Die Zeichenart der Verbindungslinien wird über einen QPen angegeben.</body>
 	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)
 	- levensteinDistance
 </body>
+    </comment>
+    <comment
+      Id="75e405be-8281-4b89-98eb-f313323e7a33">
+      <body>Zeigt eine Übersicht der aktuellen Calls an und erlaubt es dem Benutzer diese filtern und in Form von Views zu öffnen.
+</body>
+    </comment>
+    <comment
+      Id="eea3bd17-1a28-4236-85cc-dcb094124e86">
+      <body>Gruppiert mehrere Views (getabbed) in einem Fenster an.</body>
+    </comment>
+    <comment
+      Id="0ef1f38d-5c63-4768-96d6-f5962379c120">
+      <body>Fenster, welches mehrere Views gruppiert, so wie die Übersichtsseite enthält.</body>
+    </comment>
+    <comment
+      Id="b1dacdcc-823d-4140-bb97-b63682a0f4c7">
+      <body>Schnittstelle zwischen API und den Views und der Übersichtsseite.
+Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der CallTabs), die Anzeige der Hilfe und dem Aufruf der QT-GUI-Aktualisierungsroutinen.</body>
+    </comment>
+    <comment
+      Id="c6bd5dbd-1727-4bb2-9dc2-6f004e74f958">
+      <body>Gruppiert eine Menge von Elementen und gibt dieser Gruppe einen Titel (bestehend aus mehreren EInzeltiteln).</body>
+    </comment>
+    <comment
+      Id="0110094b-d12b-4430-a6e5-5a2bf264012b">
+      <body>Ermöglicht es eine Menge von Elementen zu filter, grupieren und zu sortieren mit einer textuellen Query-Sprache.</body>
+    </comment>
+    <comment
+      Id="e638ed9e-8adc-4c1b-ab1e-a8041e81e537">
+      <body>Tabelle der Übersichtsseite</body>
+    </comment>
+    <comment
+      Id="a8835cb9-0924-463e-b3d9-954784970bc2">
+      <body>View, welcher die Rohdaten eines Match-Datensatzes tabellarisch darstellt.</body>
+    </comment>
+    <comment
+      Id="1690ed57-730c-441e-a423-1eddac013354">
+      <body>Rohdatentabelle des RawViews.</body>
+    </comment>
+    <comment
+      Id="e9017bb7-a67c-4d8f-bd39-42aeccadbc63">
+      <body>Spalte der Rohdatentabelle</body>
+    </comment>
+    <comment
+      Id="e455f40b-710a-4215-9305-9ba43d560c51">
+      <body>Suchleisten Widget</body>
+    </comment>
+    <comment
+      Id="2cb3b752-a6d9-4e6b-87f5-459e1994dc86">
+      <body>Tabelle für gruppierte Calls der Übersichtsseite</body>
+    </comment>
+    <comment
+      Id="9fce3105-e723-42c6-9736-0b43251e7392">
+      <body>Spalte einer Übersichtsseitentabelle</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -898,6 +952,26 @@ Die Zeichenart der Verbindungslinien wird über einen QPen angegeben.</body>
       <undefinedType
         Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
         name="reference" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="256ff152-9640-43fa-bdd1-d13dffd75693"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5ec0fb9c-c7f2-4092-8a6d-49dfccfc1dc6"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_2105.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="af13dcbe-aefd-477b-848f-622ca97be4d8"
+        LastKnownName="Package2"
+        LastKnownLocation="Package_2107.uml" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

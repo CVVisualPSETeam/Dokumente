@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -51,6 +51,24 @@
       <elementDefinition Id="9ee96a13-88da-47e7-b8ac-0c254e709942" />
       <body>Abstrakte Datenklasse
 </body>
+    </comment>
+    <comment Id="3fb5a5d6-4dd3-45e5-8787-674352873ff4">
+      <elementDefinition Id="75e405be-8281-4b89-98eb-f313323e7a33" />
+      <body>Zeigt eine Übersicht der aktuellen Calls an und erlaubt es dem Benutzer diese filtern und in Form von Views zu öffnen.
+</body>
+    </comment>
+    <comment Id="5e294686-18f2-45bb-81a9-02d2bf3a02e2">
+      <elementDefinition Id="eea3bd17-1a28-4236-85cc-dcb094124e86" />
+      <body>Gruppiert mehrere Views (getabbed) in einem Fenster an.</body>
+    </comment>
+    <comment Id="6fb45f0c-1e80-46fb-a912-0f0183139222">
+      <elementDefinition Id="0ef1f38d-5c63-4768-96d6-f5962379c120" />
+      <body>Fenster, welches mehrere Views gruppiert, so wie die Übersichtsseite enthält.</body>
+    </comment>
+    <comment Id="45d9c342-7dee-4c77-9310-79f758693f4d">
+      <elementDefinition Id="b1dacdcc-823d-4140-bb97-b63682a0f4c7" />
+      <body>Schnittstelle zwischen API und den Views und der Übersichtsseite.
+Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der CallTabs), die Anzeige der Hilfe und dem Aufruf der QT-GUI-Aktualisierungsroutinen.</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -1454,7 +1472,7 @@
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
-          <property Id="5acd5ae1-3fce-4f1d-b98c-2d1cdb6cd46d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="5acd5ae1-3fce-4f1d-b98c-2d1cdb6cd46d" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
             <type_NamedElement>
               <referencedTypeMoniker Id="8778b4cb-e8fd-44c6-ac3b-9ffb2dffe4b5" LastKnownName="std::map&lt;ColumType&gt;" />
@@ -2882,7 +2900,7 @@
           </redefinableTemplateSignature>
         </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
-          <property Id="e0128ae9-8b3c-4797-8658-1b1c93c6e041" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="e0128ae9-8b3c-4797-8658-1b1c93c6e041" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
             <type_NamedElement>
               <referencedTypeMoniker Id="8778b4cb-e8fd-44c6-ac3b-9ffb2dffe4b5" LastKnownName="std::map&lt;ColumType&gt;" />

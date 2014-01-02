@@ -3,13 +3,6 @@
   dslVersion="1.0.0.0"
   Id="7479c561-76be-40a8-b575-407add153e3a"
   name="stfl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
-  <ownedCommentsInternal>
-    <comment
-      Id="a0762027-d351-4177-ac0f-ff6ec6650231">
-      <body>TODO:
-Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (oder je nach Aufteilung in das Paket mit den Views - scheint besser zu sein) </body>
-    </comment>
-  </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
       <class
@@ -252,7 +245,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
         <ownedAttributesInternal>
           <property
             Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85"
-            name="elemente"
+            name="elements"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -628,9 +621,9 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
-                LastKnownName="QStringList"
-                LastKnownLocation="Package_0049.uml" />
+                Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf"
+                LastKnownName="std::vector&lt;QString&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
@@ -647,9 +640,9 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="7c8cade4-bc52-4a57-aea7-b047046f26ee"
-                LastKnownName="QList&lt;ElementType&gt;"
-                LastKnownLocation="Package_0049.uml" />
+                Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc"
+                LastKnownName="std::vector&lt;ElementType&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -670,9 +663,9 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
-                      LastKnownName="QStringList"
-                      LastKnownLocation="Package_0049.uml" />
+                      Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf"
+                      LastKnownName="std::vector&lt;QString&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -694,9 +687,9 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="7c8cade4-bc52-4a57-aea7-b047046f26ee"
-                      LastKnownName="QList&lt;ElementType&gt;"
-                      LastKnownLocation="Package_0049.uml" />
+                      Id="f2be064a-a270-43d0-9f4e-c6e42edbbacc"
+                      LastKnownName="std::vector&lt;ElementType&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
