@@ -22,8 +22,11 @@ public:
 		Call(data, type), img1_{img1}, keypoints1_{std::move(keypoints1)}, img2_{img2},
 			keypoints2_{std::move(keypoints2)}, matches_{std::move(matches)} {}
 	
-	//const ocv::InputArray& getImage(size_t index) const {return images.at(index).first;}
-	//const std::vector<ocv::KeyPoint>& getKeyPoints(size_t index) const {return images.at(index).second;}
+	const ocv::InputArray& img1() const {return img1_;}
+	const ocv::InputArray& img2() const {return img2_;}
+	const std::vector<ocv::KeyPoint>& keyPoints1() const {return keypoints1_;}
+	const std::vector<ocv::KeyPoint>& keyPoints2() const {return keypoints2_;}
+	const std::vector<ocv::DMatch>& matches() const {return matches_;}
 private:
 	ocv::InputArray img1_;
 	std::vector<ocv::KeyPoint> keypoints1_;
