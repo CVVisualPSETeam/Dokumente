@@ -7,6 +7,7 @@
 
 //included for convinience of others:
 #include <cstddef> //size_t
+#include <cstdint> // [u]intXX_t
 #include <algorithm> // since some people like to forget that one
 
 namespace cvv {
