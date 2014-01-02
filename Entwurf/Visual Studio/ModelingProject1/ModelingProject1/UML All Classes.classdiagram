@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -1509,6 +1509,22 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="87ebe28d-d157-4ed1-8ef0-1cc38a042aaf" />
           </association>
+          <association Id="7b3946a1-70c4-452b-ac8d-b9c5ddb3721e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8412ecad-0b62-4269-9ab0-1cf873c2eab3" LastKnownName="GraphicsSceneLineGroup" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79dcdef8-9741-45e4-85de-f3639d2fe5a3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="022dbf2e-341b-4708-91f2-8ad45ccdf655" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6cd4707-ae47-449d-86e5-c385d49cbeca" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1f388dc8-c270-435b-8b3a-fcba60c04fe9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6435b184-e1c2-4177-81d0-6ca517795269" />
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation Id="1d38822e-bb44-44ae-b7ce-5d90db163fa6" name="//signal UpdateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -1668,7 +1684,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               <classifierTemplateParameter Id="46ab77c5-7328-4ca5-a677-501836997836">
                 <elementDefinition Id="22a7906b-52b3-4446-a8d8-e800f1977457" />
                 <ownedParameterableElement>
-                  <class Id="7f783b3b-0352-46a4-9099-e307021f4f41" name="ColumnType" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="7f783b3b-0352-46a4-9099-e307021f4f41" name="CollumnType" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
                   </class>
                 </ownedParameterableElement>
@@ -1746,7 +1762,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
                 <parameter Id="0bb6b223-c8a0-48f0-9d9a-df6142488cf6" name="element" direction="In" isUnique="false">
                   <elementDefinition Id="18830b39-ba0a-4538-9be2-e39489adf833" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" LastKnownName="ColumnType" />
+                    <referencedTypeMoniker Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" LastKnownName="CollumnType" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -2559,6 +2575,12 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <logicalClassDesignerModelHasTypes>
       <class Id="1eeb1717-c956-479f-ac58-e0b3c66d47f6" name="FilterQueryWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc" />
+        <generalsInternal>
+          <generalization Id="02e03101-2381-4cc0-a5d6-517067b411a8" isSubstitutable="false">
+            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
+            <elementDefinition Id="7f5591bd-bdc7-4a91-b9f2-3ff49a38770c" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="b524563f-a54e-4e12-bbde-f2eb4c7bfa48" name="viewController" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2352ef17-7917-438e-b950-f1fbff1b5605" />
@@ -2617,7 +2639,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" name="ColumnType" isAbstract="false" isLeaf="false" cachedFullName="ColumnType">
+      <referencedType Id="9b1c6cf2-015c-4a0e-8c68-9002ebba714c" name="CollumnType" isAbstract="false" isLeaf="false" cachedFullName="CollumnType">
         <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
       </referencedType>
     </packageHasNamedElement>
@@ -2760,6 +2782,22 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="0b9fbe4f-75f2-4fed-a1e1-def38d7573b2" />
+          </association>
+          <association Id="0f12c6ff-4f08-4425-9db3-62718304481d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8870be6d-dcd8-45c1-9efb-902f082cb19b" LastKnownName="GraphicsSceneArrow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="40e6b3ea-0038-4015-a175-4da3ce0abe87" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6a244351-a7fa-495e-845b-af69afa4addb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0d8e6e3-d30e-4a57-8112-48d2216ec7a2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="92107fda-d837-4e66-8e58-bae14f9d8d81" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="768277cd-a465-428f-8546-8e9cd8347cbb" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -3086,11 +3124,11 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="33d97ee7-328d-4ddd-a8bc-6095d9e2331a" />
           </association>
-          <association Id="48d079fb-ef42-4bc5-ad3d-c1d137f75a11" isDerived="false" sourceEndRoleName="RawView" targetEndRoleName="STFLEngine" isLeaf="false" isAbstract="false">
+          <association Id="48d079fb-ef42-4bc5-ad3d-c1d137f75a11" isDerived="false" sourceEndRoleName="" targetEndRoleName="STFLEngine" isLeaf="false" isAbstract="false">
             <classMoniker Id="eef28968-ef25-452a-9535-dcb6d8c3198d" LastKnownName="STFLEngine" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="d669240a-1bfe-45cd-a11e-e3aac872c27d" name="RawView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="d669240a-1bfe-45cd-a11e-e3aac872c27d" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="9f690be8-8d59-4558-981a-04f02be34b96" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -3102,11 +3140,11 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="ee9420e9-38ae-43aa-b9c0-3e20956a2b6c" />
           </association>
-          <association Id="7f306696-c71c-436f-89dc-c192519fac33" isDerived="false" sourceEndRoleName="RawView" targetEndRoleName="FilterQueryWidget" isLeaf="false" isAbstract="false">
+          <association Id="7f306696-c71c-436f-89dc-c192519fac33" isDerived="false" sourceEndRoleName="" targetEndRoleName="FilterQueryWidget" isLeaf="false" isAbstract="false">
             <classMoniker Id="1eeb1717-c956-479f-ac58-e0b3c66d47f6" LastKnownName="FilterQueryWidget" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="54d03a06-c059-4046-8f62-2eb00293234a" name="RawView" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                <memberEnd Id="54d03a06-c059-4046-8f62-2eb00293234a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
                   <elementDefinition Id="260da1cb-f719-4d4e-a355-1b0bc2574626" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -3277,9 +3315,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="e532e66e-6e4c-4e27-9326-4fda7ac8c570" name="Accordion" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bd5b5493-45bc-4683-9af3-4097ea200d4a" />
         <generalsInternal>
-          <generalization Id="24cee40c-d7ed-4423-ab67-cc2097c6c68c" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="714355a3-2db2-47e2-ac24-607cc7d5b1a9" />
+          <generalization Id="7c55e04d-922c-4aff-8cb2-1f8fc02c1b5a" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="903d8b1a-4114-4847-bed6-73a1c2b9c882" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -3454,9 +3492,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="0dfaba5d-4493-4e19-80e6-f6159618029d" name="Collapsable" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d" />
         <generalsInternal>
-          <generalization Id="23faeeab-9056-443e-a73d-72e4f2e52ab6" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="11830377-e162-4ea1-ba18-4830f6574d85" />
+          <generalization Id="a3298a55-a42f-4bf7-9b5e-29c2339b2921" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="38921838-e220-4c9f-a908-9ce62597142d" />
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
@@ -3487,9 +3525,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="00c8a2c4-9861-4f8c-acfb-8fd855afa54a" name="AutoFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cb30141c-2f28-4955-9db2-0f4eaec33620" />
         <generalsInternal>
-          <generalization Id="87611430-f321-446b-8227-9a803ef8e814" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="b3c3b6b8-310c-43cd-8c47-fed5177c1ff2" />
+          <generalization Id="ba21ccc3-fb49-4478-b321-1fca05d6f5bf" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="99d7ae70-9f92-4bad-b589-1e2d470cae80" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -3614,9 +3652,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="aa4449ed-bde5-4e43-b00f-f05b0aa00001" name="FilterSelectorWidget&lt;1,1&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c" />
         <generalsInternal>
-          <generalization Id="6412a0be-9c54-4921-b30e-e315e823bb17" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="2341e774-6ac1-42bb-bce6-d86afc24dcda" />
+          <generalization Id="e54c4027-2b5b-41b1-a39c-7017802b175d" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="92ed484a-d8b0-4dfd-8344-bbac7521b861" />
           </generalization>
         </generalsInternal>
       </class>
@@ -3625,9 +3663,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="9a13c60a-4367-41ab-ba2a-c58319416cad" name="FilterSelectorWidget&lt;2,1&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a0f58200-a57b-41e8-bf0f-e020bd86754e" />
         <generalsInternal>
-          <generalization Id="ab525780-5f56-49a4-a5a8-f59b996db260" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="067fd752-1375-4735-9232-19b43f7ed468" />
+          <generalization Id="3b1ebb3f-906f-4552-a0be-697903eb2bab" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="fb91d781-41b5-4b43-aac1-2a357a749bcf" />
           </generalization>
         </generalsInternal>
       </class>
@@ -3635,12 +3673,6 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <logicalClassDesignerModelHasTypes>
       <class Id="afdedc60-c282-4899-ac5c-d64f36df2626" name="FilterSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b" />
-        <generalsInternal>
-          <generalization Id="0e193514-0a08-4793-bd69-d2b919d5b5a9" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="35397d31-b56b-448f-a506-cb457be92c98" />
-          </generalization>
-        </generalsInternal>
         <ownedRedefinableTemplateSignatureInternal>
           <redefinableTemplateSignature Id="6b6dc966-d673-48ad-b58e-3dd65ecf215f" parameters="" isLeaf="false">
             <elementDefinition Id="746e6882-13b2-479b-a082-55f193ad0174" />
@@ -3984,12 +4016,6 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <logicalClassDesignerModelHasTypes>
       <class Id="34247078-4a37-4fd5-88e7-b05c9bdb2c13" name="FilterSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b" />
-        <generalsInternal>
-          <generalization Id="e7e95d4f-c58e-4336-9662-bf9791efacde" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="35397d31-b56b-448f-a506-cb457be92c98" />
-          </generalization>
-        </generalsInternal>
         <ownedRedefinableTemplateSignatureInternal>
           <redefinableTemplateSignature Id="225d2022-a5fe-4d55-86cd-532d6a51a5c0" parameters="" isLeaf="false">
             <elementDefinition Id="746e6882-13b2-479b-a082-55f193ad0174" />
@@ -4151,9 +4177,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="62ff98f5-eef1-435a-86c4-2d3f4db5ad67" name="GroupOperatorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="30ed6329-f803-4f4e-af94-32c1f5c200e8" />
         <generalsInternal>
-          <generalization Id="be7177a9-caae-495d-86d4-9695e8acc269" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="74f1fba0-d0cc-4bfb-8679-a6101dbee6fc" />
+          <generalization Id="d840fbd4-31c2-4771-8ced-6dc90d418a83" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="0d977603-1b28-4766-a15d-eb64c5073682" />
           </generalization>
         </generalsInternal>
         <ownedRedefinableTemplateSignatureInternal>
@@ -4282,6 +4308,12 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <logicalClassDesignerModelHasTypes>
       <class Id="a6e881dc-97fa-4e00-8c91-b6909f42f14f" name="HistogrammWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="065d96ad-6692-43c2-bcae-c783c5364f38" />
+        <generalsInternal>
+          <generalization Id="5982967a-d9fa-42a9-be4c-da3b2cb8016b" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="9f21cd85-e15d-48cf-a639-5844ffd4bad6" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="be115bd8-93f7-4ee4-a3d5-67d4b48739d0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="f2da20c8-6f9c-4d2e-940b-dd84b4a0034a" LastKnownName="SelectableHistogram" />
@@ -4306,9 +4338,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="3cbdd1e8-5c84-4983-882a-31cfa9fd046a" name="IntervalSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5340958f-9df4-4138-897c-8c5b59be929d" />
         <generalsInternal>
-          <generalization Id="fda2747e-6bc3-4db7-8e1d-0b4257609cf8" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="541f1360-f7a0-4e4b-a0f9-c41cb881f9f3" />
+          <generalization Id="d130ba98-eb46-4deb-9354-b7c33709bf9c" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="eaf8bbdf-9947-48e2-9f4a-c2c54fe102a9" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -4389,12 +4421,6 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <logicalClassDesignerModelHasTypes>
       <class Id="f2da20c8-6f9c-4d2e-940b-dd84b4a0034a" name="SelectableHistogram" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="672b1e69-7088-4746-b5a1-493cc0c0f86f" />
-        <generalsInternal>
-          <generalization Id="4ae5dc3f-5da3-45a9-8a00-ee89c54102f6" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="a8b4c475-dd85-4304-bbd2-b7326aa5a0a9" />
-          </generalization>
-        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="bcd85ce8-27ae-4bff-834b-a9ad73c07fc2" name="Image" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f1c7fc57-b92f-4ef4-aa3c-3d748e8e2354" />
@@ -4483,9 +4509,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <class Id="3b407438-1d18-4082-9598-98a67f5435f5" name="SelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
         <generalsInternal>
-          <generalization Id="95207da0-4b75-4783-bb8a-1f64bcd672ee" isSubstitutable="false">
-            <classMoniker Id="3290e7a7-7299-4118-a5bc-9e6a84adc01c" LastKnownName="QWidget" />
-            <elementDefinition Id="40224620-608f-4c15-8104-2bbe72c6bc18" />
+          <generalization Id="3f07acc7-bae0-4787-864b-c5fc91477862" isSubstitutable="false">
+            <classMoniker Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" LastKnownName="QWidget1" />
+            <elementDefinition Id="130b43e5-70ba-4f34-bbde-757a8cc60822" />
           </generalization>
         </generalsInternal>
         <targetEnds>
@@ -4949,6 +4975,11 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         <elementDefinition Id="b4b6a7bc-6559-4060-a9ef-df49f35713e0" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e4c27935-ed6f-4048-8d48-c380e2d6541c" name="QWidget1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce26ccd2-f65d-4d49-835d-22bf5ab582b1" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="9ed153e1-5642-406a-bb57-5c20848259a3" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

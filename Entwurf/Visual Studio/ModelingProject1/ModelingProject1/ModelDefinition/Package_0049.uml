@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="7479c561-76be-40a8-b575-407add153e3a"
   name="stfl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -31,7 +31,7 @@
                 <ownedParameterableElement>
                   <class
                     Id="568dbdcb-3458-4d90-9917-eae952637209"
-                    name="ColumnType"
+                    name="CollumnType"
                     isAbstract="false"
                     isLeaf="false"
                     isActiveClass="false" />
@@ -251,7 +251,7 @@
                   <type_NamedElement>
                     <classMoniker
                       Id="568dbdcb-3458-4d90-9917-eae952637209"
-                      LastKnownName="ColumnType"
+                      LastKnownName="CollumnType"
                       LastKnownLocation="Package_0049.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -773,6 +773,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7f5591bd-bdc7-4a91-b9f2-3ff49a38770c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="2352ef17-7917-438e-b950-f1fbff1b5605"
