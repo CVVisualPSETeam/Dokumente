@@ -334,42 +334,6 @@ dies entweder von allen oder der momentanen auswahl</body>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="b35af7f3-ea92-4aba-8d5b-d6c2e4d09194"
-            name="reference"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="593084b5-1741-458e-a517-22f05fefd847"
-                  name="reference&amp;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="ba3c3b2a-d738-4ae1-a989-03cf773676be"
-            name="reference"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e3f0c4c9-5935-4fde-a821-081f6bba758d"
-                  name="reference&amp;&amp;"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="1048ae16-67a1-49c2-9c73-97d67b7f8574"
             name="operator="
             isLeaf="false"
@@ -380,9 +344,22 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="7ee00b42-6018-4dac-bbdc-d0e63ed57d85"
+                  Id="3f093ca5-c98a-4e7c-8cd1-82bb5e03c9dd"
                   name="l"
                   direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c38521b2-8cc7-4326-814d-9eea7c47596f"
+                  direction="Return"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
@@ -396,7 +373,7 @@ dies entweder von allen oder der momentanen auswahl</body>
           </operation>
           <operation
             Id="2233fe9c-c739-40f9-80b4-164d3dc51b8d"
-            name="operator="
+            name="operator!="
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -405,10 +382,44 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="148a8ae9-81f1-4cf1-a758-07b828583bca"
-                  name="reference&amp;&amp;"
+                  Id="a9935f0b-bd20-472d-9b7b-d5b1cc847bf6"
+                  name="l"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a494e7e6-2d19-45d3-b43b-7d0ef4069096"
+                  name="r"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="789aee5a-5718-4002-bd96-f14866a92b64"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -658,6 +669,90 @@ dies entweder von allen oder der momentanen auswahl</body>
                     <undefinedTypeMoniker
                       Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
                       LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5f339b89-7ade-4f7f-979c-b0aa9134214a"
+            name="operator=="
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c6f0069-ffef-404f-842a-ced5e8bef390"
+                  name="l"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4b0a000-b27f-4377-b562-dc8f6552e110"
+                  name="r"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43846fa8-cba8-4682-bf19-5356393c53b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b38bf2fd-ac11-4bab-af7f-8cfda20fa33c"
+            name="operator bool"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="26432adb-f863-4a5b-994b-9d823046b315"
+            name="operator!"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5cc641e8-aa14-4ad2-ac89-9ac66bcccd28"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3279,7 +3374,7 @@ dies entweder von allen oder der momentanen auswahl</body>
       <class
         Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b"
         name="FilterSelectorWidget"
-        isAbstract="true"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>

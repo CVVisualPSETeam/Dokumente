@@ -121,11 +121,124 @@
         <ownedOperationsInternal>
           <operation
             Id="82b36dba-8563-4b81-a09a-b5bf8b6f9a5e"
+            name="firstImage"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="062273af-5436-4c59-ab83-59fab82d092e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d05b70a1-9701-467f-a21c-7ac10dfc8240"
+                      LastKnownName="ocv::InputArray"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bbfa3575-3adf-4f6b-b867-95be0a0d8c6c"
+            name="secondImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="592f0ae7-4d1e-4fe3-86f3-09b990ea1f43"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d05b70a1-9701-467f-a21c-7ac10dfc8240"
+                      LastKnownName="ocv::InputArray"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e918ec1a-cbf5-4000-8cce-381a38a42322"
+            name="firstImgKeypoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6d684cb-dec6-4a79-a405-78c90ae6eb80"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e5c61221-d6c0-4ff1-817e-a2847cbe5a1c"
+                      LastKnownName="std::vector&lt;ocv::KeyPoint&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f36239d-924e-4018-a5d4-2ba727236e17"
+            name="secondImgKeypoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="745e3a79-b752-465b-8ce2-bd7a92c4b9b7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e5c61221-d6c0-4ff1-817e-a2847cbe5a1c"
+                      LastKnownName="std::vector&lt;ocv::KeyPoint&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7c22d956-1f6c-439d-964e-067b4d067ad2"
+            name="matches"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e240b5a-472c-4809-b811-9d46e5fc55e7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="2be997af-0227-4a13-a250-5ef681fda2f7"
+                      LastKnownName="std::vector&lt;ocv::DMatch&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
