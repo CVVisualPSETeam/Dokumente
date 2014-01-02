@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="83794ace-7d8b-46a8-999d-9fb4dd6b66d5" name="getImageKoordinate(Point) : Point" linkedPackageId="9ed153e1-5642-406a-bb57-5c20848259a3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="9a0aa795-f148-4786-bb76-61f64c00df8e">
       <elementDefinition Id="49471709-6e89-44c1-b3d5-887af6782072" />
@@ -31,7 +31,10 @@
     </comment>
     <comment Id="0a13259a-8660-49cf-ae58-55897fe7ea46">
       <elementDefinition Id="4b29755b-3fe9-4ad1-bdd9-7b38be5af374" />
-      <body>the page name here is equal to the name of the view, i.e. its ID
+      <body>Innere eines Tabs
+Wechsel der Views
+"Step futher" button
+hilfe button
 </body>
     </comment>
     <comment Id="5af89a0e-62c6-45f0-a178-9510d242dd3d">
@@ -42,10 +45,6 @@
       <elementDefinition Id="ef21fa04-4af5-4611-b3aa-8acdd2d0266e" />
       <body>input_ wird ein std::vector&lt;T&gt;, wenn mehrere Eingabebilder unterstützt werden
 </body>
-    </comment>
-    <comment Id="325403e4-a5d5-45de-b593-f1c2c1d450bb">
-      <elementDefinition Id="a1f6d550-8575-48c3-9387-c216e26f0eb5" />
-      <body>Contains all the calldata (= location, images and their keypoints).</body>
     </comment>
     <comment Id="155d1506-c441-4b1f-8f16-5a8352172171">
       <elementDefinition Id="9ee96a13-88da-47e7-b8ac-0c254e709942" />
@@ -69,6 +68,22 @@
       <elementDefinition Id="b1dacdcc-823d-4140-bb97-b63682a0f4c7" />
       <body>Schnittstelle zwischen API und den Views und der Übersichtsseite.
 Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der CallTabs), die Anzeige der Hilfe und dem Aufruf der QT-GUI-Aktualisierungsroutinen.</body>
+    </comment>
+    <comment Id="75323f81-3a94-4fa7-bb9f-8e4c25f5dbf2">
+      <elementDefinition Id="09d80c1b-cfea-4ead-8842-17ed160adae5" />
+      <body>Genauere Beschreibung der einzelnen Funktionen in seperater Textdatei</body>
+    </comment>
+    <comment Id="3a274318-3b63-4841-836b-85394fccab7d">
+      <elementDefinition Id="6f2c0054-671f-4592-a280-1c1167ecb945" />
+      <body>Genauere Beschreibung der einzelnen Funktionen in seperater Textdatei</body>
+    </comment>
+    <comment Id="5122ad81-0897-437f-9d66-3d7d81b95a3f">
+      <elementDefinition Id="77034e90-470a-4c4e-b0f2-9617c6862b25" />
+      <body>Oberklasse für die MatchViews</body>
+    </comment>
+    <comment Id="a5783c09-0d87-4835-b5ef-d0a240a8a251">
+      <elementDefinition Id="1bc44122-b92e-4205-a138-315025871f2a" />
+      <body>Oberklasse der FilterViews</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -1723,6 +1738,20 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
       <package Id="58d25ab6-5936-4f2b-ad91-a3d0b25a7786" name="impl">
+        <ownedCommentsInternal>
+          <comment Id="325403e4-a5d5-45de-b593-f1c2c1d450bb">
+            <elementDefinition Id="a1f6d550-8575-48c3-9387-c216e26f0eb5" />
+            <body>Contains all the calldata (= location, images and their keypoints).</body>
+          </comment>
+          <comment Id="b4dd4097-564e-413a-9799-a47b1eb1349e">
+            <elementDefinition Id="212b5642-8cd6-47ea-83b1-0c2accd9b4b0" />
+            <body>das DEBUGMACRO ersetzt diese Klasse durhc eine Implemetierung oder eine 'leere' Klasse</body>
+          </comment>
+          <comment Id="df0444b1-77e6-4754-a9fa-605bee533479">
+            <elementDefinition Id="374ce605-9e55-41b3-9ad3-84ccedaa9ac5" />
+            <body>falls der CVVDebugModus gesetzt wurde</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
