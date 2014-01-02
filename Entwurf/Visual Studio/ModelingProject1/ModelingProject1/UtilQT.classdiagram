@@ -659,7 +659,7 @@ der slot fängt das signal des inneren FFW und leitet es über das signal weiter
           </comment>
           <comment Id="41383d94-249e-4303-bb3b-5d946af42540">
             <elementDefinition Id="13bc07d7-cef9-4aaf-a8f8-cf8376a5c4cd" />
-            <body>von uns genutzte parametrisierungen.
+            <body>von uns genutzte parametrisierungen des FSW templates.
 ggf bessere namen per typedef o.Ä.</body>
           </comment>
         </ownedCommentsInternal>
@@ -1405,6 +1405,27 @@ die widgets können eingefahren werden</body>
     </logicalClassDesignerModelHasPackages>
     <logicalClassDesignerModelHasPackages>
       <package Id="245662ca-49cd-4012-aa96-551247c214c5" name="util">
+        <ownedCommentsInternal>
+          <comment Id="4da15a29-39f2-42ad-87f4-960d42a595fe">
+            <elementDefinition Id="6495c07c-0864-43e2-a129-32310bc9f698" />
+            <body>dient der repräsentation einer menge von keypoints auf einer graphic scene.
+dient als basispunkt.</body>
+          </comment>
+          <comment Id="66796b86-ca7b-47f1-8f90-688c29ca8afe">
+            <elementDefinition Id="1f0be999-8465-42bd-962d-7f0c4eaf4265" />
+            <body>dient der repräsentation einer menge von matches auf einer graphic scene.
+hat zwei basispunkte.</body>
+          </comment>
+          <comment Id="8e319ad2-f583-4b60-acaf-18295ef657c7">
+            <elementDefinition Id="7cd2ce63-9db6-48a8-999f-fe9dc18936ee" />
+            <body>ein bild in welches hineingezoomt werden kann.
+es meldet die veränderungen des zooms per signal</body>
+          </comment>
+          <comment Id="8e0a599d-43df-4c08-8145-4d9634afff6a">
+            <elementDefinition Id="9b0ae734-8ef1-4369-b09a-e87791c53471" />
+            <body>repräsentiert einen translationspfeil der eine richtung und einen basispunkt hat</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
         <packagedElements>
           <packageHasNamedElement>
