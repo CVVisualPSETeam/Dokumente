@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="bbc887ba-b006-40e8-97b8-ab79fbd66b89"
   name="controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,7 +7,7 @@
     <packageHasNamedElement>
       <class
         Id="ae9e801e-2a86-4548-940c-88fcce7a9598"
-        name="DataConroller"
+        name="DataController"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -55,7 +55,6 @@
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
-            name="*"
             isAbstract="false">
             <classMoniker
               Id="551929e6-748e-4559-bf1e-3d58d21c558b"
@@ -152,12 +151,29 @@
             isQuery="false" />
           <operation
             Id="9452b285-5d0c-4228-8856-139cdad24ce4"
-            name="addCall(call:std::unique_ptr&lt;Call&gt;"
+            name="addCall"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27a2463d-76be-4b30-b469-eea092ffbd5e"
+                  name="call"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d102ddcd-9065-4090-a1cf-104d8171758b"
+                      LastKnownName="std::unique_ptr&lt;Call&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="bfa73479-717b-4fec-bfa2-06493caace26"
             name="removeCall"
@@ -169,8 +185,8 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="59270c43-be91-4e45-a413-025fb5b3b725"
-                  name="ID"
+                  Id="164a2565-034d-46e9-9824-9844fb0fe6ca"
+                  name="Id"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -185,7 +201,7 @@
           </operation>
           <operation
             Id="731d30e3-7408-4323-b582-296be90e8152"
-            name="geCall"
+            name="getCall"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -194,7 +210,20 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="0afc3b77-5ede-4def-96cd-cd394eaef9fe"
+                  Id="73788942-7cef-460d-a73b-956f4eef3363"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="09028d4d-9ee2-4246-9412-8331587fa54a"
+                      LastKnownName="Call"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6f8d7fd-1a2f-4324-86b7-e2a0e982b69f"
                   name="ID"
                   direction="In"
                   isUnique="false">
@@ -203,19 +232,6 @@
                       Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
                       LastKnownName="size_t"
                       LastKnownLocation="Package_2352.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="73788942-7cef-460d-a73b-956f4eef3363"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="22ba9a5f-e092-4dc1-98c9-491e1dafa649"
-                      LastKnownName="&amp;Call"
-                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>

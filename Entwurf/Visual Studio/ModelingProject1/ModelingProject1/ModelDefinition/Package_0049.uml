@@ -264,8 +264,8 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="65da8cd1-469a-4e39-b9aa-414a24c0adfe"
-                LastKnownName="QList&lt;ColumType&gt;"
+                Id="3f9542b4-4267-4d75-9e03-02b00a70b612"
+                LastKnownName="std::map&lt;ColumType&gt;"
                 LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
@@ -397,8 +397,8 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="3be35265-eb66-44e6-997e-2915bc76d59c"
-                LastKnownName="QMap&lt;QString, QStringList&gt;"
+                Id="7bdbf9a4-a5fe-4a24-aefa-261d6d57c42b"
+                LastKnownName="QMap&lt;QString, std::vector&lt;QString&gt;&gt;"
                 LastKnownLocation="Package_0049.uml" />
             </type_NamedElement>
           </property>
@@ -483,15 +483,15 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="022bc291-64fc-44ab-9540-e10ec3ef4a28"
-                      LastKnownName="QStringList"
-                      LastKnownLocation="Package_0049.uml" />
+                      Id="ec0353d5-065f-472b-aa0a-d73cc6f05dbf"
+                      LastKnownName="std::vector&lt;QString&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="af5c04a2-7a41-4419-b03d-50369fba4d06"
+                  Id="f55fa7f7-6b32-4939-ba98-c91cd8e71673"
                   name="query"
                   direction="In"
                   isUnique="false">
@@ -505,7 +505,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="55aac342-f225-4036-8204-b8cd702a08bb"
+                  Id="4c6077eb-6b87-4bbd-b83a-e8c871c96a05"
                   name="number"
                   direction="In"
                   isUnique="false">
@@ -530,15 +530,15 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="beeab019-a983-47e7-9e94-5fb6f9a33d32"
+                  Id="db367af7-9cb6-4cdb-9e32-db2afd9c0b93"
                   name="newElements"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="3cdd9d6f-be8c-41c2-9343-c547b8d14790"
-                      LastKnownName="QList&lt;ColumnType&gt;"
-                      LastKnownLocation="Package_0049.uml" />
+                      Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa"
+                      LastKnownName="std::vector&lt;ColumnType&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -964,6 +964,16 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       <undefinedType
         Id="0f0bb7ab-2707-456d-9ebf-573ff83246ec"
         name="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3f9542b4-4267-4d75-9e03-02b00a70b612"
+        name="std::map&lt;ColumType&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b098a024-7f32-4942-973a-132be25be06d"
+        name="std::vector" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

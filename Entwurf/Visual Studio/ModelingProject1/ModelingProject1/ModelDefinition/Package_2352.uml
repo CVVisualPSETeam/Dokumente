@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="51b7c039-93ad-44fd-8c48-448772a0a49c"
-  name="__Api" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  name="impl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <packagedElements>
     <packageHasNamedElement>
       <undefinedType
@@ -114,8 +114,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="919062e0-5942-4bff-9418-63289cf465af"
-                      LastKnownName="std::atomic&lt;bool&gt;&amp;"
+                      Id="c498dee2-2a59-404d-987c-9c9339106200"
+                      LastKnownName="std::atomic&lt;bool&gt;"
                       LastKnownLocation="Package_2352.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -199,7 +199,6 @@
           <property
             Id="ee3540b9-de76-400f-9ba2-a3bbaf690b9b"
             name="file"
-            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -218,7 +217,6 @@
           <property
             Id="fd4ed057-b5ab-4ac4-b13b-d304b24c4980"
             name="line"
-            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -237,7 +235,6 @@
           <property
             Id="1c765c80-bc88-4ffd-ae77-5c7ec2d3bb4d"
             name="function"
-            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -256,7 +253,6 @@
           <property
             Id="df87ef8d-4038-441f-8ef4-ba8e305be85b"
             name="isKnown"
-            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -284,12 +280,57 @@
             isQuery="false" />
           <operation
             Id="5e8657e4-0651-4949-bc30-13625714384d"
-            name="CallData(file:const std::String,line:size_t,function: const stdString"
+            name="CallData"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5e86843-c95c-4a55-b61b-10e42323d5c4"
+                  name="file"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="afc3265a-f041-49ff-992c-c694781f4e11"
+                      LastKnownName="std::string"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6af1ab4f-15e1-4c20-ad66-70eaa19156cf"
+                  name="line"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80c5b74c-c75b-42cd-9e72-67a1d5f6dc50"
+                  name="function"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="afc3265a-f041-49ff-992c-c694781f4e11"
+                      LastKnownName="std::string"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
           <operation
             Id="d1e07cc7-f98c-48c5-9452-92531fa8a61a"
             name="operator bool"
@@ -300,6 +341,11 @@
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="c498dee2-2a59-404d-987c-9c9339106200"
+        name="std::atomic&lt;bool&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
