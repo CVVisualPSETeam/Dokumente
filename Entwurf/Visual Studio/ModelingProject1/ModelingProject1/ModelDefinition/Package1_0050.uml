@@ -829,6 +829,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="ee9420e9-38ae-43aa-b9c0-3e20956a2b6c"
+            isDerived="false"
+            sourceEndRoleName="RawView"
+            targetEndRoleName="STFLEngine"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
+              LastKnownName="STFLEngine"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f690be8-8d59-4558-981a-04f02be34b96"
+                  name="RawView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0ddba736-b21a-4ede-b10e-82278e4c536f"
+                  name="STFLEngine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="368b76e1-1903-4f4e-b4d7-6deb43c2266a"
+            isDerived="false"
+            sourceEndRoleName="RawView"
+            targetEndRoleName="FilterQueryWidget"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc"
+              LastKnownName="FilterQueryWidget"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="260da1cb-f719-4d4e-a355-1b0bc2574626"
+                  name="RawView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ab0168e-03f5-46a4-8370-e2f65b77cfe0"
+                  name="FilterQueryWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
