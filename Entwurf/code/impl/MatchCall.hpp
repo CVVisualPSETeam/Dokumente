@@ -10,8 +10,8 @@ namespace impl {
 
 class MatchCall: public Call {
 public:
-	MatchCall(const ocv::InputArray& in1, const ocv::InputArray& in2, impl::CallData data):
-		Call(data), pic1_(in1), pic2_(in2) {}
+	MatchCall(const ocv::InputArray& in1, const ocv::InputArray& in2, impl::CallData data, QString type):
+		Call(data, type), pic1_(in1), pic2_(in2) {}
 	
 	const ocv::InputArray& pic1() const {return pic1_;}
 	const ocv::InputArray& pic2() const {return pic2_;}

@@ -11,7 +11,7 @@ namespace cvv {
 namespace impl {
 
 void debugDilate(ocv::InputArray in, ocv::OutputArray out, CallData data) {
-	dataController().addCall(make_unique<FilterCall>(in, out, data));
+	dataController().addCall(make_unique<FilterCall>(in, out, data, QString{ /* dilate */}));
 }
 
 }} //namespaces

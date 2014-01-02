@@ -1,10 +1,11 @@
 #ifndef CVVISUAL_DEBUG_DILATE_HPP
 #define CVVISUAL_DEBUG_DILATE_HPP
 
+#include <string>
+
 #include "../moc/ocv_moc.hpp"
 
 #include "CallData.hpp"
-
 #include "debugMode.hpp"
 
 
