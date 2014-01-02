@@ -101,6 +101,32 @@
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
       <package Id="cb2d5a16-ee46-437f-bd9a-31928b4045a5" name="util">
+        <ownedCommentsInternal>
+          <comment Id="c8dff667-28e8-4316-ab7c-79b073e45a28">
+            <elementDefinition Id="4acdcdbd-e7d4-466a-92d3-3fdf236e6039" />
+            <body>ein histogramm in welchem bereiche ausgewählt werden können</body>
+          </comment>
+          <comment Id="fe7fa5ae-0811-478b-b0ce-8e481c8bfec5">
+            <elementDefinition Id="e30266f8-4778-4a7a-b49f-a36f84312dbd" />
+            <body>es kann ein intervall (das komplement dieses) ausgewählt werden</body>
+          </comment>
+          <comment Id="dab8db7a-077c-4ace-9b49-77eeb7a5585a">
+            <elementDefinition Id="b1510398-93ec-4bc9-b6f8-797f93c3b466" />
+            <body>es können die n / p% dbesten schlechtesten gewählt werden bzw abgeschnitten werden.
+dies entweder von allen oder der momentanen auswahl</body>
+          </comment>
+          <comment Id="90478447-77bf-443c-9a86-d8bf16feca38">
+            <elementDefinition Id="acbf3176-4c6b-4af3-bf7c-3203972e1570" />
+            <body>es können gruppen gebildet werden, welche mit gruppenoperationen bearbeitet werden (union difference ect)</body>
+          </comment>
+          <comment Id="d2e4c5d1-d718-4e4b-9483-d99ecdcf4a56">
+            <elementDefinition Id="928aec5d-e777-481c-b567-e3cb2333977e" />
+            <body>eine zusammenfassung dieser widgets:
+	GroupOperatorWidget
+	RelativePortionSelectorWidget
+	IntervalSelectorWidget</body>
+          </comment>
+        </ownedCommentsInternal>
         <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
         <packagedElements>
           <packageHasNamedElement>
@@ -581,6 +607,9 @@
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
+                </operation>
+                <operation Id="67f07cd7-e6c8-485e-8fcb-6eef186200a6" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
                 </operation>
               </ownedOperationsInternal>
             </class>

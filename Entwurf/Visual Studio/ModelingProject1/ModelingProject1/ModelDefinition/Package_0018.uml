@@ -55,6 +55,30 @@ die widgets können eingefahren werden</body>
       Id="abb6abee-b5a9-47ad-be8e-fda16c647c58">
       <body>repräsentiert ein widget mit einem titel, welches ein unterwidget anzeigen bzw ausblenden kann</body>
     </comment>
+    <comment
+      Id="4acdcdbd-e7d4-466a-92d3-3fdf236e6039">
+      <body>ein histogramm in welchem bereiche ausgewählt werden können</body>
+    </comment>
+    <comment
+      Id="e30266f8-4778-4a7a-b49f-a36f84312dbd">
+      <body>es kann ein intervall (das komplement dieses) ausgewählt werden</body>
+    </comment>
+    <comment
+      Id="b1510398-93ec-4bc9-b6f8-797f93c3b466">
+      <body>es können die n / p% dbesten schlechtesten gewählt werden bzw abgeschnitten werden.
+dies entweder von allen oder der momentanen auswahl</body>
+    </comment>
+    <comment
+      Id="acbf3176-4c6b-4af3-bf7c-3203972e1570">
+      <body>es können gruppen gebildet werden, welche mit gruppenoperationen bearbeitet werden (union difference ect)</body>
+    </comment>
+    <comment
+      Id="928aec5d-e777-481c-b567-e3cb2333977e">
+      <body>eine zusammenfassung dieser widgets:
+	GroupOperatorWidget
+	RelativePortionSelectorWidget
+	IntervalSelectorWidget</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
@@ -2758,6 +2782,14 @@ die widgets können eingefahren werden</body>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="65118317-353a-4c5f-b77e-d3e0a7959fb0"
+            name="///slot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
