@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <ownedCommentsInternal>
-    <comment Id="fd4ff949-38e1-402c-a29c-4a90dc66e2fb">
-      <elementDefinition Id="dead9039-6e04-45a5-b193-fec10737fd68" />
-      <body>Bitte noch aggregationen-,uses-, etc Relationen einfügen</body>
-    </comment>
-  </ownedCommentsInternal>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="92f078f2-79f4-4217-b735-187087fd92d6" name="UMLSTFL Engine" linkedPackageId="3a8f1e13-19ba-49d3-a65f-cd10f5207958" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <referencedType Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
@@ -836,96 +830,6 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
               </ownedAttributesInternal>
             </class>
           </packageHasNamedElement>
-          <packageHasNamedElement>
-            <class Id="288556e1-f2c2-4c6f-b96d-414e8e089c75" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
-              <elementDefinition Id="a5360125-50f1-478d-8a67-dd9bc8bf3ae1" />
-              <targetEnds>
-                <association Id="73bd824b-dd84-4daa-b0c6-05d319d09c94" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="b331311b-a887-478a-909b-bef82a857634" LastKnownName="RawViewTable" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="649bcb73-6a8e-4136-b26a-243a28df2470" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="b804725f-fe32-4823-a8b3-0eebb5b79f33" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="a2490519-e248-4364-baaf-1937bc8fd1c1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="22b9dfdb-2970-4c46-bf47-27110ea03835" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="33d97ee7-328d-4ddd-a8bc-6095d9e2331a" />
-                </association>
-                <association Id="a56f977c-a23a-4618-83f1-1b8b6d3cf18b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="9bdfa20c-8e39-4dd5-8cc7-14857955f1ca" LastKnownName="FilterQueryWidget" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="7430f454-8e6b-4442-867d-add1888943f8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="5f749234-7ee1-40aa-97f7-c9c9e58160bd" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="ab17834e-4aba-4ee3-b23e-6c6ec15d7549" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="7f758240-6f7a-4142-8354-5d5d51d6c913" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="59acdd02-43e9-483a-8349-fddbea17c39d" />
-                </association>
-                <association Id="8459dad7-529b-4f1c-baa5-48be07e1f0e0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" LastKnownName="STFLEngine" />
-                  <relationshipOwnedElementsInternal>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="8921398e-e4f3-4aac-87d3-d21b6a8f4a22" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                        <elementDefinition Id="66cbba7d-69e9-44f0-9c2e-248dc746cae8" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                    <associationHasOwnedEnds>
-                      <memberEnd Id="d8dd3c5d-bcef-4c17-8c28-32626a4caaaf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                        <elementDefinition Id="eb451d96-9989-473d-8a1c-9f017cad8dc4" />
-                      </memberEnd>
-                    </associationHasOwnedEnds>
-                  </relationshipOwnedElementsInternal>
-                  <elementDefinition Id="8c5d6bdf-ff1f-48b1-a75d-ac3a26f9977d" />
-                </association>
-              </targetEnds>
-              <ownedAttributesInternal>
-                <property Id="f4e00216-9e4c-4574-aa32-1117c6c2802f" name="queryEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="9145c412-081f-41b8-a9de-4ce2b9bfbe04" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6fc3a444-ff9b-46f3-ad07-e579db3953a2" LastKnownName="STFLEngine&lt;RawViewTableCollumn&gt;" />
-                  </type_NamedElement>
-                </property>
-                <property Id="2c20c59d-8ff2-46f2-b953-b7b1995144d7" name="queryWidget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="2d89f46a-af12-468a-9852-80922d00117b" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="fa77dd5c-4489-4b24-8142-13fcba365b44" LastKnownName="STFLQueryWindget" />
-                  </type_NamedElement>
-                </property>
-                <property Id="85687114-f757-483d-9c0e-8a6021509def" name="table" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="09f35623-02b6-4635-9eff-6f01d711ec58" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="b4c76d05-0c74-4cdd-be2c-db12af92b297" LastKnownName="RawViewTable" />
-                  </type_NamedElement>
-                </property>
-              </ownedAttributesInternal>
-              <ownedOperationsInternal>
-                <operation Id="f47e317f-bb41-4611-a838-535f546043ae" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="6fe97957-6477-4f09-91aa-26b1598dca82" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="1fbc69e8-f2ce-45b1-944e-3bd98a7e7322" direction="Return" isUnique="false">
-                        <elementDefinition Id="6f10331c-3810-44d1-890b-f4190f53c26a" />
-                        <type_NamedElement>
-                          <referencedTypeMoniker Id="ef954329-e9b9-4661-9d3e-b4a46042edef" LastKnownName="std::vector&lt;MatchCall&gt;" />
-                        </type_NamedElement>
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-              </ownedOperationsInternal>
-            </class>
-          </packageHasNamedElement>
         </packagedElements>
       </package>
     </logicalClassDesignerModelHasPackages>
@@ -1065,11 +969,6 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="ef954329-e9b9-4661-9d3e-b4a46042edef" name="std::vector&lt;MatchCall&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;MatchCall&gt;">
-        <elementDefinition Id="7392b67d-ff07-4453-b1d7-43a672bf1e5d" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="6fc3a444-ff9b-46f3-ad07-e579db3953a2" name="STFLEngine&lt;RawViewTableCollumn&gt;" isAbstract="false" isLeaf="false" cachedFullName="STFLEngine&lt;RawViewTableCollumn&gt;">
         <elementDefinition Id="c2276f74-0291-4448-abd7-8ab385d007aa" />
       </referencedType>
@@ -1088,6 +987,103 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       <referencedType Id="1201107b-e3d6-44b1-9659-bacbb6db9f21" name="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;">
         <elementDefinition Id="0f0bb7ab-2707-456d-9ebf-573ff83246ec" />
       </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class Id="288556e1-f2c2-4c6f-b96d-414e8e089c75" name="RawView" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a5360125-50f1-478d-8a67-dd9bc8bf3ae1" />
+        <targetEnds>
+          <association Id="73bd824b-dd84-4daa-b0c6-05d319d09c94" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b331311b-a887-478a-909b-bef82a857634" LastKnownName="RawViewTable" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="649bcb73-6a8e-4136-b26a-243a28df2470" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b804725f-fe32-4823-a8b3-0eebb5b79f33" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2490519-e248-4364-baaf-1937bc8fd1c1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="22b9dfdb-2970-4c46-bf47-27110ea03835" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33d97ee7-328d-4ddd-a8bc-6095d9e2331a" />
+          </association>
+          <association Id="a56f977c-a23a-4618-83f1-1b8b6d3cf18b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9bdfa20c-8e39-4dd5-8cc7-14857955f1ca" LastKnownName="FilterQueryWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7430f454-8e6b-4442-867d-add1888943f8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f749234-7ee1-40aa-97f7-c9c9e58160bd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab17834e-4aba-4ee3-b23e-6c6ec15d7549" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7f758240-6f7a-4142-8354-5d5d51d6c913" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="59acdd02-43e9-483a-8349-fddbea17c39d" />
+          </association>
+          <association Id="8459dad7-529b-4f1c-baa5-48be07e1f0e0" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="08632714-1dc7-476b-b0e5-f82b6f66b29d" LastKnownName="STFLEngine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8921398e-e4f3-4aac-87d3-d21b6a8f4a22" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="66cbba7d-69e9-44f0-9c2e-248dc746cae8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8dd3c5d-bcef-4c17-8c28-32626a4caaaf" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eb451d96-9989-473d-8a1c-9f017cad8dc4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8c5d6bdf-ff1f-48b1-a75d-ac3a26f9977d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f4e00216-9e4c-4574-aa32-1117c6c2802f" name="queryEngine" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9145c412-081f-41b8-a9de-4ce2b9bfbe04" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="6fc3a444-ff9b-46f3-ad07-e579db3953a2" LastKnownName="STFLEngine&lt;RawViewTableCollumn&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="2c20c59d-8ff2-46f2-b953-b7b1995144d7" name="queryWidget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2d89f46a-af12-468a-9852-80922d00117b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fa77dd5c-4489-4b24-8142-13fcba365b44" LastKnownName="STFLQueryWindget" />
+            </type_NamedElement>
+          </property>
+          <property Id="85687114-f757-483d-9c0e-8a6021509def" name="table" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="09f35623-02b6-4635-9eff-6f01d711ec58" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b4c76d05-0c74-4cdd-be2c-db12af92b297" LastKnownName="RawViewTable" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f47e317f-bb41-4611-a838-535f546043ae" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6fe97957-6477-4f09-91aa-26b1598dca82" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6cb85476-b893-47ac-9af8-68d2a91b9e50" name="std::vector&lt;MatchCall&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="9af3d6d8-41e3-472b-83ee-ffa347d036e3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ae3bd7c8-b068-45fb-b096-aeac48805d3b" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f46d7da9-a4d7-4dc9-a5b5-87a9b56e6e55" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="75b634e8-5422-48ff-88ec-63939e8ec9ac" name="std::vector&lt;MatchCall&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="ce553ddf-27cd-4229-b976-c383f59da3f7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">
