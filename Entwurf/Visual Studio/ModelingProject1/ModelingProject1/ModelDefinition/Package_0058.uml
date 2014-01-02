@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="35ac3f9f-e13b-41f3-bcec-4262265c2d25"
   name="data" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -21,6 +21,112 @@
               LastKnownLocation="Package_0058.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e5514756-8775-4009-b974-5c06abe16735"
+            name="img1_"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d05b70a1-9701-467f-a21c-7ac10dfc8240"
+                LastKnownName="ocv::InputArray"
+                LastKnownLocation="Package_2352.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c7870d82-c407-48b7-9c41-d5ae37f73f9c"
+            name="keypoints1_"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e5c61221-d6c0-4ff1-817e-a2847cbe5a1c"
+                LastKnownName="std::vector&lt;ocv::KeyPoint&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a5acd8db-15f3-4c0c-9080-10c4f15dda17"
+            name="img2_"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d05b70a1-9701-467f-a21c-7ac10dfc8240"
+                LastKnownName="ocv::InputArray"
+                LastKnownLocation="Package_2352.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ce271c09-4938-43d1-952f-b1c3b536d2c3"
+            name="keypoints2_"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e5c61221-d6c0-4ff1-817e-a2847cbe5a1c"
+                LastKnownName="std::vector&lt;ocv::KeyPoint&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4362f80e-9cf3-45f2-a21e-d771f1574572"
+            name="matches"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="2be997af-0227-4a13-a250-5ef681fda2f7"
+                LastKnownName="std::vector&lt;ocv::DMatch&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="82b36dba-8563-4b81-a09a-b5bf8b6f9a5e"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -43,7 +149,8 @@
         <ownedAttributesInternal>
           <property
             Id="1f3c0403-531c-43e3-8a18-d4579fabf41a"
-            name="input"
+            name="input_"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -61,7 +168,8 @@
           </property>
           <property
             Id="df361f66-8e8b-49b2-ba57-8ca320d1c094"
-            name="output::OutputArray"
+            name="output_"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -69,7 +177,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="42bcbe6b-f170-447e-b580-97f24a016082"
+                LastKnownName="ocv::OutputArray"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -119,6 +234,54 @@
                     <undefinedTypeMoniker
                       Id="e8fd2759-ad7a-43d3-a219-4fa7f09ea865"
                       LastKnownName="impl::CallData"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f9c90682-dc45-48ec-8fc7-c32ab6dfc2dd"
+            name="input"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="43601c28-3eb5-4aa6-ba35-090d3f49cb30"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d05b70a1-9701-467f-a21c-7ac10dfc8240"
+                      LastKnownName="ocv::InputArray"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="84e3f429-16f8-40a7-b1b6-c73ec3e92fc0"
+            name="output"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67616478-01ef-4225-b5ac-5111f890d116"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="42bcbe6b-f170-447e-b580-97f24a016082"
+                      LastKnownName="ocv::OutputArray"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -222,15 +385,15 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="39044a7a-7366-45bb-bb38-d89128740148"
-                      LastKnownName="callData"
+                      Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541"
+                      LastKnownName="CallData"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="dfef1188-b778-4b8b-9f65-0b6c88987c73"
+                  Id="ddb3ce8d-bc5c-4b76-b8a4-e1c7fbbc360e"
                   name="CallData"
                   direction="In"
                   isUnique="false">
@@ -238,6 +401,54 @@
                     <undefinedTypeMoniker
                       Id="e8fd2759-ad7a-43d3-a219-4fa7f09ea865"
                       LastKnownName="impl::CallData"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5dc56c2d-25e9-4bac-a381-79f72d382e7c"
+            name="getId"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f6d967b-9010-4fb5-9bc2-79f97395827e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f"
+                      LastKnownName="size_t"
+                      LastKnownLocation="Package_2352.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ee1272eb-1639-4d34-937b-b7849dfbe44d"
+            name="type"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90e051fe-cebf-4bc3-8697-1e652c48b9b9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d07af894-dd7e-4e88-8afb-9c3186235b4f"
+                      LastKnownName="QString"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>

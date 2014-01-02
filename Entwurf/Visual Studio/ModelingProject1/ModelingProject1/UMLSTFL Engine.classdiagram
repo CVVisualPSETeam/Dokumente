@@ -90,7 +90,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                 <property Id="0622617d-87c4-45f8-ac13-b73261ca9a1d" name="elemente" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="8ccd917e-0695-4d7c-bb17-cad6fe011089" LastKnownName="QList&lt;ColumType&gt;" />
+                    <referencedTypeMoniker Id="383bc9db-e3a0-4174-9dff-df6812bcc8a2" LastKnownName="std::map&lt;ColumType&gt;" />
                   </type_NamedElement>
                 </property>
                 <property Id="6c636f1c-82da-4f13-973a-e7dfdb9d3dac" name="groupFuncs" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -132,7 +132,7 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                 <property Id="1b638724-0686-4048-8716-31f4afa4e39d" name="filterPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="52b4e240-e96e-46ea-a2a2-ccca8529d41d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="ba7413ed-64f3-4b89-99fd-caecdcc103ae" LastKnownName="QMap&lt;QString, QStringList&gt;" />
+                    <referencedTypeMoniker Id="9ecd3b2f-65bf-496e-a5ec-dcb659aed9f2" LastKnownName="QMap&lt;QString, std::vector&lt;QString&gt;&gt;" />
                   </type_NamedElement>
                 </property>
                 <property Id="b25b41f1-cc76-489f-a361-104c47a3af09" name="filterCSPool" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -169,21 +169,21 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                       <parameter Id="e4901a9a-a4e2-4ba3-a0eb-9822477ba4e5" direction="Return" isUnique="false">
                         <elementDefinition Id="d2a7f299-2ef6-41a8-8b4d-e6c8751a2de7" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="e614cd28-3260-4164-bb26-bdf432729ee5" LastKnownName="QStringList" />
+                          <referencedTypeMoniker Id="a3a24d39-2806-4c38-bd1d-9d4b33509b7c" LastKnownName="std::vector&lt;QString&gt;" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="b762c45b-21e1-44c7-abbf-72b6a6eb7183" name="query" direction="In" isUnique="false">
-                        <elementDefinition Id="af5c04a2-7a41-4419-b03d-50369fba4d06" />
+                      <parameter Id="af1d5913-041c-4e6b-8187-b2f8ed10a750" name="query" direction="In" isUnique="false">
+                        <elementDefinition Id="f55fa7f7-6b32-4939-ba98-c91cd8e71673" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="60a366c5-a8cb-4dce-ad91-7e442a64139f" LastKnownName="QString" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="1ec73922-ab8a-432c-ae35-c7ffea79b8cf" name="number" direction="In" isUnique="false">
-                        <elementDefinition Id="55aac342-f225-4036-8204-b8cd702a08bb" />
+                      <parameter Id="aabec5a0-2dd1-4edb-8686-dbc1150d0389" name="number" direction="In" isUnique="false">
+                        <elementDefinition Id="4c6077eb-6b87-4bbd-b83a-e8c871c96a05" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="ccdc7a06-3f81-455b-9ae1-34fcec328a13" LastKnownName="int" />
                         </type_NamedElement>
@@ -195,10 +195,10 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
                   <elementDefinition Id="9b44d0ee-d874-4713-8e4e-7a36af44a9cb" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="7c9678dc-8f6c-44d1-a2ed-0199e4ccc237" name="newElements" direction="In" isUnique="false">
-                        <elementDefinition Id="beeab019-a983-47e7-9e94-5fb6f9a33d32" />
+                      <parameter Id="ec9f56f1-8e0d-453d-a2e7-2ac93cf964b7" name="newElements" direction="In" isUnique="false">
+                        <elementDefinition Id="db367af7-9cb6-4cdb-9e32-db2afd9c0b93" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="8238a1c7-6c61-4596-912c-e10851936c82" LastKnownName="QList&lt;ColumnType&gt;" />
+                          <referencedTypeMoniker Id="aea0e58b-85ce-470f-ab74-2ae6936957ee" LastKnownName="std::vector&lt;ColumnType&gt;" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
@@ -884,18 +884,8 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="8ccd917e-0695-4d7c-bb17-cad6fe011089" name="QList&lt;ColumType&gt;" isAbstract="false" isLeaf="false" cachedFullName="QList&lt;ColumType&gt;">
-        <elementDefinition Id="65da8cd1-469a-4e39-b9aa-414a24c0adfe" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="e94ef285-fec8-4d4a-9a0b-ef56378ad2b4" name="QMap&lt;QString, std::function&lt;QStringList(ColumnType)&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="QMap&lt;QString, std::function&lt;QStringList(ColumnType)&gt;&gt;">
         <elementDefinition Id="3c5cf8c1-ef02-4144-ad1d-eb5fc6b72acb" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="ba7413ed-64f3-4b89-99fd-caecdcc103ae" name="QMap&lt;QString, QStringList&gt;" isAbstract="false" isLeaf="false" cachedFullName="QMap&lt;QString, QStringList&gt;">
-        <elementDefinition Id="3be35265-eb66-44e6-997e-2915bc76d59c" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -926,11 +916,6 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
     <packageHasNamedElement>
       <referencedType Id="c07d61cb-b6cc-4905-8549-22ec0fe4930d" name="QMap&lt;QString, std::function&lt;bool(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="QMap&lt;QString, std::function&lt;bool(std::vector&lt;QString&gt;, ColumnType)&gt;&gt;">
         <elementDefinition Id="6ac21343-f880-4caf-9a82-6831977c569d" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="8238a1c7-6c61-4596-912c-e10851936c82" name="QList&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="QList&lt;ColumnType&gt;">
-        <elementDefinition Id="3cdd9d6f-be8c-41c2-9343-c547b8d14790" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1084,6 +1069,21 @@ Schiebe alle Klassen, außer ElementGroup und STFLEngine, in das Paket util (ode
           </operation>
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="383bc9db-e3a0-4174-9dff-df6812bcc8a2" name="std::map&lt;ColumType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::map&lt;ColumType&gt;">
+        <elementDefinition Id="3f9542b4-4267-4d75-9e03-02b00a70b612" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aea0e58b-85ce-470f-ab74-2ae6936957ee" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
+        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9ecd3b2f-65bf-496e-a5ec-dcb659aed9f2" name="QMap&lt;QString, std::vector&lt;QString&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="QMap&lt;QString, std::vector&lt;QString&gt;&gt;">
+        <elementDefinition Id="7bdbf9a4-a5fe-4a24-aefa-261d6d57c42b" />
+      </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="3a8f1e13-19ba-49d3-a65f-cd10f5207958" name="ModelingProject1">

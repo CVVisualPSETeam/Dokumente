@@ -84,7 +84,7 @@ dies entweder von allen oder der momentanen auswahl</body>
     <packageHasNamedElement>
       <class
         Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02"
-        name="Optional"
+        name="optional"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -111,25 +111,126 @@ dies entweder von allen oder der momentanen auswahl</body>
         <ownedAttributesInternal>
           <property
             Id="0e5ff7f4-2072-409f-80a6-9ca247dfbd36"
-            name="bool"
+            name="is_set"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
+            isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                LastKnownName="bool"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="9f80967f-838b-4a9f-9c78-4f6aaf31c4df"
-            name="T"
+            name="storage"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
+            isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f29f27e6-2f8f-4dbb-8477-a26c33c4bf6d"
+                LastKnownName="std::aligned_storage&lt;sizeof(T), alignof(T)&gt;::type"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="6dd3b4b0-1b53-4340-8f4e-5e4e666a1724"
+            name="optional"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a75858f-3541-4a7c-adbb-2b84e1fb9670"
+                  name="value"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="82e08cef-f80d-4dc5-9b18-03fdbf9d047a"
+            name="operator*"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88c2aa29-5ad1-4511-808e-600b22baa211"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cdde5222-be4a-4641-856a-6148ef190e3d"
+            name="operator bool"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d05bb46d-6700-4e30-83ae-def95d9b6304"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3256d268-71bc-4ff4-8425-75393b556175"
+            name="operator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -190,6 +291,47 @@ dies entweder von allen oder der momentanen auswahl</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="b11ffe16-69d3-40ba-bb43-4da632dbc443"
+            parameters=""
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="771374d8-c97c-4c93-8ee7-94d85a6be2b0">
+                <ownedParameterableElement>
+                  <class
+                    Id="85d80aeb-ff47-4345-b04b-596170a8a34a"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="770d0248-3f47-4a40-9204-aebd5e436056"
+            name="ptr"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                LastKnownName="T"
+                LastKnownLocation="Package2_0038.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="b35af7f3-ea92-4aba-8d5b-d6c2e4d09194"
@@ -238,10 +380,17 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="728d8196-8b86-49df-81cd-97ba0ff6a271"
-                  name="constreference&amp;"
+                  Id="7ee00b42-6018-4dac-bbdc-d0e63ed57d85"
+                  name="l"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -278,10 +427,10 @@ dies entweder von allen oder der momentanen auswahl</body>
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6d7972a5-71b8-4ad6-9532-09ec1cf55ff8"
-                      LastKnownName="T&amp;"
-                      LastKnownLocation="Package_0018.uml" />
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -302,10 +451,10 @@ dies entweder von allen oder der momentanen auswahl</body>
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6d7972a5-71b8-4ad6-9532-09ec1cf55ff8"
-                      LastKnownName="T&amp;"
-                      LastKnownLocation="Package_0018.uml" />
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -326,10 +475,10 @@ dies entweder von allen oder der momentanen auswahl</body>
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="6d7972a5-71b8-4ad6-9532-09ec1cf55ff8"
-                      LastKnownName="T&amp;"
-                      LastKnownLocation="Package_0018.uml" />
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -350,10 +499,10 @@ dies entweder von allen oder der momentanen auswahl</body>
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="4c44e4b1-a4ff-4a46-b32b-a68b8b3f2ce3"
-                      LastKnownName="T*"
-                      LastKnownLocation="Package_0018.uml" />
+                    <classMoniker
+                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
+                      LastKnownName="T"
+                      LastKnownLocation="Package2_0038.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -370,29 +519,42 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fa810835-9f23-47dc-85a5-87543f916fe6"
+                  Id="93a6abe6-28a1-4cd0-8456-aa25ab921992"
                   name="l"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="500218e9-eba4-49b2-9d40-09a7d39862e5"
-                      LastKnownName="const reference&amp;"
-                      LastKnownLocation="Package_0018.uml" />
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e248e627-7da8-4961-9edc-af91b99bbe3e"
-                  name="r:constreference&amp;"
+                  Id="6e2624a4-23e4-4dfd-880b-9eeb3595f194"
+                  name="r"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="cf53a859-edf4-4c6d-8bfb-b7c73c5317c2"
-                      LastKnownName="bool("
-                      LastKnownLocation="Package_0018.uml" />
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc6acaf1-ee6d-4515-a920-4b674e895dad"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -409,34 +571,6 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="4d0b8b86-91d2-48eb-b2ad-09e8b3a9e0ff"
-                  name="l"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="500218e9-eba4-49b2-9d40-09a7d39862e5"
-                      LastKnownName="const reference&amp;"
-                      LastKnownLocation="Package_0018.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="94e715fc-b269-41ab-a9bb-ec0b8ec8b682"
-                  name="r"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="500218e9-eba4-49b2-9d40-09a7d39862e5"
-                      LastKnownName="const reference&amp;"
-                      LastKnownLocation="Package_0018.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="9d26cade-73a0-4da8-9e30-d34054d5f614"
                   direction="Return"
                   isUnique="false">
@@ -444,6 +578,34 @@ dies entweder von allen oder der momentanen auswahl</body>
                     <undefinedTypeMoniker
                       Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
                       LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8cd9fcf1-be68-4442-a0fe-4f92402b4add"
+                  name="l"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adac8569-76a1-4074-abc9-a5e55af8a779"
+                  name="r"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -461,34 +623,6 @@ dies entweder von allen oder der momentanen auswahl</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fee44c3c-824a-48bb-b148-6a59a0f10e72"
-                  name="l"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="500218e9-eba4-49b2-9d40-09a7d39862e5"
-                      LastKnownName="const reference&amp;"
-                      LastKnownLocation="Package_0018.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="558dabf6-cc6e-41d1-a4ee-511519758c9c"
-                  name="r"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="500218e9-eba4-49b2-9d40-09a7d39862e5"
-                      LastKnownName="const reference&amp;"
-                      LastKnownLocation="Package_0018.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
                   Id="52aad37a-452a-4993-9338-5ef09eb0c111"
                   direction="Return"
                   isUnique="false">
@@ -496,6 +630,34 @@ dies entweder von allen oder der momentanen auswahl</body>
                     <undefinedTypeMoniker
                       Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d"
                       LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67a4b3e1-1069-4ded-ba18-e1e499ba395c"
+                  name="l"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25c032d4-4168-4853-b335-4655f5c02522"
+                  name="r"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30"
+                      LastKnownName="reference"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>

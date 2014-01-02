@@ -38,16 +38,10 @@
       <elementDefinition Id="8a7fbbd0-9e98-4d7f-a86b-e8f6d1e25430" />
       <body>getId(): returns ID of the Call</body>
     </comment>
-    <comment Id="10918c52-a25d-46e1-8650-14e64dd86579">
-      <elementDefinition Id="37cd4c14-a2bf-4f47-a3c3-f75fa8d9453c" />
-      <body>benötigte Attribute;
-zwei Bilder
-die KeyPoints
-die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind sondern irgendwo anders)</body>
-    </comment>
-    <comment Id="04b67c01-6b28-49e3-84dc-384d3b40b03e">
-      <elementDefinition Id="e879cb7b-8d61-4b2a-b961-40f3700a2595" />
-      <body>irgendwie sollte auch ein Aufruf mit zwei Bildern zusammen möglich sein, falls es schon eingeplant ist bitte kommentar an der Stelle einfügen</body>
+    <comment Id="10154fe4-95c1-4564-9670-e7b5c64ed59e">
+      <elementDefinition Id="ef21fa04-4af5-4611-b3aa-8acdd2d0266e" />
+      <body>input_ wird ein std::vector&lt;T&gt;, wenn mehrere Eingabebilder unterstützt werden
+</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -745,7 +739,7 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="c8a37d34-116e-4818-9048-6efd2065d73c" name="DataConroller" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="c8a37d34-116e-4818-9048-6efd2065d73c" name="DataController" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ae9e801e-2a86-4548-940c-88fcce7a9598" />
         <targetEnds>
           <association Id="339bb9ba-e07c-45dd-82e9-8d2eb766f8b9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
@@ -764,7 +758,7 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="e335026f-6f62-44d9-aa71-51ad33604c5e" />
           </association>
-          <association Id="7dd609ab-dbe5-4b1a-b57e-8465331a7d24" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" name="*" isAbstract="false">
+          <association Id="7dd609ab-dbe5-4b1a-b57e-8465331a7d24" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="de71854a-6c93-4726-9fb1-20e3b44c0640" LastKnownName="Call" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -809,15 +803,25 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
           <operation Id="99c5ba1c-9260-4499-890a-f7491c475c85" name="DataController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="17330eb4-2b1f-4a28-8706-880a09c0165f" />
           </operation>
-          <operation Id="53bc502e-4b32-4439-9c92-68cec580998a" name="addCall(call:std::unique_ptr&lt;Call&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="53bc502e-4b32-4439-9c92-68cec580998a" name="addCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="9452b285-5d0c-4228-8856-139cdad24ce4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="56d92824-bfe6-417e-815e-5f117f48c155" name="call" direction="In" isUnique="false">
+                  <elementDefinition Id="27a2463d-76be-4b30-b469-eea092ffbd5e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8123f104-9d81-4b0a-a1c2-a1360d0638fb" LastKnownName="std::unique_ptr&lt;Call&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="a85308a2-851e-447e-acef-213988ff45eb" name="removeCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="bfa73479-717b-4fec-bfa2-06493caace26" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="0ed34d09-7988-4431-b5a7-3012f9fad379" name="ID" direction="In" isUnique="false">
-                  <elementDefinition Id="59270c43-be91-4e45-a413-025fb5b3b725" />
+                <parameter Id="cc1d07e1-24f8-4c78-8d29-55a4852809ab" name="Id" direction="In" isUnique="false">
+                  <elementDefinition Id="164a2565-034d-46e9-9824-9844fb0fe6ca" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
                   </type_NamedElement>
@@ -825,22 +829,22 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="7de20675-1065-42be-98e2-78c4f4f27f5c" name="geCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="7de20675-1065-42be-98e2-78c4f4f27f5c" name="getCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="731d30e3-7408-4323-b582-296be90e8152" />
             <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="8c3ee578-fba7-4064-a19a-0e646f36379d" name="ID" direction="In" isUnique="false">
-                  <elementDefinition Id="0afc3b77-5ede-4def-96cd-cd394eaef9fe" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter Id="4af86806-091e-4370-8bea-2aa4b72317d0" direction="Return" isUnique="false">
                   <elementDefinition Id="73788942-7cef-460d-a73b-956f4eef3363" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="b586f84f-5ba7-4508-9a64-8f7687b1812d" LastKnownName="&amp;Call" />
+                    <referencedTypeMoniker Id="9242e78d-1023-4bf9-ac4b-2aa6fcd93d65" LastKnownName="Call" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b65a93b2-39e3-4283-95e9-233afdc411f8" name="ID" direction="In" isUnique="false">
+                  <elementDefinition Id="f6f8d7fd-1a2f-4324-86b7-e2a0e982b69f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1508,16 +1512,16 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="ccf0038f-49d9-40c0-a48d-3f1664e3daaa" name="query" direction="In" isUnique="false">
-                  <elementDefinition Id="af5c04a2-7a41-4419-b03d-50369fba4d06" />
+                <parameter Id="5912fe4c-1da9-4dc9-90a1-3405f6ae2489" name="query" direction="In" isUnique="false">
+                  <elementDefinition Id="f55fa7f7-6b32-4939-ba98-c91cd8e71673" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="422e3896-0a6c-4b93-9285-6f92f0c9586c" name="number" direction="In" isUnique="false">
-                  <elementDefinition Id="55aac342-f225-4036-8204-b8cd702a08bb" />
+                <parameter Id="c46a7b45-4819-4258-bd15-4322bd914de2" name="number" direction="In" isUnique="false">
+                  <elementDefinition Id="4c6077eb-6b87-4bbd-b83a-e8c871c96a05" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="c23f8fdc-b9fc-46bb-a8db-15481a64d463" LastKnownName="int" />
                   </type_NamedElement>
@@ -1529,10 +1533,10 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="9b44d0ee-d874-4713-8e4e-7a36af44a9cb" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a1954e68-9dd2-4f6b-9570-7cb62768a3ce" name="newElements" direction="In" isUnique="false">
-                  <elementDefinition Id="beeab019-a983-47e7-9e94-5fb6f9a33d32" />
+                <parameter Id="6e769ebc-249a-4aff-9bc0-be8be162d55f" name="newElements" direction="In" isUnique="false">
+                  <elementDefinition Id="db367af7-9cb6-4cdb-9e32-db2afd9c0b93" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="cb1acf8d-bfae-4ce3-aebc-0aa8131a5bea" LastKnownName="QList&lt;ColumnType&gt;" />
+                    <referencedTypeMoniker Id="f014235d-5387-4f4b-9587-d1c1519e7d70" LastKnownName="std::vector&lt;ColumnType&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1676,7 +1680,7 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasPackages>
-      <package Id="58d25ab6-5936-4f2b-ad91-a3d0b25a7786" name="__Api">
+      <package Id="58d25ab6-5936-4f2b-ad91-a3d0b25a7786" name="impl">
         <elementDefinition Id="51b7c039-93ad-44fd-8c48-448772a0a49c" />
         <packagedElements>
           <packageHasNamedElement>
@@ -1726,7 +1730,7 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                       <parameter Id="fc1e10fa-6509-4955-bef5-3f5c6eb4e2a3" direction="Return" isUnique="false">
                         <elementDefinition Id="ff28dfab-c341-49e7-8b38-1d05057b804a" />
                         <type_NamedElement>
-                          <referencedTypeMoniker Id="68cd62ba-eace-4888-abff-d3b3e03bb705" LastKnownName="std::atomic&lt;bool&gt;&amp;" />
+                          <referencedTypeMoniker Id="3a2a0d16-6f65-49c3-9332-eb982ad9559e" LastKnownName="std::atomic&lt;bool&gt;" />
                         </type_NamedElement>
                       </parameter>
                     </operationHasOwnedParameters>
@@ -1766,28 +1770,28 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
               <ownedAttributesInternal>
-                <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ee3540b9-de76-400f-9ba2-a3bbaf690b9b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="818a1449-4e1c-4823-9dae-af694ab73310" LastKnownName="std::string" />
+                    <referencedTypeMoniker Id="cbef602b-be9f-4a01-a1dc-27b789b224a6" LastKnownName="std::string" />
                   </type_NamedElement>
                 </property>
-                <property Id="9d732df8-9d46-425c-86bc-406f91728ff2" name="line" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="9d732df8-9d46-425c-86bc-406f91728ff2" name="line" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="fd4ed057-b5ab-4ac4-b13b-d304b24c4980" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
+                    <referencedTypeMoniker Id="13b8ddb1-a0ae-471f-83fb-6c3de7f31a34" LastKnownName="size_t" />
                   </type_NamedElement>
                 </property>
-                <property Id="3caf84f0-4598-49ff-b184-38c09bfa0429" name="function" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="3caf84f0-4598-49ff-b184-38c09bfa0429" name="function" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="1c765c80-bc88-4ffd-ae77-5c7ec2d3bb4d" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="10a8e801-4466-499d-939d-1db5ee3cf2cb" LastKnownName="std::string" />
+                    <referencedTypeMoniker Id="033c9dc7-3de7-4e7f-931e-19918e2a7b06" LastKnownName="std::string" />
                   </type_NamedElement>
                 </property>
-                <property Id="2a509570-de7f-4aa7-975c-08e6094fb471" name="isKnown" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="2a509570-de7f-4aa7-975c-08e6094fb471" name="isKnown" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="df87ef8d-4038-441f-8ef4-ba8e305be85b" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
+                    <referencedTypeMoniker Id="f572c933-40f6-45ed-a883-22bcd558bc61" LastKnownName="bool" />
                   </type_NamedElement>
                 </property>
               </ownedAttributesInternal>
@@ -1795,8 +1799,34 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 <operation Id="67e28e69-56ee-45d3-9dfb-cda10f18e963" name="CallData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="3e0b7652-fcb3-4cf4-95c5-233669b9d0c8" />
                 </operation>
-                <operation Id="55ab9c72-cc7c-4565-affe-605941ec6f50" name="CallData(file:const std::String,line:size_t,function: const stdString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="55ab9c72-cc7c-4565-affe-605941ec6f50" name="CallData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="5e8657e4-0651-4949-bc30-13625714384d" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="93aeac16-1773-4bb3-9fc1-bdc5df7b2056" name="file" direction="In" isUnique="false">
+                        <elementDefinition Id="d5e86843-c95c-4a55-b61b-10e42323d5c4" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="818a1449-4e1c-4823-9dae-af694ab73310" LastKnownName="std::string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="087b94fb-ad85-4b61-8958-dfe9e3ec4209" name="line" direction="In" isUnique="false">
+                        <elementDefinition Id="6af1ab4f-15e1-4c20-ad66-70eaa19156cf" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5dc8ef03-5f2b-41bb-9739-f9ccfe366208" name="function" direction="In" isUnique="false">
+                        <elementDefinition Id="80c5b74c-c75b-42cd-9e72-67a1d5f6dc50" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="818a1449-4e1c-4823-9dae-af694ab73310" LastKnownName="std::string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
                 </operation>
                 <operation Id="35a00fe7-4716-4e06-9c6f-acf8852d913e" name="operator bool" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="d1e07cc7-f98c-48c5-9452-92531fa8a61a" />
@@ -1818,11 +1848,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="10a8e801-4466-499d-939d-1db5ee3cf2cb" name="std::string" isAbstract="false" isLeaf="false" cachedFullName="std::string">
-        <elementDefinition Id="afc3265a-f041-49ff-992c-c694781f4e11" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="ac588dcb-0782-4743-8941-6cbc87a9f36a" name="ocv::InputArray" isAbstract="false" isLeaf="false" cachedFullName="ocv::InputArray">
         <elementDefinition Id="d05b70a1-9701-467f-a21c-7ac10dfc8240" />
       </referencedType>
@@ -1830,11 +1855,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
     <packageHasNamedElement>
       <referencedType Id="ca442fe0-0a62-44af-88a0-3cdf368583a1" name="impl::CallData()" isAbstract="false" isLeaf="false" cachedFullName="impl::CallData()">
         <elementDefinition Id="f57027db-dd6b-4157-b0cd-bee6cdff30c9" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="68cd62ba-eace-4888-abff-d3b3e03bb705" name="std::atomic&lt;bool&gt;&amp;" isAbstract="false" isLeaf="false" cachedFullName="std::atomic&lt;bool&gt;&amp;">
-        <elementDefinition Id="919062e0-5942-4bff-9418-63289cf465af" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
@@ -1877,15 +1897,41 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
                 <parameter Id="15b3716e-a6fb-40d5-a585-d774a7cd8e0c" direction="Return" isUnique="false">
                   <elementDefinition Id="e6644dec-6ffa-4459-ac0c-05bdc2a1199f" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="85c8fbfe-6a6a-4970-99a3-3270f4f1401f" LastKnownName="callData" />
+                    <referencedTypeMoniker Id="ab36ea64-0ecd-4b3a-acdf-ca31051ccf92" LastKnownName="CallData" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="ad4e7077-695f-4f51-b946-78e5dfcce36a" name="CallData" direction="In" isUnique="false">
-                  <elementDefinition Id="dfef1188-b778-4b8b-9f65-0b6c88987c73" />
+                <parameter Id="c98dd167-e563-4afc-9940-7a384167da99" name="CallData" direction="In" isUnique="false">
+                  <elementDefinition Id="ddb3ce8d-bc5c-4b76-b8a4-e1c7fbbc360e" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="1de67504-359f-47df-b217-14b5f2b16ff6" LastKnownName="impl::CallData" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e2998615-eba6-4e28-bdb6-47f90c0fcdde" name="getId" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5dc56c2d-25e9-4bac-a381-79f72d382e7c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c2c34e60-ee28-4ba0-883e-2d8fc7ad998d" direction="Return" isUnique="false">
+                  <elementDefinition Id="4f6d967b-9010-4fb5-9bc2-79f97395827e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c05e6125-2e7e-4e67-9e00-2906d6d957ff" LastKnownName="size_t" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e5cc52c0-2906-4088-a1d7-a66e109e34b8" name="type" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee1272eb-1639-4d34-937b-b7849dfbe44d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bf4b4bf4-bc02-4b19-abea-1f8a0fed9b60" direction="Return" isUnique="false">
+                  <elementDefinition Id="90e051fe-cebf-4bc3-8697-1e652c48b9b9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1903,6 +1949,43 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
             <elementDefinition Id="a30a2c45-8e2e-48b9-8981-041f85e65222" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="0dabf8ed-71fc-4596-a190-c1a001d842b0" name="img1_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5514756-8775-4009-b974-5c06abe16735" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac588dcb-0782-4743-8941-6cbc87a9f36a" LastKnownName="ocv::InputArray" />
+            </type_NamedElement>
+          </property>
+          <property Id="29c6b93f-e8f4-4dc4-b3a2-d4b4c1208664" name="keypoints1_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c7870d82-c407-48b7-9c41-d5ae37f73f9c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="de303bb7-995d-4da4-868c-358f276f5cb9" LastKnownName="std::vector&lt;ocv::KeyPoint&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="47a137f6-7e42-45e7-982e-6c86bb26fe88" name="img2_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5acd8db-15f3-4c0c-9080-10c4f15dda17" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ac588dcb-0782-4743-8941-6cbc87a9f36a" LastKnownName="ocv::InputArray" />
+            </type_NamedElement>
+          </property>
+          <property Id="c8eba3fb-cfc7-4407-8499-da50f3fadd64" name="keypoints2_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ce271c09-4938-43d1-952f-b1c3b536d2c3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="de303bb7-995d-4da4-868c-358f276f5cb9" LastKnownName="std::vector&lt;ocv::KeyPoint&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="bd4e8992-51bb-4314-89c8-7e1fc484f260" name="matches" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4362f80e-9cf3-45f2-a21e-d771f1574572" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c8e903a0-d2a9-45ec-b5b4-c8f7cdada2b2" LastKnownName="std::vector&lt;ocv::DMatch&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="298a039f-dffd-4048-aed3-a48d15172046" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="82b36dba-8563-4b81-a09a-b5bf8b6f9a5e" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -1915,14 +1998,17 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="fc4e94c6-a2d7-4b90-bc5f-baba7a4b5092" name="input" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="fc4e94c6-a2d7-4b90-bc5f-baba7a4b5092" name="input_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1f3c0403-531c-43e3-8a18-d4579fabf41a" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="ac588dcb-0782-4743-8941-6cbc87a9f36a" LastKnownName="ocv::InputArray" />
+              <referencedTypeMoniker Id="bb1e0b70-35e8-4337-ad2c-e58bffdb5422" LastKnownName="ocv::InputArray" />
             </type_NamedElement>
           </property>
-          <property Id="4c5fccf9-56c1-4f35-8d88-927b573c3f62" name="output::OutputArray" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4c5fccf9-56c1-4f35-8d88-927b573c3f62" name="output_" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="df361f66-8e8b-49b2-ba57-8ca320d1c094" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3d1bd42a-b63e-4f06-9257-6173d604239d" LastKnownName="ocv::OutputArray" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -1955,14 +2041,35 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="143a3c99-e525-4adb-87d6-2a41ad976d05" name="input" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f9c90682-dc45-48ec-8fc7-c32ab6dfc2dd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="89a2cb80-664b-4327-b400-9916b6686b76" direction="Return" isUnique="false">
+                  <elementDefinition Id="43601c28-3eb5-4aa6-ba35-090d3f49cb30" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ac588dcb-0782-4743-8941-6cbc87a9f36a" LastKnownName="ocv::InputArray" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="02a6e04f-e9ff-41b2-b92d-5688bf5716aa" name="output" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84e3f429-16f8-40a7-b1b6-c73ec3e92fc0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8d33442e-3bd8-4eae-94dd-4cfe6c348ee2" direction="Return" isUnique="false">
+                  <elementDefinition Id="67616478-01ef-4225-b5ac-5111f890d116" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3d1bd42a-b63e-4f06-9257-6173d604239d" LastKnownName="ocv::OutputArray" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="85c8fbfe-6a6a-4970-99a3-3270f4f1401f" name="callData" isAbstract="false" isLeaf="false" cachedFullName="callData">
-        <elementDefinition Id="39044a7a-7366-45bb-bb38-d89128740148" />
-      </referencedType>
-    </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="aac6a023-3d72-45e9-a2ad-c6ff4e75fd4b" name="CallData" isAbstract="false" isLeaf="false" cachedFullName="CallData">
         <elementDefinition Id="ad7443af-c1d1-4eb2-8a42-ba3a167b6541" />
@@ -2383,11 +2490,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="b586f84f-5ba7-4508-9a64-8f7687b1812d" name="&amp;Call" isAbstract="false" isLeaf="false" cachedFullName="&amp;Call">
-        <elementDefinition Id="22ba9a5f-e092-4dc1-98c9-491e1dafa649" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="6f848165-1251-4b39-9ed6-1f427189c024" name="ViewController" isAbstract="false" isLeaf="false" cachedFullName="ViewController">
         <elementDefinition Id="5beac5e5-03fc-4246-b7a1-328b3fb13582" />
       </referencedType>
@@ -2415,11 +2517,6 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
     <packageHasNamedElement>
       <referencedType Id="5d45963a-521a-48be-9255-19f621277309" name="CVVisual::controller:ViewController" isAbstract="false" isLeaf="false" cachedFullName="CVVisual::controller:ViewController">
         <elementDefinition Id="80d4d950-2465-4c8c-82d2-9fe4fffd4f6b" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="cb1acf8d-bfae-4ce3-aebc-0aa8131a5bea" name="QList&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="QList&lt;ColumnType&gt;">
-        <elementDefinition Id="3cdd9d6f-be8c-41c2-9343-c547b8d14790" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2653,6 +2750,283 @@ die Matches(ggf zusatz infos falls die koordinaten nicht im Match enthalten sind
     <packageHasNamedElement>
       <referencedType Id="fdf991c1-68e1-4f6f-b780-4c2d89754289" name="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ElementGroup&lt;CollumnType&gt;&gt;">
         <elementDefinition Id="0f0bb7ab-2707-456d-9ebf-573ff83246ec" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f014235d-5387-4f4b-9587-d1c1519e7d70" name="std::vector&lt;ColumnType&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ColumnType&gt;">
+        <elementDefinition Id="ab5d53ff-738b-42d1-ad1f-0e88528957fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cbef602b-be9f-4a01-a1dc-27b789b224a6" name="std::string" isAbstract="false" isLeaf="false" cachedFullName="std::string">
+        <elementDefinition Id="afc3265a-f041-49ff-992c-c694781f4e11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="033c9dc7-3de7-4e7f-931e-19918e2a7b06" name="std::string" isAbstract="false" isLeaf="false" cachedFullName="std::string">
+        <elementDefinition Id="afc3265a-f041-49ff-992c-c694781f4e11" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f572c933-40f6-45ed-a883-22bcd558bc61" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="6ecb1088-a988-4c2b-9af3-1c03eb34997d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="13b8ddb1-a0ae-471f-83fb-6c3de7f31a34" name="size_t" isAbstract="false" isLeaf="false" cachedFullName="size_t">
+        <elementDefinition Id="b712b47e-4e31-4c72-b659-e6a4c7039c8f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3a2a0d16-6f65-49c3-9332-eb982ad9559e" name="std::atomic&lt;bool&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::atomic&lt;bool&gt;">
+        <elementDefinition Id="c498dee2-2a59-404d-987c-9c9339106200" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8123f104-9d81-4b0a-a1c2-a1360d0638fb" name="std::unique_ptr&lt;Call&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::unique_ptr&lt;Call&gt;">
+        <elementDefinition Id="d102ddcd-9065-4090-a1cf-104d8171758b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3d1bd42a-b63e-4f06-9257-6173d604239d" name="ocv::OutputArray" isAbstract="false" isLeaf="false" cachedFullName="ocv::OutputArray">
+        <elementDefinition Id="42bcbe6b-f170-447e-b580-97f24a016082" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bb1e0b70-35e8-4337-ad2c-e58bffdb5422" name="ocv::InputArray" isAbstract="false" isLeaf="false" cachedFullName="ocv::InputArray">
+        <elementDefinition Id="d05b70a1-9701-467f-a21c-7ac10dfc8240" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="de303bb7-995d-4da4-868c-358f276f5cb9" name="std::vector&lt;ocv::KeyPoint&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ocv::KeyPoint&gt;">
+        <elementDefinition Id="e5c61221-d6c0-4ff1-817e-a2847cbe5a1c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c8e903a0-d2a9-45ec-b5b4-c8f7cdada2b2" name="std::vector&lt;ocv::DMatch&gt;" isAbstract="false" isLeaf="false" cachedFullName="std::vector&lt;ocv::DMatch&gt;">
+        <elementDefinition Id="2be997af-0227-4a13-a250-5ef681fda2f7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="397851cf-e617-42ab-96ea-ef509e4ede1b" name="reference" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0132834-2ac5-4cdf-b69f-4ab7017e46c5" />
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="49181f73-3ec3-4f52-8de7-4515597ac1cb" parameters="" isLeaf="false">
+            <elementDefinition Id="b11ffe16-69d3-40ba-bb43-4da632dbc443" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="48229264-e9c2-460c-a476-1d9995491f68">
+                <elementDefinition Id="771374d8-c97c-4c93-8ee7-94d85a6be2b0" />
+                <ownedParameterableElement>
+                  <class Id="a70f0938-1f27-4efd-b412-53f34efd0f68" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="85d80aeb-ff47-4345-b04b-596170a8a34a" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributesInternal>
+          <property Id="b304b6b5-2da3-4b2c-8c03-da7e3231915d" name="ptr" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="770d0248-3f47-4a40-9204-aebd5e436056" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="92ab8f67-5191-46f0-898f-d50296607420" LastKnownName="T" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8fccdb9e-085b-43f3-8fc0-f2c4dd3a8a23" name="reference" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b35af7f3-ea92-4aba-8d5b-d6c2e4d09194" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="622d5a75-2b1c-4caa-9160-89675ecae508" name="reference&amp;" direction="In" isUnique="false">
+                  <elementDefinition Id="593084b5-1741-458e-a517-22f05fefd847" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="42ccf073-d765-47bc-a01a-d65b50e89c05" name="reference" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba3c3b2a-d738-4ae1-a989-03cf773676be" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0277a8b7-47f8-4b18-910e-0d7eacf60b1b" name="reference&amp;&amp;" direction="In" isUnique="false">
+                  <elementDefinition Id="e3f0c4c9-5935-4fde-a821-081f6bba758d" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b9f6ccbe-6b08-47ab-9519-e36d27b221cc" name="operator=" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1048ae16-67a1-49c2-9c73-97d67b7f8574" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3d4bc4db-2e38-453a-b51c-158e8b0f30dd" name="l" direction="In" isUnique="false">
+                  <elementDefinition Id="7ee00b42-6018-4dac-bbdc-d0e63ed57d85" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="86d6f7af-1f73-4292-8919-9018b019548e" name="operator=" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2233fe9c-c739-40f9-80b4-164d3dc51b8d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="018c1718-d45b-4923-8909-c8d885dfb3dc" name="reference&amp;&amp;" direction="In" isUnique="false">
+                  <elementDefinition Id="148a8ae9-81f1-4cf1-a758-07b828583bca" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4c992066-ad69-45d8-abad-1d9a5a13e9b1" name="operator*" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="532c9275-6d34-4b2e-a5d2-6b7788ddcfdb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0f829c49-a35c-4423-a47f-393d3811fa2d" direction="Return" isUnique="false">
+                  <elementDefinition Id="b18ff893-35f0-43ae-993c-c77d81422f0f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92ab8f67-5191-46f0-898f-d50296607420" LastKnownName="T" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1a4c83c7-f8f1-48e3-93ba-63a21eba028d" name="operator-&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="622c00d5-1284-4435-886b-3915d7a42c8c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fff63367-7882-4661-ac9f-a3ba62d9165a" direction="Return" isUnique="false">
+                  <elementDefinition Id="d924455b-548b-4319-9532-d86a453469fb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92ab8f67-5191-46f0-898f-d50296607420" LastKnownName="T" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f855df78-731c-4f19-8e4f-c1cc6e4e7c5e" name="get" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6b158873-4c28-4afd-85c4-358fab5671b4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38295678-407b-483b-b903-9075ea6e5c61" direction="Return" isUnique="false">
+                  <elementDefinition Id="472d4386-bdc8-4498-9f45-171713a9a03c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92ab8f67-5191-46f0-898f-d50296607420" LastKnownName="T" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="54efaa86-7d1a-4c7f-91bc-9d14b77e7761" name="get_ptr" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e4878d43-29e8-47d1-8718-fbeb56cdac1b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d822a3bf-8cd8-4e6e-917c-ba53372ad8b5" direction="Return" isUnique="false">
+                  <elementDefinition Id="c694b390-d05d-4ecd-9901-28505e84334e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="92ab8f67-5191-46f0-898f-d50296607420" LastKnownName="T" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="465b5479-a19f-4ba5-bde2-85db9e7b2b0a" name="friend operator&lt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a453590-bf1b-47d1-9a7e-41177765cabe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="437b4a6c-2ac1-425b-ba99-f36a438803c0" name="l" direction="In" isUnique="false">
+                  <elementDefinition Id="93a6abe6-28a1-4cd0-8456-aa25ab921992" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a22c3e6b-2f87-463d-ad3b-56bfe0e7f22a" name="r" direction="In" isUnique="false">
+                  <elementDefinition Id="6e2624a4-23e4-4dfd-880b-9eeb3595f194" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d431e924-a241-49e1-94b3-97d9b3288a61" direction="Return" isUnique="false">
+                  <elementDefinition Id="cc6acaf1-ee6d-4515-a920-4b674e895dad" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab27722a-62b0-43c0-ad9a-619c64d96ef4" name="friend operator==" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3ace389f-d9f9-490e-96c2-6180627060a3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f99fae4-1553-491d-8064-cf133d080e32" direction="Return" isUnique="false">
+                  <elementDefinition Id="9d26cade-73a0-4da8-9e30-d34054d5f614" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cf5b4d0f-fd44-43db-936f-d11e6b5b5e09" name="l" direction="In" isUnique="false">
+                  <elementDefinition Id="8cd9fcf1-be68-4442-a0fe-4f92402b4add" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ed23199d-66fb-4f00-b395-3b699d78f13d" name="r" direction="In" isUnique="false">
+                  <elementDefinition Id="adac8569-76a1-4074-abc9-a5e55af8a779" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="de3f734b-479c-45e5-a728-fdbc0ff4c12a" name="friend operator!=" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c682e9c3-e949-44ef-b438-421bd2540345" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a122bece-1f13-49fd-b903-3bd8eb9d1de8" direction="Return" isUnique="false">
+                  <elementDefinition Id="52aad37a-452a-4993-9338-5ef09eb0c111" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d2412ab-f1e3-4227-9e31-3a4b4735573e" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b0e718b2-a029-402c-86ad-f5527643a397" name="l" direction="In" isUnique="false">
+                  <elementDefinition Id="67a4b3e1-1069-4ded-ba18-e1e499ba395c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f7d65f79-2eb4-4654-aa10-bb65d4c52d19" name="r" direction="In" isUnique="false">
+                  <elementDefinition Id="25c032d4-4168-4853-b335-4655f5c02522" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="03670220-ebe6-4b49-a6f2-7633a4d65305" LastKnownName="reference" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="92ab8f67-5191-46f0-898f-d50296607420" name="T" isAbstract="false" isLeaf="false" cachedFullName="T">
+        <elementDefinition Id="43b15752-5ede-4ae1-8ca5-3c27fa008543" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="03670220-ebe6-4b49-a6f2-7633a4d65305" name="reference" isAbstract="false" isLeaf="false" cachedFullName="reference">
+        <elementDefinition Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
