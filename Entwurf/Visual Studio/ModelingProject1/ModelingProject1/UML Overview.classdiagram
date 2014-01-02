@@ -43,6 +43,15 @@
       <body>input_ wird ein std::vector&lt;T&gt;, wenn mehrere Eingabebilder unterstützt werden
 </body>
     </comment>
+    <comment Id="325403e4-a5d5-45de-b593-f1c2c1d450bb">
+      <elementDefinition Id="a1f6d550-8575-48c3-9387-c216e26f0eb5" />
+      <body>Contains all the calldata (= location, images and their keypoints).</body>
+    </comment>
+    <comment Id="155d1506-c441-4b1f-8f16-5a8352172171">
+      <elementDefinition Id="9ee96a13-88da-47e7-b8ac-0c254e709942" />
+      <body>Abstrakte Datenklasse
+</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
@@ -1982,7 +1991,7 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="298a039f-dffd-4048-aed3-a48d15172046" name="firstImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="298a039f-dffd-4048-aed3-a48d15172046" name="img1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="82b36dba-8563-4b81-a09a-b5bf8b6f9a5e" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -1995,7 +2004,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="ae89c7ad-85ca-4eec-a0b1-225f21119117" name="secondImage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="ae89c7ad-85ca-4eec-a0b1-225f21119117" name="img1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="bbfa3575-3adf-4f6b-b867-95be0a0d8c6c" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -2008,7 +2017,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="a0e64ae2-b44e-4f3d-8c6f-e8f07051db36" name="firstImgKeypoints" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="a0e64ae2-b44e-4f3d-8c6f-e8f07051db36" name="keypoints1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e918ec1a-cbf5-4000-8cce-381a38a42322" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -2021,7 +2030,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="ce71bbe2-bdf5-4e01-bd5c-107bb88196e7" name="secondImgKeypoints" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="ce71bbe2-bdf5-4e01-bd5c-107bb88196e7" name="keypoints2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="3f36239d-924e-4018-a5d4-2ba727236e17" />
             <ownedParameters>
               <operationHasOwnedParameters>
