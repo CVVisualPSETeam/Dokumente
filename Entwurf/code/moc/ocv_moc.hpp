@@ -8,6 +8,7 @@ class InputArray{};
 class OutputArray{};
 
 class KeyPoint{};
+class DMatch{};
 
 } //namespace ocv
 
