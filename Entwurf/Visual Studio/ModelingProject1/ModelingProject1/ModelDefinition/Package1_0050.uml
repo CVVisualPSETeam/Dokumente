@@ -41,7 +41,7 @@
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
               LastKnownName="SelectorWidget"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -78,7 +78,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -287,7 +287,7 @@
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
               LastKnownName="SelectorWidget"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -324,7 +324,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -623,7 +623,7 @@
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
               LastKnownName="SelectorWidget"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -660,7 +660,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -697,7 +697,7 @@
             <classMoniker
               Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
               LastKnownName="FilterSelectorWidget&lt;1,1&gt;"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -845,6 +845,102 @@
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67bd9717-9495-41c1-a866-c0bc662ceecc"
+        name="RawView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="bc0c8a5d-a487-4b6a-9e27-ebc7b4db66bb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="e03b2c53-eded-40b9-92b3-1276a8412b92"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
+              LastKnownName="STFLEngine"
+              LastKnownLocation="Package_0049.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e903ce1-ef55-42be-aa39-78fce9c9f321"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3ca52d9e-0219-4c68-9b52-30594cec9d95"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="8abad80c-2429-42ca-aedb-6fc3847b28d2"
+            name="///signal outputInternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9061b927-d79c-4889-b7f8-6a51698bb9f3"
+                  name="vec&lt;T&gt;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d4187fbc-c39a-4847-b4ff-69a44d403b07"
+            name="///slot inputExternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8dc17dc8-1088-4940-8d3a-cae82a60e6c9"
+                  name="vec&lt;T&gt;"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
