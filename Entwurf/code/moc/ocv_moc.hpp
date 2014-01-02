@@ -7,6 +7,8 @@ namespace ocv {
 class InputArray{};
 class OutputArray{};
 
+class KeyPoint{};
+
 } //namespace ocv
 
 #endif

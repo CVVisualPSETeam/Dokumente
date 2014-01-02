@@ -26,6 +26,7 @@ public:
 	const ocv::OutputArray& output() const {return output_;}
 	
 private:
+	// in case we REALLY want to support several input-images: make this a std::vector
 	ocv::InputArray input_;
 	ocv::OutputArray output_;
 };

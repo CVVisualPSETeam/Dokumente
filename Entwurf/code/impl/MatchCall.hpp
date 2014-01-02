@@ -1,6 +1,9 @@
 #ifndef CVVISUAL_MATCH_CALL_HPP
 #define CVVISUAL_MATCH_CALL_HPP
 
+#include <vector>
+#include <utility>
+
 #include "Call.hpp"
 
 #include "../moc/ocv_moc.hpp"
@@ -8,16 +11,19 @@
 namespace cvv {
 namespace impl {
 
+/**
+ * Contains all the calldata (= location, images and their keypoints).
+ */
 class MatchCall: public Call {
 public:
-	MatchCall(const ocv::InputArray& in1, const ocv::InputArray& in2, impl::CallData data, QString type):
-		Call(data, type), pic1_(in1), pic2_(in2) {}
+	MatchCall(std::vector<std::pair<ocv::InputArray, std::vector<ocv::KeyPoint>>> images,
+			impl::CallData data, QString type):
+		Call(data, type), images{std::move(images)} {}
 	
-	const ocv::InputArray& pic1() const {return pic1_;}
-	const ocv::InputArray& pic2() const {return pic2_;}
+	const ocv::InputArray& getImage(size_t index) const {return images.at(index).first;}
+	const std::vector<ocv::KeyPoint>& getKeyPoints(size_t index) const {return images.at(index).second;}
 private:
-	ocv::InputArray pic1_;
-	ocv::InputArray pic2_;
+	std::vector<std::pair<ocv::InputArray, std::vector<ocv::KeyPoint>>> images;
 };
 
 
