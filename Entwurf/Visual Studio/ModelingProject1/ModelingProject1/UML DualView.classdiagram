@@ -227,40 +227,10 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="184c71aa-a5a9-4973-9165-a9cf02827607" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
+          </operation>
         </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="e8864923-1289-44f8-ac26-d1dd03405b98" name="QTGraphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
-        <targetEnds>
-          <association Id="31f2c62e-b21d-4bd1-aff7-665f43732ee2" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="722a6d15-9bf4-44ad-b744-913662b083d1" LastKnownName="ZoomableImage" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3d10ceee-ee74-46d4-bf39-cf710321830b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5d366c3b-daa7-4e90-a81c-85637ad16d52" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="3ce578b8-06e9-4958-83d7-8094f198c1f3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="0c639e6c-e560-418c-b8f4-26a0ac688168" name="Lower" value="*">
-                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="fff101c9-ed9e-4a27-9e08-6bfe8a397847" name="Upper" value="*">
-                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5d384fd6-303b-494d-aa17-e507affbf106" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -375,21 +345,31 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="2696d70b-afb0-46a9-8ac4-6c4a2918ea9e" />
           </association>
-          <association Id="db1310bf-b12d-4de4-ac44-7c3a51dcd1e7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="e8864923-1289-44f8-ac26-d1dd03405b98" LastKnownName="QTGraphicScene" />
+          <association Id="6fc8db17-539c-42e5-82c7-bbe15f7d59e9" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="722a6d15-9bf4-44ad-b744-913662b083d1" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="e7b6bf65-c770-48d8-9fd9-7565eaeb56a7" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e172f9e7-cedd-4d05-8f63-26de80fea3c8" />
+                <memberEnd Id="b1ff0cd2-e129-4b36-b422-f6b92fea59a4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e508b1b6-7610-4f13-b0a9-0c0c5c161a15" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2cbac7e3-e9c5-4aa3-a046-e3285a8a86f2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="16dd4d81-ffdf-4329-b38b-1e2eb72857e0" />
+                <memberEnd Id="6857fb59-7241-4c9d-aac0-5bd042792f27" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="c919864a-7cb4-4fac-9c1b-b9654a827b38" name="Lower" value="3">
+                      <elementDefinition Id="44e6cdc4-dd2d-4a69-a9fb-23fc02ad03d6" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ad7dfd44-4127-4039-9710-0687f9ed3779" name="Upper" value="3">
+                      <elementDefinition Id="893d6ea2-618c-4738-9e40-6ee0bb8ee684" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b5162cc7-b070-4a72-a430-54040006be81" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="ae65cdfb-df56-4b70-9a60-95f6399bad46" />
+            <elementDefinition Id="6473c57a-4c04-41e5-bdd0-4fbbc3cb446a" />
           </association>
         </targetEnds>
         <ownedOperationsInternal>
@@ -408,13 +388,38 @@
         <ownedOperationsInternal>
           <operation Id="3fc117ed-0ed2-45b4-9eab-7e3e7520eeae" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7131635a-b04e-427b-9ff9-16e25a2dbdab" name="newText" direction="In">
+                  <elementDefinition Id="e848cfd1-6608-408b-af7a-111056eec5cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0074b9d3-90e0-4970-b4a6-5ce4aab7823b" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="51306deb-7706-4231-a4d8-62e15e62140a" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4fba2a0a-dfa4-4c97-be44-ac54ffda3c4f" name="newText" direction="In">
+                  <elementDefinition Id="cc39df33-9161-4b05-b7e2-9ab68eb3f82f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0074b9d3-90e0-4970-b4a6-5ce4aab7823b" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0074b9d3-90e0-4970-b4a6-5ce4aab7823b" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

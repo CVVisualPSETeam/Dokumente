@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -26,15 +26,6 @@
 	- Blau: Nikolai
 	- Lila: Erich
 	</body>
-    </comment>
-    <comment
-      Id="4da131c9-0e3b-4d09-b5ba-40b55002096c">
-      <body>Alleinstehende Funktionen:
-	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
-	- std::optional&lt;Point&gt; relative2absolutePoint(rect, Point)
-	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)
-	- levensteinDistance
-</body>
     </comment>
     <comment
       Id="b696a9cb-5db8-4948-9ae9-edfc4ca07e0f">
@@ -138,22 +129,12 @@ Die Zeichenart der Verbindungslinien wird über einen QPen angegeben.</body>
       <body>Zeigt die Verschiebung der Matches auf beiden Bildern als Pfeile an</body>
     </comment>
     <comment
-      Id="c5d80238-55dc-4980-8537-f1f31353b471">
-      <body>Die Projection wird nirgendswo berechnet, ggf util Klasse hinzufügen</body>
-    </comment>
-    <comment
       Id="a80a35b6-137a-45f8-9f8f-2afca004206c">
       <body>Dieser View benutzt Filter welche 2 Bilder bracuhen wie Overlay und Difference </body>
     </comment>
     <comment
       Id="7b0789cb-12fc-4f23-ba60-614f469ea8ff">
       <body>Diese View benutzt Filter welche auf ein einzelnes Bild angewendet werden.</body>
-    </comment>
-    <comment
-      Id="1bd20a29-fcb2-4212-909a-2c2df81cd480">
-      <body>reference==optional???
-
-eine Projection klasse vird noch benötigt (siehe ProjectionView)</body>
     </comment>
     <comment
       Id="ef21fa04-4af5-4611-b3aa-8acdd2d0266e">
@@ -167,6 +148,15 @@ eine Projection klasse vird noch benötigt (siehe ProjectionView)</body>
     <comment
       Id="9ee96a13-88da-47e7-b8ac-0c254e709942">
       <body>Abstrakte Datenklasse
+</body>
+    </comment>
+    <comment
+      Id="5ca203af-bd5f-4148-82ec-b62c002b577b">
+      <body>Alleinstehende Funktionen:
+	- std::optional&lt;Point&gt; absolute2relativePoint(rect, Point)
+	- std::optional&lt;Point&gt; relative2absolutePoint(rect, Point)
+	- Rect surroundingRectangle(vec&lt;point&gt;, int deltaTop=0, int deltaBottom=0, int deltaLeft=0, int deltaRight=0)
+	- levensteinDistance
 </body>
     </comment>
   </ownedCommentsInternal>

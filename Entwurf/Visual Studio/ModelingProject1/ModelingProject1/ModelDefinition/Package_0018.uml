@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b"
   name="util" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -27,13 +27,6 @@ dies könnte auch an anderer stelle implementiert sein:
       <body>FSW: 	ermöglicht auswahl des filters durch nutzer
 	ist nach auswahl wie eine funktion verwendbar
 	wendet den filter NICHT selber an</body>
-    </comment>
-    <comment
-      Id="c7c7f99c-5684-4093-ae87-6791515d1793">
-      <body>FilterSelectorWidget ist NICHT abstract kann also benutzt werden. 
-apply filter wird an das member currentFilter weitergeleited
-das signal wird auch vom aktuellen Filter weitergeleited (bzw ggf werden signale unterdrückt)
-der slot fängt das signal des inneren FFW und leitet es über das signal weiter.</body>
     </comment>
     <comment
       Id="37124305-e0cf-46bf-ae7c-9a0c90658459">

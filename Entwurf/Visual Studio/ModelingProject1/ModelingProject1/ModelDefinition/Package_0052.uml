@@ -171,47 +171,10 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="69fe95f7-1eda-4998-b391-4d44075eae94"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="494b007a-4297-405f-806d-95f26f8f955a"
-              LastKnownName="ViewController"
-              LastKnownLocation="Package_0111.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="cd9c8d83-21f5-437f-bf9a-14dc09c72908"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="da5de62f-c161-43f3-a908-18294ab4601a"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="165898f1-db0e-47a8-8c37-398db2b4bebd"
             isDerived="false"
             sourceEndRoleName=""
-            targetEndRoleName="matchViewMap"
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -234,7 +197,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="ceaf47a0-d462-4f13-9e8f-34935293dff9"
-                  name="matchViewMap"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -262,7 +224,7 @@
             Id="0fc11066-489b-48ac-9772-eb946cfdbd6c"
             isDerived="false"
             sourceEndRoleName=""
-            targetEndRoleName="matchView"
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -285,7 +247,56 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="2d97cc85-502f-4b1f-a47c-51fb6c6d9395"
-                  name="matchView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a977fd21-8407-4abf-b20b-0da1b45928fb"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="494b007a-4297-405f-806d-95f26f8f955a"
+              LastKnownName="ViewController"
+              LastKnownLocation="Package_0111.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e90a0d4-c920-4c6b-94ae-8e8fc4a55c14"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7c5dac08-9341-4f9e-a355-32e31754178b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="67106f8e-234e-470e-9574-1fd5100b6cd7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02fafacd-4184-42e3-88c5-6e334ffcd8a2"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -512,7 +523,7 @@
     <packageHasNamedElement>
       <class
         Id="9478ca4e-698c-4a03-bcc1-6b19ecc857c7"
-        name="==MainCallWindow"
+        name="MainCallWindow"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -744,47 +755,10 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="2f202a43-b433-4678-b377-543df8447966"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="494b007a-4297-405f-806d-95f26f8f955a"
-              LastKnownName="ViewController"
-              LastKnownLocation="Package_0111.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="27dc5638-03c3-4749-b69c-dca1002e441c"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="1b105e40-a022-4bef-9458-b3d46528d5a5"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="ee3c375a-e760-4454-be54-c94f68d5ccf2"
             isDerived="false"
             sourceEndRoleName=""
-            targetEndRoleName="filterViewMap"
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -807,7 +781,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="372b5a4e-5bc7-455e-a8be-69da61d44a1e"
-                  name="filterViewMap"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -835,7 +808,7 @@
             Id="209b8e89-1602-459a-9fe1-4525d68ca176"
             isDerived="false"
             sourceEndRoleName=""
-            targetEndRoleName="filterView"
+            targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
@@ -858,7 +831,56 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="a0cfb6f4-af63-4b2f-a40e-f89ef17902e7"
-                  name="filterView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a6b7cd55-b4b1-4e95-94db-6e5f036c4af6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="494b007a-4297-405f-806d-95f26f8f955a"
+              LastKnownName="ViewController"
+              LastKnownLocation="Package_0111.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b543b6a-628b-409d-ba7d-341875576c84"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0c6321bc-595e-4201-9472-9c73bb454aff"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="428d4b29-2bd3-496c-b6ad-084dce99a783"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f346b783-47ae-4e5f-a8bd-540b8aba1b4d"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -1571,7 +1593,7 @@
             <classMoniker
               Id="ecc9d3f1-565e-470c-890e-d8b5f73547bc"
               LastKnownName="FilterQueryWidget"
-              LastKnownLocation="Package_0049.uml" />
+              LastKnownLocation="Package1_0050.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -1608,7 +1630,7 @@
             <classMoniker
               Id="c7398aa7-5dd0-4a19-ab47-a6333d49c19a"
               LastKnownName="OverviewTable"
-              LastKnownLocation="Package_0049.uml" />
+              LastKnownLocation="Package1_0050.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd

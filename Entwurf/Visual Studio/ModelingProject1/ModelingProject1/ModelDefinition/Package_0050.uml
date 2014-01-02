@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="6b391ca1-d577-4da7-8a2c-2133c733e6c2"
   name="FilterView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -41,7 +41,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -78,7 +78,7 @@
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
               LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -115,7 +115,7 @@
             <classMoniker
               Id="2bff99d1-e8d7-4b7f-baf5-a95ff165988c"
               LastKnownName="FilterSelectorWidget&lt;1,1&gt;"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -237,7 +237,7 @@
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
               LastKnownName="SelectorWidget"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -274,7 +274,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -311,7 +311,7 @@
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
               LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -375,6 +375,56 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="6473c57a-4c04-41e5-bdd0-4fbbc3cb446a"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7"
+              LastKnownName="ZoomableImage"
+              LastKnownLocation="Package_0018.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e508b1b6-7610-4f13-b0a9-0c0c5c161a15"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5162cc7-b070-4a72-a430-54040006be81"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="44e6cdc4-dd2d-4a69-a9fb-23fc02ad03d6"
+                      name="Lower"
+                      value="3" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="893d6ea2-618c-4738-9e40-6ee0bb8ee684"
+                      name="Upper"
+                      value="3" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation
@@ -433,7 +483,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -470,7 +520,7 @@
             <classMoniker
               Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
               LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -592,7 +642,7 @@
             <classMoniker
               Id="bd5b5493-45bc-4683-9af3-4097ea200d4a"
               LastKnownName="Accordion"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
@@ -666,7 +716,7 @@
             <classMoniker
               Id="065d96ad-6692-43c2-bcae-c783c5364f38"
               LastKnownName="HistogrammWidget"
-              LastKnownLocation="Package_0044.uml" />
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd

@@ -6,10 +6,6 @@
       <body>project():
 project selected points from focussed image to other image</body>
     </comment>
-    <comment Id="250b9765-f7ce-41c3-a611-635c73471ad2">
-      <elementDefinition Id="c5d80238-55dc-4980-8537-f1f31353b471" />
-      <body>Die Projection wird nirgendswo berechnet, ggf util Klasse hinzufügen</body>
-    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <packageHasNamedElement>
@@ -83,6 +79,9 @@ project selected points from focussed image to other image</body>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="0f250afa-2ae7-4942-96a1-88b3687cbd3f" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -534,13 +533,38 @@ project selected points from focussed image to other image</body>
         <ownedOperationsInternal>
           <operation Id="ceb017ef-3caa-43e1-bbad-66ac5bceac74" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de281fed-7db1-4b85-8b61-3b22daf68dfe" name="newText" direction="In">
+                  <elementDefinition Id="01dd8c31-6c4d-4303-922c-8cbe18aa6226" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="617e6d3d-205b-4499-9d70-d3b8c3e5d2d3" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="34452044-be36-4f48-a332-e50057ece1a1" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a21d0e64-1050-490c-98bb-4a7ba9ac1b1c" name="newText" direction="In">
+                  <elementDefinition Id="c549f22c-5e2c-4433-a51f-2002544cd90a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="617e6d3d-205b-4499-9d70-d3b8c3e5d2d3" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="617e6d3d-205b-4499-9d70-d3b8c3e5d2d3" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="0ec927b0-4f76-4107-93ac-ed75646c1e41" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

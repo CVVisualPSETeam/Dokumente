@@ -226,6 +226,9 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="cba2a200-ca4f-452c-9ad8-2248674d6d68" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -573,13 +576,38 @@
         <ownedOperationsInternal>
           <operation Id="e3e936a0-9d8f-4afc-88e7-65bcc3dd3447" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6df2200-b2dc-4b7c-b075-e5e2164a3db2" name="newText" direction="In">
+                  <elementDefinition Id="01dd8c31-6c4d-4303-922c-8cbe18aa6226" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b8240533-fd69-46bd-9ac3-619e0a2a39af" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="5c887367-8be1-4fc1-8e0b-cb1f90ad0369" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cfff5dfc-b1c6-4ec4-93d8-889bca35310b" name="newText" direction="In">
+                  <elementDefinition Id="c549f22c-5e2c-4433-a51f-2002544cd90a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b8240533-fd69-46bd-9ac3-619e0a2a39af" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b8240533-fd69-46bd-9ac3-619e0a2a39af" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="8a46061a-0f9e-402c-bd59-141acf3c7f19" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

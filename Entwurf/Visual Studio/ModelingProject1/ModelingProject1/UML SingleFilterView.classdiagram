@@ -317,13 +317,38 @@
         <ownedOperationsInternal>
           <operation Id="5d8f73eb-838a-4ace-8a53-fe0c2f4e5371" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="667ceeaf-db0d-4f1d-a5d4-1fcce855b63b" name="newText" direction="In">
+                  <elementDefinition Id="e848cfd1-6608-408b-af7a-111056eec5cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="871ee05b-83cb-4e6f-bc8c-418e76d58eb4" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
           <operation Id="fb8a0ad1-891b-49b0-9d9f-95e23c83325e" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5dd6da53-21e6-4544-9757-bede4324d604" name="newText" direction="In">
+                  <elementDefinition Id="cc39df33-9161-4b05-b7e2-9ab68eb3f82f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="871ee05b-83cb-4e6f-bc8c-418e76d58eb4" LastKnownName="QString" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="871ee05b-83cb-4e6f-bc8c-418e76d58eb4" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="8a17b042-2499-4094-a0ab-d26f0da8f2be" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />
