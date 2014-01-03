@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -231,6 +231,10 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <comment
       Id="1bc44122-b92e-4205-a138-315025871f2a">
       <body>Oberklasse der FilterViews</body>
+    </comment>
+    <comment
+      Id="1c6e444a-633f-470f-866f-20efec285dfc">
+      <body>Wurzel des Zeigerbaumes</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -973,6 +977,16 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="df11ae53-41ea-4642-8493-0aca432cb77e"
+        name="map&lt;QString,FilterView&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4ca117be-347e-4afa-ac84-724e4bc7aa8d"
+        name="map&lt;QString,MatchView&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

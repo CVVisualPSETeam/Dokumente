@@ -85,6 +85,10 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       <elementDefinition Id="1bc44122-b92e-4205-a138-315025871f2a" />
       <body>Oberklasse der FilterViews</body>
     </comment>
+    <comment Id="0095bc9f-92a1-4cd8-912f-4afa55e5144b">
+      <elementDefinition Id="1c6e444a-633f-470f-866f-20efec285dfc" />
+      <body>Wurzel des Zeigerbaumes</body>
+    </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
@@ -1026,10 +1030,10 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="359f3c4e-7fa3-431e-89db-5a07bc95452f" name="static filterViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="359f3c4e-7fa3-431e-89db-5a07bc95452f" name="threadlocal filterViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="2f388c4a-85e7-41e9-84c0-d4f45aaa72ec" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" LastKnownName="map&lt;FilterView,QString&gt;" />
+              <referencedTypeMoniker Id="0adebe96-5928-4c72-ac28-f4bb1991b96b" LastKnownName="map&lt;QString,FilterView&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1100,7 +1104,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="025903c1-ae16-4ef9-9cdb-eff4409e526f" name="static addFilterViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="025903c1-ae16-4ef9-9cdb-eff4409e526f" name="threadlocal addFilterViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="1aeb19b0-67e8-4fa9-88b5-e3f1acb35272" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -1136,6 +1140,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="c9e5514e-e804-4f0d-b0d5-1999386c2fc5" name="///slot:helpButtonClicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f198a470-7bbe-4b26-b07c-3e2fe7b81036" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1268,10 +1275,10 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="4347bc2c-f268-4fc3-a973-b55abef54859" name="static matchViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="4347bc2c-f268-4fc3-a973-b55abef54859" name="threadlocal matchViewMap" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="46209df7-c1ba-466b-a808-45f1e97f3fbd" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" LastKnownName="map&lt;MatchView,QString&gt;" />
+              <referencedTypeMoniker Id="b8eace7e-da2e-4dfe-b174-9ec2dcad6bda" LastKnownName="map&lt;QString,MatchView&gt;" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1342,7 +1349,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="99307fa3-239c-48ba-8c8b-dea68e068bd9" name="static addMatchViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="99307fa3-239c-48ba-8c8b-dea68e068bd9" name="threadlocal addMatchViewToMap" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4510903c-0b9e-478d-a441-4114534bcfaf" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -1378,6 +1385,9 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
+          </operation>
+          <operation Id="822a5230-4d53-4ad8-b33b-047f6ca5d750" name="///slot:helpButtonClicked" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8548e9c7-b82f-47b8-be5e-b3f624d42e0d" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1648,16 +1658,6 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       </class>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="3b04312e-cc71-4a3e-954e-d7786aa443f8" name="map&lt;MatchView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;MatchView,QString&gt;">
-        <elementDefinition Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e1f07aae-edfe-482a-8c0f-bc29c8bbb13b" name="map&lt;FilterView,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;FilterView,QString&gt;">
-        <elementDefinition Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="240cf3e1-a394-4d92-b0ce-fee88db5dde7" name="FilterView" isAbstract="false" isLeaf="false" cachedFullName="FilterView">
         <elementDefinition Id="9607e170-2579-41f8-ab68-9d812b1746b3" />
       </referencedType>
@@ -1699,6 +1699,19 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               <operationHasOwnedParameters>
                 <parameter Id="762a7da5-70f0-4b95-b122-d7bdfe14ab98" name="QString" direction="In" isUnique="false">
                   <elementDefinition Id="73017ec0-a99d-4457-9910-53b907b92693" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bd07f0c7-07fb-437c-978f-f6e6bc5deb75" name="getPage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78e4ea65-051c-4185-bcb5-9efafd45e8fd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="699ab3b7-ac51-43ea-8d3e-41d2b91e7468" direction="Return">
+                  <elementDefinition Id="01c9ab40-747b-437e-aa6c-0f71663a0387" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="02e9ca94-9b33-4350-8a42-a10385f7312e" LastKnownName="QString" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1838,7 +1851,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallData" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" name="CallMetaData" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="4e476b67-3333-40be-ac11-fa086a167f06" />
               <ownedAttributesInternal>
                 <property Id="8d689877-ffc8-4848-96c4-34e2666ed4fa" name="file" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1933,7 +1946,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         <elementDefinition Id="551929e6-748e-4559-bf1e-3d58d21c558b" />
         <targetEnds>
           <association Id="c89ca359-ec69-4566-a2f0-9c814462776b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" LastKnownName="CallData" />
+            <classMoniker Id="42329d88-56f7-43e2-91a3-64c5cb4c48b1" LastKnownName="CallMetaData" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="8a0f354f-6fa9-4c11-a2cc-341d903ba68b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -2422,7 +2435,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="fe0e17da-d6ad-4cd6-8c7a-d14fb6b13ba4" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="fe0e17da-d6ad-4cd6-8c7a-d14fb6b13ba4" name="///signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -2435,7 +2448,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="7b14d365-37f6-4be2-b1aa-b4fad6c91e50" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="7b14d365-37f6-4be2-b1aa-b4fad6c91e50" name="///signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -2461,7 +2474,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="7336a5a8-867f-4459-9125-80bd647875b3" name="//singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="7336a5a8-867f-4459-9125-80bd647875b3" name="///singal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="7bee9a02-e962-45d3-89c7-0c2a33f8915e" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -2474,7 +2487,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="259ee5d2-d914-45ee-8ca3-c9298993891f" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="259ee5d2-d914-45ee-8ca3-c9298993891f" name="///signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="00467f1c-47f7-4b55-92e3-a9c169d02722" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -3165,6 +3178,21 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="02e9ca94-9b33-4350-8a42-a10385f7312e" name="QString" isAbstract="false" isLeaf="false" cachedFullName="QString">
+        <elementDefinition Id="d07af894-dd7e-4e88-8afb-9c3186235b4f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0adebe96-5928-4c72-ac28-f4bb1991b96b" name="map&lt;QString,FilterView&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;QString,FilterView&gt;">
+        <elementDefinition Id="df11ae53-41ea-4642-8493-0aca432cb77e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b8eace7e-da2e-4dfe-b174-9ec2dcad6bda" name="map&lt;QString,MatchView&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;QString,MatchView&gt;">
+        <elementDefinition Id="4ca117be-347e-4afa-ac84-724e4bc7aa8d" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="9ed153e1-5642-406a-bb57-5c20848259a3" name="ModelingProject1">
     <elementDefinition Id="722be0dd-2e40-4d1b-bafa-2c4124c1a835" />

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="ec592eff-c8cb-4291-84cd-7d96794b3578"
   name="management" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -274,7 +274,7 @@
         <ownedAttributesInternal>
           <property
             Id="46209df7-c1ba-466b-a808-45f1e97f3fbd"
-            name="static matchViewMap"
+            name="threadlocal matchViewMap"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -286,8 +286,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="55ad71c5-ef80-48e5-a11f-3698e2edd2ee"
-                LastKnownName="map&lt;MatchView,QString&gt;"
+                Id="4ca117be-347e-4afa-ac84-724e4bc7aa8d"
+                LastKnownName="map&lt;QString,MatchView&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -412,7 +412,7 @@
           </operation>
           <operation
             Id="4510903c-0b9e-478d-a441-4114534bcfaf"
-            name="static addMatchViewToMap"
+            name="threadlocal addMatchViewToMap"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -480,6 +480,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="8548e9c7-b82f-47b8-be5e-b3f624d42e0d"
+            name="///slot:helpButtonClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -821,7 +829,7 @@
         <ownedAttributesInternal>
           <property
             Id="2f388c4a-85e7-41e9-84c0-d4f45aaa72ec"
-            name="static filterViewMap"
+            name="threadlocal filterViewMap"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -833,8 +841,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="12bfc6ef-ab94-4ae6-8967-6448daa31bb3"
-                LastKnownName="map&lt;FilterView,QString&gt;"
+                Id="df11ae53-41ea-4642-8493-0aca432cb77e"
+                LastKnownName="map&lt;QString,FilterView&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -959,7 +967,7 @@
           </operation>
           <operation
             Id="1aeb19b0-67e8-4fa9-88b5-e3f1acb35272"
-            name="static addFilterViewToMap"
+            name="threadlocal addFilterViewToMap"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1027,6 +1035,14 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="f198a470-7bbe-4b26-b07c-3e2fe7b81036"
+            name="///slot:helpButtonClicked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
