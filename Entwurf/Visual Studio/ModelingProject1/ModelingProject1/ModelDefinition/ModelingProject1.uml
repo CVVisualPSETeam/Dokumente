@@ -232,6 +232,10 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       Id="1bc44122-b92e-4205-a138-315025871f2a">
       <body>Oberklasse der FilterViews</body>
     </comment>
+    <comment
+      Id="1c6e444a-633f-470f-866f-20efec285dfc">
+      <body>Wurzel des Zeigerbaumes</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -975,12 +979,14 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <class
-        Id="ce26ccd2-f65d-4d49-835d-22bf5ab582b1"
-        name="QWidget1"
-        isAbstract="false"
-        isLeaf="false"
-        isActiveClass="false" />
+      <undefinedType
+        Id="df11ae53-41ea-4642-8493-0aca432cb77e"
+        name="map&lt;QString,FilterView&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4ca117be-347e-4afa-ac84-724e4bc7aa8d"
+        name="map&lt;QString,MatchView&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

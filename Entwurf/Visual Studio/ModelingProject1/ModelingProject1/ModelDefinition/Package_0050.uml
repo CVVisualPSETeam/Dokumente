@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="6b391ca1-d577-4da7-8a2c-2133c733e6c2"
   name="FilterView" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -60,43 +60,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="79bee113-b88a-45a0-bc54-4626fe85bac8"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="a0f58200-a57b-41e8-bf0f-e020bd86754e"
-              LastKnownName="FilterSelectorWidget&lt;2,1&gt;"
-              LastKnownLocation="Package_0018.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d817955d-42e2-4bfd-bc7d-580347449d40"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f061bb84-2c1f-43c9-b883-9408eae05050"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="549590b4-d9e7-4127-bb1a-ca6b9ccc7fe7"
             isDerived="false"
             sourceEndRoleName=""
@@ -134,20 +97,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="264fb89d-d608-466c-95e5-4af139fcc0f7"
+            Id="6a253c61-15be-4adf-be47-d04e52551afe"
             isDerived="false"
             sourceEndRoleName=""
             targetEndRoleName=""
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="QTGraphicScene"
-              LastKnownLocation="Package1_0038.uml" />
+              Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7"
+              LastKnownName="ZoomableImage"
+              LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="d80bb66d-d044-486f-8726-443dbd68b51b"
+                  Id="61dade0a-7d05-4a10-b411-75b3216323c6"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -159,14 +122,27 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="201b362d-ef4e-449d-b93b-9b560dedde7a"
+                  Id="fa286e2e-5c24-4f03-99d3-057df913091c"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="05c6c103-87be-479b-b519-f4b6c762b674"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6767dd7d-1d3a-4297-a804-4d11c4447dbc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -209,43 +185,6 @@
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association
-            Id="ea0bb0e7-a5f0-4b8b-b27a-41108365b102"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget"
-              LastKnownLocation="Package_0018.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="a833ec3f-533b-4c1e-8a4c-dac7e63d5798"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ce515d57-dfd3-4cc2-9e6e-1e45ba61e0c7"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="458076d0-b775-43f5-b38d-b8ebb9021234"
             isDerived="false"
@@ -310,43 +249,6 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="dc0c6681-7347-486d-90e9-828b6d394a27"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="ae65cdfb-df56-4b70-9a60-95f6399bad46"
-            isDerived="false"
-            sourceEndRoleName=""
-            targetEndRoleName=""
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="17471453-9815-450c-ab98-8dc0c84db57e"
-              LastKnownName="QTGraphicScene"
-              LastKnownLocation="Package1_0038.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e172f9e7-cedd-4d05-8f63-26de80fea3c8"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="16dd4d81-ffdf-4329-b38b-1e2eb72857e0"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -561,7 +463,7 @@
         <ownedOperationsInternal>
           <operation
             Id="ba904822-5794-48b4-8d39-f24b00724de5"
-            name="//signal updateLeftFooter"
+            name="///signal updateLeftFooter"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -585,7 +487,7 @@
           </operation>
           <operation
             Id="492eb556-9087-49fb-abdf-b10b9b80225a"
-            name="//signal updateRightFooter"
+            name="///signal updateRightFooter"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML Dual Img View" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="dc0f762c-15bc-4840-be8f-b113a13fd218" name="UML Dual Img View" linkedPackageId="d1daa6a6-a857-494f-a7bb-d954a1c50cf9" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="08726659-709e-4b7e-b088-7dd9bb174e2b">
       <elementDefinition Id="a80a35b6-137a-45f8-9f8f-2afca004206c" />
@@ -25,16 +25,6 @@
     <packageHasNamedElement>
       <referencedType Id="53795136-7b61-4cc6-8095-6a3d8652c610" name="QString&amp;" isAbstract="false" isLeaf="false" cachedFullName="QString&amp;">
         <elementDefinition Id="7b1f3fab-3b36-45c0-b80b-3755e2a24a79" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="6d4a9931-f8ea-4208-b3f6-1a9570ec1da0" name="int}" isAbstract="false" isLeaf="false" cachedFullName="int}">
-        <elementDefinition Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="152a2330-b7c2-4a54-91e3-0dda4a1bdc06" name="double}" isAbstract="false" isLeaf="false" cachedFullName="double}">
-        <elementDefinition Id="0d52659f-6699-43e7-88f6-7ef15755c0bb" />
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
@@ -166,74 +156,6 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" name="SelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature Id="2774c2d5-fb9c-454a-a203-c39cae81b0d4" parameters="" isLeaf="false">
-            <elementDefinition Id="eeaf2f98-7b56-4698-adf3-8547a77fd886" />
-            <ownedParameters>
-              <classifierTemplateParameter Id="827cca57-1de1-4356-9c96-944d901aac70">
-                <elementDefinition Id="ada952b7-f13e-4558-8b6e-9c58bc990e67" />
-                <ownedParameterableElement>
-                  <class Id="c4a431ff-f38d-4346-b0a6-2d70b2ab1e20" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                    <elementDefinition Id="9fb27b02-e188-428d-85a2-2889df8b4ba8" />
-                  </class>
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
-        <ownedAttributesInternal>
-          <property Id="84db237f-844f-482c-baa6-231a5cc4c3cb" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
-          </property>
-          <property Id="2befecb8-08d8-4d1d-b813-66b5bdceed1e" name="vec&lt;T&gt; selectionInternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b68f354b-9f1e-44eb-ba6a-1c9313020379" />
-          </property>
-          <property Id="f50ec4fd-99d8-4be7-bcaa-eae62c89497f" name="vec&lt;T&gt; selectionExternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="6a7fc005-e2b6-4b62-8d86-40f0fa4df9a3" />
-          </property>
-          <property Id="dbd3a886-fe64-453e-a8f4-321c6ba7cb2a" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cc1b7755-42a9-4510-8e9a-a4c37689d95f" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="6d4a9931-f8ea-4208-b3f6-1a9570ec1da0" LastKnownName="int}" />
-            </type_NamedElement>
-          </property>
-          <property Id="eff51c12-a678-4ff4-9c6f-554844465ab1" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="d757b12f-5a28-480b-a4d2-d1a1da7a2cbc" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="152a2330-b7c2-4a54-91e3-0dda4a1bdc06" LastKnownName="double}" />
-            </type_NamedElement>
-          </property>
-        </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="2885ef7a-3475-4b93-bd54-e215af8ca197" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="1daff54e-9881-4428-9f85-fc65a7e9a010" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="4a6a55cd-a9dd-41f7-9d48-d3fb28b98f20" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="0f6d10b1-0138-4f83-b9ef-bbf9dd344457" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="d80ecc53-d3cd-4069-a5e6-6a31704114fd" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a97069b2-00b3-4412-85a8-ba2d7ed1a778" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="150f1438-e432-439e-a5cb-585cfb5017e5" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                  <elementDefinition Id="197d356c-d115-45ac-956b-56f5ac78f212" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="184c71aa-a5a9-4973-9165-a9cf02827607" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
-          </operation>
-        </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="722a6d15-9bf4-44ad-b744-913662b083d1" name="ZoomableImage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7aa0a191-6ca4-4613-9401-2ed64adc42a7" />
         <ownedAttributesInternal>
@@ -297,22 +219,6 @@
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="b9f15787-2760-4d2f-85f7-02c86423a68e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="73b19bed-06ec-4e58-a1e0-0087f8b42dc4" LastKnownName="SelectorWidget" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="483194a1-a0cc-453d-b25d-aca19411087b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="a833ec3f-533b-4c1e-8a4c-dac7e63d5798" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="f146f3f3-3721-443b-a3f5-b9a14abf7cb0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ce515d57-dfd3-4cc2-9e6e-1e45ba61e0c7" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="ea0bb0e7-a5f0-4b8b-b27a-41108365b102" />
-          </association>
           <association Id="851ab4c6-a333-46d3-a881-4d67987a9716" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
             <classMoniker Id="54c4974f-85bc-4325-a9c4-8edf1d34859a" LastKnownName="Accordion" />
             <relationshipOwnedElementsInternal>

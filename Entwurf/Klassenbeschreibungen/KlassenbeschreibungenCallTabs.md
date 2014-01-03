@@ -13,7 +13,7 @@ Methoden: Die zugehörigen getter und setter.
 CVVisual::management::MatchCallTab  
 Eine von CallTab abgeleitete Klasse.  
 Attribute:  
-static map<MatchView, QString> matchViewMap: Speichert mögliche Match-Views und ermöglicht den Zugriff darauf über eine QString-ID.  
+threadlocal map<QString, MatchView> matchViewMap: Speichert mögliche Match-Views und ermöglicht den Zugriff darauf über eine QString-ID.  
 ViewController viewController: MatchCallTab beuntzt einige Methoden des darüber stehenden ViewControllers, um etwa auf die Settings oder die Hilfe zuzugreifen.  
 MatchView matchView: Das augenblicklich ausgewählte View, welches angezeigt wird, wenn das Tab angezeigt wird.  
 MatchCall matchCall: Der Call, der die Informationen enthält, die im View dargestellt werden.  
@@ -21,12 +21,13 @@ QComboBox viewSelection: Erlaubt die Auswahl eines der Views aus matchViewMap fü
 CVVisual::HelpButton helpButton: Öffnet bei Mausklick die relevante Hilfeseite. Die page (s. HelpButton) ist dabei wiederum der Name, dh. die ID des gerade ausgewählten MatchView.  
 Methoden:  
 size_t getId(): GIbt die ID des zugehörigen MatchCalls zurück, die gleichzeitig als ID des Tabs fungiert.  
-static addMatchViewToMap(MatchView matchView, QString id): Fügt der matchViewMap matchView mit id hinzu.  
+threadlocal addMatchViewToMap(MatchView matchView, QString id): Fügt der matchViewMap matchView mit id hinzu.  
 Konstruktoren:  
 MatchCallTab(QString name, MatchCall matchCall, ViewController viewController): Benutzt den Standard-View aus den Settings.  
 MatchCallTab(QString name, MatchCall matchCall, ViewController viewController, MatchView matchView): Benutzt matchView.  
 Slots:  
 currentIndexChanged: Mit dem gleichnamigen Signal von comboBox verbunden. Wechselt den View, um der Auswahl zu entsprechen.  
+helpButtonClicked: Mit dem clicked-Signal verbunden, das HelpButton von QPushButton erbt.  
   
 ##FilterCallTab  
 CVVisual::management::FilterCallTab  
@@ -52,5 +53,5 @@ Ein Button, der bei Mausklick eine Hilfeseite öffnet.
 Attribute:  
 QString page: Die Seite bzw. der Themenbereich, der von diesem Button bei Mausklick in der Hilfe geöffnet wird.  
 Methoden:  
-setPage(QString newPage): Setzt page auf newPage.  
+setPage(QString newPage), QString getPage().
   
