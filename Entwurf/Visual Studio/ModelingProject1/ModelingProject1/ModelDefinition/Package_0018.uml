@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b"
   name="util" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1130,7 +1130,7 @@ es meldet die veränderungen des zooms per signal</body>
             isComposite="false" />
           <property
             Id="f6d9482b-ceae-4319-a375-ee067753f7d9"
-            name="optional&lt;Point&gt; basepoint"
+            name="std::pairl&lt;bool, Point&gt; basepoint"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1231,8 +1231,15 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="4d6d3d2e-6208-4209-9b9d-a780e24f9b4b"
-                  name="optional&lt;Point&gt;"
+                  Id="25918607-9c44-4e90-83b0-f711d3bc1c91"
+                  name="std::pairl&lt;bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6434f870-92d6-44fc-8e5a-e933d3267ea2"
+                  name="Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -1460,7 +1467,7 @@ es meldet die veränderungen des zooms per signal</body>
             isComposite="false" />
           <property
             Id="25cb0575-2060-4b67-a1a2-08c4c3577653"
-            name="optional&lt;Point&gt; basepointA"
+            name="std::pairl&lt;bool, Point&gt; basepointA"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1472,7 +1479,7 @@ es meldet die veränderungen des zooms per signal</body>
             isComposite="false" />
           <property
             Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea"
-            name="optional&lt;Point&gt; basepointB"
+            name="std::pairl&lt;bool, Point&gt; basepointB"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1555,8 +1562,15 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="2cf5abff-b4bd-46c8-9906-a334f7ea9809"
-                  name="optional&lt;Point&gt;"
+                  Id="614920c7-d06a-43f7-ac3b-ada20f69b16b"
+                  name="std::pairl&lt;bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67b16ff9-af6f-4c39-a68f-18c7b9b7182b"
+                  name="Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -1573,8 +1587,15 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="9d00e1d1-2342-4aab-a600-6a12a3596fdc"
-                  name="optional&lt;Point&gt;"
+                  Id="1c85dec8-7084-4e41-a5dd-2df4795bb5cc"
+                  name="std::pairl&lt;bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ad9f45ad-7abc-4ff3-93a8-8d4fe5bf6bd0"
+                  name="Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -1693,7 +1714,7 @@ es meldet die veränderungen des zooms per signal</body>
         <ownedAttributesInternal>
           <property
             Id="376c9012-65d9-4079-83ee-b6f42c2f0e30"
-            name="optional&lt;Point&gt; basePoint"
+            name="std::pairl&lt;bool, Point&gt; basePoint"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -1800,8 +1821,15 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a6cb88c7-6e16-4e54-8bd8-50926d93812a"
-                  name="optional&lt;Point&gt;"
+                  Id="df572258-261a-4c43-ac35-19dad3274938"
+                  name="std::pairl&lt;bool"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="573a5820-826a-4f4b-999a-e97da3233970"
+                  name="Point&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>

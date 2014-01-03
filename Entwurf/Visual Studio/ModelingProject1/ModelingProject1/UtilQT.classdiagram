@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="11355f87-fec2-42ad-9bbd-fdc498c52c16" name="UtilQT" linkedPackageId="602381ed-628f-4b7d-b226-05e3a4959e26" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="11355f87-fec2-42ad-9bbd-fdc498c52c16" name="UtilQT" linkedPackageId="602381ed-628f-4b7d-b226-05e3a4959e26" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="1b680932-44f8-4671-b34e-32bc40453b12">
       <elementDefinition Id="5ca203af-bd5f-4148-82ec-b62c002b577b" />
@@ -234,7 +234,7 @@ dies entweder von allen oder der momentanen auswahl</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="7b75f84d-25eb-48a5-9e5e-3fbbc8488b6e" name="IntervalSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="7b75f84d-25eb-48a5-9e5e-3fbbc8488b6e" name="IntervalSelectorWidget&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="5340958f-9df4-4138-897c-8c5b59be929d" />
               <generalsInternal>
                 <generalization Id="90adedff-f80d-4c0b-825e-df1f243f1f78" isSubstitutable="false">
@@ -260,21 +260,6 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="7b2dc2be-9716-4d8e-aa34-157b32b2729c" />
                 </association>
               </targetEnds>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="51a788a9-bf36-44a4-b5a1-721be8e31fe2" parameters="" isLeaf="false">
-                  <elementDefinition Id="a0da583a-aae1-40a6-9b89-f206cb150f9c" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="3f91d020-46df-44d2-9ba1-bd2c23113140">
-                      <elementDefinition Id="2b0721b6-696d-4e08-9afa-60e98e1a7773" />
-                      <ownedParameterableElement>
-                        <class Id="2eb63ddb-e2f7-4136-be1e-e3f1ee657498" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="f58b483d-f398-4912-922c-19d61dd2a479" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="0e421f88-fefb-488f-be40-47587231134c" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="f1e06f60-a3f2-40bd-b0cb-c27f07a2d23e" />
@@ -313,7 +298,7 @@ dies entweder von allen oder der momentanen auswahl</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="dc6eac09-38db-43d7-b7b6-43a31d2155f9" name="RelativePortionSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="dc6eac09-38db-43d7-b7b6-43a31d2155f9" name="RelativePortionSelectorWidget&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="87c3c7e3-a403-4269-86eb-1edf57044051" />
               <generalsInternal>
                 <generalization Id="47a18e89-92f5-4561-8e8b-340cf3ba96e4" isSubstitutable="false">
@@ -321,21 +306,6 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="92629ed1-77fe-4f38-ab81-f2d4c4279fb3" />
                 </generalization>
               </generalsInternal>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="54c7421a-0390-4040-abf0-17ebbcd89d63" parameters="" isLeaf="false">
-                  <elementDefinition Id="40be6673-2507-4710-bace-5ba127f98060" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="42f40aa3-c755-4abb-b0a4-e0b782f97ed1">
-                      <elementDefinition Id="c9c90a91-109d-4539-9881-eee7c7e6a86e" />
-                      <ownedParameterableElement>
-                        <class Id="1becaaeb-57e4-4475-a51d-f922eee477f3" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="b503f0fa-c877-489c-ad54-fa8e5de99d88" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="3a967a49-20d8-40c9-8793-2ea8b6a969f2" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d45afeaa-ee26-41eb-bc51-b1b7431b6257" />
@@ -375,7 +345,7 @@ dies entweder von allen oder der momentanen auswahl</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="fcad8fc4-ec4b-48fe-8404-7bf83ab9b949" name="GroupOperatorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="fcad8fc4-ec4b-48fe-8404-7bf83ab9b949" name="GroupOperatorWidget&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="30ed6329-f803-4f4e-af94-32c1f5c200e8" />
               <generalsInternal>
                 <generalization Id="96dba5a4-9db1-4543-a76d-dcdccca003b8" isSubstitutable="false">
@@ -383,21 +353,6 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="3c5d2b57-6e31-488f-9db9-70aec46ac0dc" />
                 </generalization>
               </generalsInternal>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="92b309ff-3a43-4a10-aff6-79e3cfa581ee" parameters="" isLeaf="false">
-                  <elementDefinition Id="2bdc13ef-48d2-4fa6-bd84-8bc0057ed49e" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="a4acd22d-7000-4362-b11a-d4cab27a2bbf">
-                      <elementDefinition Id="2ad42196-5cb5-4bd3-8e45-d5ef1f40c301" />
-                      <ownedParameterableElement>
-                        <class Id="93eed83c-3641-4b7b-9a78-20d870e9af0a" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="3cb4563a-0177-4621-8678-38ff50eca3df" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="62d5ae1a-c438-4d1f-9dba-145fc409bb21" name="vec&lt;tupel&lt;string,vec&lt;T&gt;&gt;&gt; groups" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="cbfe3c25-b4c1-434d-a26d-168a134e02cf" />
@@ -502,7 +457,7 @@ dies entweder von allen oder der momentanen auswahl</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="ff444666-6b8a-4ef7-8f35-772c30e624c6" name="SelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="ff444666-6b8a-4ef7-8f35-772c30e624c6" name="SelectorWidget&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="138d6319-34bf-4579-aa96-316dfe2d3104" />
               <generalsInternal>
                 <generalization Id="52dcb12d-3e5d-4c5a-8c34-c4953823f4c4" isSubstitutable="false">
@@ -512,7 +467,7 @@ dies entweder von allen oder der momentanen auswahl</body>
               </generalsInternal>
               <targetEnds>
                 <association Id="a2dd8da5-4833-460c-9f68-4a136de5c43e" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="fcad8fc4-ec4b-48fe-8404-7bf83ab9b949" LastKnownName="GroupOperatorWidget" />
+                  <classMoniker Id="fcad8fc4-ec4b-48fe-8404-7bf83ab9b949" LastKnownName="GroupOperatorWidget&lt;class T&gt;" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="02a1c4e8-d148-456f-ba1e-feeb8af21299" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -528,7 +483,7 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="f92d377c-be12-4c91-8481-d160ff1f02e8" />
                 </association>
                 <association Id="5b4ac92f-0751-4d96-8350-1b7419b1490d" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="7b75f84d-25eb-48a5-9e5e-3fbbc8488b6e" LastKnownName="IntervalSelectorWidget" />
+                  <classMoniker Id="7b75f84d-25eb-48a5-9e5e-3fbbc8488b6e" LastKnownName="IntervalSelectorWidget&lt;class T&gt;" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="3e82af81-db14-4efc-8260-0f2348f1f6a4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -544,7 +499,7 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="06c35eb0-9bc7-4c7b-99d1-a32b84c6bd92" />
                 </association>
                 <association Id="b23dbac9-d8c2-40a8-9330-8e5b3c585075" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="dc6eac09-38db-43d7-b7b6-43a31d2155f9" LastKnownName="RelativePortionSelectorWidget" />
+                  <classMoniker Id="dc6eac09-38db-43d7-b7b6-43a31d2155f9" LastKnownName="RelativePortionSelectorWidget&lt;class T&gt;" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="f05b8586-3b78-4dc5-b75b-dc93c0e195e4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -560,21 +515,6 @@ dies entweder von allen oder der momentanen auswahl</body>
                   <elementDefinition Id="f5c589de-ebf8-40e2-90b3-26a18133fe21" />
                 </association>
               </targetEnds>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="73f237b0-f2b3-4aed-8544-b83b5dbeae39" parameters="" isLeaf="false">
-                  <elementDefinition Id="eeaf2f98-7b56-4698-adf3-8547a77fd886" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="54956b1c-f0e5-4c67-9d95-5ad534442c35">
-                      <elementDefinition Id="ada952b7-f13e-4558-8b6e-9c58bc990e67" />
-                      <ownedParameterableElement>
-                        <class Id="31f902eb-d53a-4263-bbf0-c9afc5b36b05" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="9fb27b02-e188-428d-85a2-2889df8b4ba8" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="1d4b2a5f-2b99-47be-a91d-2e51f0e71ec4" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
@@ -803,31 +743,8 @@ ggf bessere namen per typedef o.Ä.</body>
             </Interface>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <Interface Id="93c95960-cfd7-4179-95b2-fad62e97c0ba" name="FilterFunctionWidget" isAbstract="false" isLeaf="false">
+            <Interface Id="93c95960-cfd7-4179-95b2-fad62e97c0ba" name="FilterFunctionWidget&lt;size_t In, size_t Out&gt;" isAbstract="false" isLeaf="false">
               <elementDefinition Id="ad2092db-643a-44ec-a9c4-0a502ce52d4f" />
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="307ca38c-b762-4ef2-8271-c2b14b6af03d" parameters="" isLeaf="false">
-                  <elementDefinition Id="69d9bf0e-4694-485f-ad2c-0992e3cf3361" />
-                  <ownedParameters>
-                    <templateParameter Id="d686b309-10d5-43cd-a5c8-1ab3069ae31b">
-                      <elementDefinition Id="ae62f030-8ea9-41ad-86f7-6e1e18b412f9" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="4d83fbef-fbf4-449d-ae49-f901518ac67a" name="In" value="0">
-                          <elementDefinition Id="65e786e1-9353-4b3c-abb0-6effc41b5d5d" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                    <templateParameter Id="701ce85e-d848-4e76-84da-27dab0b721d5">
-                      <elementDefinition Id="76e4136b-ee8f-441f-a265-0ae36d75234b" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="b38f844b-21a5-4a67-bc12-cdfbc4a19485" name="Out" value="0">
-                          <elementDefinition Id="ebbd1941-5b07-4c9a-8717-37acd8a3af4b" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedOperations>
                 <operation Id="450160a5-23b5-4926-9d27-b8b9d176a67c" name="applyFilter" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="e61ff3f6-3336-4218-8ac6-f5dedc8743c5" />
@@ -866,7 +783,7 @@ ggf bessere namen per typedef o.Ä.</body>
             </Interface>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" name="FilterSelectorWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" name="FilterSelectorWidget&lt;size_t In, size_t Out&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b" />
               <generalsInternal>
                 <generalization Id="59f87bc4-41f4-44fb-b87a-cdf09df503e5" isSubstitutable="false">
@@ -876,7 +793,7 @@ ggf bessere namen per typedef o.Ä.</body>
               </generalsInternal>
               <targetEnds>
                 <association Id="1cfb1fab-cb9c-4368-be33-b210f89e7aeb" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <interfaceMoniker Id="93c95960-cfd7-4179-95b2-fad62e97c0ba" LastKnownName="FilterFunctionWidget" />
+                  <interfaceMoniker Id="93c95960-cfd7-4179-95b2-fad62e97c0ba" LastKnownName="FilterFunctionWidget&lt;size_t In, size_t Out&gt;" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="c7900c4f-5a57-4628-9085-957814aa3d95" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -912,29 +829,6 @@ ggf bessere namen per typedef o.Ä.</body>
                   <elementDefinition Id="5a7b2893-8f25-4518-9b35-24ee6ca14015" />
                 </association>
               </targetEnds>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="9ca447c8-e73f-4205-a615-a718220b68a9" parameters="" isLeaf="false">
-                  <elementDefinition Id="746e6882-13b2-479b-a082-55f193ad0174" />
-                  <ownedParameters>
-                    <templateParameter Id="8e4c90c1-4ebb-4ac7-9267-818d9e7a0249">
-                      <elementDefinition Id="dd03740a-ff46-4710-ac88-20c480e19c4e" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="f1260ab0-1b78-4d26-bf64-9f6b3d45a37f" name="In" value="0">
-                          <elementDefinition Id="7f07fef4-377f-483a-a302-361574eb8d63" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                    <templateParameter Id="87f81161-2052-4324-99ce-d893a1957942">
-                      <elementDefinition Id="5484856a-3022-48c7-9451-95bf9e0115de" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="3e34c6d2-a92f-4201-b965-bea1d961d885" name="Out" value="0">
-                          <elementDefinition Id="e0593303-9b8d-4e2a-8310-09f8422a2547" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="afa4ed52-d363-4ec5-936c-2fb5628fe4f4" name="static vector&lt; tuple&lt;QString, {FilterFunctionWidget&lt;In, Out&gt;(*)()} &gt;&gt; registeredFilter" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="c683221c-c466-40f3-b8d5-5f1c28c9d485" />
@@ -1070,7 +964,7 @@ ggf bessere namen per typedef o.Ä.</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="3df017d8-3dfc-404e-914b-224447efb45a" name="AutoFilter" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="3df017d8-3dfc-404e-914b-224447efb45a" name="AutoFilter&lt;size_t In, size_t Out&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="cb30141c-2f28-4955-9db2-0f4eaec33620" />
               <generalsInternal>
                 <generalization Id="1f9378ee-d163-4b77-9300-dadf279e9db9" isSubstitutable="false">
@@ -1080,7 +974,7 @@ ggf bessere namen per typedef o.Ä.</body>
               </generalsInternal>
               <targetEnds>
                 <association Id="fb0bc7f9-eec7-4239-ac90-d33ab3e71364" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-                  <classMoniker Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" LastKnownName="FilterSelectorWidget" />
+                  <classMoniker Id="82a4d4bb-aa8f-49af-ad68-41b1e1b440d7" LastKnownName="FilterSelectorWidget&lt;size_t In, size_t Out&gt;" />
                   <relationshipOwnedElementsInternal>
                     <associationHasOwnedEnds>
                       <memberEnd Id="f9f10cef-34d3-4992-9231-c21ac3b2707e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -1116,29 +1010,6 @@ ggf bessere namen per typedef o.Ä.</body>
                   <elementDefinition Id="7e49449a-1bd8-46ef-b87b-6758688ee222" />
                 </association>
               </targetEnds>
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="6aa161bf-1f9e-41d9-9dcc-ba085f06f2f8" parameters="" isLeaf="false">
-                  <elementDefinition Id="1e88483a-6d7b-4fd4-bf3e-e70d62d6c9b0" />
-                  <ownedParameters>
-                    <templateParameter Id="4df97cdb-8e2f-4cb9-8b04-5f94826010f0">
-                      <elementDefinition Id="814f7407-2984-4f17-b913-52af6e9254e4" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="107a70d4-b9fa-40d3-9b5b-fccca289fe2c" name="In" value="0">
-                          <elementDefinition Id="65f9121a-efb2-4b82-8d76-f777cac48fbf" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                    <templateParameter Id="b704fe3a-93f3-4819-bf85-c1a6e7ebcf84">
-                      <elementDefinition Id="bc9ce9e0-eea7-471d-88de-54946b6221d4" />
-                      <ownedParameterableElement>
-                        <literalInteger Id="84d70823-ce52-4756-abfb-b6f6d4ee4d8f" name="Out" value="0">
-                          <elementDefinition Id="28367a9b-010f-4f6d-9a7c-2095b568ea6c" />
-                        </literalInteger>
-                      </ownedParameterableElement>
-                    </templateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="c2e7d972-2d83-4704-a2f1-105ca9ccf9c2" name="vector&lt; tuple&lt; FilterSelectorWidget&lt;In,Out&gt;, set&lt;size_t&gt;&gt; filter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="b21bb266-7b7f-4b76-86de-750f887e6fde" />
@@ -1439,7 +1310,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <property Id="a0038f0a-eb02-4eae-a46c-6db4dfd1d10e" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="6ed4a634-0ffc-4f29-b612-a85a73e28b35" />
                 </property>
-                <property Id="d795bbce-f333-49e4-b23f-ecac2c60f27e" name="optional&lt;Point&gt; basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="d795bbce-f333-49e4-b23f-ecac2c60f27e" name="std::pairl&lt;bool, Point&gt; basepoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="f6d9482b-ceae-4319-a375-ee067753f7d9" />
                 </property>
                 <property Id="fb047bae-7d04-425a-9b0e-ebbb98f2c0b1" name="Point relativeVector" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1473,8 +1344,13 @@ es meldet die veränderungen des zooms per signal</body>
                   <elementDefinition Id="e07b0b2a-14e0-435e-a282-95bf6c7b8a9f" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="2fc95828-c5ae-4fb1-b4ae-f9dec342e895" name="optional&lt;Point&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="4d6d3d2e-6208-4209-9b9d-a780e24f9b4b" />
+                      <parameter Id="05436d60-b95e-4a82-a2db-19c8c09c070d" name="std::pairl&lt;bool" direction="In" isUnique="false">
+                        <elementDefinition Id="25918607-9c44-4e90-83b0-f711d3bc1c91" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="93b3442d-5e36-406b-9bb5-bd097dd8b79b" name="Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="6434f870-92d6-44fc-8e5a-e933d3267ea2" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -1585,10 +1461,10 @@ es meldet die veränderungen des zooms per signal</body>
                 <property Id="0d7588dd-ec2c-40fa-9303-1523cf2a5299" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="01fdc8a3-52e2-49a5-805b-84aa67490441" />
                 </property>
-                <property Id="a4c17d5b-a5bf-4c82-ad72-ef9ca1692a9a" name="optional&lt;Point&gt; basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="a4c17d5b-a5bf-4c82-ad72-ef9ca1692a9a" name="std::pairl&lt;bool, Point&gt; basepointA" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="25cb0575-2060-4b67-a1a2-08c4c3577653" />
                 </property>
-                <property Id="c3295e23-2e53-4006-9b32-0deaf780ea3e" name="optional&lt;Point&gt; basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="c3295e23-2e53-4006-9b32-0deaf780ea3e" name="std::pairl&lt;bool, Point&gt; basepointB" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="17ed92c5-7253-4d0b-93bc-7aa4150d5bea" />
                 </property>
                 <property Id="1a21dcc0-2231-4c1e-88a3-8db561c4db52" name="QPen pen" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1612,8 +1488,13 @@ es meldet die veränderungen des zooms per signal</body>
                   <elementDefinition Id="352e23b3-ba88-4697-9450-66b13f46f34a" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="f7c891dd-d228-411d-bd3b-a054e8103a18" name="optional&lt;Point&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="2cf5abff-b4bd-46c8-9906-a334f7ea9809" />
+                      <parameter Id="f04d6c36-1c34-4989-9237-ec7ab0a55f45" name="std::pairl&lt;bool" direction="In" isUnique="false">
+                        <elementDefinition Id="614920c7-d06a-43f7-ac3b-ada20f69b16b" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7304017b-e2af-4d0d-bf1e-eb51b48bc365" name="Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="67b16ff9-af6f-4c39-a68f-18c7b9b7182b" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -1622,8 +1503,13 @@ es meldet die veränderungen des zooms per signal</body>
                   <elementDefinition Id="c0090c57-66df-43fe-ae79-49a896dc4c24" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="7ff04658-02a7-4463-bb51-21b30d933123" name="optional&lt;Point&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="9d00e1d1-2342-4aab-a600-6a12a3596fdc" />
+                      <parameter Id="755c8b51-8e96-4e18-9a5b-a0d803ea3715" name="std::pairl&lt;bool" direction="In" isUnique="false">
+                        <elementDefinition Id="1c85dec8-7084-4e41-a5dd-2df4795bb5cc" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="dae185ea-eb6f-49a8-bdd8-5d91b169969c" name="Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="ad9f45ad-7abc-4ff3-93a8-8d4fe5bf6bd0" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -1691,7 +1577,7 @@ es meldet die veränderungen des zooms per signal</body>
                 </generalization>
               </generalsInternal>
               <ownedAttributesInternal>
-                <property Id="233cca53-883c-48cb-a0d3-bbd52e01eae6" name="optional&lt;Point&gt; basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <property Id="233cca53-883c-48cb-a0d3-bbd52e01eae6" name="std::pairl&lt;bool, Point&gt; basePoint" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="376c9012-65d9-4079-83ee-b6f42c2f0e30" />
                 </property>
                 <property Id="c70a2203-c1a7-4ab8-865b-9fc989804346" name="bool tooltipEnabled" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1721,8 +1607,13 @@ es meldet die veränderungen des zooms per signal</body>
                   <elementDefinition Id="64ad03c6-9f2d-409a-a46a-1f5bec83c626" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="063336a7-1e8e-42ac-b62a-b49570a1a0ad" name="optional&lt;Point&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="a6cb88c7-6e16-4e54-8bd8-50926d93812a" />
+                      <parameter Id="01d82e77-e58a-4cee-b6e6-8e06c06d040e" name="std::pairl&lt;bool" direction="In" isUnique="false">
+                        <elementDefinition Id="df572258-261a-4c43-ac35-19dad3274938" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="52df0138-37ef-49f3-9f46-0a9ed5ba8e6f" name="Point&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="573a5820-826a-4f4b-999a-e97da3233970" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -1811,23 +1702,8 @@ es meldet die veränderungen des zooms per signal</body>
         <elementDefinition Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b" />
         <packagedElements>
           <packageHasNamedElement>
-            <class Id="d56cb2f2-2b66-4314-b33a-ecb2118a27f0" name="optional" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="d56cb2f2-2b66-4314-b33a-ecb2118a27f0" name="optional&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02" />
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="6df14b34-80d6-4be5-99ab-086d972389ef" parameters="" isLeaf="false">
-                  <elementDefinition Id="060828c3-a4d5-4d7f-94e3-3b800a5907b2" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="e169945e-c16e-4abe-b47e-d84d4f5a2d00">
-                      <elementDefinition Id="3890d4be-ee35-4e3e-85cb-30d7d708c53f" />
-                      <ownedParameterableElement>
-                        <class Id="01bfab35-003a-44bc-afed-004da189eebf" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="b6bb15a0-89e8-4f72-9422-a6bb8c98bf2f" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="83cc7d65-83c9-4d60-8868-4ecdf7bbe9eb" name="is_set" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="0e5ff7f4-2072-409f-80a6-9ca247dfbd36" />
@@ -1889,23 +1765,8 @@ es meldet die veränderungen des zooms per signal</body>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
-            <class Id="5fa1a838-2d31-4e94-9b9c-4edbd65dccfe" name="reference" isAbstract="false" isLeaf="false" isActiveClass="false">
+            <class Id="5fa1a838-2d31-4e94-9b9c-4edbd65dccfe" name="reference&lt;class T&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="e0132834-2ac5-4cdf-b69f-4ab7017e46c5" />
-              <ownedRedefinableTemplateSignatureInternal>
-                <redefinableTemplateSignature Id="5dec7d0d-d457-4c4b-b08d-158e11f786c5" parameters="" isLeaf="false">
-                  <elementDefinition Id="b11ffe16-69d3-40ba-bb43-4da632dbc443" />
-                  <ownedParameters>
-                    <classifierTemplateParameter Id="5392a6d1-de11-41ac-8b31-67dab0e3128d">
-                      <elementDefinition Id="771374d8-c97c-4c93-8ee7-94d85a6be2b0" />
-                      <ownedParameterableElement>
-                        <class Id="f8cd22b5-12a8-4515-a9fc-0289381c47c3" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
-                          <elementDefinition Id="85d80aeb-ff47-4345-b04b-596170a8a34a" />
-                        </class>
-                      </ownedParameterableElement>
-                    </classifierTemplateParameter>
-                  </ownedParameters>
-                </redefinableTemplateSignature>
-              </ownedRedefinableTemplateSignatureInternal>
               <ownedAttributesInternal>
                 <property Id="aa760a87-e0f8-4269-96ec-0548d191c6c8" name="ptr" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="770d0248-3f47-4a40-9204-aebd5e436056" />
