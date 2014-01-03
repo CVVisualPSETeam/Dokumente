@@ -20,6 +20,7 @@ Technical
 
 * Only ever indent with tabs!! Make sure your IDE does that too!
 * indent empty lines
+* other than the above rule: No trailing whitespace
 * opening braces belong on their own line, because this is what opencv does (they are wrong!)
 * If you display tabs as eight spaces, your lines should not be longer than 100 characters
 
