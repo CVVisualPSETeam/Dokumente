@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="9363eb67-faac-4073-904a-733807fa9d6a"
   name="std" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,109 +7,26 @@
     <packageHasNamedElement>
       <class
         Id="b3c80229-05fc-4c5b-a865-9860a6dea049"
-        name="vector"
+        name="vector&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="17d99b15-c8fc-48aa-9666-31edc0868b56"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="f9ac3237-7ac7-4422-9fef-86cb4b39dcfb">
-                <ownedParameterableElement>
-                  <class
-                    Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="894344d5-bba6-439e-a2be-c4ac152b5e44"
-        name="map"
+        name="map&lt;class T1, class T2&gt;"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="a284bf9a-6165-452e-82ed-3761a8f77ebe"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="be732812-e7a8-4bda-a895-897deac7e50a">
-                <ownedParameterableElement>
-                  <class
-                    Id="a7cfe07b-d058-44ce-b743-49eb780e4268"
-                    name="T1"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-              <classifierTemplateParameter
-                Id="31fe7587-32ff-4cd7-9e3e-cfc4ab8c2455">
-                <ownedParameterableElement>
-                  <class
-                    Id="6e8d6d56-a6c8-4aca-b25d-0161a22d47e0"
-                    name="T2"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
         Id="defd5714-b10f-4d83-920c-9969fc889099"
-        name="Array"
+        name="Array&lt;class T, size_t N&gt;"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="04cf6161-0545-4ee8-b47b-2249b3dadbe3"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="e24f55eb-ca56-4f1e-823e-db3faab65d12">
-                <ownedParameterableElement>
-                  <class
-                    Id="d942b121-e19d-4e7d-8cce-94c87a748614"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-              <templateParameter
-                Id="1b7f4425-06a6-4648-8f86-5b493d7d3d30">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="dba6d061-a827-4605-8a08-9807276306c5"
-                    name="N"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
-      </class>
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

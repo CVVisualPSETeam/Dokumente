@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="c4fcca4d-7da1-4714-8e26-a6ca357bc505"
   name="OpenCV" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,30 +7,10 @@
     <packageHasNamedElement>
       <class
         Id="2d925316-1c55-4fa0-9857-2bab83499ae8"
-        name="Size_"
+        name="Size_&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="c8da58cb-8fec-45b0-b201-e1a063ce18d2"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="6e2e7c8d-469f-4bf7-b0f6-b02dfd461ba8">
-                <ownedParameterableElement>
-                  <class
-                    Id="a030c1b0-3b1c-4788-824a-f72b11013cf4"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="acbda3ff-4902-4528-958e-85adf8aebbde"
@@ -60,30 +40,10 @@
     <packageHasNamedElement>
       <class
         Id="70f885c0-b1d1-4429-a1eb-75ebad01aad5"
-        name="Rect_"
+        name="Rect_&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="8379d9cb-6469-452b-bf27-c66a0fc98839"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="4c7cdfa0-8927-45fc-ad6d-31b5517818a4">
-                <ownedParameterableElement>
-                  <class
-                    Id="340514e4-ba97-45d3-b911-2377558cc530"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="2108d8db-cdd0-41d9-b3ca-b9fbda7cef72"
@@ -143,30 +103,10 @@
     <packageHasNamedElement>
       <class
         Id="ae2af5c8-c4fc-4405-84e2-c6c1a7d95f80"
-        name="Point_"
+        name="Point_&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="14f1a42d-3858-4b74-a154-0cf9268e449b"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="1d45dd6b-c55a-4aa8-b090-28bd919f4ae8">
-                <ownedParameterableElement>
-                  <class
-                    Id="0e73bbe4-a59e-4434-99cc-d477a74482e9"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="a6b39d1a-fa63-4555-870a-23ff5939551a"

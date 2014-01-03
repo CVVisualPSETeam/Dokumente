@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="f4e4e26b-22d0-4efd-b965-ce93ee75796b"
   name="util" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -96,30 +96,10 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="552b59c4-c99c-4b23-aa88-735c1f8d3e02"
-        name="optional"
+        name="optional&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="060828c3-a4d5-4d7f-94e3-3b800a5907b2"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="3890d4be-ee35-4e3e-85cb-30d7d708c53f">
-                <ownedParameterableElement>
-                  <class
-                    Id="b6bb15a0-89e8-4f72-9422-a6bb8c98bf2f"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="0e5ff7f4-2072-409f-80a6-9ca247dfbd36"
@@ -175,14 +155,7 @@ es meldet die veränderungen des zooms per signal</body>
                   Id="8a75858f-3541-4a7c-adbb-2b84e1fb9670"
                   name="value"
                   direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -199,14 +172,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="88c2aa29-5ad1-4511-808e-600b22baa211"
                   direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -248,30 +214,10 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="62c335cc-b8ef-4dd1-9949-cf9611410a78"
-        name="Identified "
+        name="Identified &lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="f2169410-7567-4bc8-af71-479bd38825d9"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="f13bc064-fc67-440a-bd49-e78ea636e8d3">
-                <ownedParameterableElement>
-                  <class
-                    Id="1979dcfb-a502-4428-9e4f-e364969ea61c"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="d6536439-7069-46ba-a93e-d509162c3db9"
@@ -299,30 +245,10 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="e0132834-2ac5-4cdf-b69f-4ab7017e46c5"
-        name="reference"
+        name="reference&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="b11ffe16-69d3-40ba-bb43-4da632dbc443"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="771374d8-c97c-4c93-8ee7-94d85a6be2b0">
-                <ownedParameterableElement>
-                  <class
-                    Id="85d80aeb-ff47-4345-b04b-596170a8a34a"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="770d0248-3f47-4a40-9204-aebd5e436056"
@@ -335,14 +261,7 @@ es meldet die veränderungen des zooms per signal</body>
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                LastKnownName="T"
-                LastKnownLocation="Package2_0038.uml" />
-            </type_NamedElement>
-          </property>
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -448,14 +367,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="b18ff893-35f0-43ae-993c-c77d81422f0f"
                   direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -472,14 +384,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="d924455b-548b-4319-9532-d86a453469fb"
                   direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -496,14 +401,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="472d4386-bdc8-4498-9f45-171713a9a03c"
                   direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -520,14 +418,7 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="c694b390-d05d-4ecd-9901-28505e84334e"
                   direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="43b15752-5ede-4ae1-8ca5-3c27fa008543"
-                      LastKnownName="T"
-                      LastKnownLocation="Package2_0038.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -2242,7 +2133,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="5340958f-9df4-4138-897c-8c5b59be929d"
-        name="IntervalSelectorWidget"
+        name="IntervalSelectorWidget&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2295,26 +2186,6 @@ es meldet die veränderungen des zooms per signal</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="a0da583a-aae1-40a6-9b89-f206cb150f9c"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="2b0721b6-696d-4e08-9afa-60e98e1a7773">
-                <ownedParameterableElement>
-                  <class
-                    Id="f58b483d-f398-4912-922c-19d61dd2a479"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="f1e06f60-a3f2-40bd-b0cb-c27f07a2d23e"
@@ -2421,7 +2292,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="87c3c7e3-a403-4269-86eb-1edf57044051"
-        name="RelativePortionSelectorWidget"
+        name="RelativePortionSelectorWidget&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2435,26 +2306,6 @@ es meldet die veränderungen des zooms per signal</body>
               LastKnownLocation="Package1_0038.uml" />
           </generalization>
         </generalsInternal>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="40be6673-2507-4710-bace-5ba127f98060"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="c9c90a91-109d-4539-9881-eee7c7e6a86e">
-                <ownedParameterableElement>
-                  <class
-                    Id="b503f0fa-c877-489c-ad54-fa8e5de99d88"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="d45afeaa-ee26-41eb-bc51-b1b7431b6257"
@@ -2543,7 +2394,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="30ed6329-f803-4f4e-af94-32c1f5c200e8"
-        name="GroupOperatorWidget"
+        name="GroupOperatorWidget&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2557,26 +2408,6 @@ es meldet die veränderungen des zooms per signal</body>
               LastKnownLocation="Package1_0038.uml" />
           </generalization>
         </generalsInternal>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="2bdc13ef-48d2-4fa6-bd84-8bc0057ed49e"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="2ad42196-5cb5-4bd3-8e45-d5ef1f40c301">
-                <ownedParameterableElement>
-                  <class
-                    Id="3cb4563a-0177-4621-8678-38ff50eca3df"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="cbfe3c25-b4c1-434d-a26d-168a134e02cf"
@@ -2781,7 +2612,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-        name="SelectorWidget"
+        name="SelectorWidget&lt;class T&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -2805,7 +2636,7 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="false">
             <classMoniker
               Id="30ed6329-f803-4f4e-af94-32c1f5c200e8"
-              LastKnownName="GroupOperatorWidget"
+              LastKnownName="GroupOperatorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2842,7 +2673,7 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="false">
             <classMoniker
               Id="5340958f-9df4-4138-897c-8c5b59be929d"
-              LastKnownName="IntervalSelectorWidget"
+              LastKnownName="IntervalSelectorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2879,7 +2710,7 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="false">
             <classMoniker
               Id="87c3c7e3-a403-4269-86eb-1edf57044051"
-              LastKnownName="RelativePortionSelectorWidget"
+              LastKnownName="RelativePortionSelectorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -2908,26 +2739,6 @@ es meldet die veränderungen des zooms per signal</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="eeaf2f98-7b56-4698-adf3-8547a77fd886"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="ada952b7-f13e-4558-8b6e-9c58bc990e67">
-                <ownedParameterableElement>
-                  <class
-                    Id="9fb27b02-e188-428d-85a2-2889df8b4ba8"
-                    name="T"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9"
@@ -3285,36 +3096,9 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <Interface
         Id="ad2092db-643a-44ec-a9c4-0a502ce52d4f"
-        name="FilterFunctionWidget"
+        name="FilterFunctionWidget&lt;size_t In, size_t Out&gt;"
         isAbstract="false"
         isLeaf="false">
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="69d9bf0e-4694-485f-ad2c-0992e3cf3361"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <templateParameter
-                Id="ae62f030-8ea9-41ad-86f7-6e1e18b412f9">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="65e786e1-9353-4b3c-abb0-6effc41b5d5d"
-                    name="In"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-              <templateParameter
-                Id="76e4136b-ee8f-441f-a265-0ae36d75234b">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="ebbd1941-5b07-4c9a-8717-37acd8a3af4b"
-                    name="Out"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedOperations>
           <operation
             Id="e61ff3f6-3336-4218-8ac6-f5dedc8743c5"
@@ -3375,7 +3159,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b"
-        name="FilterSelectorWidget"
+        name="FilterSelectorWidget&lt;size_t In, size_t Out&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3399,7 +3183,7 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="false">
             <interfaceMoniker
               Id="ad2092db-643a-44ec-a9c4-0a502ce52d4f"
-              LastKnownName="FilterFunctionWidget"
+              LastKnownName="FilterFunctionWidget&lt;size_t In, size_t Out&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3454,33 +3238,6 @@ es meldet die veränderungen des zooms per signal</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="746e6882-13b2-479b-a082-55f193ad0174"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <templateParameter
-                Id="dd03740a-ff46-4710-ac88-20c480e19c4e">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="7f07fef4-377f-483a-a302-361574eb8d63"
-                    name="In"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-              <templateParameter
-                Id="5484856a-3022-48c7-9451-95bf9e0115de">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="e0593303-9b8d-4e2a-8310-09f8422a2547"
-                    name="Out"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="c683221c-c466-40f3-b8d5-5f1c28c9d485"
@@ -3761,7 +3518,7 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <class
         Id="cb30141c-2f28-4955-9db2-0f4eaec33620"
-        name="AutoFilter"
+        name="AutoFilter&lt;size_t In, size_t Out&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -3785,7 +3542,7 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="false">
             <classMoniker
               Id="76d55c16-ee2e-4d83-ba98-8d57c9f19c1b"
-              LastKnownName="FilterSelectorWidget"
+              LastKnownName="FilterSelectorWidget&lt;size_t In, size_t Out&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -3840,33 +3597,6 @@ es meldet die veränderungen des zooms per signal</body>
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="1e88483a-6d7b-4fd4-bf3e-e70d62d6c9b0"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <templateParameter
-                Id="814f7407-2984-4f17-b913-52af6e9254e4">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="65f9121a-efb2-4b82-8d76-f777cac48fbf"
-                    name="In"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-              <templateParameter
-                Id="bc9ce9e0-eea7-471d-88de-54946b6221d4">
-                <ownedParameterableElement>
-                  <literalInteger
-                    Id="28367a9b-010f-4f6d-9a7c-2095b568ea6c"
-                    name="Out"
-                    value="0" />
-                </ownedParameterableElement>
-              </templateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="b21bb266-7b7f-4b76-86de-750f887e6fde"

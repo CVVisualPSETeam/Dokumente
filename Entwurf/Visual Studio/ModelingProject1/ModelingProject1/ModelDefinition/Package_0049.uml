@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams"
   dslVersion="1.0.0.0"
   Id="7479c561-76be-40a8-b575-407add153e3a"
   name="stfl" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -7,7 +7,7 @@
     <packageHasNamedElement>
       <class
         Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
-        name="STFLEngine"
+        name="STFLEngine&lt; class CollumnType&gt;"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -20,26 +20,6 @@
               LastKnownLocation="Package_0049.uml" />
           </dependency>
         </suppliersInternal>
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature
-            Id="43f2caca-9daa-409c-bb4d-4d0fb4257039"
-            parameters=""
-            isLeaf="false">
-            <ownedParameters>
-              <classifierTemplateParameter
-                Id="22a7906b-52b3-4446-a8d8-e800f1977457">
-                <ownedParameterableElement>
-                  <class
-                    Id="568dbdcb-3458-4d90-9917-eae952637209"
-                    name="CollumnType"
-                    isAbstract="false"
-                    isLeaf="false"
-                    isActiveClass="false" />
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property
             Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85"
@@ -247,14 +227,7 @@
                   Id="18830b39-ba0a-4538-9be2-e39489adf833"
                   name="element"
                   direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="568dbdcb-3458-4d90-9917-eae952637209"
-                      LastKnownName="CollumnType"
-                      LastKnownLocation="Package_0049.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
