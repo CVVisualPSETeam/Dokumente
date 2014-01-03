@@ -251,21 +251,31 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="549590b4-d9e7-4127-bb1a-ca6b9ccc7fe7" />
           </association>
-          <association Id="fb9c5195-e3e6-4943-8634-8b1f57cf04bf" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" LastKnownName="QTGraphicScene" />
+          <association Id="e72f4f69-89c8-4f25-8c73-3d5639c617b7" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" LastKnownName="ZoomableImage" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="9d187d90-98ae-4203-8f7c-5914b651656e" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="d80bb66d-d044-486f-8726-443dbd68b51b" />
+                <memberEnd Id="fb10c481-a110-41a2-8a10-d8171a90d23b" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61dade0a-7d05-4a10-b411-75b3216323c6" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="2cd7b759-abc1-4725-8c18-02484d217246" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="201b362d-ef4e-449d-b93b-9b560dedde7a" />
+                <memberEnd Id="7db6e794-c345-4caf-af96-f8706eb15790" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="d5a7efca-451c-45b4-9af4-3aa4fb075983" name="Lower" value="*">
+                      <elementDefinition Id="05c6c103-87be-479b-b519-f4b6c762b674" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="088c0590-1aad-4c98-81f4-bc4439f77e39" name="Upper" value="*">
+                      <elementDefinition Id="6767dd7d-1d3a-4297-a804-4d11c4447dbc" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fa286e2e-5c24-4f03-99d3-057df913091c" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="264fb89d-d608-466c-95e5-4af139fcc0f7" />
+            <elementDefinition Id="6a253c61-15be-4adf-be47-d04e52551afe" />
           </association>
         </targetEnds>
         <ownedOperationsInternal>
@@ -276,39 +286,6 @@
             <elementDefinition Id="6d1ac341-d828-4983-8d21-154a79580b5c" />
           </operation>
         </ownedOperationsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="63b14bbb-5e0f-4c60-ab64-f0c2bacd8a42" name="QTGraphicScene" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="17471453-9815-450c-ab98-8dc0c84db57e" />
-        <targetEnds>
-          <association Id="d0f0a69c-96b0-4c59-b7be-1e6cec54352b" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="8ee93293-b2a7-4b36-b175-70d8e74cd6e2" LastKnownName="ZoomableImage" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="57c24e15-4668-41d8-b1f4-96d0c3e9961a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="5d366c3b-daa7-4e90-a81c-85637ad16d52" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="79441096-0258-420d-9c99-8f57ee67e136" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <lowerValueInternal>
-                    <literalString Id="c8fd8710-d53b-4e2b-a5c5-07054fec84bb" name="Lower" value="*">
-                      <elementDefinition Id="64f06eb6-d63b-487c-b5aa-f3afe7c74425" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="e97bf107-c596-467d-adb5-3cb019db6cc6" name="Upper" value="*">
-                      <elementDefinition Id="181682a0-22bf-4369-9a37-c51e3f777551" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="c4924a6e-909c-4d68-a3a6-beb8b40f1573" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="5d384fd6-303b-494d-aa17-e507affbf106" />
-          </association>
-        </targetEnds>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
