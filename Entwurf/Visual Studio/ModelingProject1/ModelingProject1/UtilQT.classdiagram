@@ -284,12 +284,22 @@ dies entweder von allen oder der momentanen auswahl</body>
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
-                <operation Id="efc0dc56-2ea1-4ce2-9bab-a3889ca3bd11" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="3c4f481d-bc3f-4f44-90b3-69028026a82d" />
+                <operation Id="f7640214-3d72-4c17-b665-497a6bbc6335" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7849b25f-a3b7-4e95-82ce-44650df1734d" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="00d3386e-8636-473d-9d12-343877d1f4f2" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="e04c547f-852b-4b28-a015-b5f33c8facca" />
+                      <parameter Id="b46a9fd3-4928-48a1-84dc-f12ed5fa443c" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="badc98cd-d5a7-43d6-be0e-18d066741e0d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="572a363c-fdce-4651-8d57-a3bba721d4e9" name="inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9e1c7b80-9fb1-4791-ba9c-a1a5a6e11701" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="103401cb-01e9-4edd-bb28-f367bc6ee604" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="5624acbe-92dc-4646-a8de-1801c2199e3f" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -321,22 +331,22 @@ dies entweder von allen oder der momentanen auswahl</body>
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
-                <operation Id="5875f9ee-aa42-419b-8f35-25219c5758d5" name="///signal outputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="5875f9ee-aa42-419b-8f35-25219c5758d5" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="b850ab21-3050-4cc5-bb75-9c313b3a838e" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="1e0afa6a-2b0a-4d4f-b095-b00213dc1fa8" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="de60a1b7-4894-4d06-9dd9-529830862afe" />
+                      <parameter Id="30c2c8b7-de25-4c94-8b39-f7ef509d5943" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="d420af0e-8ac9-4358-8389-e8d3e10d9dd4" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="1d0a09c6-ffa8-40b4-872e-2a6a0d35e74a" name="///slot inputSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="321d20ab-2eea-4c5a-9c79-07e1e0d5ae24" />
+                <operation Id="17904bc2-849c-412a-9e9b-250df297a4b9" name="inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8395f937-202e-4304-815b-6f0b557754f3" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="678c01db-f8e1-4561-9da6-ede7d1718ef2" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="ef109715-a924-4516-80b4-0a3ba24e6cfb" />
+                      <parameter Id="c3d70f28-a584-4ae8-b504-483449ab8cdc" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="35b91c39-47ba-45e4-90a2-dc2cc6195e0a" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -428,27 +438,47 @@ dies entweder von allen oder der momentanen auswahl</body>
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="2867c797-7ee8-4bbd-abff-d4beb52d1880" name="/// signal groupSelected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="97f9399f-8c57-4760-8347-062f23f8bddc" />
+                <operation Id="b161f06e-1694-498f-9dc2-c68aee53b6c5" name="setGroup" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="68d55c00-8791-4aaf-b2cb-50bf26705c51" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="05ea4824-6ec5-495a-816d-3f1750f58402" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="487c36e2-9829-48ce-8ef0-c27aeca42318" />
+                      <parameter Id="d8c132dc-e7c2-4b52-9174-e6750c878cb9" name="QString name" direction="In" isUnique="false">
+                        <elementDefinition Id="be22a877-4d80-4d38-992d-5574ae247c4c" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1a960e15-adbf-47f6-9a22-fbd0c2d4f131" name="vec&lt;T&gt; elements" direction="In" isUnique="false">
+                        <elementDefinition Id="0bd79dab-e674-45d8-806b-59b9372c1e36" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="b161f06e-1694-498f-9dc2-c68aee53b6c5" name="/// setGroup" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="68d55c00-8791-4aaf-b2cb-50bf26705c51" />
+                <operation Id="5e50080e-d47a-4fe3-af9d-d6b099443d6f" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="14eb37ce-50b1-4941-a1a3-dffa1a24e4b3" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="20f4dd65-5ff4-46a8-96d0-43a0cd4716b9" name="QString name" direction="In" isUnique="false">
-                        <elementDefinition Id="79a9c1e6-827b-4b01-86cf-ac69320b684b" />
+                      <parameter Id="f362b69c-4f94-4fdc-9155-79812d2c2838" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="d3ae4612-92fc-4da1-915a-92dad8f7a1d5" />
                       </parameter>
                     </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="3bcb7b26-ecdc-493b-88b9-27543ae0e884" name="inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c48cee28-85b2-48c6-b5e5-ce448bb8794f" />
+                  <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="6521abb9-4284-4d51-a4c1-2a93fe019aac" name="vec&lt;T&gt; elements" direction="In" isUnique="false">
-                        <elementDefinition Id="c314ec1c-856a-43ff-9e16-72791fafce3e" />
+                      <parameter Id="5fa5f7c1-57cf-483a-a006-d14c7fa60e86" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="b25e42de-e6d3-4548-970a-17c77c025d0d" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="cca8e666-d954-4205-9faa-4878679cd8e9" name="inputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f9ad374e-f007-49a1-8ded-256d2773f4ec" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="1ae9498f-3bab-451a-9088-b56ed8bccfb9" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="04278cc7-b1aa-4c03-8a2f-43c3710a2afe" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -516,20 +546,8 @@ dies entweder von allen oder der momentanen auswahl</body>
                 </association>
               </targetEnds>
               <ownedAttributesInternal>
-                <property Id="1d4b2a5f-2b99-47be-a91d-2e51f0e71ec4" name="vec&lt;T&gt; all" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9" />
-                </property>
                 <property Id="4e9e3753-e252-427f-a7c1-1c034b9653eb" name="vec&lt;T&gt; selectionInternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="b68f354b-9f1e-44eb-ba6a-1c9313020379" />
-                </property>
-                <property Id="aa2267d7-2d5e-4af9-a15d-8b2837ebf2f5" name="vec&lt;T&gt; selectionExternal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="6a7fc005-e2b6-4b62-8d86-40f0fa4df9a3" />
-                </property>
-                <property Id="dc5f1592-ee09-4440-b60e-517e24d023c9" name="{comparator(T,T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cc1b7755-42a9-4510-8e9a-a4c37689d95f" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="1d50751a-3057-4002-9569-ad5cf123f3d2" LastKnownName="int}" />
-                  </type_NamedElement>
                 </property>
                 <property Id="506d39cd-e432-4d59-800b-9da081d8ce7b" name="{doubleExtractor(T)" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="d757b12f-5a28-480b-a4d2-d1a1da7a2cbc" />
@@ -549,18 +567,15 @@ dies entweder von allen oder der momentanen auswahl</body>
                     </operationHasOwnedParameters>
                   </ownedParameters>
                 </operation>
-                <operation Id="39ab1f8f-643b-4cb7-9c4c-13ab900a20b6" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                <operation Id="39ab1f8f-643b-4cb7-9c4c-13ab900a20b6" name="inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="a97069b2-00b3-4412-85a8-ba2d7ed1a778" />
                   <ownedParameters>
                     <operationHasOwnedParameters>
-                      <parameter Id="ac9ece07-9f59-429c-83d7-b5096acb5363" name="vec&lt;T&gt;" direction="In" isUnique="false">
-                        <elementDefinition Id="197d356c-d115-45ac-956b-56f5ac78f212" />
+                      <parameter Id="fcb5d190-2843-4b71-94a4-1b632d233a10" name="vec&lt;T&gt;" direction="In" isUnique="false">
+                        <elementDefinition Id="872776df-2bca-4e70-a6e5-e81743d463df" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
-                </operation>
-                <operation Id="67f07cd7-e6c8-485e-8fcb-6eef186200a6" name="///slot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="65118317-353a-4c5f-b77e-d3e0a7959fb0" />
                 </operation>
               </ownedOperationsInternal>
             </class>
@@ -577,17 +592,9 @@ dies entweder von allen oder der momentanen auswahl</body>
 
 - es muss für jeden filter erstellt werden
 - er nimmt In bilder an und liefert Out bilder
-- er sollte bei FSW registiert werden</body>
-          </comment>
-          <comment Id="3869cb95-aac4-408c-ac08-e0eeca57b85c">
-            <elementDefinition Id="b9472d1c-576e-4705-9fa7-9f4f5cdfc1a4" />
-            <body>autotuning:
-
-delay= (multDelay*delay+multLast*lastExecTime)/div
-
-dies könnte auch an anderer stelle implementiert sein:
-	- die nutzende klasse
-	- in einem wrapper</body>
+- er sollte bei FSW registiert werden
+- testInput gibt false zurück, falls der filter nicht angewendet werden kann (der string ist eine fehlernachricht für den user
+</body>
           </comment>
           <comment Id="2972c609-e766-46a4-841d-7062f8673754">
             <elementDefinition Id="25b89c75-3bab-4778-ae18-3d108fa6df89" />
@@ -779,6 +786,29 @@ ggf bessere namen per typedef o.Ä.</body>
                 <operation Id="2d846b86-fc1c-43c7-9145-97396cb9a602" name="///signal stateChanged" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="a6caa78a-1bb3-4767-9ef6-98a826bf7802" />
                 </operation>
+                <operation Id="50b2591b-380f-4b0a-a818-ec87e64c0250" name="testInput" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8d86a06a-26f5-4703-878e-eda4ebced67c" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="b181782a-634a-45b5-a8db-43d8f0217101" direction="Return" isUnique="false">
+                        <elementDefinition Id="d83b7e92-707a-4469-8731-0e3a96db5afb" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4b55f475-3fe2-4766-b087-e3c0126c2487" LastKnownName="pair&lt;bool,QString&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="351c42bb-6830-489d-8a65-13ea1fc25fc1" name="const Array&lt;const Mat&amp;" direction="In" isUnique="false">
+                        <elementDefinition Id="90528b9a-b4c4-47a9-ad65-a6af2353ac3f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5450de52-cbce-473b-acc8-dc14dc0d4e6f" name="In&gt; in" direction="In" isUnique="false">
+                        <elementDefinition Id="19883dd9-671c-4224-bfe7-31fa55f3ca09" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
               </ownedOperations>
             </Interface>
           </packageHasNamedElement>
@@ -836,24 +866,6 @@ ggf bessere namen per typedef o.Ä.</body>
                 <property Id="60dd1eb4-c902-42ed-bc93-3e9384150607" name="FilterFunctionWidget&lt;In, Out&gt; currentFilter" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="ab8d3b1f-3bcc-48aa-9457-cd498991b0f6" />
                 </property>
-                <property Id="5b47abb4-7b96-4647-9370-fbb3d981d07a" name="uint delayBetweenSignals" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="20afd28a-d901-4968-8624-0d37f9e4fdf4" />
-                </property>
-                <property Id="e741d92a-c4e5-45c6-a8fc-129acd58cf00" name="time lastSignal" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="8ab6e6d4-6208-4a43-8f07-b35806de8095" />
-                </property>
-                <property Id="33a5102c-9dae-4118-8668-ac40fb925dc9" name="uint multLast" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="90af623e-7bdd-4f60-850a-7f8f3b088d2f" />
-                </property>
-                <property Id="13a0dfb9-6511-446c-a830-bd98a5c1ccd2" name="uint multDelay" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="59aa7132-9487-4ec8-be7e-a975174b03b8" />
-                </property>
-                <property Id="d81d4559-0379-40cd-a1e2-e368ad071148" name="uint div" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="88776cf0-91d4-4517-b6e0-4c0883d377f5" />
-                </property>
-                <property Id="3b8ff0ab-a167-45e8-89f4-5597477cc90f" name="uint lastExecDuration" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fdacb869-c8e3-4822-919f-01343e63bcf9" />
-                </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
                 <operation Id="2227f116-9ea9-49f7-9f96-4389864b97d4" name="register" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -890,46 +902,6 @@ ggf bessere namen per typedef o.Ä.</body>
                 <operation Id="375cf09d-03a2-48a7-bfc6-aa22fe4a2fb1" name="///slot stateChanged" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="7a279b46-1e70-4700-b37e-d241ae99f60e" />
                 </operation>
-                <operation Id="b30178d4-cb0e-4a11-9dda-cbced224ff94" name="setDelay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="33b77166-8171-4f0f-9eb5-d077c25e4e99" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="9e2aaffd-1132-481f-80a4-aed0980057b4" name="unsigned int" direction="In" isUnique="false">
-                        <elementDefinition Id="f3a0d54d-6a0c-4192-811a-f4bb6c311009" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-                <operation Id="e0a9c7e7-d6b6-420e-8dab-de956558227e" name="autotuningEnabled" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="981f097a-9fc8-4370-9112-542a43111cd4" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="be8f38c3-3fb4-4d90-9923-3f0350e59ec9" name="bool" direction="In" isUnique="false">
-                        <elementDefinition Id="45c0f4a1-80cc-4fbd-af23-3ea638b951cf" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
-                <operation Id="29cc84a6-772a-41c0-8789-e394bbf92bda" name="setAutotuningParameters" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-                  <elementDefinition Id="3b64cfdb-c506-4d95-9a69-825da7991527" />
-                  <ownedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="ff394fbf-ba30-4135-83bd-949a5093a6ae" name="uint multLast" direction="In" isUnique="false">
-                        <elementDefinition Id="978bd1f3-6f29-4299-a6b4-f2a105c11d16" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="46df1fa5-82f9-4755-ac7c-b7403ee5342e" name="uint multDelay" direction="In" isUnique="false">
-                        <elementDefinition Id="e25f5aab-9ef2-4ca8-812a-56daa3d250af" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                    <operationHasOwnedParameters>
-                      <parameter Id="5c9b2132-a73e-44d3-acd0-e923b229343c" name="uint div" direction="In" isUnique="false">
-                        <elementDefinition Id="b28744a6-6043-4800-9653-bfc444a5d003" />
-                      </parameter>
-                    </operationHasOwnedParameters>
-                  </ownedParameters>
-                </operation>
                 <operation Id="e5d9f71a-376b-4110-9d9d-bd52b4f7c606" name="applyFilter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                   <elementDefinition Id="24b7094c-5fd8-42fc-bc0f-e5a46756a6ba" />
                   <ownedParameters>
@@ -956,6 +928,29 @@ ggf bessere namen per typedef o.Ä.</body>
                     <operationHasOwnedParameters>
                       <parameter Id="3d5df2db-35fc-47a5-a386-7a767a4ff131" direction="Return" isUnique="false">
                         <elementDefinition Id="eed7562e-fc3a-42c7-a286-b1164ccbd6ac" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+                <operation Id="8746c100-cafb-43e7-9674-b088caf1d557" name="testInput" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="86dce466-cd0a-4b6e-9208-0633456329d1" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="5d67e428-028a-4221-a2b9-0ff1bb373613" direction="Return" isUnique="false">
+                        <elementDefinition Id="181bdeea-1f65-4e04-8581-a4305fdc110d" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="4b55f475-3fe2-4766-b087-e3c0126c2487" LastKnownName="pair&lt;bool,QString&gt;" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="c5525849-0a7e-42fe-9250-8e3e01557aa4" name="const Array&lt;const Mat&amp;" direction="In" isUnique="false">
+                        <elementDefinition Id="5636deae-ba0c-44c0-bd49-30b308605269" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="cedd34e5-693b-4040-a5b1-01f124e501f0" name="In&gt; in" direction="In" isUnique="false">
+                        <elementDefinition Id="8d11b594-ad14-4c13-9795-12fe5a5082d7" />
                       </parameter>
                     </operationHasOwnedParameters>
                   </ownedParameters>
@@ -1016,6 +1011,9 @@ ggf bessere namen per typedef o.Ä.</body>
                 </property>
                 <property Id="3c548b41-358b-4f1c-8119-3da2dc26a6da" name="vector&lt; tuple&lt;QString, const Array&lt;const Mat&amp;,In&gt;&amp;, Array&lt;Mat&amp;, Out&gt;&amp;&gt;&gt; input" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="3a778d1c-decb-4a4d-bf56-850ee6f64f98" />
+                </property>
+                <property Id="a06eceeb-f3c1-4cee-b80a-dbe60d0bb43f" name="uint delay" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="690040a8-e477-43b2-a68a-47e3b8f367bf" />
                 </property>
               </ownedAttributesInternal>
               <ownedOperationsInternal>
@@ -1245,6 +1243,12 @@ die widgets können eingefahren werden</body>
           <packageHasNamedElement>
             <class Id="575af8e5-31e5-40c3-9b9e-cdba466de792" name="Collapsable" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="6eb43da7-87cf-48f8-bbaa-576ad0a9fe0d" />
+              <generalsInternal>
+                <generalization Id="277460c5-f534-4a9e-9c15-168e9bc50de6" isSubstitutable="false">
+                  <classMoniker Id="a4046ae3-ff30-4d1a-89fa-8212c94a9b9c" LastKnownName="QWidget" />
+                  <elementDefinition Id="4b293142-0c74-40a1-bc3e-d5d7189dbb03" />
+                </generalization>
+              </generalsInternal>
               <ownedAttributesInternal>
                 <property Id="b3a90e50-5fca-46c3-8f87-5c615759aaef" name="QWidget widget" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="9d5b52ea-e693-46c7-ad21-b0c49ac767ae" />
@@ -2029,6 +2033,11 @@ es meldet die veränderungen des zooms per signal</body>
     <packageHasNamedElement>
       <referencedType Id="662e0bf4-44c3-46fa-98bb-3df5c8f62e7e" name="reference" isAbstract="false" isLeaf="false" cachedFullName="reference">
         <elementDefinition Id="e039c0d0-3ae8-41b5-8dce-28e527d83a30" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4b55f475-3fe2-4766-b087-e3c0126c2487" name="pair&lt;bool,QString&gt;" isAbstract="false" isLeaf="false" cachedFullName="pair&lt;bool,QString&gt;">
+        <elementDefinition Id="63e2e04b-d888-4d7b-b5ed-ef22b0b9c835" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

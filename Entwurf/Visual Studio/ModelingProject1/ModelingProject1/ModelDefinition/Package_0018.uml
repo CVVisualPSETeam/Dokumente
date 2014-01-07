@@ -10,17 +10,9 @@
 
 - es muss für jeden filter erstellt werden
 - er nimmt In bilder an und liefert Out bilder
-- er sollte bei FSW registiert werden</body>
-    </comment>
-    <comment
-      Id="b9472d1c-576e-4705-9fa7-9f4f5cdfc1a4">
-      <body>autotuning:
-
-delay= (multDelay*delay+multLast*lastExecTime)/div
-
-dies könnte auch an anderer stelle implementiert sein:
-	- die nutzende klasse
-	- in einem wrapper</body>
+- er sollte bei FSW registiert werden
+- testInput gibt false zurück, falls der filter nicht angewendet werden kann (der string ist eine fehlernachricht für den user
+</body>
     </comment>
     <comment
       Id="25b89c75-3bab-4778-ae18-3d108fa6df89">
@@ -980,6 +972,16 @@ es meldet die veränderungen des zooms per signal</body>
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="4b293142-0c74-40a1-bc3e-d5d7189dbb03"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e7b1ac62-f852-4d28-9382-8d483866006a"
+              LastKnownName="QWidget"
+              LastKnownLocation="Package1_0038.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="9d5b52ea-e693-46c7-ad21-b0c49ac767ae"
@@ -2297,8 +2299,8 @@ es meldet die veränderungen des zooms per signal</body>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="3c4f481d-bc3f-4f44-90b3-69028026a82d"
-            name="///signal outputSelection"
+            Id="7849b25f-a3b7-4e95-82ce-44650df1734d"
+            name="///signal outputInternalSelection"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2307,7 +2309,25 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e04c547f-852b-4b28-a015-b5f33c8facca"
+                  Id="badc98cd-d5a7-43d6-be0e-18d066741e0d"
+                  name="vec&lt;T&gt;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9e1c7b80-9fb1-4791-ba9c-a1a5a6e11701"
+            name="inputExternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5624acbe-92dc-4646-a8de-1801c2199e3f"
                   name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
@@ -2382,7 +2402,7 @@ es meldet die veränderungen des zooms per signal</body>
         <ownedOperationsInternal>
           <operation
             Id="b850ab21-3050-4cc5-bb75-9c313b3a838e"
-            name="///signal outputSelection"
+            name="///signal outputInternalSelection"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2391,7 +2411,7 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="de60a1b7-4894-4d06-9dd9-529830862afe"
+                  Id="d420af0e-8ac9-4358-8389-e8d3e10d9dd4"
                   name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
@@ -2399,8 +2419,8 @@ es meldet die veränderungen des zooms per signal</body>
             </ownedParameters>
           </operation>
           <operation
-            Id="321d20ab-2eea-4c5a-9c79-07e1e0d5ae24"
-            name="///slot inputSelection"
+            Id="8395f937-202e-4304-815b-6f0b557754f3"
+            name="inputExternalSelection"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2409,7 +2429,7 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ef109715-a924-4516-80b4-0a3ba24e6cfb"
+                  Id="35b91c39-47ba-45e4-90a2-dc2cc6195e0a"
                   name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
@@ -2592,8 +2612,9 @@ es meldet die veränderungen des zooms per signal</body>
             </ownedParameters>
           </operation>
           <operation
-            Id="97f9399f-8c57-4760-8347-062f23f8bddc"
-            name="/// signal groupSelected"
+            Id="68d55c00-8791-4aaf-b2cb-50bf26705c51"
+            name="setGroup"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2602,7 +2623,32 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="487c36e2-9829-48ce-8ef0-c27aeca42318"
+                  Id="be22a877-4d80-4d38-992d-5574ae247c4c"
+                  name="QString name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0bd79dab-e674-45d8-806b-59b9372c1e36"
+                  name="vec&lt;T&gt; elements"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="14eb37ce-50b1-4941-a1a3-dffa1a24e4b3"
+            name="///signal outputInternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3ae4612-92fc-4da1-915a-92dad8f7a1d5"
                   name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
@@ -2610,8 +2656,8 @@ es meldet die veränderungen des zooms per signal</body>
             </ownedParameters>
           </operation>
           <operation
-            Id="68d55c00-8791-4aaf-b2cb-50bf26705c51"
-            name="/// setGroup"
+            Id="c48cee28-85b2-48c6-b5e5-ce448bb8794f"
+            name="inputExternalSelection"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2620,15 +2666,26 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="79a9c1e6-827b-4b01-86cf-ac69320b684b"
-                  name="QString name"
+                  Id="b25e42de-e6d3-4548-970a-17c77c025d0d"
+                  name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f9ad374e-f007-49a1-8ded-256d2773f4ec"
+            name="inputInternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c314ec1c-856a-43ff-9e16-72791fafce3e"
-                  name="vec&lt;T&gt; elements"
+                  Id="04278cc7-b1aa-4c03-8a2f-43c3710a2afe"
+                  name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -2769,18 +2826,6 @@ es meldet die veränderungen des zooms per signal</body>
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="ad8a5ca6-aa13-4113-9a04-3029fb808ee9"
-            name="vec&lt;T&gt; all"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="b68f354b-9f1e-44eb-ba6a-1c9313020379"
             name="vec&lt;T&gt; selectionInternal"
             visibility="Private"
@@ -2792,37 +2837,6 @@ es meldet die veränderungen des zooms per signal</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
-          <property
-            Id="6a7fc005-e2b6-4b62-8d86-40f0fa4df9a3"
-            name="vec&lt;T&gt; selectionExternal"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="cc1b7755-42a9-4510-8e9a-a4c37689d95f"
-            name="{comparator(T,T)"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="c3bddf2e-7eed-4627-a8c6-ba124f280a53"
-                LastKnownName="int}"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
           <property
             Id="d757b12f-5a28-480b-a4d2-d1a1da7a2cbc"
             name="{doubleExtractor(T)"
@@ -2864,7 +2878,7 @@ es meldet die veränderungen des zooms per signal</body>
           </operation>
           <operation
             Id="a97069b2-00b3-4412-85a8-ba2d7ed1a778"
-            name="///slot inputExternalSelection"
+            name="inputExternalSelection"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2873,21 +2887,13 @@ es meldet die veränderungen des zooms per signal</body>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="197d356c-d115-45ac-956b-56f5ac78f212"
+                  Id="872776df-2bca-4e70-a6e5-e81743d463df"
                   name="vec&lt;T&gt;"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="65118317-353a-4c5f-b77e-d3e0a7959fb0"
-            name="///slot"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -3181,6 +3187,44 @@ es meldet die veränderungen des zooms per signal</body>
             isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="8d86a06a-26f5-4703-878e-eda4ebced67c"
+            name="testInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d83b7e92-707a-4469-8731-0e3a96db5afb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="63e2e04b-d888-4d7b-b5ed-ef22b0b9c835"
+                      LastKnownName="pair&lt;bool,QString&gt;"
+                      LastKnownLocation="Package_0018.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="90528b9a-b4c4-47a9-ad65-a6af2353ac3f"
+                  name="const Array&lt;const Mat&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="19883dd9-671c-4224-bfe7-31fa55f3ca09"
+                  name="In&gt; in"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperations>
       </Interface>
     </packageHasNamedElement>
@@ -3291,78 +3335,6 @@ es meldet die veränderungen des zooms per signal</body>
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
-          <property
-            Id="20afd28a-d901-4968-8624-0d37f9e4fdf4"
-            name="uint delayBetweenSignals"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="8ab6e6d4-6208-4a43-8f07-b35806de8095"
-            name="time lastSignal"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="90af623e-7bdd-4f60-850a-7f8f3b088d2f"
-            name="uint multLast"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="59aa7132-9487-4ec8-be7e-a975174b03b8"
-            name="uint multDelay"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="88776cf0-91d4-4517-b6e0-4c0883d377f5"
-            name="uint div"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="fdacb869-c8e3-4822-919f-01343e63bcf9"
-            name="uint lastExecDuration"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -3428,74 +3400,6 @@ es meldet die veränderungen des zooms per signal</body>
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="33b77166-8171-4f0f-9eb5-d077c25e4e99"
-            name="setDelay"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f3a0d54d-6a0c-4192-811a-f4bb6c311009"
-                  name="unsigned int"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="981f097a-9fc8-4370-9112-542a43111cd4"
-            name="autotuningEnabled"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="45c0f4a1-80cc-4fbd-af23-3ea638b951cf"
-                  name="bool"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="3b64cfdb-c506-4d95-9a69-825da7991527"
-            name="setAutotuningParameters"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="978bd1f3-6f29-4299-a6b4-f2a105c11d16"
-                  name="uint multLast"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e25f5aab-9ef2-4ca8-812a-56daa3d250af"
-                  name="uint multDelay"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="b28744a6-6043-4800-9653-bfc444a5d003"
-                  name="uint div"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="24b7094c-5fd8-42fc-bc0f-e5a46756a6ba"
             name="applyFilter"
             isLeaf="false"
@@ -3536,6 +3440,44 @@ es meldet die veränderungen des zooms per signal</body>
                 <parameter
                   Id="eed7562e-fc3a-42c7-a286-b1164ccbd6ac"
                   direction="Return"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="86dce466-cd0a-4b6e-9208-0633456329d1"
+            name="testInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="181bdeea-1f65-4e04-8581-a4305fdc110d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="63e2e04b-d888-4d7b-b5ed-ef22b0b9c835"
+                      LastKnownName="pair&lt;bool,QString&gt;"
+                      LastKnownLocation="Package_0018.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5636deae-ba0c-44c0-bd49-30b308605269"
+                  name="const Array&lt;const Mat&amp;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d11b594-ad14-4c13-9795-12fe5a5082d7"
+                  name="In&gt; in"
+                  direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -3641,6 +3583,18 @@ es meldet die veränderungen des zooms per signal</body>
           <property
             Id="3a778d1c-decb-4a4d-bf56-850ee6f64f98"
             name="vector&lt; tuple&lt;QString, const Array&lt;const Mat&amp;,In&gt;&amp;, Array&lt;Mat&amp;, Out&gt;&amp;&gt;&gt; input"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="690040a8-e477-43b2-a68a-47e3b8f367bf"
+            name="uint delay"
             visibility="Private"
             isLeaf="false"
             isStatic="false"
@@ -3783,6 +3737,11 @@ es meldet die veränderungen des zooms per signal</body>
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="63e2e04b-d888-4d7b-b5ed-ef22b0b9c835"
+        name="pair&lt;bool,QString&gt;" />
     </packageHasNamedElement>
   </packagedElements>
 </package>
