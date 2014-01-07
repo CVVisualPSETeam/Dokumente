@@ -676,7 +676,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         </generalsInternal>
         <targetEnds>
           <association Id="d0a510d6-2df6-4b1a-853e-f78d721c02fd" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="eef28968-ef25-452a-9535-dcb6d8c3198d" LastKnownName="STFLEngine" />
+            <classMoniker Id="eef28968-ef25-452a-9535-dcb6d8c3198d" LastKnownName="STFLEngine&lt; class CollumnType&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1cb7fe34-9735-4061-b799-c1af6f362759" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -1479,23 +1479,8 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="eef28968-ef25-452a-9535-dcb6d8c3198d" name="STFLEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="eef28968-ef25-452a-9535-dcb6d8c3198d" name="STFLEngine&lt; class CollumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="428b6ce2-a140-47d8-91c1-e67a22def15a" />
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature Id="ef9b2441-55cc-4d88-8d5d-d4066e9e63c9" parameters="" isLeaf="false">
-            <elementDefinition Id="43f2caca-9daa-409c-bb4d-4d0fb4257039" />
-            <ownedParameters>
-              <classifierTemplateParameter Id="46ab77c5-7328-4ca5-a677-501836997836">
-                <elementDefinition Id="22a7906b-52b3-4446-a8d8-e800f1977457" />
-                <ownedParameterableElement>
-                  <class Id="7f783b3b-0352-46a4-9099-e307021f4f41" name="CollumnType" isAbstract="false" isLeaf="false" isActiveClass="false">
-                    <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
-                  </class>
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property Id="5acd5ae1-3fce-4f1d-b98c-2d1cdb6cd46d" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
@@ -1758,7 +1743,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
           </comment>
           <comment Id="b4dd4097-564e-413a-9799-a47b1eb1349e">
             <elementDefinition Id="212b5642-8cd6-47ea-83b1-0c2accd9b4b0" />
-            <body>das DEBUGMACRO ersetzt diese Klasse durhc eine Implemetierung oder eine 'leere' Klasse</body>
+            <body>das DEBUGMACRO ersetzt diese Funktion durch eine Implemetierung oder eine 'leere' Funktion</body>
           </comment>
           <comment Id="df0444b1-77e6-4754-a9fa-605bee533479">
             <elementDefinition Id="374ce605-9e55-41b3-9ad3-84ccedaa9ac5" />
@@ -2461,11 +2446,21 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="c65bbe30-3241-434e-bf1a-f2cfa1d2606d" name="FilterView" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ca938be-ea69-4032-8a70-2aacbbf28183" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="15138470-5d31-4126-ad4a-2603d927d629" name="vec&lt;InputArray&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="a471d00b-ee46-4c8a-be1a-7ce9f15ed75f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2d55fc00-8af4-40ea-839a-b73e2d20f193" name="MatchView" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="2d55fc00-8af4-40ea-839a-b73e2d20f193" name="MatchView" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1ff67bde-4c26-428e-9f07-39f36721a679" />
         <generalsInternal>
           <generalization Id="261469f1-faf2-4deb-91bb-329545279305" isSubstitutable="false">
@@ -2496,6 +2491,62 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
                   <type_NamedElement>
                     <referencedTypeMoniker Id="b40ea560-8a90-4b61-a0f1-b3b1dbd2f586" LastKnownName="QString" />
                   </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c36e78a4-f38b-4573-8cf6-cd6defc2f56b" name="MatchView" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="38000017-1ec7-4a3f-99ab-367e28b94491" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4da0f7b8-f421-4680-a2a7-4a0e6f3b661d" name="img1" direction="In" isUnique="false">
+                  <elementDefinition Id="b912c193-1df4-4f89-a0d0-ea30ab72c7a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ebe9f720-1c3a-4504-8714-ccee4870c6ca" LastKnownName="InputArray" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="02af1d37-12e1-4a3c-b97d-9ee983068596" name="img2" direction="In" isUnique="false">
+                  <elementDefinition Id="2055503e-09fb-4a56-954b-d563ea532f72" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ebe9f720-1c3a-4504-8714-ccee4870c6ca" LastKnownName="InputArray" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2ca4400-a22c-408a-b97f-10990344c982" name="keypoint1" direction="In" isUnique="false">
+                  <elementDefinition Id="3475c1ff-766a-4337-990e-cd33bdead683" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="56ab038d-8bad-486e-9573-00bb14efe010" name="keypoint2" direction="In" isUnique="false">
+                  <elementDefinition Id="a1414ab2-c775-4a9e-95a7-d966792a100b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5a6ac5f5-46d5-4d8c-bafb-5a3109f5ab50" name="matches" direction="In" isUnique="false">
+                  <elementDefinition Id="501b2c65-0444-42c1-9122-84db676b0041" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="88f174e6-1ed5-4b26-96e1-85eccfb12e03" name="///signal outputInternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="759986e4-0add-4551-bf02-53914359a142" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c89213a-bb83-419e-a8aa-9b25458051fa" name="std::vector&lt;MatchCall&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="fc0f6c48-3688-47d5-8fd5-e0f263d8b298" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="71adaf89-befd-4615-9fa5-58fee6f0c5ab" name="///slot inputExternalSelection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21a51888-2ec2-409a-8b3f-d504a8e9b05c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6df7f45f-9375-4cfb-8b48-534ef28af167" name="std::vector&lt;MatchCall&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="b190092d-1075-4c28-b90b-776d41ee4d21" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -2772,7 +2823,7 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
         </generalsInternal>
         <targetEnds>
           <association Id="28870a45-92a0-47be-90b7-5621a62803f4" isDerived="false" sourceEndRoleName="" targetEndRoleName="" isLeaf="false" isAbstract="false">
-            <classMoniker Id="60978e3e-b2ee-46e3-9dfb-c88d3129e8d5" LastKnownName="STFLEngine" />
+            <classMoniker Id="60978e3e-b2ee-46e3-9dfb-c88d3129e8d5" LastKnownName="STFLEngine&lt; class CollumnType&gt;" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="35df534c-a2e2-4ba2-8dde-62a336cdf9a0" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
@@ -2924,23 +2975,8 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="60978e3e-b2ee-46e3-9dfb-c88d3129e8d5" name="STFLEngine" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="60978e3e-b2ee-46e3-9dfb-c88d3129e8d5" name="STFLEngine&lt; class CollumnType&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="428b6ce2-a140-47d8-91c1-e67a22def15a" />
-        <ownedRedefinableTemplateSignatureInternal>
-          <redefinableTemplateSignature Id="11269d37-796a-44e5-a4be-fb98b3b505c5" parameters="" isLeaf="false">
-            <elementDefinition Id="43f2caca-9daa-409c-bb4d-4d0fb4257039" />
-            <ownedParameters>
-              <classifierTemplateParameter Id="628ed3cf-ff39-4c64-9b67-5feb3c2a9d24">
-                <elementDefinition Id="22a7906b-52b3-4446-a8d8-e800f1977457" />
-                <ownedParameterableElement>
-                  <class Id="dce71380-b3a8-41b3-b358-dc10ae53b740" name="CollumnType" isAbstract="false" isLeaf="false" isActiveClass="false">
-                    <elementDefinition Id="568dbdcb-3458-4d90-9917-eae952637209" />
-                  </class>
-                </ownedParameterableElement>
-              </classifierTemplateParameter>
-            </ownedParameters>
-          </redefinableTemplateSignature>
-        </ownedRedefinableTemplateSignatureInternal>
         <ownedAttributesInternal>
           <property Id="e0128ae9-8b3c-4797-8658-1b1c93c6e041" name="elements" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="43ac7d0a-a210-4f7c-9193-c00e1461ac85" />
@@ -3191,6 +3227,11 @@ Es kümmert sich um die Instanizierung und Verwaltung der Views (in Form der Cal
     <packageHasNamedElement>
       <referencedType Id="b8eace7e-da2e-4dfe-b174-9ec2dcad6bda" name="map&lt;QString,MatchView&gt;" isAbstract="false" isLeaf="false" cachedFullName="map&lt;QString,MatchView&gt;">
         <elementDefinition Id="4ca117be-347e-4afa-ac84-724e4bc7aa8d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ebe9f720-1c3a-4504-8714-ccee4870c6ca" name="InputArray" isAbstract="false" isLeaf="false" cachedFullName="InputArray">
+        <elementDefinition Id="be9104d9-40a2-4973-86fd-53fb51e0bc36" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

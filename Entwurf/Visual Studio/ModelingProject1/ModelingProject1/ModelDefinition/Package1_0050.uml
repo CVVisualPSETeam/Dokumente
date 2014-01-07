@@ -31,7 +31,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget"
+              LastKnownName="SelectorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -181,7 +181,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget"
+              LastKnownName="SelectorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -471,7 +471,7 @@
             isAbstract="false">
             <classMoniker
               Id="138d6319-34bf-4579-aa96-316dfe2d3104"
-              LastKnownName="SelectorWidget"
+              LastKnownName="SelectorWidget&lt;class T&gt;"
               LastKnownLocation="Package_0018.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -635,7 +635,7 @@
       <class
         Id="1ff67bde-4c26-428e-9f07-39f36721a679"
         name="MatchView"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -694,6 +694,102 @@
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="38000017-1ec7-4a3f-99ab-367e28b94491"
+            name="MatchView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b912c193-1df4-4f89-a0d0-ea30ab72c7a8"
+                  name="img1"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="be9104d9-40a2-4973-86fd-53fb51e0bc36"
+                      LastKnownName="InputArray"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2055503e-09fb-4a56-954b-d563ea532f72"
+                  name="img2"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="be9104d9-40a2-4973-86fd-53fb51e0bc36"
+                      LastKnownName="InputArray"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3475c1ff-766a-4337-990e-cd33bdead683"
+                  name="keypoint1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1414ab2-c775-4a9e-95a7-d966792a100b"
+                  name="keypoint2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="501b2c65-0444-42c1-9122-84db676b0041"
+                  name="matches"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="759986e4-0add-4551-bf02-53914359a142"
+            name="///signal outputInternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc0f6c48-3688-47d5-8fd5-e0f263d8b298"
+                  name="std::vector&lt;MatchCall&gt;"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="21a51888-2ec2-409a-8b3f-d504a8e9b05c"
+            name="///slot inputExternalSelection"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b190092d-1075-4c28-b90b-776d41ee4d21"
+                  name="std::vector&lt;MatchCall&gt;"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -764,7 +860,7 @@
             isAbstract="false">
             <classMoniker
               Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
-              LastKnownName="STFLEngine"
+              LastKnownName="STFLEngine&lt; class CollumnType&gt;"
               LastKnownLocation="Package_0049.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -838,7 +934,7 @@
             isAbstract="false">
             <classMoniker
               Id="428b6ce2-a140-47d8-91c1-e67a22def15a"
-              LastKnownName="STFLEngine"
+              LastKnownName="STFLEngine&lt; class CollumnType&gt;"
               LastKnownLocation="Package_0049.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
