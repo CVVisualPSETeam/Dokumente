@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a7c9865e-a327-40eb-9ae4-f563c17f98b7" name="UMLFilterImgView" linkedPackageId="8a17b042-2499-4094-a0ab-d26f0da8f2be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a7c9865e-a327-40eb-9ae4-f563c17f98b7" name="UMLSingleFilterImgView" linkedPackageId="8a17b042-2499-4094-a0ab-d26f0da8f2be" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <ownedCommentsInternal>
     <comment Id="2c61f023-5fa3-4c6e-b901-60bbde059d57">
       <elementDefinition Id="7b0789cb-12fc-4f23-ba60-614f469ea8ff" />
@@ -292,7 +292,7 @@
       <class Id="af3695c1-089d-416d-85fb-46ac71c05a89" name="FilterView" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="8049d2b3-7556-4a89-9ff7-77d904ab80ad" />
         <ownedOperationsInternal>
-          <operation Id="5d8f73eb-838a-4ace-8a53-fe0c2f4e5371" name="//signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="5d8f73eb-838a-4ace-8a53-fe0c2f4e5371" name="///signal updateLeftFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="ba904822-5794-48b4-8d39-f24b00724de5" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -305,7 +305,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="fb8a0ad1-891b-49b0-9d9f-95e23c83325e" name="//signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="fb8a0ad1-891b-49b0-9d9f-95e23c83325e" name="///signal updateRightFooter" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="492eb556-9087-49fb-abdf-b10b9b80225a" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -314,6 +314,16 @@
                   <type_NamedElement>
                     <referencedTypeMoniker Id="871ee05b-83cb-4e6f-bc8c-418e76d58eb4" LastKnownName="QString" />
                   </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d82d7ab2-5f49-4e6b-b7da-81b2fa9adc3f" name="FilterView" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ca938be-ea69-4032-8a70-2aacbbf28183" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="611ae6f7-0319-4cbc-90be-8964755bc7b7" name="vec&lt;InputArray&gt;" direction="In" isUnique="false">
+                  <elementDefinition Id="a471d00b-ee46-4c8a-be1a-7ce9f15ed75f" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>

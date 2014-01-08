@@ -22,12 +22,12 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="UML All Classes.classdiagram">
+    <Content Include="UMLAllClasses.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UML All Classes.classdiagram.layout">
+    <Content Include="UMLAllClasses.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UML All Classes.classdiagram</DependentUpon>
+      <DependentUpon>UMLAllClasses.classdiagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package1_0038.uml">
       <SubType>Content</SubType>
@@ -74,33 +74,33 @@
     <Content Include="ModelDefinition\Package_2352.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UML DualView.classdiagram">
+    <Content Include="UMLDualFilterView.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UML DualView.classdiagram.layout">
+    <Content Include="UMLDualFilterView.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UML DualView.classdiagram</DependentUpon>
+      <DependentUpon>UMLDualFilterView.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UML Overview.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UML Overview.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UML Overview.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="ImageView.classdiagram">
+    <Content Include="UMLOverview.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ImageView.classdiagram.layout">
+    <Content Include="UMLOverview.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>ImageView.classdiagram</DependentUpon>
+      <DependentUpon>UMLOverview.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UML SingleFilterView.classdiagram">
+    <Content Include="UMLImageView.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UML SingleFilterView.classdiagram.layout">
+    <Content Include="UMLImageView.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UML SingleFilterView.classdiagram</DependentUpon>
+      <DependentUpon>UMLImageView.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSingleFilterView.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSingleFilterView.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSingleFilterView.classdiagram</DependentUpon>
     </Content>
     <Content Include="UMLHistogramView.classdiagram">
       <SubType>Content</SubType>
@@ -123,19 +123,19 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLProjectionView.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UMLSTFL Engine.classdiagram">
+    <Content Include="UMLSTFLEngine.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSTFL Engine.classdiagram.layout">
+    <Content Include="UMLSTFLEngine.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSTFL Engine.classdiagram</DependentUpon>
+      <DependentUpon>UMLSTFLEngine.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UtilQT.classdiagram">
+    <Content Include="UMLUtilQT.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UtilQT.classdiagram.layout">
+    <Content Include="UMLUtilQT.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UtilQT.classdiagram</DependentUpon>
+      <DependentUpon>UMLUtilQT.classdiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject1.uml">
