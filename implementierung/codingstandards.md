@@ -14,6 +14,10 @@ Naming
 * Template-Arguments use PascalCase
 * getters are often better named without ‘get’: foo.data() instead of foo.getData()
 * If there are setters (which is often a sign of bad design) the getters should however be named getFoo()
+* Namespaces should be named lowercase and not longer than five characters (three or four is better)
+* All namespaces should be sub-namespaces of cvv: cvv::impl, cvv::util, …
+* All our include-guards will be named like this: CVVISUAL\_FILENAME\_HPP
+
 
 Technical
 ---------
@@ -41,3 +45,7 @@ Code
 * Don't mix signed and unsigned integers. If in doubt: use size\_t
 * Your Include-guards should all have the form of CVVISUAL\_FILE\_NAME\_HPP (opencv's naming convention
 	results in undefined behaviour)
+* Place your files in the appropriate subdir of src/
+* Prefer ´using foo = bar;´ over ´typedef bar foo;´
+* Don't use macros! (except you absolutely have to)
+* If your method only consists of one trivial statement consider putting it into the class-definition
