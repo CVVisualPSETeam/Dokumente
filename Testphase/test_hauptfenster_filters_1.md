@@ -36,14 +36,18 @@ sowie zuletzt
 	* Wechsle zurück auf DefaultFilterView: Öffnet sich
 	* __Resume (vom dilate window)__: dilate, sobel, morphologyEx
 #####Erweiterte Funktionalität:
-* __Zoom__: rein- und rauszoomen funktioniert.
+* __Zoom__(Overview): rein- und rauszoomen funktioniert.
 * _STFL-Test_
 * Doppelklick morphologyEx call: Öffnet sich
 * __Schließe tab__: Schließt sich.
 * Öffne tab wieder. Versuche zusätzliches, __zweites tab__ von morphologyEx zu öffnen.
+* __Doppelter Rechtsklick__ auf tab und call von morphologyEx,  __doppelter Linksklick auf tab__.
 * Linksklick morphologyEx __tab -> Remove__: Funktioniert ordnungsgemäß.
+* Versuche, __zweites window__ von dilate zu öffnen.
 #####`Exit program`-button
 * Resume (beliebig): __Button ändert sich__ in beiden Fenstern auf `Exit program`
 * Öffne sobel __in neuem Fenster: `Exit program` button__ darin.
 * Beliebiger `Exit program`: __Schließt alle Fenster__.
 * __Programm__ ordnungsgemäß __beendet__.
+#####Weiteres
+* Selbes Programm unmttelbar danach __nocheinmal ausführen__: Funktioniert ordnungsgemäß; keine "Rückstände" vom letzten Mal.
