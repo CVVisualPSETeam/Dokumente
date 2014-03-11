@@ -12,11 +12,7 @@ API und Funktionalität
 
 Interna
 -------
-
-* `Optinal` entfernt: wurde nicht verwendet
 * deutlich erhöhter Gebrauch blanker Pointer, da Qt dies effektiv erzwingt.
-* Zusätzliche Klasse `ObeserverPtr`, effektiv ein Pointer der durch seinen Typ signalisiert, dass er nicht
-  ownend ist. Wurde nötig, da an einigen Stellen spät initialisierte Referenzen benötigt wurden.
 
 Interne Details (Auszug)
 ------------------------
@@ -24,6 +20,20 @@ Interne Details (Auszug)
 * cvv::impl::FilterCall::input() umbenannt nach original()
 * cvv::impl::FilterCall::output() umbenannt nach result()
 
+Nicht implementierte Klassen
+-----------------------------
+* `Optinal`: wurde nicht verwendet
+* `GroupOperatorWidget`: Die Funktionalität erschien eher überflüssig.
+
+Zusätzliche Klassen
+--------------------
+* `ObeserverPtr`: Effektiv ein Pointer der durch seinen Typ signalisiert, dass er nicht
+  ownend ist. Wurde nötig, da an einigen Stellen spät initialisierte Referenzen benötigt wurden.
+* `RegisterHelper`: Da das Registieren von Fabrikmethoden und die Auswahl dieser durch eine ComboBox
+  mehrmals benötigt wurde.
+* `Signal`, `Slot` und ihre Varianten: Da Qt den einsatz von Templates und Signal oder Slots in einer
+  Klasse verbietet, wurden diese Klassen als Wrapper für Signale und Slots verwendet. 
+  
 Sonstige Änderungen
 ===================
 
