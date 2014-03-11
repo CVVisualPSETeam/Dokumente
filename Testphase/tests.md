@@ -5,7 +5,7 @@
 ###Accordion
 __Source:__ /manual\_test/accordion
 
-__Excutable:__ /build/debug/test\_manual\_acordion
+__Executable:__ /build/debug/test\_manual\_acordion
 
 __Accordion Test:__
 
@@ -36,7 +36,7 @@ title 5 at position 5
 ###AutoFilterWidget
 __Source:__ /manual\_test/autofilterwidget
 
-__Excutable:__ /build/debug/test\_manual\_autofilterwidget
+__Executable:__ /build/debug/test\_manual\_autofilterwidget
 
 __AutoFilterWidget Test:__
 
@@ -64,7 +64,7 @@ in the top of "afw"
 ###Collapsable
 __Source:__ /manual\_test/collapsable
 
-__Excutable:__ /build/debug/test\_manual\_collapsable
+__Executable:__ /build/debug/test\_manual\_collapsable
 
 __Collapsable Test:__
 
@@ -82,11 +82,11 @@ __Collapsable Test:__
 ###Debug Printer
 __Source:__ /manual\_test/dbg_printer
 
-__Excutable:__ /build/debug/test\_manual\_dbg\_printer
+__Executable:__ /build/debug/test\_manual\_dbg\_printer
 ###DefaultFilterView
 __Source:__ /manual\_test/defaultfilterviewtest
 
-__Excutable:__ /build/debug/test\_manual\_defaultfilterview
+__Executable:__ /build/debug/test\_manual\_defaultfilterview
 
 __DefaultFilterView Test:__
 
@@ -115,7 +115,7 @@ The accordion menu should consist of the following collapsables:
 ###DepthMatchView
 __Source:__ /manual\_test/depthviewtest
 
-__Excutable:__ /build/debug/test\_manual\_depthviewtest
+__Executable:__ /build/debug/test\_manual\_depthviewtest
 
 __DepthMatchView Test:__
 
@@ -145,7 +145,7 @@ return 0.
 ###DualFilterView
 __Source:__ /manual\_test/dual\_filter_filter
 
-__Excutable:__ /build/debug/test\_manual\_dualfilterview
+__Executable:__ /build/debug/test\_manual\_dualfilterview
 
 __DualFilterView Test:__
 
@@ -192,7 +192,7 @@ The accordion menu should consist of the following collapsables:
 ###FilterCallTab
 __Source:__ /manual\_test/filter\_call_tab
 
-__Excutable:__ /build/debug/test\_manual\_filtercalltab
+__Executable:__ /build/debug/test\_manual\_filtercalltab
 
 __FilterCallTab Test:__
 
@@ -232,7 +232,7 @@ now shows the one you set as default before.
 ###Filters
 __Source:__ /manual\_test/filters
 
-__Excutable:__ /build/debug/test\_manual\_filters
+__Executable:__ /build/debug/test\_manual\_filters
 
 __Filters Test:__
 
@@ -251,11 +251,11 @@ Clicking the Close-button results in the termination of the program with 0 as ex
 ###finalShow Crash
 __Source:__ /manual\_test/final\_show_crash
 
-__Excutable:__ /build/debug/test\_manual\_final\_show\_crash
+__Executable:__ /build/debug/test\_manual\_final\_show\_crash
 ###FilterSelectorWidget
 __Source:__ /manual\_test/fsw
 
-__Excutable:__ /build/debug/test\_manual\_fsw
+__Executable:__ /build/debug/test\_manual\_fsw
 
 __FilterSelectionWidget Test:__
 
@@ -268,7 +268,7 @@ __FilterSelectionWidget Test:__
 ###(Single)ImageCallTab
 __Source:__ /manual\_test/image\_call_tab
 
-__Excutable:__ /build/debug/test\_manual\_imagecalltab
+__Executable:__ /build/debug/test\_manual\_imagecalltab
 
 __ImageCallTab Test:__
 
@@ -286,7 +286,7 @@ The help page of Single Image View should open in a web browser.
 ###Image Conversion
 __Source:__ /manual\_test/imageconvert
 
-__Excutable:__ /build/debug/test\_manual\_imageconvert
+__Executable:__ /build/debug/test\_manual\_imageconvert
 
 __Image Conversion Test:__
 
@@ -341,7 +341,7 @@ gray square, dark green square, yellow-green square and the rook image.
 ###Image Conversion Performance
 __Source:__ /manual\_test/imageconvertperf
 
-__Excutable:__ /build/debug/test\_manual\_imageconvertperf
+__Executable:__ /build/debug/test\_manual\_imageconvertperf
 
 __Image Conversion Performance Test:__
 
@@ -370,7 +370,7 @@ __Image Conversion Performance Test:__
 ###(Single)ImageView
 __Source:__ /manual\_test/imageview
 
-__Excutable:__ /build/debug/test\_manual\_imageview
+__Executable:__ /build/debug/test\_manual\_imageview
 
 __(Single)ImageView Test:__
 
@@ -386,7 +386,7 @@ The information about the image in the collapsable should be correct.
 ###LineMatchView
 __Source:__ /manual\_test/linematchviewtest
 
-__Excutable:__ /build/debug/test\_manual\_linematchviewtest
+__Executable:__ /build/debug/test\_manual\_linematchviewtest
 
 __LinematchView Test:__
 
@@ -415,7 +415,7 @@ return 0.
 ###Matches
 __Source:__ /manual\_test/match
 
-__Excutable:__ /build/debug/test\_manual\_match
+__Executable:__ /build/debug/test\_manual\_match
 
 __Match Test:__
 
@@ -432,7 +432,7 @@ Clicking the Close-button results in the termination of the program with 0 as ex
 ###MatchCallTab
 __Source:__ /manual\_test/match\_call_tab
 
-__Excutable:__ /build/debug/test\_manual\_matchcalltab
+__Executable:__ /build/debug/test\_manual\_matchcalltab
 
 __MatchCallTab Test:__
 
@@ -471,11 +471,11 @@ now shows the one you set as default before.
 ###Multiple Calls
 __Source:__ /manual\_test/multiple_calls
 
-__Excutable:__ /build/debug/test\_manual\_multiple\_final\_calls
+__Executable:__ /build/debug/test\_manual\_multiple\_final\_calls
 ###MultiViewCallTab
 __Source:__ /manual\_test/multiview\_call_tab
 
-__Excutable:__ /build/debug/test\_manual\_multiviewcalltab
+__Executable:__ /build/debug/test\_manual\_multiviewcalltab
 
 __MultiViewCallTab Test:__
 
@@ -515,7 +515,7 @@ now both show the one you set as default before.
 ###RegisterHelper
 __Source:__ /manual\_test/registerhelper
 
-__Excutable:__ /build/debug/test\_manual\_registerhelper
+__Executable:__ /build/debug/test\_manual\_registerhelper
 
 __RegisterHelper Test:__
 
@@ -535,7 +535,7 @@ is printed to std::out
 ###SignalSlot
 __Source:__ /manual\_test/signalslot
 
-__Excutable:__ /build/debug/test\_manual\_signslot
+__Executable:__ /build/debug/test\_manual\_signslot
 
 __SignalSlot Test:__
 
@@ -545,7 +545,7 @@ __SignalSlot Test:__
 ###Single Image
 __Source:__ /manual\_test/single_image
 
-__Excutable:__ /build/debug/test\_manual\_single\_image
+__Executable:__ /build/debug/test\_manual\_single\_image
 
 __SingleImage Test:__
 
@@ -561,7 +561,7 @@ Clicking the Close-button results in the termination of the program with 0 as ex
 ###SingleFilterView
 __Source:__ /manual\_test/singlefilterviewtest
 
-__Excutable:__ /build/debug/test\_manual\_singlefilterview
+__Executable:__ /build/debug/test\_manual\_singlefilterview
 
 __SingleFilterView Test:__
 
@@ -603,7 +603,7 @@ The accordion menu should consist of the following collapsables:
 ###Test All
 __Source:__ /manual\_test/test_all
 
-__Excutable:__ /build/debug/test\_manual\_all
+__Executable:__ /build/debug/test\_manual\_all
 
 __Test All:__
 
@@ -621,7 +621,7 @@ Clicking the Close-button results in the termination of the program with 0 as ex
 ###TranslationMatchView
 __Source:__ /manual\_test/translationviewtest
 
-__Excutable:__ /build/debug/test\_manual\_translationviewtest
+__Executable:__ /build/debug/test\_manual\_translationviewtest
 
 __TranslationMatchView Test:__
 
@@ -650,7 +650,7 @@ return 0
 ###ZoomableImage
 __Source:__ /manual\_test/zoomableimage
 
-__Excutable:__ /build/debug/test\_manual\_zoomableimage
+__Executable:__ /build/debug/test\_manual\_zoomableimage
 
 __ZoomableImage Test:__
 
