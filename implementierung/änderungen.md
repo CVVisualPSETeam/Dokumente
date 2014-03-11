@@ -7,7 +7,7 @@ API und Funktionalität
 * Keine Thread-safety, da Qt keine GUI außerhalb eines main-threads mag
 * `finalShow()` nötig, da geleakte QApplications verboten sind
 * `FinalShowCaller` hinzugefügt um `finalShow` via RAII aufrufen zu können
-* `debugDilate/Erode/…` als debugFilter vereinheitlicht, da Funktionalität identisch
+* `debugDilate/Erode/…` als `debugFilter()` vereinheitlicht, da Funktionalität identisch
 * Möglichkeit ein einzelnes Bild anzuzeigen hinzugefügt (`showImage()`)
 
 Interna
