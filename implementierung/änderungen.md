@@ -15,7 +15,7 @@ Interna
 
 * `Optinal` entfernt: wurde nicht verwendet
 * deutlich erhöhter Gebrauch blanker Pointer, da Qt dies effektiv erzwingt.
-* Zusätzliche Klasse ObeserverPtr, effektiv ein Pointer der durch seinen Typ signalisiert, dass er nicht
+* Zusätzliche Klasse `ObeserverPtr`, effektiv ein Pointer der durch seinen Typ signalisiert, dass er nicht
   ownend ist. Wurde nötig, da an einigen Stellen spät initialisierte Referenzen benötigt wurden.
 
 Interne Details (Auszug)
