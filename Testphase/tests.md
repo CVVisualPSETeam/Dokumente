@@ -1,6 +1,13 @@
 #Tests
+Since CVVisual is highly GUI-oriented, there are only few automated tests for basic functionality while most features are to be tested manually by interacting with portions of the program and checking whether the result fits the expectations.
 ##Automatic Tests
-...
+Automated tests exist for the following low-level features and classes:
+
+- the __debug-flag__ (cvv::debugMode etc.)
+- __cvv::util::isAnyOf__
+- the Location-macro (__CVVISUAL\_LOCATION__)
+- __cvv::util::ObserverPtr__
+- __cvv::util::Reference__
 ##Manual Tests
 ###Accordion
 __Source:__ /manual\_test/accordion
@@ -79,10 +86,7 @@ __Collapsable Test:__
 
 
         loooooooooooooooooooooooooong line
-###Debug Printer
-__Source:__ /manual\_test/dbg_printer
 
-__Executable:__ /build/debug/test\_manual\_dbg\_printer
 ###DefaultFilterView
 __Source:__ /manual\_test/defaultfilterviewtest
 
@@ -252,6 +256,12 @@ Clicking the Close-button results in the termination of the program with 0 as ex
 __Source:__ /manual\_test/final\_show_crash
 
 __Executable:__ /build/debug/test\_manual\_final\_show\_crash
+
+__finalShow Test:__
+
+This test just calls finalShow.
+
+The expected behaviour is that basically nothing will happen before the program terminates without crash.
 ###FilterSelectorWidget
 __Source:__ /manual\_test/fsw
 
@@ -260,7 +270,7 @@ __Executable:__ /build/debug/test\_manual\_fsw
 __FilterSelectionWidget Test:__
 
 - a window will pop up
-- it will contain a combo box (options "A", "B", initialli "A" is selected)
+- it will contain a combo box (options "A", "B", initially "A" is selected)
   a text ("A")
   and a button ("apply")
 - if a option X from the combo box is selected the text will change to "X"
@@ -468,10 +478,19 @@ The accordion collapsable should still be open.
 7. Run the test again to see if the window showing the default View
 now shows the one you set as default before.
 [-> "Set as default" works]
-###Multiple Calls
+###Multiple Final Calls
 __Source:__ /manual\_test/multiple_calls
 
 __Executable:__ /build/debug/test\_manual\_multiple\_final\_calls
+
+__Multiple Final Calls Test:__
+
+This test calls showImage for every provided image followed by a call to finalShow for each.
+
+The expected behaviour is that for every Image img the debug-framework will open once with one
+SingleImage-call and get into the final-call modus after steping forward once. After closing
+it, the same should happen with the next Image, whereby all old state was deleted between these
+calls.
 ###MultiViewCallTab
 __Source:__ /manual\_test/multiview\_call_tab
 

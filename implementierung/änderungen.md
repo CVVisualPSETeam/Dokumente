@@ -1,4 +1,4 @@
-﻿Änderungen gegenüber dem Entwurf
+Änderungen gegenüber dem Entwurf
 ================================
 
 API und Funktionalität
@@ -41,7 +41,7 @@ Zusätzliche Klassen
   Klasse verbietet, wurden diese Klassen als Wrapper für Signale und Slots verwendet. 
 * `ImageView`: Visualisierung eines einzelnen Bildes; im Zusammenhang mit `showImage()`(s. oben) verwendet.
 * `ImagecallTab`: Tab für den `ImageView`.
-* `MutliViewCallTab`: Oberklasse über Tabs, die mehr als einen View unterstützen. Wurde hinzugefügt, um die gemeinsame Funktionalität dieser an einer Stelle zu bündeln und durch die Templates die erweiterbarkeit zu verbessern. Erbt von `CallTab` und `RegisterHelper`(und verwendet davon die `QComboBox` zur Auswahl der Views). Bietet zusätzlich über den entwurf hinausgehend einen `Set as default`-Button und eine Historie, in der die Zustände der ausgewechselten Views erhalten bleiben, da sich beides während der Implementierungs- und Testphase als sinnvoll herausgestellt hat.
+* `MutliViewCallTab`: Oberklasse über Tabs, die mehr als einen View unterstützen. Wurde hinzugefügt, um die gemeinsame Funktionalität dieser an einer Stelle zu bündeln und durch Templates die Erweiterbarkeit zu verbessern. Erbt von `CallTab` und `RegisterHelper`(und verwendet davon die `QComboBox` zur Auswahl der Views). Bietet zusätzlich über den entwurf hinausgehend einen `Set as default`-Button und eine Historie, in der die Zustände der ausgewechselten Views erhalten bleiben, da sich beides während der Implementierungs- und Testphase als sinnvoll herausgestellt hat.
 * `ZoomabelOptPanel`: ergab sich bei der Schaffung der Konvertierungsfunktion cv::Mat=>QPixmap.
 * `SyncZoomWidget`: Die Syncronisierung des Zoomes wurde im Entwurf nicht geschaffen da die benötigten Details nicht klar waren. 
 * `DepthMatchView`: Bei der Implementierung der anderen views ergab sich dieser View durch geringfügige änderungen.
