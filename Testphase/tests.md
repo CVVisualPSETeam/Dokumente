@@ -8,6 +8,61 @@ Automated tests exist for the following low-level features and classes:
 - the Location-macro (__CVVISUAL\_LOCATION__)
 - __cvv::util::ObserverPtr__
 - __cvv::util::Reference__
+
+###Debug Flag
+__Source:__ /test/test\_debug\_flag.cpp
+
+__Debug Flag Test:__
+
+Tests whether `cvv::debugMode()` and `cvv::setDebugFlag(bool)` (from _/include/opencv2/debug\_mode.hpp_)
+behave correctly.
+
+###cvv::util::isAnyOf
+__Source:__ /test/test\_is\_any\_of.cpp
+
+__cvv::util::isAnyOf Test:__
+
+Tests whether the `cvv::util::isAnyOf()` function (from _/src/util/util.hpp_) correctly recognises the first parameter as element or 
+not element of the data structure in the second parameter for the following structures:
+
+- Initializer lists with `int int`
+- Initializer lists with `long int`
+- Vectors of `int int`
+- Vectors of `long int`
+
+###CVVISUAL_LOCATION
+__Source:__ /test/test_location.cpp
+
+__CVVISUAL_LOCATION Test:__
+
+Tests whether the `CVVISUAL_LOCATION` macro (from _/include/opencv2/call\_meta\_data.hpp_)
+works as expected, i.e. the instance of `cvv::impl::CallMetaData` as which it gets defined has the correct data.
+The second test in this file checks wether a `cvv::impl::CallMataData` created by hand and with an empty
+initializer list has no known location, as it is supposed to be.
+
+###Observer Pointer
+__Source:__ /test/test\_observer\_ptr.cpp
+
+__cvv::util::ObserverPtr Test:__
+
+Verifies that assigning `nullptr` and a nonzero value to a `cvv::util::ObserverPtr<Int>` 
+(from _/src/util/observer_ptr.hpp_) work and that `isNull()` and `getPtr()` return the correct result.
+
+###cvv::util::Reference
+__Source:__ /test/test\_reference
+
+__cvv::util::Reference Test:__
+
+Makes sure that
+
+- creating, reassigning and comparing `cvv::util::Reference<int>`s (from _/src/util/util.hpp_) 
+works, 
+as well as the
+- `makeRef()` and `getPtr()` functions; that
+- `Reference<const int>`s can be created with `makeRef(const int)`, `{const int}` initializer list
+and via `Reference<const int>{int}` and, finally, that 
+- `cvv::util::Reference`s of super classes can be constructed with derived classes and 
+- `Reference`s to base classes can be `castTo()` `References` to the derived classes, but not the other way.
 ##Manual Tests
 ###Accordion
 __Source:__ /manual\_test/accordion
