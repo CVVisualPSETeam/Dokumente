@@ -35,6 +35,18 @@ Interne Details (Auszug)
   Benutzung zu vereinfachen (der Konstruktor war mit den vielen Argumenten 
   einfachen nicht verwendbar), außerdem wurde die QList Klasse an manchen 
   Stellen durch die std::vector Klasse ersetzt.
+* `cvv::qtutil::IntervalSelectorWidget` umbenannt nach `IntervallSelector`
+	Interface komplett geändert: bietet nun eine Funktion `select` an, die 
+	eine angegebene Menge filtert.
+* `cvv::qtutil::RelativePortionSelectorWidget` umbenannt nach `PortionSelector`
+	Interface komplett geändert: bietet nun eine Funktion `select` an, die 
+	eine angegebene Menge filtert.
+* `cvv::qtutil::AutoFilter`: Interface wurde erweitert, um die Benutzung 
+  zu vereinfachen.
+* `cvv::qtutil::FilterSelectorWidget`: Interface wurde erweitert, um die 
+  Benutzung zu vereinfachen.
+* `cvv::qtutil::ZoomableImage`: Interface wurde erweitert, um die Benutzung 
+  zu vereinfachen.
 
 Nicht implementierte Klassen
 -----------------------------
@@ -43,6 +55,7 @@ Nicht implementierte Klassen
 * `HelpButton`: Innerhalb von `MultiViewCallTab` durch einen normalen 
   `QPushButton` realisiert.
 * `ProjectionView` Funktionalität wurde nicht programmiert
+* `SelectableHistogram`: wurde durch die änderung von `IntervalSelectorWidget` nicht mehr benötigt.
 
 Zusätzliche Klassen
 --------------------
