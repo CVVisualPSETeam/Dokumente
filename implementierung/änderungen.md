@@ -90,6 +90,13 @@ Zusätzliche Klassen
   implementiert.
 * `TabWidget`: Eine QTabWidget die den Zugriff auf die geschützte Methode 
   `tabBar()` erlaubt.
+* Unterklassen von `FilterFunctionWidget`:
+  `ChangedPixelsWidget`: A Comparator that will create a Mat that highlights exactly the changed pixels (black) and leaves unchanged pixels white.
+  `ChannelReorderFilter`: Class providing a filter that reorders an input mat's channels.
+  `DiffFilterFunction`: Class providing functionality to compute a difference image of two input matrices.
+  `GrayFilterWidget`: Represents a gray filter.
+  `OverlayFilterWidget`: Class providing functionality to compute an overlay image of two input matrices.
+  `SobelFilterWidget`: Represents the OpenCV sobel filter.
 
 Sonstige Änderungen
 ===================
