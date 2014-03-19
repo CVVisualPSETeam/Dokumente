@@ -99,16 +99,16 @@ Zusätzliche Klassen
   Funktionalität aussehen würde, und wurde somit erst in der Implementierung
   geschaffen.
 * Unterklassen von `MatchSettings/KeyPointSettings`:
-	* `FalseColorMatchPen/-KeyPoint`: setzt die Farbe des Matches/KeyPoints
+	* `FalseColorMatchPen/-KeyPoint`: Setzt die Farbe des Matches/KeyPoints
 	  nach einer Falschfarbenskalar in colorutil.hpp.
-	* `SingleColorMatchPen/-KeyPoint`: gibt den Benutzer die Möglichkeit
+	* `SingleColorMatchPen/-KeyPoint`: Gibt den Benutzer die Möglichkeit
 	  die Farbe der Matches/KeyPoints zu wählen.
-	* `Match-/KeyPointsShowSetting`:wurde durch umstrukturierung auskommentiert
+	* `Match-/KeyPointsShowSetting`:Wurde durch umstrukturierung auskommentiert
 	  könnte später bei Änderung der Selection benutzt werden.
-	* `Match-/KeyPointsSettingSelector`:gibt den benutzer die Auswahlmöglichkeit
+	* `Match-/KeyPointsSettingSelector`:Gibt den benutzer die Auswahlmöglichkeit
 	  verschiedene Match-/KeyPointSettings zu benutzen, verhält sich nach außen 
 	  als wäre es das ausgewählte Setting
-	* `Match-/KeyPointManagement`: ist durch die Settings Schnitstelle 
+	* `Match-/KeyPointManagement`: Ist durch die Settings Schnitstelle 
 	  mit den Matches/KeyPoints verbunden und wird weiter unten erklärt.
 * `MatchSelection/KeyPointSelection`: Die QGraphicScene hatte ein anderes
   Verhalten als beim Entwurf angenohmen. Die Selection funktioniert zurzeit nur
