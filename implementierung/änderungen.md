@@ -1,4 +1,4 @@
-Änderungen gegenüber dem Entwurf
+﻿Änderungen gegenüber dem Entwurf
 ================================
 
 API und Funktionalität
@@ -98,12 +98,32 @@ Zusätzliche Klassen
 * `MatchSettings/KeyPointSettings`: Im Entwurf war noch nicht klar wie diese
   Funktionalität aussehen würde, und wurde somit erst in der Implementierung
   geschaffen.
+* Unterklassen von `MatchSettings/KeyPointSettings`:
+	* `FalseColorMatchPen/-KeyPoint`: setzt die Farbe des Matches/KeyPoints
+	  nach einer Falschfarbenskalar in colorutil.hpp.
+	* `SingleColorMatchPen/-KeyPoint`: gibt den Benutzer die Möglichkeit
+	  die Farbe der Matches/KeyPoints zu wählen.
+	* `Match-/KeyPointsShowSetting`:wurde durch umstrukturierung auskommentiert
+	  könnte später bei Änderung der Selection benutzt werden.
+	* `Match-/KeyPointsSettingSelector`:gibt den benutzer die Auswahlmöglichkeit
+	  verschiedene Match-/KeyPointSettings zu benutzen, verhält sich nach außen 
+	  als wäre es das ausgewählte Setting
+	* `Match-/KeyPointManagement`: ist durch die Settings Schnitstelle 
+	  mit den Matches/KeyPoints verbunden und wird weiter unten erklärt.
 * `MatchSelection/KeyPointSelection`: Die QGraphicScene hatte ein anderes
   Verhalten als beim Entwurf angenohmen. Die Selection funktioniert zurzeit nur
   mit den Datentypen von OpenCV und nicht mit den intern benutzten Typen
   `CVVMatch`/`CVVKeyPoint`, dies kann "einfach" geändert werden da
   CVVMatch/CVKeyPoint von `cv::DMatch`/`cv::KeyPoint` erben, allerdings
-  existieren teilweise Matches doppelt (z.B. im Translationview).
+  existieren teilweise Matches/KeyPoints doppelt (z.B. im Translationview).
+* Unterklassen von `MatchSelection/KeyPointSelection`:
+	* `Match-/KeyPointPortionSelector`:Wrapper für PortionSelector welcher im 
+	  Match-/KeyPointSelectionSelector benutzt wird.
+	* `Match-/KeyPointIntervallSelector`: Wrapper für IntervallSelector welcher im 
+	  Match-/KeyPointSelectionSelector benutzt wird.
+	* `Match-/KeyPointSelectionSelector`: Gibt dem Benutzer die Möglichkeit
+	  verschiedene Match-/KeyPointSelection zu benutzen, verhält sich wie das 
+	  ausgewählte Match-/KeyPointSelection.
 * `MatchManagement`/`KeyPointManagement`: ergab sich aus den beiden oberen
   Klassen.
 * `RawviewWindow`: Vereinfacht die Benutzung des Rawviews als Matchselector.
