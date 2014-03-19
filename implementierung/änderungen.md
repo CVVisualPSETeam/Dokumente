@@ -19,34 +19,42 @@ Interna
 
 Interne Details (Auszug)
 ------------------------
-* `cvv::impl::FilterCall::input()` umbenannt nach `original()`.
-* `cvv::impl::FilterCall::output()` umbenannt nach `result()`.
-* `cvv::gui::MatchCallTab::addMatchViewToMap()` wurde durch das einfacher zu
+* `FilterCall::input()` umbenannt nach `original()`.
+* `FilterCall::output()` umbenannt nach `result()`.
+* `MatchCallTab::addMatchViewToMap()` wurde durch das einfacher zu
   verwendende `registerMatchView() `ersetzt; `registerElement()`,
   das `MatchCallTab` von `RegisterHelper` erbt, stellt die originale
   Funktionalität noch zur Verfügung.
-* `cvv::gui::FilterCallTab::addFilterViewToMap()` ebenso (ersetzt durch
+* `FilterCallTab::addFilterViewToMap()` ebenso (ersetzt durch
   `registerFilterView()`).
-* `cvv::view::PointTranslationView` umbenannt nach
-  "cvv::view::TranslationMatchView"
+* `PointTranslationView` umbenannt nach
+  `TranslationMatchView`
 * `KeyPoint-Match` Es gibt eine sehr stark parrallele Entwicklung,
   da Qt keine Templates akzeptiert
-* `cvv::stfl::STFLEngine`: Es sind diverse Methoden hinzugekommen, um die
+* `STFLEngine`: Es sind diverse Methoden hinzugekommen, um die
   Benutzung zu vereinfachen (der Konstruktor war mit den vielen Argumenten
   einfachen nicht verwendbar), außerdem wurde die QList Klasse an manchen
   Stellen durch die std::vector Klasse ersetzt.
-* `cvv::qtutil::IntervalSelectorWidget` umbenannt nach `IntervallSelector`
+* `IntervalSelectorWidget` umbenannt nach `IntervallSelector`
   Interface komplett geändert: bietet nun eine Funktion `select` an, die
   eine angegebene Menge filtert.
-* `cvv::qtutil::RelativePortionSelectorWidget` umbenannt nach `PortionSelector`
+* `RelativePortionSelectorWidget` umbenannt nach `PortionSelector`
   Interface komplett geändert: bietet nun eine Funktion `select` an, die
   eine angegebene Menge filtert.
-* `cvv::qtutil::AutoFilter`: Interface wurde erweitert, um die Benutzung
+* `AutoFilter`: Interface wurde erweitert, um die Benutzung
   zu vereinfachen.
-* `cvv::qtutil::FilterSelectorWidget`: Interface wurde erweitert, um die
+* `FilterSelectorWidget`: Interface wurde erweitert, um die
   Benutzung zu vereinfachen.
-* `cvv::qtutil::ZoomableImage`: Interface wurde erweitert, um die Benutzung
+* `ZoomableImage`: Interface wurde erweitert, um die Benutzung
   zu vereinfachen.
+* Jegliche ´*Collumn*` Klassen wurden zu `*Row*` Klassen, da dies deren
+  Bedeutung besser abbildet (einhergehend wurden auch sämtliche Methodenname,
+  etc. geändert)
+* `RawviewTableRow`: Unterscheidung zwischen simplem KeyPoint und einem Match in
+  Kombination mit zwei KeyPoints, `rowsToText(...)` zur textuellen Ausgabe
+  hinzugefügt.
+* `ViewController`: Einbau verschiedener Betriebsmodi.
+* `RawviewTableRow`: 
 
 Nicht implementierte Klassen
 -----------------------------
@@ -99,6 +107,9 @@ Zusätzliche Klassen
 * `MatchManagement`/`KeyPointManagement`: ergab sich aus den beiden oberen
   Klassen.
 * `RawviewWindow`: Vereinfacht die Benutzung des Rawviews als Matchselector.
+* `RawviewGroupSubtable`: Kam hinzu, da der Rawview analog zum OverviewPanel
+  aufgebaut wurde. Sie ermöglicht es, dass Elemente im Rawview auch gruppiert
+  dargestellt werden können.
 * `STFLQueryWidgetCompleter`, `STFLQueryWidgetLineEdit`: Ein LineEdit mit
   eingebauter Vorschlagsfunktion war wieder erwarten nicht in Qt selbst
   implementiert.
