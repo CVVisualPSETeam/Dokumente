@@ -1,0 +1,169 @@
+<h1 id="änderungen-gegenüber-dem-entwurf">Änderungen gegenüber dem Entwurf</h1>
+<h2 id="api-und-funktionalität">API und Funktionalität</h2>
+<ul>
+<li>Keine Thread-safety, da Qt keine GUI außerhalb eines main-threads mag</li>
+<li><code>finalShow()</code> nötig, da geleakte QApplications verboten sind</li>
+<li><code>FinalShowCaller</code> hinzugefügt um <code>finalShow</code> via RAII aufrufen zu können</li>
+<li><code>debugDilate/Erode/…</code> als <code>debugFilter()</code> vereinheitlicht, da Funktionalität
+identisch</li>
+<li>Möglichkeit ein einzelnes Bild anzuzeigen hinzugefügt (<code>showImage()</code>)</li>
+</ul>
+<h2 id="interna">Interna</h2>
+<ul>
+<li>deutlich erhöhter Gebrauch blanker Pointer, da Qt dies effektiv erzwingt.</li>
+<li>inkonsistentere Verwendung der Qt Kontainerklassen, da diese öfters Probleme
+machten und deswegen durch Standardkontainer ersetzt wurden</li>
+</ul>
+<h2 id="interne-details-auszug">Interne Details (Auszug)</h2>
+<ul>
+<li><code>FilterCall::input()</code> umbenannt nach <code>original()</code>.</li>
+<li><code>FilterCall::output()</code> umbenannt nach <code>result()</code>.</li>
+<li><code>MatchCallTab::addMatchViewToMap()</code> wurde durch das einfacher zu
+verwendende <code>registerMatchView()</code>ersetzt; <code>registerElement()</code>,
+das <code>MatchCallTab</code> von <code>RegisterHelper</code> erbt, stellt die originale
+Funktionalität noch zur Verfügung.</li>
+<li><code>FilterCallTab::addFilterViewToMap()</code> ebenso (ersetzt durch
+<code>registerFilterView()</code>).</li>
+<li><code>PointTranslationView</code> umbenannt nach
+<code>TranslationMatchView</code></li>
+<li><code>KeyPoint-Match</code> Es gibt eine sehr stark parrallele Entwicklung,
+da Qt keine Templates akzeptiert</li>
+<li><code>STFLEngine</code>: Es sind diverse Methoden hinzugekommen, um die
+Benutzung zu vereinfachen (der Konstruktor war mit den vielen Argumenten
+einfachen nicht verwendbar), außerdem wurde die QList Klasse an manchen
+Stellen durch die std::vector Klasse ersetzt.</li>
+<li><code>IntervalSelectorWidget</code> umbenannt nach <code>IntervallSelector</code>
+Interface komplett geändert: bietet nun eine Funktion <code>select</code> an, die
+eine angegebene Menge filtert.</li>
+<li><code>RelativePortionSelectorWidget</code> umbenannt nach <code>PortionSelector</code>
+Interface komplett geändert: bietet nun eine Funktion <code>select</code> an, die
+eine angegebene Menge filtert.</li>
+<li><code>AutoFilter</code>: Interface wurde erweitert, um die Benutzung
+zu vereinfachen.</li>
+<li><code>FilterSelectorWidget</code>: Interface wurde erweitert, um die
+Benutzung zu vereinfachen.</li>
+<li><code>ZoomableImage</code>: Interface wurde erweitert, um die Benutzung
+zu vereinfachen.</li>
+<li>Jegliche <code>Collumn</code>-Klassen wurden zu <code>Row</code>-Klassen, da dies deren
+Bedeutung besser abbildet (einhergehend wurden auch sämtliche Methodenname,
+etc. geändert)</li>
+<li><code>RawviewTableRow</code>: Unterscheidung zwischen simplem KeyPoint und einem Match in
+Kombination mit zwei KeyPoints, <code>rowsToText(...)</code> zur textuellen Ausgabe
+hinzugefügt.</li>
+<li><code>ViewController</code>: Einbau verschiedener Betriebsmodi.</li>
+<li><code>RawviewTableRow</code>:</li>
+</ul>
+<h2 id="nicht-implementierte-klassen">Nicht implementierte Klassen</h2>
+<ul>
+<li><code>Optional</code>: wurde nicht verwendet</li>
+<li><code>GroupOperatorWidget</code>: Die Funktionalität erschien eher überflüssig.</li>
+<li><code>HelpButton</code>: Innerhalb von <code>MultiViewCallTab</code> durch einen normalen
+<code>QPushButton</code> realisiert.</li>
+<li><code>ProjectionView</code> Funktionalität wurde nicht programmiert</li>
+<li><code>SelectableHistogram</code>: wurde durch die änderung von <code>IntervalSelectorWidget</code>
+nicht mehr benötigt.</li>
+</ul>
+<h2 id="zusätzliche-klassen">Zusätzliche Klassen</h2>
+<ul>
+<li><code>ObeserverPtr</code>: Effektiv ein Pointer der durch seinen Typ signalisiert,
+dass er nicht ownend ist. Wurde nötig, da an einigen Stellen spät
+initialisierte Referenzen benötigt wurden.</li>
+<li><code>RegisterHelper</code>: Da das Registieren von Fabrikmethoden und die Auswahl
+dieser durch eine ComboBox mehrmals benötigt wurde.</li>
+<li><code>Signal</code>, <code>Slot</code> und ihre Varianten: Da Qt den Einsatz von Templates und
+Signal oder Slots in einer
+Klasse verbietet, wurden diese Klassen als Wrapper für Signale und Slots
+verwendet.</li>
+<li><code>ImageView</code>: Visualisierung eines einzelnen Bildes; im Zusammenhang mit
+<code>showImage()</code>(s. oben) verwendet.</li>
+<li><code>ImagecallTab</code>: Tab für den <code>ImageView</code>.</li>
+<li><code>MultiViewCallTab</code>: Oberklasse über Tabs, die mehr als einen View
+unterstützen. Wurde hinzugefügt, um die gemeinsame Funktionalität dieser an
+einer Stelle zu bündeln und durch Templates die Erweiterbarkeit zu verbessern.
+Erbt von <code>CallTab</code> und <code>RegisterHelper</code>(und verwendet davon die <code>QComboBox</code>
+zur Auswahl der Views). Bietet zusätzlich über den Entwurf hinausgehend einen
+<code>Set as default</code>-Button und eine Historie, in der die Zustände der
+ausgewechselten Views erhalten bleiben, da sich beides während der
+Implementierungs- und Testphase als sinnvoll herausgestellt hat.</li>
+<li><code>ZoomabelOptPanel</code>: ergab sich bei der Schaffung der Konvertierungsfunktion
+<code>cv::Mat</code> <strong>=&gt;</strong> <code>QPixmap</code>.</li>
+<li><code>SyncZoomWidget</code>: Die Synchronisierung des Zoomes wurde im Entwurf nicht
+geschaffen da die benötigten Details noch nicht klar waren.</li>
+<li><code>DepthMatchView</code>: Bei der Implementierung der anderen Views ergab sich dieser
+View durch geringfügige Änderungen.</li>
+<li><code>CVVMatchPoint</code>: Unter Klasse von CVVMatch für den DepthMatchView.</li>
+<li><code>MatchSettings/KeyPointSettings</code>: Im Entwurf war noch nicht klar wie diese
+Funktionalität aussehen würde, und wurde somit erst in der Implementierung
+geschaffen.</li>
+<li>Unterklassen von <code>MatchSettings/KeyPointSettings</code>:
+<ul>
+<li><code>FalseColorMatchPen/-KeyPoint</code>: Setzt die Farbe des Matches/KeyPoints
+nach einer Falschfarbenskalar in colorutil.hpp.</li>
+<li><code>SingleColorMatchPen/-KeyPoint</code>: Gibt den Benutzer die Möglichkeit
+die Farbe der Matches/KeyPoints zu wählen.</li>
+<li><code>Match-/KeyPointsShowSetting</code>:Wurde durch umstrukturierung auskommentiert
+könnte später bei Änderung der Selection benutzt werden.</li>
+<li><code>Match-/KeyPointsSettingSelector</code>:Gibt den benutzer die Auswahlmöglichkeit
+verschiedene Match-/KeyPointSettings zu benutzen, verhält sich nach außen
+als wäre es das ausgewählte Setting</li>
+<li><code>Match-/KeyPointManagement</code>: Ist durch die Settings Schnitstelle
+mit den Matches/KeyPoints verbunden und wird weiter unten erklärt.</li>
+</ul></li>
+<li><code>MatchSelection/KeyPointSelection</code>: Die QGraphicScene hatte ein anderes
+Verhalten als beim Entwurf angenohmen. Die Selection funktioniert zurzeit nur
+mit den Datentypen von OpenCV und nicht mit den intern benutzten Typen
+<code>CVVMatch</code>/<code>CVVKeyPoint</code>, dies kann &quot;einfach&quot; geändert werden da
+CVVMatch/CVKeyPoint von <code>cv::DMatch</code>/<code>cv::KeyPoint</code> erben, allerdings
+existieren teilweise Matches/KeyPoints doppelt (z.B. im Translationview).</li>
+<li>Unterklassen von <code>MatchSelection/KeyPointSelection</code>:
+<ul>
+<li><code>Match-/KeyPointPortionSelector</code>:Wrapper für PortionSelector welcher im
+Match-/KeyPointSelectionSelector benutzt wird.</li>
+<li><code>Match-/KeyPointIntervallSelector</code>: Wrapper für IntervallSelector welcher im
+Match-/KeyPointSelectionSelector benutzt wird.</li>
+<li><code>Match-/KeyPointSelectionSelector</code>: Gibt dem Benutzer die Möglichkeit
+verschiedene Match-/KeyPointSelection zu benutzen, verhält sich wie das
+ausgewählte Match-/KeyPointSelection.</li>
+</ul></li>
+<li><code>MatchManagement</code>/<code>KeyPointManagement</code>: ergab sich aus den beiden oberen
+Klassen.</li>
+<li><code>RawviewWindow</code>: Vereinfacht die Benutzung des Rawviews als Matchselector.</li>
+<li><code>RawviewGroupSubtable</code>: Kam hinzu, da der Rawview analog zum OverviewPanel
+aufgebaut wurde. Sie ermöglicht es, dass Elemente im Rawview auch gruppiert
+dargestellt werden können.</li>
+<li><code>STFLQueryWidgetCompleter</code>, <code>STFLQueryWidgetLineEdit</code>: Ein LineEdit mit
+eingebauter Vorschlagsfunktion war wieder erwarten nicht in Qt selbst
+implementiert.</li>
+<li><code>TabWidget</code>: Eine QTabWidget die den Zugriff auf die geschützte Methode
+<code>tabBar()</code> erlaubt.</li>
+<li>Unterklassen von <code>FilterFunctionWidget</code>:
+<ul>
+<li><code>ChangedPixelsWidget</code>: A Comparator that will create a Mat that
+highlights exactly the changed pixels (black) and leaves unchanged
+pixels white.</li>
+<li><code>ChannelReorderFilter</code>: Class providing a filter that reorders an
+input mat's channels.</li>
+<li><code>DiffFilterFunction</code>: Class providing functionality to compute a
+difference image of two input matrices.</li>
+<li><code>GrayFilterWidget</code>: Represents a gray filter.</li>
+<li><code>OverlayFilterWidget</code>: Class providing functionality to compute an
+overlay image of two input matrices.</li>
+<li><code>SobelFilterWidget</code>: Represents the OpenCV sobel filter.</li>
+</ul></li>
+</ul>
+<h1 id="sonstige-änderungen">Sonstige Änderungen</h1>
+<ul>
+<li>Ubuntu als primäre Zielplattform konnte aufgrund von Bugs in der dort
+verwendeten Qt-version nicht uneingeschränkt umgesetzt werden. Es traten zwei
+Sorten von Problemen auf, von denen wir hoffen, dass sie in zukünfigen
+Versionen gefixt werden:
+<ul>
+<li>Fehler (Programm hängt fest) bei der Verwendung unter unity.
+Empfohlener Workaround: andere Desktop-Umgebung, da zumindest XFCE
+keine Probleme macht.</li>
+<li>Leere „Geisterfenster“. Empfohlener Workaround: Ignorieren (und auf
+Ubuntu 14.04 hoffen).</li>
+</ul></li>
+<li>Die Dokumentation wird nicht mit sphinx erzeugt, sondern mit jekyll und
+Shell-Skripten.</li>
+</ul>

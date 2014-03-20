@@ -47,7 +47,7 @@ Interne Details (Auszug)
   Benutzung zu vereinfachen.
 * `ZoomableImage`: Interface wurde erweitert, um die Benutzung
   zu vereinfachen.
-* Jegliche ´*Collumn*` Klassen wurden zu `*Row*` Klassen, da dies deren
+* Jegliche `Collumn`-Klassen wurden zu `Row`-Klassen, da dies deren
   Bedeutung besser abbildet (einhergehend wurden auch sämtliche Methodenname,
   etc. geändert)
 * `RawviewTableRow`: Unterscheidung zwischen simplem KeyPoint und einem Match in
