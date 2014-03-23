@@ -93,7 +93,7 @@ title 5 at position 5
  - if there is no elem5 a window with following text will pop up:
 	no last element inserted at 5. (maybe already deleted)
  - if "insert elem at pos 5" is used 2 times and "remove last element inserted at 5"
- is calles there is NO elem5 (the second is deleted, the first one is not set as elem5)
+ is called there is NO elem5 (the second is deleted, the first one is not set as elem5)
  - beginning /end / pos 5 refer to the empty area at the bottom
  - all buttons behave as described
  - the area displays scrollbars if needed
@@ -109,21 +109,21 @@ __AutoFilterWidget Test:__
 - it has 3 columns
 - the first contains an accordion wit 3 elements ("button user select",
  "button individual filter", "afw")
-- the 2nd column contains a black image ( 6 channels, all pixel
-{2;1;2147483640;2147483640;2147483640;2147483640}
+- the 2nd column contains a black image ( 6 channels, all pixels
+{2;1;2147483640;2147483640;2147483640;2147483640})
 - the 3rd column contains a blue image with a black line
-- the visible are (zoom+ area) of the left image will be applyed to the right image
+- the visible area (zoom+ area) of the left image will be applied to the right image
 - if "button user select" is toggled there are two checkboxes ("i1", "i2")
 in the top of "afw"
 - in afw the user can select filters to apply to both images (only checked ones are used)
 - the filtered image will appear below the orginal one
 - if the filter can not be applied to an image a red error message will appear in at the top of afw
-- if "button individual filter" is not checked filter are applied only if there are no error messages
+- if "button individual filter" is not checked filters are applied only if there are no error messages
 - filters are: "Sobel", "Gray filter", "Reorder channels"
 - "Sobel" can not be applied to the left image
 - "Sobel" represents the sobel filter
 - "Gray filter" can apply a gray filter to both images
-(the factors for each channel can be choosen by the user)
+(the factors for each channel can be chosen by the user)
 - "Reorder channels" can reorder the channels of the orginal image
 (number and order of the output channels can be selected)
 
@@ -161,7 +161,7 @@ you passed to the test on the right.
 The accordion menu should consist of the following collapsables:
 
 - ___Zoom sychronization:___
-                When opened one plus as many checkboxes as there are images should be
+                When opened, one plus as many checkboxes as there are images should be
                 displayed. One for every image and one to indicate that no zoom
                 synchronization is selected.
                 If one image is selected, zooming or scrolling in this image is mapped to
@@ -176,22 +176,22 @@ The accordion menu should consist of the following collapsables:
                 The information about the image in the collapsable should be correct.
                 "Show full image" should work.
 
-###DepthMatchView
-__Source:__ /manual\_test/depthviewtest
+###PointMatchView
+__Source:__ /manual\_test/pointmatchviewtest
 
-__Executable:__ /build/debug/test\_manual\_depthviewtest
+__Executable:__ /build/debug/test\_manual\_pointmatchviewtest
 
-__DepthMatchView Test:__
+__PointMatchView Test:__
 
-This test shows a depthmatchview, it should only end if you close the window manually.
-The matches should be schow as points with a radius with is proportional to the match distance,
-keypoints arent visible nad/or selecteable.
+This test shows a PointMatchView, it should only end if you close the window manually.
+The matches should be shown as points with a radius which is proportional to the match distance,
+keypoints are not visible and/or selecteable.
 
 All classes like zoomableimage, zoomableoptpane, synczoomwidget, match Management,...
 should work correctly.
 
 ___"Match Settings":___
-        you can select matches with the selections and settings should only applied to the selected
+        you can select matches with the selections and settings should only be applied to the selected
         matches.
 
 ___"KeyPoint Settings":___
@@ -199,7 +199,7 @@ ___"KeyPoint Settings":___
 
 ___"Image Information":___
         the zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
-        should be syncron with the zoomabelImage
+        should be synchronous with the zoomabelImage
 
 ___"syncWidget":___
         you can choose that the zoom in one image should do the same in the other images, or none
@@ -241,7 +241,7 @@ The accordion menu should consist of the following collapsables:
                 filter or the filter settings after you have pressed apply, the new filter
                 is automatically applied to the selected images.
 - ___Zoom sychronization:___
-                When opened four checkboxes should be displayed. One for every image and
+                When opened, four checkboxes should be displayed. One for every image and
                 one to indicate that no zoom synchronization is selected.
                 If one image is selected, zooming or scrolling in this image is mapped to
                 the other image so they all show the same section and have the same zoom
@@ -307,13 +307,13 @@ This test filters  all the provided images with erode(), dilate(), Sobel() and m
 and visualizes these filters with the debug-framework.
 
 Expected behaviour:
-A Mainwindow should open that shows an overview-table containing the first image and it's dilated
+A Mainwindow should open that shows an overview-table containing the first image and its dilated
   version.
-Upon klicking step multiple times or '>>' once, all further images and filters should appear in
+Upon clicking step multiple times or '>>' once, all further images and filters should appear in
   the table.
 All calls can be opened in any existing window or in a new one. It is possible to select all the
   different filter-visualisations for all of them.
-Closing calltabs should work. Closing the last tab of a window results in the closing of the window
+Closing calltabs should work. Closing the last tab of a window results in the closing of the window.
 Clicking the Close-button results in the termination of the program with 0 as exit-status.
 
 ###finalShow Crash
@@ -335,11 +335,11 @@ __Executable:__ /build/debug/test\_manual\_fsw
 __FilterSelectionWidget Test:__
 
 - a window will pop up
-- it will contain a combo box (options "A", "B", initially "A" is selected)
+- it will contain a combo box (options "A", "B", initially "A" is selected),
   a text ("A")
   and a button ("apply")
-- if a option X from the combo box is selected the text will change to "X"
-- if a option is selected the button will move beneath the combo box
+- if an option X from the combo box is selected the text will change to "X"
+- if an option is selected the button will move beneath the combo box
 
 ###(Single)ImageCallTab
 __Source:__ /manual\_test/image\_call_tab
@@ -422,7 +422,7 @@ __Executable:__ /build/debug/test\_manual\_imageconvertperf
 
 __Image Conversion Performance Test:__
 
-- "qt allows images with: 1000 M pixels" will be printed if qt allows the craetion of
+- "qt allows images with: 1000 M pixels" will be printed if qt allows the creation of
   1 G pixel images
 - "# threads?:" will be printed and the user has to enter the number of threads to use
 - the following text will be printed where XXXX is the time needed to execute (in ms)
@@ -469,14 +469,14 @@ __Executable:__ /build/debug/test\_manual\_linematchviewtest
 
 __LinematchView Test:__
 
-This test shows a linematchview, it should only end if you close the window manually.
+This test shows a LineMatchView, it should only end if you close the window manually.
 The matches should be shown as line between the keypoints in the images.
 
 All classes like zoomableimage, zoomableoptpane, synczoomwidget, match Management,...
 should work correctly.
 
 ___"Match Settings":___
-        you can select matches with the selections and settings should only applied to the selected
+        you can select matches with the selections and settings should only be applied to the selected
         matches.
 
 ___"KeyPoint Settings":___
@@ -484,7 +484,7 @@ ___"KeyPoint Settings":___
 
 ___"Image Information":___
         the zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
-        should be syncron with the zoomabelImage
+        should be synchronous with the zoomabelImage
 
 ___"syncWidget":___
         you can choose that the zoom in one image should do the same in the other images, or none
@@ -614,17 +614,17 @@ __RegisterHelper Test:__
 
 - a window will pop up
 - the window contains a button ("add") and two identical subwidgets below each other
-- the subwidget contains a combobox (initially "A") and a text (initially "A")
-- the cobobox starts with the options "A" and "B"
+- the subwidget contains a combo box (initially "A") and a text (initially "A")
+- the combo box starts with the options "A" and "B"
 - every time the button "add" is pressed both comboboxes will get a new entry "X"
 - if that enty is selected the text will be "X"
 - X is a number. it starts at 2 and is incremented for each click
-- if a option X in a combobox is selected the text
+- if a option X in a combo box is selected the text
 
                 ~current selection	X
                 ~txt of func	X
 is printed to std::out
-(some other debug thext is printed too)
+(some other debug text is printed too)
 
 ###SignalSlot
 __Source:__ /manual\_test/signalslot
@@ -635,7 +635,7 @@ __SignalSlot Test:__
 
 - a window will pop up
 - it will contain a button ("push me") and below that a text ("pressed: 0")
-- if the button is pressed the nub´mber in the text will increment
+- if the button is pressed the nubmber in the text will increment
 
 ###Single Image
 __Source:__ /manual\_test/single_image
@@ -647,8 +647,8 @@ __SingleImage Test:__
 This test shows all the provided images using the debug-framework.
 
 Expected behaviour:
-A Mainwindow should open that shows an overview-table containing the first imagei
-Upon klicking step multiple times or '>>' once, all further images and filters should appear in
+A Mainwindow should open that shows an overview-table containing the first image.
+Upon clicking step multiple times or '>>' once, all further images and filters should appear in
   the table.
 All calls can be opened in any existing window or in a new one.
 Closing calltabs should work. Closing the last tab of a window results in the closing of the window
@@ -674,7 +674,7 @@ the same as the upper images.
 The accordion menu should consist of the following collapsables:
 
 - ___Select a filter:___
-                If opened a checkbox for each original image should be shown, indicating
+                If opened, a checkbox for each original image should be shown, indicating
                 whether the selected filter is to be applied to the respective image.
                 A comboBox allows you to select the filter (gray filter, reorder channels
                 and soebel). When a filter is selected you can choose is settings below
@@ -683,7 +683,7 @@ The accordion menu should consist of the following collapsables:
                 filter or the filter settings after you have pressed apply, the new filter
                 is automatically applied to the selected images.
 - ___Zoom sychronization:___
-                When opened five checkboxes should be displayed. One for every image and
+                When opened, five checkboxes should be displayed. One for every image and
                 one to indicate that no zoom synchronization is selected.
                 If one image is selected, zooming or scrolling in this image is mapped to
                 the other image so they all show the same section and have the same zoom
@@ -708,8 +708,8 @@ This test shows all the provided images and filters them using morphologyEx() us
 debug-framework.
 
 Expected behaviour:
-A Mainwindow should open that shows an overview-table containing the first imagei
-Upon klicking step multiple times or '>>' once, all further images and filters should appear in
+A Mainwindow should open that shows an overview-table containing the first image.
+Upon clicking step multiple times or '>>' once, all further images and filters should appear in
   the table.
 All calls can be opened in any existing window or in a new one. For the filtered Images it is
   possible to select all the different filter-visualisations for all of them.
@@ -723,14 +723,14 @@ __Executable:__ /build/debug/test\_manual\_translationviewtest
 
 __TranslationMatchView Test:__
 
-This test shows a translationview, it should only end if you close the window manual.
+This test shows a TranslationMatchView, it should only end if you close the window manual.
 The matches should be shown as translation lines in the images, a line should only be in one image.
 
 All classes like zoomableimage, zoomableoptpane, synczoomwidget, match Management,...
 should work correctly.
 
 ___"Match Settings":___
-        you can select matches with the selections and settings should only applied to the selected
+        you can select matches with the selections and settings should only be applied to the selected
         matches.
 
 ___"KeyPoint Settings":___
@@ -738,7 +738,7 @@ ___"KeyPoint Settings":___
 
 ___"Image Information":___
         the zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
-        should be syncron with the zoomabelImage
+        should be synchronous with the zoomabelImage
 
 ___"syncWidget":___
         you can choose that the zoom in one image should do the same in the other images, or none
@@ -757,7 +757,7 @@ __ZoomableImage Test:__
 - the first column contains a spin box and two toggleable buttons
  ("autoshow", "fullimg")
 - the 2nd column contains a vertical blue green image with a false color
-palete at the top left
+palette at the top left
 - the 3rd column contains a vertical blue image
 - the 4th column contains an image of a red rook
 - the images can be zoomed with the spin box ctrl+scroll or ctrl+shift+scroll
@@ -788,14 +788,14 @@ __Tests for the Overview:__
 
 First off all: For all of the following tests, call the __test\_all (or the filters) test__ and click on the fast forward (">>") button for all but the first two tests.
 
-1. Click the "Step" button. A new item should appear in the list. Enter a filter query and hit <ENTER>, then hit "Step" button several times, the list should be updated according to your filter query each time.
+1. Click the "Step" button. A new item should appear in the list. Enter a filter query and hit <ENTER>, then hit the "Step" button several times, the list should be updated according to your filter query each time.
 2. Hit the fast forward button. The program should take some time and then present all items to you. The fast forward and the step button should be hidden now. Restart the test and hit the fast forward button after you typed a filter query and hit <ENTER>. The items should be sorted, filtered and grouped accordingly.
 3. Hit the close button. The program should close without further GUI changes (it might take some time).
 3. Try essentially every single filter sub query query possible (according to the [reference](http://cvv.mostlynerdless.de/ref/filterquery-ref.html)), the items should be filtered as written in the reference.
-4. Try every possible single sort filter query (each time appending "asc", "desc" or ""), the items should be sorted as written in the reference.
-5. Try the same with every grouping command
-6. Combine some sub queries randomly to at least 5 queries consisting of a least 3 different sub queries. Type them each in, hit <ENTER>, the items should be filter, sorted and grouped correctly.
-7. Use the context menu on at least 2 randomly chosen items to remove them and then try the 6. test.
+4. Try every possible single sort filter query (each time appending "asc", "desc" or ""), the items should be sorted as described in the reference.
+5. Try the same with every grouping command.
+6. Combine some sub queries randomly to at least 5 queries consisting of a least 3 different sub queries. Type them each in, hit <ENTER>, the items should be filtered, sorted and grouped correctly.
+7. Use the context menu on at least 2 randomly chosen items to remove them and then try the 6th test.
 8. Resize the main window and the use the slider at the bottom of the overview. The images in the table should be resized appropriately.
 9. Use the other two context menu items on at least 3 randomly chosen items, they should do the right thing according to their titles.
 10. Double click on at least 4 items. They should each be opened in a new tab in the main window.
@@ -809,10 +809,10 @@ __Tests for the Rawview:__
 
 First off all: Open the __match test__, click the step button and open the first item in the overview in a tab. Choose the RawView in the combobox at the top.
 
-1. Try essentially every single filter sub query query possible (according to the [reference](http://cvv.mostlynerdless.de/ref/filterquery-ref.html)), the items should be filtered as written in the reference.
-2. Try every possible single sort filter query (each time appending "asc", "desc" or ""), the items should be sorted as written in the reference.
-3. Try the same with every grouping command
-4. Combine some sub queries randomly to at least 5 queries consisting of a least 3 different sub queries. Type them each in, hit <ENTER>, the items should be filter, sorted and grouped correctly.
+1. Try essentially every single filter sub query query possible (according to the [reference](http://cvv.mostlynerdless.de/ref/filterquery-ref.html)), the items should be filtered as described in the reference.
+2. Try every possible single sort filter query (each time appending "asc", "desc" or ""), the items should be sorted as described in the reference.
+3. Try the same with every grouping command.
+4. Combine some sub queries randomly to at least 5 queries consisting of a least 3 different sub queries. Type them each in, hit <ENTER>, the items should be filtered, sorted and grouped correctly.
 5. Select several different items, then use the context menu to copy them into your clipboard. Use every possible output mode and check the validity of the output in your clipboard.
 6. Type random text into the filter query widget (while hitting enter), the application should not crash.
 7. Hit the "Help" button. A web browser should open to the reference.
