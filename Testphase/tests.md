@@ -1,5 +1,6 @@
 #Tests
 Since CVVisual is highly GUI-oriented, there are only few automated tests for basic functionality while most features are to be tested manually by interacting with portions of the program and checking whether the result fits the expectations.
+
 ##Automatic Tests
 Automated tests exist for the following low-level features and classes:
 
@@ -63,6 +64,7 @@ as well as the
 and via `Reference<const int>{int}` and, finally, that 
 - `cvv::util::Reference`s of super classes can be constructed with derived classes and 
 - `Reference`s to base classes can be `castTo()` `References` to the derived classes, but not the other way.
+
 ##Manual Tests
 ###Accordion
 __Source:__ /manual\_test/accordion
@@ -77,24 +79,25 @@ __Accordion Test:__
  - "pfront" will insert a collapsable with text and title 0 at the beginning
  - "pback" will insert a collapsable with text and title end at the end
  - "clear" will delete all elements
-- "hideAll" will hide all collapsables
-- "showAll" will show all collapsables
-- "collapseAll" will collapse all collapsables
-- "expandAll" will expand all collapsables
-- "insert elem at pos 5" will insert a collapsable (elem5) with text and
+ - "hideAll" will hide all collapsables
+ - "showAll" will show all collapsables
+ - "collapseAll" will collapse all collapsables
+ - "expandAll" will expand all collapsables
+ - "insert elem at pos 5" will insert a collapsable (elem5) with text and
 title 5 at position 5
-- "remove last element inserted at 5" will remove the last elem5
-- "hide5" will hide the last elem5
-- "show5" will show the last elem5
-- "collapse5" will collapse the last elem5
-- "expand5" will expand the last elem5
-- if there is no elem5 a window with following text will pop up:
+ - "remove last element inserted at 5" will remove the last elem5
+ - "hide5" will hide the last elem5
+ - "show5" will show the last elem5
+ - "collapse5" will collapse the last elem5
+ - "expand5" will expand the last elem5
+ - if there is no elem5 a window with following text will pop up:
 	no last element inserted at 5. (maybe already deleted)
-- if "insert elem at pos 5" is used 2 times and "remove last element inserted at 5"
+ - if "insert elem at pos 5" is used 2 times and "remove last element inserted at 5"
  is calles there is NO elem5 (the second is deleted, the first one is not set as elem5)
-- beginning /end / pos 5 refer to the empty area at the bottom
-- all buttons behave as described
-- the area displays scrollbars if needed
+ - beginning /end / pos 5 refer to the empty area at the bottom
+ - all buttons behave as described
+ - the area displays scrollbars if needed
+
 ###AutoFilterWidget
 __Source:__ /manual\_test/autofilterwidget
 
@@ -123,6 +126,7 @@ in the top of "afw"
 (the factors for each channel can be choosen by the user)
 - "Reorder channels" can reorder the channels of the orginal image
 (number and order of the output channels can be selected)
+
 ###Collapsable
 __Source:__ /manual\_test/collapsable
 
@@ -171,6 +175,7 @@ The accordion menu should consist of the following collapsables:
                 Unchecking "Show image" should make it disappear, checking make it reappear.
                 The information about the image in the collapsable should be correct.
                 "Show full image" should work.
+
 ###DepthMatchView
 __Source:__ /manual\_test/depthviewtest
 
@@ -201,6 +206,7 @@ ___"syncWidget":___
 
 Parameter argv: arguments executablepath, image path1, imagepath 2.
 return 0.
+
 ###DualFilterView
 __Source:__ /manual\_test/dual\_filter_filter
 
@@ -248,6 +254,7 @@ The accordion menu should consist of the following collapsables:
                 Unchecking "Show image" should make it disappear, checking make it reappear.
                 The information about the image in the collapsable should be correct.
                 "Show full image" should work.
+
 ###FilterCallTab
 __Source:__ /manual\_test/filter\_call_tab
 
@@ -288,6 +295,7 @@ The accordion collapsable should still be open.
 7. Run the test again to see if the window showing the default View
 now shows the one you set as default before.
 [-> "Set as default" works]
+
 ###Filters
 __Source:__ /manual\_test/filters
 
@@ -307,6 +315,7 @@ All calls can be opened in any existing window or in a new one. It is possible t
   different filter-visualisations for all of them.
 Closing calltabs should work. Closing the last tab of a window results in the closing of the window
 Clicking the Close-button results in the termination of the program with 0 as exit-status.
+
 ###finalShow Crash
 __Source:__ /manual\_test/final\_show_crash
 
@@ -317,6 +326,7 @@ __finalShow Test:__
 This test just calls finalShow.
 
 The expected behaviour is that basically nothing will happen before the program terminates without crash.
+
 ###FilterSelectorWidget
 __Source:__ /manual\_test/fsw
 
@@ -330,6 +340,7 @@ __FilterSelectionWidget Test:__
   and a button ("apply")
 - if a option X from the combo box is selected the text will change to "X"
 - if a option is selected the button will move beneath the combo box
+
 ###(Single)ImageCallTab
 __Source:__ /manual\_test/image\_call_tab
 
@@ -348,6 +359,7 @@ a label reading "Single Image View" and a "Help" button.
 2. Click "Help".
 The help page of Single Image View should open in a web browser.
 [-> Help works]
+
 ###Image Conversion
 __Source:__ /manual\_test/imageconvert
 
@@ -432,6 +444,7 @@ __Image Conversion Performance Test:__
 		depth 30	pixel: 100 M pixels	success: 1	time: XXXX
 		##test:
 		depth 28	pixel: 100 M pixels	success: 1	time: XXXX
+
 ###(Single)ImageView
 __Source:__ /manual\_test/imageview
 
@@ -448,6 +461,7 @@ Zooming in and out of the image with both the spin box
 and (Shift) + Strg + Mouse Wheel should work (Shift: slower).
 The information about the image in the collapsable should be correct.
 "Show full image" should work.
+
 ###LineMatchView
 __Source:__ /manual\_test/linematchviewtest
 
@@ -477,6 +491,7 @@ ___"syncWidget":___
 
 Parameter argv: arguments executablepath, image path1, imagepath 2.
 return 0.
+
 ###Matches
 __Source:__ /manual\_test/match
 
@@ -494,6 +509,7 @@ All calls can be opened in any existing window or in a new one. It is possible t
   different match-visualisations for all of them.
 Closing calltabs should work. Closing the last tab of a window results in the closing of the window
 Clicking the Close-button results in the termination of the program with 0 as exit-status.
+
 ###MatchCallTab
 __Source:__ /manual\_test/match\_call_tab
 
@@ -533,6 +549,7 @@ The accordion collapsable should still be open.
 7. Run the test again to see if the window showing the default View
 now shows the one you set as default before.
 [-> "Set as default" works]
+
 ###Multiple Final Calls
 __Source:__ /manual\_test/multiple_calls
 
@@ -546,6 +563,7 @@ The expected behaviour is that for every Image img the debug-framework will open
 SingleImage-call and get into the final-call modus after steping forward once. After closing
 it, the same should happen with the next Image, whereby all old state was deleted between these
 calls.
+
 ###MultiViewCallTab
 __Source:__ /manual\_test/multiview\_call_tab
 
@@ -586,6 +604,7 @@ The accordion collapsable should still be open.
 7. Run the test again to see if the windows showing the default View
 now both show the one you set as default before.
 [-> "Set as default" works]
+
 ###RegisterHelper
 __Source:__ /manual\_test/registerhelper
 
@@ -606,6 +625,7 @@ __RegisterHelper Test:__
                 ~txt of func	X
 is printed to std::out
 (some other debug thext is printed too)
+
 ###SignalSlot
 __Source:__ /manual\_test/signalslot
 
@@ -616,6 +636,7 @@ __SignalSlot Test:__
 - a window will pop up
 - it will contain a button ("push me") and below that a text ("pressed: 0")
 - if the button is pressed the nub´mber in the text will increment
+
 ###Single Image
 __Source:__ /manual\_test/single_image
 
@@ -632,6 +653,7 @@ Upon klicking step multiple times or '>>' once, all further images and filters s
 All calls can be opened in any existing window or in a new one.
 Closing calltabs should work. Closing the last tab of a window results in the closing of the window
 Clicking the Close-button results in the termination of the program with 0 as exit-status.
+
 ###SingleFilterView
 __Source:__ /manual\_test/singlefilterviewtest
 
@@ -674,6 +696,7 @@ The accordion menu should consist of the following collapsables:
                 Unchecking "Show image" should make it disappear, checking make it reappear.
                 The information about the image in the collapsable should be correct.
                 "Show full image" should work.
+
 ###Test All
 __Source:__ /manual\_test/test_all
 
@@ -692,6 +715,7 @@ All calls can be opened in any existing window or in a new one. For the filtered
   possible to select all the different filter-visualisations for all of them.
 Closing calltabs should work. Closing the last tab of a window results in the closing of the window
 Clicking the Close-button results in the termination of the program with 0 as exit-status.
+
 ###TranslationMatchView
 __Source:__ /manual\_test/translationviewtest
 
@@ -720,7 +744,8 @@ ___"syncWidget":___
         you can choose that the zoom in one image should do the same in the other images, or none
 
 Parameter argv: arguments executablepath, image path1, imagepath 2.
-return 0
+return 0.
+
 ###ZoomableImage
 __Source:__ /manual\_test/zoomableimage
 
@@ -739,6 +764,7 @@ palete at the top left
 - if "autoshow" is toggled an the image is zoomed in (60 on the spin box)
  the pixel values are printed
 - if "fullimg" is pressed the images are resized and the whole image is visible.
+
 ##Manual tests without executables:
 ###CallWindow
 __Tests for the CallWindow:__
@@ -754,6 +780,7 @@ First off all: For all of the following tests, call the __test\_all (or the filt
 5. Open several tabs in different windows via the overview. Then remove each of the tabs via the context menu of the tabs. They should vanish as well as their items in the overview.
 6. Open several tabs in different windows via the overview. Close them via the close cross button and via the context menu.
 7. Open several tabs in different windows via the overview. Click on an item that is already open. This should bring the appropriate tab and window to the front.
+
 ###Overview
 __Tests for the Overview:__
 
@@ -775,6 +802,7 @@ First off all: For all of the following tests, call the __test\_all (or the filt
 11. Type random text into the filter query widget (while hitting enter), the application should not crash.
 12. Try 11. while testing 6. to 10.. 
 13. Hit the "Help" button. A web browser should open to the reference.
+
 ###RawView
 __Tests for the Rawview:__
 (The RawviewPanel, STFLEngine, RawviewTable, etc. are tested together)
