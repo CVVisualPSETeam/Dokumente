@@ -1,12 +1,12 @@
 #Tests
-Since CVVisual is highly GUI-oriented, there are only few automated tests for basic functionality while most features are to be tested manually by interacting with portions of the program and checking whether the result fits the expectations.
+Since CVVisual is highly GUI oriented, there are only few automated tests. The automated tests are for basic functionality, while most features are to be tested manually. This is done by interacting with portions of the program and checking whether the result fits the expectations.
 
 ##Automatic Tests
 Automated tests exist for the following low-level features and classes:
 
-- the __debug-flag__ (cvv::debugMode etc.)
+- __debug-flag__ (cvv::debugMode etc.)
 - __cvv::util::isAnyOf__
-- the Location-macro (__CVVISUAL\_LOCATION__)
+- Location-macro (__CVVISUAL\_LOCATION__)
 - __cvv::util::ObserverPtr__
 - __cvv::util::Reference__
 
@@ -24,7 +24,7 @@ __Source:__ /test/test\_is\_any\_of.cpp
 __cvv::util::isAnyOf Test:__
 
 Tests whether the `cvv::util::isAnyOf()` function (from _/src/util/util.hpp_) correctly recognises the first parameter as element or 
-not element of the data structure in the second parameter for the following structures:
+non element of the data structure in the second parameter for the following structures:
 
 - Initializer lists with `int int`
 - Initializer lists with `long int`
@@ -36,9 +36,8 @@ __Source:__ /test/test_location.cpp
 
 __CVVISUAL_LOCATION Test:__
 
-Tests whether the `CVVISUAL_LOCATION` macro (from _/include/opencv2/call\_meta\_data.hpp_)
-works as expected, i.e. the instance of `cvv::impl::CallMetaData` as which it gets defined has the correct data.
-The second test in this file checks wether a `cvv::impl::CallMataData` created by hand and with an empty
+The first test tests the `CVVISUAL_LOCATION` macro (from _/include/opencv2/call\_meta\_data.hpp_), i.e. whether the instance of `cvv::impl::CallMetaData` as which it gets defined has the correct data.
+The second test checks wether a `cvv::impl::CallMataData` created by hand and with an empty
 initializer list has no known location, as it is supposed to be.
 
 ###Observer Pointer
@@ -73,30 +72,29 @@ __Executable:__ /build/debug/test\_manual\_acordion
 
 __Accordion Test:__
 
- - a window with several buttons ("pfront", "pback", "insert elem at pos 5",
- "remove last element inserted at 5", "clear", "hideAll", "hide5", "showAll",
- "show5", "collapseAll", "collapse5", "expandAll", "expand5") and an empty area
- - "pfront" will insert a collapsable with text and title 0 at the beginning
- - "pback" will insert a collapsable with text and title end at the end
- - "clear" will delete all elements
- - "hideAll" will hide all collapsables
- - "showAll" will show all collapsables
- - "collapseAll" will collapse all collapsables
- - "expandAll" will expand all collapsables
- - "insert elem at pos 5" will insert a collapsable (elem5) with text and
+ A window with several buttons, that each test a specific part of the functionality 
+    - "pfront" - insert a collapsable with text and title 0 at the beginning)
+    - "pback" - insert a collapsable with text and title end at the end
+    - "insert elem at pos 5" - insert a collapsable *elem5* with text and
 title 5 at position 5
- - "remove last element inserted at 5" will remove the last elem5
- - "hide5" will hide the last elem5
- - "show5" will show the last elem5
- - "collapse5" will collapse the last elem5
- - "expand5" will expand the last elem5
- - if there is no elem5 a window with following text will pop up:
-	no last element inserted at 5. (maybe already deleted)
- - if "insert elem at pos 5" is used 2 times and "remove last element inserted at 5"
- is called there is NO elem5 (the second is deleted, the first one is not set as elem5)
- - beginning /end / pos 5 refer to the empty area at the bottom
- - all buttons behave as described
- - the area displays scrollbars if needed
+    - "remove last element inserted at 5"
+    - "clear" - delete all elements
+    - "hideAll" - will hide all collapsables
+    - "hide5" - hide the last elem5
+    - "showAll" - show all collapsables
+    - "show5" - show the last *elem5*
+    - "collapse5" - collapse the last *elem5*
+    - "collapseAll" - collapse all collapsables *collapse5*, 
+    - "expandAll" - expand all collapsables
+    - "expand5" - expand the last *elem5*
+ and an empty area.
+Furthermore the following should also be tested with the buttons:
+ - If there is no *elem5* then a window with the following text will pop up:
+	`no last element inserted at 5. (maybe already deleted)`
+ - If "insert elem at pos 5" is used 2 times and "remove last element inserted at 5"
+ is called then there is __no__ *elem5* (the second is deleted, the first one is unset as *elem5*)
+ - Beginning / end / pos 5 refer to the empty area at the bottom
+ - The area displays scrollbars if needed
 
 ###AutoFilterWidget
 __Source:__ /manual\_test/autofilterwidget
@@ -107,24 +105,24 @@ __AutoFilterWidget Test:__
 
 - a window will pop up
 - it has 3 columns
-- the first contains an accordion wit 3 elements ("button user select",
+- the first contains an accordion with 3 elements ("button user select",
  "button individual filter", "afw")
 - the 2nd column contains a black image ( 6 channels, all pixels
-{2;1;2147483640;2147483640;2147483640;2147483640})
+{2; 1; 2147483640; 2147483640; 2147483640; 2147483640})
 - the 3rd column contains a blue image with a black line
-- the visible area (zoom+ area) of the left image will be applied to the right image
+- the visible area (zoom + area) of the left image will be applied to the right image
 - if "button user select" is toggled there are two checkboxes ("i1", "i2")
 in the top of "afw"
 - in afw the user can select filters to apply to both images (only checked ones are used)
-- the filtered image will appear below the orginal one
-- if the filter can not be applied to an image a red error message will appear in at the top of afw
+- the filtered image will appear below the original one
+- if the filter can't be applied to an image a red error message will appear in at the top of afw
 - if "button individual filter" is not checked filters are applied only if there are no error messages
 - filters are: "Sobel", "Gray filter", "Reorder channels"
 - "Sobel" can not be applied to the left image
 - "Sobel" represents the sobel filter
 - "Gray filter" can apply a gray filter to both images
 (the factors for each channel can be chosen by the user)
-- "Reorder channels" can reorder the channels of the orginal image
+- "Reorder channels" can reorder the channels of the original image
 (number and order of the output channels can be selected)
 
 ###Collapsable
@@ -164,17 +162,15 @@ The accordion menu should consist of the following collapsables:
                 When opened, one plus as many checkboxes as there are images should be
                 displayed. One for every image and one to indicate that no zoom
                 synchronization is selected.
-                If one image is selected, zooming or scrolling in this image is mapped to
-                the other image so they all show the same section and have the same zoom
-                level. Zooming or scrolling in a non-selected image only changes this image,
-                as it would if no zoom synchronization was selected.
+                If one image is selected, zooming or scrolling in this image is applied to
+                the other images as well. As a result they show the same image section.
+ Zooming or scrolling in a non selected image only changes this image, and doesn't affect other images.
 - ___Image Information x:___
-                For each image there is a widget which displays information about the image.
-                Zooming in and out of an image with both the spin box in the image information
-                and (Shift) + Strg + Mouse Wheel should work (Shift: slower).
-                Unchecking "Show image" should make it disappear, checking make it reappear.
-                The information about the image in the collapsable should be correct.
-                "Show full image" should work.
+                For each image there is a widget which displays information about the it.
+                Zooming in and out of an image should work with the spin box in the image information.
+               It should work pressing the `Shift` and the `Ctrl` key simultanously, whil using the Mouse Wheel as well (Shift: slower).
+                Unchecking "Show image" should hide it, checking it show again.
+                The information about the image in the collapsable should be correct and the "Show full image" button near the information should work.
 
 ###PointMatchView
 __Source:__ /manual\_test/pointmatchviewtest
@@ -183,28 +179,29 @@ __Executable:__ /build/debug/test\_manual\_pointmatchviewtest
 
 __PointMatchView Test:__
 
-This test shows a PointMatchView, it should only end if you close the window manually.
-The matches should be shown as points with a radius which is proportional to the match distance,
+This test tests the PointMatchView
+It should only end if you close the window manually.
+The matches should be shown as points with a radius which is proportional to the match distance and
 keypoints are not visible and/or selecteable.
 
-All classes like zoomableimage, zoomableoptpane, synczoomwidget, match Management,...
+All classes like zoomableimage, zoomableoptpane, synczoomwidget, match management,...
 should work correctly.
 
 ___"Match Settings":___
-        you can select matches with the selections and settings should only be applied to the selected
+        You're able select matches with the selections and settings should only be applied to the selected
         matches.
 
 ___"KeyPoint Settings":___
-        see match settings
+        Analogous to the test before.
 
 ___"Image Information":___
-        the zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
-        should be synchronous with the zoomabelImage
+        The *zoomable option panel* should show all informations of the cv::Mat correctly and the zoom
+        should be synchronous with the image.
 
 ___"syncWidget":___
-        you can choose that the zoom in one image should do the same in the other images, or none
+        You can choose whether the zoom in one image should do the same in the other images or not.
 
-Parameter argv: arguments executablepath, image path1, imagepath 2.
+Parameter argv: arguments executable path, image path1, imagepath 2.
 return 0.
 
 ###DualFilterView
@@ -221,7 +218,7 @@ right, ordered as follows:
 The first image should be the image given as argument and the third its
 dilated counterpart.
 The image in the middle should be the result of the selected filter being
-applied to the two outer images. At the beginning no filter is selected, so
+applied to the two outer images. At the beginning no filter is selected, therefore
 the middle image is the same as the left image.
  
 The accordion menu should consist of the following collapsables:
@@ -229,7 +226,7 @@ The accordion menu should consist of the following collapsables:
 - ___Select a filter:___
                 A comboBox allows you to select the filter (Changed Pixels, Difference,
                 Overlay). When a filter is selected you can choose is settings below
-                the comboBox.
+                the combo box.
                 The Changed Pixels filter marks changed pixels as black and unchanged
                 pixels as white.
                 The Difference filter shows either the difference for every channel
@@ -737,11 +734,11 @@ ___"KeyPoint Settings":___
         see match settings
 
 ___"Image Information":___
-        the zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
+        The zoomableoptpanel should show all informations of the cv::Mat correctly and the zoom
         should be synchronous with the zoomabelImage
 
 ___"syncWidget":___
-        you can choose that the zoom in one image should do the same in the other images, or none
+        You can choose that the zoom in one image should do the same in the other images, or none
 
 Parameter argv: arguments executablepath, image path1, imagepath 2.
 return 0.
@@ -756,9 +753,9 @@ __ZoomableImage Test:__
 - a window with 4 columns pops up
 - the first column contains a spin box and two toggleable buttons
  ("autoshow", "fullimg")
-- the 2nd column contains a vertical blue green image with a false color
+- the second column contains a vertical blue green image with a false color
 palette at the top left
-- the 3rd column contains a vertical blue image
+- the third column contains a vertical blue image
 - the 4th column contains an image of a red rook
 - the images can be zoomed with the spin box ctrl+scroll or ctrl+shift+scroll
 - if "autoshow" is toggled an the image is zoomed in (60 on the spin box)
