@@ -1,0 +1,45 @@
+- Demo Code von unserem Betreuer Andreas geschrieben
+- Benutzt Web Cam (Mate Flasche besorgen)
+- Programm starten auf Leute halten -> gutes Bild
+- Das Bild sieht man nun in der Liste als Thumbnail, samt Aufruf Informationen
+- Doppelklick auf das Bild -> Neuer Tab öffnet sich
+- Etwas darin herum zoomen und scrollen.
+- Nun auf Step klicken
+- Diesmal wurde ein FilterCall hinzugefügt
+- Öffnen mit Kontextmenu in neuem Fenster
+-> Unser Programm arbeitet auch mit mehreren Fenstern
+- Der aktuelle View zeigt uns, dass das Graustufen Bild nicht richt ist
+- Wechsel zum SingleFilterView
+- Dieser View ist hierfür nützlicher, da wir direkt Filter auf die Bilder anwenden können
+- Verstecken der beiden rechten Bilder
+- Jetzt sieht man oben das Original-Bild und darunter ein Bild, auf das wir nun Filter anwenden können
+- In unserem Fall den Grau Filter (Select a Filter -> etwas mit den Werten herum spielen, z.B. Number of Channels = 2, Perc 1 = 0.20, Perc 2 = 0.8)
+- Das sieht mehr nach dem aus, was wir wollten
+- Jetzt zeigen wir die rechten Bilder wieder an um diese zu vergleichen
+- Jetzt den Zoom synchronisieren und tief in eine interessant Ecke zoomen
+- Tab schließen und in den Overview gehen und auf ">>" zum vorspulen klicken
+- weiteres Bild mit Filter öffnen und Claras Overlay View zeigen und wieder zurück zum Overview
+- Jetzt interessieren wir uns nur für die MatchCalls und wollen alle anderen herausfiltern, wir wissen aber erstmal nicht wie
+- Deswegen den "Help" Button benutzen
+- Nun zeigt sich die Hilfeseite, zu "Overview" scrollen, "type" ist was wir suchen
+- Deswegen "#type match" eintippen
+- Nun sieht man nur noch MatchCalls
+- Nun öffnen wir den letzten dieser MatchCalls und sehen den LineMatchView, der die Matches beider Bilder anzeigt
+- Aber da dieser nur wenig aussagekräftig ist, wechseln wir zum TranslationMatchView
+- Dieser ist etwas besser, besonders nach dem wir etwas gezoomed und gescrollt haben
+- Der View zeigt wie sich die gematched KeyPoints von einem zum anderen Bild verschoben haben
+- Damit dieser View als Standardgesetzt wird, klicken wir "Set as default"
+- Mit den verschiedenen Selektoren ist es nun möglich die Matches und KeyPoints zu filtern.
+- Da wir zum Ende hin Lust auf die Rohdaten haben schalten wir kurz in den Rawview um, hier kann man die Rohdaten filtern, sortieren und gruppieren.
+- Außerdem kann man die Rohdaten als CSV kopieren
+- Hier sind wir am Ende
+- Der Beispiel Code steht in unserem Repository, weiteres auf unserer Website
+
+Angenommen du startest die Demo aus dem Terminal auf einem sonst
+leerem Bildschirm: Das Fenster wird sich neben dem Terminal öffnen.
+Mit Meta+w
+aktivierst du den Tab-Modus, bei dem alle Fenster immer im Vollbild
+angezeigt werden und die Titelzeile des Fensters als Tableiste dient
+(das aktuelle Fenster ist blau hinterlegt, der Rest schwarz). Du
+kannst nun entweder mit der Maus einen der anderen Tabs auswählen,
+oder mit Meta+← bzw. Meta+→ durch die Fenster wechseln.
