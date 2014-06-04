@@ -1,20 +1,19 @@
 %CVVisual\
  Ein Debug-Framework für OpenCV
-%Clara; Erich; Florian; \
+%Andreas; Clara; Erich; Florian; \
  Johannes; Nikolai; Raphael
 %20. Juni 2014
 
 Gliederung
-==========
+----------
 
-- Motivation (von Andi)
-- Einführung in OpenCV
-- Gui-Demo
-- Entwurf
-- Implementierung
-- Qualitätssicherung (?)
-- API + Demo
-- Features
+- Einführung in OpenCV <!--- Clara -->
+- Motivation <!--- Andi-->
+- Anwenderfeatures <!--- Raphael  -->
+- Gui-Demo <!--- Johannes -->
+- Doku und technische Features <!--- Nikolai -->
+- Entwurf  <!--- Erich -->
+- API + Demo <!--- Florian -->
 - Ausblick (?)
 
 Einführung in OpenCV
@@ -63,13 +62,17 @@ GUI
 
 Visualisierung von Matritzen, Filtereffekten und Matches
 
-Design
-======
+Anwenderfeatures
+================
 
-
-Features
+GUI-Demo
 ========
 
+Dokumente und technische Features
+======
+
+Entwurf
+=======
 
 API
 ===
@@ -85,8 +88,8 @@ Interne API
 
 * Leichtes, zentralisiertes Hinzufügen von Visualisierungen, Filtern, …
 
-Anwendungsdemo
-==============
+Ausblick
+========
 
 
 
