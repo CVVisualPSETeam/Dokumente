@@ -14,7 +14,7 @@ API und Funktionalität
 Interna
 -------
 * deutlich erhöhter Gebrauch blanker Pointer, da Qt dies effektiv erzwingt.
-* inkonsistentere Verwendung der Qt Kontainerklassen, da diese öfters Probleme
+* inkonsistentere Verwendung der Qt Containerklassen, da diese öfters Probleme
   machten und deswegen durch Standardkontainer ersetzt wurden
 
 Interne Details (Auszug)
@@ -54,7 +54,6 @@ Interne Details (Auszug)
   Kombination mit zwei KeyPoints, `rowsToText(...)` zur textuellen Ausgabe
   hinzugefügt.
 * `ViewController`: Einbau verschiedener Betriebsmodi.
-* `RawviewTableRow`: 
 
 Nicht implementierte Klassen
 -----------------------------
@@ -68,7 +67,7 @@ Nicht implementierte Klassen
 
 Zusätzliche Klassen
 --------------------
-* `ObeserverPtr`: Effektiv ein Pointer der durch seinen Typ signalisiert,
+* `ObserverPtr`: Effektiv ein Pointer der durch seinen Typ signalisiert,
   dass er nicht ownend ist. Wurde nötig, da an einigen Stellen spät
   initialisierte Referenzen benötigt wurden.
 * `RegisterHelper`: Da das Registieren von Fabrikmethoden und die Auswahl
