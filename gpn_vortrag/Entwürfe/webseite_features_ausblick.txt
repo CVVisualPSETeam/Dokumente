@@ -1,0 +1,53 @@
+﻿#Webseite: cvv.mostlynerdless.de
+
+##Tutorials, Beispiele
+![](images/homepage.PNG)
+
+##Kurzdokumentation 
+Wird von der Hilfefunktion des Programms benutzt.
+![](images/viewreference.PNG)
+
+##Dokumentation:
+mithilfe von Doxygen
+![](images/memberdoc.PNG)
+
+##Klassenlisten
+![](images/classindex.PNG)
+
+##Diagramme
+![](images/classdiagram.PNG)
+
+#Zusammenfassend: Wichtige Features
+
+##Wenig Overhead im Release Modus:
+- Conditional Compilation
+- Aktivierbarkeit des Debug-Modus pro Translation Unit
+![](images/conditionalcompilation.PNG)
+
+##C++98-kompatible API ohne Qt-Abhängigkeiten
+- mit OpenCV kompatibel
+- intern: C++11 (-> nachgerade: dadurch Probleme mit der Integration)
+
+##Zentrale Verwaltung aller CVVisual-Methoden-Aufrufe in Controller-Singleton, dem DataController
+![](images/datacontroller.PNG)
+
+##Interne API
+zur einfacheren Erweiterung.
+![](images/extensionapi.PNG)
+
+##Unterstützung mehrerer Fenster
+...und damit mehrer Bildschirme.
+![Two Windows](images/twowindows.PNG)
+
+## ... und natürlich:
+dass OpenCV-Programme visuell debuggt werden können ohne jedes Mal neuen Code schreibenzu müssen!
+
+#Ausblick:
+
+##Projekt schien von der OpenCV-Community wohlwollend aufgenommen zu werden
+![](images/positivereception.PNG)
+
+##Nach aktuellem Stand aber aufgrund C++11 und Qt5 keine Aufnahme ins Haupt-Repo
+![](images/negativereception.PNG)
+
+# ...wir halten das Programm dennoch für sinnvoll und würden uns freuen, wenn sich Leute finden würden, die es verwenden und daran weiterarbeiten!
