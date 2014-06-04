@@ -17,10 +17,51 @@ Gliederung
 - Features
 - Ausblick (?)
 
+Einführung in OpenCV
+====================
+
+Überblick
+---------
+
+- Bildverarbeitung
+- weite Verbreitung
+- Matrizen als Grundlage
+- Filter + Matches (und vieles mehr!)
+
+Matrizen
+--------
+
+- Bild = mehrdimensionale Matrix
+- 3. Dimension = Channel
+//Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
+
+Filter
+------
+
+- 2D-Bilder
+- Berechnung auf Umgebung jedes Pixels
+- Bsp: dilate, erode, Sobel
+//erode -> kleine Details weg
+
+Matches
+-------
+
+- FeatureDetector -> Keypoints = charakteristische Punkte
+- Match = Paar aus Keypoints
 
 Motivation
 ==========
 
+Debuggen von OpenCV
+-------------------
+
+Systematisches Debugging statt „Random Code“
+//Hinweis auf showMatches/showKeypoints
+
+GUI
+---
+
+Visualisierung von Matritzen, Filtereffekten und Matches
 
 Design
 ======
