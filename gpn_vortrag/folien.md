@@ -4,6 +4,20 @@
  Johannes; Nikolai; Raphael
 %20. Juni 2014
 
+Gliederung
+==========
+
+- Motivation (von Andi)
+- Einführung in OpenCV
+- Gui-Demo
+- Entwurf
+- Implementierung
+- Qualitätssicherung (?)
+- API + Demo
+- Features
+- Ausblick (?)
+
+
 Motivation
 ==========
 
