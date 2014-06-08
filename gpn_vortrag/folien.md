@@ -67,17 +67,55 @@ Anwenderfeatures
 
 Verwendung
 ----------
-
-<!--- API -->
+![](images/api_call.png)
 
 Übersicht
 ---------
+Übersicht über alle Aufrufe
+<!--- ![](images/overview.png) -->
+
+Übersicht
+---------
+Filterbar
+<!--- ![](images/overview_filter.png) -->
+
+Übersicht
+---------
+Sortierbar
+<!--- ![](images/overview_sort.png) -->
+
+Übersicht
+---------
+Gruppierbar
+<!--- ![](images/overview_group.png) -->
+
+Übersicht
+---------
+<!--- ![](images/overview_all.png) -->
 
 Filter
 ------
+- 2 Bilder $\rightarrow$ 1 Bild
+- Differenzbilder, Overlay, geänderte Pixel für Filter
+![](images/filter_dual_image.png)
+
+Filter
+------
+- 1 Bilder $\rightarrow$ 1 Bild
+- Nachträgliche Anwendung weiterer Filter
+![](images/filter_single_image.png)
 
 Matches
 -------
+- Anzeigen / Filtern von Keypoints / Matches
+- Anzeige der Verbindungen von Keypoints
+![](images/match_lines.png)
+
+Matches
+-------
+- Anzeigen / Filtern von Keypoints / Matches
+- Anzeige der Translation von Keypoints
+![](images/match_translation.png)
 
 GUI-Demo
 ========
