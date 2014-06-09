@@ -1,4 +1,4 @@
-%CVVisual\
+﻿%CVVisual\
  Ein Debug-Framework für OpenCV
 %Andreas; Clara; Erich; Florian; \
  Johannes; Nikolai; Raphael
@@ -137,6 +137,55 @@ Wird von der Hilfefunktion des Programms benutzt.
 
 Arichtektur
 ===========
+
+Entwurf
+-------
+- Trennung in API, Datenhaltung, Visualisierung
+<!--- Altes Entwurfs Bild--->
+
+Signals/Slots & Templates
+-------------------------
+- Qt erlaubt keine Templateklassen mit Signals/Slots
+- Signals/Slots in Objekte ausgelagert
+
+RegisterHelper
+--------------
+- Bietet Funktionalität zum Anmelden neuer Funktionen
+- Auswahl erfolgt über eine Combobox
+- Beim Anmelden wird ein Auswahl Name angegeben
+
+AutoFilterWidget
+----------------
+- ist Unterklasse von RegisterHelper
+- Erlaubt Auswahl und Anwendung von Filtern
+- Gibt Ergebnise der Filter per Signal weiter (z.B. an ein ZoomableImage)
+
+
+ZoomableImage
+------------
+- Eigentständige Umwandlung von cv::Mat in Qt Format
+- Signal & Slot für Zoom Events
+- Slot zum Bild wechseln
+- ZoomableImageOptionPanel zeigt weiter Informationen/Optinen an
+
+MatchScene
+----------
+- Enthält 2 ZoomableImages
+- Enthält die KeyPoints/Matches als QGraphicsObjects
+- Hat Probleme mit der Mausinteraktion von der Matches
+
+Match/KeyPointSetting
+--------------------
+- Keine Auslagerung von Singals/Slots möglich
+- Daher parallele Entwicklung von KeyPoint und MatchSetting
+- Nur Selektierte KeyPoints/Matches werden angezeigt
+
+Views
+------
+- Visualisierung der unterschiedlichen Aufrufe
+- Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
+- Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
+
 
 API
 ===
