@@ -109,10 +109,12 @@ Anwender API
 * Triviale Benutzung auch in C++98
 * Sehr klein und übersichtlich
 
-Interne API
+
+Interne API <!-- Florian: -->
 -----------
 
-* Leichtes, zentralisiertes Hinzufügen von Visualisierungen, Filtern, …
+* Erweiterung über Funktionen in `cvv::extend`
+* Leichtes, zentralisiertes Hinzufügen von Visualisierungen, Filtern, Views,…
 
 Ausblick
 ========
