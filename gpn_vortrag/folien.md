@@ -1,7 +1,5 @@
-﻿%CVVisual\
- Ein Debug-Framework für OpenCV
-%Andreas; Clara; Erich; Florian; \
- Johannes; Nikolai; Raphael
+﻿%CVVisual
+%Andreas; Clara; Erich; Florian; Johannes; Nikolai; Raphael
 %20. Juni 2014
 
 Gliederung
@@ -13,8 +11,8 @@ Gliederung
 - Gui-Demo <!--- Johannes -->
 - Dokumentation <!--- Nikolai -->
 - Architektur <!--- Erich -->
-- API + Demo <!--- Florian -->
-- Ausblick (?)
+- API<!--- Florian -->
+- Ausblick
 
 Einführung in OpenCV
 ====================
@@ -32,7 +30,10 @@ Matrizen
 
 - Bild = mehrdimensionale Matrix
 - 3\. Dimension = Channel
-//Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
+
+<div class="notes">
+Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
+</div>
 
 Filter
 ------
@@ -40,7 +41,10 @@ Filter
 - 2D-Bilder
 - Berechnung auf Umgebung jedes Pixels
 - Bsp: dilate, erode, Sobel
-//erode -> kleine Details weg
+
+<div class="notes">
+erode -> kleine Details weg
+</div>
 
 Matches
 -------
@@ -55,7 +59,10 @@ Debuggen von OpenCV
 -------------------
 
 Systematisches Debugging statt „Random Code“
-//Hinweis auf showMatches/showKeypoints
+
+<div class="notes">
+Hinweis auf showMatches/showKeypoints
+</div>
 
 Ziele
 -----
@@ -67,7 +74,19 @@ Anwenderfeatures
 
 Verwendung
 ----------
-![](images/api_call.png)
+<!--![](images/api_call.png)-->
+
+```cpp
+std::string imgIdString{"imgRead"};
+imgIDString += toString(imgId);
+cvv::showImage(imgRead, CVVISUAL_LOCATION, imgIdString);
+
+// convert to grayscale:
+cv::Mat imgGray;
+cv::cvtColor(imgRead, imgGray, CV_BGR2GRAY);
+cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
+                 "to gray", "SingleFilterView");
+```
 
 Übersicht
 ---------
@@ -97,24 +116,28 @@ Filter
 ------
 - 2 Bilder $\rightarrow$ 1 Bild
 - Differenzbilder, Overlay, geänderte Pixel für Filter
+
 ![](images/filter_dual_image.png)
 
 Filter
 ------
 - 1 Bilder $\rightarrow$ 1 Bild
 - Nachträgliche Anwendung weiterer Filter
+
 ![](images/filter_single_image.png)
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Verbindungen von Keypoints
+
 ![](images/match_lines.png)
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Translation von Keypoints
+
 ![](images/match_translation.png)
 
 GUI-Demo
@@ -124,24 +147,29 @@ Dokumentation
 =============
 
 ##Tutorials, Beispiele
+
 ![](images/homepage.PNG)
 
 ##Kurzdokumentation 
 Wird von der Hilfefunktion des Programms benutzt.
+
 ![](images/viewreference.PNG)
 
 ##Referenz:
 * Mit Hilfe von Doxygen
+
 ![](images/memberdoc.PNG)
 
 
-Arichtektur
+Architektur
 ===========
 
 Entwurf
 -------
 - Trennung in API, Datenhaltung, Visualisierung
-<!--- Altes Entwurfs Bild--->
+<div class="notes">
+Altes Entwurfs Bild
+</div>
 
 Signals/Slots & Templates
 -------------------------

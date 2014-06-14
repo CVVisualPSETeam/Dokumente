@@ -1,3 +1,7 @@
 #! /bin/bash
 
-pandoc folien.md -fmarkdown -t beamer -o folien.pdf --slide-level=2
+echo "DEPRECATED: Use make and the provided makefile instead"
+
+make delete
+make -j all
+

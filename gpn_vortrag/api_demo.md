@@ -1,5 +1,19 @@
-Code-Demo
-========
+Anwender API
+============
+
+* Funktionalität:
+	* `debugDMatch(img1, keys1, img2, keys2, matches, ...)`
+	* `debugFilter(orig, result, ...)`
+	* `showImage(img, ...)`
+* Meta/Boilerplate:
+	* `finalShow()`
+	* `FinalShowCaller` (RAII)
+	* `CVVISUAL_LOCATION`
+	* `setDebugFlag(bool)`
+* Reinen Anwendern reicht das für alles!
+
+Interne API
+===========
 
 Allgemein
 ---------
