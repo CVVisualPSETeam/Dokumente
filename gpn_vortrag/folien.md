@@ -121,7 +121,7 @@ Filter
 
 Filter
 ------
-- 1 Bilder $\rightarrow$ 1 Bild
+- 1 Bild $\rightarrow$ 1 Bild
 - Nachträgliche Anwendung weiterer Filter
 
 ![](images/filter_single_image.png)
