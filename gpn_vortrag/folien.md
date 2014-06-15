@@ -91,26 +91,26 @@ cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
 Übersicht
 ---------
 Übersicht über alle Aufrufe
-<!--- ![](images/overview.png) -->
+![](images/overview.png)
 
 Übersicht
 ---------
 Filterbar
-<!--- ![](images/overview_filter.png) -->
+![](images/overview_filter.png)
 
 Übersicht
 ---------
 Sortierbar
-<!--- ![](images/overview_sort.png) -->
+![](images/overview_sort.png)
 
 Übersicht
 ---------
 Gruppierbar
-<!--- ![](images/overview_group.png) -->
+![](images/overview_group.png)
 
 Übersicht
 ---------
-<!--- ![](images/overview_all.png) -->
+![](images/overview_all.png)
 
 Filter
 ------
