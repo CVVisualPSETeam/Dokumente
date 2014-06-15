@@ -167,14 +167,13 @@ Architektur
 Entwurf
 -------
 - Trennung in API, Datenhaltung, Visualisierung
-<div class="notes">
-Altes Entwurfs Bild
-</div>
+![](images/entwurf.png)
 
 Signals/Slots & Templates
 -------------------------
 - Qt erlaubt keine Templateklassen mit Signals/Slots
 - Signals/Slots in Objekte ausgelagert
+![](images/signalandslots.png)
 
 RegisterHelper
 --------------
@@ -187,7 +186,7 @@ AutoFilterWidget
 - ist Unterklasse von RegisterHelper
 - Erlaubt Auswahl und Anwendung von Filtern
 - Gibt Ergebnise der Filter per Signal weiter (z.B. an ein ZoomableImage)
-
+![](images/autofilterwidget.png)
 
 ZoomableImage
 ------------
@@ -201,19 +200,21 @@ MatchScene
 - Enthält 2 ZoomableImages
 - Enthält die KeyPoints/Matches als QGraphicsObjects
 - Hat Probleme mit der Mausinteraktion von der Matches
+![](images/graphicsscene.png)
 
 Match/KeyPointSetting
 --------------------
 - Keine Auslagerung von Singals/Slots möglich
 - Daher parallele Entwicklung von KeyPoint und MatchSetting
 - Nur Selektierte KeyPoints/Matches werden angezeigt
+![](images/matchsettings.png)
 
 Views
 ------
 - Visualisierung der unterschiedlichen Aufrufe
 - Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
 - Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
-
+![](images/match_lines.png)
 
 API
 ===
