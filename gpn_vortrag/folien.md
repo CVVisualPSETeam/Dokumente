@@ -171,35 +171,34 @@ Entwurf
 
 Signals/Slots & Templates
 -------------------------
-- Qt erlaubt keine Templateklassen mit Signals/Slots
+- Qt erlaubt keine Templateklassen mit Q_OBJECT
 - Signals/Slots in Objekte ausgelagert
 ![](images/signalandslots.png)
 
 RegisterHelper
 --------------
-- Bietet Funktionalität zum Anmelden neuer Funktionen
-- Auswahl erfolgt über eine Combobox
-- Beim Anmelden wird ein Auswahl Name angegeben
+- Ermöglicht die Auswahl von Funktionen über eine Combobox
+- Funktionen werden über eine API Funktione registriert
 
-AutoFilterWidget
+(Auto-)FilterWidget
 ----------------
-- ist Unterklasse von RegisterHelper
-- Erlaubt Auswahl und Anwendung von Filtern
-- Gibt Ergebnise der Filter per Signal weiter (z.B. an ein ZoomableImage)
+- Unterklasse von RegisterHelper
+- Ermöglicht Auswahl von Filtern
+- Gibt Ergebnise per Signal weiter (z.B. an ein ZoomableImage)
 ![](images/autofilterwidget.png)
 
 ZoomableImage
 ------------
-- Eigentständige Umwandlung von cv::Mat in Qt Format
+- Umwandlung von cv::Mat in Qt Format
 - Signal & Slot für Zoom Events
 - Slot zum Bild wechseln
+- SyncZoomWidget erlaubt syncronen Zoom
 - ZoomableImageOptionPanel zeigt weiter Informationen/Optinen an
 
 MatchScene
 ----------
 - Enthält 2 ZoomableImages
 - Enthält die KeyPoints/Matches als QGraphicsObjects
-- Hat Probleme mit der Mausinteraktion von der Matches
 ![](images/graphicsscene.png)
 
 Match/KeyPointSetting
@@ -215,6 +214,11 @@ Views
 - Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
 - Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
 ![](images/match_lines.png)
+![](images/match_translation.png)
+
+<!--- accordion??? -->
+<!--- bisher nur view/qtutil ggf tabs/overview?-->
+
 
 API
 ===
