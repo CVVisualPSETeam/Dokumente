@@ -40,3 +40,10 @@ cvv::util
 * `make_unique` und `makeRef`
 * häufig benötigte Includes in `util.hpp`
 
+Flexible Liniendicken
+---------------------
+
+* „Problem“ zeigen
+* Neuen Code zeigen
+* Einfügen und in init.cpp registrieren
+* „Lösung“ zeigen
