@@ -39,25 +39,35 @@ Filter
 ------
 
 Berechnung auf Umgebung jedes Pixels
+
 ![](images/filter.png)
 
 Filter
 ------
 
 Beispiel dilate: helle Flächen werden größer
-![](images/dilate_original.png) ![](images/dilate_middle.png)
+
+![](images/dilate_original.png)
+
+![](images/dilate_middle.png)
 
 Filter
 ------
 
 Beispiel dilate: helle Flächen werden größer
-![](images/dilate_original.png) ![](images/dilate_right.png)
+
+![](images/dilate_original.png)
+
+![](images/dilate_right.png)
 
 Matches
 -------
 
 Keypoints = charakteristische Punkte
-![](images/keypoint_original.png) ![](images/keypoint_drawn.png)
+
+![](images/keypoint_original.png)
+
+![](images/keypoint_drawn.png)
 
 Matches
 -------
@@ -106,21 +116,25 @@ cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
 Übersicht
 ---------
 Übersicht über alle Aufrufe
+
 ![](images/overview.png)
 
 Übersicht
 ---------
 Filterbar
+
 ![](images/overview_filter.png)
 
 Übersicht
 ---------
 Sortierbar
+
 ![](images/overview_sort.png)
 
 Übersicht
 ---------
 Gruppierbar
+
 ![](images/overview_group.png)
 
 Übersicht
@@ -132,28 +146,28 @@ Filter
 - 2 Bilder $\rightarrow$ 1 Bild
 - Differenzbilder, Overlay, geänderte Pixel für Filter
 
-![](images/filter_dual_image.png)\ 
+![](images/filter_dual_image.png)
 
 Filter
 ------
 - 1 Bild $\rightarrow$ 1 Bild
 - Nachträgliche Anwendung weiterer Filter
 
-![](images/filter_single_image.png)\ 
+![](images/filter_single_image.png)
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Verbindungen von Keypoints
 
-![](images/match_lines.png)\ 
+![](images/match_lines.png)
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Translation von Keypoints
 
-![](images/match_translation.png)\ 
+![](images/match_translation.png)
 
 GUI-Demo
 ========
@@ -168,12 +182,12 @@ Dokumentation
 ##Kurzdokumentation 
 Wird von der Hilfefunktion des Programms benutzt.
 
-![](images/viewreference.PNG)\ 
+![](images/viewreference.PNG)
 
 ##Referenz:
 * Mit Hilfe von Doxygen
 
-![](images/memberdoc.PNG)\ 
+![](images/memberdoc.PNG)
 
 
 Architektur
@@ -182,12 +196,14 @@ Architektur
 Entwurf
 -------
 - Trennung in API, Datenhaltung, Visualisierung
+
 ![](images/entwurf.png)
 
 Signals/Slots & Templates
 -------------------------
 - Qt erlaubt keine Templateklassen mit Q_OBJECT
 - Signals/Slots in Objekte ausgelagert
+
 ![](images/signalandslots.png)
 
 RegisterHelper
@@ -200,6 +216,7 @@ RegisterHelper
 - Unterklasse von RegisterHelper
 - Ermöglicht Auswahl von Filtern
 - Gibt Ergebnise per Signal weiter (z.B. an ein ZoomableImage)
+
 ![](images/autofilterwidget.png)
 
 ZoomableImage
@@ -214,6 +231,7 @@ MatchScene
 ----------
 - Enthält 2 ZoomableImages
 - Enthält die KeyPoints/Matches als QGraphicsObjects
+
 ![](images/graphicsscene.png)
 
 Match/KeyPointSetting
@@ -221,6 +239,7 @@ Match/KeyPointSetting
 - Keine Auslagerung von Singals/Slots möglich
 - Daher parallele Entwicklung von KeyPoint und MatchSetting
 - Nur Selektierte KeyPoints/Matches werden angezeigt
+
 ![](images/matchsettings.png)
 
 Views
@@ -228,7 +247,9 @@ Views
 - Visualisierung der unterschiedlichen Aufrufe
 - Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
 - Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
+
 ![](images/match_lines.png)
+
 ![](images/match_translation.png)
 
 <!--- accordion??? -->
@@ -258,13 +279,13 @@ Rezeption
 ---------
 Projekt schien von der OpenCV-Community wohlwollend aufgenommen zu werden
 
-![](images/positivereception.png)\ 
+![](images/positivereception.png)
 
 Rezeption
 ---------
 Nach aktuellem Stand aber aufgrund C++11 und Qt5 keine Aufnahme ins Haupt-Repo
 
-![](images/negativereception.PNG)\ 
+![](images/negativereception.PNG)
 
 
 Links
