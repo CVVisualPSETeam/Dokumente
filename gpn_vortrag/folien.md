@@ -23,13 +23,13 @@ Einführung in OpenCV
 - Bildverarbeitung
 - weite Verbreitung
 - Matrizen als Grundlage
-- Filter + Matches (und vieles mehr!)
+- Filter + Matches
 
 Matrizen
 --------
 
-- Bild = mehrdimensionale Matrix
-- 3\. Dimension = Channel
+Bild = mehrdimensionale Matrix
+![](images/matrix.png)
 
 <div class="notes">
 Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
@@ -38,19 +38,32 @@ Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
 Filter
 ------
 
-- 2D-Bilder
-- Berechnung auf Umgebung jedes Pixels
-- Bsp: dilate, erode, Sobel
+Berechnung auf Umgebung jedes Pixels
+![](images/filter.png)
 
-<div class="notes">
-erode -> kleine Details weg
-</div>
+Filter
+------
+
+Beispiel dilate: helle Flächen werden größer
+![](images/dilate_original.png) ![](images/dilate_middle.png)
+
+Filter
+------
+
+Beispiel dilate: helle Flächen werden größer
+![](images/dilate_original.png) ![](images/dilate_right.png)
 
 Matches
 -------
 
-- FeatureDetector $\rightarrow$ Keypoints = charakteristische Punkte
-- Match = Paar aus Keypoints
+Keypoints = charakteristische Punkte
+![](images/keypoint_original.png) ![](images/keypoint_drawn.png)
+
+Matches
+-------
+
+Match = Paar aus Keypoints
+![](images/matches_openCV.png)
 
 Motivation
 ==========
@@ -59,6 +72,7 @@ Debuggen von OpenCV
 -------------------
 
 Systematisches Debugging statt „Random Code“
+![](images/random_code.png)
 
 <div class="notes">
 Hinweis auf showMatches/showKeypoints
@@ -67,7 +81,8 @@ Hinweis auf showMatches/showKeypoints
 Ziele
 -----
 
-* Visualisierung von Matritzen, Filtereffekten und Matches
+Visualisierung von Matritzen, Filtereffekten und Matches
+![](images/ziele.png)
 
 Anwenderfeatures
 ================
