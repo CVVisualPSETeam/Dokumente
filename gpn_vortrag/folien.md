@@ -23,13 +23,13 @@ Einführung in OpenCV
 - Bildverarbeitung
 - weite Verbreitung
 - Matrizen als Grundlage
-- Filter + Matches (und vieles mehr!)
+- Filter + Matches
 
 Matrizen
 --------
 
-- Bild = mehrdimensionale Matrix
-- 3\. Dimension = Channel
+Bild = mehrdimensionale Matrix
+![](images/matrix.png)
 
 <div class="notes">
 Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
@@ -38,19 +38,32 @@ Bsp. BGR-Bild: 1. Channel blau, 2. Channel grün usw.
 Filter
 ------
 
-- 2D-Bilder
-- Berechnung auf Umgebung jedes Pixels
-- Bsp: dilate, erode, Sobel
+Berechnung auf Umgebung jedes Pixels
+![](images/filter.png)
 
-<div class="notes">
-erode -> kleine Details weg
-</div>
+Filter
+------
+
+Beispiel dilate: helle Flächen werden größer
+![](images/dilate_original.png) ![](images/dilate_middle.png)
+
+Filter
+------
+
+Beispiel dilate: helle Flächen werden größer
+![](images/dilate_original.png) ![](images/dilate_right.png)
 
 Matches
 -------
 
-- FeatureDetector $\rightarrow$ Keypoints = charakteristische Punkte
-- Match = Paar aus Keypoints
+Keypoints = charakteristische Punkte
+![](images/keypoint_original.png) ![](images/keypoint_drawn.png)
+
+Matches
+-------
+
+Match = Paar aus Keypoints
+![](images/matches_openCV.png)
 
 Motivation
 ==========
@@ -59,6 +72,7 @@ Debuggen von OpenCV
 -------------------
 
 Systematisches Debugging statt „Random Code“
+![](images/random_code.png)
 
 <div class="notes">
 Hinweis auf showMatches/showKeypoints
@@ -67,7 +81,8 @@ Hinweis auf showMatches/showKeypoints
 Ziele
 -----
 
-* Visualisierung von Matritzen, Filtereffekten und Matches
+Visualisierung von Matritzen, Filtereffekten und Matches
+![](images/ziele.png)
 
 Anwenderfeatures
 ================
@@ -91,26 +106,26 @@ cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
 Übersicht
 ---------
 Übersicht über alle Aufrufe
-<!--- ![](images/overview.png) -->
+![](images/overview.png)
 
 Übersicht
 ---------
 Filterbar
-<!--- ![](images/overview_filter.png) -->
+![](images/overview_filter.png)
 
 Übersicht
 ---------
 Sortierbar
-<!--- ![](images/overview_sort.png) -->
+![](images/overview_sort.png)
 
 Übersicht
 ---------
 Gruppierbar
-<!--- ![](images/overview_group.png) -->
+![](images/overview_group.png)
 
 Übersicht
 ---------
-<!--- ![](images/overview_all.png) -->
+![](images/overview_all.png)
 
 Filter
 ------
@@ -121,7 +136,7 @@ Filter
 
 Filter
 ------
-- 1 Bilder $\rightarrow$ 1 Bild
+- 1 Bild $\rightarrow$ 1 Bild
 - Nachträgliche Anwendung weiterer Filter
 
 ![](images/filter_single_image.png)\ 
@@ -167,52 +182,57 @@ Architektur
 Entwurf
 -------
 - Trennung in API, Datenhaltung, Visualisierung
-<div class="notes">
-Altes Entwurfs Bild
-</div>
+![](images/entwurf.png)
 
 Signals/Slots & Templates
 -------------------------
-- Qt erlaubt keine Templateklassen mit Signals/Slots
+- Qt erlaubt keine Templateklassen mit Q_OBJECT
 - Signals/Slots in Objekte ausgelagert
+![](images/signalandslots.png)
 
 RegisterHelper
 --------------
-- Bietet Funktionalität zum Anmelden neuer Funktionen
-- Auswahl erfolgt über eine Combobox
-- Beim Anmelden wird ein Auswahl Name angegeben
+- Ermöglicht die Auswahl von Funktionen über eine Combobox
+- Funktionen werden über eine API Funktione registriert
 
-AutoFilterWidget
+(Auto-)FilterWidget
 ----------------
-- ist Unterklasse von RegisterHelper
-- Erlaubt Auswahl und Anwendung von Filtern
-- Gibt Ergebnise der Filter per Signal weiter (z.B. an ein ZoomableImage)
-
+- Unterklasse von RegisterHelper
+- Ermöglicht Auswahl von Filtern
+- Gibt Ergebnise per Signal weiter (z.B. an ein ZoomableImage)
+![](images/autofilterwidget.png)
 
 ZoomableImage
 ------------
-- Eigentständige Umwandlung von cv::Mat in Qt Format
+- Umwandlung von cv::Mat in Qt Format
 - Signal & Slot für Zoom Events
 - Slot zum Bild wechseln
+- SyncZoomWidget erlaubt syncronen Zoom
 - ZoomableImageOptionPanel zeigt weiter Informationen/Optinen an
 
 MatchScene
 ----------
 - Enthält 2 ZoomableImages
 - Enthält die KeyPoints/Matches als QGraphicsObjects
-- Hat Probleme mit der Mausinteraktion von der Matches
+![](images/graphicsscene.png)
 
 Match/KeyPointSetting
 --------------------
 - Keine Auslagerung von Singals/Slots möglich
 - Daher parallele Entwicklung von KeyPoint und MatchSetting
 - Nur Selektierte KeyPoints/Matches werden angezeigt
+![](images/matchsettings.png)
 
 Views
 ------
 - Visualisierung der unterschiedlichen Aufrufe
 - Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
 - Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
+![](images/match_lines.png)
+![](images/match_translation.png)
+
+<!--- accordion??? -->
+<!--- bisher nur view/qtutil ggf tabs/overview?-->
 
 
 API
