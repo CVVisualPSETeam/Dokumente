@@ -117,28 +117,28 @@ Filter
 - 2 Bilder $\rightarrow$ 1 Bild
 - Differenzbilder, Overlay, geänderte Pixel für Filter
 
-![](images/filter_dual_image.png)
+![](images/filter_dual_image.png)\ 
 
 Filter
 ------
 - 1 Bilder $\rightarrow$ 1 Bild
 - Nachträgliche Anwendung weiterer Filter
 
-![](images/filter_single_image.png)
+![](images/filter_single_image.png)\ 
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Verbindungen von Keypoints
 
-![](images/match_lines.png)
+![](images/match_lines.png)\ 
 
 Matches
 -------
 - Anzeigen / Filtern von Keypoints / Matches
 - Anzeige der Translation von Keypoints
 
-![](images/match_translation.png)
+![](images/match_translation.png)\ 
 
 GUI-Demo
 ========
@@ -153,12 +153,12 @@ Dokumentation
 ##Kurzdokumentation 
 Wird von der Hilfefunktion des Programms benutzt.
 
-![](images/viewreference.PNG)
+![](images/viewreference.PNG)\ 
 
 ##Referenz:
 * Mit Hilfe von Doxygen
 
-![](images/memberdoc.PNG)
+![](images/memberdoc.PNG)\ 
 
 
 Architektur
@@ -237,12 +237,14 @@ Ausblick
 Rezeption
 ---------
 Projekt schien von der OpenCV-Community wohlwollend aufgenommen zu werden
-![](images/positivereception.png)
+
+![](images/positivereception.png)\ 
 
 Rezeption
 ---------
 Nach aktuellem Stand aber aufgrund C++11 und Qt5 keine Aufnahme ins Haupt-Repo
-![](images/negativereception.PNG)
+
+![](images/negativereception.PNG)\ 
 
 
 Links

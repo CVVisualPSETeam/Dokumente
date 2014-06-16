@@ -21,7 +21,6 @@ folien_uebersicht.pdf: folien.md makefile
 api_demo.pdf: api_demo.md makefile
 	pandoc api_demo.md -fmarkdown -o api_demo.pdf \
 		-M lang:german \
-		--toc \
 		--number-sections \
 		-V documentclass:scrartcl\
 		-V papersize:"a4paper" \
