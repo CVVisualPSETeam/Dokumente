@@ -29,6 +29,7 @@ Matrizen
 --------
 
 Bild = mehrdimensionale Matrix
+
 ![](images/matrix.png)
 
 <div class="notes">
@@ -49,14 +50,17 @@ Beispiel dilate: helle Flächen werden größer
 
 ![](images/dilate_original.png)
 
+Filter
+------
+
+Beispiel dilate: helle Flächen werden größer
+
 ![](images/dilate_middle.png)
 
 Filter
 ------
 
 Beispiel dilate: helle Flächen werden größer
-
-![](images/dilate_original.png)
 
 ![](images/dilate_right.png)
 
@@ -65,14 +69,13 @@ Matches
 
 Keypoints = charakteristische Punkte
 
-![](images/keypoint_original.png)
-
 ![](images/keypoint_drawn.png)
 
 Matches
 -------
 
 Match = Paar aus Keypoints
+
 ![](images/matches_openCV.png)
 
 Motivation
@@ -82,6 +85,7 @@ Debuggen von OpenCV
 -------------------
 
 Systematisches Debugging statt „Random Code“
+
 ![](images/random_code.png)
 
 <div class="notes">
@@ -92,6 +96,7 @@ Ziele
 -----
 
 Visualisierung von Matritzen, Filtereffekten und Matches
+
 ![](images/ziele.png)
 
 Anwenderfeatures
