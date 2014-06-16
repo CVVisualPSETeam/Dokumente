@@ -55,7 +55,7 @@ Filter
 
 Beispiel dilate: helle Flächen werden größer
 
-![](images/dilate_middle.png)
+![](images/dilate_middle.jpg)
 
 Filter
 ------
