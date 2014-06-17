@@ -177,24 +177,6 @@ Matches
 GUI-Demo
 ========
 
-Dokumentation
-=============
-
-##Tutorials, Beispiele
-
-![](images/homepage.PNG)
-
-##Kurzdokumentation 
-Wird von der Hilfefunktion des Programms benutzt.
-
-![](images/viewreference.PNG)
-
-##Referenz:
-* Mit Hilfe von Doxygen
-
-![](images/memberdoc.PNG)
-
-
 Architektur
 ===========
 
@@ -260,6 +242,24 @@ Views
 <!--- accordion??? -->
 <!--- bisher nur view/qtutil ggf tabs/overview?-->
 
+Dokumentation
+=============
+
+##Tutorials, Beispiele
+
+![](images/homepage.PNG)
+
+##Kurzdokumentation 
+Wird von der Hilfefunktion des Programms benutzt.
+
+![](images/viewreference.PNG)
+
+##Referenz:
+* Mit Hilfe von Doxygen
+
+![](images/memberdoc.PNG)
+
+
 
 API
 ===
@@ -295,6 +295,6 @@ Nach aktuellem Stand aber aufgrund C++11 und Qt5 keine Aufnahme ins Haupt-Repo
 
 Links
 -----
-* Github: [https://github.com/CVVisualPSETeam/CVVisual](https://github.com/CVVisualPSETeam/CVVisual)
+* Github: [https://github.com/CVVisualPSETeam/CVVisual/](https://github.com/CVVisualPSETeam/CVVisual/)
 * Dokumentation: [https://cvv.mostlynerdless.de/](https://cvv.mostlynerdless.de/)
 * Doxygen: [https://cvv.mostlynerdless.de/api/](https://cvv.mostlynerdless.de/api/)
