@@ -209,7 +209,19 @@ RegisterHelper
 - Funktionen werden über eine API Funktione registriert
 - Wird in der API Demo vorgestellt
 
-![](images/autofilterwidget.png)<!-- DAs Bild ggf rausnehmen oder in 2 spalten Ansicht anzeigen -->
+```cpp
+cvv::qtutil::registerMatchSettings<cvv::qtutil::SingleColorMatchPen>("Single Color");
+
+template <class Setting>
+bool registerMatchSettings(const QString &name)
+{
+	return MatchSettingsSelector::registerElement(
+	    name, [](std::vector<cv::DMatch> univers)
+	{
+		    return std::unique_ptr<MatchSettings>{ new Setting{univers}};
+	});
+}
+```
 
 <!--- accordion??? -->
 <!--- bisher nur view/qtutil ggf tabs/overview?-->
