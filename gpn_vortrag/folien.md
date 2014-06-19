@@ -181,62 +181,46 @@ Architektur
 
 Entwurf
 -------
-- Trennung in API, Datenhaltung, Visualisierung
-
 ![](images/entwurf.png)
 
 Signals/Slots & Templates
 -------------------------
-- Qt erlaubt keine Templateklassen mit Q_OBJECT
-- Signals/Slots in Objekte ausgelagert
-
-![](images/signalandslots.png)
+```cpp
+class SlotQString : public QObject
+{	Q_OBJECT
+public:
+	SlotQString(const std::function<void(QString)> &f,QObject *parent = nullptr)
+	    : QObject{ parent },function_{f}
+	{	if (!f)
+			throw std::invalid_argument{ "invalide function" };
+	}
+public slots:
+	void slot(QString t) const
+		{function_(t);}
+	private:
+	std::function<void(QString)> function_;
+};
+```
 
 RegisterHelper
 --------------
 - Ermöglicht die Auswahl von Funktionen über eine Combobox
 - Funktionen werden über eine API Funktione registriert
+- Wird in der API Demo vorgestellt
 
-(Auto-)FilterWidget
-----------------
-- Unterklasse von RegisterHelper
-- Ermöglicht Auswahl von Filtern
-- Gibt Ergebnise per Signal weiter (z.B. an ein ZoomableImage)
+```cpp
+cvv::qtutil::registerMatchSettings<cvv::qtutil::SingleColorMatchPen>("Single Color");
 
-![](images/autofilterwidget.png)
-
-ZoomableImage
-------------
-- Umwandlung von cv::Mat in Qt Format
-- Signal & Slot für Zoom Events
-- Slot zum Bild wechseln
-- SyncZoomWidget erlaubt syncronen Zoom
-- ZoomableImageOptionPanel zeigt weiter Informationen/Optinen an
-
-MatchScene
-----------
-- Enthält 2 ZoomableImages
-- Enthält die KeyPoints/Matches als QGraphicsObjects
-
-![](images/graphicsscene.png)
-
-Match/KeyPointSetting
---------------------
-- Keine Auslagerung von Singals/Slots möglich
-- Daher parallele Entwicklung von KeyPoint und MatchSetting
-- Nur Selektierte KeyPoints/Matches werden angezeigt
-
-![](images/matchsettings.png)
-
-Views
-------
-- Visualisierung der unterschiedlichen Aufrufe
-- Unterscheiden sich meist in unterschidlichen Nutzen von QT Util Klassen
-- Einzige Aufgabe Weiterleitung und Annahme der Selektion (beim Wechsel der Views)
-
-![](images/match_lines.png)
-
-![](images/match_translation.png)
+template <class Setting>
+bool registerMatchSettings(const QString &name)
+{
+	return MatchSettingsSelector::registerElement(
+	    name, [](std::vector<cv::DMatch> univers)
+	{
+		    return std::unique_ptr<MatchSettings>{ new Setting{univers}};
+	});
+}
+```
 
 <!--- accordion??? -->
 <!--- bisher nur view/qtutil ggf tabs/overview?-->
