@@ -107,8 +107,7 @@ Verwendung
 <!--![](images/api_call.png)-->
 
 ```cpp
-std::string imgIdString{"imgRead"};
-imgIDString += toString(imgId);
+std::string imgIdString = "imgRead" + toString(imgId);
 cvv::showImage(imgRead, CVVISUAL_LOCATION, imgIdString);
 
 // convert to grayscale:
