@@ -9,8 +9,8 @@ Gliederung
 - Motivation <!--- Andi-->
 - Anwenderfeatures <!--- Raphael  -->
 - Gui-Demo <!--- Johannes -->
-- Dokumentation <!--- Nikolai -->
 - Architektur <!--- Erich -->
+- Dokumentation <!--- Nikolai -->
 - API<!--- Florian -->
 - Ausblick
 
