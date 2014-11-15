@@ -9,7 +9,7 @@ Gliederung
 - Motivation <!--- Raphael -->
 - API<!--- Florian -->
 - Gui-Demo <!--- Johannes -->
-- Ausblick <!--- Nikolai -->
+- Aktueller Stand <!--- Nikolai -->
 
 Einführung in OpenCV
 ====================
@@ -140,11 +140,17 @@ Projekt schien von der OpenCV-Community wohlwollend aufgenommen zu werden
 Rezeption
 ---------
 
-Wegen C++11 und Qt5 keine Aufnahme ins Haupt-Repo, aber mittlerweile in Contrib.
+Wegen C++11 und Qt5 keine Aufnahme ins Haupt-Repo...
 
 
 ![](images/negativereception.PNG)
 
+Rezeption
+---------
+
+...aber mittlerweile in Contrib.
+
+![](images/contrib.PNG)
 
 Links
 -----
