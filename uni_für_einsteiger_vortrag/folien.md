@@ -6,10 +6,10 @@ Gliederung
 ----------
 
 - Einführung in OpenCV <!--- Clara -->
-- Motivation <!--- Andi-->
-- Gui-Demo <!--- Johannes -->
+- Motivation <!--- Raphael -->
 - API<!--- Florian -->
-- Ausblick
+- Gui-Demo <!--- Johannes -->
+- Ausblick <!--- Nikolai -->
 
 Einführung in OpenCV
 ====================
@@ -97,23 +97,6 @@ Visualisierung von Matritzen, Filtereffekten und Matches
 ![](images/ziele.png)
 
 
-Demo
-====
-
-Dokumentation
-=============
-
-##Tutorials, Beispiele
-
-![](images/homepage.PNG)
-
-##Kurzdokumentation 
-Wird von der Hilfefunktion des Programms benutzt.
-
-![](images/viewreference.PNG)
-
-
-
 API
 ===
 
@@ -140,13 +123,8 @@ cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
                  "to gray", "SingleFilterView");
 ```
 
-Architektur
-===========
-
-Entwurf
--------
-
-![](images/entwurf.png)
+Demo
+====
 
 
 Aktueller Stand
