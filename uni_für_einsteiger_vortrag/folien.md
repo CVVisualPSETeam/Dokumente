@@ -89,6 +89,22 @@ Systematisches Debugging statt „Random Code“
 Hinweis auf showMatches/showKeypoints
 </div>
 
+Probleme
+--------
+* mehrere Ausgaben => Copy&Paste
+* Filtern von Keypoints & Matches
+* Ausblenden von Keypoints & Matches
+* Ändern von Filterparametern
+	* schwer reproduzierbare Ereignisse
+	* lange Laufzeiten
+	* => Speichern & Laden?
+* Farblicher Hervorhebung
+* Zoomen
+* Bildfilter
+* Auslesen von Pixelwerten
+* Anschauen einer vorherigen Ausgabe
+	* => Alle Fenster offen lassen?
+	
 Ziele
 -----
 
