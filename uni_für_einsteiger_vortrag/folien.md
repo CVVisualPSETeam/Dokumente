@@ -89,8 +89,11 @@ Systematisches Debugging statt „Random Code“
 Hinweis auf showMatches/showKeypoints
 </div>
 
+
+<!--
 Probleme
 --------
+
 * mehrere Ausgaben => Copy&Paste
 * Filtern von Keypoints & Matches
 * Ausblenden von Keypoints & Matches
@@ -104,7 +107,9 @@ Probleme
 * Auslesen von Pixelwerten
 * Anschauen einer vorherigen Ausgabe
 	* => Alle Fenster offen lassen?
-	
+-->
+
+
 Ziele
 -----
 
@@ -137,6 +142,8 @@ cv::Mat imgGray;
 cv::cvtColor(imgRead, imgGray, CV_BGR2GRAY);
 cvv::debugFilter(imgRead, imgGray, CVVISUAL_LOCATION,
                  "to gray", "SingleFilterView");
+
+cvv::finalShow(); // enables fast-forward to end
 ```
 
 Demo
