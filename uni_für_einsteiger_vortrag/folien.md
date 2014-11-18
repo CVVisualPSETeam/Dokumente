@@ -1,6 +1,6 @@
 ﻿%CVVisual
-%Andreas; Clara; Erich; Florian; Johannes; Nikolai; Raphael
-%20. Juni 2014
+%Clara; Erich; Florian; Johannes; Nikolai; Raphael
+%19. November 2014
 
 Gliederung
 ----------
