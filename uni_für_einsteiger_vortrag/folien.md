@@ -7,7 +7,8 @@ Gliederung
 
 - Einführung in OpenCV <!--- Clara -->
 - Motivation <!--- Raphael -->
-- API<!--- Florian -->
+* Entwurf <!--- Erich -->
+- Implementierung und API<!--- Florian -->
 - Gui-Demo <!--- Johannes -->
 - Aktueller Stand <!--- Nikolai -->
 
@@ -117,19 +118,34 @@ Visualisierung von Matritzen, Filtereffekten und Matches
 
 ![](images/ziele.png)
 
+Entwurf
+=======
 
-API
-===
+Übersicht
+---------
+
+![](images/entwurf.png)
+
+Implementierung und API
+=======================
+
+Implementierung
+---------------
+
+<!---
+* Übergang Entwurf → Implementierung
+* Einarbeitung von neuen C++-Nutzern weitgehend reibungsfrei
+* Kämpfe mit Qt, da sehr alte Bibliothek, oft inkompatibel mit modernen Techniken
+* Kämpfe mit OpenCV, primär aufgrund schlechter Dokumentation
+* Codequalität am Ende im großen und ganzen okay
+* leicht erweiterbar
+* (Übergang) → gezeigter Code ist implementierung der API
+-->
+
+![](images/conditionalcompilation.PNG)
 
 Anwender API
 ------------
-
-* Triviale Benutzung auch in C++98
-* Sehr klein und übersichtlich
-
-
-Verwendung
-----------
 
 <!--![](images/api_call.png)-->
 
